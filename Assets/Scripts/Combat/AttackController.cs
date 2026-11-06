@@ -54,6 +54,9 @@ public class AttackController : MonoBehaviour
     [Tooltip("Состояние Animator для накопления заряда. Пусто — анимация не меняется")]
     [SerializeField] private string chargeStateName = "";
 
+    [Tooltip("Состояние Animator, куда вернуться, если заряд отменён, например прыжком")]
+    [SerializeField] private string fallbackStateName = "";
+
     [Tooltip("Сколько секунд держать кнопку, чтобы удар стал заряженным")]
     [SerializeField] private float minChargeTime = 0.3f;
 
@@ -319,6 +322,10 @@ public class AttackController : MonoBehaviour
         charging = false;
         ResetChargeTint();
         movement.SetControlLocked(false);
+
+        // Заряд мог сменить анимацию: без явного возврата герой останется в ней.
+        if (animator != null && !string.IsNullOrEmpty(fallbackStateName))
+            animator.Play(fallbackStateName, 0, 0f);
     }
 
     private void ReleaseCharge()
