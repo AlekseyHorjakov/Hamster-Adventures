@@ -15,6 +15,29 @@ public class Dummy : MonoBehaviour
     private Rigidbody2D rigidbody2D;
     private Vector3 startPosition;
 
+    private static PhysicsMaterial2D frictionMaterial;
+
+    /// <summary>
+    /// Манекен не должен катиться по земле как по льду: тяжёлое тело
+    /// с большим трением останавливается почти сразу после удара.
+    /// </summary>
+    private static PhysicsMaterial2D FrictionMaterial
+    {
+        get
+        {
+            if (frictionMaterial == null)
+            {
+                frictionMaterial = new PhysicsMaterial2D("DummyFriction")
+                {
+                    friction = 1.2f,
+                    bounciness = 0f
+                };
+            }
+
+            return frictionMaterial;
+        }
+    }
+
     private void Awake()
     {
         health = GetComponent<Health>();
@@ -22,6 +45,15 @@ public class Dummy : MonoBehaviour
         body = GetComponent<Collider2D>();
         rigidbody2D = GetComponent<Rigidbody2D>();
         startPosition = transform.position;
+
+        if (body != null)
+            body.sharedMaterial = FrictionMaterial;
+
+        if (rigidbody2D != null)
+        {
+            rigidbody2D.mass = 2.5f;
+            rigidbody2D.linearDamping = 1.5f;
+        }
     }
 
     private void OnEnable()

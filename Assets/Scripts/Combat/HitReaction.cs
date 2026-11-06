@@ -136,6 +136,10 @@ public class HitReaction : MonoBehaviour
             yield return null;
         }
 
+        // Гасим скорость на приземлении, чтобы цель не катилась по земле.
+        if (body != null)
+            body.linearVelocity = Vector2.zero;
+
         // Лежит на земле, потом встаёт.
         if (visual != null)
             visual.rotation = Quaternion.Euler(0f, 0f, 90f);
@@ -144,6 +148,10 @@ public class HitReaction : MonoBehaviour
 
         if (visual != null)
             visual.rotation = Quaternion.identity;
+
+        // После подъёма тоже не даём разгоняться остаткам импульса.
+        if (body != null)
+            body.linearVelocity = Vector2.zero;
 
         launched = false;
     }
