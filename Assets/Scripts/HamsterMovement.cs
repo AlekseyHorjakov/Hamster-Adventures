@@ -52,9 +52,15 @@ public class HamsterMovement : MonoBehaviour
     private void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
-        spriteRenderer = GetComponent<SpriteRenderer>();
+        // Спрайт живёт на дочернем объекте Visual, чтобы анимации масштаба
+        // не задевали коллайдер, поэтому ищем рендерер во вложенных объектах.
+        spriteRenderer = GetComponentInChildren<SpriteRenderer>();
         animator = GetComponent<Animator>();
         mainCamera = Camera.main;
+
+        if (spriteRenderer == null)
+            Debug.LogWarning("[HamsterMovement] SpriteRenderer не найден у " + name +
+                             " — разворот персонажа работать не будет");
 
         jumpsRemaining = maxJumps;
     }
