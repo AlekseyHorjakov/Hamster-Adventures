@@ -331,8 +331,8 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 00a5d6d525830a844b35f5cb4a63f52d, type: 2}
   attackStates:
   - HGFastPunch
-  - HGFastPunch
-  - HGFastPunch
+  - HGHook
+  - HGSpin
   attackDuration: 0.25
   movementLock: 0.14
   cancelAfter: 0.1
