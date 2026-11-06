@@ -43,6 +43,11 @@ public class HamsterMovement : MonoBehaviour
     // Нажатие атаки запоминаем здесь, а забирает AttackController.
     private bool attackPressed;
 
+    // Удержание и отпускание нужны заряженному удару: заряд копится, пока
+    // кнопка нажата, а сам удар выполняется на отпускании.
+    private bool attackHeld;
+    private bool attackReleased;
+
     private static readonly int IsMovingHash =
         Animator.StringToHash("IsMoving");
 
@@ -130,10 +135,20 @@ public class HamsterMovement : MonoBehaviour
     private void ReadAttackInput()
     {
         if (Keyboard.current == null)
+        {
+            attackHeld = false;
             return;
+        }
 
-        if (Keyboard.current[attackKey].wasPressedThisFrame)
+        var attackControl = Keyboard.current[attackKey];
+
+        attackHeld = attackControl.isPressed;
+
+        if (attackControl.wasPressedThisFrame)
             attackPressed = true;
+
+        if (attackControl.wasReleasedThisFrame)
+            attackReleased = true;
     }
 
     /// <summary>Куда смотрит герой: 1 — вправо, -1 — влево.</summary>
@@ -167,6 +182,19 @@ public class HamsterMovement : MonoBehaviour
             return false;
 
         attackPressed = false;
+        return true;
+    }
+
+    /// <summary>Держит ли игрок кнопку атаки прямо сейчас.</summary>
+    public bool AttackHeld => attackHeld;
+
+    /// <summary>Возвращает true ровно один раз на каждое отпускание атаки.</summary>
+    public bool ConsumeAttackRelease()
+    {
+        if (!attackReleased)
+            return false;
+
+        attackReleased = false;
         return true;
     }
 

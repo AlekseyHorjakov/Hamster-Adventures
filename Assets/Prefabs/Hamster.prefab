@@ -303,6 +303,18 @@ MonoBehaviour:
   airHit: {fileID: 11400000, guid: 4a363cc3e1a30fd4a883512cc28add9d, type: 2}
   airStateName: JumpKick
   airDuration: 0.3
+  chargedHit: {fileID: 11400000, guid: 7c1a4f2b9d6e4a5f8b3c2d1e0a9b8c7d, type: 2}
+  chargedStateName: 
+  chargeStateName: 
+  minChargeTime: 0.3
+  dashSpeed: 30
+  dashDuration: 0.22
+  dashProbeDistance: 0.8
+  dashBlockMask:
+    serializedVersion: 2
+    m_Bits: 0
+  trailPrefab: {fileID: 0}
+  trailLifetime: 2
   movement: {fileID: 4868555397632928063}
   hitbox: {fileID: 9185819292231602203}
 --- !u!1 &9088040696783955624
