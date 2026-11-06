@@ -46,6 +46,11 @@ public class Hitbox : MonoBehaviour
             if (health == null || !health.IsAlive)
                 continue;
 
+            // Улетевшего не добиваем: пока он в полёте, он вне боя.
+            var reaction = health.GetComponent<HitReaction>();
+            if (reaction != null && reaction.IsLaunched)
+                continue;
+
             if (health.transform.root == transform.root)
                 continue;
 
@@ -58,12 +63,29 @@ public class Hitbox : MonoBehaviour
                 hitPoint = center,
                 knockback = new Vector2(data.knockback * facing, 0f),
                 hitStop = data.hitStop,
+                hitStun = data.hitStun,
+                launchVelocity = new Vector2(data.launchVelocity.x * facing, data.launchVelocity.y),
                 source = transform.root.gameObject
             });
 
             HitStop.Play(data.hitStop);
             CameraFollow.Shake(0.2f, 0.16f);
+            SpawnSpark(center);
         }
+    }
+
+    private static GameObject sparkPrefab;
+
+    private static void SpawnSpark(Vector2 position)
+    {
+        if (sparkPrefab == null)
+            sparkPrefab = Resources.Load<GameObject>("HitSpark");
+
+        if (sparkPrefab == null)
+            return;
+
+        var spark = Instantiate(sparkPrefab, position, Quaternion.Euler(0f, 0f, Random.Range(0f, 360f)));
+        spark.transform.localScale = Vector3.one * Random.Range(0.85f, 1.15f);
     }
 
     private void OnDrawGizmosSelected()

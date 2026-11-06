@@ -12,8 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a9de50e145d8db469eb183513b087ac, type: 3}
   m_Name: HitData_Light2
   m_EditorClassIdentifier: Assembly-CSharp::HitData
-  damage: 8
-  knockback: 7
+  damage: 10
+  knockback: 8
   hitStop: 0.06
-  hitboxSize: {x: 1.9, y: 1.5}
-  hitboxOffset: {x: 1.25, y: 0}
+  hitStun: 0.2
+  launchVelocity: {x: 0, y: 0}
+  hitboxSize: {x: 2, y: 1.6}
+  hitboxOffset: {x: 1.45, y: 0}

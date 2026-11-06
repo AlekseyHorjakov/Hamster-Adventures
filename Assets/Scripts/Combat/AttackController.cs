@@ -12,8 +12,8 @@ public class AttackController : MonoBehaviour
     [Tooltip("Параметры ударов по порядку: сюда кладутся HitData")]
     [SerializeField] private HitData[] comboHits;
 
-    [Tooltip("Имя состояния в Animator, которое проигрывается на удар")]
-    [SerializeField] private string attackStateName = "FastPunch";
+    [Tooltip("Имена состояний Animator по порядку ударов комбо")]
+    [SerializeField] private string[] attackStates = { "FastPunch" };
 
     [Header("Тайминги")]
     [Tooltip("Длительность клипа удара в секундах")]
@@ -43,12 +43,12 @@ public class AttackController : MonoBehaviour
     private float lockUntil;
     private HitData currentHit;
 
-    public void Configure(HamsterMovement movementRef, Hitbox hitboxRef, HitData[] hits, string stateName)
+    public void Configure(HamsterMovement movementRef, Hitbox hitboxRef, HitData[] hits, string[] states)
     {
         movement = movementRef;
         hitbox = hitboxRef;
         comboHits = hits;
-        attackStateName = stateName;
+        attackStates = states;
     }
 
     /// <summary>Тайминги удара — выносятся в конфигурацию, чтобы править их из сборки.</summary>
@@ -63,6 +63,7 @@ public class AttackController : MonoBehaviour
     private void Awake()
     {
         animator = GetComponent<Animator>();
+        lastAttackEnd = -999f;
 
         if (movement == null)
             movement = GetComponent<HamsterMovement>();
@@ -105,7 +106,11 @@ public class AttackController : MonoBehaviour
 
         // Play вместо триггера: так удар гарантированно перезапускается с нуля,
         // даже если предыдущий ещё проигрывался.
-        animator.Play(attackStateName, 0, 0f);
+        string stateName = attackStates != null && attackStates.Length > 0
+            ? attackStates[Mathf.Min(index, attackStates.Length - 1)]
+            : "FastPunch";
+
+        animator.Play(stateName, 0, 0f);
 
         movement.SetControlLocked(true);
         lockUntil = Time.unscaledTime + movementLock;

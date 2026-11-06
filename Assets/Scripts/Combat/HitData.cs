@@ -17,6 +17,13 @@ public class HitData : ScriptableObject
     [Tooltip("Сколько секунд игра замирает на попадании")]
     public float hitStop = 0.05f;
 
+    [Tooltip("Сколько секунд цель не может действовать после попадания")]
+    public float hitStun = 0.18f;
+
+    [Header("Запуск")]
+    [Tooltip("Если не ноль — цель улетает: X назад, Y вверх. Ноль — обычное отбрасывание")]
+    public Vector2 launchVelocity;
+
     [Header("Зона удара")]
     public Vector2 hitboxSize = new Vector2(1.4f, 1.1f);
     public Vector2 hitboxOffset = new Vector2(0.9f, 0f);
