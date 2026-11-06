@@ -41,6 +41,30 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: Background
+    uniqueID: 1100000002
+    locked: 0
+  - name: Far
+    uniqueID: 1100000003
+    locked: 0
+  - name: Mid
+    uniqueID: 1100000004
+    locked: 0
+  - name: Ground
+    uniqueID: 1100000005
+    locked: 0
+  - name: Characters
+    uniqueID: 1100000006
+    locked: 0
+  - name: Props
+    uniqueID: 1100000007
+    locked: 0
+  - name: FX
+    uniqueID: 1100000008
+    locked: 0
+  - name: UI
+    uniqueID: 1100000009
+    locked: 0
   m_RenderingLayers:
   - Default
   m_MigratedRenderPipelines: []
