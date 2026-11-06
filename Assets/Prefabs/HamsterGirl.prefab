@@ -333,9 +333,15 @@ MonoBehaviour:
   - HGFastPunch
   - HGHook
   - HGSpin
-  attackDuration: 0.25
+  attackDurations:
+  - 0.25
+  - 0.25
+  - 0.32
+  cancelTimes:
+  - 0.1
+  - 0.1
+  - 0.14
   movementLock: 0.14
-  cancelAfter: 0.1
   comboResetTime: 0.45
   stepSpeed: 4
   movement: {fileID: 7389103765779009765}

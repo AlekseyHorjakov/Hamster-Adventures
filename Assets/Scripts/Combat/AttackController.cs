@@ -16,14 +16,14 @@ public class AttackController : MonoBehaviour
     [SerializeField] private string[] attackStates = { "FastPunch" };
 
     [Header("Тайминги")]
-    [Tooltip("Длительность клипа удара в секундах")]
-    [SerializeField] private float attackDuration = 0.25f;
+    [Tooltip("Длительность каждого удара: у финишёра дольше, потому что кадр попадания удерживается")]
+    [SerializeField] private float[] attackDurations = { 0.25f, 0.25f, 0.32f };
+
+    [Tooltip("Через сколько секунд после начала удар можно прервать следующим")]
+    [SerializeField] private float[] cancelTimes = { 0.10f, 0.10f, 0.14f };
 
     [Tooltip("Сколько секунд герой не может двигаться с начала удара")]
     [SerializeField] private float movementLock = 0.14f;
-
-    [Tooltip("Через сколько секунд после начала удар можно прервать следующим")]
-    [SerializeField] private float cancelAfter = 0.10f;
 
     [Tooltip("Через сколько секунд после удара комбо сбрасывается на первый удар")]
     [SerializeField] private float comboResetTime = 0.45f;
@@ -52,12 +52,26 @@ public class AttackController : MonoBehaviour
     }
 
     /// <summary>Тайминги удара — выносятся в конфигурацию, чтобы править их из сборки.</summary>
-    public void ConfigureTimings(float duration, float lockTime, float cancel, float resetTime)
+    public void ConfigureTimings(float[] durations, float[] cancels, float lockTime, float resetTime)
     {
-        attackDuration = duration;
+        attackDurations = durations;
+        cancelTimes = cancels;
         movementLock = lockTime;
-        cancelAfter = cancel;
         comboResetTime = resetTime;
+    }
+
+    private float DurationAt(int index)
+    {
+        return attackDurations != null && attackDurations.Length > 0
+            ? attackDurations[Mathf.Min(index, attackDurations.Length - 1)]
+            : 0.25f;
+    }
+
+    private float CancelAt(int index)
+    {
+        return cancelTimes != null && cancelTimes.Length > 0
+            ? cancelTimes[Mathf.Min(index, cancelTimes.Length - 1)]
+            : 0.10f;
     }
 
     private void Awake()
@@ -77,14 +91,14 @@ public class AttackController : MonoBehaviour
         if (lockUntil > 0f && Time.unscaledTime >= lockUntil)
             ReleaseLock();
 
-        if (attacking && Time.time - attackStartedAt >= attackDuration)
+        if (attacking && Time.time - attackStartedAt >= DurationAt(comboIndex))
             attacking = false;
 
         // Во время удара нажатие не теряется: оно ждёт окна отмены
         // и сразу запускает следующий удар. Это и есть «машу быстро».
         if (attacking)
         {
-            if (Time.time - attackStartedAt >= cancelAfter && movement.ConsumeAttackPress())
+            if (Time.time - attackStartedAt >= CancelAt(comboIndex) && movement.ConsumeAttackPress())
                 StartAttack(NextIndex());
 
             return;
