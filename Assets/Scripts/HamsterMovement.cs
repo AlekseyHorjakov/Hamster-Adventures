@@ -43,6 +43,9 @@ public class HamsterMovement : MonoBehaviour
     // Нажатие атаки запоминаем здесь, а забирает AttackController.
     private bool attackPressed;
 
+    // Пока true, горизонтальную скорость задаёт удар (рывок), а не ввод.
+    private bool externalHorizontalControl;
+
     // Удержание и отпускание нужны заряженному удару: заряд копится, пока
     // кнопка нажата, а сам удар выполняется на отпускании.
     private bool attackHeld;
@@ -188,6 +191,18 @@ public class HamsterMovement : MonoBehaviour
     /// <summary>Держит ли игрок кнопку атаки прямо сейчас.</summary>
     public bool AttackHeld => attackHeld;
 
+    /// <summary>
+    /// Передаёт управление горизонтальной скоростью удару. Пока включено,
+    /// скрипт движения не переписывает скорость и не тянет героя к напарнику.
+    /// </summary>
+    public void SetExternalHorizontalControl(bool enabled)
+    {
+        externalHorizontalControl = enabled;
+
+        if (enabled)
+            moveInput = 0f;
+    }
+
     /// <summary>Возвращает true ровно один раз на каждое отпускание атаки.</summary>
     public bool ConsumeAttackRelease()
     {
@@ -221,6 +236,11 @@ public class HamsterMovement : MonoBehaviour
 
     private void FixedUpdate()
     {
+        // Во время рывка горизонтальную скорость задаёт удар: если трогать её
+        // здесь, движение первым же кадром обнулит рывок.
+        if (externalHorizontalControl)
+            return;
+
         float targetSpeed = moveInput * moveSpeed;
 
         if (partner != null)

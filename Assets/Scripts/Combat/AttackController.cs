@@ -75,11 +75,16 @@ public class AttackController : MonoBehaviour
     [Tooltip("Сколько секунд живёт горящий след")]
     [SerializeField] private float trailLifetime = 2f;
 
+    [Tooltip("Оттенок героя по мере накопления заряда. Временная замена огню, пока нет эффектов")]
+    [SerializeField] private Color chargeTint = new Color(1f, 0.55f, 0.3f, 1f);
+
     [Header("Ссылки")]
     [SerializeField] private HamsterMovement movement;
     [SerializeField] private Hitbox hitbox;
 
     private Animator animator;
+    private SpriteRenderer spriteRenderer;
+    private Color baseColor = Color.white;
     private int comboIndex;
     private bool attacking;
     private bool airAttack;
@@ -155,7 +160,11 @@ public class AttackController : MonoBehaviour
     private void Awake()
     {
         animator = GetComponent<Animator>();
+        spriteRenderer = GetComponentInChildren<SpriteRenderer>();
         lastAttackEnd = -999f;
+
+        if (spriteRenderer != null)
+            baseColor = spriteRenderer.color;
 
         if (movement == null)
             movement = GetComponent<HamsterMovement>();
@@ -187,6 +196,8 @@ public class AttackController : MonoBehaviour
 
             if (!movement.AttackHeld)
                 ReleaseCharge();
+            else
+                UpdateChargeTint();
 
             return;
         }
@@ -259,6 +270,10 @@ public class AttackController : MonoBehaviour
             if (hit.collider.transform.IsChildOf(transform))
                 continue;
 
+            // Врагов рывок пробивает: останавливает его только стена.
+            if (hit.collider.GetComponentInParent<Health>() != null)
+                continue;
+
             return true;
         }
 
@@ -276,11 +291,33 @@ public class AttackController : MonoBehaviour
 
         if (animator != null && !string.IsNullOrEmpty(chargeStateName))
             animator.Play(chargeStateName, 0, 0f);
+
+        UpdateChargeTint();
+    }
+
+    /// <summary>
+    /// Пока огня нет, накопление заряда показывает оттенок героя: игрок должен
+    /// видеть, что кнопка держится и приём готов.
+    /// </summary>
+    private void UpdateChargeTint()
+    {
+        if (spriteRenderer == null || minChargeTime <= 0f)
+            return;
+
+        float progress = Mathf.Clamp01((Time.time - chargeStartedAt) / minChargeTime);
+        spriteRenderer.color = Color.Lerp(baseColor, chargeTint, progress * 0.85f);
+    }
+
+    private void ResetChargeTint()
+    {
+        if (spriteRenderer != null)
+            spriteRenderer.color = baseColor;
     }
 
     private void CancelCharge()
     {
         charging = false;
+        ResetChargeTint();
         movement.SetControlLocked(false);
     }
 
@@ -288,6 +325,7 @@ public class AttackController : MonoBehaviour
     {
         float held = Time.time - chargeStartedAt;
         charging = false;
+        ResetChargeTint();
         movement.SetControlLocked(false);
 
         if (held >= minChargeTime && chargedHit != null)
@@ -322,6 +360,9 @@ public class AttackController : MonoBehaviour
 
         movement.SetControlLocked(true);
 
+        // Движение отдаёт скорость рывку, иначе его гасит ввод.
+        movement.SetExternalHorizontalControl(true);
+
         // Хитбокс ведёт код, а не события анимации: удар активен весь рывок.
         codeDrivenHitbox = true;
 
@@ -333,6 +374,9 @@ public class AttackController : MonoBehaviour
     {
         dashing = false;
         codeDrivenHitbox = false;
+
+        if (movement != null)
+            movement.SetExternalHorizontalControl(false);
 
         if (hitbox != null)
             hitbox.Deactivate();
