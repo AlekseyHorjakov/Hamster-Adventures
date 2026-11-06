@@ -1,25 +1,25 @@
 fileFormatVersion: 2
-guid: 97e5f8d88f7769944a9037cfde21868b
+guid: 84d3a8a404b77d044ba9d32a7dc83956
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 7771807839615548265
-    second: HGRun_0
+      213: -7057760964559304873
+    second: HGRun_v2_0
   - first:
-      213: 3127477479630493000
-    second: HGRun_1
+      213: -6658455521124296842
+    second: HGRun_v2_1
   - first:
-      213: -1684299749952301623
-    second: HGRun_2
+      213: -1796896756861763927
+    second: HGRun_v2_2
   - first:
-      213: -5667420684391240527
-    second: HGRun_3
+      213: 7105262584506796387
+    second: HGRun_v2_3
   - first:
-      213: -8884103432287689026
-    second: HGRun_4
+      213: 103689550456982016
+    second: HGRun_v2_4
   - first:
-      213: 4564688608417496297
-    second: HGRun_5
+      213: -1361606739519237057
+    second: HGRun_v2_5
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -66,7 +66,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 69
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -89,10 +89,10 @@ TextureImporter:
   platformSettings:
   - serializedVersion: 4
     buildTarget: DefaultTexturePlatform
-    maxTextureSize: 2048
+    maxTextureSize: 4096
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -130,133 +130,133 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: HGRun_0
+      name: HGRun_v2_0
       rect:
         serializedVersion: 2
-        x: 55
-        y: 17
-        width: 509
-        height: 671
+        x: 0
+        y: 0
+        width: 372
+        height: 515
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 96b71e6ad020bdb60800000000000000
-      internalID: 7771807839615548265
+      spriteID: 75703dddbcbcd0e90800000000000000
+      internalID: -7057760964559304873
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: HGRun_1
+      name: HGRun_v2_1
       rect:
         serializedVersion: 2
-        x: 614
-        y: 22
-        width: 517
-        height: 674
+        x: 372
+        y: 0
+        width: 372
+        height: 515
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 845d8689238076b20800000000000000
-      internalID: 3127477479630493000
+      spriteID: 677d5a64bf96893a0800000000000000
+      internalID: -6658455521124296842
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: HGRun_2
+      name: HGRun_v2_2
       rect:
         serializedVersion: 2
-        x: 1177
-        y: 15
-        width: 532
-        height: 682
+        x: 744
+        y: 0
+        width: 372
+        height: 515
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 9c550dc1d4a20a8e0800000000000000
-      internalID: -1684299749952301623
+      spriteID: 9aef3358be32017e0800000000000000
+      internalID: -1796896756861763927
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: HGRun_3
+      name: HGRun_v2_3
       rect:
         serializedVersion: 2
-        x: 1752
-        y: 17
-        width: 539
-        height: 679
+        x: 1116
+        y: 0
+        width: 372
+        height: 515
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 1bca8223ae64951b0800000000000000
-      internalID: -5667420684391240527
+      spriteID: 369c661eca6fa9260800000000000000
+      internalID: 7105262584506796387
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: HGRun_4
+      name: HGRun_v2_4
       rect:
         serializedVersion: 2
-        x: 2348
-        y: 15
-        width: 520
-        height: 677
+        x: 1488
+        y: 0
+        width: 372
+        height: 515
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: eb6e9a29ff255b480800000000000000
-      internalID: -8884103432287689026
+      spriteID: 00a88e5c811607100800000000000000
+      internalID: 103689550456982016
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: HGRun_5
+      name: HGRun_v2_5
       rect:
         serializedVersion: 2
-        x: 2912
-        y: 18
-        width: 535
-        height: 669
+        x: 1860
+        y: 0
+        width: 372
+        height: 515
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 9ec3ff6ca18095f30800000000000000
-      internalID: 4564688608417496297
+      spriteID: f349d2f62e99a1de0800000000000000
+      internalID: -1361606739519237057
       vertices: []
       indices: 
       edges: []
@@ -275,12 +275,12 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      HGRun_0: 7771807839615548265
-      HGRun_1: 3127477479630493000
-      HGRun_2: -1684299749952301623
-      HGRun_3: -5667420684391240527
-      HGRun_4: -8884103432287689026
-      HGRun_5: 4564688608417496297
+      HGRun_v2_0: -7057760964559304873
+      HGRun_v2_1: -6658455521124296842
+      HGRun_v2_2: -1796896756861763927
+      HGRun_v2_3: 7105262584506796387
+      HGRun_v2_4: 103689550456982016
+      HGRun_v2_5: -1361606739519237057
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
