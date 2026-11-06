@@ -10,6 +10,18 @@ public class HitStop : MonoBehaviour
 
     private float remaining;
 
+    /// <summary>
+    /// В проекте отключена перезагрузка домена при входе в Play Mode,
+    /// поэтому Time.timeScale может пережить выход из игры и остаться нулём.
+    /// Сбрасываем его принудительно на каждом запуске.
+    /// </summary>
+    [RuntimeInitializeOnLoadMethod(RuntimeInitializeLoadType.BeforeSceneLoad)]
+    private static void ResetTimeOnStart()
+    {
+        Time.timeScale = 1f;
+        instance = null;
+    }
+
     public static void Play(float duration)
     {
         if (duration <= 0f)
@@ -40,8 +52,19 @@ public class HitStop : MonoBehaviour
         }
     }
 
+    private void OnDisable()
+    {
+        // Если игру остановили во время заморозки — вернуть время,
+        // иначе следующий запуск начнётся в замершем состоянии.
+        remaining = 0f;
+        Time.timeScale = 1f;
+    }
+
     private void OnDestroy()
     {
+        if (instance == this)
+            instance = null;
+
         Time.timeScale = 1f;
     }
 }

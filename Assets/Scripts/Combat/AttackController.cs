@@ -31,9 +31,18 @@ public class AttackController : MonoBehaviour
     private bool attacking;
     private bool queued;
     private float comboResetAt;
+    private float lockUntil;
     private HitData currentHit;
 
     private static readonly int AttackHash = Animator.StringToHash("Attack");
+
+    private void ReleaseLock()
+    {
+        lockUntil = 0f;
+
+        if (movement != null)
+            movement.SetControlLocked(false);
+    }
 
     /// <summary>
     /// Настройка связей из кода (используется сборкой проекта и тестами).
@@ -58,6 +67,11 @@ public class AttackController : MonoBehaviour
     {
         if (movement == null)
             return;
+
+        // Страховка: управление не может остаться заблокированным навсегда,
+        // даже если корутина прервалась или время было остановлено.
+        if (lockUntil > 0f && Time.unscaledTime >= lockUntil)
+            ReleaseLock();
 
         bool pressed = movement.ConsumeAttackPress();
 
@@ -86,13 +100,14 @@ public class AttackController : MonoBehaviour
 
         // Блокировка движения и короткий шаг вперёд — стандарт битемапа.
         movement.SetControlLocked(true);
+        lockUntil = Time.unscaledTime + movementLock;
         int facing = movement.Facing;
         if (movement.Body != null)
             movement.Body.linearVelocity = new Vector2(facing * stepSpeed, movement.Body.linearVelocity.y);
 
         yield return new WaitForSeconds(movementLock);
 
-        movement.SetControlLocked(false);
+        ReleaseLock();
 
         // Если игрок нажал ещё раз во время удара — продолжаем комбо.
         if (queued && index + 1 < comboHits.Length)
