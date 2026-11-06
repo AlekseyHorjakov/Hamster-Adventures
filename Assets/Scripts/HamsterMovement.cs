@@ -139,6 +139,15 @@ public class HamsterMovement : MonoBehaviour
     /// <summary>Куда смотрит герой: 1 — вправо, -1 — влево.</summary>
     public int Facing => spriteRenderer != null && spriteRenderer.flipX ? -1 : 1;
 
+    /// <summary>Текущий ввод по горизонтали. Только для диагностики.</summary>
+    public float MoveInput => moveInput;
+
+    /// <summary>Заблокировано ли управление ударом. Только для диагностики.</summary>
+    public bool ControlLocked => controlLocked;
+
+    /// <summary>Стоит ли герой на земле. Только для диагностики.</summary>
+    public bool Grounded => isGrounded;
+
     /// <summary>Физическое тело — нужно удару для шага вперёд.</summary>
     public Rigidbody2D Body => rb;
 
