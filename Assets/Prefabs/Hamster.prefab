@@ -300,6 +300,9 @@ MonoBehaviour:
   - 1.5
   - 1.5
   - 4
+  airHit: {fileID: 11400000, guid: 4a363cc3e1a30fd4a883512cc28add9d, type: 2}
+  airStateName: JumpKick
+  airDuration: 0.3
   movement: {fileID: 4868555397632928063}
   hitbox: {fileID: 9185819292231602203}
 --- !u!1 &9088040696783955624

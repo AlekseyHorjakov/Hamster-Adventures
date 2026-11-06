@@ -31,6 +31,16 @@ public class AttackController : MonoBehaviour
     [Tooltip("Скорость шага вперёд на каждый удар: у финишёра шаг заметнее")]
     [SerializeField] private float[] stepSpeeds = { 1.5f, 1.5f, 4f };
 
+    [Header("Удар в прыжке")]
+    [Tooltip("Параметры удара в воздухе")]
+    [SerializeField] private HitData airHit;
+
+    [Tooltip("Состояние Animator для удара в воздухе")]
+    [SerializeField] private string airStateName = "JumpKick";
+
+    [Tooltip("Длительность удара в воздухе")]
+    [SerializeField] private float airDuration = 0.3f;
+
     [Header("Ссылки")]
     [SerializeField] private HamsterMovement movement;
     [SerializeField] private Hitbox hitbox;
@@ -38,6 +48,8 @@ public class AttackController : MonoBehaviour
     private Animator animator;
     private int comboIndex;
     private bool attacking;
+    private bool airAttack;
+    private bool airAttackUsed;
     private float attackStartedAt;
     private float lastAttackEnd;
     private float lockUntil;
@@ -49,6 +61,13 @@ public class AttackController : MonoBehaviour
         hitbox = hitboxRef;
         comboHits = hits;
         attackStates = states;
+    }
+
+    /// <summary>Настройка удара в воздухе.</summary>
+    public void ConfigureAir(string stateName, HitData hit)
+    {
+        airStateName = stateName;
+        airHit = hit;
     }
 
     /// <summary>Тайминги удара — выносятся в конфигурацию, чтобы править их из сборки.</summary>
@@ -92,30 +111,64 @@ public class AttackController : MonoBehaviour
     }
 
     private void Update()
-    {        if (movement == null)
+    {
+        if (movement == null)
             return;
+
+        if (movement.Grounded)
+            airAttackUsed = false;
 
         if (lockUntil > 0f && Time.unscaledTime >= lockUntil)
             ReleaseLock();
 
-        if (attacking && Time.time - attackStartedAt >= DurationAt(comboIndex))
-            attacking = false;
-
-        // Во время удара нажатие не теряется: оно ждёт окна отмены
-        // и сразу запускает следующий удар. Это и есть «машу быстро».
         if (attacking)
         {
-            if (Time.time - attackStartedAt >= CancelAt(comboIndex) && movement.ConsumeAttackPress())
+            float duration = airAttack ? airDuration : DurationAt(comboIndex);
+
+            if (Time.time - attackStartedAt >= duration)
+            {
+                attacking = false;
+                airAttack = false;
+                lastAttackEnd = Time.time;
+            }
+
+            // Наземное комбо можно прервать следующим ударом, воздушное — нет.
+            if (attacking && !airAttack &&
+                Time.time - attackStartedAt >= CancelAt(comboIndex) &&
+                movement.ConsumeAttackPress())
+            {
                 StartAttack(NextIndex());
+            }
 
             return;
         }
 
-        if (movement.ConsumeAttackPress())
+        if (!movement.ConsumeAttackPress())
+            return;
+
+        if (!movement.Grounded)
         {
-            bool chainExpired = Time.time - lastAttackEnd > comboResetTime;
-            StartAttack(chainExpired ? 0 : NextIndex());
+            if (!airAttackUsed)
+                StartAirAttack();
+
+            return;
         }
+
+        bool chainExpired = Time.time - lastAttackEnd > comboResetTime;
+        StartAttack(chainExpired ? 0 : NextIndex());
+    }
+
+    private void StartAirAttack()
+    {
+        airAttack = true;
+        airAttackUsed = true;
+        attacking = true;
+        currentHit = airHit;
+        attackStartedAt = Time.time;
+
+        animator.Play(airStateName, 0, 0f);
+
+        // В воздухе управление не блокируем: прыжок остаётся управляемым.
     }
 
     private void StartAttack(int index)
