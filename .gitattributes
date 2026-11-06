@@ -1,0 +1,24 @@
+# Unity-файлы — обычный текст, чтобы Git показывал построчные диффы
+*.unity      text
+*.prefab     text
+*.asset      text
+*.meta       text
+*.anim       text
+*.controller text
+*.mat        text
+*.physicMaterial text
+*.inputactions text
+
+# Исходники графики и аудио — в Git LFS.
+# PNG намеренно остаются в обычном Git: файлы небольшие, а LFS-квота
+# на бесплатном GitHub ограничена (1 ГБ хранилища и трафика в месяц).
+*.psd      filter=lfs diff=lfs merge=lfs -text
+*.psb      filter=lfs diff=lfs merge=lfs -text
+*.kra      filter=lfs diff=lfs merge=lfs -text
+*.aseprite filter=lfs diff=lfs merge=lfs -text
+*.ase      filter=lfs diff=lfs merge=lfs -text
+*.wav      filter=lfs diff=lfs merge=lfs -text
+*.mp3      filter=lfs diff=lfs merge=lfs -text
+*.ogg      filter=lfs diff=lfs merge=lfs -text
+*.flac     filter=lfs diff=lfs merge=lfs -text
+*.mp4      filter=lfs diff=lfs merge=lfs -text

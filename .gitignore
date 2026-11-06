@@ -1,0 +1,60 @@
+# -----------------------------------------------------------------
+# Hamster Adventures — Unity .gitignore
+# Игнорируются только генерируемые Unity/IDE файлы.
+# Всё, что лежит в Assets/, Packages/ и ProjectSettings/, — в репозитории.
+# -----------------------------------------------------------------
+
+# Служебные папки Unity (пересоздаются автоматически)
+[Ll]ibrary/
+[Tt]emp/
+[Oo]bj/
+[Bb]uild/
+[Bb]uilds/
+[Ll]ogs/
+[Uu]ser[Ss]ettings/
+[Mm]emoryCaptures/
+[Rr]ecordings/
+
+# Автогенерируемые файлы решений и проектов IDE
+*.csproj
+*.unityproj
+*.sln
+*.slnx
+*.suo
+*.tmp
+*.user
+*.userprefs
+*.pidb
+*.booproj
+*.svd
+*.pdb
+*.mdb
+*.opendb
+*.VC.db
+
+# Кэш и настройки IDE
+.vs/
+.idea/
+.vscode/settings.json.bak
+*.pidb.meta
+*.pdb.meta
+*.mdb.meta
+
+# Отчёты о падениях
+sysinfo.txt
+crashlytics-build.properties
+
+# Собранные пакеты и артефакты
+*.apk
+*.aab
+*.unitypackage
+*.app
+
+# Данные Addressables, если появятся
+/[Aa]ssets/[Aa]ddressable[Aa]ssets[Dd]ata/*/*.bin*
+/[Aa]ssets/[Ss]treamingAssets/aa.meta
+/[Aa]ssets/[Ss]treamingAssets/aa/*
+
+# Локальные логи проверок сборки
+compile-check.log
+build.log
