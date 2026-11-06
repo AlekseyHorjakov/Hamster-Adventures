@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: HitData_Light1
   m_EditorClassIdentifier: Assembly-CSharp::HitData
   damage: 8
-  knockback: 4
+  knockback: 0
   hitStop: 0.05
-  hitStun: 0.18
+  hitStun: 0.2
   launchVelocity: {x: 0, y: 0}
   hitboxSize: {x: 1.9, y: 1.5}
   hitboxOffset: {x: 1.4, y: 0}

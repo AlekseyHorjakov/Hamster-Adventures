@@ -29,7 +29,7 @@ public class Dummy : MonoBehaviour
             {
                 frictionMaterial = new PhysicsMaterial2D("DummyFriction")
                 {
-                    friction = 1.2f,
+                    friction = 2f,
                     bounciness = 0f
                 };
             }
@@ -51,8 +51,8 @@ public class Dummy : MonoBehaviour
 
         if (rigidbody2D != null)
         {
-            rigidbody2D.mass = 2.5f;
-            rigidbody2D.linearDamping = 1.5f;
+            rigidbody2D.mass = 6f;
+            rigidbody2D.linearDamping = 0.5f;
         }
     }
 

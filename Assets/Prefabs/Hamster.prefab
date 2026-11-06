@@ -296,7 +296,10 @@ MonoBehaviour:
   - 0.14
   movementLock: 0.14
   comboResetTime: 0.45
-  stepSpeed: 4
+  stepSpeeds:
+  - 1.5
+  - 1.5
+  - 4
   movement: {fileID: 4868555397632928063}
   hitbox: {fileID: 9185819292231602203}
 --- !u!1 &9088040696783955624

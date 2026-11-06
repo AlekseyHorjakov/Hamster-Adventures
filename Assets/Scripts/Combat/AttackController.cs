@@ -28,8 +28,8 @@ public class AttackController : MonoBehaviour
     [Tooltip("Через сколько секунд после удара комбо сбрасывается на первый удар")]
     [SerializeField] private float comboResetTime = 0.45f;
 
-    [Tooltip("Скорость шага вперёд в начале удара")]
-    [SerializeField] private float stepSpeed = 4f;
+    [Tooltip("Скорость шага вперёд на каждый удар: у финишёра шаг заметнее")]
+    [SerializeField] private float[] stepSpeeds = { 1.5f, 1.5f, 4f };
 
     [Header("Ссылки")]
     [SerializeField] private HamsterMovement movement;
@@ -52,10 +52,11 @@ public class AttackController : MonoBehaviour
     }
 
     /// <summary>Тайминги удара — выносятся в конфигурацию, чтобы править их из сборки.</summary>
-    public void ConfigureTimings(float[] durations, float[] cancels, float lockTime, float resetTime)
+    public void ConfigureTimings(float[] durations, float[] cancels, float[] steps, float lockTime, float resetTime)
     {
         attackDurations = durations;
         cancelTimes = cancels;
+        stepSpeeds = steps;
         movementLock = lockTime;
         comboResetTime = resetTime;
     }
@@ -74,6 +75,13 @@ public class AttackController : MonoBehaviour
             : 0.10f;
     }
 
+    private float StepAt(int index)
+    {
+        return stepSpeeds != null && stepSpeeds.Length > 0
+            ? stepSpeeds[Mathf.Min(index, stepSpeeds.Length - 1)]
+            : 4f;
+    }
+
     private void Awake()
     {
         animator = GetComponent<Animator>();
@@ -84,8 +92,7 @@ public class AttackController : MonoBehaviour
     }
 
     private void Update()
-    {
-        if (movement == null)
+    {        if (movement == null)
             return;
 
         if (lockUntil > 0f && Time.unscaledTime >= lockUntil)
@@ -132,7 +139,8 @@ public class AttackController : MonoBehaviour
         if (movement.Body != null)
         {
             int facing = movement.Facing;
-            movement.Body.linearVelocity = new Vector2(facing * stepSpeed, movement.Body.linearVelocity.y);
+            float step = StepAt(index);
+            movement.Body.linearVelocity = new Vector2(facing * step, movement.Body.linearVelocity.y);
         }
     }
 

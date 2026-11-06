@@ -117,8 +117,14 @@ public class HitReaction : MonoBehaviour
     {
         launched = true;
 
+        // В полёте затухание выключено, иначе цель пролетает слишком мало.
+        float originalDamping = body != null ? body.linearDamping : 0f;
+
         if (body != null)
+        {
+            body.linearDamping = 0f;
             body.linearVelocity = velocity;
+        }
 
         float timer = 0f;
 
@@ -138,7 +144,10 @@ public class HitReaction : MonoBehaviour
 
         // Гасим скорость на приземлении, чтобы цель не катилась по земле.
         if (body != null)
+        {
             body.linearVelocity = Vector2.zero;
+            body.linearDamping = originalDamping;
+        }
 
         // Лежит на земле, потом встаёт.
         if (visual != null)
