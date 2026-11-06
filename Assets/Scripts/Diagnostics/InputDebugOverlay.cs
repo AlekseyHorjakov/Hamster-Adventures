@@ -78,6 +78,11 @@ public class InputDebugOverlay : MonoBehaviour
             : "есть, enabled=" + keyboard.enabled + ", added=" + keyboard.added));
         sb.AppendLine("updateMode: " + InputSystem.settings.updateMode);
 
+#if UNITY_EDITOR
+        var focused = UnityEditor.EditorWindow.focusedWindow;
+        sb.AppendLine("фокус редактора: " + (focused != null ? focused.titleContent.text : "нет"));
+#endif
+
         if (keyboard != null)
         {
             sb.AppendLine("A=" + keyboard[Key.A].isPressed + " D=" + keyboard[Key.D].isPressed +
