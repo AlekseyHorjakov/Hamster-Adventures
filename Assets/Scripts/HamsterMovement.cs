@@ -37,6 +37,12 @@ public class HamsterMovement : MonoBehaviour
     private int jumpsRemaining;
     private bool isGrounded;
 
+    // Блокировка управления на время удара — её ставит AttackController.
+    private bool controlLocked;
+
+    // Нажатие атаки запоминаем здесь, а забирает AttackController.
+    private bool attackPressed;
+
     private static readonly int IsMovingHash =
         Animator.StringToHash("IsMoving");
 
@@ -45,9 +51,6 @@ public class HamsterMovement : MonoBehaviour
 
     private static readonly int IsJumpingHash =
         Animator.StringToHash("IsJumping");
-
-    private static readonly int AttackHash =
-        Animator.StringToHash("Attack");
 
     private void Awake()
     {
@@ -76,6 +79,9 @@ public class HamsterMovement : MonoBehaviour
     private void ReadMovementInput()
     {
         moveInput = 0f;
+
+        if (controlLocked)
+            return;
 
         if (Keyboard.current != null)
         {
@@ -123,13 +129,36 @@ public class HamsterMovement : MonoBehaviour
 
     private void ReadAttackInput()
     {
-        if (Keyboard.current == null || animator == null)
+        if (Keyboard.current == null)
             return;
 
         if (Keyboard.current[attackKey].wasPressedThisFrame)
-        {
-            animator.SetTrigger(AttackHash);
-        }
+            attackPressed = true;
+    }
+
+    /// <summary>Куда смотрит герой: 1 — вправо, -1 — влево.</summary>
+    public int Facing => spriteRenderer != null && spriteRenderer.flipX ? -1 : 1;
+
+    /// <summary>Физическое тело — нужно удару для шага вперёд.</summary>
+    public Rigidbody2D Body => rb;
+
+    /// <summary>Запрещает или разрешает движение (используется во время удара).</summary>
+    public void SetControlLocked(bool locked)
+    {
+        controlLocked = locked;
+
+        if (locked)
+            moveInput = 0f;
+    }
+
+    /// <summary>Возвращает true ровно один раз на каждое нажатие атаки.</summary>
+    public bool ConsumeAttackPress()
+    {
+        if (!attackPressed)
+            return false;
+
+        attackPressed = false;
+        return true;
     }
 
     private void UpdateAnimation()

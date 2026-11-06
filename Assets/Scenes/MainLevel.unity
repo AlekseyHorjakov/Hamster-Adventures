@@ -119,6 +119,53 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &135087309
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 135087310}
+  - component: {fileID: 135087311}
+  m_Layer: 0
+  m_Name: Hitbox
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &135087310
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 135087309}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1304686438}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &135087311
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 135087309}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ab8c6f557c134a04682f46960cb75822, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Hitbox
+  targetMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
 --- !u!1 &272637775
 GameObject:
   m_ObjectHideFlags: 0
@@ -435,6 +482,7 @@ MonoBehaviour:
   zoomPadding: 1.5
   zoomSmoothTime: 0.3
   moveSmoothTime: 0.15
+  maxShakeOffset: 0.3
 --- !u!1 &619394800
 GameObject:
   m_ObjectHideFlags: 0
@@ -962,6 +1010,8 @@ GameObject:
   - component: {fileID: 1304686439}
   - component: {fileID: 1304686440}
   - component: {fileID: 1304686441}
+  - component: {fileID: 1304686443}
+  - component: {fileID: 1304686442}
   m_Layer: 3
   m_Name: Hamster
   m_TagString: Untagged
@@ -1010,6 +1060,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 846130174}
+  - {fileID: 135087310}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &1304686439
@@ -1104,6 +1155,43 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &1304686442
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1304686434}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 66914db8cfbaf5447a69a0f55daee7f7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::AttackController
+  comboHits:
+  - {fileID: 11400000, guid: 959add4ef89537d49bcc2e747d08d355, type: 2}
+  - {fileID: 11400000, guid: ad11dc4fd3b164b45a290c4a194d67c6, type: 2}
+  - {fileID: 11400000, guid: 00a5d6d525830a844b35f5cb4a63f52d, type: 2}
+  movementLock: 0.22
+  stepSpeed: 4
+  comboResetTime: 0.6
+  movement: {fileID: 1304686440}
+  hitbox: {fileID: 135087311}
+--- !u!114 &1304686443
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1304686434}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 82341ceb6a6eb4e4d8ad87dedf019352, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Health
+  maxHealth: 100
+  applyKnockback: 1
+  invulnerabilityAfterHit: 0
+  logDamage: 0
 --- !u!1 &1404067617
 GameObject:
   m_ObjectHideFlags: 0
@@ -1368,6 +1456,8 @@ GameObject:
   - component: {fileID: 1681151456}
   - component: {fileID: 1681151455}
   - component: {fileID: 1681151460}
+  - component: {fileID: 1681151462}
+  - component: {fileID: 1681151461}
   m_Layer: 3
   m_Name: HamsterGirl
   m_TagString: Untagged
@@ -1486,6 +1576,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1661395631}
+  - {fileID: 2010100883}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!95 &1681151460
@@ -1510,6 +1601,43 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &1681151461
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1681151453}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 66914db8cfbaf5447a69a0f55daee7f7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::AttackController
+  comboHits:
+  - {fileID: 11400000, guid: 959add4ef89537d49bcc2e747d08d355, type: 2}
+  - {fileID: 11400000, guid: ad11dc4fd3b164b45a290c4a194d67c6, type: 2}
+  - {fileID: 11400000, guid: 00a5d6d525830a844b35f5cb4a63f52d, type: 2}
+  movementLock: 0.22
+  stepSpeed: 4
+  comboResetTime: 0.6
+  movement: {fileID: 1681151455}
+  hitbox: {fileID: 2010100882}
+--- !u!114 &1681151462
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1681151453}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 82341ceb6a6eb4e4d8ad87dedf019352, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Health
+  maxHealth: 100
+  applyKnockback: 1
+  invulnerabilityAfterHit: 0
+  logDamage: 0
 --- !u!1 &1932506323
 GameObject:
   m_ObjectHideFlags: 0
@@ -1669,6 +1797,53 @@ PlatformEffector2D:
   m_UseSideFriction: 0
   m_UseSideBounce: 0
   m_SideArc: 1
+--- !u!1 &2010100881
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2010100883}
+  - component: {fileID: 2010100882}
+  m_Layer: 0
+  m_Name: Hitbox
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &2010100882
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2010100881}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ab8c6f557c134a04682f46960cb75822, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Hitbox
+  targetMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+--- !u!4 &2010100883
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2010100881}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1681151459}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2087666512
 GameObject:
   m_ObjectHideFlags: 0

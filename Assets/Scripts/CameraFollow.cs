@@ -1,4 +1,3 @@
-
 using UnityEngine;
 
 [RequireComponent(typeof(Camera))]
@@ -17,15 +16,48 @@ public class CameraFollow : MonoBehaviour
     [Header("Camera Movement")]
     [SerializeField] private float moveSmoothTime = 0.15f;
 
+    [Header("Shake")]
+    [Tooltip("Максимальное смещение камеры при тряске, в юнитах")]
+    [SerializeField] private float maxShakeOffset = 0.3f;
+
     private Camera cam;
     private float zoomVelocity;
     private Vector3 moveVelocity;
 
+    // Сглаженная позиция без тряски: тряска добавляется поверх,
+    // чтобы не сбивать следование за игроками.
+    private Vector3 smoothedPosition;
+
+    private float shakeTime;
+    private float shakeDuration;
+    private float shakeStrength;
+
     public float MaxSize => maxSize;
+
+    private static CameraFollow instance;
 
     private void Awake()
     {
         cam = GetComponent<Camera>();
+        instance = this;
+        smoothedPosition = transform.position;
+    }
+
+    private void OnDestroy()
+    {
+        if (instance == this)
+            instance = null;
+    }
+
+    /// <summary>Тряска камеры. strength — 0..1, duration — секунды.</summary>
+    public static void Shake(float strength, float duration)
+    {
+        if (instance == null || duration <= 0f)
+            return;
+
+        instance.shakeStrength = Mathf.Max(instance.shakeStrength, Mathf.Clamp01(strength));
+        instance.shakeDuration = Mathf.Max(instance.shakeDuration, duration);
+        instance.shakeTime = Mathf.Max(instance.shakeTime, duration);
     }
 
     private void LateUpdate()
@@ -41,8 +73,8 @@ public class CameraFollow : MonoBehaviour
             transform.position.z
         );
 
-        transform.position = Vector3.SmoothDamp(
-            transform.position,
+        smoothedPosition = Vector3.SmoothDamp(
+            smoothedPosition,
             targetPosition,
             ref moveVelocity,
             moveSmoothTime
@@ -66,5 +98,26 @@ public class CameraFollow : MonoBehaviour
             ref zoomVelocity,
             zoomSmoothTime
         );
+
+        Vector3 offset = Vector3.zero;
+
+        if (shakeTime > 0f)
+        {
+            // Тряска живёт на неигровом времени, поэтому видна и во время hitstop.
+            shakeTime -= Time.unscaledDeltaTime;
+            float progress = shakeDuration > 0f ? Mathf.Clamp01(shakeTime / shakeDuration) : 0f;
+            float amplitude = maxShakeOffset * shakeStrength * progress;
+
+            offset = new Vector3(
+                Random.Range(-amplitude, amplitude),
+                Random.Range(-amplitude, amplitude),
+                0f
+            );
+
+            if (shakeTime <= 0f)
+                shakeStrength = 0f;
+        }
+
+        transform.position = smoothedPosition + offset;
     }
 }
