@@ -10,12 +10,15 @@ public class Dummy : MonoBehaviour
 {
     [SerializeField] private float respawnDelay = 3f;
     [SerializeField] private Color hitFlashColor = Color.white;
-    [SerializeField] private float flashDuration = 0.08f;
+    [SerializeField] private float flashDuration = 0.14f;
+    [Tooltip("Насколько манекен раздувается от удара")]
+    [SerializeField] private float hitScale = 1.09f;
 
     private Health health;
     private SpriteRenderer sprite;
     private Collider2D body;
     private Color baseColor;
+    private Vector3 baseScale;
     private Coroutine flash;
 
     private void Awake()
@@ -23,6 +26,7 @@ public class Dummy : MonoBehaviour
         health = GetComponent<Health>();
         sprite = GetComponentInChildren<SpriteRenderer>();
         body = GetComponent<Collider2D>();
+        baseScale = transform.localScale;
 
         if (sprite != null)
             baseColor = sprite.color;
@@ -54,8 +58,12 @@ public class Dummy : MonoBehaviour
     private IEnumerator Flash()
     {
         sprite.color = hitFlashColor;
+        transform.localScale = baseScale * hitScale;
+
         yield return new WaitForSeconds(flashDuration);
+
         sprite.color = baseColor;
+        transform.localScale = baseScale;
         flash = null;
     }
 

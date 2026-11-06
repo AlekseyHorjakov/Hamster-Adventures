@@ -282,9 +282,12 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 959add4ef89537d49bcc2e747d08d355, type: 2}
   - {fileID: 11400000, guid: ad11dc4fd3b164b45a290c4a194d67c6, type: 2}
   - {fileID: 11400000, guid: 00a5d6d525830a844b35f5cb4a63f52d, type: 2}
-  movementLock: 0.22
+  attackStateName: FastPunch
+  attackDuration: 0.25
+  movementLock: 0.14
+  cancelAfter: 0.1
+  comboResetTime: 0.45
   stepSpeed: 4
-  comboResetTime: 0.6
   movement: {fileID: 4868555397632928063}
   hitbox: {fileID: 9185819292231602203}
 --- !u!1 &9088040696783955624

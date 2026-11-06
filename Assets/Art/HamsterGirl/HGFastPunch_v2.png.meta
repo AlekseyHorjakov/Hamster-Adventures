@@ -1,25 +1,25 @@
 fileFormatVersion: 2
-guid: fa29ed7bf950aaf4fb9b26c21ac1e82c
+guid: c5b2569305de05d46904ce7945e1b9d5
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 8020143640844766479
-    second: spritesheet_0
+      213: 3111182387933237707
+    second: HGFastPunch_v2_0
   - first:
-      213: -6251682230944352461
-    second: spritesheet_1
+      213: 4399975530416211077
+    second: HGFastPunch_v2_1
   - first:
-      213: -1259408508766424310
-    second: spritesheet_2
+      213: 1335645216930313105
+    second: HGFastPunch_v2_2
   - first:
-      213: -5962389079421231736
-    second: spritesheet_3
+      213: 624437980500140530
+    second: HGFastPunch_v2_3
   - first:
-      213: 2788568348960109317
-    second: spritesheet_4
+      213: 1143810252413726390
+    second: HGFastPunch_v2_4
   - first:
-      213: 226702753830753226
-    second: spritesheet_5
+      213: -8037896879284103542
+    second: HGFastPunch_v2_5
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -66,7 +66,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 95
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -89,10 +89,10 @@ TextureImporter:
   platformSettings:
   - serializedVersion: 4
     buildTarget: DefaultTexturePlatform
-    maxTextureSize: 2048
+    maxTextureSize: 8192
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -130,133 +130,133 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: spritesheet_0
+      name: HGFastPunch_v2_0
       rect:
         serializedVersion: 2
-        x: 11
-        y: 11
-        width: 580
-        height: 641
+        x: 0
+        y: 0
+        width: 729
+        height: 697
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: f0d092816264d4f60800000000000000
-      internalID: 8020143640844766479
+      spriteID: bc15638e5e32d2b20800000000000000
+      internalID: 3111182387933237707
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: spritesheet_1
+      name: HGFastPunch_v2_1
       rect:
         serializedVersion: 2
-        x: 625
-        y: 11
-        width: 594
-        height: 639
+        x: 729
+        y: 0
+        width: 729
+        height: 697
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 337b0ff32209d39a0800000000000000
-      internalID: -6251682230944352461
+      spriteID: 5848edece6adf0d30800000000000000
+      internalID: 4399975530416211077
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: spritesheet_2
+      name: HGFastPunch_v2_2
       rect:
         serializedVersion: 2
-        x: 1253
-        y: 11
-        width: 667
-        height: 639
+        x: 1458
+        y: 0
+        width: 729
+        height: 697
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: a037fd742aea58ee0800000000000000
-      internalID: -1259408508766424310
+      spriteID: 193b41d8f3a298210800000000000000
+      internalID: 1335645216930313105
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: spritesheet_3
+      name: HGFastPunch_v2_3
       rect:
         serializedVersion: 2
-        x: 1954
-        y: 11
-        width: 695
-        height: 636
+        x: 2187
+        y: 0
+        width: 729
+        height: 697
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 88ddd6ce8b6514da0800000000000000
-      internalID: -5962389079421231736
+      spriteID: 2f129fbe8037aa800800000000000000
+      internalID: 624437980500140530
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: spritesheet_4
+      name: HGFastPunch_v2_4
       rect:
         serializedVersion: 2
-        x: 2683
-        y: 11
-        width: 599
-        height: 639
+        x: 2916
+        y: 0
+        width: 729
+        height: 697
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 5033aaf832cf2b620800000000000000
-      internalID: 2788568348960109317
+      spriteID: 6bee1994d51afdf00800000000000000
+      internalID: 1143810252413726390
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: spritesheet_5
+      name: HGFastPunch_v2_5
       rect:
         serializedVersion: 2
-        x: 3316
-        y: 11
-        width: 552
-        height: 641
+        x: 3645
+        y: 0
+        width: 729
+        height: 697
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: ac35fa714f8652300800000000000000
-      internalID: 226702753830753226
+      spriteID: a86dc09ff57a37090800000000000000
+      internalID: -8037896879284103542
       vertices: []
       indices: 
       edges: []
@@ -275,12 +275,12 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      spritesheet_0: 8020143640844766479
-      spritesheet_1: -6251682230944352461
-      spritesheet_2: -1259408508766424310
-      spritesheet_3: -5962389079421231736
-      spritesheet_4: 2788568348960109317
-      spritesheet_5: 226702753830753226
+      HGFastPunch_v2_0: 3111182387933237707
+      HGFastPunch_v2_1: 4399975530416211077
+      HGFastPunch_v2_2: 1335645216930313105
+      HGFastPunch_v2_3: 624437980500140530
+      HGFastPunch_v2_4: 1143810252413726390
+      HGFastPunch_v2_5: -8037896879284103542
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

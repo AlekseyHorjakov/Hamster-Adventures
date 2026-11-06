@@ -154,7 +154,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Dummy
   respawnDelay: 3
   hitFlashColor: {r: 1, g: 1, b: 1, a: 1}
-  flashDuration: 0.08
+  flashDuration: 0.14
+  hitScale: 1.09
 --- !u!114 &322078888
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -817,7 +818,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Dummy
   respawnDelay: 3
   hitFlashColor: {r: 1, g: 1, b: 1, a: 1}
-  flashDuration: 0.08
+  flashDuration: 0.14
+  hitScale: 1.09
 --- !u!114 &1747520748
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1079,7 +1081,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Dummy
   respawnDelay: 3
   hitFlashColor: {r: 1, g: 1, b: 1, a: 1}
-  flashDuration: 0.08
+  flashDuration: 0.14
+  hitScale: 1.09
 --- !u!114 &1897561053
 MonoBehaviour:
   m_ObjectHideFlags: 0

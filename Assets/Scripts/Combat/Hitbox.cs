@@ -62,7 +62,7 @@ public class Hitbox : MonoBehaviour
             });
 
             HitStop.Play(data.hitStop);
-            CameraFollow.Shake(0.12f, 0.12f);
+            CameraFollow.Shake(0.2f, 0.16f);
         }
     }
 
