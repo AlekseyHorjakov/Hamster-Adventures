@@ -119,10 +119,6 @@ public class HealthHud : MonoBehaviour
         container.anchoredPosition = new Vector2(right ? -SideMargin : SideMargin, -TopMargin);
         container.sizeDelta = new Vector2(width, PlateHeight);
 
-        // Плашка Хомячихи зеркалится, чтобы портрет смотрел в центр экрана.
-        if (right)
-            container.localScale = new Vector3(-1f, 1f, 1f);
-
         Rect healthRect = prefix == "Hamster" ? HamsterHealthRect : GirlHealthRect;
         Rect superRect = prefix == "Hamster" ? HamsterSuperRect : GirlSuperRect;
 
