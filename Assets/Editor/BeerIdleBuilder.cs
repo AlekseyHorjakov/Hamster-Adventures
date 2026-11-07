@@ -7,9 +7,9 @@ using UnityEngine;
 /// Особое бездействие Хомяка: достаёт бутылку, открывает, затем цикл —
 /// пьёт, рыгает, повторяет.
 ///
-/// Вступление: кадры 1–4, по 0,12 с, один раз.
-/// Цикл: кадры 5–9; кадр с зелёной отрыжкой держится 1 секунду, затем
-/// последний кадр и повтор.
+/// Вступление: кадры 1–4, по 0,25 с, один раз.
+/// Цикл: кадры 5–9 по 0,25 с; последний кадр «рыгнул и стоит довольный»
+/// держится 1,2 секунды, затем повтор.
 ///
 /// Запуск: Tools/Hamster/Build Hamster Beer Idle или
 /// Unity.exe -batchmode -quit -executeMethod BeerIdleBuilder.BuildAll
@@ -21,8 +21,8 @@ public static class BeerIdleBuilder
     private const int FrameCount = 9;
     private const int IntroCount = 4;
     private const int LoopStartIndex = 4;
-    private const float FrameSeconds = 0.12f;
-    private const float BurpHoldSeconds = 1f;
+    private const float FrameSeconds = 0.25f;
+    private const float SatisfiedHoldSeconds = 1.2f;
     private const float Ppu = 93.9f;
 
     private const string IntroPath = "Assets/Animations/Hamster/BeerIntro.anim";
@@ -59,7 +59,7 @@ public static class BeerIdleBuilder
         AssetDatabase.SaveAssets();
         AssetDatabase.Refresh();
         Debug.Log("[BeerIdle] Готово: вступление " + (IntroCount * FrameSeconds) +
-                  " с, цикл с паузой на отрыжке " + BurpHoldSeconds + " с");
+                  " с, цикл с паузой на довольном кадре " + SatisfiedHoldSeconds + " с");
     }
 
     private static Sprite[] ImportFrames()
@@ -112,26 +112,19 @@ public static class BeerIdleBuilder
         AnimationClip clip = LoadOrCreateClip(LoopPath);
         EditorCurveBinding binding = Binding();
 
-        // Кадры 5–8 идут по 0,12 с, затем кадр с отрыжкой (индекс 3) висит
-        // секунду, после него последний кадр идёт 0,12 с и клип зацикливается.
-        int holdIndex = 3;
-        int keyCount = frames.Length;
-        ObjectReferenceKeyframe[] keys = new ObjectReferenceKeyframe[keyCount];
+        // Кадры 5–9 идут по 0,25 с, затем последний кадр «рыгнул и стоит
+        // довольный» висит 1,2 с, после чего клип зацикливается.
+        int last = frames.Length - 1;
+        ObjectReferenceKeyframe[] keys = new ObjectReferenceKeyframe[frames.Length + 1];
 
-        for (int i = 0; i <= holdIndex; i++)
+        for (int i = 0; i < frames.Length; i++)
         {
             keys[i] = new ObjectReferenceKeyframe { time = FrameSeconds * i, value = frames[i] };
         }
 
-        float holdEnd = FrameSeconds * holdIndex + BurpHoldSeconds;
-
-        for (int i = holdIndex + 1; i < frames.Length; i++)
-        {
-            float time = holdEnd + FrameSeconds * (i - holdIndex - 1);
-            keys[i] = new ObjectReferenceKeyframe { time = time, value = frames[i] };
-        }
-
-        float stopTime = keys[keys.Length - 1].time + FrameSeconds;
+        float lastTime = FrameSeconds * last + SatisfiedHoldSeconds;
+        keys[last + 1] = new ObjectReferenceKeyframe { time = lastTime, value = frames[last] };
+        float stopTime = lastTime;
 
         AnimationUtility.SetObjectReferenceCurve(clip, binding, keys);
         ApplySettings(clip, stopTime, true);
