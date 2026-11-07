@@ -30,6 +30,9 @@ public class IdleSpecialController : MonoBehaviour
     [Tooltip("Показывать особую анимацию только на земле")]
     [SerializeField] private bool requireGrounded = true;
 
+    [Tooltip("На время анимации поворачивать лицом вправо: нужно, если в кадрах есть текст")]
+    [SerializeField] private bool faceRightDuringSpecial = true;
+
     private enum Phase
     {
         None,
@@ -130,7 +133,7 @@ public class IdleSpecialController : MonoBehaviour
 
     private void FaceRight()
     {
-        if (spriteRenderer == null || !spriteRenderer.flipX)
+        if (!faceRightDuringSpecial || spriteRenderer == null || !spriteRenderer.flipX)
             return;
 
         forcedFace = true;

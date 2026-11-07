@@ -107,6 +107,7 @@ GameObject:
   - component: {fileID: 6724994769446981160}
   - component: {fileID: 8845710667774388682}
   - component: {fileID: 1791010570302103970}
+  - component: {fileID: 8489467301332612194}
   m_Layer: 3
   m_Name: Hamster
   m_TagString: Untagged
@@ -320,6 +321,26 @@ MonoBehaviour:
   chargeVfxPrefab: {fileID: 1029771961154505336, guid: 16567cbc3e73cf441a7d254dd8854094, type: 3}
   movement: {fileID: 4868555397632928063}
   hitbox: {fileID: 9185819292231602203}
+--- !u!114 &8489467301332612194
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6507534076535526295}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b71ae70a0ae41b648a77a32b1bce957e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::IdleSpecialController
+  movement: {fileID: 4868555397632928063}
+  animator: {fileID: 6724994769446981160}
+  idleState: Idle 0
+  introState: BeerIntro
+  specialState: BeerIdle
+  idleDelay: 5
+  requireGrounded: 1
+  faceRightDuringSpecial: 0
 --- !u!1 &9088040696783955624
 GameObject:
   m_ObjectHideFlags: 0
