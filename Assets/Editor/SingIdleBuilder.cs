@@ -16,7 +16,9 @@ public static class SingIdleBuilder
     private const string FrameFolder = "Assets/Art/HamsterGirl/SingIdle";
     private const string FramePrefix = "Girl_SingIdle_";
     private const int FrameCount = 16;
-    private const float FrameSeconds = 0.45f;
+    // 0,12 с на кадр — это 8,3 fps. В исходной гифке было 0,45 с (2,2 fps),
+    // из-за чего анимация читалась как слайдшоу.
+    private const float FrameSeconds = 0.12f;
     private const float Ppu = 98f;
     private const string ClipPath = "Assets/Animations/HamsterGirl/SingIdle.anim";
     private const string ControllerPath = "Assets/Animations/HamsterGirl/HamsterGirl.controller";
