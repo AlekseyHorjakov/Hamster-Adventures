@@ -85,11 +85,10 @@ public class HamsterMovement : MonoBehaviour
         UpdateAnimation();
 
         // Для «особого бездействия»: любой ввод сбрасывает таймер.
-        if (Mathf.Abs(moveInput) > 0.01f || attackHeld ||
-            (Keyboard.current != null && Keyboard.current[jumpKey].wasPressedThisFrame))
-        {
+        bool anyKey = Keyboard.current != null && Keyboard.current.anyKey.wasPressedThisFrame;
+
+        if (anyKey || Mathf.Abs(moveInput) > 0.01f || attackHeld)
             LastInputTime = Time.time;
-        }
     }
 
     private void ReadMovementInput()

@@ -4,9 +4,14 @@ using UnityEditor.Animations;
 using UnityEngine;
 
 /// <summary>
-/// Собирает особое бездействие Хомячихи: 16 кадров с микрофоном и баблом,
-/// клип SingIdle, состояние в контроллере и компонент IdleSpecialController
-/// на префабе. Включается после 5 секунд без ввода.
+/// Собирает особое бездействие Хомячихи: вступление с доставанием микрофона
+/// и зацикленную часть с песней и баблом.
+///
+/// Схема:
+///   SingIntro — кадры 1–6, играется один раз (достаёт микрофон);
+///   SingIdle  — кадры 7–16, начинается со стука по микрофону, доходит до
+///               полного «СОСИСОЧКА» и держит последний кадр 1 секунду,
+///               затем зацикливается.
 ///
 /// Запуск: Tools/Hamster/Build Girl Sing Idle или
 /// Unity.exe -batchmode -quit -executeMethod SingIdleBuilder.BuildAll
@@ -16,14 +21,21 @@ public static class SingIdleBuilder
     private const string FrameFolder = "Assets/Art/HamsterGirl/SingIdle";
     private const string FramePrefix = "Girl_SingIdle_";
     private const int FrameCount = 16;
+    private const int IntroCount = 6;
+    private const int LoopStartIndex = 6;
+    private const float HoldSeconds = 1f;
+
     // 0,12 с на кадр — это 8,3 fps. В исходной гифке было 0,45 с (2,2 fps),
     // из-за чего анимация читалась как слайдшоу.
     private const float FrameSeconds = 0.12f;
     private const float Ppu = 98f;
-    private const string ClipPath = "Assets/Animations/HamsterGirl/SingIdle.anim";
+
+    private const string IntroPath = "Assets/Animations/HamsterGirl/SingIntro.anim";
+    private const string LoopPath = "Assets/Animations/HamsterGirl/SingIdle.anim";
     private const string ControllerPath = "Assets/Animations/HamsterGirl/HamsterGirl.controller";
     private const string PrefabPath = "Assets/Prefabs/HamsterGirl.prefab";
-    private const string StateName = "SingIdle";
+    private const string IntroState = "SingIntro";
+    private const string LoopState = "SingIdle";
 
     [MenuItem("Tools/Hamster/Build Girl Sing Idle")]
     public static void BuildAll()
@@ -35,13 +47,25 @@ public static class SingIdleBuilder
             return;
         }
 
-        AnimationClip clip = BuildClip(frames);
-        AddState(clip);
+        AnimationClip intro = BuildClip(IntroPath, frames.Take(IntroCount).ToArray(), false, 0f);
+        AnimationClip loop = BuildClip(LoopPath, frames.Skip(LoopStartIndex).ToArray(), true, HoldSeconds);
+
+        AnimatorController controller = AssetDatabase.LoadAssetAtPath<AnimatorController>(ControllerPath);
+        if (controller == null)
+        {
+            Debug.LogError("[SingIdle] Нет контроллера " + ControllerPath);
+            return;
+        }
+
+        AddState(controller, IntroState, intro);
+        AddState(controller, LoopState, loop);
         AddComponent();
 
         AssetDatabase.SaveAssets();
         AssetDatabase.Refresh();
-        Debug.Log("[SingIdle] Готово: " + FrameCount + " кадров, " + (FrameCount * FrameSeconds) + " с, состояние " + StateName);
+        float introLength = IntroCount * FrameSeconds;
+        float loopLength = (FrameCount - LoopStartIndex - 1) * FrameSeconds + HoldSeconds;
+        Debug.Log("[SingIdle] Готово: вступление " + introLength + " с, цикл " + loopLength + " с");
     }
 
     private static Sprite[] ImportFrames()
@@ -73,21 +97,23 @@ public static class SingIdleBuilder
         return frames;
     }
 
-    private static AnimationClip BuildClip(Sprite[] frames)
+    private static AnimationClip BuildClip(string path, Sprite[] frames, bool loop, float holdSeconds)
     {
-        AnimationClip clip = AssetDatabase.LoadAssetAtPath<AnimationClip>(ClipPath);
+        AnimationClip clip = AssetDatabase.LoadAssetAtPath<AnimationClip>(path);
 
         if (clip == null)
         {
             clip = new AnimationClip();
-            AssetDatabase.CreateAsset(clip, ClipPath);
+            AssetDatabase.CreateAsset(clip, path);
         }
 
         clip.frameRate = 60f;
 
         EditorCurveBinding binding = EditorCurveBinding.PPtrCurve("Visual", typeof(SpriteRenderer), "m_Sprite");
 
-        ObjectReferenceKeyframe[] keys = new ObjectReferenceKeyframe[frames.Length];
+        bool hasHold = holdSeconds > 0f;
+        ObjectReferenceKeyframe[] keys = new ObjectReferenceKeyframe[frames.Length + (hasHold ? 1 : 0)];
+
         for (int i = 0; i < frames.Length; i++)
         {
             keys[i] = new ObjectReferenceKeyframe
@@ -97,31 +123,35 @@ public static class SingIdleBuilder
             };
         }
 
+        float stopTime = FrameSeconds * frames.Length;
+
+        if (hasHold)
+        {
+            float lastKeyTime = FrameSeconds * (frames.Length - 1) + holdSeconds;
+            keys[keys.Length - 1] = new ObjectReferenceKeyframe
+            {
+                time = lastKeyTime,
+                value = frames[frames.Length - 1]
+            };
+            stopTime = lastKeyTime;
+        }
+
         AnimationUtility.SetObjectReferenceCurve(clip, binding, keys);
 
         AnimationClipSettings settings = AnimationUtility.GetAnimationClipSettings(clip);
-        settings.stopTime = FrameSeconds * frames.Length;
-        settings.loopTime = true;
+        settings.stopTime = stopTime;
+        settings.loopTime = loop;
         AnimationUtility.SetAnimationClipSettings(clip, settings);
 
         EditorUtility.SetDirty(clip);
         return clip;
     }
 
-    private static void AddState(AnimationClip clip)
+    private static void AddState(AnimatorController controller, string stateName, AnimationClip clip)
     {
-        AnimatorController controller = AssetDatabase.LoadAssetAtPath<AnimatorController>(ControllerPath);
-        if (controller == null)
+        foreach (ChildAnimatorState child in controller.layers[0].stateMachine.states)
         {
-            Debug.LogError("[SingIdle] Нет контроллера " + ControllerPath);
-            return;
-        }
-
-        ChildAnimatorState[] states = controller.layers[0].stateMachine.states;
-
-        foreach (ChildAnimatorState child in states)
-        {
-            if (child.state.name == StateName)
+            if (child.state.name == stateName)
             {
                 child.state.motion = clip;
                 EditorUtility.SetDirty(controller);
@@ -130,7 +160,7 @@ public static class SingIdleBuilder
         }
 
         AnimatorState state = controller.AddMotion(clip, 0);
-        state.name = StateName;
+        state.name = stateName;
         EditorUtility.SetDirty(controller);
     }
 
@@ -146,7 +176,8 @@ public static class SingIdleBuilder
         serialized.FindProperty("movement").objectReferenceValue = contents.GetComponent<HamsterMovement>();
         serialized.FindProperty("animator").objectReferenceValue = contents.GetComponent<Animator>();
         serialized.FindProperty("idleState").stringValue = "HGIdle";
-        serialized.FindProperty("specialState").stringValue = StateName;
+        serialized.FindProperty("introState").stringValue = IntroState;
+        serialized.FindProperty("specialState").stringValue = LoopState;
         serialized.FindProperty("idleDelay").floatValue = 5f;
         serialized.ApplyModifiedPropertiesWithoutUndo();
 

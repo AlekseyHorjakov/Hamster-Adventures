@@ -383,6 +383,7 @@ MonoBehaviour:
   movement: {fileID: 7389103765779009765}
   animator: {fileID: 1998099670385249206}
   idleState: HGIdle
+  introState: SingIntro
   specialState: SingIdle
   idleDelay: 5
   requireGrounded: 1

@@ -3,8 +3,11 @@ using UnityEngine;
 /// <summary>
 /// Включает особую анимацию бездействия (например, Хомячиха достаёт микрофон
 /// и поёт), если игрок не давал ввода дольше заданного времени.
-/// Как только ввод вернулся — сразу обычный покой, дальше Animator сам
-/// разберётся с бегом или прыжком.
+///
+/// Схема из двух частей: вступление играется один раз (достаёт микрофон,
+/// стучит по нему), затем зацикливается основная часть. Как только ввод
+/// вернулся — сразу обычный покой, дальше Animator сам разберётся с бегом
+/// или прыжком.
 /// </summary>
 [DisallowMultipleComponent]
 public class IdleSpecialController : MonoBehaviour
@@ -15,7 +18,10 @@ public class IdleSpecialController : MonoBehaviour
     [Tooltip("Обычное состояние покоя, к которому возвращаемся")]
     [SerializeField] private string idleState = "Idle";
 
-    [Tooltip("Состояние особой анимации бездействия")]
+    [Tooltip("Вступление: играется один раз. Пусто — сразу к циклу")]
+    [SerializeField] private string introState = "";
+
+    [Tooltip("Зацикленное состояние особой анимации бездействия")]
     [SerializeField] private string specialState = "SingIdle";
 
     [Tooltip("Сколько секунд без ввода ждать перед особым бездействием")]
@@ -24,7 +30,14 @@ public class IdleSpecialController : MonoBehaviour
     [Tooltip("Показывать особую анимацию только на земле")]
     [SerializeField] private bool requireGrounded = true;
 
-    private bool playing;
+    private enum Phase
+    {
+        None,
+        Intro,
+        Loop
+    }
+
+    private Phase phase;
     private float lastSeenInput;
 
     private void Awake()
@@ -43,36 +56,63 @@ public class IdleSpecialController : MonoBehaviour
         if (movement == null || animator == null)
             return;
 
+        AnimatorStateInfo current = animator.GetCurrentAnimatorStateInfo(0);
+
         if (movement.LastInputTime > lastSeenInput)
         {
             lastSeenInput = movement.LastInputTime;
 
-            if (playing)
+            if (phase != Phase.None)
             {
                 // Специальное состояние могло уже смениться ударом или прыжком —
                 // тогда не перебиваем его покоем.
-                if (animator.GetCurrentAnimatorStateInfo(0).IsName(specialState))
+                if (current.IsName(introState) || current.IsName(specialState))
                     animator.Play(idleState, 0, 0f);
 
-                playing = false;
+                phase = Phase.None;
             }
 
             return;
         }
 
-        // Если состояние прервали снаружи (попадание, смена сцены), сбрасываем флаг.
-        if (playing && !animator.GetCurrentAnimatorStateInfo(0).IsName(specialState))
-            playing = false;
+        if (phase == Phase.Intro)
+        {
+            if (current.IsName(introState) && current.normalizedTime >= 1f)
+            {
+                animator.Play(specialState, 0, 0f);
+                phase = Phase.Loop;
+            }
+            else if (!current.IsName(introState))
+            {
+                // Вступление прервали снаружи — сбрасываемся.
+                phase = Phase.None;
+            }
 
-        if (playing)
             return;
+        }
+
+        if (phase == Phase.Loop)
+        {
+            if (!current.IsName(specialState))
+                phase = Phase.None;
+
+            return;
+        }
 
         if (Time.time - movement.LastInputTime >= idleDelay &&
             (!requireGrounded || movement.Grounded) &&
-            animator.GetCurrentAnimatorStateInfo(0).IsName(idleState))
+            current.IsName(idleState))
         {
-            animator.Play(specialState, 0, 0f);
-            playing = true;
+            if (!string.IsNullOrEmpty(introState))
+            {
+                animator.Play(introState, 0, 0f);
+                phase = Phase.Intro;
+            }
+            else
+            {
+                animator.Play(specialState, 0, 0f);
+                phase = Phase.Loop;
+            }
         }
     }
 }
