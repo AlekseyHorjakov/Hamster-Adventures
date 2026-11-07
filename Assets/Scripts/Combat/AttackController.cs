@@ -210,11 +210,17 @@ public class AttackController : MonoBehaviour
         float scale = parentScale > 0.0001f ? 1f / parentScale : 1f;
         chargeVfx.transform.localScale = new Vector3(scale, scale, 1f);
 
+        // Центрируемся по границам спрайта, а не по пивоту: в кадре фигура
+        // может стоять чуть в стороне, и тогда ореол уезжает от силуэта.
+        Vector3 spriteCenter = spriteRenderer != null
+            ? spriteRenderer.bounds.center
+            : transform.position;
+
         float feetY = spriteRenderer != null
             ? spriteRenderer.bounds.min.y
             : transform.position.y;
 
-        chargeVfx.transform.position = new Vector3(transform.position.x, feetY, transform.position.z);
+        chargeVfx.transform.position = new Vector3(spriteCenter.x, feetY, transform.position.z);
     }
 
     private void Update()

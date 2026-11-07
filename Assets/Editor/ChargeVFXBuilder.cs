@@ -64,14 +64,15 @@ public static class ChargeVFXBuilder
         GameObject root = new GameObject("Hamster_Charge_VFX");
         ChargeVFXController controller = root.AddComponent<ChargeVFXController>();
 
-        SpriteRenderer ring = CreateSprite(root.transform, "GroundFire", new Vector3(0f, 1.6f, 0f), ringFrames[0], ringMaterial, 6);
-        // Ореол рисуется за персонажем: кольцо охватывает силуэт, а не лежит на земле.
+        SpriteRenderer ring = CreateSprite(root.transform, "GroundFire", new Vector3(0f, 1.45f, 0f), ringFrames[0], ringMaterial, 6);
+        // Ореол крупнее силуэта и позади него: кольцо видно с обеих сторон,
+        // а не прячется за телом, оставляя только правый край.
         ring.sortingLayerName = "Characters";
         ring.sortingOrder = -1;
 
-        SpriteRenderer aura = CreateSprite(root.transform, "FireAura", new Vector3(0f, 1.6f, 0f), auraFrames[0], auraMaterial, 10);
+        SpriteRenderer aura = CreateSprite(root.transform, "FireAura", new Vector3(0f, 1.5f, 0f), auraFrames[0], auraMaterial, 10);
         SpriteRenderer glow = CreateSprite(root.transform, "GroundGlow", new Vector3(0f, 0.02f, 0f), glowFrames[0], glowMaterial, 4);
-        SpriteRenderer flash = CreateSprite(root.transform, "BurstFlash", new Vector3(0f, 1.6f, 0f), flashFrames[0], flashMaterial, 30);
+        SpriteRenderer flash = CreateSprite(root.transform, "BurstFlash", new Vector3(0f, 1.5f, 0f), flashFrames[0], flashMaterial, 30);
 
         ParticleSystem flames = CreateParticles(root.transform, "FlameParticles", new Vector3(0f, 0.3f, 0f), flameMaterial, 14, 8, 1);
         ConfigureFlames(flames);
