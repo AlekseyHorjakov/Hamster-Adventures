@@ -23,6 +23,10 @@ public static class ChargeVFXBuilder
     private const string ShaderPath = "Assets/VFX/Shaders/AdditiveSprite.shader";
     private const string PrefabPath = PrefabRoot + "/Hamster_Charge_VFX.prefab";
 
+    // Круглый ореол временно отключён по просьбе пользователя: остаётся
+    // только разгорающееся пламя. Вернуть — поставить true.
+    private const bool BuildHalo = false;
+
     [MenuItem("Tools/Hamster/Build Charge VFX")]
     public static void BuildAll()
     {
@@ -64,11 +68,17 @@ public static class ChargeVFXBuilder
         GameObject root = new GameObject("Hamster_Charge_VFX");
         ChargeVFXController controller = root.AddComponent<ChargeVFXController>();
 
-        SpriteRenderer ring = CreateSprite(root.transform, "GroundFire", new Vector3(0f, 1.45f, 0f), ringFrames[0], ringMaterial, 6);
-        // Ореол крупнее силуэта и позади него: кольцо видно с обеих сторон,
-        // а не прячется за телом, оставляя только правый край.
-        ring.sortingLayerName = "Characters";
-        ring.sortingOrder = -1;
+        SpriteRenderer ring = null;
+        Sprite[] haloFrames = new Sprite[0];
+
+        if (BuildHalo)
+        {
+            ring = CreateSprite(root.transform, "GroundFire", new Vector3(0f, 1.45f, 0f), ringFrames[0], ringMaterial, 6);
+            // Ореол крупнее силуэта и позади него: кольцо видно с обеих сторон.
+            ring.sortingLayerName = "Characters";
+            ring.sortingOrder = -1;
+            haloFrames = ringFrames;
+        }
 
         SpriteRenderer aura = CreateSprite(root.transform, "FireAura", new Vector3(0f, 1.5f, 0f), auraFrames[0], auraMaterial, 10);
         SpriteRenderer glow = CreateSprite(root.transform, "GroundGlow", new Vector3(0f, 0.02f, 0f), glowFrames[0], glowMaterial, 4);
@@ -81,7 +91,7 @@ public static class ChargeVFXBuilder
         ConfigureEmbers(embers);
 
         controller.Configure(
-            ring, ringFrames,
+            ring, haloFrames,
             aura, auraFrames,
             glow, glowFrames,
             flash, flashFrames,

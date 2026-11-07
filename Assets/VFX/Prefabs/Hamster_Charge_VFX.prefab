@@ -50,7 +50,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6574cc7a63cba61458fb8324f03a2acc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ChargeVFXController
-  groundFire: {fileID: 6636090905981722472}
+  groundFire: {fileID: 0}
   groundFireFrames:
   - {fileID: 21300000, guid: f6a9f12fe50733844a33a7f87a630cce, type: 3}
   - {fileID: 21300000, guid: 3c40dee29b4fa7e4b946eb22c66c6ba9, type: 3}
@@ -2702,7 +2702,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &7148664444074555451
 Transform:
   m_ObjectHideFlags: 0
