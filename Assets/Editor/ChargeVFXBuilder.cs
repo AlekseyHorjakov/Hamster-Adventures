@@ -64,10 +64,10 @@ public static class ChargeVFXBuilder
         GameObject root = new GameObject("Hamster_Charge_VFX");
         ChargeVFXController controller = root.AddComponent<ChargeVFXController>();
 
-        SpriteRenderer ring = CreateSprite(root.transform, "GroundFire", new Vector3(0f, 0.04f, 0f), ringFrames[0], ringMaterial, 6);
-        SpriteRenderer aura = CreateSprite(root.transform, "FireAura", new Vector3(0f, 1.15f, 0f), auraFrames[0], auraMaterial, 10);
+        SpriteRenderer ring = CreateSprite(root.transform, "GroundFire", new Vector3(0f, 0.05f, 0f), ringFrames[0], ringMaterial, 6);
+        SpriteRenderer aura = CreateSprite(root.transform, "FireAura", new Vector3(0f, 1.6f, 0f), auraFrames[0], auraMaterial, 10);
         SpriteRenderer glow = CreateSprite(root.transform, "GroundGlow", new Vector3(0f, 0.02f, 0f), glowFrames[0], glowMaterial, 4);
-        SpriteRenderer flash = CreateSprite(root.transform, "BurstFlash", new Vector3(0f, 1f, 0f), flashFrames[0], flashMaterial, 30);
+        SpriteRenderer flash = CreateSprite(root.transform, "BurstFlash", new Vector3(0f, 1.6f, 0f), flashFrames[0], flashMaterial, 30);
 
         ParticleSystem flames = CreateParticles(root.transform, "FlameParticles", new Vector3(0f, 0.3f, 0f), flameMaterial, 14, 8, 1);
         ConfigureFlames(flames);
@@ -180,7 +180,7 @@ public static class ChargeVFXBuilder
         ParticleSystem.MainModule main = ps.main;
         main.startLifetime = new ParticleSystem.MinMaxCurve(0.5f, 0.9f);
         main.startSpeed = new ParticleSystem.MinMaxCurve(0.5f, 1.1f);
-        main.startSize = new ParticleSystem.MinMaxCurve(0.9f, 1.4f);
+        main.startSize = new ParticleSystem.MinMaxCurve(1.2f, 1.8f);
         main.maxParticles = 120;
         main.gravityModifier = 0f;
         main.startRotation = new ParticleSystem.MinMaxCurve(0f);

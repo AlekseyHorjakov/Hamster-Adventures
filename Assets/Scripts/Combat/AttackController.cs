@@ -57,8 +57,8 @@ public class AttackController : MonoBehaviour
     [Tooltip("Состояние Animator, куда вернуться, если заряд отменён, например прыжком")]
     [SerializeField] private string fallbackStateName = "";
 
-    [Tooltip("Сколько секунд держать кнопку, чтобы удар стал заряженным")]
-    [SerializeField] private float minChargeTime = 0.3f;
+    [Tooltip("Сколько секунд держать кнопку, чтобы удар стал заряженным. Долгий заряд — плата за рывок на весь экран")]
+    [SerializeField] private float minChargeTime = 3f;
 
     [Tooltip("Скорость рывка в юнитах в секунду: 30 при 0,22 с даёт около 6,5 юнита, это 3–4 корпуса героя")]
     [SerializeField] private float dashSpeed = 30f;
@@ -188,13 +188,33 @@ public class AttackController : MonoBehaviour
     {
         chargeVfx = GetComponentInChildren<ChargeVFXController>(true);
 
-        if (chargeVfx != null || chargeVfxPrefab == null)
-            return;
+        if (chargeVfx == null && chargeVfxPrefab != null)
+        {
+            chargeVfx = Instantiate(chargeVfxPrefab, transform);
+            chargeVfx.name = chargeVfxPrefab.name;
+            chargeVfx.transform.localRotation = Quaternion.identity;
+        }
 
-        chargeVfx = Instantiate(chargeVfxPrefab, transform);
-        chargeVfx.name = chargeVfxPrefab.name;
-        chargeVfx.transform.localPosition = Vector3.zero;
-        chargeVfx.transform.localRotation = Quaternion.identity;
+        if (chargeVfx != null)
+            PlaceChargeVfx();
+    }
+
+    /// <summary>
+    /// Персонаж отмасштабирован (0.5), а эффект нарисован в мировых единицах:
+    /// компенсируем масштаб родителя и ставим корень VFX на линию ступней,
+    /// иначе огонь оказывается в центре спрайта и вдвое мельче.
+    /// </summary>
+    private void PlaceChargeVfx()
+    {
+        float parentScale = transform.lossyScale.y;
+        float scale = parentScale > 0.0001f ? 1f / parentScale : 1f;
+        chargeVfx.transform.localScale = new Vector3(scale, scale, 1f);
+
+        float feetY = spriteRenderer != null
+            ? spriteRenderer.bounds.min.y
+            : transform.position.y;
+
+        chargeVfx.transform.position = new Vector3(transform.position.x, feetY, transform.position.z);
     }
 
     private void Update()
@@ -479,6 +499,10 @@ public class AttackController : MonoBehaviour
         currentHit = airHit;
         attackStartedAt = Time.time;
 
+        // Если предыдущий удар отменили до события выключения, зона не должна остаться активной.
+        if (hitbox != null)
+            hitbox.Deactivate();
+
         animator.Play(airStateName, 0, 0f);
 
         // В воздухе управление не блокируем: прыжок остаётся управляемым.
@@ -496,6 +520,10 @@ public class AttackController : MonoBehaviour
         string stateName = attackStates != null && attackStates.Length > 0
             ? attackStates[Mathf.Min(index, attackStates.Length - 1)]
             : "FastPunch";
+
+        // Предыдущий удар мог быть отменён до события выключения хитбокса.
+        if (hitbox != null)
+            hitbox.Deactivate();
 
         animator.Play(stateName, 0, 0f);
 

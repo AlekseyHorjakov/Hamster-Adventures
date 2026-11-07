@@ -48,13 +48,13 @@ public class ChargeVFXController : MonoBehaviour
     [SerializeField] private float embersRate = 12f;
 
     [Header("Масштаб слоёв")]
-    [SerializeField] private float ringMinScale = 0.7f;
-    [SerializeField] private float ringMaxScale = 1.5f;
-    [SerializeField] private float auraMinScale = 0.9f;
-    [SerializeField] private float auraMaxScale = 1.5f;
-    [SerializeField] private float glowMinScale = 0.7f;
-    [SerializeField] private float glowMaxScale = 2.2f;
-    [SerializeField] private float flashScale = 2.4f;
+    [SerializeField] private float ringMinScale = 1f;
+    [SerializeField] private float ringMaxScale = 1.6f;
+    [SerializeField] private float auraMinScale = 1.3f;
+    [SerializeField] private float auraMaxScale = 1.9f;
+    [SerializeField] private float glowMinScale = 1f;
+    [SerializeField] private float glowMaxScale = 2.4f;
+    [SerializeField] private float flashScale = 2.2f;
 
     [Header("Выпуск удара")]
     [Tooltip("Сколько искр выбрасывается в момент удара")]
