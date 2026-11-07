@@ -18,7 +18,7 @@ public static class ChargeGroundBuilder
 {
     private const float HamsterPpu = 93.9f;
     private const float GirlPpu = 98f;
-    private const float ClipSeconds = 0.48f;
+    private const float ClipSeconds = 0.36f;
 
     [MenuItem("Tools/Hamster/Build Charge Ground")]
     public static void BuildAll()
@@ -35,15 +35,17 @@ public static class ChargeGroundBuilder
             return;
         }
 
-        ReplaceClip("Assets/Animations/Hamster/Hamster_Charge.anim", hamsterFrames);
-        ReplaceClip("Assets/Animations/HamsterGirl/HG_Charge.anim", girlFrames);
+        // Четвёртый кадр — «выдох» для петли; в игре заряд проигрывается один раз
+        // и держит позу пика, поэтому в клип идут три кадра.
+        ReplaceClip("Assets/Animations/Hamster/Hamster_Charge.anim", hamsterFrames.Take(3).ToArray(), false);
+        ReplaceClip("Assets/Animations/HamsterGirl/HG_Charge.anim", girlFrames.Take(3).ToArray(), false);
 
         WireCharacter("Assets/Prefabs/Hamster.prefab", "Charge");
         WireCharacter("Assets/Prefabs/HamsterGirl.prefab", "Charge");
 
         AssetDatabase.SaveAssets();
         AssetDatabase.Refresh();
-        Debug.Log("[ChargeGround] Петля зарядки собрана: 4 кадра, " + ClipSeconds + " с");
+        Debug.Log("[ChargeGround] Стойка зарядки собрана: 3 кадра, " + ClipSeconds + " с, без цикла");
     }
 
     private static Sprite[] ImportFrames(string folder, string prefix, int count, float ppu)
@@ -84,7 +86,7 @@ public static class ChargeGroundBuilder
         return frames.ToArray();
     }
 
-    private static void ReplaceClip(string path, Sprite[] frames)
+    private static void ReplaceClip(string path, Sprite[] frames, bool loop)
     {
         AnimationClip clip = AssetDatabase.LoadAssetAtPath<AnimationClip>(path);
         if (clip == null)
@@ -126,7 +128,7 @@ public static class ChargeGroundBuilder
 
         AnimationClipSettings settings = AnimationUtility.GetAnimationClipSettings(clip);
         settings.stopTime = ClipSeconds;
-        settings.loopTime = true;
+        settings.loopTime = loop;
         AnimationUtility.SetAnimationClipSettings(clip, settings);
 
         EditorUtility.SetDirty(clip);
