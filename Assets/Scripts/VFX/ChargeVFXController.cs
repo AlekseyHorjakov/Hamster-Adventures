@@ -48,10 +48,11 @@ public class ChargeVFXController : MonoBehaviour
     [SerializeField] private float embersRate = 12f;
 
     [Header("Масштаб слоёв")]
-    [SerializeField] private float ringMinScale = 1f;
-    [SerializeField] private float ringMaxScale = 1.6f;
-    [SerializeField] private float auraMinScale = 1.3f;
-    [SerializeField] private float auraMaxScale = 1.9f;
+    [Tooltip("Кольцо-ореол: на старте заряда по груди, к концу охватывает весь силуэт")]
+    [SerializeField] private float ringMinScale = 1.4f;
+    [SerializeField] private float ringMaxScale = 2.2f;
+    [SerializeField] private float auraMinScale = 1.4f;
+    [SerializeField] private float auraMaxScale = 2f;
     [SerializeField] private float glowMinScale = 1f;
     [SerializeField] private float glowMaxScale = 2.4f;
     [SerializeField] private float flashScale = 2.2f;

@@ -289,11 +289,11 @@ MonoBehaviour:
   attackDurations:
   - 0.25
   - 0.25
-  - 0.42
+  - 1.05
   cancelTimes:
   - 0.1
   - 0.1
-  - 0.3
+  - 1
   movementLock: 0.14
   comboResetTime: 0.45
   stepSpeeds:
@@ -317,7 +317,7 @@ MonoBehaviour:
   trailPrefab: {fileID: 0}
   trailLifetime: 2
   chargeTint: {r: 1, g: 0.55, b: 0.3, a: 1}
-  chargeVfxPrefab: {fileID: 4634803133799543892, guid: 16567cbc3e73cf441a7d254dd8854094, type: 3}
+  chargeVfxPrefab: {fileID: 1029771961154505336, guid: 16567cbc3e73cf441a7d254dd8854094, type: 3}
   movement: {fileID: 4868555397632928063}
   hitbox: {fileID: 9185819292231602203}
 --- !u!1 &9088040696783955624

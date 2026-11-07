@@ -35,7 +35,8 @@ public static class CombatTuning
     /// <summary>
     /// Кадр удара у финишёра стоит в конце клипа (0.28 с), а хитбокс
     /// включается на 0.16 с — враг улетал раньше, чем появлялся ботинок
-    /// или сумочка. Ставим кадр и хитбокс на 0.24 с и держим кадр до 0.40 с.
+    /// или сумочка. Ставим кадр и хитбокс на 0.24 с и держим кадр до 1.05 с,
+    /// чтобы удар читался как комичная заморозка.
     /// </summary>
     private static void FixFinisher(string path)
     {
@@ -74,7 +75,8 @@ public static class CombatTuning
         AnimationUtility.SetAnimationEvents(clip, events);
 
         AnimationClipSettings settings = AnimationUtility.GetAnimationClipSettings(clip);
-        settings.stopTime = 0.40f;
+        // Кадр бота/сумочки держится почти секунду: удар должен читаться как комичный «опиздюлинг».
+        settings.stopTime = 1.05f;
         settings.loopTime = false;
         AnimationUtility.SetAnimationClipSettings(clip, settings);
 
@@ -109,11 +111,11 @@ public static class CombatTuning
 
             SerializedProperty durations = serialized.FindProperty("attackDurations");
             if (durations != null && durations.arraySize >= 3)
-                durations.GetArrayElementAtIndex(2).floatValue = 0.42f;
+                durations.GetArrayElementAtIndex(2).floatValue = 1.05f;
 
             SerializedProperty cancels = serialized.FindProperty("cancelTimes");
             if (cancels != null && cancels.arraySize >= 3)
-                cancels.GetArrayElementAtIndex(2).floatValue = 0.30f;
+                cancels.GetArrayElementAtIndex(2).floatValue = 1f;
 
             serialized.ApplyModifiedPropertiesWithoutUndo();
 

@@ -64,7 +64,11 @@ public static class ChargeVFXBuilder
         GameObject root = new GameObject("Hamster_Charge_VFX");
         ChargeVFXController controller = root.AddComponent<ChargeVFXController>();
 
-        SpriteRenderer ring = CreateSprite(root.transform, "GroundFire", new Vector3(0f, 0.05f, 0f), ringFrames[0], ringMaterial, 6);
+        SpriteRenderer ring = CreateSprite(root.transform, "GroundFire", new Vector3(0f, 1.6f, 0f), ringFrames[0], ringMaterial, 6);
+        // Ореол рисуется за персонажем: кольцо охватывает силуэт, а не лежит на земле.
+        ring.sortingLayerName = "Characters";
+        ring.sortingOrder = -1;
+
         SpriteRenderer aura = CreateSprite(root.transform, "FireAura", new Vector3(0f, 1.6f, 0f), auraFrames[0], auraMaterial, 10);
         SpriteRenderer glow = CreateSprite(root.transform, "GroundGlow", new Vector3(0f, 0.02f, 0f), glowFrames[0], glowMaterial, 4);
         SpriteRenderer flash = CreateSprite(root.transform, "BurstFlash", new Vector3(0f, 1.6f, 0f), flashFrames[0], flashMaterial, 30);
@@ -297,7 +301,8 @@ public static class ChargeVFXBuilder
 
         material.SetTexture("_MainTex", texture);
         material.SetColor("_Color", Color.white);
-        material.SetFloat("_Intensity", 1f);
+        // Аддитивный огонь на тёмной сцене иначе выглядит тускло.
+        material.SetFloat("_Intensity", 1.8f);
         EditorUtility.SetDirty(material);
         return material;
     }
