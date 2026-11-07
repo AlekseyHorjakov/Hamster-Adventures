@@ -437,8 +437,15 @@ public class AttackController : MonoBehaviour
         dashEndsAt = Time.time + dashDuration;
 
         // Пустое имя — удар без анимации: визуал целиком на VFX.
-        if (animator != null && !string.IsNullOrEmpty(chargedStateName))
-            animator.Play(chargedStateName, 0, 0f);
+        // Но из зацикленной стойки заряда всё равно надо выйти, иначе герой
+        // останется в ней до конца рывка.
+        if (animator != null)
+        {
+            if (!string.IsNullOrEmpty(chargedStateName))
+                animator.Play(chargedStateName, 0, 0f);
+            else if (!string.IsNullOrEmpty(fallbackStateName))
+                animator.Play(fallbackStateName, 0, 0f);
+        }
 
         movement.SetControlLocked(true);
 
