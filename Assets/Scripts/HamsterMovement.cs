@@ -74,6 +74,7 @@ public class HamsterMovement : MonoBehaviour
                              " — разворот персонажа работать не будет");
 
         jumpsRemaining = maxJumps;
+        LastInputTime = Time.time;
     }
 
     private void Update()
@@ -82,6 +83,13 @@ public class HamsterMovement : MonoBehaviour
         ReadJumpInput();
         ReadAttackInput();
         UpdateAnimation();
+
+        // Для «особого бездействия»: любой ввод сбрасывает таймер.
+        if (Mathf.Abs(moveInput) > 0.01f || attackHeld ||
+            (Keyboard.current != null && Keyboard.current[jumpKey].wasPressedThisFrame))
+        {
+            LastInputTime = Time.time;
+        }
     }
 
     private void ReadMovementInput()
@@ -165,6 +173,9 @@ public class HamsterMovement : MonoBehaviour
 
     /// <summary>Стоит ли герой на земле. Только для диагностики.</summary>
     public bool Grounded => isGrounded;
+
+    /// <summary>Когда последний раз был хоть какой-то ввод. Нужно особому бездействию.</summary>
+    public float LastInputTime { get; private set; }
 
     /// <summary>Физическое тело — нужно удару для шага вперёд.</summary>
     public Rigidbody2D Body => rb;

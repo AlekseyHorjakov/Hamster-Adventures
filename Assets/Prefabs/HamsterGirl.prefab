@@ -154,6 +154,7 @@ GameObject:
   - component: {fileID: 1998099670385249206}
   - component: {fileID: 7773680787068127644}
   - component: {fileID: 8675463877990214191}
+  - component: {fileID: 3594938766314249159}
   m_Layer: 3
   m_Name: HamsterGirl
   m_TagString: Untagged
@@ -367,3 +368,21 @@ MonoBehaviour:
   chargeVfxPrefab: {fileID: 1029771961154505336, guid: 16567cbc3e73cf441a7d254dd8854094, type: 3}
   movement: {fileID: 7389103765779009765}
   hitbox: {fileID: 4039230086795068747}
+--- !u!114 &3594938766314249159
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7313605111358297189}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b71ae70a0ae41b648a77a32b1bce957e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::IdleSpecialController
+  movement: {fileID: 7389103765779009765}
+  animator: {fileID: 1998099670385249206}
+  idleState: HGIdle
+  specialState: SingIdle
+  idleDelay: 5
+  requireGrounded: 1
