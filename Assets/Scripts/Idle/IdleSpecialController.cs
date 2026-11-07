@@ -39,6 +39,8 @@ public class IdleSpecialController : MonoBehaviour
 
     private Phase phase;
     private float lastSeenInput;
+    private SpriteRenderer spriteRenderer;
+    private bool forcedFace;
 
     private void Awake()
     {
@@ -48,6 +50,7 @@ public class IdleSpecialController : MonoBehaviour
         if (animator == null)
             animator = GetComponent<Animator>();
 
+        spriteRenderer = GetComponentInChildren<SpriteRenderer>();
         lastSeenInput = movement != null ? movement.LastInputTime : Time.time;
     }
 
@@ -70,6 +73,7 @@ public class IdleSpecialController : MonoBehaviour
                     animator.Play(idleState, 0, 0f);
 
                 phase = Phase.None;
+                RestoreFacing();
             }
 
             return;
@@ -86,6 +90,7 @@ public class IdleSpecialController : MonoBehaviour
             {
                 // Вступление прервали снаружи — сбрасываемся.
                 phase = Phase.None;
+                RestoreFacing();
             }
 
             return;
@@ -94,7 +99,10 @@ public class IdleSpecialController : MonoBehaviour
         if (phase == Phase.Loop)
         {
             if (!current.IsName(specialState))
+            {
                 phase = Phase.None;
+                RestoreFacing();
+            }
 
             return;
         }
@@ -103,6 +111,10 @@ public class IdleSpecialController : MonoBehaviour
             (!requireGrounded || movement.Grounded) &&
             current.IsName(idleState))
         {
+            // Бабл нарисован в кадрах и при flipX зеркалится вместе с героем,
+            // поэтому на время песни поворачиваем её лицом вправо.
+            FaceRight();
+
             if (!string.IsNullOrEmpty(introState))
             {
                 animator.Play(introState, 0, 0f);
@@ -114,5 +126,26 @@ public class IdleSpecialController : MonoBehaviour
                 phase = Phase.Loop;
             }
         }
+    }
+
+    private void FaceRight()
+    {
+        if (spriteRenderer == null || !spriteRenderer.flipX)
+            return;
+
+        forcedFace = true;
+        spriteRenderer.flipX = false;
+    }
+
+    private void RestoreFacing()
+    {
+        if (!forcedFace || spriteRenderer == null)
+            return;
+
+        forcedFace = false;
+
+        // Если игрок уже пошёл, направление выставит обычное движение.
+        if (movement == null || Mathf.Abs(movement.MoveInput) < 0.01f)
+            spriteRenderer.flipX = true;
     }
 }
