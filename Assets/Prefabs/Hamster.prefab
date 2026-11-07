@@ -304,8 +304,8 @@ MonoBehaviour:
   airStateName: JumpKick
   airDuration: 0.3
   chargedHit: {fileID: 11400000, guid: 7c1a4f2b9d6e4a5f8b3c2d1e0a9b8c7d, type: 2}
-  chargedStateName: ChargedPunch
-  chargeStateName: Charge
+  chargedStateName: 
+  chargeStateName: 
   fallbackStateName: Idle 0
   minChargeTime: 0.65
   dashSpeed: 30
@@ -316,6 +316,8 @@ MonoBehaviour:
     m_Bits: 0
   trailPrefab: {fileID: 0}
   trailLifetime: 2
+  chargeTint: {r: 1, g: 0.55, b: 0.3, a: 1}
+  chargeVfxPrefab: {fileID: 6691400343827224286, guid: 16567cbc3e73cf441a7d254dd8854094, type: 3}
   movement: {fileID: 4868555397632928063}
   hitbox: {fileID: 9185819292231602203}
 --- !u!1 &9088040696783955624

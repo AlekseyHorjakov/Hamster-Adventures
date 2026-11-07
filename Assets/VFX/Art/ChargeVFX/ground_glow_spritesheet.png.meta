@@ -1,0 +1,496 @@
+fileFormatVersion: 2
+guid: ede3c109b56d3a54e857fa363cb61d97
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -2458890573421111895
+    second: ground_glow_spritesheet_0
+  - first:
+      213: -5098668362173184788
+    second: ground_glow_spritesheet_1
+  - first:
+      213: 7776918657500869926
+    second: ground_glow_spritesheet_2
+  - first:
+      213: -1654110095747004777
+    second: ground_glow_spritesheet_3
+  - first:
+      213: 4910496967094451220
+    second: ground_glow_spritesheet_4
+  - first:
+      213: 6517107268520241263
+    second: ground_glow_spritesheet_5
+  - first:
+      213: -1331197295782103589
+    second: ground_glow_spritesheet_6
+  - first:
+      213: 3328781659878291356
+    second: ground_glow_spritesheet_7
+  - first:
+      213: 7323919812935741090
+    second: ground_glow_spritesheet_8
+  - first:
+      213: -7504920349931290250
+    second: ground_glow_spritesheet_9
+  - first:
+      213: -2123266744688691711
+    second: ground_glow_spritesheet_10
+  - first:
+      213: -4950464114448896754
+    second: ground_glow_spritesheet_11
+  - first:
+      213: 1884382207992288238
+    second: ground_glow_spritesheet_12
+  - first:
+      213: 8631447658954821182
+    second: ground_glow_spritesheet_13
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationMethod: 0
+  spriteTessellationDetail: -1
+  spriteGeometrySubdivision: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: ground_glow_spritesheet_0
+      rect:
+        serializedVersion: 2
+        x: 49
+        y: 26
+        width: 167
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9a59dad1d0440edd0800000000000000
+      internalID: -2458890573421111895
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ground_glow_spritesheet_1
+      rect:
+        serializedVersion: 2
+        x: 306
+        y: 26
+        width: 142
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ce405257324ed39b0800000000000000
+      internalID: -5098668362173184788
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ground_glow_spritesheet_2
+      rect:
+        serializedVersion: 2
+        x: 397
+        y: 75
+        width: 11
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 625727ba05a2deb60800000000000000
+      internalID: 7776918657500869926
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ground_glow_spritesheet_3
+      rect:
+        serializedVersion: 2
+        x: 554
+        y: 22
+        width: 159
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 796cc9bb1ab6b09e0800000000000000
+      internalID: -1654110095747004777
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ground_glow_spritesheet_4
+      rect:
+        serializedVersion: 2
+        x: 802
+        y: 28
+        width: 188
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 41c3c4289f6952440800000000000000
+      internalID: 4910496967094451220
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ground_glow_spritesheet_5
+      rect:
+        serializedVersion: 2
+        x: 1035
+        y: 21
+        width: 198
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f68e347188a617a50800000000000000
+      internalID: 6517107268520241263
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ground_glow_spritesheet_6
+      rect:
+        serializedVersion: 2
+        x: 1266
+        y: 19
+        width: 250
+        height: 69
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bd572facc13a68de0800000000000000
+      internalID: -1331197295782103589
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ground_glow_spritesheet_7
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 39
+        width: 34
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c9771e37845323e20800000000000000
+      internalID: 3328781659878291356
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ground_glow_spritesheet_8
+      rect:
+        serializedVersion: 2
+        x: 295
+        y: 41
+        width: 34
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2aeea7d144ac3a560800000000000000
+      internalID: 7323919812935741090
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ground_glow_spritesheet_9
+      rect:
+        serializedVersion: 2
+        x: 441
+        y: 44
+        width: 32
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 671ceba54ba29d790800000000000000
+      internalID: -7504920349931290250
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ground_glow_spritesheet_10
+      rect:
+        serializedVersion: 2
+        x: 543
+        y: 46
+        width: 30
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1063e6f2524a882e0800000000000000
+      internalID: -2123266744688691711
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ground_glow_spritesheet_11
+      rect:
+        serializedVersion: 2
+        x: 699
+        y: 38
+        width: 37
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e0d64f8dd1b6c4bb0800000000000000
+      internalID: -4950464114448896754
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ground_glow_spritesheet_12
+      rect:
+        serializedVersion: 2
+        x: 123
+        y: 25
+        width: 17
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ee3527062aba62a10800000000000000
+      internalID: 1884382207992288238
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ground_glow_spritesheet_13
+      rect:
+        serializedVersion: 2
+        x: 882
+        y: 11
+        width: 23
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e3e01691aef09c770800000000000000
+      internalID: 8631447658954821182
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      ground_glow_spritesheet_0: -2458890573421111895
+      ground_glow_spritesheet_1: -5098668362173184788
+      ground_glow_spritesheet_10: -2123266744688691711
+      ground_glow_spritesheet_11: -4950464114448896754
+      ground_glow_spritesheet_12: 1884382207992288238
+      ground_glow_spritesheet_13: 8631447658954821182
+      ground_glow_spritesheet_2: 7776918657500869926
+      ground_glow_spritesheet_3: -1654110095747004777
+      ground_glow_spritesheet_4: 4910496967094451220
+      ground_glow_spritesheet_5: 6517107268520241263
+      ground_glow_spritesheet_6: -1331197295782103589
+      ground_glow_spritesheet_7: 3328781659878291356
+      ground_glow_spritesheet_8: 7323919812935741090
+      ground_glow_spritesheet_9: -7504920349931290250
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

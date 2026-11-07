@@ -48,7 +48,7 @@ public class AttackController : MonoBehaviour
     [Tooltip("Параметры заряженного удара. Пусто — заряд не сработает, останется обычное комбо")]
     [SerializeField] private HitData chargedHit;
 
-    [Tooltip("Состояние Animator для заряженного удара. Пусто — проигрывается последний удар комбо")]
+    [Tooltip("Состояние Animator для заряженного удара. Пусто — удар не проигрывает анимацию: его рисует VFX")]
     [SerializeField] private string chargedStateName = "";
 
     [Tooltip("Состояние Animator для накопления заряда. Пусто — анимация не меняется")]
@@ -81,6 +81,10 @@ public class AttackController : MonoBehaviour
     [Tooltip("Оттенок героя по мере накопления заряда. Временная замена огню, пока нет эффектов")]
     [SerializeField] private Color chargeTint = new Color(1f, 0.55f, 0.3f, 1f);
 
+    [Header("Эффекты")]
+    [Tooltip("Префаб огненного VFX заряда. Спавнится в персонажа при старте и управляется charge01")]
+    [SerializeField] private ChargeVFXController chargeVfxPrefab;
+
     [Header("Ссылки")]
     [SerializeField] private HamsterMovement movement;
     [SerializeField] private Hitbox hitbox;
@@ -102,6 +106,7 @@ public class AttackController : MonoBehaviour
     private float lockUntil;
     private Vector3 dashFrom;
     private HitData currentHit;
+    private ChargeVFXController chargeVfx;
 
     public void Configure(HamsterMovement movementRef, Hitbox hitboxRef, HitData[] hits, string[] states)
     {
@@ -171,6 +176,25 @@ public class AttackController : MonoBehaviour
 
         if (movement == null)
             movement = GetComponent<HamsterMovement>();
+
+        PrepareChargeVfx();
+    }
+
+    /// <summary>
+    /// VFX можно положить в персонажа вручную, но по умолчанию он спавнится
+    /// из префаба: так эффект не нужно дублировать в каждом герое.
+    /// </summary>
+    private void PrepareChargeVfx()
+    {
+        chargeVfx = GetComponentInChildren<ChargeVFXController>(true);
+
+        if (chargeVfx != null || chargeVfxPrefab == null)
+            return;
+
+        chargeVfx = Instantiate(chargeVfxPrefab, transform);
+        chargeVfx.name = chargeVfxPrefab.name;
+        chargeVfx.transform.localPosition = Vector3.zero;
+        chargeVfx.transform.localRotation = Quaternion.identity;
     }
 
     private void Update()
@@ -198,9 +222,19 @@ public class AttackController : MonoBehaviour
             }
 
             if (!movement.AttackHeld)
+            {
                 ReleaseCharge();
+            }
+            else if (chargeVfx != null)
+            {
+                // Один вход: 0 — только зажглось, 1 — полный заряд.
+                float progress = Mathf.Clamp01((Time.time - chargeStartedAt) / Mathf.Max(0.01f, minChargeTime));
+                chargeVfx.SetCharge(progress);
+            }
             else
+            {
                 UpdateChargeTint();
+            }
 
             return;
         }
@@ -295,7 +329,17 @@ public class AttackController : MonoBehaviour
         if (animator != null && !string.IsNullOrEmpty(chargeStateName))
             animator.Play(chargeStateName, 0, 0f);
 
-        UpdateChargeTint();
+        if (chargeVfx != null)
+        {
+            // Огонь теперь рисует VFX: герой остаётся в покое и не меняет цвет.
+            ResetChargeTint();
+            chargeVfx.Play();
+            chargeVfx.SetCharge(0f);
+        }
+        else
+        {
+            UpdateChargeTint();
+        }
     }
 
     /// <summary>
@@ -323,6 +367,9 @@ public class AttackController : MonoBehaviour
         ResetChargeTint();
         movement.SetControlLocked(false);
 
+        if (chargeVfx != null)
+            chargeVfx.Stop();
+
         // Заряд мог сменить анимацию: без явного возврата герой останется в ней.
         if (animator != null && !string.IsNullOrEmpty(fallbackStateName))
             animator.Play(fallbackStateName, 0, 0f);
@@ -337,9 +384,16 @@ public class AttackController : MonoBehaviour
 
         if (held >= minChargeTime && chargedHit != null)
         {
+            // Выпуск удара: вспышка, искры и рассеивание огня.
+            if (chargeVfx != null)
+                chargeVfx.Burst();
+
             StartChargedAttack();
             return;
         }
+
+        if (chargeVfx != null)
+            chargeVfx.Stop();
 
         // Короткое нажатие — обычное комбо, включая продолжение серии.
         bool chainExpired = Time.time - lastAttackEnd > comboResetTime;
@@ -356,14 +410,9 @@ public class AttackController : MonoBehaviour
         dashFrom = transform.position;
         dashEndsAt = Time.time + dashDuration;
 
-        string stateName = !string.IsNullOrEmpty(chargedStateName)
-            ? chargedStateName
-            : (attackStates != null && attackStates.Length > 0
-                ? attackStates[attackStates.Length - 1]
-                : "FastPunch");
-
-        if (animator != null)
-            animator.Play(stateName, 0, 0f);
+        // Пустое имя — удар без анимации: визуал целиком на VFX.
+        if (animator != null && !string.IsNullOrEmpty(chargedStateName))
+            animator.Play(chargedStateName, 0, 0f);
 
         movement.SetControlLocked(true);
 

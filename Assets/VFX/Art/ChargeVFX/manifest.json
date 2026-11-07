@@ -1,0 +1,113 @@
+{
+  "source": "a_clean_high_resolution_game_vfx_assetsheet_on_a.png",
+  "source_size": [
+    1536,
+    1024
+  ],
+  "assets": {
+    "flame_tongue": {
+      "frames": 8,
+      "frame_size": [
+        170,
+        135
+      ],
+      "spritesheet": "flame_tongue_spritesheet.png",
+      "individual_frames": [
+        "flame_tongue_01.png",
+        "flame_tongue_02.png",
+        "flame_tongue_03.png",
+        "flame_tongue_04.png",
+        "flame_tongue_05.png",
+        "flame_tongue_06.png",
+        "flame_tongue_07.png",
+        "flame_tongue_08.png"
+      ]
+    },
+    "fire_ring": {
+      "frames": 8,
+      "frame_size": [
+        212,
+        155
+      ],
+      "spritesheet": "fire_ring_spritesheet.png",
+      "individual_frames": [
+        "fire_ring_01.png",
+        "fire_ring_02.png",
+        "fire_ring_03.png",
+        "fire_ring_04.png",
+        "fire_ring_05.png",
+        "fire_ring_06.png",
+        "fire_ring_07.png",
+        "fire_ring_08.png"
+      ]
+    },
+    "embers": {
+      "frames": 8,
+      "frame_size": [
+        144,
+        102
+      ],
+      "spritesheet": "embers_spritesheet.png",
+      "individual_frames": [
+        "embers_01.png",
+        "embers_02.png",
+        "embers_03.png",
+        "embers_04.png",
+        "embers_05.png",
+        "embers_06.png",
+        "embers_07.png",
+        "embers_08.png"
+      ]
+    },
+    "ground_glow": {
+      "frames": 6,
+      "frame_size": [
+        256,
+        106
+      ],
+      "spritesheet": "ground_glow_spritesheet.png",
+      "individual_frames": [
+        "ground_glow_01.png",
+        "ground_glow_02.png",
+        "ground_glow_03.png",
+        "ground_glow_04.png",
+        "ground_glow_05.png",
+        "ground_glow_06.png"
+      ]
+    },
+    "charge_flash": {
+      "frames": 6,
+      "frame_size": [
+        257,
+        125
+      ],
+      "spritesheet": "charge_flash_spritesheet.png",
+      "individual_frames": [
+        "charge_flash_01.png",
+        "charge_flash_02.png",
+        "charge_flash_03.png",
+        "charge_flash_04.png",
+        "charge_flash_05.png",
+        "charge_flash_06.png"
+      ]
+    },
+    "aura_flame": {
+      "frames": 8,
+      "frame_size": [
+        212,
+        216
+      ],
+      "spritesheet": "aura_flame_spritesheet.png",
+      "individual_frames": [
+        "aura_flame_01.png",
+        "aura_flame_02.png",
+        "aura_flame_03.png",
+        "aura_flame_04.png",
+        "aura_flame_05.png",
+        "aura_flame_06.png",
+        "aura_flame_07.png",
+        "aura_flame_08.png"
+      ]
+    }
+  }
+}
