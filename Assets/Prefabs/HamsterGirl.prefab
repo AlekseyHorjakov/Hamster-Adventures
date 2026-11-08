@@ -155,6 +155,7 @@ GameObject:
   - component: {fileID: 7773680787068127644}
   - component: {fileID: 8675463877990214191}
   - component: {fileID: 3594938766314249159}
+  - component: {fileID: 7521601888296858565}
   m_Layer: 3
   m_Name: HamsterGirl
   m_TagString: Untagged
@@ -271,6 +272,7 @@ MonoBehaviour:
   rightKey: 25
   jumpKey: 35
   attackKey: 26
+  input: {fileID: 7521601888296858565}
   jumpForce: 10
   maxJumps: 2
   partner: {fileID: 0}
@@ -388,3 +390,17 @@ MonoBehaviour:
   idleDelay: 5
   requireGrounded: 1
   faceRightDuringSpecial: 1
+--- !u!114 &7521601888296858565
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7313605111358297189}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8eb5c14dbb3808841a7c9405de28f18e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PlayerInputReader
+  actions: {fileID: -944628639613478452, guid: 79053acb82ce4af4aa9ca1b6b0a8cff3, type: 3}
+  mapName: HamsterGirl

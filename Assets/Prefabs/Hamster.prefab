@@ -108,6 +108,7 @@ GameObject:
   - component: {fileID: 8845710667774388682}
   - component: {fileID: 1791010570302103970}
   - component: {fileID: 8489467301332612194}
+  - component: {fileID: 5250570610276498038}
   m_Layer: 3
   m_Name: Hamster
   m_TagString: Untagged
@@ -224,6 +225,7 @@ MonoBehaviour:
   rightKey: 18
   jumpKey: 37
   attackKey: 20
+  input: {fileID: 5250570610276498038}
   jumpForce: 10
   maxJumps: 2
   partner: {fileID: 0}
@@ -341,6 +343,20 @@ MonoBehaviour:
   idleDelay: 5
   requireGrounded: 1
   faceRightDuringSpecial: 0
+--- !u!114 &5250570610276498038
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6507534076535526295}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8eb5c14dbb3808841a7c9405de28f18e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PlayerInputReader
+  actions: {fileID: -944628639613478452, guid: 79053acb82ce4af4aa9ca1b6b0a8cff3, type: 3}
+  mapName: Hamster
 --- !u!1 &9088040696783955624
 GameObject:
   m_ObjectHideFlags: 0

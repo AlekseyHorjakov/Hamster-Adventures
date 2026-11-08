@@ -19,6 +19,9 @@ public class HamsterMovement : MonoBehaviour
     [SerializeField] private Key jumpKey = Key.W;
     [SerializeField] private Key attackKey = Key.J;
 
+    [Tooltip("Новый ввод из InputActionAsset; если пусто — старые клавиши выше")]
+    [SerializeField] private PlayerInputReader input;
+
     [Header("Jump")]
     [SerializeField] private float jumpForce = 10f;
     [SerializeField] private int maxJumps = 2;
@@ -69,6 +72,9 @@ public class HamsterMovement : MonoBehaviour
         animator = GetComponent<Animator>();
         mainCamera = Camera.main;
 
+        if (input == null)
+            input = GetComponent<PlayerInputReader>();
+
         if (spriteRenderer == null)
             Debug.LogWarning("[HamsterMovement] SpriteRenderer не найден у " + name +
                              " — разворот персонажа работать не будет");
@@ -85,7 +91,9 @@ public class HamsterMovement : MonoBehaviour
         UpdateAnimation();
 
         // Для «особого бездействия»: любой ввод сбрасывает таймер.
-        bool anyKey = Keyboard.current != null && Keyboard.current.anyKey.wasPressedThisFrame;
+        bool anyKey = input != null
+            ? input.AnyPressed
+            : Keyboard.current != null && Keyboard.current.anyKey.wasPressedThisFrame;
 
         if (anyKey || Mathf.Abs(moveInput) > 0.01f || attackHeld)
             LastInputTime = Time.time;
@@ -98,7 +106,11 @@ public class HamsterMovement : MonoBehaviour
         if (controlLocked)
             return;
 
-        if (Keyboard.current != null)
+        if (input != null)
+        {
+            moveInput = Mathf.Clamp(input.Move, -1f, 1f);
+        }
+        else if (Keyboard.current != null)
         {
             if (Keyboard.current[leftKey].isPressed)
                 moveInput = -1f;
@@ -117,33 +129,46 @@ public class HamsterMovement : MonoBehaviour
 
     private void ReadJumpInput()
     {
-        if (Keyboard.current == null)
+        bool jumpPressed = input != null
+            ? input.JumpPressed
+            : Keyboard.current != null && Keyboard.current[jumpKey].wasPressedThisFrame;
+
+        if (!jumpPressed || jumpsRemaining <= 0)
             return;
 
-        if (Keyboard.current[jumpKey].wasPressedThisFrame &&
-            jumpsRemaining > 0)
+        // Не разрешаем прыгать за верхнюю границу
+        // области, доступной обоим игрокам.
+        if (partner != null &&
+            transform.position.y >= partner.position.y +
+            GetMaxVerticalSeparation() * 0.5f)
         {
-            // Не разрешаем прыгать за верхнюю границу
-            // области, доступной обоим игрокам.
-            if (partner != null &&
-                transform.position.y >= partner.position.y +
-                GetMaxVerticalSeparation() * 0.5f)
-            {
-                return;
-            }
-
-            rb.linearVelocity = new Vector2(
-                rb.linearVelocity.x,
-                jumpForce
-            );
-
-            jumpsRemaining--;
-            isGrounded = false;
+            return;
         }
+
+        rb.linearVelocity = new Vector2(
+            rb.linearVelocity.x,
+            jumpForce
+        );
+
+        jumpsRemaining--;
+        isGrounded = false;
     }
 
     private void ReadAttackInput()
     {
+        if (input != null)
+        {
+            attackHeld = input.AttackHeld;
+
+            if (input.AttackPressed)
+                attackPressed = true;
+
+            if (input.AttackReleased)
+                attackReleased = true;
+
+            return;
+        }
+
         if (Keyboard.current == null)
         {
             attackHeld = false;
