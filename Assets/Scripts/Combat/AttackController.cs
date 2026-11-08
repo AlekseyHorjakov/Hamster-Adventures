@@ -489,8 +489,15 @@ public class AttackController : MonoBehaviour
 
         Vector3 center = (dashFrom + position) * 0.5f;
 
-        // Корень героя — на середине спрайта; след должен лежать на земле.
-        if (spriteRenderer != null)
+        // Низ коллайдера — линия ступней; низ спрайт-ячейки проходит ниже
+        // ступней, из-за чего след уходил в землю.
+        Collider2D bodyCollider = GetComponent<Collider2D>();
+        if (bodyCollider == null)
+            bodyCollider = GetComponentInChildren<Collider2D>();
+
+        if (bodyCollider != null)
+            center.y = bodyCollider.bounds.min.y;
+        else if (spriteRenderer != null)
             center.y = spriteRenderer.bounds.min.y;
 
         GameObject trail = Instantiate(trailPrefab, center, Quaternion.identity);
@@ -498,8 +505,12 @@ public class AttackController : MonoBehaviour
         // Префаб следа рисуется полосой длиной в один юнит — растягиваем по рывку.
         // Чуть длиннее самого рывка, чтобы огонь читался как шлейф.
         const float TrailLengthMultiplier = 1.35f;
+        const float TrailHeightMultiplier = 1.8f;
         Vector3 scale = trail.transform.localScale;
-        trail.transform.localScale = new Vector3(length * TrailLengthMultiplier * scale.x, scale.y, scale.z);
+        trail.transform.localScale = new Vector3(
+            length * TrailLengthMultiplier * scale.x,
+            scale.y * TrailHeightMultiplier,
+            scale.z);
 
         if (position.x < dashFrom.x)
         {
