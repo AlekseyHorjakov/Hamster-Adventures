@@ -362,7 +362,7 @@ MonoBehaviour:
   dashBlockMask:
     serializedVersion: 2
     m_Bits: 0
-  trailPrefab: {fileID: 0}
+  trailPrefab: {fileID: 7928485816016736876, guid: 4fff041520d59df45941d7b19658a1ee, type: 3}
   trailLifetime: 2
   chargeTint: {r: 1, g: 0.55, b: 0.3, a: 1}
   chargeVfxPrefab: {fileID: 1029771961154505336, guid: 16567cbc3e73cf441a7d254dd8854094, type: 3}
@@ -387,3 +387,4 @@ MonoBehaviour:
   specialState: SingIdle
   idleDelay: 5
   requireGrounded: 1
+  faceRightDuringSpecial: 1
