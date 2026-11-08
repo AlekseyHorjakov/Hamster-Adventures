@@ -16,7 +16,7 @@ public static class FireTrailBuilder
     private const string PrefabPath = "Assets/VFX/Prefabs/FireTrail.prefab";
     private const int FrameCount = 12;
     private const float Ppu = 362f;
-    private const float FrameSeconds = 0.1f;
+    private const float FrameSeconds = 0.12f;
 
     [MenuItem("Tools/Hamster/Build Fire Trail")]
     public static void BuildAll()

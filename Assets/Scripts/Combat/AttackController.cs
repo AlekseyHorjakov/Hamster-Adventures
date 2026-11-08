@@ -76,7 +76,7 @@ public class AttackController : MonoBehaviour
     [SerializeField] private GameObject trailPrefab;
 
     [Tooltip("Сколько секунд живёт горящий след")]
-    [SerializeField] private float trailLifetime = 2f;
+    [SerializeField] private float trailLifetime = 3f;
 
     [Tooltip("Оттенок героя по мере накопления заряда. Временная замена огню, пока нет эффектов")]
     [SerializeField] private Color chargeTint = new Color(1f, 0.55f, 0.3f, 1f);
@@ -488,11 +488,18 @@ public class AttackController : MonoBehaviour
             return;
 
         Vector3 center = (dashFrom + position) * 0.5f;
+
+        // Корень героя — на середине спрайта; след должен лежать на земле.
+        if (spriteRenderer != null)
+            center.y = spriteRenderer.bounds.min.y;
+
         GameObject trail = Instantiate(trailPrefab, center, Quaternion.identity);
 
         // Префаб следа рисуется полосой длиной в один юнит — растягиваем по рывку.
+        // Чуть длиннее самого рывка, чтобы огонь читался как шлейф.
+        const float TrailLengthMultiplier = 1.35f;
         Vector3 scale = trail.transform.localScale;
-        trail.transform.localScale = new Vector3(length * scale.x, scale.y, scale.z);
+        trail.transform.localScale = new Vector3(length * TrailLengthMultiplier * scale.x, scale.y, scale.z);
 
         if (position.x < dashFrom.x)
         {
