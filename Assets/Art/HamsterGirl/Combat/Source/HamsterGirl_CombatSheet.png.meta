@@ -1,0 +1,1640 @@
+fileFormatVersion: 2
+guid: a0db75feee493de4b9a85589eb1491e1
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 2572924602481626974
+    second: HamsterGirl_CombatSheet_0
+  - first:
+      213: -2740291954680493698
+    second: HamsterGirl_CombatSheet_1
+  - first:
+      213: -6837708371495073348
+    second: HamsterGirl_CombatSheet_2
+  - first:
+      213: 4590693274026631948
+    second: HamsterGirl_CombatSheet_3
+  - first:
+      213: -6578932382996947937
+    second: HamsterGirl_CombatSheet_4
+  - first:
+      213: -5155308670525531122
+    second: HamsterGirl_CombatSheet_5
+  - first:
+      213: -93571477479783697
+    second: HamsterGirl_CombatSheet_6
+  - first:
+      213: 3404437735063096012
+    second: HamsterGirl_CombatSheet_7
+  - first:
+      213: 5425759385785259239
+    second: HamsterGirl_CombatSheet_8
+  - first:
+      213: 8350729281434090989
+    second: HamsterGirl_CombatSheet_9
+  - first:
+      213: -7496252412201749752
+    second: HamsterGirl_CombatSheet_10
+  - first:
+      213: 1236014511035980826
+    second: HamsterGirl_CombatSheet_11
+  - first:
+      213: -8855538032811494492
+    second: HamsterGirl_CombatSheet_12
+  - first:
+      213: -2238383537107604705
+    second: HamsterGirl_CombatSheet_13
+  - first:
+      213: 4795712792791149841
+    second: HamsterGirl_CombatSheet_14
+  - first:
+      213: 5887725460696841879
+    second: HamsterGirl_CombatSheet_15
+  - first:
+      213: 2279326086843562463
+    second: HamsterGirl_CombatSheet_16
+  - first:
+      213: 3773491813950473961
+    second: HamsterGirl_CombatSheet_17
+  - first:
+      213: 6078705102015287184
+    second: HamsterGirl_CombatSheet_18
+  - first:
+      213: 909929996719619164
+    second: HamsterGirl_CombatSheet_19
+  - first:
+      213: -2611021098799322728
+    second: HamsterGirl_CombatSheet_20
+  - first:
+      213: -7224515363439541507
+    second: HamsterGirl_CombatSheet_21
+  - first:
+      213: 3010526548413734946
+    second: HamsterGirl_CombatSheet_22
+  - first:
+      213: 2865615230207461259
+    second: HamsterGirl_CombatSheet_23
+  - first:
+      213: 7414182328534190052
+    second: HamsterGirl_CombatSheet_24
+  - first:
+      213: -3497850551483823907
+    second: HamsterGirl_CombatSheet_25
+  - first:
+      213: -5809029838131511957
+    second: HamsterGirl_CombatSheet_26
+  - first:
+      213: 2325931776949299470
+    second: HamsterGirl_CombatSheet_27
+  - first:
+      213: -986463417754292412
+    second: HamsterGirl_CombatSheet_28
+  - first:
+      213: 773466098117918644
+    second: HamsterGirl_CombatSheet_29
+  - first:
+      213: -7606794420869278798
+    second: HamsterGirl_CombatSheet_30
+  - first:
+      213: 8048030048099245149
+    second: HamsterGirl_CombatSheet_31
+  - first:
+      213: 1253475707703720322
+    second: HamsterGirl_CombatSheet_32
+  - first:
+      213: -6960307887216555848
+    second: HamsterGirl_CombatSheet_33
+  - first:
+      213: 5053656290886585040
+    second: HamsterGirl_CombatSheet_34
+  - first:
+      213: 7350897800682605608
+    second: HamsterGirl_CombatSheet_35
+  - first:
+      213: -2733489299655731220
+    second: HamsterGirl_CombatSheet_36
+  - first:
+      213: 7042746701918394057
+    second: HamsterGirl_CombatSheet_37
+  - first:
+      213: 3079477973090037067
+    second: HamsterGirl_CombatSheet_38
+  - first:
+      213: -1324817125943678510
+    second: HamsterGirl_CombatSheet_39
+  - first:
+      213: -169519890498452318
+    second: HamsterGirl_CombatSheet_40
+  - first:
+      213: -7310393302799783053
+    second: HamsterGirl_CombatSheet_41
+  - first:
+      213: 4794723492094105862
+    second: HamsterGirl_CombatSheet_42
+  - first:
+      213: 5476906056166914696
+    second: HamsterGirl_CombatSheet_43
+  - first:
+      213: -7841106556827781679
+    second: HamsterGirl_CombatSheet_44
+  - first:
+      213: 8026342204248922501
+    second: HamsterGirl_CombatSheet_45
+  - first:
+      213: -8214576754686582442
+    second: HamsterGirl_CombatSheet_46
+  - first:
+      213: 4838133919192060939
+    second: HamsterGirl_CombatSheet_47
+  - first:
+      213: 1054809301716174696
+    second: HamsterGirl_CombatSheet_48
+  - first:
+      213: 8343793748538575807
+    second: HamsterGirl_CombatSheet_49
+  - first:
+      213: 768807877839998444
+    second: HamsterGirl_CombatSheet_50
+  - first:
+      213: 7707656248109095553
+    second: HamsterGirl_CombatSheet_51
+  - first:
+      213: -8004593014289889156
+    second: HamsterGirl_CombatSheet_52
+  - first:
+      213: 2431419497149537238
+    second: HamsterGirl_CombatSheet_53
+  - first:
+      213: -4834750298435999749
+    second: HamsterGirl_CombatSheet_54
+  - first:
+      213: -4276163943463852757
+    second: HamsterGirl_CombatSheet_55
+  - first:
+      213: -8389200292917698841
+    second: HamsterGirl_CombatSheet_56
+  - first:
+      213: 3794836140097341247
+    second: HamsterGirl_CombatSheet_57
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationMethod: 0
+  spriteTessellationDetail: -1
+  spriteGeometrySubdivision: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: HamsterGirl_CombatSheet_0
+      rect:
+        serializedVersion: 2
+        x: 14
+        y: 719
+        width: 440
+        height: 296
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e5fc7c44b4dd4b320800000000000000
+      internalID: 2572924602481626974
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HamsterGirl_CombatSheet_1
+      rect:
+        serializedVersion: 2
+        x: 767
+        y: 720
+        width: 196
+        height: 259
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e7988646cf688f9d0800000000000000
+      internalID: -2740291954680493698
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HamsterGirl_CombatSheet_2
+      rect:
+        serializedVersion: 2
+        x: 1130
+        y: 974
+        width: 393
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cb9425fb6749b11a0800000000000000
+      internalID: -6837708371495073348
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HamsterGirl_CombatSheet_3
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 719
+        width: 178
+        height: 231
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c03e12fc53b65bf30800000000000000
+      internalID: 4590693274026631948
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HamsterGirl_CombatSheet_4
+      rect:
+        serializedVersion: 2
+        x: 392
+        y: 719
+        width: 185
+        height: 225
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f1c1726badfe2b4a0800000000000000
+      internalID: -6578932382996947937
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HamsterGirl_CombatSheet_5
+      rect:
+        serializedVersion: 2
+        x: 579
+        y: 720
+        width: 196
+        height: 241
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e0c95d1041aa478b0800000000000000
+      internalID: -5155308670525531122
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HamsterGirl_CombatSheet_6
+      rect:
+        serializedVersion: 2
+        x: 961
+        y: 729
+        width: 195
+        height: 215
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fe285bbac3193bef0800000000000000
+      internalID: -93571477479783697
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HamsterGirl_CombatSheet_7
+      rect:
+        serializedVersion: 2
+        x: 1162
+        y: 782
+        width: 15
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cca0f52251efe3f20800000000000000
+      internalID: 3404437735063096012
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HamsterGirl_CombatSheet_8
+      rect:
+        serializedVersion: 2
+        x: 1174
+        y: 720
+        width: 174
+        height: 203
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7e4d87a1a6b2c4b40800000000000000
+      internalID: 5425759385785259239
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HamsterGirl_CombatSheet_9
+      rect:
+        serializedVersion: 2
+        x: 1345
+        y: 719
+        width: 175
+        height: 225
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dedf4539900c3e370800000000000000
+      internalID: 8350729281434090989
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HamsterGirl_CombatSheet_10
+      rect:
+        serializedVersion: 2
+        x: 90
+        y: 682
+        width: 42
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 803bc00e526f7f790800000000000000
+      internalID: -7496252412201749752
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HamsterGirl_CombatSheet_11
+      rect:
+        serializedVersion: 2
+        x: 285
+        y: 682
+        width: 42
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a1c178b26a4372110800000000000000
+      internalID: 1236014511035980826
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HamsterGirl_CombatSheet_12
+      rect:
+        serializedVersion: 2
+        x: 484
+        y: 681
+        width: 41
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4a33f4be31fca1580800000000000000
+      internalID: -8855538032811494492
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HamsterGirl_CombatSheet_13
+      rect:
+        serializedVersion: 2
+        x: 677
+        y: 681
+        width: 42
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f1b6e9f480aafe0e0800000000000000
+      internalID: -2238383537107604705
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HamsterGirl_CombatSheet_14
+      rect:
+        serializedVersion: 2
+        x: 871
+        y: 681
+        width: 43
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 11dec13506bcd8240800000000000000
+      internalID: 4795712792791149841
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HamsterGirl_CombatSheet_15
+      rect:
+        serializedVersion: 2
+        x: 1061
+        y: 681
+        width: 42
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 79ebbdbac1765b150800000000000000
+      internalID: 5887725460696841879
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HamsterGirl_CombatSheet_16
+      rect:
+        serializedVersion: 2
+        x: 1231
+        y: 681
+        width: 43
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fd97795effac1af10800000000000000
+      internalID: 2279326086843562463
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HamsterGirl_CombatSheet_17
+      rect:
+        serializedVersion: 2
+        x: 1416
+        y: 681
+        width: 41
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9e6cc5ddfc22e5430800000000000000
+      internalID: 3773491813950473961
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HamsterGirl_CombatSheet_18
+      rect:
+        serializedVersion: 2
+        x: 14
+        y: 609
+        width: 432
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 09fc9fb7516eb5450800000000000000
+      internalID: 6078705102015287184
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HamsterGirl_CombatSheet_19
+      rect:
+        serializedVersion: 2
+        x: 380
+        y: 384
+        width: 193
+        height: 243
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c5cf1f0d288b0ac00800000000000000
+      internalID: 909929996719619164
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HamsterGirl_CombatSheet_20
+      rect:
+        serializedVersion: 2
+        x: 574
+        y: 384
+        width: 194
+        height: 242
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8992409f42ac3cbd0800000000000000
+      internalID: -2611021098799322728
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HamsterGirl_CombatSheet_21
+      rect:
+        serializedVersion: 2
+        x: 792
+        y: 556
+        width: 132
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: df285d7dd8d5dbb90800000000000000
+      internalID: -7224515363439541507
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HamsterGirl_CombatSheet_22
+      rect:
+        serializedVersion: 2
+        x: 1106
+        y: 613
+        width: 418
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 220651102f987c920800000000000000
+      internalID: 3010526548413734946
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HamsterGirl_CombatSheet_23
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 384
+        width: 180
+        height: 221
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b8707738ed5b4c720800000000000000
+      internalID: 2865615230207461259
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HamsterGirl_CombatSheet_24
+      rect:
+        serializedVersion: 2
+        x: 197
+        y: 384
+        width: 181
+        height: 222
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4e74248bb8774e660800000000000000
+      internalID: 7414182328534190052
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HamsterGirl_CombatSheet_25
+      rect:
+        serializedVersion: 2
+        x: 774
+        y: 384
+        width: 182
+        height: 178
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dd80761b473257fc0800000000000000
+      internalID: -3497850551483823907
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HamsterGirl_CombatSheet_26
+      rect:
+        serializedVersion: 2
+        x: 962
+        y: 384
+        width: 175
+        height: 196
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b6db688c32e226fa0800000000000000
+      internalID: -5809029838131511957
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HamsterGirl_CombatSheet_27
+      rect:
+        serializedVersion: 2
+        x: 969
+        y: 539
+        width: 71
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e092bd8b0ae574020800000000000000
+      internalID: 2325931776949299470
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HamsterGirl_CombatSheet_28
+      rect:
+        serializedVersion: 2
+        x: 1400
+        y: 490
+        width: 68
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 44f66d08fb06f42f0800000000000000
+      internalID: -986463417754292412
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HamsterGirl_CombatSheet_29
+      rect:
+        serializedVersion: 2
+        x: 1138
+        y: 385
+        width: 384
+        height: 127
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4bf30287157ebba00800000000000000
+      internalID: 773466098117918644
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HamsterGirl_CombatSheet_30
+      rect:
+        serializedVersion: 2
+        x: 90
+        y: 343
+        width: 42
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2b3d9a8d6cc3f6690800000000000000
+      internalID: -7606794420869278798
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HamsterGirl_CombatSheet_31
+      rect:
+        serializedVersion: 2
+        x: 285
+        y: 344
+        width: 42
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d5c10ae30b850bf60800000000000000
+      internalID: 8048030048099245149
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HamsterGirl_CombatSheet_32
+      rect:
+        serializedVersion: 2
+        x: 486
+        y: 343
+        width: 42
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 289f244d38d356110800000000000000
+      internalID: 1253475707703720322
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HamsterGirl_CombatSheet_33
+      rect:
+        serializedVersion: 2
+        x: 671
+        y: 343
+        width: 42
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8b88b179ad4086f90800000000000000
+      internalID: -6960307887216555848
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HamsterGirl_CombatSheet_34
+      rect:
+        serializedVersion: 2
+        x: 864
+        y: 344
+        width: 42
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0da86330f91322640800000000000000
+      internalID: 5053656290886585040
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HamsterGirl_CombatSheet_35
+      rect:
+        serializedVersion: 2
+        x: 1045
+        y: 344
+        width: 41
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 82c03ed5a92a30660800000000000000
+      internalID: 7350897800682605608
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HamsterGirl_CombatSheet_36
+      rect:
+        serializedVersion: 2
+        x: 1222
+        y: 343
+        width: 43
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ce750b0f6f1b01ad0800000000000000
+      internalID: -2733489299655731220
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HamsterGirl_CombatSheet_37
+      rect:
+        serializedVersion: 2
+        x: 1414
+        y: 343
+        width: 42
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9c656e2bfccdcb160800000000000000
+      internalID: 7042746701918394057
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HamsterGirl_CombatSheet_38
+      rect:
+        serializedVersion: 2
+        x: 14
+        y: 266
+        width: 315
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b4deba796e08cba20800000000000000
+      internalID: 3079477973090037067
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HamsterGirl_CombatSheet_39
+      rect:
+        serializedVersion: 2
+        x: 1111
+        y: 48
+        width: 413
+        height: 264
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2d9e5c7d7dd4d9de0800000000000000
+      internalID: -1324817125943678510
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HamsterGirl_CombatSheet_40
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 48
+        width: 175
+        height: 215
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2a40a78ce8eb5adf0800000000000000
+      internalID: -169519890498452318
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HamsterGirl_CombatSheet_41
+      rect:
+        serializedVersion: 2
+        x: 182
+        y: 48
+        width: 191
+        height: 207
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 37b6932f5044c8a90800000000000000
+      internalID: -7310393302799783053
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HamsterGirl_CombatSheet_42
+      rect:
+        serializedVersion: 2
+        x: 369
+        y: 49
+        width: 192
+        height: 199
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6095d7ecc974a8240800000000000000
+      internalID: 4794723492094105862
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HamsterGirl_CombatSheet_43
+      rect:
+        serializedVersion: 2
+        x: 573
+        y: 190
+        width: 48
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 88ab30a4a01e10c40800000000000000
+      internalID: 5476906056166914696
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HamsterGirl_CombatSheet_44
+      rect:
+        serializedVersion: 2
+        x: 575
+        y: 210
+        width: 40
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1d53b4a612bce2390800000000000000
+      internalID: -7841106556827781679
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HamsterGirl_CombatSheet_45
+      rect:
+        serializedVersion: 2
+        x: 788
+        y: 184
+        width: 14
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5899bf995bb436f60800000000000000
+      internalID: 8026342204248922501
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HamsterGirl_CombatSheet_46
+      rect:
+        serializedVersion: 2
+        x: 560
+        y: 52
+        width: 189
+        height: 154
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 651a9bcd6f5fffd80800000000000000
+      internalID: -8214576754686582442
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HamsterGirl_CombatSheet_47
+      rect:
+        serializedVersion: 2
+        x: 750
+        y: 51
+        width: 168
+        height: 131
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b04163d7a21842340800000000000000
+      internalID: 4838133919192060939
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HamsterGirl_CombatSheet_48
+      rect:
+        serializedVersion: 2
+        x: 753
+        y: 169
+        width: 29
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8670296a87f63ae00800000000000000
+      internalID: 1054809301716174696
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HamsterGirl_CombatSheet_49
+      rect:
+        serializedVersion: 2
+        x: 766
+        y: 179
+        width: 24
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fbb44ccf43c1bc370800000000000000
+      internalID: 8343793748538575807
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HamsterGirl_CombatSheet_50
+      rect:
+        serializedVersion: 2
+        x: 87
+        y: 8
+        width: 42
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cedcc2b01ba5baa00800000000000000
+      internalID: 768807877839998444
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HamsterGirl_CombatSheet_51
+      rect:
+        serializedVersion: 2
+        x: 284
+        y: 8
+        width: 43
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 18adc5f458817fa60800000000000000
+      internalID: 7707656248109095553
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HamsterGirl_CombatSheet_52
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 8
+        width: 43
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c788dab4019f9e090800000000000000
+      internalID: -8004593014289889156
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HamsterGirl_CombatSheet_53
+      rect:
+        serializedVersion: 2
+        x: 667
+        y: 8
+        width: 43
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6db9e8386232eb120800000000000000
+      internalID: 2431419497149537238
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HamsterGirl_CombatSheet_54
+      rect:
+        serializedVersion: 2
+        x: 861
+        y: 8
+        width: 43
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bf7220c183487ecb0800000000000000
+      internalID: -4834750298435999749
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HamsterGirl_CombatSheet_55
+      rect:
+        serializedVersion: 2
+        x: 927
+        y: 8
+        width: 189
+        height: 168
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b25e08cac8308a4c0800000000000000
+      internalID: -4276163943463852757
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HamsterGirl_CombatSheet_56
+      rect:
+        serializedVersion: 2
+        x: 1221
+        y: 9
+        width: 43
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7ee990f08c2939b80800000000000000
+      internalID: -8389200292917698841
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HamsterGirl_CombatSheet_57
+      rect:
+        serializedVersion: 2
+        x: 1413
+        y: 9
+        width: 43
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f37015f0d57f9a430800000000000000
+      internalID: 3794836140097341247
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      HamsterGirl_CombatSheet_0: 2572924602481626974
+      HamsterGirl_CombatSheet_1: -2740291954680493698
+      HamsterGirl_CombatSheet_10: -7496252412201749752
+      HamsterGirl_CombatSheet_11: 1236014511035980826
+      HamsterGirl_CombatSheet_12: -8855538032811494492
+      HamsterGirl_CombatSheet_13: -2238383537107604705
+      HamsterGirl_CombatSheet_14: 4795712792791149841
+      HamsterGirl_CombatSheet_15: 5887725460696841879
+      HamsterGirl_CombatSheet_16: 2279326086843562463
+      HamsterGirl_CombatSheet_17: 3773491813950473961
+      HamsterGirl_CombatSheet_18: 6078705102015287184
+      HamsterGirl_CombatSheet_19: 909929996719619164
+      HamsterGirl_CombatSheet_2: -6837708371495073348
+      HamsterGirl_CombatSheet_20: -2611021098799322728
+      HamsterGirl_CombatSheet_21: -7224515363439541507
+      HamsterGirl_CombatSheet_22: 3010526548413734946
+      HamsterGirl_CombatSheet_23: 2865615230207461259
+      HamsterGirl_CombatSheet_24: 7414182328534190052
+      HamsterGirl_CombatSheet_25: -3497850551483823907
+      HamsterGirl_CombatSheet_26: -5809029838131511957
+      HamsterGirl_CombatSheet_27: 2325931776949299470
+      HamsterGirl_CombatSheet_28: -986463417754292412
+      HamsterGirl_CombatSheet_29: 773466098117918644
+      HamsterGirl_CombatSheet_3: 4590693274026631948
+      HamsterGirl_CombatSheet_30: -7606794420869278798
+      HamsterGirl_CombatSheet_31: 8048030048099245149
+      HamsterGirl_CombatSheet_32: 1253475707703720322
+      HamsterGirl_CombatSheet_33: -6960307887216555848
+      HamsterGirl_CombatSheet_34: 5053656290886585040
+      HamsterGirl_CombatSheet_35: 7350897800682605608
+      HamsterGirl_CombatSheet_36: -2733489299655731220
+      HamsterGirl_CombatSheet_37: 7042746701918394057
+      HamsterGirl_CombatSheet_38: 3079477973090037067
+      HamsterGirl_CombatSheet_39: -1324817125943678510
+      HamsterGirl_CombatSheet_4: -6578932382996947937
+      HamsterGirl_CombatSheet_40: -169519890498452318
+      HamsterGirl_CombatSheet_41: -7310393302799783053
+      HamsterGirl_CombatSheet_42: 4794723492094105862
+      HamsterGirl_CombatSheet_43: 5476906056166914696
+      HamsterGirl_CombatSheet_44: -7841106556827781679
+      HamsterGirl_CombatSheet_45: 8026342204248922501
+      HamsterGirl_CombatSheet_46: -8214576754686582442
+      HamsterGirl_CombatSheet_47: 4838133919192060939
+      HamsterGirl_CombatSheet_48: 1054809301716174696
+      HamsterGirl_CombatSheet_49: 8343793748538575807
+      HamsterGirl_CombatSheet_5: -5155308670525531122
+      HamsterGirl_CombatSheet_50: 768807877839998444
+      HamsterGirl_CombatSheet_51: 7707656248109095553
+      HamsterGirl_CombatSheet_52: -8004593014289889156
+      HamsterGirl_CombatSheet_53: 2431419497149537238
+      HamsterGirl_CombatSheet_54: -4834750298435999749
+      HamsterGirl_CombatSheet_55: -4276163943463852757
+      HamsterGirl_CombatSheet_56: -8389200292917698841
+      HamsterGirl_CombatSheet_57: 3794836140097341247
+      HamsterGirl_CombatSheet_6: -93571477479783697
+      HamsterGirl_CombatSheet_7: 3404437735063096012
+      HamsterGirl_CombatSheet_8: 5425759385785259239
+      HamsterGirl_CombatSheet_9: 8350729281434090989
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

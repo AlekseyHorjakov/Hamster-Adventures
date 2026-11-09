@@ -156,6 +156,7 @@ GameObject:
   - component: {fileID: 8675463877990214191}
   - component: {fileID: 3594938766314249159}
   - component: {fileID: 7521601888296858565}
+  - component: {fileID: 2445444458852127743}
   m_Layer: 3
   m_Name: HamsterGirl
   m_TagString: Untagged
@@ -404,3 +405,24 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::PlayerInputReader
   actions: {fileID: -944628639613478452, guid: 79053acb82ce4af4aa9ca1b6b0a8cff3, type: 3}
   mapName: HamsterGirl
+--- !u!114 &2445444458852127743
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7313605111358297189}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f88b0e27503367c49b8949d62c7e620b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PlayerCombatState
+  animator: {fileID: 1998099670385249206}
+  movement: {fileID: 7389103765779009765}
+  attack: {fileID: 8675463877990214191}
+  body: {fileID: 7213630968953277183}
+  idleStateName: HGIdle
+  hurtStateName: Hurt
+  downedStateName: Downed
+  deathStateName: Death
+  hurtDuration: 0.48
