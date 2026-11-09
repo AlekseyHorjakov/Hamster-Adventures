@@ -98,7 +98,6 @@ public class PlayerCombatState : MonoBehaviour
         }
 
         DisableControl();
-        ShowDizzyStars();
         if (animator != null) animator.Play(downedStateName, 0, 0f);
     }
 

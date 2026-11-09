@@ -26,11 +26,11 @@ AnimationClip:
       value: {fileID: 21300000, guid: 5dcaf67cff81352488c92906a5b9b710, type: 3}
     - time: 0.8
       value: {fileID: 21300000, guid: 77d19d3c5ead17f49a82b9a5930c78ab, type: 3}
-    - time: 0.8.2
+    - time: 1.2
       value: {fileID: 21300000, guid: 7c6a8fecdd8852543b0efef81ad46b41, type: 3}
-    - time: 0.8.6
+    - time: 1.6
       value: {fileID: 21300000, guid: 30a83f1e701c70649941b70ff09e2b30, type: 3}
-    - time: 0.8.6.0
+    - time: 2
       value: {fileID: 21300000, guid: 78daca4be0d40e34086cd5a791c5552c, type: 3}
     attribute: m_Sprite
     path: Visual
