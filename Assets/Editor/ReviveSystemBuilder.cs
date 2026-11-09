@@ -29,47 +29,21 @@ public static class ReviveSystemBuilder
 
     private static GameObject BuildBubble()
     {
-        Sprite[] frames = new Sprite[8];
-        for (int i = 0; i < 8; i++)
-        {
-            string path = BubbleArt + "/ReviveBubble_" + (i + 1).ToString("00") + ".png";
-            frames[i] = ImportSprite(path, 200f);
-        }
-
-        AnimationClip clip = LoadOrCreateClip(BubbleAnim);
-        EditorCurveBinding binding = EditorCurveBinding.PPtrCurve("", typeof(SpriteRenderer), "m_Sprite");
-        ObjectReferenceKeyframe[] keys = new ObjectReferenceKeyframe[8];
-        for (int i = 0; i < 8; i++) keys[i] = new ObjectReferenceKeyframe { time = 0.125f * i, value = frames[i] };
-        AnimationUtility.SetObjectReferenceCurve(clip, binding, keys);
-        AnimationClipSettings settings = AnimationUtility.GetAnimationClipSettings(clip);
-        settings.stopTime = 1f; settings.loopTime = false; AnimationUtility.SetAnimationClipSettings(clip, settings);
-        EditorUtility.SetDirty(clip);
-
-        AnimatorController controller = AssetDatabase.LoadAssetAtPath<AnimatorController>(BubbleController);
-        if (controller == null) controller = AnimatorController.CreateAnimatorControllerAtPath(BubbleController);
-        AnimatorState state = controller.AddMotion(clip, 0); state.name = "Bubble";
-        controller.layers[0].stateMachine.defaultState = state; EditorUtility.SetDirty(controller);
+        AssetDatabase.DeleteAsset(BubbleAnim);
+        AssetDatabase.DeleteAsset(BubbleController);
+        Sprite sprite = ImportSprite(BubbleArt + "/ReviveBubble_Static.png", 700f);
 
         GameObject go = new GameObject("ReviveBubble");
         SpriteRenderer sr = go.AddComponent<SpriteRenderer>();
-        sr.sprite = frames[0]; sr.sortingLayerName = "FX"; sr.sortingOrder = 30;
-        Animator animator = go.AddComponent<Animator>(); animator.runtimeAnimatorController = controller; animator.cullingMode = AnimatorCullingMode.AlwaysAnimate;
+        sr.sprite = sprite;
+        sr.sortingLayerName = "FX";
+        sr.sortingOrder = 30;
+        go.AddComponent<ReviveBubble>();
 
-        GameObject canvasGo = new GameObject("TextCanvas", typeof(RectTransform), typeof(Canvas), typeof(CanvasScaler), typeof(GraphicRaycaster));
-        canvasGo.transform.SetParent(go.transform, false);
-        Canvas canvas = canvasGo.GetComponent<Canvas>(); canvas.renderMode = RenderMode.WorldSpace; canvas.sortingLayerName = "FX"; canvas.sortingOrder = 31;
-        RectTransform rt = canvasGo.GetComponent<RectTransform>(); rt.sizeDelta = new Vector2(160f, 60f); rt.localScale = Vector3.one * 0.01f; rt.localPosition = new Vector3(0f, 0f, -0.01f);
-        Text text = canvasGo.AddComponent<Text>();
-        text.font = Resources.GetBuiltinResource<Font>("LegacyRuntime.ttf");
-        text.fontSize = 40; text.fontStyle = FontStyle.Bold; text.alignment = TextAnchor.MiddleCenter; text.resizeTextForBestFit = true; text.resizeTextMinSize = 14; text.resizeTextMaxSize = 40;
-        text.color = new Color(0.12f, 0.08f, 0.05f, 1f); text.text = "УХУ ЕЛИ?";
-        ReviveBubble bubble = go.AddComponent<ReviveBubble>();
-        SerializedObject so = new SerializedObject(bubble); so.FindProperty("label").objectReferenceValue = text; so.ApplyModifiedPropertiesWithoutUndo();
-
-        GameObject prefab = PrefabUtility.SaveAsPrefabAsset(go, BubblePrefab); Object.DestroyImmediate(go);
+        GameObject prefab = PrefabUtility.SaveAsPrefabAsset(go, BubblePrefab);
+        Object.DestroyImmediate(go);
         return prefab;
     }
-
     private static void BuildHero(string prefabPath, string art, string prefix, string animRoot, string controllerFile,
                                  string clipPath, float ppu, string idleState, GameObject bubblePrefab)
     {
