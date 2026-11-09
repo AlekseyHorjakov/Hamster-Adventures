@@ -1,0 +1,808 @@
+fileFormatVersion: 2
+guid: 62e98914403efb24c905d32570108d81
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -866980492227971896
+    second: Hyena_CombatSheet_0
+  - first:
+      213: -1632963258764117145
+    second: Hyena_CombatSheet_1
+  - first:
+      213: 4173600622698284466
+    second: Hyena_CombatSheet_2
+  - first:
+      213: 5446470848242055754
+    second: Hyena_CombatSheet_3
+  - first:
+      213: 262158679710261904
+    second: Hyena_CombatSheet_4
+  - first:
+      213: 2867204958367429906
+    second: Hyena_CombatSheet_5
+  - first:
+      213: 8881397316064392986
+    second: Hyena_CombatSheet_6
+  - first:
+      213: 6755250358652989051
+    second: Hyena_CombatSheet_7
+  - first:
+      213: 1077778906508580040
+    second: Hyena_CombatSheet_8
+  - first:
+      213: 3790736845251627737
+    second: Hyena_CombatSheet_9
+  - first:
+      213: 8169518968429096594
+    second: Hyena_CombatSheet_10
+  - first:
+      213: 7832224139934528384
+    second: Hyena_CombatSheet_11
+  - first:
+      213: 6119961776267541557
+    second: Hyena_CombatSheet_12
+  - first:
+      213: 7991454744049122292
+    second: Hyena_CombatSheet_13
+  - first:
+      213: 8666939981905106314
+    second: Hyena_CombatSheet_14
+  - first:
+      213: 9141577690624488228
+    second: Hyena_CombatSheet_15
+  - first:
+      213: -4317468009773477801
+    second: Hyena_CombatSheet_16
+  - first:
+      213: -6484450876042638106
+    second: Hyena_CombatSheet_17
+  - first:
+      213: -5931379343501725272
+    second: Hyena_CombatSheet_18
+  - first:
+      213: 159517672111735202
+    second: Hyena_CombatSheet_19
+  - first:
+      213: -964445234494007142
+    second: Hyena_CombatSheet_20
+  - first:
+      213: -6007571106037448834
+    second: Hyena_CombatSheet_21
+  - first:
+      213: 5760190763797346053
+    second: Hyena_CombatSheet_22
+  - first:
+      213: 5844731075076391110
+    second: Hyena_CombatSheet_23
+  - first:
+      213: 2142631726832401036
+    second: Hyena_CombatSheet_24
+  - first:
+      213: -569436508421301566
+    second: Hyena_CombatSheet_25
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationMethod: 0
+  spriteTessellationDetail: -1
+  spriteGeometrySubdivision: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Hyena_CombatSheet_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 53
+        width: 207
+        height: 639
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8c4fe85f5ddd7f3f0800000000000000
+      internalID: -866980492227971896
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hyena_CombatSheet_1
+      rect:
+        serializedVersion: 2
+        x: 182
+        y: 282
+        width: 13
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 76bb916619c8659e0800000000000000
+      internalID: -1632963258764117145
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hyena_CombatSheet_2
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 492
+        width: 192
+        height: 227
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2b5c74657ab9be930800000000000000
+      internalID: 4173600622698284466
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hyena_CombatSheet_3
+      rect:
+        serializedVersion: 2
+        x: 275
+        y: 0
+        width: 177
+        height: 229
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a4afcfc3160c59b40800000000000000
+      internalID: 5446470848242055754
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hyena_CombatSheet_4
+      rect:
+        serializedVersion: 2
+        x: 286
+        y: 241
+        width: 174
+        height: 232
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0926ae22eef53a300800000000000000
+      internalID: 262158679710261904
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hyena_CombatSheet_5
+      rect:
+        serializedVersion: 2
+        x: 513
+        y: 0
+        width: 200
+        height: 236
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 215bab1f7bb5ac720800000000000000
+      internalID: 2867204958367429906
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hyena_CombatSheet_6
+      rect:
+        serializedVersion: 2
+        x: 547
+        y: 473
+        width: 178
+        height: 253
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a173025adcf014b70800000000000000
+      internalID: 8881397316064392986
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hyena_CombatSheet_7
+      rect:
+        serializedVersion: 2
+        x: 561
+        y: 242
+        width: 193
+        height: 231
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b7e675c09687fbd50800000000000000
+      internalID: 6755250358652989051
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hyena_CombatSheet_8
+      rect:
+        serializedVersion: 2
+        x: 775
+        y: 354
+        width: 10
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8c45ad4843a05fe00800000000000000
+      internalID: 1077778906508580040
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hyena_CombatSheet_9
+      rect:
+        serializedVersion: 2
+        x: 777
+        y: 484
+        width: 288
+        height: 234
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9da453a93176b9430800000000000000
+      internalID: 3790736845251627737
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hyena_CombatSheet_10
+      rect:
+        serializedVersion: 2
+        x: 778
+        y: 0
+        width: 235
+        height: 213
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 29e2803c736ff5170800000000000000
+      internalID: 8169518968429096594
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hyena_CombatSheet_11
+      rect:
+        serializedVersion: 2
+        x: 793
+        y: 340
+        width: 10
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 083790ebb56a1bc60800000000000000
+      internalID: 7832224139934528384
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hyena_CombatSheet_12
+      rect:
+        serializedVersion: 2
+        x: 817
+        y: 241
+        width: 208
+        height: 230
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 53c35618fc87ee450800000000000000
+      internalID: 6119961776267541557
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hyena_CombatSheet_13
+      rect:
+        serializedVersion: 2
+        x: 1041
+        y: 0
+        width: 246
+        height: 162
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4fb78a9cfb957ee60800000000000000
+      internalID: 7991454744049122292
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hyena_CombatSheet_14
+      rect:
+        serializedVersion: 2
+        x: 1103
+        y: 255
+        width: 229
+        height: 214
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a85951f7ef7274870800000000000000
+      internalID: 8666939981905106314
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hyena_CombatSheet_15
+      rect:
+        serializedVersion: 2
+        x: 1106
+        y: 486
+        width: 275
+        height: 231
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 423fe48b9786dde70800000000000000
+      internalID: 9141577690624488228
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hyena_CombatSheet_16
+      rect:
+        serializedVersion: 2
+        x: 1312
+        y: 0
+        width: 294
+        height: 119
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 750d65458b54514c0800000000000000
+      internalID: -4317468009773477801
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hyena_CombatSheet_17
+      rect:
+        serializedVersion: 2
+        x: 1338
+        y: 204
+        width: 58
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6ec020ac84a9206a0800000000000000
+      internalID: -6484450876042638106
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hyena_CombatSheet_18
+      rect:
+        serializedVersion: 2
+        x: 1388
+        y: 203
+        width: 232
+        height: 239
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8a17d72b9e18fada0800000000000000
+      internalID: -5931379343501725272
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hyena_CombatSheet_19
+      rect:
+        serializedVersion: 2
+        x: 1425
+        y: 490
+        width: 211
+        height: 224
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2a10e954a78b63200800000000000000
+      internalID: 159517672111735202
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hyena_CombatSheet_20
+      rect:
+        serializedVersion: 2
+        x: 1649
+        y: 0
+        width: 292
+        height: 145
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a989aa84b2a9d92f0800000000000000
+      internalID: -964445234494007142
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hyena_CombatSheet_21
+      rect:
+        serializedVersion: 2
+        x: 1683
+        y: 239
+        width: 210
+        height: 196
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e7fbcb598e1d0aca0800000000000000
+      internalID: -6007571106037448834
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hyena_CombatSheet_22
+      rect:
+        serializedVersion: 2
+        x: 1715
+        y: 484
+        width: 400
+        height: 231
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 50770aa1bfe40ff40800000000000000
+      internalID: 5760190763797346053
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hyena_CombatSheet_23
+      rect:
+        serializedVersion: 2
+        x: 1855
+        y: 160
+        width: 94
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6c08d9132f7ac1150800000000000000
+      internalID: 5844731075076391110
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hyena_CombatSheet_24
+      rect:
+        serializedVersion: 2
+        x: 1867
+        y: 148
+        width: 12
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c8ab35214382cbd10800000000000000
+      internalID: 2142631726832401036
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hyena_CombatSheet_25
+      rect:
+        serializedVersion: 2
+        x: 1990
+        y: 57
+        width: 151
+        height: 212
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2cad8693384f818f0800000000000000
+      internalID: -569436508421301566
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Hyena_CombatSheet_0: -866980492227971896
+      Hyena_CombatSheet_1: -1632963258764117145
+      Hyena_CombatSheet_10: 8169518968429096594
+      Hyena_CombatSheet_11: 7832224139934528384
+      Hyena_CombatSheet_12: 6119961776267541557
+      Hyena_CombatSheet_13: 7991454744049122292
+      Hyena_CombatSheet_14: 8666939981905106314
+      Hyena_CombatSheet_15: 9141577690624488228
+      Hyena_CombatSheet_16: -4317468009773477801
+      Hyena_CombatSheet_17: -6484450876042638106
+      Hyena_CombatSheet_18: -5931379343501725272
+      Hyena_CombatSheet_19: 159517672111735202
+      Hyena_CombatSheet_2: 4173600622698284466
+      Hyena_CombatSheet_20: -964445234494007142
+      Hyena_CombatSheet_21: -6007571106037448834
+      Hyena_CombatSheet_22: 5760190763797346053
+      Hyena_CombatSheet_23: 5844731075076391110
+      Hyena_CombatSheet_24: 2142631726832401036
+      Hyena_CombatSheet_25: -569436508421301566
+      Hyena_CombatSheet_3: 5446470848242055754
+      Hyena_CombatSheet_4: 262158679710261904
+      Hyena_CombatSheet_5: 2867204958367429906
+      Hyena_CombatSheet_6: 8881397316064392986
+      Hyena_CombatSheet_7: 6755250358652989051
+      Hyena_CombatSheet_8: 1077778906508580040
+      Hyena_CombatSheet_9: 3790736845251627737
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

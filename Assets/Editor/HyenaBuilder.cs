@@ -1,12 +1,12 @@
-using System.Collections.Generic;
 using UnityEditor;
+using UnityEditor.Animations;
 using UnityEditor.SceneManagement;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
 /// <summary>
-/// Собирает временную гиену-прототип из имеющегося спрайта манекена:
-/// здоровье, физика, HitReaction, хитбокс укуса и HyenaAI.
+/// Собирает гиену-прототип: здоровье, физика, HitReaction, хитбокс укуса,
+/// HyenaAI и Animator с анимациями ходьбы, урона и смерти.
 /// Меню: Tools -> Hamster -> Build Hyena Prototype.
 /// </summary>
 public static class HyenaBuilder
@@ -14,13 +14,17 @@ public static class HyenaBuilder
     private const string PrefabPath = "Assets/Prefabs/Hyena.prefab";
     private const string HitDataPath = "Assets/Combat/HitData_HyenaBite.asset";
     private const string ScenePath = "Assets/Scenes/CombatTest.unity";
-    private const string DummySpritePath = "Assets/Art/Combat/Dummy.png";
+    private const string WalkFramePath = "Assets/Art/Enemies/Hyena/Walk/Hyena_Walk_01.png";
+    private const string ControllerPath = "Assets/Animations/Enemies/Hyena/Hyena.controller";
 
     [MenuItem("Tools/Hamster/Build Hyena Prototype")]
     public static void BuildAll()
     {
         EnsureFolder("Assets/Prefabs");
         EnsureFolder("Assets/Combat");
+
+        // Анимации пересобираются первыми: префаб сразу получает актуальный контроллер.
+        HyenaAnimationBuilder.BuildAll();
 
         HitData bite = CreateOrUpdateBite();
         GameObject prefab = BuildPrefab(bite);
@@ -29,7 +33,7 @@ public static class HyenaBuilder
         AssetDatabase.SaveAssets();
         AssetDatabase.Refresh();
 
-        Debug.Log("[Hyena] Прототип собран: 2 гиены в CombatTest, здоровье 45, укус 10.");
+        Debug.Log("[Hyena] Прототип собран: здоровье 45, укус 10, анимации Walk/Hurt/Death.");
     }
 
     private static HitData CreateOrUpdateBite()
@@ -86,11 +90,19 @@ public static class HyenaBuilder
 
         GameObject visual = new GameObject("Visual");
         visual.transform.SetParent(root.transform, false);
+        // Спрайты нарезаны с пивотом внизу по центру, поэтому ставим низ
+        // визуала на низ коллайдера — это линия ступней.
+        visual.transform.localPosition = new Vector3(0f, collider.offset.y - collider.size.y * 0.5f, 0f);
+
         SpriteRenderer sprite = visual.AddComponent<SpriteRenderer>();
-        sprite.sprite = AssetDatabase.LoadAssetAtPath<Sprite>(DummySpritePath);
-        sprite.color = new Color(0.72f, 0.54f, 0.34f, 1f);
+        sprite.sprite = AssetDatabase.LoadAssetAtPath<Sprite>(WalkFramePath);
         sprite.sortingLayerName = "Characters";
         sprite.sortingOrder = 0;
+
+        Animator animator = root.AddComponent<Animator>();
+        animator.runtimeAnimatorController = AssetDatabase.LoadAssetAtPath<AnimatorController>(ControllerPath);
+        animator.applyRootMotion = false;
+        animator.cullingMode = AnimatorCullingMode.AlwaysAnimate;
 
         GameObject hitboxObject = new GameObject("Hitbox");
         hitboxObject.transform.SetParent(root.transform, false);
@@ -100,7 +112,12 @@ public static class HyenaBuilder
         HyenaAI ai = root.AddComponent<HyenaAI>();
         SetPrivate(ai, "biteHit", bite);
         SetPrivate(ai, "hitbox", hitbox);
-        SetPrivate(ai, "sprite", sprite);
+        SetPrivate(ai, "animator", animator);
+        SetPrivate(ai, "idleStateName", "Idle");
+        SetPrivate(ai, "walkStateName", "Walk");
+        SetPrivate(ai, "hurtStateName", "Hurt");
+        SetPrivate(ai, "deathStateName", "Death");
+        SetPrivate(ai, "hurtAnimationDuration", 0.48f);
 
         GameObject prefab = PrefabUtility.SaveAsPrefabAsset(root, PrefabPath);
         Object.DestroyImmediate(root);
@@ -160,6 +177,9 @@ public static class HyenaBuilder
                 break;
             case int number:
                 property.intValue = number;
+                break;
+            case string text:
+                property.stringValue = text;
                 break;
             case Color color:
                 property.colorValue = color;

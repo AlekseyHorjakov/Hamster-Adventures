@@ -30,10 +30,19 @@ public class HyenaAI : MonoBehaviour
     [SerializeField] private HitData biteHit;
     [SerializeField] private Hitbox hitbox;
 
+    [Header("Анимация")]
+    [SerializeField] private Animator animator;
+    [SerializeField] private string idleStateName = "Idle";
+    [SerializeField] private string walkStateName = "Walk";
+    [SerializeField] private string hurtStateName = "Hurt";
+    [SerializeField] private string deathStateName = "Death";
+    [SerializeField] private float hurtAnimationDuration = 0.48f;
+
     [Header("Визуал")]
     [SerializeField] private Color windupColor = new Color(1f, 0.55f, 0.35f, 1f);
-    [SerializeField] private float deathFadeTime = 0.7f;
-    [SerializeField] private float corpseLifetime = 1.2f;
+    [SerializeField] private float deathHoldTime = 0.75f;
+    [SerializeField] private float deathFadeTime = 0.45f;
+    [SerializeField] private float corpseLifetime = 0.8f;
 
     private Rigidbody2D body;
     private Health health;
@@ -48,8 +57,10 @@ public class HyenaAI : MonoBehaviour
     private float nextPatrolAt;
     private float nextAttackAt;
     private bool busy;
+    private bool hurtPlaying;
     private bool dead;
     private int facing = 1;
+    private string currentState;
 
     private void Awake()
     {
@@ -58,6 +69,10 @@ public class HyenaAI : MonoBehaviour
         reaction = GetComponent<HitReaction>();
         sprite = GetComponentInChildren<SpriteRenderer>();
         bodyCollider = GetComponent<Collider2D>();
+
+        if (animator == null)
+            animator = GetComponent<Animator>();
+
         baseColor = sprite != null ? sprite.color : Color.white;
 
         home = transform.position;
@@ -66,11 +81,13 @@ public class HyenaAI : MonoBehaviour
 
     private void OnEnable()
     {
+        health.Damaged += OnDamaged;
         health.Died += OnDied;
     }
 
     private void OnDisable()
     {
+        health.Damaged -= OnDamaged;
         health.Died -= OnDied;
     }
 
@@ -78,6 +95,7 @@ public class HyenaAI : MonoBehaviour
     {
         heroes = FindObjectsByType<HamsterMovement>(FindObjectsSortMode.None);
         PickPatrolPoint();
+        PlayState(idleStateName);
     }
 
     private void FixedUpdate()
@@ -85,14 +103,15 @@ public class HyenaAI : MonoBehaviour
         if (dead || body == null)
             return;
 
-        // Пока гиена оглушена или летит от удара, не перебиваем физику.
+        // Пока гиена оглушена или летит от удара, не перебиваем физику
+        // и не включаем ходьбу поверх анимации получения урона.
         if (reaction != null && (reaction.IsStunned || reaction.IsLaunched))
         {
             StopHorizontal();
             return;
         }
 
-        if (busy)
+        if (hurtPlaying || busy)
         {
             StopHorizontal();
             return;
@@ -121,6 +140,7 @@ public class HyenaAI : MonoBehaviour
         if (distance <= attackRange)
         {
             StopHorizontal();
+            PlayState(idleStateName);
 
             if (Time.time >= nextAttackAt)
                 StartCoroutine(AttackRoutine(target));
@@ -169,6 +189,7 @@ public class HyenaAI : MonoBehaviour
         if (Time.time < nextPatrolAt)
         {
             StopHorizontal();
+            PlayState(idleStateName);
             return;
         }
 
@@ -177,6 +198,7 @@ public class HyenaAI : MonoBehaviour
         if (Mathf.Abs(dx) < 0.2f)
         {
             StopHorizontal();
+            PlayState(idleStateName);
             nextPatrolAt = Time.time + patrolPause;
             PickPatrolPoint();
             return;
@@ -196,6 +218,7 @@ public class HyenaAI : MonoBehaviour
     {
         body.linearVelocity = new Vector2(direction * speed, body.linearVelocity.y);
         Face(direction);
+        PlayState(walkStateName);
     }
 
     private void StopHorizontal()
@@ -219,6 +242,7 @@ public class HyenaAI : MonoBehaviour
     {
         busy = true;
         StopHorizontal();
+        PlayState(idleStateName);
 
         float dx = target.transform.position.x - transform.position.x;
         Face(Mathf.Sign(dx));
@@ -264,6 +288,29 @@ public class HyenaAI : MonoBehaviour
         busy = false;
     }
 
+    private void OnDamaged(DamageInfo info)
+    {
+        if (dead) return;
+
+        PlayState(hurtStateName, true);
+        hurtPlaying = true;
+
+        if (hitbox != null)
+            hitbox.Deactivate();
+
+        StopCoroutine(nameof(HurtRoutine));
+        StartCoroutine(nameof(HurtRoutine));
+    }
+
+    private IEnumerator HurtRoutine()
+    {
+        yield return new WaitForSeconds(hurtAnimationDuration);
+        hurtPlaying = false;
+
+        if (!dead)
+            PlayState(idleStateName);
+    }
+
     private void OnDied()
     {
         if (dead)
@@ -283,11 +330,16 @@ public class HyenaAI : MonoBehaviour
             body.simulated = false;
         }
 
+        PlayState(deathStateName, true);
         StartCoroutine(DeathRoutine());
     }
 
     private IEnumerator DeathRoutine()
     {
+        // Даём клипу смерти проиграться до последнего кадра, и только потом
+        // растворяем тело — иначе игрок не увидит саму анимацию.
+        yield return new WaitForSeconds(deathHoldTime);
+
         if (sprite == null)
         {
             Destroy(gameObject, corpseLifetime);
@@ -307,6 +359,18 @@ public class HyenaAI : MonoBehaviour
 
         sprite.enabled = false;
         Destroy(gameObject, corpseLifetime);
+    }
+
+    private void PlayState(string stateName, bool restart = false)
+    {
+        if (animator == null || string.IsNullOrEmpty(stateName))
+            return;
+
+        if (!restart && currentState == stateName)
+            return;
+
+        animator.Play(stateName, 0, 0f);
+        currentState = stateName;
     }
 
     private void OnDrawGizmosSelected()
