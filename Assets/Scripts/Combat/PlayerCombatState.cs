@@ -136,13 +136,13 @@ public class PlayerCombatState : MonoBehaviour
         activeDizzyStars = Instantiate(dizzyStarsPrefab, transform);
         float parentScale = transform.lossyScale.y;
         if (parentScale > 0.0001f)
-            activeDizzyStars.transform.localScale = Vector3.one / parentScale;
+            activeDizzyStars.transform.localScale = Vector3.one * (1.45f / parentScale);
 
         SpriteRenderer heroSprite = GetComponentInChildren<SpriteRenderer>();
         if (heroSprite != null)
         {
             Bounds bounds = heroSprite.bounds;
-            Vector3 worldPoint = new Vector3(bounds.center.x, bounds.max.y + 0.3f, transform.position.z);
+            Vector3 worldPoint = new Vector3(bounds.center.x, bounds.max.y - 0.8f, transform.position.z);
             activeDizzyStars.transform.position = worldPoint;
         }
     }
