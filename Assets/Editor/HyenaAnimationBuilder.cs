@@ -5,7 +5,7 @@ using UnityEngine;
 
 /// <summary>
 /// Собирает анимации первой гиены из листа 6×3:
-/// ряд 1 — ходьба, ряд 2 — получение урона, ряд 3 — смерть.
+/// ряд 1 — атака, ряд 2 — получение урона, ряд 3 — смерть.
 /// Кадры уже нарезаны и посажены на общий якорь по ступням.
 /// </summary>
 public static class HyenaAnimationBuilder
@@ -13,15 +13,15 @@ public static class HyenaAnimationBuilder
     private const string FrameRoot = "Assets/Art/Enemies/Hyena";
     private const string AnimationRoot = "Assets/Animations/Enemies/Hyena";
     private const string ControllerPath = AnimationRoot + "/Hyena.controller";
-    private const string Ppu = "130";
+    private const float Ppu = 130f;
 
     private const string IdlePath = AnimationRoot + "/Hyena_Idle.anim";
-    private const string WalkPath = AnimationRoot + "/Hyena_Walk.anim";
+    private const string AttackPath = AnimationRoot + "/Hyena_Attack.anim";
     private const string HurtPath = AnimationRoot + "/Hyena_Hurt.anim";
     private const string DeathPath = AnimationRoot + "/Hyena_Death.anim";
 
     private const string IdleState = "Idle";
-    private const string WalkState = "Walk";
+    private const string AttackState = "Attack";
     private const string HurtState = "Hurt";
     private const string DeathState = "Death";
 
@@ -30,18 +30,20 @@ public static class HyenaAnimationBuilder
     {
         EnsureFolder("Assets/Animations/Enemies/Hyena");
 
-        Sprite[] walk = ImportFrames("Walk", "Hyena_Walk_");
+        Sprite[] attack = ImportFrames("Attack", "Hyena_Attack_");
         Sprite[] hurt = ImportFrames("Hurt", "Hyena_Hurt_");
         Sprite[] death = ImportFrames("Death", "Hyena_Death_");
 
-        if (walk.Length != 6 || hurt.Length != 6 || death.Length != 6)
+        if (attack.Length != 6 || hurt.Length != 6 || death.Length != 6)
         {
-            Debug.LogError($"[HyenaAnim] Не хватает кадров: walk={walk.Length}, hurt={hurt.Length}, death={death.Length}");
+            Debug.LogError($"[HyenaAnim] Не хватает кадров: attack={attack.Length}, hurt={hurt.Length}, death={death.Length}");
             return;
         }
 
-        AnimationClip idle = BuildClip(IdlePath, new[] { walk[0] }, 1f, true);
-        AnimationClip walkClip = BuildClip(WalkPath, walk, 0.1f, true);
+        // Отдельной ходьбы в листе нет: первый кадр атаки — нейтральная стойка,
+        // её используем как Idle, пока не появится отдельная ходьба.
+        AnimationClip idle = BuildClip(IdlePath, new[] { attack[0] }, 1f, true);
+        AnimationClip attackClip = BuildClip(AttackPath, attack, 0.09f, false);
         AnimationClip hurtClip = BuildClip(HurtPath, hurt, 0.08f, false);
         AnimationClip deathClip = BuildClip(DeathPath, death, 0.12f, false);
 
@@ -49,8 +51,11 @@ public static class HyenaAnimationBuilder
         if (controller == null)
             controller = AnimatorController.CreateAnimatorControllerAtPath(ControllerPath);
 
+        RemoveState(controller, "Walk");
+        AssetDatabase.DeleteAsset(AnimationRoot + "/Hyena_Walk.anim");
+
         AnimatorState idleState = AddOrUpdateState(controller, IdleState, idle);
-        AddOrUpdateState(controller, WalkState, walkClip);
+        AddOrUpdateState(controller, AttackState, attackClip);
         AddOrUpdateState(controller, HurtState, hurtClip);
         AddOrUpdateState(controller, DeathState, deathClip);
         controller.layers[0].stateMachine.defaultState = idleState;
@@ -59,7 +64,7 @@ public static class HyenaAnimationBuilder
         AssetDatabase.SaveAssets();
         AssetDatabase.Refresh();
 
-        Debug.Log("[HyenaAnim] Готово: Idle, Walk 0,6 с, Hurt 0,48 с, Death 0,72 с");
+        Debug.Log("[HyenaAnim] Готово: Idle, Attack 0,54 с, Hurt 0,48 с, Death 0,72 с");
     }
 
     private static Sprite[] ImportFrames(string folder, string prefix)
@@ -81,7 +86,7 @@ public static class HyenaAnimationBuilder
 
             importer.textureType = TextureImporterType.Sprite;
             importer.spriteImportMode = SpriteImportMode.Single;
-            importer.spritePixelsPerUnit = float.Parse(Ppu, System.Globalization.CultureInfo.InvariantCulture);
+            importer.spritePixelsPerUnit = Ppu;
 
             TextureImporterSettings settings = new TextureImporterSettings();
             importer.ReadTextureSettings(settings);
@@ -154,6 +159,19 @@ public static class HyenaAnimationBuilder
         state.name = stateName;
         EditorUtility.SetDirty(controller);
         return state;
+    }
+
+    private static void RemoveState(AnimatorController controller, string stateName)
+    {
+        foreach (ChildAnimatorState child in controller.layers[0].stateMachine.states)
+        {
+            if (child.state.name != stateName)
+                continue;
+
+            controller.layers[0].stateMachine.RemoveState(child.state);
+            EditorUtility.SetDirty(controller);
+            return;
+        }
     }
 
     private static void EnsureFolder(string path)

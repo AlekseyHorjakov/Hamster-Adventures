@@ -14,7 +14,7 @@ public static class HyenaBuilder
     private const string PrefabPath = "Assets/Prefabs/Hyena.prefab";
     private const string HitDataPath = "Assets/Combat/HitData_HyenaBite.asset";
     private const string ScenePath = "Assets/Scenes/CombatTest.unity";
-    private const string WalkFramePath = "Assets/Art/Enemies/Hyena/Walk/Hyena_Walk_01.png";
+    private const string AttackFramePath = "Assets/Art/Enemies/Hyena/Attack/Hyena_Attack_01.png";
     private const string ControllerPath = "Assets/Animations/Enemies/Hyena/Hyena.controller";
 
     [MenuItem("Tools/Hamster/Build Hyena Prototype")]
@@ -33,7 +33,7 @@ public static class HyenaBuilder
         AssetDatabase.SaveAssets();
         AssetDatabase.Refresh();
 
-        Debug.Log("[Hyena] Прототип собран: здоровье 45, укус 10, анимации Walk/Hurt/Death.");
+        Debug.Log("[Hyena] Прототип собран: здоровье 45, укус 10, анимации Attack/Hurt/Death.");
     }
 
     private static HitData CreateOrUpdateBite()
@@ -95,7 +95,7 @@ public static class HyenaBuilder
         visual.transform.localPosition = new Vector3(0f, collider.offset.y - collider.size.y * 0.5f, 0f);
 
         SpriteRenderer sprite = visual.AddComponent<SpriteRenderer>();
-        sprite.sprite = AssetDatabase.LoadAssetAtPath<Sprite>(WalkFramePath);
+        sprite.sprite = AssetDatabase.LoadAssetAtPath<Sprite>(AttackFramePath);
         sprite.sortingLayerName = "Characters";
         sprite.sortingOrder = 0;
 
@@ -114,7 +114,11 @@ public static class HyenaBuilder
         SetPrivate(ai, "hitbox", hitbox);
         SetPrivate(ai, "animator", animator);
         SetPrivate(ai, "idleStateName", "Idle");
-        SetPrivate(ai, "walkStateName", "Walk");
+        SetPrivate(ai, "attackStateName", "Attack");
+        SetPrivate(ai, "attackWindup", 0.16f);
+        SetPrivate(ai, "attackActive", 0.16f);
+        SetPrivate(ai, "attackRecovery", 0.22f);
+        SetPrivate(ai, "attackCooldown", 0.55f);
         SetPrivate(ai, "hurtStateName", "Hurt");
         SetPrivate(ai, "deathStateName", "Death");
         SetPrivate(ai, "hurtAnimationDuration", 0.48f);

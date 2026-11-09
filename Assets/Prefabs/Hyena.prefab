@@ -188,19 +188,18 @@ MonoBehaviour:
   chaseSpeed: 3.2
   patrolPause: 0.8
   attackRange: 1.55
-  attackWindup: 0.38
-  attackActive: 0.18
-  attackRecovery: 0.5
-  attackCooldown: 0.7
+  attackWindup: 0.16
+  attackActive: 0.16
+  attackRecovery: 0.22
+  attackCooldown: 0.55
   biteHit: {fileID: 11400000, guid: 5abfdf4c49d2d3544ac835bd0bdbb310, type: 2}
   hitbox: {fileID: 3958163101106336452}
   animator: {fileID: 3132992963662219560}
   idleStateName: Idle
-  walkStateName: Walk
+  attackStateName: Attack
   hurtStateName: Hurt
   deathStateName: Death
   hurtAnimationDuration: 0.48
-  windupColor: {r: 1, g: 0.55, b: 0.35, a: 1}
   deathHoldTime: 0.75
   deathFadeTime: 0.45
   corpseLifetime: 0.8

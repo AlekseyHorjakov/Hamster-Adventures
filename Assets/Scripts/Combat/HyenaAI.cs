@@ -23,23 +23,23 @@ public class HyenaAI : MonoBehaviour
 
     [Header("Атака")]
     [SerializeField] private float attackRange = 1.55f;
-    [SerializeField] private float attackWindup = 0.38f;
-    [SerializeField] private float attackActive = 0.18f;
-    [SerializeField] private float attackRecovery = 0.5f;
-    [SerializeField] private float attackCooldown = 0.7f;
+    [Tooltip("Совпадает с началом кадра удара в клипе Attack")]
+    [SerializeField] private float attackWindup = 0.16f;
+    [SerializeField] private float attackActive = 0.16f;
+    [SerializeField] private float attackRecovery = 0.22f;
+    [SerializeField] private float attackCooldown = 0.55f;
     [SerializeField] private HitData biteHit;
     [SerializeField] private Hitbox hitbox;
 
     [Header("Анимация")]
     [SerializeField] private Animator animator;
     [SerializeField] private string idleStateName = "Idle";
-    [SerializeField] private string walkStateName = "Walk";
+    [SerializeField] private string attackStateName = "Attack";
     [SerializeField] private string hurtStateName = "Hurt";
     [SerializeField] private string deathStateName = "Death";
     [SerializeField] private float hurtAnimationDuration = 0.48f;
 
     [Header("Визуал")]
-    [SerializeField] private Color windupColor = new Color(1f, 0.55f, 0.35f, 1f);
     [SerializeField] private float deathHoldTime = 0.75f;
     [SerializeField] private float deathFadeTime = 0.45f;
     [SerializeField] private float corpseLifetime = 0.8f;
@@ -49,7 +49,6 @@ public class HyenaAI : MonoBehaviour
     private HitReaction reaction;
     private SpriteRenderer sprite;
     private Collider2D bodyCollider;
-    private Color baseColor;
 
     private HamsterMovement[] heroes;
     private Vector2 home;
@@ -72,8 +71,6 @@ public class HyenaAI : MonoBehaviour
 
         if (animator == null)
             animator = GetComponent<Animator>();
-
-        baseColor = sprite != null ? sprite.color : Color.white;
 
         home = transform.position;
         patrolPoint = home;
@@ -218,7 +215,8 @@ public class HyenaAI : MonoBehaviour
     {
         body.linearVelocity = new Vector2(direction * speed, body.linearVelocity.y);
         Face(direction);
-        PlayState(walkStateName);
+        // Отдельной анимации ходьбы пока нет: двигаемся в нейтральной стойке.
+        PlayState(idleStateName);
     }
 
     private void StopHorizontal()
@@ -242,13 +240,10 @@ public class HyenaAI : MonoBehaviour
     {
         busy = true;
         StopHorizontal();
-        PlayState(idleStateName);
 
         float dx = target.transform.position.x - transform.position.x;
         Face(Mathf.Sign(dx));
-
-        if (sprite != null)
-            sprite.color = windupColor;
+        PlayState(attackStateName, true);
 
         yield return new WaitForSeconds(attackWindup);
 
@@ -267,13 +262,13 @@ public class HyenaAI : MonoBehaviour
         if (hitbox != null)
             hitbox.Deactivate();
 
-        if (sprite != null)
-            sprite.color = baseColor;
-
         yield return new WaitForSeconds(attackRecovery);
 
         nextAttackAt = Time.time + attackCooldown;
         busy = false;
+
+        if (!hurtPlaying && !dead)
+            PlayState(idleStateName);
     }
 
     private void FinishAttack()
@@ -281,11 +276,11 @@ public class HyenaAI : MonoBehaviour
         if (hitbox != null)
             hitbox.Deactivate();
 
-        if (sprite != null)
-            sprite.color = baseColor;
-
         nextAttackAt = Time.time + attackCooldown;
         busy = false;
+
+        if (!hurtPlaying && !dead)
+            PlayState(idleStateName);
     }
 
     private void OnDamaged(DamageInfo info)
