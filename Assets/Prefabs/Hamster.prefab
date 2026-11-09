@@ -402,6 +402,7 @@ MonoBehaviour:
   reviveRange: 2.2
   reviveDuration: 3
   reviveHealthFraction: 0.3
+  bubbleLeadTime: 1
   reviveStateName: Revive
   idleStateName: Idle 0
   bubbleText: "\u0423\u0425\u0423 \u0415\u041B\u0418?"
