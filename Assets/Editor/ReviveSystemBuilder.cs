@@ -39,10 +39,10 @@ public static class ReviveSystemBuilder
         AnimationClip clip = LoadOrCreateClip(BubbleAnim);
         EditorCurveBinding binding = EditorCurveBinding.PPtrCurve("", typeof(SpriteRenderer), "m_Sprite");
         ObjectReferenceKeyframe[] keys = new ObjectReferenceKeyframe[8];
-        for (int i = 0; i < 8; i++) keys[i] = new ObjectReferenceKeyframe { time = 0.1f * i, value = frames[i] };
+        for (int i = 0; i < 8; i++) keys[i] = new ObjectReferenceKeyframe { time = 0.125f * i, value = frames[i] };
         AnimationUtility.SetObjectReferenceCurve(clip, binding, keys);
         AnimationClipSettings settings = AnimationUtility.GetAnimationClipSettings(clip);
-        settings.stopTime = 0.8f; settings.loopTime = true; AnimationUtility.SetAnimationClipSettings(clip, settings);
+        settings.stopTime = 1f; settings.loopTime = false; AnimationUtility.SetAnimationClipSettings(clip, settings);
         EditorUtility.SetDirty(clip);
 
         AnimatorController controller = AssetDatabase.LoadAssetAtPath<AnimatorController>(BubbleController);
@@ -58,10 +58,10 @@ public static class ReviveSystemBuilder
         GameObject canvasGo = new GameObject("TextCanvas", typeof(RectTransform), typeof(Canvas), typeof(CanvasScaler), typeof(GraphicRaycaster));
         canvasGo.transform.SetParent(go.transform, false);
         Canvas canvas = canvasGo.GetComponent<Canvas>(); canvas.renderMode = RenderMode.WorldSpace; canvas.sortingLayerName = "FX"; canvas.sortingOrder = 31;
-        RectTransform rt = canvasGo.GetComponent<RectTransform>(); rt.sizeDelta = new Vector2(300f, 110f); rt.localScale = Vector3.one * 0.01f; rt.localPosition = new Vector3(0f, 0f, -0.01f);
+        RectTransform rt = canvasGo.GetComponent<RectTransform>(); rt.sizeDelta = new Vector2(160f, 60f); rt.localScale = Vector3.one * 0.01f; rt.localPosition = new Vector3(0f, 0f, -0.01f);
         Text text = canvasGo.AddComponent<Text>();
         text.font = Resources.GetBuiltinResource<Font>("LegacyRuntime.ttf");
-        text.fontSize = 46; text.fontStyle = FontStyle.Bold; text.alignment = TextAnchor.MiddleCenter;
+        text.fontSize = 40; text.fontStyle = FontStyle.Bold; text.alignment = TextAnchor.MiddleCenter; text.resizeTextForBestFit = true; text.resizeTextMinSize = 14; text.resizeTextMaxSize = 40;
         text.color = new Color(0.12f, 0.08f, 0.05f, 1f); text.text = "УХУ ЕЛИ?";
         ReviveBubble bubble = go.AddComponent<ReviveBubble>();
         SerializedObject so = new SerializedObject(bubble); so.FindProperty("label").objectReferenceValue = text; so.ApplyModifiedPropertiesWithoutUndo();
@@ -79,7 +79,7 @@ public static class ReviveSystemBuilder
         AnimationClip clip = LoadOrCreateClip(clipPath);
         EditorCurveBinding binding = EditorCurveBinding.PPtrCurve("Visual", typeof(SpriteRenderer), "m_Sprite");
         ObjectReferenceKeyframe[] keys = new ObjectReferenceKeyframe[6];
-        for (int i = 0; i < 6; i++) keys[i] = new ObjectReferenceKeyframe { time = 0.5f * i, value = frames[i] };
+        for (int i = 0; i < 6; i++) keys[i] = new ObjectReferenceKeyframe { time = i < 5 ? 0.4f * i : 2f, value = frames[i] };
         AnimationUtility.SetObjectReferenceCurve(clip, binding, keys);
         AnimationClipSettings settings = AnimationUtility.GetAnimationClipSettings(clip);
         settings.stopTime = 3f; settings.loopTime = false; AnimationUtility.SetAnimationClipSettings(clip, settings);
@@ -100,6 +100,7 @@ public static class ReviveSystemBuilder
         so.FindProperty("bubblePrefab").objectReferenceValue = bubblePrefab;
         so.FindProperty("reviveStateName").stringValue = "Revive";
         so.FindProperty("idleStateName").stringValue = idleState;
+        so.FindProperty("bubbleLeadTime").floatValue = 1f;
         so.ApplyModifiedPropertiesWithoutUndo();
         PrefabUtility.SaveAsPrefabAsset(contents, prefabPath);
         PrefabUtility.UnloadPrefabContents(contents);

@@ -18,6 +18,7 @@ public class ReviveController : MonoBehaviour
     [SerializeField] private float reviveRange = 2.2f;
     [SerializeField] private float reviveDuration = 3f;
     [SerializeField] private float reviveHealthFraction = 0.3f;
+    [SerializeField] private float bubbleLeadTime = 1f;
     [SerializeField] private string reviveStateName = "Revive";
     [SerializeField] private string idleStateName = "Idle 0";
     [SerializeField] private string bubbleText = "УХУ ЕЛИ?";
@@ -64,6 +65,11 @@ public class ReviveController : MonoBehaviour
         }
 
         progress += Time.deltaTime;
+
+        // Бабл и финальная поза появляются только в последнюю секунду.
+        if (bubble == null && progress >= reviveDuration - bubbleLeadTime)
+            ShowBubble();
+
         if (progress >= reviveDuration)
             Complete();
     }
@@ -106,7 +112,6 @@ public class ReviveController : MonoBehaviour
 
         if (attack != null) attack.enabled = false;
         if (animator != null) animator.Play(reviveStateName, 0, 0f);
-        ShowBubble();
     }
 
     private void Cancel()
