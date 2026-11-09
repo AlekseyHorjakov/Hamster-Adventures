@@ -102,6 +102,27 @@ public class PlayerCombatState : MonoBehaviour
         if (animator != null) animator.Play(downedStateName, 0, 0f);
     }
 
+    public void Revive(float healthFraction)
+    {
+        if (IsDead) return;
+
+        IsDowned = false;
+        HideDizzyStars();
+        health.Revive(healthFraction);
+
+        if (movement != null)
+        {
+            movement.enabled = true;
+            movement.SetControlLocked(false);
+        }
+
+        if (attack != null)
+            attack.enabled = true;
+
+        if (animator != null)
+            animator.Play(idleStateName, 0, 0f);
+    }
+
     /// <summary>Окончательная смерть, например при падении в яму.</summary>
     public void DiePermanently()
     {

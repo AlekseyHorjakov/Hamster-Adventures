@@ -15,6 +15,7 @@ public class PlayerInputReader : MonoBehaviour
     private InputAction move;
     private InputAction jump;
     private InputAction attack;
+    private InputAction interact;
     private InputAction any;
     private InputActionMap map;
 
@@ -24,6 +25,7 @@ public class PlayerInputReader : MonoBehaviour
     public bool AttackHeld => attack != null && attack.IsPressed();
     public bool AttackReleased => attack != null && attack.WasReleasedThisFrame();
     public bool AnyPressed => any != null && any.WasPressedThisFrame();
+    public bool InteractHeld => interact != null && interact.IsPressed();
 
     private void Awake()
     {
@@ -43,6 +45,7 @@ public class PlayerInputReader : MonoBehaviour
         move = map.FindAction("Move", false);
         jump = map.FindAction("Jump", false);
         attack = map.FindAction("Attack", false);
+        interact = map.FindAction("Interact", false);
         any = map.FindAction("Any", false);
         map.Enable();
     }

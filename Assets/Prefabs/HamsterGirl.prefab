@@ -157,6 +157,7 @@ GameObject:
   - component: {fileID: 3594938766314249159}
   - component: {fileID: 7521601888296858565}
   - component: {fileID: 2445444458852127743}
+  - component: {fileID: 1245928816243196256}
   m_Layer: 3
   m_Name: HamsterGirl
   m_TagString: Untagged
@@ -427,3 +428,27 @@ MonoBehaviour:
   deathStateName: Death
   hurtDuration: 0.28
   dizzyStarsPrefab: {fileID: 3392134120913388169, guid: f5101eb2385488f4b8e9970ee7087937, type: 3}
+--- !u!114 &1245928816243196256
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7313605111358297189}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e6b731ee7f2033b488aa3569d9c73451, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ReviveController
+  input: {fileID: 7521601888296858565}
+  movement: {fileID: 7389103765779009765}
+  attack: {fileID: 8675463877990214191}
+  animator: {fileID: 1998099670385249206}
+  body: {fileID: 7213630968953277183}
+  bubblePrefab: {fileID: 4878107297299336015, guid: 7b4574520dc1c804bafff4e962e64cd3, type: 3}
+  reviveRange: 2.2
+  reviveDuration: 3
+  reviveHealthFraction: 0.3
+  reviveStateName: Revive
+  idleStateName: HGIdle
+  bubbleText: "\u0423\u0425\u0423 \u0415\u041B\u0418?"

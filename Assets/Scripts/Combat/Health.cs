@@ -65,6 +65,13 @@ public class Health : MonoBehaviour, IDamageable
             Died?.Invoke();
     }
 
+    public void Revive(float fraction)
+    {
+        Current = Mathf.Clamp(maxHealth * fraction, 1f, maxHealth);
+        invulnerableUntil = Time.time + 1f;
+        Changed?.Invoke(Current, maxHealth);
+    }
+
     public void ResetHealth()
     {
         Current = maxHealth;
