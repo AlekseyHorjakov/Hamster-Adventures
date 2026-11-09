@@ -63,7 +63,7 @@ public static class HyenaBuilder
         GameObject root = new GameObject("Hyena");
         root.layer = 0;
         // Гиена должна быть чуть крупнее героев: примерно на полголовы.
-        root.transform.localScale = Vector3.one * 1.75f;
+        root.transform.localScale = Vector3.one * 2f;
 
         Rigidbody2D body = root.AddComponent<Rigidbody2D>();
         body.bodyType = RigidbodyType2D.Dynamic;
@@ -94,7 +94,7 @@ public static class HyenaBuilder
         visual.transform.SetParent(root.transform, false);
         // Спрайты нарезаны с пивотом внизу по центру, поэтому ставим низ
         // визуала на низ коллайдера — это линия ступней.
-        visual.transform.localPosition = new Vector3(0f, collider.offset.y - collider.size.y * 0.5f, 0f);
+        visual.transform.localPosition = new Vector3(0f, collider.offset.y - collider.size.y * 0.5f - 8f / 130f, 0f);
 
         SpriteRenderer sprite = visual.AddComponent<SpriteRenderer>();
         sprite.sprite = AssetDatabase.LoadAssetAtPath<Sprite>(AttackFramePath);
@@ -148,8 +148,8 @@ public static class HyenaBuilder
 
         Vector3[] positions =
         {
-            new Vector3(8.5f, 1f, 0f),
-            new Vector3(12f, 1f, 0f)
+            new Vector3(8.5f, 0.86f, 0f),
+            new Vector3(12f, 0.86f, 0f)
         };
 
         for (int i = 0; i < positions.Length; i++)
