@@ -33,7 +33,7 @@ public static class HyenaBuilder
         AssetDatabase.SaveAssets();
         AssetDatabase.Refresh();
 
-        Debug.Log("[Hyena] Прототип собран: здоровье 45, укус 10, анимации Attack/Hurt/Death.");
+        Debug.Log("[Hyena] Прототип собран: здоровье 45, укус 10, анимации Run/Attack/Hurt/Death.");
     }
 
     private static HitData CreateOrUpdateBite()
@@ -114,6 +114,7 @@ public static class HyenaBuilder
         SetPrivate(ai, "hitbox", hitbox);
         SetPrivate(ai, "animator", animator);
         SetPrivate(ai, "idleStateName", "Idle");
+        SetPrivate(ai, "walkStateName", "Run");
         SetPrivate(ai, "attackStateName", "Attack");
         SetPrivate(ai, "attackWindup", 0.16f);
         SetPrivate(ai, "attackActive", 0.16f);

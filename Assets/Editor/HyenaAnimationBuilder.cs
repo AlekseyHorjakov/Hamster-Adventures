@@ -5,7 +5,7 @@ using UnityEngine;
 
 /// <summary>
 /// Собирает анимации первой гиены из листа 6×3:
-/// ряд 1 — атака, ряд 2 — получение урона, ряд 3 — смерть.
+/// ряд 1 — атака, ряд 2 — получение урона, ряд 3 — смерть. Ходьба — отдельный лист.
 /// Кадры уже нарезаны и посажены на общий якорь по ступням.
 /// </summary>
 public static class HyenaAnimationBuilder
@@ -16,11 +16,13 @@ public static class HyenaAnimationBuilder
     private const float Ppu = 130f;
 
     private const string IdlePath = AnimationRoot + "/Hyena_Idle.anim";
+    private const string RunPath = AnimationRoot + "/Hyena_Run.anim";
     private const string AttackPath = AnimationRoot + "/Hyena_Attack.anim";
     private const string HurtPath = AnimationRoot + "/Hyena_Hurt.anim";
     private const string DeathPath = AnimationRoot + "/Hyena_Death.anim";
 
     private const string IdleState = "Idle";
+    private const string RunState = "Run";
     private const string AttackState = "Attack";
     private const string HurtState = "Hurt";
     private const string DeathState = "Death";
@@ -30,19 +32,21 @@ public static class HyenaAnimationBuilder
     {
         EnsureFolder("Assets/Animations/Enemies/Hyena");
 
+        Sprite[] run = ImportFrames("Run", "Hyena_Run_");
         Sprite[] attack = ImportFrames("Attack", "Hyena_Attack_");
         Sprite[] hurt = ImportFrames("Hurt", "Hyena_Hurt_");
         Sprite[] death = ImportFrames("Death", "Hyena_Death_");
 
-        if (attack.Length != 6 || hurt.Length != 6 || death.Length != 6)
+        if (run.Length != 6 || attack.Length != 6 || hurt.Length != 6 || death.Length != 6)
         {
-            Debug.LogError($"[HyenaAnim] Не хватает кадров: attack={attack.Length}, hurt={hurt.Length}, death={death.Length}");
+            Debug.LogError($"[HyenaAnim] Не хватает кадров: run={run.Length}, attack={attack.Length}, hurt={hurt.Length}, death={death.Length}");
             return;
         }
 
         // Отдельной ходьбы в листе нет: первый кадр атаки — нейтральная стойка,
         // её используем как Idle, пока не появится отдельная ходьба.
         AnimationClip idle = BuildClip(IdlePath, new[] { attack[0] }, 1f, true);
+        AnimationClip runClip = BuildClip(RunPath, run, 0.09f, true);
         AnimationClip attackClip = BuildClip(AttackPath, attack, 0.09f, false);
         AnimationClip hurtClip = BuildClip(HurtPath, hurt, 0.08f, false);
         AnimationClip deathClip = BuildClip(DeathPath, death, 0.12f, false);
@@ -55,6 +59,7 @@ public static class HyenaAnimationBuilder
         AssetDatabase.DeleteAsset(AnimationRoot + "/Hyena_Walk.anim");
 
         AnimatorState idleState = AddOrUpdateState(controller, IdleState, idle);
+        AddOrUpdateState(controller, RunState, runClip);
         AddOrUpdateState(controller, AttackState, attackClip);
         AddOrUpdateState(controller, HurtState, hurtClip);
         AddOrUpdateState(controller, DeathState, deathClip);
@@ -64,7 +69,7 @@ public static class HyenaAnimationBuilder
         AssetDatabase.SaveAssets();
         AssetDatabase.Refresh();
 
-        Debug.Log("[HyenaAnim] Готово: Idle, Attack 0,54 с, Hurt 0,48 с, Death 0,72 с");
+        Debug.Log("[HyenaAnim] Готово: Idle, Run 0,54 с, Attack 0,54 с, Hurt 0,48 с, Death 0,72 с");
     }
 
     private static Sprite[] ImportFrames(string folder, string prefix)

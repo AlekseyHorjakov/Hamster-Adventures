@@ -34,6 +34,7 @@ public class HyenaAI : MonoBehaviour
     [Header("Анимация")]
     [SerializeField] private Animator animator;
     [SerializeField] private string idleStateName = "Idle";
+    [SerializeField] private string walkStateName = "Run";
     [SerializeField] private string attackStateName = "Attack";
     [SerializeField] private string hurtStateName = "Hurt";
     [SerializeField] private string deathStateName = "Death";
@@ -215,8 +216,7 @@ public class HyenaAI : MonoBehaviour
     {
         body.linearVelocity = new Vector2(direction * speed, body.linearVelocity.y);
         Face(direction);
-        // Отдельной анимации ходьбы пока нет: двигаемся в нейтральной стойке.
-        PlayState(idleStateName);
+        PlayState(walkStateName);
     }
 
     private void StopHorizontal()

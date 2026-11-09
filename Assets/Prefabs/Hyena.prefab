@@ -196,6 +196,7 @@ MonoBehaviour:
   hitbox: {fileID: 3958163101106336452}
   animator: {fileID: 3132992963662219560}
   idleStateName: Idle
+  walkStateName: Run
   attackStateName: Attack
   hurtStateName: Hurt
   deathStateName: Death
