@@ -20,10 +20,12 @@ public class PlayerCombatState : MonoBehaviour
     [SerializeField] private string deathStateName = "Death";
 
     [SerializeField] private float hurtDuration = 0.48f;
+    [SerializeField] private GameObject dizzyStarsPrefab;
 
     private Health health;
     private Coroutine hurtRoutine;
     private bool hurtPlaying;
+    private GameObject activeDizzyStars;
 
     public bool IsDowned { get; private set; }
     public bool IsDead { get; private set; }
@@ -96,6 +98,7 @@ public class PlayerCombatState : MonoBehaviour
         }
 
         DisableControl();
+        ShowDizzyStars();
         if (animator != null) animator.Play(downedStateName, 0, 0f);
     }
 
@@ -115,6 +118,7 @@ public class PlayerCombatState : MonoBehaviour
         }
 
         DisableControl();
+        HideDizzyStars();
         if (body != null)
         {
             body.linearVelocity = Vector2.zero;
@@ -122,6 +126,32 @@ public class PlayerCombatState : MonoBehaviour
         }
 
         if (animator != null) animator.Play(deathStateName, 0, 0f);
+    }
+
+    private void ShowDizzyStars()
+    {
+        if (activeDizzyStars != null || dizzyStarsPrefab == null)
+            return;
+
+        activeDizzyStars = Instantiate(dizzyStarsPrefab, transform);
+        float parentScale = transform.lossyScale.y;
+        if (parentScale > 0.0001f)
+            activeDizzyStars.transform.localScale = Vector3.one / parentScale;
+
+        SpriteRenderer heroSprite = GetComponentInChildren<SpriteRenderer>();
+        if (heroSprite != null)
+        {
+            Bounds bounds = heroSprite.bounds;
+            Vector3 worldPoint = new Vector3(bounds.center.x, bounds.max.y + 0.3f, transform.position.z);
+            activeDizzyStars.transform.position = worldPoint;
+        }
+    }
+
+    private void HideDizzyStars()
+    {
+        if (activeDizzyStars != null)
+            Destroy(activeDizzyStars);
+        activeDizzyStars = null;
     }
 
     private void DisableControl()

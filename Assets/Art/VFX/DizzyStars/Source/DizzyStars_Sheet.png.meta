@@ -1,0 +1,912 @@
+fileFormatVersion: 2
+guid: b7ff645e718fadb43bfbfa666b292ecf
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -2300131033493864057
+    second: DizzyStars_Sheet_0
+  - first:
+      213: 6449490916398479602
+    second: DizzyStars_Sheet_1
+  - first:
+      213: -4642453617921066629
+    second: DizzyStars_Sheet_2
+  - first:
+      213: -3250894308479655823
+    second: DizzyStars_Sheet_3
+  - first:
+      213: -6097074386307212091
+    second: DizzyStars_Sheet_4
+  - first:
+      213: -4065668201853328926
+    second: DizzyStars_Sheet_5
+  - first:
+      213: -4734590527801004764
+    second: DizzyStars_Sheet_6
+  - first:
+      213: -2707389467350769827
+    second: DizzyStars_Sheet_7
+  - first:
+      213: -270597495819957902
+    second: DizzyStars_Sheet_8
+  - first:
+      213: -2440803387018148810
+    second: DizzyStars_Sheet_9
+  - first:
+      213: -8147809148769800924
+    second: DizzyStars_Sheet_10
+  - first:
+      213: 605973964494008819
+    second: DizzyStars_Sheet_11
+  - first:
+      213: 2216804248984239552
+    second: DizzyStars_Sheet_12
+  - first:
+      213: 6499826751128612417
+    second: DizzyStars_Sheet_13
+  - first:
+      213: -4197852253968735360
+    second: DizzyStars_Sheet_14
+  - first:
+      213: 4188566920194724451
+    second: DizzyStars_Sheet_15
+  - first:
+      213: 5968224700312823288
+    second: DizzyStars_Sheet_16
+  - first:
+      213: 5689624910148385945
+    second: DizzyStars_Sheet_17
+  - first:
+      213: -8886401885848574880
+    second: DizzyStars_Sheet_18
+  - first:
+      213: 5698106469866040330
+    second: DizzyStars_Sheet_19
+  - first:
+      213: -3563699186347116801
+    second: DizzyStars_Sheet_20
+  - first:
+      213: 6817357913754167925
+    second: DizzyStars_Sheet_21
+  - first:
+      213: -6620517975296828804
+    second: DizzyStars_Sheet_22
+  - first:
+      213: 2305346726373274326
+    second: DizzyStars_Sheet_23
+  - first:
+      213: -997509395754149741
+    second: DizzyStars_Sheet_24
+  - first:
+      213: 876416736663597539
+    second: DizzyStars_Sheet_25
+  - first:
+      213: 8088465539678549372
+    second: DizzyStars_Sheet_26
+  - first:
+      213: 1254948369958971089
+    second: DizzyStars_Sheet_27
+  - first:
+      213: 703621341622345071
+    second: DizzyStars_Sheet_28
+  - first:
+      213: -1099356958776290259
+    second: DizzyStars_Sheet_29
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationMethod: 0
+  spriteTessellationDetail: -1
+  spriteGeometrySubdivision: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: DizzyStars_Sheet_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 2172
+        height: 716
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7810fbbf20b4410e0800000000000000
+      internalID: -2300131033493864057
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DizzyStars_Sheet_1
+      rect:
+        serializedVersion: 2
+        x: 450
+        y: 683
+        width: 12
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2f83a0e41d1318950800000000000000
+      internalID: 6449490916398479602
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DizzyStars_Sheet_2
+      rect:
+        serializedVersion: 2
+        x: 845
+        y: 683
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b7976910801b29fb0800000000000000
+      internalID: -4642453617921066629
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DizzyStars_Sheet_3
+      rect:
+        serializedVersion: 2
+        x: 1504
+        y: 581
+        width: 95
+        height: 113
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1702bb4b9d082e2d0800000000000000
+      internalID: -3250894308479655823
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DizzyStars_Sheet_4
+      rect:
+        serializedVersion: 2
+        x: 2017
+        y: 642
+        width: 45
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5cc960b3627d26ba0800000000000000
+      internalID: -6097074386307212091
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DizzyStars_Sheet_5
+      rect:
+        serializedVersion: 2
+        x: 2063
+        y: 681
+        width: 18
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2e16eedaf48d397c0800000000000000
+      internalID: -4065668201853328926
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DizzyStars_Sheet_6
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 39
+        width: 54
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 42ded79fffa5b4eb0800000000000000
+      internalID: -4734590527801004764
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DizzyStars_Sheet_7
+      rect:
+        serializedVersion: 2
+        x: 197
+        y: 39
+        width: 198
+        height: 143
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d5f5ce1bf9b6d6ad0800000000000000
+      internalID: -2707389467350769827
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DizzyStars_Sheet_8
+      rect:
+        serializedVersion: 2
+        x: 223
+        y: 37
+        width: 11
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2798a80e205ae3cf0800000000000000
+      internalID: -270597495819957902
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DizzyStars_Sheet_9
+      rect:
+        serializedVersion: 2
+        x: 376
+        y: 33
+        width: 21
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 634863e5046802ed0800000000000000
+      internalID: -2440803387018148810
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DizzyStars_Sheet_10
+      rect:
+        serializedVersion: 2
+        x: 402
+        y: 34
+        width: 7
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 42de5e58fba2dee80800000000000000
+      internalID: -8147809148769800924
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DizzyStars_Sheet_11
+      rect:
+        serializedVersion: 2
+        x: 571
+        y: 46
+        width: 15
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3f1fcc03c1ad86800800000000000000
+      internalID: 605973964494008819
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DizzyStars_Sheet_12
+      rect:
+        serializedVersion: 2
+        x: 656
+        y: 41
+        width: 15
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0cd384528bba3ce10800000000000000
+      internalID: 2216804248984239552
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DizzyStars_Sheet_13
+      rect:
+        serializedVersion: 2
+        x: 734
+        y: 41
+        width: 138
+        height: 146
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 14e2a9a1ef5043a50800000000000000
+      internalID: 6499826751128612417
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DizzyStars_Sheet_14
+      rect:
+        serializedVersion: 2
+        x: 893
+        y: 46
+        width: 29
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 083ee9ebd9b3eb5c0800000000000000
+      internalID: -4197852253968735360
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DizzyStars_Sheet_15
+      rect:
+        serializedVersion: 2
+        x: 1036
+        y: 45
+        width: 262
+        height: 158
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 36298240c67c02a30800000000000000
+      internalID: 4188566920194724451
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DizzyStars_Sheet_16
+      rect:
+        serializedVersion: 2
+        x: 1476
+        y: 45
+        width: 19
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8f5abd17eb463d250800000000000000
+      internalID: 5968224700312823288
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DizzyStars_Sheet_17
+      rect:
+        serializedVersion: 2
+        x: 1657
+        y: 25
+        width: 116
+        height: 197
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 99cbb9af5bb95fe40800000000000000
+      internalID: 5689624910148385945
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DizzyStars_Sheet_18
+      rect:
+        serializedVersion: 2
+        x: 1961
+        y: 45
+        width: 35
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 06462a621982da480800000000000000
+      internalID: -8886401885848574880
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DizzyStars_Sheet_19
+      rect:
+        serializedVersion: 2
+        x: 239
+        y: 25
+        width: 9
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a0c68bcf4adb31f40800000000000000
+      internalID: 5698106469866040330
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DizzyStars_Sheet_20
+      rect:
+        serializedVersion: 2
+        x: 442
+        y: 33
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ff67e67a8723b8ec0800000000000000
+      internalID: -3563699186347116801
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DizzyStars_Sheet_21
+      rect:
+        serializedVersion: 2
+        x: 447
+        y: 31
+        width: 7
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 57ae30417ee1c9e50800000000000000
+      internalID: 6817357913754167925
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DizzyStars_Sheet_22
+      rect:
+        serializedVersion: 2
+        x: 456
+        y: 21
+        width: 10
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c7a185d7af13f14a0800000000000000
+      internalID: -6620517975296828804
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DizzyStars_Sheet_23
+      rect:
+        serializedVersion: 2
+        x: 1140
+        y: 17
+        width: 17
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6d2b69522ac3eff10800000000000000
+      internalID: 2305346726373274326
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DizzyStars_Sheet_24
+      rect:
+        serializedVersion: 2
+        x: 155
+        y: 19
+        width: 9
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 39895f55d722822f0800000000000000
+      internalID: -997509395754149741
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DizzyStars_Sheet_25
+      rect:
+        serializedVersion: 2
+        x: 163
+        y: 19
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3e17a08e068a92c00800000000000000
+      internalID: 876416736663597539
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DizzyStars_Sheet_26
+      rect:
+        serializedVersion: 2
+        x: 251
+        y: 19
+        width: 10
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c753786cd80004070800000000000000
+      internalID: 8088465539678549372
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DizzyStars_Sheet_27
+      rect:
+        serializedVersion: 2
+        x: 798
+        y: 19
+        width: 11
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1d62cdab4e87a6110800000000000000
+      internalID: 1254948369958971089
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DizzyStars_Sheet_28
+      rect:
+        serializedVersion: 2
+        x: 808
+        y: 19
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f6d98cbd1e3c3c900800000000000000
+      internalID: 703621341622345071
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DizzyStars_Sheet_29
+      rect:
+        serializedVersion: 2
+        x: 1158
+        y: 23
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d2419ceabac4eb0f0800000000000000
+      internalID: -1099356958776290259
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      DizzyStars_Sheet_0: -2300131033493864057
+      DizzyStars_Sheet_1: 6449490916398479602
+      DizzyStars_Sheet_10: -8147809148769800924
+      DizzyStars_Sheet_11: 605973964494008819
+      DizzyStars_Sheet_12: 2216804248984239552
+      DizzyStars_Sheet_13: 6499826751128612417
+      DizzyStars_Sheet_14: -4197852253968735360
+      DizzyStars_Sheet_15: 4188566920194724451
+      DizzyStars_Sheet_16: 5968224700312823288
+      DizzyStars_Sheet_17: 5689624910148385945
+      DizzyStars_Sheet_18: -8886401885848574880
+      DizzyStars_Sheet_19: 5698106469866040330
+      DizzyStars_Sheet_2: -4642453617921066629
+      DizzyStars_Sheet_20: -3563699186347116801
+      DizzyStars_Sheet_21: 6817357913754167925
+      DizzyStars_Sheet_22: -6620517975296828804
+      DizzyStars_Sheet_23: 2305346726373274326
+      DizzyStars_Sheet_24: -997509395754149741
+      DizzyStars_Sheet_25: 876416736663597539
+      DizzyStars_Sheet_26: 8088465539678549372
+      DizzyStars_Sheet_27: 1254948369958971089
+      DizzyStars_Sheet_28: 703621341622345071
+      DizzyStars_Sheet_29: -1099356958776290259
+      DizzyStars_Sheet_3: -3250894308479655823
+      DizzyStars_Sheet_4: -6097074386307212091
+      DizzyStars_Sheet_5: -4065668201853328926
+      DizzyStars_Sheet_6: -4734590527801004764
+      DizzyStars_Sheet_7: -2707389467350769827
+      DizzyStars_Sheet_8: -270597495819957902
+      DizzyStars_Sheet_9: -2440803387018148810
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
