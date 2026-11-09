@@ -36,6 +36,14 @@ public static class HyenaBuilder
         Debug.Log("[Hyena] Прототип собран: здоровье 45, укус 10, анимации Run/Attack/Hurt/Death.");
     }
 
+    [MenuItem("Tools/Hamster/Apply Combat Fixes")]
+    public static void ApplyCombatFixes()
+    {
+        BuildAll();
+        HamsterCombatAnimationBuilder.BuildAll();
+        HamsterGirlCombatAnimationBuilder.BuildAll();
+    }
+
     private static HitData CreateOrUpdateBite()
     {
         HitData bite = AssetDatabase.LoadAssetAtPath<HitData>(HitDataPath);
@@ -51,8 +59,8 @@ public static class HyenaBuilder
         bite.hitStop = 0.06f;
         bite.hitStun = 0.32f;
         bite.launchVelocity = Vector2.zero;
-        bite.hitboxSize = new Vector2(1.3f, 0.9f);
-        bite.hitboxOffset = new Vector2(0.95f, 0f);
+        bite.hitboxSize = new Vector2(1.8f, 1.0f);
+        bite.hitboxOffset = new Vector2(1.5f, 0f);
 
         EditorUtility.SetDirty(bite);
         return bite;
@@ -118,6 +126,7 @@ public static class HyenaBuilder
         SetPrivate(ai, "idleStateName", "Idle");
         SetPrivate(ai, "walkStateName", "Run");
         SetPrivate(ai, "attackStateName", "Attack");
+        SetPrivate(ai, "attackRange", 2.3f);
         SetPrivate(ai, "attackWindup", 0.16f);
         SetPrivate(ai, "attackActive", 0.16f);
         SetPrivate(ai, "attackRecovery", 0.22f);

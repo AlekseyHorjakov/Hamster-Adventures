@@ -187,7 +187,7 @@ MonoBehaviour:
   patrolSpeed: 1.4
   chaseSpeed: 3.2
   patrolPause: 0.8
-  attackRange: 1.55
+  attackRange: 2.3
   attackWindup: 0.16
   attackActive: 0.16
   attackRecovery: 0.22
@@ -230,7 +230,7 @@ Transform:
   m_GameObject: {fileID: 4364694057213482999}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -0.8915385, z: 0}
+  m_LocalPosition: {x: 0, y: -0.89153844, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []

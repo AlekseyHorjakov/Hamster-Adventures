@@ -425,5 +425,5 @@ MonoBehaviour:
   hurtStateName: Hurt
   downedStateName: Downed
   deathStateName: Death
-  hurtDuration: 0.48
+  hurtDuration: 0.28
   dizzyStarsPrefab: {fileID: 3392134120913388169, guid: f5101eb2385488f4b8e9970ee7087937, type: 3}

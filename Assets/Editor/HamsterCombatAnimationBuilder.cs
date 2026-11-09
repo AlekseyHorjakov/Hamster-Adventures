@@ -23,7 +23,7 @@ public static class HamsterCombatAnimationBuilder
         Sprite[] downed = Import("Downed", "Hamster_Downed_");
         Sprite[] death = Import("Death", "Hamster_Death_");
 
-        AnimationClip hurtClip = BuildClip(AnimRoot + "/Hamster_Hurt.anim", hurt, 0.06f, false);
+        AnimationClip hurtClip = BuildClip(AnimRoot + "/Hamster_Hurt.anim", hurt, 0.035f, false);
         AnimationClip downedClip = BuildClip(AnimRoot + "/Hamster_Downed.anim", downed, 0.08f, false);
         AnimationClip deathClip = BuildClip(AnimRoot + "/Hamster_Death.anim", death, 0.09f, false);
 
@@ -42,7 +42,7 @@ public static class HamsterCombatAnimationBuilder
         AddComponent();
         AssetDatabase.SaveAssets();
         AssetDatabase.Refresh();
-        Debug.Log("[HamsterCombat] Готово: Hurt 0,48 с, Downed 0,64 с, Death 0,72 с");
+        Debug.Log("[HamsterCombat] Готово: Hurt 0,28 с, Downed 0,64 с, Death 0,72 с");
     }
 
     private static Sprite[] Import(string folder, string prefix)
@@ -128,7 +128,7 @@ public static class HamsterCombatAnimationBuilder
         so.FindProperty("hurtStateName").stringValue = "Hurt";
         so.FindProperty("downedStateName").stringValue = "Downed";
         so.FindProperty("deathStateName").stringValue = "Death";
-        so.FindProperty("hurtDuration").floatValue = 0.48f;
+        so.FindProperty("hurtDuration").floatValue = 0.28f;
         so.ApplyModifiedPropertiesWithoutUndo();
 
         PrefabUtility.SaveAsPrefabAsset(contents, PrefabPath);
