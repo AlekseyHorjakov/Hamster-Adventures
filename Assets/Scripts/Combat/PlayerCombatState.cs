@@ -1,0 +1,138 @@
+using System.Collections;
+using UnityEngine;
+
+/// <summary>
+/// Визуальные боевые состояния героя: урон, потеря сознания и окончательная смерть.
+/// Потеря сознания от врагов и смерть от падения обрабатываются раздельно.
+/// </summary>
+[RequireComponent(typeof(Health))]
+public class PlayerCombatState : MonoBehaviour
+{
+    [SerializeField] private Animator animator;
+    [SerializeField] private HamsterMovement movement;
+    [SerializeField] private AttackController attack;
+    [SerializeField] private Rigidbody2D body;
+
+    [Header("Состояния")]
+    [SerializeField] private string idleStateName = "Idle 0";
+    [SerializeField] private string hurtStateName = "Hurt";
+    [SerializeField] private string downedStateName = "Downed";
+    [SerializeField] private string deathStateName = "Death";
+
+    [SerializeField] private float hurtDuration = 0.48f;
+
+    private Health health;
+    private Coroutine hurtRoutine;
+    private bool hurtPlaying;
+
+    public bool IsDowned { get; private set; }
+    public bool IsDead { get; private set; }
+
+    private void Awake()
+    {
+        health = GetComponent<Health>();
+        if (animator == null) animator = GetComponent<Animator>();
+        if (movement == null) movement = GetComponent<HamsterMovement>();
+        if (attack == null) attack = GetComponent<AttackController>();
+        if (body == null) body = GetComponent<Rigidbody2D>();
+    }
+
+    private void OnEnable()
+    {
+        health.Damaged += OnDamaged;
+        health.Died += OnDied;
+    }
+
+    private void OnDisable()
+    {
+        health.Damaged -= OnDamaged;
+        health.Died -= OnDied;
+    }
+
+    private void OnDamaged(DamageInfo info)
+    {
+        if (IsDowned || IsDead || !health.IsAlive)
+            return;
+
+        if (hurtRoutine != null)
+            StopCoroutine(hurtRoutine);
+
+        hurtPlaying = true;
+        if (movement != null) movement.SetControlLocked(true);
+        if (animator != null) animator.Play(hurtStateName, 0, 0f);
+        hurtRoutine = StartCoroutine(HurtRoutine());
+    }
+
+    private IEnumerator HurtRoutine()
+    {
+        yield return new WaitForSeconds(hurtDuration);
+        hurtPlaying = false;
+        hurtRoutine = null;
+
+        if (IsDowned || IsDead || !health.IsAlive)
+            yield break;
+
+        if (movement != null) movement.SetControlLocked(false);
+        if (animator != null) animator.Play(idleStateName, 0, 0f);
+    }
+
+    private void OnDied()
+    {
+        if (IsDead) return;
+        EnterDowned();
+    }
+
+    public void EnterDowned()
+    {
+        if (IsDead) return;
+
+        IsDowned = true;
+        hurtPlaying = false;
+
+        if (hurtRoutine != null)
+        {
+            StopCoroutine(hurtRoutine);
+            hurtRoutine = null;
+        }
+
+        DisableControl();
+        if (animator != null) animator.Play(downedStateName, 0, 0f);
+    }
+
+    /// <summary>Окончательная смерть, например при падении в яму.</summary>
+    public void DiePermanently()
+    {
+        if (IsDead) return;
+
+        IsDead = true;
+        IsDowned = false;
+        hurtPlaying = false;
+
+        if (hurtRoutine != null)
+        {
+            StopCoroutine(hurtRoutine);
+            hurtRoutine = null;
+        }
+
+        DisableControl();
+        if (body != null)
+        {
+            body.linearVelocity = Vector2.zero;
+            body.simulated = false;
+        }
+
+        if (animator != null) animator.Play(deathStateName, 0, 0f);
+    }
+
+    private void DisableControl()
+    {
+        if (movement != null)
+        {
+            movement.SetControlLocked(true);
+            movement.enabled = false;
+        }
+
+        if (attack != null)
+            attack.enabled = false;
+    }
+}

@@ -13,5 +13,9 @@ public class FallZone : MonoBehaviour
             return;
 
         Debug.Log("Хомяк упал за пределы уровня!");
+
+        PlayerCombatState state = other.GetComponentInParent<PlayerCombatState>();
+        if (state != null)
+            state.DiePermanently();
     }
 }

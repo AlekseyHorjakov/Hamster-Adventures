@@ -109,6 +109,7 @@ GameObject:
   - component: {fileID: 1791010570302103970}
   - component: {fileID: 8489467301332612194}
   - component: {fileID: 5250570610276498038}
+  - component: {fileID: 4215429347300269409}
   m_Layer: 3
   m_Name: Hamster
   m_TagString: Untagged
@@ -357,6 +358,27 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::PlayerInputReader
   actions: {fileID: -944628639613478452, guid: 79053acb82ce4af4aa9ca1b6b0a8cff3, type: 3}
   mapName: Hamster
+--- !u!114 &4215429347300269409
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6507534076535526295}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f88b0e27503367c49b8949d62c7e620b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PlayerCombatState
+  animator: {fileID: 6724994769446981160}
+  movement: {fileID: 4868555397632928063}
+  attack: {fileID: 1791010570302103970}
+  body: {fileID: 5635404578978476577}
+  idleStateName: Idle 0
+  hurtStateName: Hurt
+  downedStateName: Downed
+  deathStateName: Death
+  hurtDuration: 0.48
 --- !u!1 &9088040696783955624
 GameObject:
   m_ObjectHideFlags: 0
