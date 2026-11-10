@@ -482,13 +482,13 @@ MonoBehaviour:
   - Hook
   - Spin
   attackDurations:
-  - 0.25
-  - 0.25
-  - 0.6
+  - 0.28
+  - 0.24
+  - 0.62
   cancelTimes:
-  - 0.1
-  - 0.1
-  - 0.6
+  - 0.28
+  - 0.24
+  - 0.62
   movementLock: 0.14
   comboResetTime: 0.45
   stepSpeeds:

@@ -90,9 +90,6 @@ public class Hitbox : MonoBehaviour
             CameraFollow.Shake(0.2f, 0.16f);
             SpawnSpark(center);
 
-            SuperMeter sourceMeter = transform.root.GetComponent<SuperMeter>();
-            if (sourceMeter != null)
-                sourceMeter.AddCharge(sourceMeter.HitChargeGain);
         }
     }
 

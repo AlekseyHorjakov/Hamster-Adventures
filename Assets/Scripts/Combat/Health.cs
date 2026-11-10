@@ -60,6 +60,15 @@ public class Health : MonoBehaviour, IDamageable
         if (logDamage)
             Debug.Log($"[health] {name}: -{info.amount}, осталось {Current:0}", this);
 
+        // Любой урон, у которого указан источник-герой, заряжает его супершкалу.
+        // Это надёжнее, чем искать источник внутри конкретного Hitbox.
+        if (info.source != null)
+        {
+            SuperMeter sourceMeter = info.source.GetComponentInParent<SuperMeter>();
+            if (sourceMeter != null)
+                sourceMeter.AddCharge(sourceMeter.HitChargeGain);
+        }
+
         Damaged?.Invoke(info);
         Changed?.Invoke(Current, maxHealth);
 

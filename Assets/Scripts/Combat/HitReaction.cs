@@ -91,7 +91,7 @@ public class HitReaction : MonoBehaviour
         flash = StartCoroutine(Flash());
 
         if (!launched && info.launchVelocity.sqrMagnitude > 0.01f)
-            launchRoutine = StartCoroutine(Launch(info.launchVelocity));
+            launchRoutine = StartCoroutine(ShortKnockback(info.launchVelocity));
     }
 
     private IEnumerator Flash()
@@ -113,54 +113,30 @@ public class HitReaction : MonoBehaviour
         flash = null;
     }
 
-    private IEnumerator Launch(Vector2 velocity)
+    /// <summary>
+    /// Короткий отлёт без кувырка: враг смещается примерно на полкорпуса
+    /// и остаётся в обычной ориентации.
+    /// </summary>
+    private IEnumerator ShortKnockback(Vector2 velocity)
     {
         launched = true;
 
-        // В полёте затухание выключено, иначе цель пролетает слишком мало.
+        float direction = Mathf.Abs(velocity.x) > 0.01f ? Mathf.Sign(velocity.x) : 1f;
         float originalDamping = body != null ? body.linearDamping : 0f;
 
         if (body != null)
         {
             body.linearDamping = 0f;
-            body.linearVelocity = velocity;
+            body.linearVelocity = new Vector2(direction * 5f, 0f);
         }
 
-        float timer = 0f;
+        yield return new WaitForSeconds(0.18f);
 
-        // Крутим спрайт, пока цель в воздухе.
-        while (timer < maxFlightTime)
-        {
-            timer += Time.deltaTime;
-
-            if (visual != null)
-                visual.Rotate(0f, 0f, -spinSpeed * Time.deltaTime);
-
-            if (timer > 0.15f && IsGrounded())
-                break;
-
-            yield return null;
-        }
-
-        // Гасим скорость на приземлении, чтобы цель не катилась по земле.
         if (body != null)
         {
-            body.linearVelocity = Vector2.zero;
+            body.linearVelocity = new Vector2(0f, body.linearVelocity.y);
             body.linearDamping = originalDamping;
         }
-
-        // Лежит на земле, потом встаёт.
-        if (visual != null)
-            visual.rotation = Quaternion.Euler(0f, 0f, 90f);
-
-        yield return new WaitForSeconds(lieDownTime);
-
-        if (visual != null)
-            visual.rotation = Quaternion.identity;
-
-        // После подъёма тоже не даём разгоняться остаткам импульса.
-        if (body != null)
-            body.linearVelocity = Vector2.zero;
 
         launched = false;
     }

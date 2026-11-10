@@ -111,11 +111,11 @@ public static class CombatTuning
 
             SerializedProperty durations = serialized.FindProperty("attackDurations");
             if (durations != null && durations.arraySize >= 3)
-                durations.GetArrayElementAtIndex(2).floatValue = 0.6f;
+                durations.GetArrayElementAtIndex(2).floatValue = 0.62f;
 
             SerializedProperty cancels = serialized.FindProperty("cancelTimes");
             if (cancels != null && cancels.arraySize >= 3)
-                cancels.GetArrayElementAtIndex(2).floatValue = 0.6f;
+                cancels.GetArrayElementAtIndex(2).floatValue = 0.62f;
 
             serialized.ApplyModifiedPropertiesWithoutUndo();
 

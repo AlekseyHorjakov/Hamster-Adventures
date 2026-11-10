@@ -20,10 +20,10 @@ public class AttackController : MonoBehaviour
 
     [Header("Тайминги")]
     [Tooltip("Длительность каждого удара: у финишёра дольше, потому что кадр попадания удерживается")]
-    [SerializeField] private float[] attackDurations = { 0.25f, 0.25f, 0.32f };
+    [SerializeField] private float[] attackDurations = { 0.28f, 0.24f, 0.62f };
 
-    [Tooltip("Через сколько секунд после начала удар можно прервать следующим")]
-    [SerializeField] private float[] cancelTimes = { 0.10f, 0.10f, 0.14f };
+    [Tooltip("Через сколько секунд после начала можно запустить следующий удар. Равно полной длительности, чтобы клип не обрывался")]
+    [SerializeField] private float[] cancelTimes = { 0.28f, 0.24f, 0.62f };
 
     [Tooltip("Сколько секунд герой не может двигаться с начала удара")]
     [SerializeField] private float movementLock = 0.14f;
