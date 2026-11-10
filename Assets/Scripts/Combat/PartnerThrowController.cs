@@ -18,6 +18,7 @@ public class PartnerThrowController : MonoBehaviour
     [SerializeField] private Rigidbody2D body;
     [SerializeField] private Collider2D bodyCollider;
     [SerializeField] private SpriteRenderer sprite;
+    [SerializeField] private Sprite flightSprite;
     [SerializeField] private Health health;
     [SerializeField] private PlayerCombatState combatState;
 
@@ -50,6 +51,8 @@ public class PartnerThrowController : MonoBehaviour
     private Collider2D throwerCollider;
     private PartnerThrowVFXController flightVfx;
     private readonly HashSet<Health> hitTargets = new HashSet<Health>();
+    private IdleSpecialController idleSpecial;
+    private ReviveController revive;
 
     private bool isCarried;
     private bool isFlying;
@@ -64,11 +67,18 @@ public class PartnerThrowController : MonoBehaviour
     private bool colliderWasTrigger;
     private int originalSortingOrder;
     private bool sortingChanged;
+    private bool animatorWasEnabled;
+    private Sprite originalSprite;
+    private bool idleSpecialWasEnabled;
+    private bool reviveWasEnabled;
 
     public bool IsCarried => isCarried;
     public bool IsFlying => isFlying;
     public bool CanBePickedUp => !isCarried && !isFlying && health != null && health.IsAlive &&
                                  (combatState == null || (!combatState.IsDowned && !combatState.IsDead));
+
+    /// <summary>Половина высоты текущего спрайта: нужна, чтобы держать напарника над головой.</summary>
+    public float VisualHalfHeight => sprite != null ? sprite.bounds.extents.y : 0.45f;
 
     private void Awake()
     {
@@ -81,6 +91,8 @@ public class PartnerThrowController : MonoBehaviour
         if (sprite == null) sprite = GetComponentInChildren<SpriteRenderer>();
         if (health == null) health = GetComponent<Health>();
         if (combatState == null) combatState = GetComponent<PlayerCombatState>();
+        idleSpecial = GetComponent<IdleSpecialController>();
+        revive = GetComponent<ReviveController>();
     }
 
     private void Update()
@@ -116,7 +128,7 @@ public class PartnerThrowController : MonoBehaviour
         Bounds bounds = sprite != null ? sprite.bounds : new Bounds(transform.position, Vector3.one);
         Vector3 position = new Vector3(
             bounds.center.x + movement.Facing * 0.12f,
-            bounds.max.y + carryLift,
+            bounds.max.y + carriedController.VisualHalfHeight + carryLift,
             transform.position.z);
 
         carriedController.transform.position = position;
@@ -199,6 +211,11 @@ public class PartnerThrowController : MonoBehaviour
         if (movement != null) movement.enabled = false;
         if (attack != null) attack.enabled = false;
 
+        idleSpecialWasEnabled = idleSpecial != null && idleSpecial.enabled;
+        reviveWasEnabled = revive != null && revive.enabled;
+        if (idleSpecial != null) idleSpecial.enabled = false;
+        if (revive != null) revive.enabled = false;
+
         if (body != null)
         {
             body.linearVelocity = Vector2.zero;
@@ -215,11 +232,18 @@ public class PartnerThrowController : MonoBehaviour
         if (sprite != null)
         {
             originalSortingOrder = sprite.sortingOrder;
+            originalSprite = sprite.sprite;
             sprite.sortingOrder += 4;
+            if (flightSprite != null)
+                sprite.sprite = flightSprite;
             sortingChanged = true;
         }
 
-        PlayState(carriedStateName, true);
+        // Пока герой в руках, показываем отдельный горизонтальный спрайт полёта.
+        // Animator выключаем, чтобы он не вернул кадр стойки в следующем Update.
+        animatorWasEnabled = animator != null && animator.enabled;
+        if (animator != null)
+            animator.enabled = false;
     }
 
     private void ThrowCarried()
@@ -230,7 +254,7 @@ public class PartnerThrowController : MonoBehaviour
         Bounds bounds = sprite != null ? sprite.bounds : new Bounds(transform.position, Vector3.one);
         Vector3 launchPosition = new Vector3(
             bounds.center.x + movement.Facing * launchForwardOffset,
-            transform.position.y + 0.05f,
+            ResolveFlightHeight(movement.Facing),
             transform.position.z);
 
         PartnerThrowController thrown = carriedController;
@@ -274,8 +298,6 @@ public class PartnerThrowController : MonoBehaviour
 
         if (throwerCollider != null && bodyCollider != null)
             Physics2D.IgnoreCollision(throwerCollider, bodyCollider, true);
-
-        PlayState(thrownStateName, true);
 
         if (flightVfxPrefab != null)
         {
@@ -399,11 +421,9 @@ public class PartnerThrowController : MonoBehaviour
 
         RestoreColliderAndImmunity();
 
-        if (movement != null) movement.enabled = movementWasEnabled;
-        if (attack != null) attack.enabled = attackWasEnabled;
-
+        RestoreControlComponents();
         RestoreSorting();
-        PlayState(idleStateName, false);
+        RestoreVisuals();
 
         if (throwerCollider != null && bodyCollider != null)
             Physics2D.IgnoreCollision(throwerCollider, bodyCollider, false);
@@ -428,11 +448,9 @@ public class PartnerThrowController : MonoBehaviour
 
         RestoreColliderAndImmunity();
 
-        if (movement != null) movement.enabled = movementWasEnabled;
-        if (attack != null) attack.enabled = attackWasEnabled;
-
+        RestoreControlComponents();
         RestoreSorting();
-        PlayState(idleStateName, false);
+        RestoreVisuals();
     }
 
     private void ReleaseCarriedWithoutThrow()
@@ -445,6 +463,59 @@ public class PartnerThrowController : MonoBehaviour
         nextPickupAt = Time.time + 0.2f;
     }
 
+    /// <summary>Высота полёта: центр коллайдера ближайшей гиены перед броском.</summary>
+    private float ResolveFlightHeight(int direction)
+    {
+        float fallback = transform.position.y + 0.45f;
+        HyenaAI[] enemies = FindObjectsByType<HyenaAI>(FindObjectsSortMode.None);
+        float nearestDistance = 12f;
+        float height = fallback;
+
+        foreach (HyenaAI enemy in enemies)
+        {
+            if (enemy == null)
+                continue;
+
+            Health enemyHealth = enemy.GetComponent<Health>();
+            if (enemyHealth != null && !enemyHealth.IsAlive)
+                continue;
+
+            float dx = enemy.transform.position.x - transform.position.x;
+            if (dx * direction < -0.5f)
+                continue;
+
+            float distance = Mathf.Abs(dx);
+            if (distance >= nearestDistance)
+                continue;
+
+            Collider2D enemyCollider = enemy.GetComponent<Collider2D>();
+            if (enemyCollider == null)
+                continue;
+
+            nearestDistance = distance;
+            Bounds enemyBounds = enemyCollider.bounds;
+            height = enemyBounds.min.y + enemyBounds.size.y * 0.62f;
+        }
+
+        return height;
+    }
+
+    private void RestoreVisuals()
+    {
+        if (animator != null)
+        {
+            animator.enabled = animatorWasEnabled;
+            if (animatorWasEnabled)
+            {
+                PlayState(idleStateName, false);
+                return;
+            }
+        }
+
+        if (sprite != null)
+            sprite.sprite = originalSprite;
+    }
+
     private void RestoreColliderAndImmunity()
     {
         if (bodyCollider != null)
@@ -455,6 +526,14 @@ public class PartnerThrowController : MonoBehaviour
 
         if (health != null)
             health.SetDamageImmune(false);
+    }
+
+    private void RestoreControlComponents()
+    {
+        if (movement != null) movement.enabled = movementWasEnabled;
+        if (attack != null) attack.enabled = attackWasEnabled;
+        if (idleSpecial != null) idleSpecial.enabled = idleSpecialWasEnabled;
+        if (revive != null) revive.enabled = reviveWasEnabled;
     }
 
     private void RestoreSorting()

@@ -426,6 +426,7 @@ MonoBehaviour:
   body: {fileID: 5635404578978476577}
   bodyCollider: {fileID: 7096359204421194412}
   sprite: {fileID: 4254153408764022622}
+  flightSprite: {fileID: 21300000, guid: 8fede194dd0c4f54193cf3024ef7ba69, type: 3}
   health: {fileID: 8845710667774388682}
   combatState: {fileID: 4215429347300269409}
   pickupRange: 2.4

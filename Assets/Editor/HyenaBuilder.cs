@@ -70,8 +70,8 @@ public static class HyenaBuilder
     {
         GameObject root = new GameObject("Hyena");
         root.layer = 0;
-        // Гиена должна быть чуть крупнее героев: примерно на полголовы.
-        root.transform.localScale = Vector3.one * 2f;
+        // Гиена должна быть примерно на полголовы выше героев.
+        root.transform.localScale = Vector3.one * 2.2f;
 
         Rigidbody2D body = root.AddComponent<Rigidbody2D>();
         body.bodyType = RigidbodyType2D.Dynamic;

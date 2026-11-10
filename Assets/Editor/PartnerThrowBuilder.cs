@@ -28,6 +28,9 @@ public static class PartnerThrowBuilder
 
         InputMigrationBuilder.BuildAll();
 
+        Sprite hamsterFlight = ImportSprite("Assets/Art/Hamster/Flight/Hamster_Flight.png", 400f);
+        Sprite girlFlight = ImportSprite("Assets/Art/HamsterGirl/Flight/HamsterGirl_Flight.png", 400f);
+
         Sprite streak = ImportSprite(ArtFolder + "/air_streak.png", 100f);
         Sprite wisp = ImportSprite(ArtFolder + "/air_wisp.png", 100f);
         Sprite vortex = ImportSprite(ArtFolder + "/air_vortex.png", 100f);
@@ -46,8 +49,8 @@ public static class PartnerThrowBuilder
         GameObject flightPrefab = BuildFlightVfx(streakMaterial, wispMaterial, vortexMaterial, distortionMaterial, wisp, vortex, distortion);
         GameObject impactPrefab = BuildImpactVfx(ringMaterial, flashMaterial, impactRing, impactFlash);
 
-        WireHero("Assets/Prefabs/Hamster.prefab", "HJump", "JumpKick", "Idle 0", throwHit, flightPrefab, impactPrefab);
-        WireHero("Assets/Prefabs/HamsterGirl.prefab", "HGJump", "HGJumpKick", "HGIdle", throwHit, flightPrefab, impactPrefab);
+        WireHero("Assets/Prefabs/Hamster.prefab", "HJump", "JumpKick", "Idle 0", hamsterFlight, throwHit, flightPrefab, impactPrefab);
+        WireHero("Assets/Prefabs/HamsterGirl.prefab", "HGJump", "HGJumpKick", "HGIdle", girlFlight, throwHit, flightPrefab, impactPrefab);
 
         AssetDatabase.SaveAssets();
         AssetDatabase.Refresh();
@@ -220,7 +223,7 @@ public static class PartnerThrowBuilder
     }
 
     private static void WireHero(string prefabPath, string carriedState, string thrownState, string idleState,
-        HitData throwHit, GameObject flightPrefab, GameObject impactPrefab)
+        Sprite flightSprite, HitData throwHit, GameObject flightPrefab, GameObject impactPrefab)
     {
         GameObject contents = PrefabUtility.LoadPrefabContents(prefabPath);
         PartnerThrowController controller = contents.GetComponent<PartnerThrowController>();
@@ -235,6 +238,7 @@ public static class PartnerThrowBuilder
         so.FindProperty("body").objectReferenceValue = contents.GetComponent<Rigidbody2D>();
         so.FindProperty("bodyCollider").objectReferenceValue = contents.GetComponent<Collider2D>();
         so.FindProperty("sprite").objectReferenceValue = contents.GetComponentInChildren<SpriteRenderer>();
+        so.FindProperty("flightSprite").objectReferenceValue = flightSprite;
         so.FindProperty("health").objectReferenceValue = contents.GetComponent<Health>();
         so.FindProperty("combatState").objectReferenceValue = contents.GetComponent<PlayerCombatState>();
 
