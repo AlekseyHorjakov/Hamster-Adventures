@@ -290,6 +290,7 @@ public static class PartnerThrowBuilder
         so.FindProperty("carriedStateName").stringValue = carriedState;
         so.FindProperty("thrownStateName").stringValue = thrownState;
         so.FindProperty("pickupRange").floatValue = 2.4f;
+        so.FindProperty("carryLift").floatValue = -0.38f;
         so.FindProperty("launchSpeed").floatValue = 13f;
         so.FindProperty("launchAcceleration").floatValue = 24f;
         so.FindProperty("flightDuration").floatValue = 0.55f;

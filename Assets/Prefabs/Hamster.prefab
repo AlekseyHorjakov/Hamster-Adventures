@@ -524,7 +524,7 @@ MonoBehaviour:
   health: {fileID: 8845710667774388682}
   combatState: {fileID: 4215429347300269409}
   pickupRange: 2.4
-  carryLift: 0.08
+  carryLift: -0.38
   idleStateName: Idle 0
   carriedStateName: HJump
   thrownStateName: JumpKick

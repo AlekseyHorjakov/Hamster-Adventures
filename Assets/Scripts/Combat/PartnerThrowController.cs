@@ -25,7 +25,7 @@ public class PartnerThrowController : MonoBehaviour
     [Header("Захват")]
     [Tooltip("На каком расстоянии между корнями героев разрешён захват")]
     [SerializeField] private float pickupRange = 2.4f;
-    [SerializeField] private float carryLift = 0.08f;
+    [SerializeField] private float carryLift = -0.38f;
     [SerializeField] private string idleStateName = "Idle 0";
     [SerializeField] private string carriedStateName = "HJump";
     [SerializeField] private string thrownStateName = "HJump";
