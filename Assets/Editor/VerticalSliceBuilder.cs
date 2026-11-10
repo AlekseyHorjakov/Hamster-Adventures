@@ -15,6 +15,8 @@ public static class VerticalSliceBuilder
     private const string CombatTestPath = "Assets/Scenes/CombatTest.unity";
     private const string ScenePath = "Assets/Scenes/Level01_VerticalSlice.unity";
     private const string HyenaPrefabPath = "Assets/Prefabs/Hyena.prefab";
+    private const string HamsterPrefabPath = "Assets/Prefabs/Hamster.prefab";
+    private const string GirlPrefabPath = "Assets/Prefabs/HamsterGirl.prefab";
 
     [MenuItem("Tools/Hamster/Build Vertical Slice")]
     public static void BuildAll()
@@ -83,15 +85,43 @@ public static class VerticalSliceBuilder
 
     private static void ConfigurePlayers(Scene scene)
     {
-        GameObject hamster = FindRoot(scene, "Hamster");
-        GameObject girl = FindRoot(scene, "HamsterGirl");
+        // В MainLevel лежат старые "запечённые" копии героев без новых
+        // компонентов (SuperMeter, PartnerThrowController и т.д.).
+        // Заменяем их актуальными префабами, иначе вертикальный срез
+        // технически остаётся на старой версии персонажей.
+        GameObject oldHamster = FindRoot(scene, "Hamster");
+        GameObject oldGirl = FindRoot(scene, "HamsterGirl");
+        if (oldHamster != null) Object.DestroyImmediate(oldHamster);
+        if (oldGirl != null) Object.DestroyImmediate(oldGirl);
+
+        GameObject hamsterPrefab = AssetDatabase.LoadAssetAtPath<GameObject>(HamsterPrefabPath);
+        GameObject girlPrefab = AssetDatabase.LoadAssetAtPath<GameObject>(GirlPrefabPath);
+        GameObject hamster = (GameObject)PrefabUtility.InstantiatePrefab(hamsterPrefab);
+        GameObject girl = (GameObject)PrefabUtility.InstantiatePrefab(girlPrefab);
+        hamster.name = "Hamster";
+        girl.name = "HamsterGirl";
 
         PlaceOnGround(hamster, -16.2f, 0f);
         PlaceOnGround(girl, -14.7f, 0f);
 
+        HamsterMovement hamsterMovement = hamster.GetComponent<HamsterMovement>();
+        HamsterMovement girlMovement = girl.GetComponent<HamsterMovement>();
+        if (hamsterMovement != null) hamsterMovement.SetPartner(girl.transform);
+        if (girlMovement != null) girlMovement.SetPartner(hamster.transform);
+
         Camera camera = Object.FindFirstObjectByType<Camera>();
         if (camera != null)
+        {
             camera.transform.position = new Vector3(-14f, 2.5f, -10f);
+            CameraFollow follow = camera.GetComponent<CameraFollow>();
+            if (follow != null)
+            {
+                SerializedObject followSo = new SerializedObject(follow);
+                followSo.FindProperty("hamster").objectReferenceValue = hamster.transform;
+                followSo.FindProperty("hamsterGirl").objectReferenceValue = girl.transform;
+                followSo.ApplyModifiedPropertiesWithoutUndo();
+            }
+        }
     }
 
     private static void ConfigureFallZone(Scene scene)
