@@ -286,6 +286,7 @@ public static class GirlSuperBuilder
         so.FindProperty("waveRadius").floatValue = 6f;
         so.FindProperty("waveStunDuration").floatValue = 2f;
         so.FindProperty("waveHitStop").floatValue = 0.04f;
+        so.FindProperty("attackCooldown").floatValue = 2.1f;
         so.FindProperty("normalIdleState").stringValue = "HGIdle";
         so.FindProperty("normalRunState").stringValue = "HGRun";
         so.FindProperty("normalJumpState").stringValue = "HGJump";

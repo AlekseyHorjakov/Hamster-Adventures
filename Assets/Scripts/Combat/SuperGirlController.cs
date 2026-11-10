@@ -43,6 +43,8 @@ public class SuperGirlController : MonoBehaviour
     [SerializeField] private float waveRadius = 6f;
     [SerializeField] private float waveStunDuration = 2f;
     [SerializeField] private float waveHitStop = 0.04f;
+    [Tooltip("Пауза между супер-атаками Хомячихи")]
+    [SerializeField] private float attackCooldown = 2.1f;
 
     [Header("Анимации")]
     [SerializeField] private string normalIdleState = "HGIdle";
@@ -166,6 +168,7 @@ public class SuperGirlController : MonoBehaviour
         superEndsAt = Time.time + superDuration;
         meter.SetGainLocked(true);
         attack.CancelCurrentAttack();
+        attack.SetAttackInputCooldown(attackCooldown);
         attack.enabled = false;
 
         idleSpecialWasEnabled = idleSpecial != null && idleSpecial.enabled;
@@ -209,6 +212,7 @@ public class SuperGirlController : MonoBehaviour
         if (state != State.Active)
             return;
 
+        attack.SetAttackInputCooldown(attackCooldown);
         EmitSoundWave();
         PlaySuperAttackVisual();
 
@@ -268,6 +272,7 @@ public class SuperGirlController : MonoBehaviour
         state = State.Normal;
         attack.CancelCurrentAttack();
         attack.ClearTemporaryDamageMultiplier();
+        attack.ClearAttackInputCooldown();
         StopSuperAttackVisual();
 
         if (aura != null)

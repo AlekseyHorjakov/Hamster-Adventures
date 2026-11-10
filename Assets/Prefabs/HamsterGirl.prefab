@@ -659,6 +659,7 @@ MonoBehaviour:
   waveRadius: 6
   waveStunDuration: 2
   waveHitStop: 0.04
+  attackCooldown: 2.1
   normalIdleState: HGIdle
   normalRunState: HGRun
   normalJumpState: HGJump

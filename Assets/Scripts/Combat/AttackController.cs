@@ -99,6 +99,7 @@ public class AttackController : MonoBehaviour
     private bool charging;
     private bool dashing;
     private bool codeDrivenHitbox;
+    private float attackInputLockedUntil;
     private float attackStartedAt;
     private float chargeStartedAt;
     private float dashEndsAt;
@@ -125,6 +126,17 @@ public class AttackController : MonoBehaviour
         hitbox = hitboxRef;
         comboHits = hits;
         attackStates = states;
+    }
+
+    /// <summary>Блокирует запуск новых атак, не прерывая текущую.</summary>
+    public void SetAttackInputCooldown(float seconds)
+    {
+        attackInputLockedUntil = Mathf.Max(attackInputLockedUntil, Time.time + Mathf.Max(0f, seconds));
+    }
+
+    public void ClearAttackInputCooldown()
+    {
+        attackInputLockedUntil = 0f;
     }
 
     /// <summary>Множитель урона без смены анимаций комбо.</summary>
@@ -337,6 +349,13 @@ public class AttackController : MonoBehaviour
         if (dashing)
             return;
 
+        bool inputLocked = Time.time < attackInputLockedUntil;
+        if (inputLocked)
+        {
+            movement.ConsumeAttackPress();
+            movement.ConsumeAttackRelease();
+        }
+
         if (charging)
         {
             // В воздухе заряд не копится и не выполняется: приём наземный.
@@ -376,7 +395,7 @@ public class AttackController : MonoBehaviour
             }
 
             // Наземное комбо можно прервать следующим ударом, воздушное — нет.
-            if (attacking && !airAttack &&
+            if (attacking && !inputLocked && !airAttack &&
                 Time.time - attackStartedAt >= CancelAt(comboIndex) &&
                 movement.ConsumeAttackPress())
             {
@@ -385,6 +404,9 @@ public class AttackController : MonoBehaviour
 
             return;
         }
+
+        if (inputLocked)
+            return;
 
         if (!movement.ConsumeAttackPress())
             return;
