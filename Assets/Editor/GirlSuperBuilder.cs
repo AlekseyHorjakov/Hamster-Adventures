@@ -26,7 +26,7 @@ public static class GirlSuperBuilder
         InputMigrationBuilder.BuildAll();
 
         Sprite[] frames = ImportFrames();
-        AnimationClip clip = BuildClip("GirlSuperIdle", frames, 0.08f);
+        AnimationClip clip = BuildClip("GirlSuperAttack", frames, 0.07f, false);
 
         AnimatorController controller = AssetDatabase.LoadAssetAtPath<AnimatorController>(ControllerPath);
         if (controller == null)
@@ -34,7 +34,7 @@ public static class GirlSuperBuilder
             Debug.LogError("[GirlSuper] Нет контроллера " + ControllerPath);
             return;
         }
-        AddState(controller, "GirlSuperIdle", clip);
+        AddState(controller, "GirlSuperAttack", clip);
         EditorUtility.SetDirty(controller);
 
         GameObject auraPrefab = BuildAuraPrefab();
@@ -43,7 +43,7 @@ public static class GirlSuperBuilder
 
         AssetDatabase.SaveAssets();
         AssetDatabase.Refresh();
-        Debug.Log("[GirlSuper] Готово: GirlSuperIdle, аура молний, звуковая волна и SuperGirlController.");
+        Debug.Log("[GirlSuper] Готово: GirlSuperAttack, аура молний и волос, звуковая волна и SuperGirlController.");
     }
 
     private static Sprite[] ImportFrames()
@@ -80,7 +80,7 @@ public static class GirlSuperBuilder
         return frames;
     }
 
-    private static AnimationClip BuildClip(string name, Sprite[] frames, float frameSeconds)
+    private static AnimationClip BuildClip(string name, Sprite[] frames, float frameSeconds, bool loop)
     {
         string path = AnimRoot + "/" + name + ".anim";
         AnimationClip clip = AssetDatabase.LoadAssetAtPath<AnimationClip>(path);
@@ -98,7 +98,7 @@ public static class GirlSuperBuilder
 
         AnimationClipSettings settings = AnimationUtility.GetAnimationClipSettings(clip);
         settings.stopTime = frameSeconds * frames.Length;
-        settings.loopTime = true;
+        settings.loopTime = loop;
         AnimationUtility.SetAnimationClipSettings(clip, settings);
         EditorUtility.SetDirty(clip);
         return clip;
@@ -121,6 +121,7 @@ public static class GirlSuperBuilder
     {
         Sprite auraSprite = LoadSprite("Assets/VFX/Art/HulkVFX/hulk_aura.png");
         Sprite raySprite = LoadSprite("Assets/VFX/Art/HulkVFX/hulk_ray.png");
+        Sprite hairSprite = LoadSprite("Assets/VFX/Art/ThrowVFX/air_wisp.png");
         Material auraMaterial = CreateMaterial("GirlSuperAura.mat", auraSprite.texture, new Color(0.75f, 0.25f, 1f, 1f), 2.4f);
         Material rayMaterial = CreateMaterial("GirlSuperLightning.mat", raySprite.texture, new Color(0.80f, 0.32f, 1f, 1f), 2.8f);
 
@@ -149,6 +150,33 @@ public static class GirlSuperBuilder
             rays[i] = ray;
         }
 
+        SpriteRenderer[] hairStrands = new SpriteRenderer[6];
+        Vector3[] hairPositions =
+        {
+            new Vector3(-0.62f, 1.12f, 0f),
+            new Vector3(-0.84f, 0.78f, 0f),
+            new Vector3(-0.48f, 1.52f, 0f),
+            new Vector3(0.62f, 1.12f, 0f),
+            new Vector3(0.84f, 0.78f, 0f),
+            new Vector3(0.48f, 1.52f, 0f)
+        };
+        float[] hairAngles = { 22f, -12f, 48f, 158f, 192f, 132f };
+        float[] hairScales = { 0.66f, 0.58f, 0.56f, 0.66f, 0.58f, 0.56f };
+        for (int i = 0; i < hairStrands.Length; i++)
+        {
+            GameObject hairObject = new GameObject("Hair" + (i + 1));
+            hairObject.transform.SetParent(root.transform, false);
+            hairObject.transform.localPosition = hairPositions[i];
+            hairObject.transform.localRotation = Quaternion.Euler(0f, 0f, hairAngles[i]);
+            hairObject.transform.localScale = new Vector3(hairScales[i], hairScales[i] * 0.55f, 1f);
+            SpriteRenderer hair = hairObject.AddComponent<SpriteRenderer>();
+            hair.sprite = hairSprite;
+            hair.sortingLayerName = "Characters";
+            hair.sortingOrder = -19;
+            hair.color = new Color(0.55f, 0.20f, 0.34f, 0.78f);
+            hairStrands[i] = hair;
+        }
+
         SerializedObject so = new SerializedObject(controller);
         so.FindProperty("aura").objectReferenceValue = aura;
         so.FindProperty("rayRoot").objectReferenceValue = rayRoot.transform;
@@ -156,6 +184,10 @@ public static class GirlSuperBuilder
         rayArray.arraySize = rays.Length;
         for (int i = 0; i < rays.Length; i++)
             rayArray.GetArrayElementAtIndex(i).objectReferenceValue = rays[i];
+        SerializedProperty hairArray = so.FindProperty("hairStrands");
+        hairArray.arraySize = hairStrands.Length;
+        for (int i = 0; i < hairStrands.Length; i++)
+            hairArray.GetArrayElementAtIndex(i).objectReferenceValue = hairStrands[i];
         so.FindProperty("duration").floatValue = 10f;
         so.ApplyModifiedPropertiesWithoutUndo();
 
@@ -248,16 +280,16 @@ public static class GirlSuperBuilder
         so.FindProperty("soundWavePrefab").objectReferenceValue = wavePrefab;
         so.FindProperty("dizzyStarsPrefab").objectReferenceValue = AssetDatabase.LoadAssetAtPath<GameObject>("Assets/VFX/Prefabs/DizzyStars.prefab");
         so.FindProperty("superDuration").floatValue = 10f;
-        so.FindProperty("activationLock").floatValue = 0.55f;
+        so.FindProperty("superAttackDuration").floatValue = 0.56f;
         so.FindProperty("damageMultiplier").floatValue = 3f;
-        so.FindProperty("waveDamage").floatValue = 12f;
+        so.FindProperty("waveDamage").floatValue = 24f;
         so.FindProperty("waveRadius").floatValue = 6f;
         so.FindProperty("waveStunDuration").floatValue = 2f;
         so.FindProperty("waveHitStop").floatValue = 0.04f;
         so.FindProperty("normalIdleState").stringValue = "HGIdle";
         so.FindProperty("normalRunState").stringValue = "HGRun";
         so.FindProperty("normalJumpState").stringValue = "HGJump";
-        so.FindProperty("superIdleState").stringValue = "GirlSuperIdle";
+        so.FindProperty("superAttackState").stringValue = "GirlSuperAttack";
         so.ApplyModifiedPropertiesWithoutUndo();
 
         PrefabUtility.SaveAsPrefabAsset(contents, PrefabPath);

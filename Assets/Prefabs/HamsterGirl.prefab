@@ -653,16 +653,16 @@ MonoBehaviour:
   soundWavePrefab: {fileID: 2464003906998051853, guid: 903a09097efb9c245b0448dc06ea611d, type: 3}
   dizzyStarsPrefab: {fileID: 3392134120913388169, guid: f5101eb2385488f4b8e9970ee7087937, type: 3}
   superDuration: 10
-  activationLock: 0.55
+  superAttackDuration: 0.56
   damageMultiplier: 3
-  waveDamage: 12
+  waveDamage: 24
   waveRadius: 6
   waveStunDuration: 2
   waveHitStop: 0.04
   normalIdleState: HGIdle
   normalRunState: HGRun
   normalJumpState: HGJump
-  superIdleState: GirlSuperIdle
+  superAttackState: GirlSuperAttack
 --- !u!1 &7801995536759811198
 GameObject:
   m_ObjectHideFlags: 0

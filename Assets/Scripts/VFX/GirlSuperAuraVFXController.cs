@@ -7,12 +7,31 @@ public class GirlSuperAuraVFXController : MonoBehaviour
     [SerializeField] private SpriteRenderer aura;
     [SerializeField] private Transform rayRoot;
     [SerializeField] private SpriteRenderer[] rays;
+    [SerializeField] private SpriteRenderer[] hairStrands;
     [SerializeField] private float duration = 10f;
 
     private Transform follow;
     private SpriteRenderer followSprite;
     private float elapsed;
     private bool active;
+    private Vector3[] hairBasePositions;
+    private Quaternion[] hairBaseRotations;
+
+    private void Awake()
+    {
+        if (hairStrands == null)
+            return;
+
+        hairBasePositions = new Vector3[hairStrands.Length];
+        hairBaseRotations = new Quaternion[hairStrands.Length];
+        for (int i = 0; i < hairStrands.Length; i++)
+        {
+            if (hairStrands[i] == null)
+                continue;
+            hairBasePositions[i] = hairStrands[i].transform.localPosition;
+            hairBaseRotations[i] = hairStrands[i].transform.localRotation;
+        }
+    }
 
     public void Play(Transform target, SpriteRenderer targetSprite, float effectDuration)
     {
@@ -68,6 +87,24 @@ public class GirlSuperAuraVFXController : MonoBehaviour
                 rays[i].color = color;
                 float rayScale = 1.25f + 0.25f * Mathf.Sin(Time.time * 9f + i * 1.7f);
                 rays[i].transform.localScale = new Vector3(rayScale, 0.72f, 1f);
+            }
+        }
+
+        if (hairStrands != null && hairBasePositions != null)
+        {
+            for (int i = 0; i < hairStrands.Length; i++)
+            {
+                SpriteRenderer strand = hairStrands[i];
+                if (strand == null)
+                    continue;
+
+                float wave = Mathf.Sin(Time.time * (2.1f + i * 0.27f) + i * 1.3f);
+                strand.transform.localPosition = hairBasePositions[i] + new Vector3(wave * 0.12f, Mathf.Cos(wave * 2f) * 0.06f, 0f);
+                strand.transform.localRotation = hairBaseRotations[i] * Quaternion.Euler(0f, 0f, wave * 16f);
+
+                Color color = strand.color;
+                color.a = 0.55f + 0.25f * Mathf.Abs(wave);
+                strand.color = color;
             }
         }
 

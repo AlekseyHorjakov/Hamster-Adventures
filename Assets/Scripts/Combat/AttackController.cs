@@ -117,6 +117,7 @@ public class AttackController : MonoBehaviour
 
     public bool IsAttacking => attacking || dashing || charging;
     public bool IsStriking => attacking || dashing;
+    public event System.Action AttackPerformed;
 
     public void Configure(HamsterMovement movementRef, Hitbox hitboxRef, HitData[] hits, string[] states)
     {
@@ -555,6 +556,8 @@ public class AttackController : MonoBehaviour
 
         if (hitbox != null)
             hitbox.Activate(chargedHit, movement.Facing);
+
+        AttackPerformed?.Invoke();
     }
 
     private void EndDash()
@@ -635,6 +638,7 @@ public class AttackController : MonoBehaviour
         animator.Play(airStateName, 0, 0f);
 
         // В воздухе управление не блокируем: прыжок остаётся управляемым.
+        AttackPerformed?.Invoke();
     }
 
     private void StartAttack(int index)
@@ -665,6 +669,8 @@ public class AttackController : MonoBehaviour
             float step = StepAt(index);
             movement.Body.linearVelocity = new Vector2(facing * step, movement.Body.linearVelocity.y);
         }
+
+        AttackPerformed?.Invoke();
     }
 
     private int NextIndex()

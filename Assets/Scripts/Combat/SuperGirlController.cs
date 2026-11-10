@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using UnityEngine;
 
 /// <summary>
-/// Суперудар Хомячихи: 10 секунд усиленных атак и фиолетовых молний.
-/// Во время ударов во все стороны расходится звуковая волна, которая
-/// наносит 50% урона и оглушает врагов на 2 секунды.
+/// Суперудар Хомячихи: 10 секунд усиленных атак, звуковые волны и фиолетовые
+/// молнии. Лист крика проигрывается как анимация суперудара при активации
+/// и при каждом реальном ударе, после чего возвращаются обычные анимации.
 /// </summary>
 [DisallowMultipleComponent]
 public class SuperGirlController : MonoBehaviour
@@ -37,9 +37,9 @@ public class SuperGirlController : MonoBehaviour
 
     [Header("Суперспособность")]
     [SerializeField] private float superDuration = 10f;
-    [SerializeField] private float activationLock = 0.55f;
+    [SerializeField] private float superAttackDuration = 0.56f;
     [SerializeField] private float damageMultiplier = 3f;
-    [SerializeField] private float waveDamage = 12f;
+    [SerializeField] private float waveDamage = 24f;
     [SerializeField] private float waveRadius = 6f;
     [SerializeField] private float waveStunDuration = 2f;
     [SerializeField] private float waveHitStop = 0.04f;
@@ -48,13 +48,14 @@ public class SuperGirlController : MonoBehaviour
     [SerializeField] private string normalIdleState = "HGIdle";
     [SerializeField] private string normalRunState = "HGRun";
     [SerializeField] private string normalJumpState = "HGJump";
-    [SerializeField] private string superIdleState = "GirlSuperIdle";
+    [SerializeField] private string superAttackState = "GirlSuperAttack";
 
     private State state = State.Normal;
     private Coroutine activationRoutine;
+    private Coroutine attackVisualRoutine;
     private float superEndsAt;
     private GirlSuperAuraVFXController aura;
-    private bool wasStriking;
+    private bool superVisualPlaying;
     private bool idleSpecialWasEnabled;
     private bool throwWasEnabled;
 
@@ -74,6 +75,18 @@ public class SuperGirlController : MonoBehaviour
 
         if (superVisual != null)
             superVisual.SetActive(false);
+    }
+
+    private void OnEnable()
+    {
+        if (attack != null)
+            attack.AttackPerformed += OnAttackPerformed;
+    }
+
+    private void OnDisable()
+    {
+        if (attack != null)
+            attack.AttackPerformed -= OnAttackPerformed;
     }
 
     private void Update()
@@ -100,15 +113,27 @@ public class SuperGirlController : MonoBehaviour
 
     private void LateUpdate()
     {
-        if (state != State.Active)
+        if (state != State.Active || superVisualPlaying)
             return;
 
-        bool striking = attack != null && attack.IsStriking;
-        if (striking && !wasStriking)
-            EmitSoundWave();
-        wasStriking = striking;
+        if (attack != null && attack.IsAttacking)
+        {
+            SetSuperVisual(false);
+            return;
+        }
 
-        UpdateVisualsAndAnimation();
+        SetSuperVisual(false);
+
+        bool moving = movement != null &&
+                      (Mathf.Abs(movement.MoveInput) > 0.01f ||
+                       (body != null && Mathf.Abs(body.linearVelocity.x) > 0.08f));
+
+        if (movement != null && !movement.Grounded)
+            PlayNormalState(normalJumpState);
+        else if (moving)
+            PlayNormalState(normalRunState);
+        else
+            PlayNormalState(normalIdleState);
     }
 
     private bool CanStart()
@@ -138,6 +163,7 @@ public class SuperGirlController : MonoBehaviour
             return;
 
         state = State.Activating;
+        superEndsAt = Time.time + superDuration;
         meter.SetGainLocked(true);
         attack.CancelCurrentAttack();
         attack.enabled = false;
@@ -150,22 +176,16 @@ public class SuperGirlController : MonoBehaviour
         movement.SetControlLocked(true);
         if (body != null) body.linearVelocity = new Vector2(0f, body.linearVelocity.y);
 
-        mainRenderer.enabled = false;
-        superVisual.SetActive(true);
-        if (superRenderer != null) superRenderer.enabled = true;
-        animator.Play(superIdleState, 0, 0f);
-        animator.Update(0f);
-        AlignSuperVisualToGround();
-
         if (auraPrefab != null)
         {
             GameObject auraObject = Instantiate(auraPrefab, transform.position, Quaternion.identity);
             aura = auraObject.GetComponent<GirlSuperAuraVFXController>();
             if (aura != null)
-                aura.Play(transform, mainRenderer, superDuration + activationLock);
+                aura.Play(transform, mainRenderer, superDuration + superAttackDuration);
         }
 
-        SpawnWaveVfx();
+        PlaySuperAttackVisual();
+        EmitSoundWave();
         CameraFollow.Shake(0.45f, 0.3f);
         HitStop.Play(0.05f);
 
@@ -174,14 +194,58 @@ public class SuperGirlController : MonoBehaviour
 
     private IEnumerator ActivationRoutine()
     {
-        yield return new WaitForSeconds(activationLock);
+        yield return new WaitForSeconds(superAttackDuration);
         activationRoutine = null;
         state = State.Active;
-        superEndsAt = Time.time + superDuration;
 
         attack.enabled = true;
         attack.SetTemporaryDamageMultiplier(damageMultiplier);
         movement.SetControlLocked(false);
+        StopSuperAttackVisual();
+    }
+
+    private void OnAttackPerformed()
+    {
+        if (state != State.Active)
+            return;
+
+        EmitSoundWave();
+        PlaySuperAttackVisual();
+
+        if (attackVisualRoutine != null)
+            StopCoroutine(attackVisualRoutine);
+        attackVisualRoutine = StartCoroutine(SuperAttackVisualRoutine());
+    }
+
+    private IEnumerator SuperAttackVisualRoutine()
+    {
+        yield return new WaitForSeconds(superAttackDuration);
+        attackVisualRoutine = null;
+        StopSuperAttackVisual();
+    }
+
+    private void PlaySuperAttackVisual()
+    {
+        superVisualPlaying = true;
+        if (mainRenderer != null) mainRenderer.enabled = false;
+        if (superVisual != null) superVisual.SetActive(true);
+        if (superRenderer != null) superRenderer.enabled = true;
+
+        if (animator != null)
+        {
+            animator.Play(superAttackState, 0, 0f);
+            animator.Update(0f);
+        }
+
+        AlignSuperVisualToGround();
+    }
+
+    private void StopSuperAttackVisual()
+    {
+        superVisualPlaying = false;
+        if (superRenderer != null) superRenderer.enabled = false;
+        if (superVisual != null) superVisual.SetActive(false);
+        if (mainRenderer != null) mainRenderer.enabled = true;
     }
 
     private void EndSuper(bool restoreControl)
@@ -195,19 +259,22 @@ public class SuperGirlController : MonoBehaviour
             activationRoutine = null;
         }
 
+        if (attackVisualRoutine != null)
+        {
+            StopCoroutine(attackVisualRoutine);
+            attackVisualRoutine = null;
+        }
+
         state = State.Normal;
         attack.CancelCurrentAttack();
         attack.ClearTemporaryDamageMultiplier();
+        StopSuperAttackVisual();
 
         if (aura != null)
         {
             aura.StopAndDestroy();
             aura = null;
         }
-
-        if (superRenderer != null) superRenderer.enabled = false;
-        if (superVisual != null) superVisual.SetActive(false);
-        if (mainRenderer != null) mainRenderer.enabled = true;
 
         if (idleSpecial != null) idleSpecial.enabled = idleSpecialWasEnabled;
         if (partnerThrow != null) partnerThrow.enabled = throwWasEnabled;
@@ -217,58 +284,10 @@ public class SuperGirlController : MonoBehaviour
         {
             attack.enabled = true;
             movement.SetControlLocked(false);
-            animator.Play(normalIdleState, 0, 0f);
+            PlayNormalState(normalIdleState);
         }
 
         meter.SetGainLocked(false);
-        wasStriking = false;
-    }
-
-    private void UpdateVisualsAndAnimation()
-    {
-        bool attacking = attack != null && attack.IsAttacking;
-        bool moving = movement != null &&
-                      (Mathf.Abs(movement.MoveInput) > 0.01f ||
-                       (body != null && Mathf.Abs(body.linearVelocity.x) > 0.08f));
-        bool idle = !attacking && movement != null && movement.Grounded && !moving;
-
-        SetSuperVisual(idle);
-
-        if (attacking)
-            return;
-
-        if (idle)
-        {
-            if (animator != null && !animator.GetCurrentAnimatorStateInfo(0).IsName(superIdleState))
-                animator.Play(superIdleState, 0, 0f);
-            return;
-        }
-
-        if (movement != null && !movement.Grounded)
-            PlayNormalState(normalJumpState);
-        else if (moving)
-            PlayNormalState(normalRunState);
-        else
-            PlayNormalState(normalIdleState);
-    }
-
-    private void PlayNormalState(string stateName)
-    {
-        if (animator == null || string.IsNullOrEmpty(stateName))
-            return;
-
-        if (!animator.GetCurrentAnimatorStateInfo(0).IsName(stateName))
-            animator.Play(stateName, 0, 0f);
-    }
-
-    private void SetSuperVisual(bool visible)
-    {
-        if (mainRenderer != null) mainRenderer.enabled = !visible;
-        if (superRenderer != null) superRenderer.enabled = visible;
-
-        if (visible && animator != null &&
-            !animator.GetCurrentAnimatorStateInfo(0).IsName(superIdleState))
-            animator.Play(superIdleState, 0, 0f);
     }
 
     private void EmitSoundWave()
@@ -337,6 +356,24 @@ public class SuperGirlController : MonoBehaviour
             center = mainRenderer.bounds.center;
 
         Instantiate(soundWavePrefab, center, Quaternion.identity);
+    }
+
+    private void PlayNormalState(string stateName)
+    {
+        if (animator == null || string.IsNullOrEmpty(stateName))
+            return;
+
+        if (!animator.GetCurrentAnimatorStateInfo(0).IsName(stateName))
+            animator.Play(stateName, 0, 0f);
+    }
+
+    private void SetSuperVisual(bool visible)
+    {
+        if (mainRenderer != null) mainRenderer.enabled = !visible;
+        if (superRenderer != null) superRenderer.enabled = visible;
+
+        if (visible && superVisual != null && !superVisual.activeSelf)
+            superVisual.SetActive(true);
     }
 
     private void AlignSuperVisualToGround()
