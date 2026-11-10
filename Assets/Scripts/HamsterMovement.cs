@@ -388,12 +388,43 @@ public class HamsterMovement : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
+        if (IgnoreEnemyContact(collision))
+            return;
+
         CheckGround(collision);
     }
 
     private void OnCollisionStay2D(Collision2D collision)
     {
+        if (IgnoreEnemyContact(collision))
+            return;
+
         CheckGround(collision);
+    }
+
+    /// <summary>
+    /// Враги, манекены и предметы с Health не должны быть физической опорой:
+    /// иначе герой цепляется за их боковые грани в прыжке. Атаки работают
+    /// через OverlapBox хитбокса и от этого игнорирования не страдают.
+    /// </summary>
+    private bool IgnoreEnemyContact(Collision2D collision)
+    {
+        if (collision.collider == null)
+            return false;
+
+        Health otherHealth = collision.collider.GetComponentInParent<Health>();
+        if (otherHealth == null)
+            return false;
+
+        // Между двумя игроками физические столкновения сохраняем.
+        if (collision.collider.GetComponentInParent<HamsterMovement>() != null)
+            return false;
+
+        Collider2D ownCollider = GetComponent<Collider2D>();
+        if (ownCollider != null)
+            Physics2D.IgnoreCollision(ownCollider, collision.collider, true);
+
+        return true;
     }
 
     private void OnCollisionExit2D(Collision2D collision)
