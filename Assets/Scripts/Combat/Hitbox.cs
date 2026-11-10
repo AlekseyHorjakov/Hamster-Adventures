@@ -16,13 +16,17 @@ public class Hitbox : MonoBehaviour
     private Vector2 offset;
     private int facing = 1;
     private float damageMultiplier = 1f;
+    private float geometrySizeMultiplier = 1f;
+    private float geometryOffsetMultiplier = 1f;
     private bool active;
 
     public void Activate(HitData hitData, int facingDirection)
     {
         data = hitData;
         facing = facingDirection;
-        offset = new Vector2(hitData.hitboxOffset.x * facing, hitData.hitboxOffset.y);
+        offset = new Vector2(
+            hitData.hitboxOffset.x * facing * geometryOffsetMultiplier,
+            hitData.hitboxOffset.y * geometryOffsetMultiplier);
         alreadyHit.Clear();
         active = true;
     }
@@ -30,6 +34,13 @@ public class Hitbox : MonoBehaviour
     public void SetDamageMultiplier(float multiplier)
     {
         damageMultiplier = Mathf.Max(0f, multiplier);
+    }
+
+    /// <summary>Масштабирует зону удара вместе с визуальным размером героя.</summary>
+    public void SetGeometryMultipliers(float sizeMultiplier, float offsetMultiplier)
+    {
+        geometrySizeMultiplier = Mathf.Max(0.01f, sizeMultiplier);
+        geometryOffsetMultiplier = Mathf.Max(0.01f, offsetMultiplier);
     }
 
     public void Deactivate()
@@ -44,7 +55,8 @@ public class Hitbox : MonoBehaviour
             return;
 
         Vector2 center = (Vector2)transform.root.position + offset;
-        var hits = Physics2D.OverlapBoxAll(center, data.hitboxSize, 0f, targetMask);
+        Vector2 size = data.hitboxSize * geometrySizeMultiplier;
+        var hits = Physics2D.OverlapBoxAll(center, size, 0f, targetMask);
 
         foreach (var collider in hits)
         {
@@ -104,6 +116,9 @@ public class Hitbox : MonoBehaviour
             return;
 
         Gizmos.color = new Color(1f, 0.4f, 0.2f, 0.35f);
-        Gizmos.DrawCube((Vector2)transform.root.position + data.hitboxOffset, data.hitboxSize);
+        Vector2 offset = new Vector2(
+            data.hitboxOffset.x * geometryOffsetMultiplier,
+            data.hitboxOffset.y * geometryOffsetMultiplier);
+        Gizmos.DrawCube((Vector2)transform.root.position + offset, data.hitboxSize * geometrySizeMultiplier);
     }
 }

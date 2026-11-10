@@ -43,6 +43,8 @@ public class SuperHulkController : MonoBehaviour
     [SerializeField] private float jumpMultiplier = 0.70f;
     [Tooltip("Множитель урона: обычные 8/10 урона превращаются в 24/30")]
     [SerializeField] private float hulkDamageMultiplier = 3f;
+    [Tooltip("Во сколько раз увеличить зону удара под крупный визуал халка")]
+    [SerializeField] private float hulkHitboxScale = 1.7f;
 
     [Header("Анимации")]
     [SerializeField] private string normalIdleState = "Idle 0";
@@ -186,7 +188,8 @@ public class SuperHulkController : MonoBehaviour
             hulkStepSpeeds,
             hulkMovementLock,
             hulkComboResetTime,
-            hulkDamageMultiplier);
+            hulkDamageMultiplier,
+            hulkHitboxScale);
 
         attack.enabled = true;
         movement.SetControlLocked(false);

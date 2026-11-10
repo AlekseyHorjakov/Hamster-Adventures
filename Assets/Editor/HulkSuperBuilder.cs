@@ -235,6 +235,7 @@ public static class HulkSuperBuilder
         so.FindProperty("speedMultiplier").floatValue = 0.55f;
         so.FindProperty("jumpMultiplier").floatValue = 0.70f;
         so.FindProperty("hulkDamageMultiplier").floatValue = 3f;
+        so.FindProperty("hulkHitboxScale").floatValue = 1.7f;
         so.FindProperty("normalIdleState").stringValue = "Idle 0";
         so.FindProperty("transformInState").stringValue = "HulkTransformIn";
         so.FindProperty("transformOutState").stringValue = "HulkTransformOut";

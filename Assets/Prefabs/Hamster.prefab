@@ -691,6 +691,7 @@ MonoBehaviour:
   partnerThrow: {fileID: 5003702993588395419}
   animator: {fileID: 6724994769446981160}
   body: {fileID: 5635404578978476577}
+  bodyCollider: {fileID: 0}
   mainRenderer: {fileID: 4254153408764022622}
   hulkVisual: {fileID: 2858935696133417369}
   hulkRenderer: {fileID: 8444471078486252842}
@@ -701,6 +702,7 @@ MonoBehaviour:
   speedMultiplier: 0.55
   jumpMultiplier: 0.7
   hulkDamageMultiplier: 3
+  hulkHitboxScale: 1.7
   normalIdleState: Idle 0
   transformInState: HulkTransformIn
   transformOutState: HulkTransformOut

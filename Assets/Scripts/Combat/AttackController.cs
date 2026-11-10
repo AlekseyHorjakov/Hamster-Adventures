@@ -127,7 +127,7 @@ public class AttackController : MonoBehaviour
 
     /// <summary>Временно заменяет комбо и урон на профиль суперформы.</summary>
     public void SetRuntimeAttackProfile(string[] states, float[] durations, float[] cancels,
-        float[] steps, float lockTime, float resetTime, float damageMultiplier)
+        float[] steps, float lockTime, float resetTime, float damageMultiplier, float hitboxScale)
     {
         if (!runtimeProfileSaved)
         {
@@ -148,7 +148,10 @@ public class AttackController : MonoBehaviour
         comboResetTime = resetTime;
 
         if (hitbox != null)
+        {
             hitbox.SetDamageMultiplier(damageMultiplier);
+            hitbox.SetGeometryMultipliers(hitboxScale, hitboxScale);
+        }
     }
 
     /// <summary>Возвращает обычное комбо после окончания суперформы.</summary>
@@ -166,7 +169,10 @@ public class AttackController : MonoBehaviour
         runtimeProfileSaved = false;
 
         if (hitbox != null)
+        {
             hitbox.SetDamageMultiplier(1f);
+            hitbox.SetGeometryMultipliers(1f, 1f);
+        }
     }
 
     /// <summary>Безопасно обрывает текущий удар перед сменой формы.</summary>
