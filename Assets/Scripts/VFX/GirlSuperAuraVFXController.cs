@@ -127,7 +127,7 @@ public class GirlSuperAuraVFXController : MonoBehaviour
         cage = cageObject.AddComponent<SpriteRenderer>();
         cage.sprite = cageFramesBuilt[0];
         cage.sortingLayerName = "Characters";
-        cage.sortingOrder = 1;
+        cage.sortingOrder = 0;
         cageFrames = cageFramesBuilt;
 
         Vector3[] positions =

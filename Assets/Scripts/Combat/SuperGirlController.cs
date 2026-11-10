@@ -60,6 +60,7 @@ public class SuperGirlController : MonoBehaviour
     private bool superVisualPlaying;
     private bool idleSpecialWasEnabled;
     private bool throwWasEnabled;
+    private int originalMainSortingOrder;
 
     private void Awake()
     {
@@ -167,6 +168,12 @@ public class SuperGirlController : MonoBehaviour
         state = State.Activating;
         superEndsAt = Time.time + superDuration;
         meter.SetGainLocked(true);
+
+        // Во время супера: молнии-клетка 0, персонаж 1, отдельные разряды 2.
+        originalMainSortingOrder = mainRenderer.sortingOrder;
+        mainRenderer.sortingOrder = 1;
+        if (superRenderer != null)
+            superRenderer.sortingOrder = 1;
         attack.CancelCurrentAttack();
         attack.SetAttackInputCooldown(attackCooldown);
         attack.enabled = false;
