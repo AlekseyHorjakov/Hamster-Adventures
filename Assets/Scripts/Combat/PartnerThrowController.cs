@@ -71,9 +71,12 @@ public class PartnerThrowController : MonoBehaviour
     private Sprite originalSprite;
     private bool idleSpecialWasEnabled;
     private bool reviveWasEnabled;
+    private bool carrierIdleSpecialWasEnabled;
 
     public bool IsCarried => isCarried;
+    public bool IsBeingCarried => isCarried;
     public bool IsFlying => isFlying;
+    public bool IsCarryingPartner => carried != null;
     public bool CanBePickedUp => !isCarried && !isFlying && health != null && health.IsAlive &&
                                  (combatState == null || (!combatState.IsDowned && !combatState.IsDead));
 
@@ -195,6 +198,15 @@ public class PartnerThrowController : MonoBehaviour
         carried = nearest;
         carriedController = nearestController;
         nearestController.BeginCarried(gameObject);
+
+        // Пока напарник на руках, особая анимация бездействия не должна
+        // включать пиво или микрофон поверх статичной позы переноски.
+        carrierIdleSpecialWasEnabled = idleSpecial != null && idleSpecial.enabled;
+        if (idleSpecial != null)
+            idleSpecial.enabled = false;
+        if (animator != null)
+            animator.Play(idleStateName, 0, 0f);
+
         nextPickupAt = Time.time + 0.12f;
     }
 
@@ -263,6 +275,7 @@ public class PartnerThrowController : MonoBehaviour
         carried = null;
         carriedController = null;
         thrown.LaunchAsProjectile(gameObject, movement.Facing, launchPosition, carrierCollider);
+        RestoreCarrierIdleSpecial();
         nextPickupAt = Time.time + 0.15f;
     }
 
@@ -460,7 +473,14 @@ public class PartnerThrowController : MonoBehaviour
 
         carried = null;
         carriedController = null;
+        RestoreCarrierIdleSpecial();
         nextPickupAt = Time.time + 0.2f;
+    }
+
+    private void RestoreCarrierIdleSpecial()
+    {
+        if (idleSpecial != null)
+            idleSpecial.enabled = carrierIdleSpecialWasEnabled;
     }
 
     /// <summary>Высота полёта: центр коллайдера ближайшей гиены перед броском.</summary>

@@ -30,6 +30,8 @@ public static class PartnerThrowBuilder
 
         Sprite hamsterFlight = ImportSprite("Assets/Art/Hamster/Flight/Hamster_Flight.png", 150f);
         Sprite girlFlight = ImportSprite("Assets/Art/HamsterGirl/Flight/HamsterGirl_Flight.png", 150f);
+        Sprite hamsterCarry = ImportSprite("Assets/Art/Hamster/Carry/Hamster_Carry.png", 160f);
+        Sprite girlCarry = ImportSprite("Assets/Art/HamsterGirl/Carry/HamsterGirl_Carry.png", 160f);
 
         Sprite streak = ImportSprite(ArtFolder + "/air_streak.png", 100f);
         Sprite wisp = ImportSprite(ArtFolder + "/air_wisp.png", 100f);
@@ -49,8 +51,8 @@ public static class PartnerThrowBuilder
         GameObject flightPrefab = BuildFlightVfx(streakMaterial, wispMaterial, vortexMaterial, distortionMaterial, wisp, vortex, distortion);
         GameObject impactPrefab = BuildImpactVfx(ringMaterial, flashMaterial, impactRing, impactFlash);
 
-        WireHero("Assets/Prefabs/Hamster.prefab", "HJump", "JumpKick", "Idle 0", hamsterFlight, throwHit, flightPrefab, impactPrefab);
-        WireHero("Assets/Prefabs/HamsterGirl.prefab", "HGJump", "HGJumpKick", "HGIdle", girlFlight, throwHit, flightPrefab, impactPrefab);
+        WireHero("Assets/Prefabs/Hamster.prefab", "HJump", "JumpKick", "Idle 0", hamsterFlight, hamsterCarry, 0.84f, throwHit, flightPrefab, impactPrefab);
+        WireHero("Assets/Prefabs/HamsterGirl.prefab", "HGJump", "HGJumpKick", "HGIdle", girlFlight, girlCarry, 0.98f, throwHit, flightPrefab, impactPrefab);
 
         AssetDatabase.SaveAssets();
         AssetDatabase.Refresh();
@@ -223,12 +225,54 @@ public static class PartnerThrowBuilder
     }
 
     private static void WireHero(string prefabPath, string carriedState, string thrownState, string idleState,
-        Sprite flightSprite, HitData throwHit, GameObject flightPrefab, GameObject impactPrefab)
+        Sprite flightSprite, Sprite carrySprite, float carryPoseLocalY,
+        HitData throwHit, GameObject flightPrefab, GameObject impactPrefab)
     {
         GameObject contents = PrefabUtility.LoadPrefabContents(prefabPath);
         PartnerThrowController controller = contents.GetComponent<PartnerThrowController>();
         if (controller == null)
             controller = contents.AddComponent<PartnerThrowController>();
+
+        SpriteRenderer mainSprite = contents.transform.Find("Visual")?.GetComponent<SpriteRenderer>();
+        if (mainSprite == null)
+            mainSprite = contents.GetComponentInChildren<SpriteRenderer>();
+
+        Transform poseTransform = contents.transform.Find("CarryPose");
+        GameObject poseObject;
+        if (poseTransform == null)
+        {
+            poseObject = new GameObject("CarryPose");
+            poseObject.transform.SetParent(contents.transform, false);
+        }
+        else
+        {
+            poseObject = poseTransform.gameObject;
+        }
+
+        poseObject.transform.localPosition = new Vector3(0f, carryPoseLocalY, 0f);
+        poseObject.transform.localRotation = Quaternion.identity;
+        poseObject.transform.localScale = Vector3.one;
+
+        SpriteRenderer carryRenderer = poseObject.GetComponent<SpriteRenderer>();
+        if (carryRenderer == null)
+            carryRenderer = poseObject.AddComponent<SpriteRenderer>();
+        carryRenderer.sprite = carrySprite;
+        carryRenderer.color = mainSprite != null ? mainSprite.color : Color.white;
+        carryRenderer.sortingLayerName = mainSprite != null ? mainSprite.sortingLayerName : "Characters";
+        carryRenderer.sortingOrder = mainSprite != null ? mainSprite.sortingOrder + 1 : 1;
+        carryRenderer.enabled = false;
+
+        CarryPoseController poseController = contents.GetComponent<CarryPoseController>();
+        if (poseController == null)
+            poseController = contents.AddComponent<CarryPoseController>();
+
+        SerializedObject poseSo = new SerializedObject(poseController);
+        poseSo.FindProperty("throwController").objectReferenceValue = controller;
+        poseSo.FindProperty("movement").objectReferenceValue = contents.GetComponent<HamsterMovement>();
+        poseSo.FindProperty("body").objectReferenceValue = contents.GetComponent<Rigidbody2D>();
+        poseSo.FindProperty("mainRenderer").objectReferenceValue = mainSprite;
+        poseSo.FindProperty("carryRenderer").objectReferenceValue = carryRenderer;
+        poseSo.ApplyModifiedPropertiesWithoutUndo();
 
         SerializedObject so = new SerializedObject(controller);
         so.FindProperty("input").objectReferenceValue = contents.GetComponent<PlayerInputReader>();
@@ -237,7 +281,7 @@ public static class PartnerThrowBuilder
         so.FindProperty("animator").objectReferenceValue = contents.GetComponent<Animator>();
         so.FindProperty("body").objectReferenceValue = contents.GetComponent<Rigidbody2D>();
         so.FindProperty("bodyCollider").objectReferenceValue = contents.GetComponent<Collider2D>();
-        so.FindProperty("sprite").objectReferenceValue = contents.GetComponentInChildren<SpriteRenderer>();
+        so.FindProperty("sprite").objectReferenceValue = mainSprite;
         so.FindProperty("flightSprite").objectReferenceValue = flightSprite;
         so.FindProperty("health").objectReferenceValue = contents.GetComponent<Health>();
         so.FindProperty("combatState").objectReferenceValue = contents.GetComponent<PlayerCombatState>();

@@ -1,0 +1,4838 @@
+fileFormatVersion: 2
+guid: 59c0c41db6b935449b1712c1b969002f
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 8125333532237057081
+    second: HamsterGirl_Carry_0
+  - first:
+      213: 1480104464651198452
+    second: HamsterGirl_Carry_1
+  - first:
+      213: 7203648398899546277
+    second: HamsterGirl_Carry_2
+  - first:
+      213: -2949662805812863263
+    second: HamsterGirl_Carry_3
+  - first:
+      213: -5824027397712331263
+    second: HamsterGirl_Carry_4
+  - first:
+      213: 8634420306912231408
+    second: HamsterGirl_Carry_5
+  - first:
+      213: 2700105707718514879
+    second: HamsterGirl_Carry_6
+  - first:
+      213: -4983663126631007710
+    second: HamsterGirl_Carry_7
+  - first:
+      213: -583126616161193009
+    second: HamsterGirl_Carry_8
+  - first:
+      213: 194386019781779836
+    second: HamsterGirl_Carry_9
+  - first:
+      213: 3854392051397755257
+    second: HamsterGirl_Carry_10
+  - first:
+      213: -1853055702332218801
+    second: HamsterGirl_Carry_11
+  - first:
+      213: 1837983095356282901
+    second: HamsterGirl_Carry_12
+  - first:
+      213: -8938399958852358214
+    second: HamsterGirl_Carry_13
+  - first:
+      213: 3720433160910135798
+    second: HamsterGirl_Carry_14
+  - first:
+      213: 4986065345438787696
+    second: HamsterGirl_Carry_15
+  - first:
+      213: -7310353366172353750
+    second: HamsterGirl_Carry_16
+  - first:
+      213: -4674044865980377120
+    second: HamsterGirl_Carry_17
+  - first:
+      213: 1784533321999943710
+    second: HamsterGirl_Carry_18
+  - first:
+      213: 6882579711463655003
+    second: HamsterGirl_Carry_19
+  - first:
+      213: 3476139019177506734
+    second: HamsterGirl_Carry_20
+  - first:
+      213: 6485512274451000616
+    second: HamsterGirl_Carry_21
+  - first:
+      213: 2136287035916553521
+    second: HamsterGirl_Carry_22
+  - first:
+      213: -6790333289616160402
+    second: HamsterGirl_Carry_23
+  - first:
+      213: -3780927773396638266
+    second: HamsterGirl_Carry_24
+  - first:
+      213: -3183035007891350215
+    second: HamsterGirl_Carry_25
+  - first:
+      213: -2413559817250875281
+    second: HamsterGirl_Carry_26
+  - first:
+      213: -2201851600036014359
+    second: HamsterGirl_Carry_27
+  - first:
+      213: 2521627798950874827
+    second: HamsterGirl_Carry_28
+  - first:
+      213: -8248971532214327636
+    second: HamsterGirl_Carry_29
+  - first:
+      213: 7999494094858434382
+    second: HamsterGirl_Carry_30
+  - first:
+      213: 6036731854827143317
+    second: HamsterGirl_Carry_31
+  - first:
+      213: -1122928475076956893
+    second: HamsterGirl_Carry_32
+  - first:
+      213: 6187914816880536134
+    second: HamsterGirl_Carry_33
+  - first:
+      213: 432474679281379529
+    second: HamsterGirl_Carry_34
+  - first:
+      213: 8322844042703603912
+    second: HamsterGirl_Carry_35
+  - first:
+      213: -4322565408839600940
+    second: HamsterGirl_Carry_36
+  - first:
+      213: -6904187555832519568
+    second: HamsterGirl_Carry_37
+  - first:
+      213: -6681358818840377411
+    second: HamsterGirl_Carry_38
+  - first:
+      213: 685935004816596990
+    second: HamsterGirl_Carry_39
+  - first:
+      213: -3962679872141207112
+    second: HamsterGirl_Carry_40
+  - first:
+      213: 6374209578198379967
+    second: HamsterGirl_Carry_41
+  - first:
+      213: 5373648191662571632
+    second: HamsterGirl_Carry_42
+  - first:
+      213: 4216227873413999747
+    second: HamsterGirl_Carry_43
+  - first:
+      213: -5710797527530487310
+    second: HamsterGirl_Carry_44
+  - first:
+      213: -6458578602882368327
+    second: HamsterGirl_Carry_45
+  - first:
+      213: 2677834171813743579
+    second: HamsterGirl_Carry_46
+  - first:
+      213: -9025043343924876052
+    second: HamsterGirl_Carry_47
+  - first:
+      213: 4201121967345906227
+    second: HamsterGirl_Carry_48
+  - first:
+      213: 731382751832588154
+    second: HamsterGirl_Carry_49
+  - first:
+      213: -7518296022636600133
+    second: HamsterGirl_Carry_50
+  - first:
+      213: 1601506773371500838
+    second: HamsterGirl_Carry_51
+  - first:
+      213: -1764513040239177931
+    second: HamsterGirl_Carry_52
+  - first:
+      213: -5614085473672132557
+    second: HamsterGirl_Carry_53
+  - first:
+      213: 6460577638188748821
+    second: HamsterGirl_Carry_54
+  - first:
+      213: 770384942787264000
+    second: HamsterGirl_Carry_55
+  - first:
+      213: -798570363479506935
+    second: HamsterGirl_Carry_56
+  - first:
+      213: -548217588188027668
+    second: HamsterGirl_Carry_57
+  - first:
+      213: 102720253587787581
+    second: HamsterGirl_Carry_58
+  - first:
+      213: 2865374276119648272
+    second: HamsterGirl_Carry_59
+  - first:
+      213: 2205361719614020330
+    second: HamsterGirl_Carry_60
+  - first:
+      213: -3615620230638522306
+    second: HamsterGirl_Carry_61
+  - first:
+      213: 7742475416193224364
+    second: HamsterGirl_Carry_62
+  - first:
+      213: 6146980540203959137
+    second: HamsterGirl_Carry_63
+  - first:
+      213: -5727656098604184154
+    second: HamsterGirl_Carry_64
+  - first:
+      213: -3776573599947303316
+    second: HamsterGirl_Carry_65
+  - first:
+      213: 5949941038923944465
+    second: HamsterGirl_Carry_66
+  - first:
+      213: 2311044925893047645
+    second: HamsterGirl_Carry_67
+  - first:
+      213: 2431292776764986920
+    second: HamsterGirl_Carry_68
+  - first:
+      213: 9205978048252857013
+    second: HamsterGirl_Carry_69
+  - first:
+      213: 5395041794461939266
+    second: HamsterGirl_Carry_70
+  - first:
+      213: -181278111183563244
+    second: HamsterGirl_Carry_71
+  - first:
+      213: -3949300150246537417
+    second: HamsterGirl_Carry_72
+  - first:
+      213: 7712006755100955986
+    second: HamsterGirl_Carry_73
+  - first:
+      213: -6519902730576999964
+    second: HamsterGirl_Carry_74
+  - first:
+      213: -7317467534763877734
+    second: HamsterGirl_Carry_75
+  - first:
+      213: -5198695461708483427
+    second: HamsterGirl_Carry_76
+  - first:
+      213: 2862969195652430480
+    second: HamsterGirl_Carry_77
+  - first:
+      213: 5824601666666057541
+    second: HamsterGirl_Carry_78
+  - first:
+      213: -2102493480348415687
+    second: HamsterGirl_Carry_79
+  - first:
+      213: 2300163686611013580
+    second: HamsterGirl_Carry_80
+  - first:
+      213: -7995411812752771287
+    second: HamsterGirl_Carry_81
+  - first:
+      213: -4500375078071284223
+    second: HamsterGirl_Carry_82
+  - first:
+      213: -6675098814940095769
+    second: HamsterGirl_Carry_83
+  - first:
+      213: -5143146235794397807
+    second: HamsterGirl_Carry_84
+  - first:
+      213: -6165585362119592483
+    second: HamsterGirl_Carry_85
+  - first:
+      213: 5593787636081766556
+    second: HamsterGirl_Carry_86
+  - first:
+      213: -5109735789956636676
+    second: HamsterGirl_Carry_87
+  - first:
+      213: -4044608313457028383
+    second: HamsterGirl_Carry_88
+  - first:
+      213: 1930514890859386701
+    second: HamsterGirl_Carry_89
+  - first:
+      213: 5725579190606008798
+    second: HamsterGirl_Carry_90
+  - first:
+      213: -5633406701418022407
+    second: HamsterGirl_Carry_91
+  - first:
+      213: 2977007433492132894
+    second: HamsterGirl_Carry_92
+  - first:
+      213: -5935995942717096920
+    second: HamsterGirl_Carry_93
+  - first:
+      213: -6516512236860564186
+    second: HamsterGirl_Carry_94
+  - first:
+      213: 6838610447144674269
+    second: HamsterGirl_Carry_95
+  - first:
+      213: 2702674893627424752
+    second: HamsterGirl_Carry_96
+  - first:
+      213: 7741549798761983591
+    second: HamsterGirl_Carry_97
+  - first:
+      213: 664747729703252628
+    second: HamsterGirl_Carry_98
+  - first:
+      213: 4344584360304850474
+    second: HamsterGirl_Carry_99
+  - first:
+      213: -8081054719940075861
+    second: HamsterGirl_Carry_100
+  - first:
+      213: -3380975664456326768
+    second: HamsterGirl_Carry_101
+  - first:
+      213: 6025415050075440877
+    second: HamsterGirl_Carry_102
+  - first:
+      213: -3419698171664564787
+    second: HamsterGirl_Carry_103
+  - first:
+      213: -142574254829789184
+    second: HamsterGirl_Carry_104
+  - first:
+      213: 6890637797337771957
+    second: HamsterGirl_Carry_105
+  - first:
+      213: 7719616040450873444
+    second: HamsterGirl_Carry_106
+  - first:
+      213: -4484998568711698013
+    second: HamsterGirl_Carry_107
+  - first:
+      213: -2880763181211445376
+    second: HamsterGirl_Carry_108
+  - first:
+      213: 7110185539013187455
+    second: HamsterGirl_Carry_109
+  - first:
+      213: 7847995468035958195
+    second: HamsterGirl_Carry_110
+  - first:
+      213: 5999316528599135182
+    second: HamsterGirl_Carry_111
+  - first:
+      213: 152935485290097745
+    second: HamsterGirl_Carry_112
+  - first:
+      213: 6643664359219732376
+    second: HamsterGirl_Carry_113
+  - first:
+      213: -176603707089569680
+    second: HamsterGirl_Carry_114
+  - first:
+      213: -4041989193749863213
+    second: HamsterGirl_Carry_115
+  - first:
+      213: -5372975875839936165
+    second: HamsterGirl_Carry_116
+  - first:
+      213: -5011708133701030156
+    second: HamsterGirl_Carry_117
+  - first:
+      213: 5260927661339784016
+    second: HamsterGirl_Carry_118
+  - first:
+      213: 7699419922052465460
+    second: HamsterGirl_Carry_119
+  - first:
+      213: -8111756905067989523
+    second: HamsterGirl_Carry_120
+  - first:
+      213: -8231072268014328393
+    second: HamsterGirl_Carry_121
+  - first:
+      213: -9105237582754883888
+    second: HamsterGirl_Carry_122
+  - first:
+      213: -2915909309718954641
+    second: HamsterGirl_Carry_123
+  - first:
+      213: -6272091125236221128
+    second: HamsterGirl_Carry_124
+  - first:
+      213: 7947786629351061227
+    second: HamsterGirl_Carry_125
+  - first:
+      213: 4618643864653566895
+    second: HamsterGirl_Carry_126
+  - first:
+      213: 7742636714495361627
+    second: HamsterGirl_Carry_127
+  - first:
+      213: -3914152205493567283
+    second: HamsterGirl_Carry_128
+  - first:
+      213: -6902392068393221866
+    second: HamsterGirl_Carry_129
+  - first:
+      213: 7311788481569537503
+    second: HamsterGirl_Carry_130
+  - first:
+      213: 1888161690812959740
+    second: HamsterGirl_Carry_131
+  - first:
+      213: -4091719571857451321
+    second: HamsterGirl_Carry_132
+  - first:
+      213: -246859645268149983
+    second: HamsterGirl_Carry_133
+  - first:
+      213: 8207665107790968695
+    second: HamsterGirl_Carry_134
+  - first:
+      213: -2800312997943834902
+    second: HamsterGirl_Carry_135
+  - first:
+      213: -8834672956827850502
+    second: HamsterGirl_Carry_136
+  - first:
+      213: 7138497669789803281
+    second: HamsterGirl_Carry_137
+  - first:
+      213: -9155276851708395935
+    second: HamsterGirl_Carry_138
+  - first:
+      213: 6138083250258144195
+    second: HamsterGirl_Carry_139
+  - first:
+      213: 3613501672128291531
+    second: HamsterGirl_Carry_140
+  - first:
+      213: 727232096854908461
+    second: HamsterGirl_Carry_141
+  - first:
+      213: -1479492936783835062
+    second: HamsterGirl_Carry_142
+  - first:
+      213: -8758160654358518316
+    second: HamsterGirl_Carry_143
+  - first:
+      213: -5820971372285958888
+    second: HamsterGirl_Carry_144
+  - first:
+      213: 8653873110461409988
+    second: HamsterGirl_Carry_145
+  - first:
+      213: -8756984095374523375
+    second: HamsterGirl_Carry_146
+  - first:
+      213: -2428412605478165668
+    second: HamsterGirl_Carry_147
+  - first:
+      213: 5913611516506243104
+    second: HamsterGirl_Carry_148
+  - first:
+      213: -3912999642034562867
+    second: HamsterGirl_Carry_149
+  - first:
+      213: -5953884271397044944
+    second: HamsterGirl_Carry_150
+  - first:
+      213: -1758608937218496800
+    second: HamsterGirl_Carry_151
+  - first:
+      213: 5231239584524873248
+    second: HamsterGirl_Carry_152
+  - first:
+      213: -294803301659221895
+    second: HamsterGirl_Carry_153
+  - first:
+      213: 461192432104730716
+    second: HamsterGirl_Carry_154
+  - first:
+      213: 5796622250623324001
+    second: HamsterGirl_Carry_155
+  - first:
+      213: 4089773283710444764
+    second: HamsterGirl_Carry_156
+  - first:
+      213: 4160307510202856696
+    second: HamsterGirl_Carry_157
+  - first:
+      213: -2272641787272826505
+    second: HamsterGirl_Carry_158
+  - first:
+      213: 2281114522210980197
+    second: HamsterGirl_Carry_159
+  - first:
+      213: 7769618529575434679
+    second: HamsterGirl_Carry_160
+  - first:
+      213: 3207863075642536978
+    second: HamsterGirl_Carry_161
+  - first:
+      213: -732532716760809592
+    second: HamsterGirl_Carry_162
+  - first:
+      213: 3899048985982806091
+    second: HamsterGirl_Carry_163
+  - first:
+      213: 4629033067645438714
+    second: HamsterGirl_Carry_164
+  - first:
+      213: -695036592710270789
+    second: HamsterGirl_Carry_165
+  - first:
+      213: 8480826568613593045
+    second: HamsterGirl_Carry_166
+  - first:
+      213: 7754867141484279536
+    second: HamsterGirl_Carry_167
+  - first:
+      213: -999057702916819845
+    second: HamsterGirl_Carry_168
+  - first:
+      213: -8431592816636450841
+    second: HamsterGirl_Carry_169
+  - first:
+      213: 4722125362894125055
+    second: HamsterGirl_Carry_170
+  - first:
+      213: -3801119485376621905
+    second: HamsterGirl_Carry_171
+  - first:
+      213: -6695210028833166011
+    second: HamsterGirl_Carry_172
+  - first:
+      213: 2777384776737903288
+    second: HamsterGirl_Carry_173
+  - first:
+      213: 6673785700502078383
+    second: HamsterGirl_Carry_174
+  - first:
+      213: -1834636212340268976
+    second: HamsterGirl_Carry_175
+  - first:
+      213: 3105556198086668848
+    second: HamsterGirl_Carry_176
+  - first:
+      213: -7386990227553652052
+    second: HamsterGirl_Carry_177
+  - first:
+      213: -2494277909974877514
+    second: HamsterGirl_Carry_178
+  - first:
+      213: -1850620350714065348
+    second: HamsterGirl_Carry_179
+  - first:
+      213: 1019315617382380388
+    second: HamsterGirl_Carry_180
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 1
+  spriteExtrude: 1
+  spriteMeshType: 0
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 160
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationMethod: 0
+  spriteTessellationDetail: -1
+  spriteGeometrySubdivision: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 1024
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: HamsterGirl_Carry_0
+      rect:
+        serializedVersion: 2
+        x: 154
+        y: 1372
+        width: 36
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 93c4f863ccbf2c070800000000000000
+      internalID: 8125333532237057081
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HamsterGirl_Carry_1
+      rect:
+        serializedVersion: 2
+        x: 203
+        y: 1381
+        width: 33
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4ff110e2b236a8410800000000000000
+      internalID: 1480104464651198452
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HamsterGirl_Carry_2
+      rect:
+        serializedVersion: 2
+        x: 354
+        y: 1372
+        width: 44
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5a8083f5d0088f360800000000000000
+      internalID: 7203648398899546277
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HamsterGirl_Carry_3
+      rect:
+        serializedVersion: 2
+        x: 513
+        y: 1403
+        width: 23
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1ee975c5e41b017d0800000000000000
+      internalID: -2949662805812863263
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HamsterGirl_Carry_4
+      rect:
+        serializedVersion: 2
+        x: 583
+        y: 1412
+        width: 8
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 10eb63550f5ec2fa0800000000000000
+      internalID: -5824027397712331263
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HamsterGirl_Carry_5
+      rect:
+        serializedVersion: 2
+        x: 590
+        y: 1407
+        width: 9
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0ff3ce2a58f93d770800000000000000
+      internalID: 8634420306912231408
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HamsterGirl_Carry_6
+      rect:
+        serializedVersion: 2
+        x: 594
+        y: 1388
+        width: 64
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fb8119cd5d3b87520800000000000000
+      internalID: 2700105707718514879
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HamsterGirl_Carry_7
+      rect:
+        serializedVersion: 2
+        x: 746
+        y: 1356
+        width: 76
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 22a32f87ac876dab0800000000000000
+      internalID: -4983663126631007710
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HamsterGirl_Carry_8
+      rect:
+        serializedVersion: 2
+        x: 814
+        y: 1121
+        width: 253
+        height: 309
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fc3f2a0ae6158e7f0800000000000000
+      internalID: -583126616161193009
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HamsterGirl_Carry_9
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1214
+        width: 151
+        height: 196
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c71256a1e0992b200800000000000000
+      internalID: 194386019781779836
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HamsterGirl_Carry_10
+      rect:
+        serializedVersion: 2
+        x: 194
+        y: 1373
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 97107a8362d8d7530800000000000000
+      internalID: 3854392051397755257
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HamsterGirl_Carry_11
+      rect:
+        serializedVersion: 2
+        x: 209
+        y: 1254
+        width: 31
+        height: 125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f42e97918af9846e0800000000000000
+      internalID: -1853055702332218801
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HamsterGirl_Carry_12
+      rect:
+        serializedVersion: 2
+        x: 233
+        y: 1384
+        width: 25
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 51852ed13e3d18910800000000000000
+      internalID: 1837983095356282901
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HamsterGirl_Carry_13
+      rect:
+        serializedVersion: 2
+        x: 241
+        y: 1342
+        width: 17
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: abf2d38589c64f380800000000000000
+      internalID: -8938399958852358214
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HamsterGirl_Carry_14
+      rect:
+        serializedVersion: 2
+        x: 255
+        y: 1364
+        width: 34
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6f1e1a68f32a1a330800000000000000
+      internalID: 3720433160910135798
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HamsterGirl_Carry_15
+      rect:
+        serializedVersion: 2
+        x: 290
+        y: 1322
+        width: 21
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 078a3cda300123540800000000000000
+      internalID: 4986065345438787696
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HamsterGirl_Carry_16
+      rect:
+        serializedVersion: 2
+        x: 304
+        y: 1383
+        width: 29
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a2b37ba68586c8a90800000000000000
+      internalID: -7310353366172353750
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HamsterGirl_Carry_17
+      rect:
+        serializedVersion: 2
+        x: 308
+        y: 1344
+        width: 13
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0e7500365f4722fb0800000000000000
+      internalID: -4674044865980377120
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HamsterGirl_Carry_18
+      rect:
+        serializedVersion: 2
+        x: 322
+        y: 1340
+        width: 34
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e1887abf99fe3c810800000000000000
+      internalID: 1784533321999943710
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HamsterGirl_Carry_19
+      rect:
+        serializedVersion: 2
+        x: 346
+        y: 1356
+        width: 24
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b560a1838c5d38f50800000000000000
+      internalID: 6882579711463655003
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HamsterGirl_Carry_20
+      rect:
+        serializedVersion: 2
+        x: 357
+        y: 1391
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ea733f3450abd3030800000000000000
+      internalID: 3476139019177506734
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HamsterGirl_Carry_21
+      rect:
+        serializedVersion: 2
+        x: 409
+        y: 1389
+        width: 30
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 82d66194d0b210a50800000000000000
+      internalID: 6485512274451000616
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HamsterGirl_Carry_22
+      rect:
+        serializedVersion: 2
+        x: 419
+        y: 1372
+        width: 14
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 13d041a9dbd95ad10800000000000000
+      internalID: 2136287035916553521
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HamsterGirl_Carry_23
+      rect:
+        serializedVersion: 2
+        x: 421
+        y: 1329
+        width: 20
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e694bed89d3e3c1a0800000000000000
+      internalID: -6790333289616160402
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HamsterGirl_Carry_24
+      rect:
+        serializedVersion: 2
+        x: 454
+        y: 1339
+        width: 60
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6c5e849e832778bc0800000000000000
+      internalID: -3780927773396638266
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HamsterGirl_Carry_25
+      rect:
+        serializedVersion: 2
+        x: 494
+        y: 1332
+        width: 32
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 93dd007568693d3d0800000000000000
+      internalID: -3183035007891350215
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HamsterGirl_Carry_26
+      rect:
+        serializedVersion: 2
+        x: 537
+        y: 1350
+        width: 25
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f68da904220518ed0800000000000000
+      internalID: -2413559817250875281
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HamsterGirl_Carry_27
+      rect:
+        serializedVersion: 2
+        x: 555
+        y: 1386
+        width: 10
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9e65abbb2a37171e0800000000000000
+      internalID: -2201851600036014359
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HamsterGirl_Carry_28
+      rect:
+        serializedVersion: 2
+        x: 565
+        y: 1302
+        width: 97
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bce873c7f1f9ef220800000000000000
+      internalID: 2521627798950874827
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HamsterGirl_Carry_29
+      rect:
+        serializedVersion: 2
+        x: 630
+        y: 1332
+        width: 15
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ca62e0ca814c58d80800000000000000
+      internalID: -8248971532214327636
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HamsterGirl_Carry_30
+      rect:
+        serializedVersion: 2
+        x: 644
+        y: 1350
+        width: 22
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e473fd20f79e30f60800000000000000
+      internalID: 7999494094858434382
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HamsterGirl_Carry_31
+      rect:
+        serializedVersion: 2
+        x: 669
+        y: 1389
+        width: 23
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 590c14353a7c6c350800000000000000
+      internalID: 6036731854827143317
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HamsterGirl_Carry_32
+      rect:
+        serializedVersion: 2
+        x: 673
+        y: 1324
+        width: 68
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 32dedde508e8a60f0800000000000000
+      internalID: -1122928475076956893
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HamsterGirl_Carry_33
+      rect:
+        serializedVersion: 2
+        x: 721
+        y: 1358
+        width: 18
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 64a6a80bdb3efd550800000000000000
+      internalID: 6187914816880536134
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HamsterGirl_Carry_34
+      rect:
+        serializedVersion: 2
+        x: 729
+        y: 1367
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9c8eae0fd65700600800000000000000
+      internalID: 432474679281379529
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HamsterGirl_Carry_35
+      rect:
+        serializedVersion: 2
+        x: 833
+        y: 1358
+        width: 9
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8c8035e7f8ea08370800000000000000
+      internalID: 8322844042703603912
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HamsterGirl_Carry_36
+      rect:
+        serializedVersion: 2
+        x: 841
+        y: 1360
+        width: 7
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4d479bf99a92304c0800000000000000
+      internalID: -4322565408839600940
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HamsterGirl_Carry_37
+      rect:
+        serializedVersion: 2
+        x: 1035
+        y: 1318
+        width: 22
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0742ee77ff56f20a0800000000000000
+      internalID: -6904187555832519568
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HamsterGirl_Carry_38
+      rect:
+        serializedVersion: 2
+        x: 1037
+        y: 1356
+        width: 38
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: db7881abd8b0743a0800000000000000
+      internalID: -6681358818840377411
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HamsterGirl_Carry_39
+      rect:
+        serializedVersion: 2
+        x: 354
+        y: 1318
+        width: 18
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eff591da04ee48900800000000000000
+      internalID: 685935004816596990
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HamsterGirl_Carry_40
+      rect:
+        serializedVersion: 2
+        x: 371
+        y: 1320
+        width: 25
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8b9de66c6abb109c0800000000000000
+      internalID: -3962679872141207112
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HamsterGirl_Carry_41
+      rect:
+        serializedVersion: 2
+        x: 462
+        y: 1318
+        width: 25
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fbd2860e6ddb57850800000000000000
+      internalID: 6374209578198379967
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HamsterGirl_Carry_42
+      rect:
+        serializedVersion: 2
+        x: 746
+        y: 1278
+        width: 57
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 070c7fb3f88039a40800000000000000
+      internalID: 5373648191662571632
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HamsterGirl_Carry_43
+      rect:
+        serializedVersion: 2
+        x: 948
+        y: 1310
+        width: 28
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 38c21fe89ec038a30800000000000000
+      internalID: 4216227873413999747
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HamsterGirl_Carry_44
+      rect:
+        serializedVersion: 2
+        x: 960
+        y: 1338
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2f1cd53e7eb2fb0b0800000000000000
+      internalID: -5710797527530487310
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HamsterGirl_Carry_45
+      rect:
+        serializedVersion: 2
+        x: 323
+        y: 1294
+        width: 31
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9bcf14dcaf48e56a0800000000000000
+      internalID: -6458578602882368327
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HamsterGirl_Carry_46
+      rect:
+        serializedVersion: 2
+        x: 565
+        y: 1328
+        width: 12
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bdb4c52ddf3992520800000000000000
+      internalID: 2677834171813743579
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HamsterGirl_Carry_47
+      rect:
+        serializedVersion: 2
+        x: 873
+        y: 1316
+        width: 19
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cecaada35ea90c280800000000000000
+      internalID: -9025043343924876052
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HamsterGirl_Carry_48
+      rect:
+        serializedVersion: 2
+        x: 891
+        y: 1328
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3323eb9bb226d4a30800000000000000
+      internalID: 4201121967345906227
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HamsterGirl_Carry_49
+      rect:
+        serializedVersion: 2
+        x: 948
+        y: 1320
+        width: 7
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a7f34dddcb4662a00800000000000000
+      internalID: 731382751832588154
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HamsterGirl_Carry_50
+      rect:
+        serializedVersion: 2
+        x: 239
+        y: 1212
+        width: 84
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bb4638ed995a9a790800000000000000
+      internalID: -7518296022636600133
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HamsterGirl_Carry_51
+      rect:
+        serializedVersion: 2
+        x: 323
+        y: 1285
+        width: 12
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 629b03cdce1b93610800000000000000
+      internalID: 1601506773371500838
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HamsterGirl_Carry_52
+      rect:
+        serializedVersion: 2
+        x: 379
+        y: 1273
+        width: 29
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 53fcffa1db03387e0800000000000000
+      internalID: -1764513040239177931
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HamsterGirl_Carry_53
+      rect:
+        serializedVersion: 2
+        x: 411
+        y: 1268
+        width: 44
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3388713a103c612b0800000000000000
+      internalID: -5614085473672132557
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HamsterGirl_Carry_54
+      rect:
+        serializedVersion: 2
+        x: 466
+        y: 1242
+        width: 48
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5109210e12598a950800000000000000
+      internalID: 6460577638188748821
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HamsterGirl_Carry_55
+      rect:
+        serializedVersion: 2
+        x: 513
+        y: 1224
+        width: 35
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 00ef4271605f0ba00800000000000000
+      internalID: 770384942787264000
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HamsterGirl_Carry_56
+      rect:
+        serializedVersion: 2
+        x: 547
+        y: 1252
+        width: 64
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 90046a44c78eae4f0800000000000000
+      internalID: -798570363479506935
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HamsterGirl_Carry_57
+      rect:
+        serializedVersion: 2
+        x: 664
+        y: 1157
+        width: 66
+        height: 136
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ce46e6412075468f0800000000000000
+      internalID: -548217588188027668
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HamsterGirl_Carry_58
+      rect:
+        serializedVersion: 2
+        x: 664
+        y: 1254
+        width: 26
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d3f8652c68fec6100800000000000000
+      internalID: 102720253587787581
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HamsterGirl_Carry_59
+      rect:
+        serializedVersion: 2
+        x: 273
+        y: 1278
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 01857a409bad3c720800000000000000
+      internalID: 2865374276119648272
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HamsterGirl_Carry_60
+      rect:
+        serializedVersion: 2
+        x: 318
+        y: 1258
+        width: 46
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aea96daacc40b9e10800000000000000
+      internalID: 2205361719614020330
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HamsterGirl_Carry_61
+      rect:
+        serializedVersion: 2
+        x: 616
+        y: 1260
+        width: 23
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e30331e7e8cb2ddc0800000000000000
+      internalID: -3615620230638522306
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HamsterGirl_Carry_62
+      rect:
+        serializedVersion: 2
+        x: 318
+        y: 1241
+        width: 31
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cae4460ae5cc27b60800000000000000
+      internalID: 7742475416193224364
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HamsterGirl_Carry_63
+      rect:
+        serializedVersion: 2
+        x: 397
+        y: 1253
+        width: 15
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1638814bb367e4550800000000000000
+      internalID: 6146980540203959137
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HamsterGirl_Carry_64
+      rect:
+        serializedVersion: 2
+        x: 411
+        y: 1206
+        width: 14
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6ad091fef174380b0800000000000000
+      internalID: -5727656098604184154
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HamsterGirl_Carry_65
+      rect:
+        serializedVersion: 2
+        x: 427
+        y: 1212
+        width: 42
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c66d50be15ae69bc0800000000000000
+      internalID: -3776573599947303316
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HamsterGirl_Carry_66
+      rect:
+        serializedVersion: 2
+        x: 541
+        y: 1260
+        width: 7
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 112949bc9df629250800000000000000
+      internalID: 5949941038923944465
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HamsterGirl_Carry_67
+      rect:
+        serializedVersion: 2
+        x: 575
+        y: 1236
+        width: 22
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d55f2db9d1b721020800000000000000
+      internalID: 2311044925893047645
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HamsterGirl_Carry_68
+      rect:
+        serializedVersion: 2
+        x: 636
+        y: 1252
+        width: 13
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 826dc0026efadb120800000000000000
+      internalID: 2431292776764986920
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HamsterGirl_Carry_69
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 1224
+        width: 15
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5bac720724432cf70800000000000000
+      internalID: 9205978048252857013
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HamsterGirl_Carry_70
+      rect:
+        serializedVersion: 2
+        x: 182
+        y: 1240
+        width: 20
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2463a4b8de90fda40800000000000000
+      internalID: 5395041794461939266
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HamsterGirl_Carry_71
+      rect:
+        serializedVersion: 2
+        x: 201
+        y: 1241
+        width: 19
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4169951b488fb7df0800000000000000
+      internalID: -181278111183563244
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HamsterGirl_Carry_72
+      rect:
+        serializedVersion: 2
+        x: 219
+        y: 1240
+        width: 17
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 737882900744139c0800000000000000
+      internalID: -3949300150246537417
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HamsterGirl_Carry_73
+      rect:
+        serializedVersion: 2
+        x: 348
+        y: 1238
+        width: 10
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2559437a84d860b60800000000000000
+      internalID: 7712006755100955986
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HamsterGirl_Carry_74
+      rect:
+        serializedVersion: 2
+        x: 419
+        y: 1240
+        width: 10
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4e9cbdda207a485a0800000000000000
+      internalID: -6519902730576999964
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HamsterGirl_Carry_75
+      rect:
+        serializedVersion: 2
+        x: 468
+        y: 1206
+        width: 27
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a9a12f6fb02237a90800000000000000
+      internalID: -7317467534763877734
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HamsterGirl_Carry_76
+      rect:
+        serializedVersion: 2
+        x: 711
+        y: 1187
+        width: 74
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d943e6d75068ad7b0800000000000000
+      internalID: -5198695461708483427
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HamsterGirl_Carry_77
+      rect:
+        serializedVersion: 2
+        x: 954
+        y: 1236
+        width: 14
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 09abfb5905f4bb720800000000000000
+      internalID: 2862969195652430480
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HamsterGirl_Carry_78
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 1206
+        width: 20
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 54f47c31b5425d050800000000000000
+      internalID: 5824601666666057541
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HamsterGirl_Carry_79
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 1190
+        width: 70
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9390241b15172d2e0800000000000000
+      internalID: -2102493480348415687
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HamsterGirl_Carry_80
+      rect:
+        serializedVersion: 2
+        x: 371
+        y: 1187
+        width: 41
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ccfc3b9afa2dbef10800000000000000
+      internalID: 2300163686611013580
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HamsterGirl_Carry_81
+      rect:
+        serializedVersion: 2
+        x: 484
+        y: 1141
+        width: 74
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 927b8eb51579a0190800000000000000
+      internalID: -7995411812752771287
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HamsterGirl_Carry_82
+      rect:
+        serializedVersion: 2
+        x: 493
+        y: 1208
+        width: 8
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 10e4a83e5b47b81c0800000000000000
+      internalID: -4500375078071284223
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HamsterGirl_Carry_83
+      rect:
+        serializedVersion: 2
+        x: 559
+        y: 1202
+        width: 36
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7ea5dd67ef84d53a0800000000000000
+      internalID: -6675098814940095769
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HamsterGirl_Carry_84
+      rect:
+        serializedVersion: 2
+        x: 608
+        y: 1218
+        width: 27
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 19566938fbfdf98b0800000000000000
+      internalID: -5143146235794397807
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HamsterGirl_Carry_85
+      rect:
+        serializedVersion: 2
+        x: 624
+        y: 1181
+        width: 32
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dd57382a7c07f6aa0800000000000000
+      internalID: -6165585362119592483
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HamsterGirl_Carry_86
+      rect:
+        serializedVersion: 2
+        x: 778
+        y: 1198
+        width: 9
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c9030a5c73021ad40800000000000000
+      internalID: 5593787636081766556
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HamsterGirl_Carry_87
+      rect:
+        serializedVersion: 2
+        x: 891
+        y: 1214
+        width: 8
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cffd88f1f529619b0800000000000000
+      internalID: -5109735789956636676
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HamsterGirl_Carry_88
+      rect:
+        serializedVersion: 2
+        x: 939
+        y: 1204
+        width: 12
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1e25dcc0b2aaed7c0800000000000000
+      internalID: -4044608313457028383
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HamsterGirl_Carry_89
+      rect:
+        serializedVersion: 2
+        x: 964
+        y: 1206
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d47964f90119aca10800000000000000
+      internalID: 1930514890859386701
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HamsterGirl_Carry_90
+      rect:
+        serializedVersion: 2
+        x: 219
+        y: 1131
+        width: 23
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ed1907d30f7557f40800000000000000
+      internalID: 5725579190606008798
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HamsterGirl_Carry_91
+      rect:
+        serializedVersion: 2
+        x: 241
+        y: 1181
+        width: 11
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9f97caeb37e12d1b0800000000000000
+      internalID: -5633406701418022407
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HamsterGirl_Carry_92
+      rect:
+        serializedVersion: 2
+        x: 245
+        y: 1123
+        width: 60
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e14fef6ec74705920800000000000000
+      internalID: 2977007433492132894
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HamsterGirl_Carry_93
+      rect:
+        serializedVersion: 2
+        x: 648
+        y: 1189
+        width: 10
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 82cff2ee32b1f9da0800000000000000
+      internalID: -5935995942717096920
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HamsterGirl_Carry_94
+      rect:
+        serializedVersion: 2
+        x: 746
+        y: 1163
+        width: 25
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 62d907385a2b095a0800000000000000
+      internalID: -6516512236860564186
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HamsterGirl_Carry_95
+      rect:
+        serializedVersion: 2
+        x: 922
+        y: 1173
+        width: 13
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dd3655b18ff97ee50800000000000000
+      internalID: 6838610447144674269
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HamsterGirl_Carry_96
+      rect:
+        serializedVersion: 2
+        x: 970
+        y: 1190
+        width: 8
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0ff77021f74d18520800000000000000
+      internalID: 2702674893627424752
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HamsterGirl_Carry_97
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1153
+        width: 56
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 76e643686828f6b60800000000000000
+      internalID: 7741549798761983591
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HamsterGirl_Carry_98
+      rect:
+        serializedVersion: 2
+        x: 111
+        y: 1143
+        width: 34
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 492b536c988a93900800000000000000
+      internalID: 664747729703252628
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HamsterGirl_Carry_99
+      rect:
+        serializedVersion: 2
+        x: 182
+        y: 1153
+        width: 14
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a2630b405701b4c30800000000000000
+      internalID: 4344584360304850474
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HamsterGirl_Carry_100
+      rect:
+        serializedVersion: 2
+        x: 314
+        y: 1136
+        width: 50
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bae5a772c835adf80800000000000000
+      internalID: -8081054719940075861
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HamsterGirl_Carry_101
+      rect:
+        serializedVersion: 2
+        x: 365
+        y: 1141
+        width: 45
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 09127dddb8c5411d0800000000000000
+      internalID: -3380975664456326768
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HamsterGirl_Carry_102
+      rect:
+        serializedVersion: 2
+        x: 770
+        y: 1137
+        width: 46
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: de60a0460139e9350800000000000000
+      internalID: 6025415050075440877
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HamsterGirl_Carry_103
+      rect:
+        serializedVersion: 2
+        x: 825
+        y: 1168
+        width: 9
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dcd71e691aaca80d0800000000000000
+      internalID: -3419698171664564787
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HamsterGirl_Carry_104
+      rect:
+        serializedVersion: 2
+        x: 843
+        y: 1163
+        width: 7
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 00021ca7879750ef0800000000000000
+      internalID: -142574254829789184
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HamsterGirl_Carry_105
+      rect:
+        serializedVersion: 2
+        x: 849
+        y: 1155
+        width: 35
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5bfa23a819670af50800000000000000
+      internalID: 6890637797337771957
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HamsterGirl_Carry_106
+      rect:
+        serializedVersion: 2
+        x: 883
+        y: 1173
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4685b7573e5912b60800000000000000
+      internalID: 7719616040450873444
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HamsterGirl_Carry_107
+      rect:
+        serializedVersion: 2
+        x: 951
+        y: 1163
+        width: 8
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3a9cdc5709512c1c0800000000000000
+      internalID: -4484998568711698013
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HamsterGirl_Carry_108
+      rect:
+        serializedVersion: 2
+        x: 1029
+        y: 1161
+        width: 11
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0871edd46297508d0800000000000000
+      internalID: -2880763181211445376
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HamsterGirl_Carry_109
+      rect:
+        serializedVersion: 2
+        x: 1037
+        y: 1161
+        width: 14
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f77100c83147ca260800000000000000
+      internalID: 7110185539013187455
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HamsterGirl_Carry_110
+      rect:
+        serializedVersion: 2
+        x: 411
+        y: 1145
+        width: 12
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3b5a8273c4ea9ec60800000000000000
+      internalID: 7847995468035958195
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HamsterGirl_Carry_111
+      rect:
+        serializedVersion: 2
+        x: 434
+        y: 1121
+        width: 25
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ec3f746d89ad14350800000000000000
+      internalID: 5999316528599135182
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HamsterGirl_Carry_112
+      rect:
+        serializedVersion: 2
+        x: 575
+        y: 1124
+        width: 56
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 15ca44a73065f1200800000000000000
+      internalID: 152935485290097745
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HamsterGirl_Carry_113
+      rect:
+        serializedVersion: 2
+        x: 648
+        y: 1157
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 89f173af889033c50800000000000000
+      internalID: 6643664359219732376
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HamsterGirl_Carry_114
+      rect:
+        serializedVersion: 2
+        x: 873
+        y: 1147
+        width: 20
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 078b8e43dd39c8df0800000000000000
+      internalID: -176603707089569680
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HamsterGirl_Carry_115
+      rect:
+        serializedVersion: 2
+        x: 948
+        y: 1157
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3d462906e38f7e7c0800000000000000
+      internalID: -4041989193749863213
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HamsterGirl_Carry_116
+      rect:
+        serializedVersion: 2
+        x: 960
+        y: 1149
+        width: 14
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b5931dd78ea5f65b0800000000000000
+      internalID: -5372975875839936165
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HamsterGirl_Carry_117
+      rect:
+        serializedVersion: 2
+        x: 967
+        y: 1163
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4fe60dc6106d27ab0800000000000000
+      internalID: -5011708133701030156
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HamsterGirl_Carry_118
+      rect:
+        serializedVersion: 2
+        x: 974
+        y: 1111
+        width: 58
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0533f2b95d1920940800000000000000
+      internalID: 5260927661339784016
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HamsterGirl_Carry_119
+      rect:
+        serializedVersion: 2
+        x: 162
+        y: 1145
+        width: 15
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 433c08630a5d9da60800000000000000
+      internalID: 7699419922052465460
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HamsterGirl_Carry_120
+      rect:
+        serializedVersion: 2
+        x: 338
+        y: 1143
+        width: 8
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: de5b911a2104d6f80800000000000000
+      internalID: -8111756905067989523
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HamsterGirl_Carry_121
+      rect:
+        serializedVersion: 2
+        x: 654
+        y: 1149
+        width: 12
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7b5ef60e16b55cd80800000000000000
+      internalID: -8231072268014328393
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HamsterGirl_Carry_122
+      rect:
+        serializedVersion: 2
+        x: 784
+        y: 1124
+        width: 13
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0d6db5cf8a2b3a180800000000000000
+      internalID: -9105237582754883888
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HamsterGirl_Carry_123
+      rect:
+        serializedVersion: 2
+        x: 1043
+        y: 1148
+        width: 26
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f6d72f49eeb9887d0800000000000000
+      internalID: -2915909309718954641
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HamsterGirl_Carry_124
+      rect:
+        serializedVersion: 2
+        x: 259
+        y: 1125
+        width: 12
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 83b3a614a5e05f8a0800000000000000
+      internalID: -6272091125236221128
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HamsterGirl_Carry_125
+      rect:
+        serializedVersion: 2
+        x: 298
+        y: 1094
+        width: 41
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: be6b11984d53c4e60800000000000000
+      internalID: 7947786629351061227
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HamsterGirl_Carry_126
+      rect:
+        serializedVersion: 2
+        x: 338
+        y: 1121
+        width: 14
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fa396b0df18b81040800000000000000
+      internalID: 4618643864653566895
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HamsterGirl_Carry_127
+      rect:
+        serializedVersion: 2
+        x: 397
+        y: 1121
+        width: 11
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b52c460d11f537b60800000000000000
+      internalID: 7742636714495361627
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HamsterGirl_Carry_128
+      rect:
+        serializedVersion: 2
+        x: 468
+        y: 1118
+        width: 17
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dc08eb2ae432ea9c0800000000000000
+      internalID: -3914152205493567283
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HamsterGirl_Carry_129
+      rect:
+        serializedVersion: 2
+        x: 673
+        y: 1135
+        width: 9
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 611c2f6fbf6c530a0800000000000000
+      internalID: -6902392068393221866
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HamsterGirl_Carry_130
+      rect:
+        serializedVersion: 2
+        x: 679
+        y: 1133
+        width: 19
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fddbebc62e0b87560800000000000000
+      internalID: 7311788481569537503
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HamsterGirl_Carry_131
+      rect:
+        serializedVersion: 2
+        x: 865
+        y: 1125
+        width: 30
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cfb486bcd09143a10800000000000000
+      internalID: 1888161690812959740
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HamsterGirl_Carry_132
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 1086
+        height: 1125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7c65cee6aba4737c0800000000000000
+      internalID: -4091719571857451321
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HamsterGirl_Carry_133
+      rect:
+        serializedVersion: 2
+        x: 87
+        y: 1094
+        width: 11
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 129b966e57af29cf0800000000000000
+      internalID: -246859645268149983
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HamsterGirl_Carry_134
+      rect:
+        serializedVersion: 2
+        x: 193
+        y: 1117
+        width: 11
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 777bf31fdeb77e170800000000000000
+      internalID: 8207665107790968695
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HamsterGirl_Carry_135
+      rect:
+        serializedVersion: 2
+        x: 275
+        y: 1123
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ae606a14a2a4329d0800000000000000
+      internalID: -2800312997943834902
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HamsterGirl_Carry_136
+      rect:
+        serializedVersion: 2
+        x: 282
+        y: 1108
+        width: 15
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: af8a68df0cfe46580800000000000000
+      internalID: -8834672956827850502
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HamsterGirl_Carry_137
+      rect:
+        serializedVersion: 2
+        x: 409
+        y: 1115
+        width: 14
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 11366cd2fc9011360800000000000000
+      internalID: 7138497669789803281
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HamsterGirl_Carry_138
+      rect:
+        serializedVersion: 2
+        x: 981
+        y: 1079
+        width: 29
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 16e7099c53ce1f080800000000000000
+      internalID: -9155276851708395935
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HamsterGirl_Carry_139
+      rect:
+        serializedVersion: 2
+        x: 47
+        y: 1063
+        width: 19
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3cb6965f13ade2550800000000000000
+      internalID: 6138083250258144195
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HamsterGirl_Carry_140
+      rect:
+        serializedVersion: 2
+        x: 249
+        y: 1097
+        width: 9
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bc2ac7a20acb52230800000000000000
+      internalID: 3613501672128291531
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HamsterGirl_Carry_141
+      rect:
+        serializedVersion: 2
+        x: 798
+        y: 1099
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d2e9c423db5a71a00800000000000000
+      internalID: 727232096854908461
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HamsterGirl_Carry_142
+      rect:
+        serializedVersion: 2
+        x: 1043
+        y: 1095
+        width: 12
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a40dc4f3309c77be0800000000000000
+      internalID: -1479492936783835062
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HamsterGirl_Carry_143
+      rect:
+        serializedVersion: 2
+        x: 1019
+        y: 1037
+        width: 42
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4d5682f9943c47680800000000000000
+      internalID: -8758160654358518316
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HamsterGirl_Carry_144
+      rect:
+        serializedVersion: 2
+        x: 1037
+        y: 644
+        width: 14
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8156d23b061c73fa0800000000000000
+      internalID: -5820971372285958888
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HamsterGirl_Carry_145
+      rect:
+        serializedVersion: 2
+        x: 1060
+        y: 626
+        width: 11
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4ca6b586ebbb81870800000000000000
+      internalID: 8653873110461409988
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HamsterGirl_Carry_146
+      rect:
+        serializedVersion: 2
+        x: 1051
+        y: 631
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 114c47b9c51f87680800000000000000
+      internalID: -8756984095374523375
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HamsterGirl_Carry_147
+      rect:
+        serializedVersion: 2
+        x: 1037
+        y: 427
+        width: 12
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c53a4620a9b8c4ed0800000000000000
+      internalID: -2428412605478165668
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HamsterGirl_Carry_148
+      rect:
+        serializedVersion: 2
+        x: 1029
+        y: 393
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0208305b75e511250800000000000000
+      internalID: 5913611516506243104
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HamsterGirl_Carry_149
+      rect:
+        serializedVersion: 2
+        x: 1053
+        y: 401
+        width: 6
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dc89c4abe8b32b9c0800000000000000
+      internalID: -3912999642034562867
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HamsterGirl_Carry_150
+      rect:
+        serializedVersion: 2
+        x: 1021
+        y: 347
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 03df799dccd8f5da0800000000000000
+      internalID: -5953884271397044944
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HamsterGirl_Carry_151
+      rect:
+        serializedVersion: 2
+        x: 1029
+        y: 355
+        width: 7
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0e6a3463d7a2897e0800000000000000
+      internalID: -1758608937218496800
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HamsterGirl_Carry_152
+      rect:
+        serializedVersion: 2
+        x: 1041
+        y: 351
+        width: 20
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 02e21929fa8199840800000000000000
+      internalID: 5231239584524873248
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HamsterGirl_Carry_153
+      rect:
+        serializedVersion: 2
+        x: 1035
+        y: 305
+        width: 12
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9706df585f5a8ebf0800000000000000
+      internalID: -294803301659221895
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HamsterGirl_Carry_154
+      rect:
+        serializedVersion: 2
+        x: 1080
+        y: 308
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c5073b0d21c766600800000000000000
+      internalID: 461192432104730716
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HamsterGirl_Carry_155
+      rect:
+        serializedVersion: 2
+        x: 22
+        y: 289
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 16f4781a93db17050800000000000000
+      internalID: 5796622250623324001
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HamsterGirl_Carry_156
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 262
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cd4a17b022bc1c830800000000000000
+      internalID: 4089773283710444764
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HamsterGirl_Carry_157
+      rect:
+        serializedVersion: 2
+        x: 1003
+        y: 258
+        width: 9
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8f4f70663a16cb930800000000000000
+      internalID: 4160307510202856696
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HamsterGirl_Carry_158
+      rect:
+        serializedVersion: 2
+        x: 1011
+        y: 260
+        width: 6
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 771f4efd554f570e0800000000000000
+      internalID: -2272641787272826505
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HamsterGirl_Carry_159
+      rect:
+        serializedVersion: 2
+        x: 970
+        y: 176
+        width: 20
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 561de54729528af10800000000000000
+      internalID: 2281114522210980197
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HamsterGirl_Carry_160
+      rect:
+        serializedVersion: 2
+        x: 989
+        y: 194
+        width: 35
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7b9f2af23ea33db60800000000000000
+      internalID: 7769618529575434679
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HamsterGirl_Carry_161
+      rect:
+        serializedVersion: 2
+        x: 22
+        y: 120
+        width: 9
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 214f3c7a87e948c20800000000000000
+      internalID: 3207863075642536978
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HamsterGirl_Carry_162
+      rect:
+        serializedVersion: 2
+        x: 30
+        y: 120
+        width: 6
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 88fbe1f006585d5f0800000000000000
+      internalID: -732532716760809592
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HamsterGirl_Carry_163
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 78
+        width: 5
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b482a5b05643c1630800000000000000
+      internalID: 3899048985982806091
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HamsterGirl_Carry_164
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 95
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: afa0b82ac01ad3040800000000000000
+      internalID: 4629033067645438714
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HamsterGirl_Carry_165
+      rect:
+        serializedVersion: 2
+        x: 1023
+        y: 87
+        width: 7
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bb04b91c6ebba56f0800000000000000
+      internalID: -695036592710270789
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HamsterGirl_Carry_166
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 71
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5df78efa4d2f1b570800000000000000
+      internalID: 8480826568613593045
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HamsterGirl_Carry_167
+      rect:
+        serializedVersion: 2
+        x: 1045
+        y: 73
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0f6f4800492de9b60800000000000000
+      internalID: 7754867141484279536
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HamsterGirl_Carry_168
+      rect:
+        serializedVersion: 2
+        x: 1053
+        y: 79
+        width: 12
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b74768bff42a222f0800000000000000
+      internalID: -999057702916819845
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HamsterGirl_Carry_169
+      rect:
+        serializedVersion: 2
+        x: 30
+        y: 57
+        width: 10
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7e726a97107fcfa80800000000000000
+      internalID: -8431592816636450841
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HamsterGirl_Carry_170
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 15
+        width: 24
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ff7ba28affb588140800000000000000
+      internalID: 4722125362894125055
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HamsterGirl_Carry_171
+      rect:
+        serializedVersion: 2
+        x: 1003
+        y: 33
+        width: 7
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fa29f4d97f5bf3bc0800000000000000
+      internalID: -3801119485376621905
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HamsterGirl_Carry_172
+      rect:
+        serializedVersion: 2
+        x: 1008
+        y: 35
+        width: 6
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 54d24c693f5d513a0800000000000000
+      internalID: -6695210028833166011
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HamsterGirl_Carry_173
+      rect:
+        serializedVersion: 2
+        x: 46
+        y: 15
+        width: 18
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8b25a0e3db04b8620800000000000000
+      internalID: 2777384776737903288
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HamsterGirl_Carry_174
+      rect:
+        serializedVersion: 2
+        x: 502
+        y: 15
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fa302814cbc0e9c50800000000000000
+      internalID: 6673785700502078383
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HamsterGirl_Carry_175
+      rect:
+        serializedVersion: 2
+        x: 517
+        y: 11
+        width: 11
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 050e36fc5101a86e0800000000000000
+      internalID: -1834636212340268976
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HamsterGirl_Carry_176
+      rect:
+        serializedVersion: 2
+        x: 970
+        y: 23
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 032f7f088e6291b20800000000000000
+      internalID: 3105556198086668848
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HamsterGirl_Carry_177
+      rect:
+        serializedVersion: 2
+        x: 981
+        y: 21
+        width: 15
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ca2f167a6832c7990800000000000000
+      internalID: -7386990227553652052
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HamsterGirl_Carry_178
+      rect:
+        serializedVersion: 2
+        x: 1039
+        y: 17
+        width: 14
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6baf7d4c47b826dd0800000000000000
+      internalID: -2494277909974877514
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HamsterGirl_Carry_179
+      rect:
+        serializedVersion: 2
+        x: 810
+        y: 0
+        width: 33
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c3e449598964156e0800000000000000
+      internalID: -1850620350714065348
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HamsterGirl_Carry_180
+      rect:
+        serializedVersion: 2
+        x: 989
+        y: 0
+        width: 33
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 463b5184726552e00800000000000000
+      internalID: 1019315617382380388
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      HamsterGirl_Carry_0: 8125333532237057081
+      HamsterGirl_Carry_1: 1480104464651198452
+      HamsterGirl_Carry_10: 3854392051397755257
+      HamsterGirl_Carry_100: -8081054719940075861
+      HamsterGirl_Carry_101: -3380975664456326768
+      HamsterGirl_Carry_102: 6025415050075440877
+      HamsterGirl_Carry_103: -3419698171664564787
+      HamsterGirl_Carry_104: -142574254829789184
+      HamsterGirl_Carry_105: 6890637797337771957
+      HamsterGirl_Carry_106: 7719616040450873444
+      HamsterGirl_Carry_107: -4484998568711698013
+      HamsterGirl_Carry_108: -2880763181211445376
+      HamsterGirl_Carry_109: 7110185539013187455
+      HamsterGirl_Carry_11: -1853055702332218801
+      HamsterGirl_Carry_110: 7847995468035958195
+      HamsterGirl_Carry_111: 5999316528599135182
+      HamsterGirl_Carry_112: 152935485290097745
+      HamsterGirl_Carry_113: 6643664359219732376
+      HamsterGirl_Carry_114: -176603707089569680
+      HamsterGirl_Carry_115: -4041989193749863213
+      HamsterGirl_Carry_116: -5372975875839936165
+      HamsterGirl_Carry_117: -5011708133701030156
+      HamsterGirl_Carry_118: 5260927661339784016
+      HamsterGirl_Carry_119: 7699419922052465460
+      HamsterGirl_Carry_12: 1837983095356282901
+      HamsterGirl_Carry_120: -8111756905067989523
+      HamsterGirl_Carry_121: -8231072268014328393
+      HamsterGirl_Carry_122: -9105237582754883888
+      HamsterGirl_Carry_123: -2915909309718954641
+      HamsterGirl_Carry_124: -6272091125236221128
+      HamsterGirl_Carry_125: 7947786629351061227
+      HamsterGirl_Carry_126: 4618643864653566895
+      HamsterGirl_Carry_127: 7742636714495361627
+      HamsterGirl_Carry_128: -3914152205493567283
+      HamsterGirl_Carry_129: -6902392068393221866
+      HamsterGirl_Carry_13: -8938399958852358214
+      HamsterGirl_Carry_130: 7311788481569537503
+      HamsterGirl_Carry_131: 1888161690812959740
+      HamsterGirl_Carry_132: -4091719571857451321
+      HamsterGirl_Carry_133: -246859645268149983
+      HamsterGirl_Carry_134: 8207665107790968695
+      HamsterGirl_Carry_135: -2800312997943834902
+      HamsterGirl_Carry_136: -8834672956827850502
+      HamsterGirl_Carry_137: 7138497669789803281
+      HamsterGirl_Carry_138: -9155276851708395935
+      HamsterGirl_Carry_139: 6138083250258144195
+      HamsterGirl_Carry_14: 3720433160910135798
+      HamsterGirl_Carry_140: 3613501672128291531
+      HamsterGirl_Carry_141: 727232096854908461
+      HamsterGirl_Carry_142: -1479492936783835062
+      HamsterGirl_Carry_143: -8758160654358518316
+      HamsterGirl_Carry_144: -5820971372285958888
+      HamsterGirl_Carry_145: 8653873110461409988
+      HamsterGirl_Carry_146: -8756984095374523375
+      HamsterGirl_Carry_147: -2428412605478165668
+      HamsterGirl_Carry_148: 5913611516506243104
+      HamsterGirl_Carry_149: -3912999642034562867
+      HamsterGirl_Carry_15: 4986065345438787696
+      HamsterGirl_Carry_150: -5953884271397044944
+      HamsterGirl_Carry_151: -1758608937218496800
+      HamsterGirl_Carry_152: 5231239584524873248
+      HamsterGirl_Carry_153: -294803301659221895
+      HamsterGirl_Carry_154: 461192432104730716
+      HamsterGirl_Carry_155: 5796622250623324001
+      HamsterGirl_Carry_156: 4089773283710444764
+      HamsterGirl_Carry_157: 4160307510202856696
+      HamsterGirl_Carry_158: -2272641787272826505
+      HamsterGirl_Carry_159: 2281114522210980197
+      HamsterGirl_Carry_16: -7310353366172353750
+      HamsterGirl_Carry_160: 7769618529575434679
+      HamsterGirl_Carry_161: 3207863075642536978
+      HamsterGirl_Carry_162: -732532716760809592
+      HamsterGirl_Carry_163: 3899048985982806091
+      HamsterGirl_Carry_164: 4629033067645438714
+      HamsterGirl_Carry_165: -695036592710270789
+      HamsterGirl_Carry_166: 8480826568613593045
+      HamsterGirl_Carry_167: 7754867141484279536
+      HamsterGirl_Carry_168: -999057702916819845
+      HamsterGirl_Carry_169: -8431592816636450841
+      HamsterGirl_Carry_17: -4674044865980377120
+      HamsterGirl_Carry_170: 4722125362894125055
+      HamsterGirl_Carry_171: -3801119485376621905
+      HamsterGirl_Carry_172: -6695210028833166011
+      HamsterGirl_Carry_173: 2777384776737903288
+      HamsterGirl_Carry_174: 6673785700502078383
+      HamsterGirl_Carry_175: -1834636212340268976
+      HamsterGirl_Carry_176: 3105556198086668848
+      HamsterGirl_Carry_177: -7386990227553652052
+      HamsterGirl_Carry_178: -2494277909974877514
+      HamsterGirl_Carry_179: -1850620350714065348
+      HamsterGirl_Carry_18: 1784533321999943710
+      HamsterGirl_Carry_180: 1019315617382380388
+      HamsterGirl_Carry_19: 6882579711463655003
+      HamsterGirl_Carry_2: 7203648398899546277
+      HamsterGirl_Carry_20: 3476139019177506734
+      HamsterGirl_Carry_21: 6485512274451000616
+      HamsterGirl_Carry_22: 2136287035916553521
+      HamsterGirl_Carry_23: -6790333289616160402
+      HamsterGirl_Carry_24: -3780927773396638266
+      HamsterGirl_Carry_25: -3183035007891350215
+      HamsterGirl_Carry_26: -2413559817250875281
+      HamsterGirl_Carry_27: -2201851600036014359
+      HamsterGirl_Carry_28: 2521627798950874827
+      HamsterGirl_Carry_29: -8248971532214327636
+      HamsterGirl_Carry_3: -2949662805812863263
+      HamsterGirl_Carry_30: 7999494094858434382
+      HamsterGirl_Carry_31: 6036731854827143317
+      HamsterGirl_Carry_32: -1122928475076956893
+      HamsterGirl_Carry_33: 6187914816880536134
+      HamsterGirl_Carry_34: 432474679281379529
+      HamsterGirl_Carry_35: 8322844042703603912
+      HamsterGirl_Carry_36: -4322565408839600940
+      HamsterGirl_Carry_37: -6904187555832519568
+      HamsterGirl_Carry_38: -6681358818840377411
+      HamsterGirl_Carry_39: 685935004816596990
+      HamsterGirl_Carry_4: -5824027397712331263
+      HamsterGirl_Carry_40: -3962679872141207112
+      HamsterGirl_Carry_41: 6374209578198379967
+      HamsterGirl_Carry_42: 5373648191662571632
+      HamsterGirl_Carry_43: 4216227873413999747
+      HamsterGirl_Carry_44: -5710797527530487310
+      HamsterGirl_Carry_45: -6458578602882368327
+      HamsterGirl_Carry_46: 2677834171813743579
+      HamsterGirl_Carry_47: -9025043343924876052
+      HamsterGirl_Carry_48: 4201121967345906227
+      HamsterGirl_Carry_49: 731382751832588154
+      HamsterGirl_Carry_5: 8634420306912231408
+      HamsterGirl_Carry_50: -7518296022636600133
+      HamsterGirl_Carry_51: 1601506773371500838
+      HamsterGirl_Carry_52: -1764513040239177931
+      HamsterGirl_Carry_53: -5614085473672132557
+      HamsterGirl_Carry_54: 6460577638188748821
+      HamsterGirl_Carry_55: 770384942787264000
+      HamsterGirl_Carry_56: -798570363479506935
+      HamsterGirl_Carry_57: -548217588188027668
+      HamsterGirl_Carry_58: 102720253587787581
+      HamsterGirl_Carry_59: 2865374276119648272
+      HamsterGirl_Carry_6: 2700105707718514879
+      HamsterGirl_Carry_60: 2205361719614020330
+      HamsterGirl_Carry_61: -3615620230638522306
+      HamsterGirl_Carry_62: 7742475416193224364
+      HamsterGirl_Carry_63: 6146980540203959137
+      HamsterGirl_Carry_64: -5727656098604184154
+      HamsterGirl_Carry_65: -3776573599947303316
+      HamsterGirl_Carry_66: 5949941038923944465
+      HamsterGirl_Carry_67: 2311044925893047645
+      HamsterGirl_Carry_68: 2431292776764986920
+      HamsterGirl_Carry_69: 9205978048252857013
+      HamsterGirl_Carry_7: -4983663126631007710
+      HamsterGirl_Carry_70: 5395041794461939266
+      HamsterGirl_Carry_71: -181278111183563244
+      HamsterGirl_Carry_72: -3949300150246537417
+      HamsterGirl_Carry_73: 7712006755100955986
+      HamsterGirl_Carry_74: -6519902730576999964
+      HamsterGirl_Carry_75: -7317467534763877734
+      HamsterGirl_Carry_76: -5198695461708483427
+      HamsterGirl_Carry_77: 2862969195652430480
+      HamsterGirl_Carry_78: 5824601666666057541
+      HamsterGirl_Carry_79: -2102493480348415687
+      HamsterGirl_Carry_8: -583126616161193009
+      HamsterGirl_Carry_80: 2300163686611013580
+      HamsterGirl_Carry_81: -7995411812752771287
+      HamsterGirl_Carry_82: -4500375078071284223
+      HamsterGirl_Carry_83: -6675098814940095769
+      HamsterGirl_Carry_84: -5143146235794397807
+      HamsterGirl_Carry_85: -6165585362119592483
+      HamsterGirl_Carry_86: 5593787636081766556
+      HamsterGirl_Carry_87: -5109735789956636676
+      HamsterGirl_Carry_88: -4044608313457028383
+      HamsterGirl_Carry_89: 1930514890859386701
+      HamsterGirl_Carry_9: 194386019781779836
+      HamsterGirl_Carry_90: 5725579190606008798
+      HamsterGirl_Carry_91: -5633406701418022407
+      HamsterGirl_Carry_92: 2977007433492132894
+      HamsterGirl_Carry_93: -5935995942717096920
+      HamsterGirl_Carry_94: -6516512236860564186
+      HamsterGirl_Carry_95: 6838610447144674269
+      HamsterGirl_Carry_96: 2702674893627424752
+      HamsterGirl_Carry_97: 7741549798761983591
+      HamsterGirl_Carry_98: 664747729703252628
+      HamsterGirl_Carry_99: 4344584360304850474
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
