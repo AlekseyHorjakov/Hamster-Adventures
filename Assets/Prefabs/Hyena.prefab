@@ -180,18 +180,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 61209b059bb60374eb272d9b95200c3b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::HyenaAI
-  detectionRange: 9
-  loseRange: 12
-  verticalTolerance: 2.5
+  detectionRange: 10
+  loseRange: 16
+  verticalTolerance: 2
+  aggroMemory: 3
   patrolRadius: 3
-  patrolSpeed: 1.4
-  chaseSpeed: 3.2
-  patrolPause: 0.8
+  patrolSpeed: 2
+  chaseSpeed: 5.2
+  patrolPause: 0.45
   attackRange: 2.3
+  attackLungeSpeed: 7
+  attackLungeStopDistance: 1.25
   attackWindup: 0.16
   attackActive: 0.16
   attackRecovery: 0.22
-  attackCooldown: 0.55
+  attackCooldown: 0.4
   biteHit: {fileID: 11400000, guid: 5abfdf4c49d2d3544ac835bd0bdbb310, type: 2}
   hitbox: {fileID: 3958163101106336452}
   animator: {fileID: 3132992963662219560}

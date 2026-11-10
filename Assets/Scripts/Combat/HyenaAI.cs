@@ -2,32 +2,38 @@ using System.Collections;
 using UnityEngine;
 
 /// <summary>
-/// Простая гиена: патрулирует у дома, замечает ближайшего живого героя,
-/// догоняет и делает один укус с заметным замахом. Это прототип поведения,
-/// без прыжков и сложных тактик — чтобы проверить боевой цикл целиком.
+/// Гиена-прототип: патрулирует вокруг дома, замечает ближайшего живого героя
+/// на своём уровне, преследует его и делает укус с рывком. После получения
+/// урона переключается на атаковавшего и ещё некоторое время не теряет цель.
 /// </summary>
 [RequireComponent(typeof(Rigidbody2D))]
 [RequireComponent(typeof(Health))]
 public class HyenaAI : MonoBehaviour
 {
     [Header("Обнаружение")]
-    [SerializeField] private float detectionRange = 9f;
-    [SerializeField] private float loseRange = 12f;
-    [SerializeField] private float verticalTolerance = 2.5f;
+    [SerializeField] private float detectionRange = 10f;
+    [SerializeField] private float loseRange = 16f;
+    [SerializeField] private float verticalTolerance = 2f;
+    [Tooltip("Сколько секунд гиена помнит цель, если та вышла из радиуса обнаружения")]
+    [SerializeField] private float aggroMemory = 3f;
 
     [Header("Движение")]
     [SerializeField] private float patrolRadius = 3f;
-    [SerializeField] private float patrolSpeed = 1.4f;
-    [SerializeField] private float chaseSpeed = 3.2f;
-    [SerializeField] private float patrolPause = 0.8f;
+    [SerializeField] private float patrolSpeed = 2f;
+    [SerializeField] private float chaseSpeed = 5.2f;
+    [SerializeField] private float patrolPause = 0.45f;
 
     [Header("Атака")]
-    [SerializeField] private float attackRange = 1.55f;
+    [SerializeField] private float attackRange = 2.3f;
+    [Tooltip("Скорость короткого рывка во время замаха")]
+    [SerializeField] private float attackLungeSpeed = 7f;
+    [Tooltip("На этой дистанции рывок заканчивается и гиена кусает")]
+    [SerializeField] private float attackLungeStopDistance = 1.25f;
     [Tooltip("Совпадает с началом кадра удара в клипе Attack")]
     [SerializeField] private float attackWindup = 0.16f;
     [SerializeField] private float attackActive = 0.16f;
     [SerializeField] private float attackRecovery = 0.22f;
-    [SerializeField] private float attackCooldown = 0.55f;
+    [SerializeField] private float attackCooldown = 0.4f;
     [SerializeField] private HitData biteHit;
     [SerializeField] private Hitbox hitbox;
 
@@ -52,8 +58,10 @@ public class HyenaAI : MonoBehaviour
     private Collider2D bodyCollider;
 
     private HamsterMovement[] heroes;
+    private HamsterMovement aggroTarget;
     private Vector2 home;
     private Vector2 patrolPoint;
+    private float aggroUntil;
     private float nextPatrolAt;
     private float nextAttackAt;
     private bool busy;
@@ -115,7 +123,7 @@ public class HyenaAI : MonoBehaviour
             return;
         }
 
-        HamsterMovement target = FindNearestHero();
+        HamsterMovement target = FindTarget();
 
         if (target == null)
         {
@@ -127,9 +135,19 @@ public class HyenaAI : MonoBehaviour
         float dy = Mathf.Abs(target.transform.position.y - transform.position.y);
         float distance = Mathf.Abs(dx);
 
-        if (distance > loseRange || dy > verticalTolerance)
+        if (distance > loseRange)
         {
+            ClearAggro();
             Patrol();
+            return;
+        }
+
+        // Герой временно оказался на другом ярусе — не теряем его сразу,
+        // но и не пытаемся укусить воздух. Ждём, пока он вернётся.
+        if (dy > verticalTolerance)
+        {
+            StopHorizontal();
+            PlayState(idleStateName);
             return;
         }
 
@@ -145,19 +163,41 @@ public class HyenaAI : MonoBehaviour
             return;
         }
 
-        if (distance <= detectionRange)
+        if (!Move(Mathf.Sign(dx), chaseSpeed))
         {
-            Move(Mathf.Sign(dx), chaseSpeed);
-            return;
+            // Не бежим с платформы вслед за недосягаемой целью.
+            PlayState(idleStateName);
         }
-
-        Patrol();
     }
 
-    private HamsterMovement FindNearestHero()
+    private HamsterMovement FindTarget()
     {
         if (heroes == null || heroes.Length == 0)
             heroes = FindObjectsByType<HamsterMovement>(FindObjectsSortMode.None);
+
+        // Уже выбранную цель не теряем сразу за границей обнаружения.
+        if (aggroTarget != null)
+        {
+            Health targetHealth = aggroTarget.GetComponent<Health>();
+            float dx = Mathf.Abs(aggroTarget.transform.position.x - transform.position.x);
+            float dy = Mathf.Abs(aggroTarget.transform.position.y - transform.position.y);
+            bool valid = targetHealth != null && targetHealth.IsAlive && dx <= loseRange;
+
+            if (!valid)
+            {
+                ClearAggro();
+            }
+            else
+            {
+                if (dx <= detectionRange && dy <= verticalTolerance)
+                    aggroUntil = Time.time + aggroMemory;
+
+                if (Time.time < aggroUntil)
+                    return aggroTarget;
+
+                ClearAggro();
+            }
+        }
 
         HamsterMovement nearest = null;
         float nearestDistance = float.MaxValue;
@@ -171,12 +211,24 @@ public class HyenaAI : MonoBehaviour
             if (heroHealth != null && !heroHealth.IsAlive)
                 continue;
 
-            float distance = Mathf.Abs(hero.transform.position.x - transform.position.x);
-            if (distance < nearestDistance)
+            float dx = Mathf.Abs(hero.transform.position.x - transform.position.x);
+            float dy = Mathf.Abs(hero.transform.position.y - transform.position.y);
+
+            // Не отвлекаемся на героя с другого яруса, до которого не дотянуться.
+            if (dx > detectionRange || dy > verticalTolerance)
+                continue;
+
+            if (dx < nearestDistance)
             {
-                nearestDistance = distance;
+                nearestDistance = dx;
                 nearest = hero;
             }
+        }
+
+        if (nearest != null)
+        {
+            aggroTarget = nearest;
+            aggroUntil = Time.time + aggroMemory;
         }
 
         return nearest;
@@ -203,7 +255,12 @@ public class HyenaAI : MonoBehaviour
         }
 
         Face(Mathf.Sign(dx));
-        Move(Mathf.Sign(dx), patrolSpeed);
+
+        if (!Move(Mathf.Sign(dx), patrolSpeed))
+        {
+            nextPatrolAt = Time.time + patrolPause;
+            PickPatrolPoint();
+        }
     }
 
     private void PickPatrolPoint()
@@ -212,11 +269,49 @@ public class HyenaAI : MonoBehaviour
         patrolPoint = new Vector2(x, home.y);
     }
 
-    private void Move(float direction, float speed)
+    /// <summary>Двигает гиену и возвращает false, если впереди обрыв.</summary>
+    private bool Move(float direction, float speed)
     {
+        if (!HasGroundAhead(direction))
+        {
+            StopHorizontal();
+            return false;
+        }
+
         body.linearVelocity = new Vector2(direction * speed, body.linearVelocity.y);
         Face(direction);
         PlayState(walkStateName);
+        return true;
+    }
+
+    private bool HasGroundAhead(float direction)
+    {
+        if (bodyCollider == null)
+            return true;
+
+        Bounds bounds = bodyCollider.bounds;
+        Vector2 origin = new Vector2(
+            direction > 0f ? bounds.max.x + 0.08f : bounds.min.x - 0.08f,
+            bounds.min.y + 0.08f);
+
+        RaycastHit2D[] hits = Physics2D.RaycastAll(origin, Vector2.down, 0.35f);
+
+        foreach (RaycastHit2D hit in hits)
+        {
+            if (hit.collider == null || hit.collider == bodyCollider)
+                continue;
+
+            if (hit.collider.transform.IsChildOf(transform))
+                continue;
+
+            // Герои и другие гиены не считаются полом.
+            if (hit.collider.GetComponentInParent<Health>() != null)
+                continue;
+
+            return true;
+        }
+
+        return false;
     }
 
     private void StopHorizontal()
@@ -245,13 +340,35 @@ public class HyenaAI : MonoBehaviour
         Face(Mathf.Sign(dx));
         PlayState(attackStateName, true);
 
-        yield return new WaitForSeconds(attackWindup);
-
-        // За время замаха герой мог уйти, а гиена — получить удар.
-        if (dead || reaction != null && reaction.IsStunned)
+        // Во время замаха гиена делает короткий рывок: так укус не остаётся
+        // бесполезным, если герой пытается отойти на полшага.
+        float windupTimer = 0f;
+        while (windupTimer < attackWindup)
         {
-            FinishAttack();
-            yield break;
+            if (dead || target == null || reaction != null && reaction.IsStunned)
+            {
+                FinishAttack();
+                yield break;
+            }
+
+            float distance = Mathf.Abs(target.transform.position.x - transform.position.x);
+            if (distance > attackLungeStopDistance && HasGroundAhead(facing))
+                body.linearVelocity = new Vector2(facing * attackLungeSpeed, body.linearVelocity.y);
+            else
+                StopHorizontal();
+
+            windupTimer += Time.deltaTime;
+            yield return null;
+        }
+
+        StopHorizontal();
+
+        // За время замаха цель могла перепрыгнуть на другую сторону.
+        if (target != null)
+        {
+            float biteDx = target.transform.position.x - transform.position.x;
+            if (Mathf.Abs(biteDx) > 0.01f)
+                Face(Mathf.Sign(biteDx));
         }
 
         if (hitbox != null && biteHit != null)
@@ -285,7 +402,23 @@ public class HyenaAI : MonoBehaviour
 
     private void OnDamaged(DamageInfo info)
     {
-        if (dead) return;
+        if (dead)
+            return;
+
+        // Получив удар, гиена переключается на того, кто её ударил.
+        if (info.source != null)
+        {
+            HamsterMovement attacker = info.source.GetComponentInParent<HamsterMovement>();
+            if (attacker != null)
+            {
+                Health attackerHealth = attacker.GetComponent<Health>();
+                if (attackerHealth == null || attackerHealth.IsAlive)
+                {
+                    aggroTarget = attacker;
+                    aggroUntil = Time.time + aggroMemory;
+                }
+            }
+        }
 
         PlayState(hurtStateName, true);
         hurtPlaying = true;
@@ -312,6 +445,7 @@ public class HyenaAI : MonoBehaviour
             return;
 
         dead = true;
+        ClearAggro();
 
         if (hitbox != null)
             hitbox.Deactivate();
@@ -356,6 +490,12 @@ public class HyenaAI : MonoBehaviour
         Destroy(gameObject, corpseLifetime);
     }
 
+    private void ClearAggro()
+    {
+        aggroTarget = null;
+        aggroUntil = 0f;
+    }
+
     private void PlayState(string stateName, bool restart = false)
     {
         if (animator == null || string.IsNullOrEmpty(stateName))
@@ -372,6 +512,9 @@ public class HyenaAI : MonoBehaviour
     {
         Gizmos.color = new Color(1f, 0.75f, 0.1f, 0.45f);
         Gizmos.DrawWireSphere(transform.position, detectionRange);
+
+        Gizmos.color = new Color(1f, 0.35f, 0.1f, 0.25f);
+        Gizmos.DrawWireSphere(transform.position, loseRange);
 
         Gizmos.color = new Color(1f, 0.2f, 0.1f, 0.55f);
         Gizmos.DrawWireSphere(transform.position, attackRange);
