@@ -43,7 +43,7 @@ public static class GirlSuperBuilder
 
         AssetDatabase.SaveAssets();
         AssetDatabase.Refresh();
-        Debug.Log("[GirlSuper] Готово: GirlSuperAttack, аура молний и волос, звуковая волна и SuperGirlController.");
+        Debug.Log("[GirlSuper] Готово: GirlSuperAttack, молнии вокруг Хомячихи, звуковая волна и SuperGirlController.");
     }
 
     private static Sprite[] ImportFrames()
@@ -119,81 +119,110 @@ public static class GirlSuperBuilder
 
     private static GameObject BuildAuraPrefab()
     {
-        Sprite auraSprite = LoadSprite("Assets/VFX/Art/HulkVFX/hulk_aura.png");
-        Sprite raySprite = LoadSprite("Assets/VFX/Art/HulkVFX/hulk_ray.png");
-        Sprite hairSprite = LoadSprite("Assets/VFX/Art/ThrowVFX/air_wisp.png");
-        Material auraMaterial = CreateMaterial("GirlSuperAura.mat", auraSprite.texture, new Color(0.75f, 0.25f, 1f, 1f), 2.4f);
-        Material rayMaterial = CreateMaterial("GirlSuperLightning.mat", raySprite.texture, new Color(0.80f, 0.32f, 1f, 1f), 2.8f);
+        Sprite[] boltFrames = new Sprite[8];
+        for (int i = 0; i < boltFrames.Length; i++)
+            boltFrames[i] = ImportLightningFrame("lightning_" + (i + 1).ToString("00") + ".png");
+
+        Sprite[] cageFrames = new Sprite[4];
+        for (int i = 0; i < cageFrames.Length; i++)
+            cageFrames[i] = ImportLightningFrame("lightning_" + (12 + i).ToString("00") + ".png");
 
         GameObject root = new GameObject("Girl_Super_Aura");
         GirlSuperAuraVFXController controller = root.AddComponent<GirlSuperAuraVFXController>();
 
-        SpriteRenderer aura = CreateSprite(root.transform, "Aura", auraSprite, auraMaterial, "Characters", -20, Vector3.zero, 2.2f);
+        GameObject cageObject = new GameObject("LightningCage");
+        cageObject.transform.SetParent(root.transform, false);
+        cageObject.transform.localPosition = new Vector3(0f, 0.2f, 0f);
+        cageObject.transform.localScale = new Vector3(1.55f, 1.75f, 1f);
+        SpriteRenderer cage = cageObject.AddComponent<SpriteRenderer>();
+        cage.sprite = cageFrames[0];
+        cage.sortingLayerName = "Characters";
+        cage.sortingOrder = -16;
+        cage.color = Color.white;
 
-        GameObject rayRoot = new GameObject("Lightning");
-        rayRoot.transform.SetParent(root.transform, false);
-        SpriteRenderer[] rays = new SpriteRenderer[12];
-        for (int i = 0; i < rays.Length; i++)
+        Vector3[] positions =
         {
-            float angle = i * 30f + (i % 2) * 8f;
-            float rad = angle * Mathf.Deg2Rad;
-            GameObject rayObject = new GameObject("Lightning" + (i + 1));
-            rayObject.transform.SetParent(rayRoot.transform, false);
-            rayObject.transform.localPosition = new Vector3(Mathf.Cos(rad) * 1.25f, Mathf.Sin(rad) * 1.55f, 0f);
-            rayObject.transform.localRotation = Quaternion.Euler(0f, 0f, angle + 90f);
-            rayObject.transform.localScale = new Vector3(1.35f, 0.72f, 1f);
-            SpriteRenderer ray = rayObject.AddComponent<SpriteRenderer>();
-            ray.sprite = raySprite;
-            ray.sharedMaterial = rayMaterial;
-            ray.sortingLayerName = "Characters";
-            ray.sortingOrder = -18;
-            rays[i] = ray;
-        }
-
-        SpriteRenderer[] hairStrands = new SpriteRenderer[6];
-        Vector3[] hairPositions =
-        {
-            new Vector3(-0.62f, 1.12f, 0f),
-            new Vector3(-0.84f, 0.78f, 0f),
-            new Vector3(-0.48f, 1.52f, 0f),
-            new Vector3(0.62f, 1.12f, 0f),
-            new Vector3(0.84f, 0.78f, 0f),
-            new Vector3(0.48f, 1.52f, 0f)
+            new Vector3(-0.92f, 1.22f, 0f),
+            new Vector3(-1.10f, 0.48f, 0f),
+            new Vector3(-0.68f, 1.78f, 0f),
+            new Vector3(-0.38f, -0.12f, 0f),
+            new Vector3(0.92f, 1.22f, 0f),
+            new Vector3(1.10f, 0.48f, 0f),
+            new Vector3(0.68f, 1.78f, 0f),
+            new Vector3(0.38f, -0.12f, 0f)
         };
-        float[] hairAngles = { 22f, -12f, 48f, 158f, 192f, 132f };
-        float[] hairScales = { 0.66f, 0.58f, 0.56f, 0.66f, 0.58f, 0.56f };
-        for (int i = 0; i < hairStrands.Length; i++)
+        float[] angles = { 24f, -28f, 52f, -62f, 156f, 208f, 128f, 242f };
+        float[] scales = { 0.58f, 0.48f, 0.46f, 0.42f, 0.58f, 0.48f, 0.46f, 0.42f };
+
+        SpriteRenderer[] bolts = new SpriteRenderer[positions.Length];
+        for (int i = 0; i < bolts.Length; i++)
         {
-            GameObject hairObject = new GameObject("Hair" + (i + 1));
-            hairObject.transform.SetParent(root.transform, false);
-            hairObject.transform.localPosition = hairPositions[i];
-            hairObject.transform.localRotation = Quaternion.Euler(0f, 0f, hairAngles[i]);
-            hairObject.transform.localScale = new Vector3(hairScales[i], hairScales[i] * 0.55f, 1f);
-            SpriteRenderer hair = hairObject.AddComponent<SpriteRenderer>();
-            hair.sprite = hairSprite;
-            hair.sortingLayerName = "Characters";
-            hair.sortingOrder = -19;
-            hair.color = new Color(0.55f, 0.20f, 0.34f, 0.78f);
-            hairStrands[i] = hair;
+            GameObject boltObject = new GameObject("LightningBolt" + (i + 1));
+            boltObject.transform.SetParent(root.transform, false);
+            boltObject.transform.localPosition = positions[i];
+            boltObject.transform.localRotation = Quaternion.Euler(0f, 0f, angles[i]);
+            Vector3 scale = new Vector3(scales[i], scales[i], 1f);
+            if (i >= bolts.Length / 2)
+                scale.x = -scale.x;
+            boltObject.transform.localScale = scale;
+
+            SpriteRenderer bolt = boltObject.AddComponent<SpriteRenderer>();
+            bolt.sprite = boltFrames[i % boltFrames.Length];
+            bolt.sortingLayerName = "Characters";
+            bolt.sortingOrder = -15;
+            bolt.color = Color.white;
+            bolts[i] = bolt;
         }
 
         SerializedObject so = new SerializedObject(controller);
-        so.FindProperty("aura").objectReferenceValue = aura;
-        so.FindProperty("rayRoot").objectReferenceValue = rayRoot.transform;
-        SerializedProperty rayArray = so.FindProperty("rays");
-        rayArray.arraySize = rays.Length;
-        for (int i = 0; i < rays.Length; i++)
-            rayArray.GetArrayElementAtIndex(i).objectReferenceValue = rays[i];
-        SerializedProperty hairArray = so.FindProperty("hairStrands");
-        hairArray.arraySize = hairStrands.Length;
-        for (int i = 0; i < hairStrands.Length; i++)
-            hairArray.GetArrayElementAtIndex(i).objectReferenceValue = hairStrands[i];
+        so.FindProperty("cage").objectReferenceValue = cage;
+
+        SerializedProperty cageArray = so.FindProperty("cageFrames");
+        cageArray.arraySize = cageFrames.Length;
+        for (int i = 0; i < cageFrames.Length; i++)
+            cageArray.GetArrayElementAtIndex(i).objectReferenceValue = cageFrames[i];
+
+        SerializedProperty boltArray = so.FindProperty("bolts");
+        boltArray.arraySize = bolts.Length;
+        for (int i = 0; i < bolts.Length; i++)
+            boltArray.GetArrayElementAtIndex(i).objectReferenceValue = bolts[i];
+
+        SerializedProperty frameArray = so.FindProperty("boltFrames");
+        frameArray.arraySize = boltFrames.Length;
+        for (int i = 0; i < boltFrames.Length; i++)
+            frameArray.GetArrayElementAtIndex(i).objectReferenceValue = boltFrames[i];
+
         so.FindProperty("duration").floatValue = 10f;
+        so.FindProperty("cageFrameRate").floatValue = 11f;
+        so.FindProperty("boltFrameRate").floatValue = 15f;
         so.ApplyModifiedPropertiesWithoutUndo();
 
         GameObject prefab = PrefabUtility.SaveAsPrefabAsset(root, AuraPrefabPath);
         Object.DestroyImmediate(root);
         return prefab;
+    }
+
+    private static Sprite ImportLightningFrame(string fileName)
+    {
+        string path = "Assets/VFX/Art/GirlLightningVFX/" + fileName;
+        AssetDatabase.ImportAsset(path, ImportAssetOptions.ForceUpdate);
+        TextureImporter importer = (TextureImporter)AssetImporter.GetAtPath(path);
+        importer.textureType = TextureImporterType.Sprite;
+        importer.spriteImportMode = SpriteImportMode.Single;
+        importer.spritePixelsPerUnit = 100f;
+        TextureImporterSettings settings = new TextureImporterSettings();
+        importer.ReadTextureSettings(settings);
+        settings.spriteMeshType = SpriteMeshType.FullRect;
+        settings.spriteAlignment = (int)SpriteAlignment.Center;
+        importer.SetTextureSettings(settings);
+        importer.alphaIsTransparency = true;
+        importer.mipmapEnabled = false;
+        importer.wrapMode = TextureWrapMode.Clamp;
+        importer.filterMode = FilterMode.Bilinear;
+        importer.maxTextureSize = 1024;
+        importer.textureCompression = TextureImporterCompression.Uncompressed;
+        importer.SaveAndReimport();
+        return AssetDatabase.LoadAllAssetsAtPath(path).OfType<Sprite>().FirstOrDefault();
     }
 
     private static GameObject BuildWavePrefab()
