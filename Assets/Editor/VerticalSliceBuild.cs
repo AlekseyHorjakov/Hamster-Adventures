@@ -8,8 +8,8 @@ using UnityEngine;
 public static class VerticalSliceBuild
 {
     private const string ScenePath = "Assets/Scenes/Level01_VerticalSlice.unity";
-    private const string OutputDirectory = "D:/Build/HamsterAdventures";
-    private const string OutputExe = OutputDirectory + "/HamsterAdventures.exe";
+    private const string OutputDirectory = "D:/Build/HamsterAdventures_SliceLatest";
+    private const string OutputExe = OutputDirectory + "/HamsterAdventures_SliceLatest.exe";
 
     [MenuItem("Tools/Hamster/Build Windows Vertical Slice")]
     public static void BuildWindows64()
@@ -24,6 +24,7 @@ public static class VerticalSliceBuild
 
         Directory.CreateDirectory(OutputDirectory);
 
+        PlayerSettings.bundleVersion = "slice-" + System.DateTime.Now.ToString("MMdd-HHmm");
         PlayerSettings.defaultScreenWidth = 1600;
         PlayerSettings.defaultScreenHeight = 900;
         PlayerSettings.fullScreenMode = FullScreenMode.Windowed;

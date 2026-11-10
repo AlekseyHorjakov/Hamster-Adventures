@@ -217,7 +217,7 @@ Hamster Adventures — яркий рисованный 2D-платформер �
 
 ## Вертикальный срез
 
-Готовая Windows-сборка: `D:\Build\HamsterAdventures\HamsterAdventures.exe`. Как пересобрать — [Сборка Windows.md](<Сборка Windows.md>).
+Готовая Windows-сборка: `D:\Build\HamsterAdventures_SliceLatest\HamsterAdventures_SliceLatest.exe`. Как пересобрать — [Сборка Windows.md](<Сборка Windows.md>).
 
 Первый проходимый прототип этапа: выбор режима, платформинг, манекены, арена с гиенами, мини-босс и финиш. Описание и чек-лист — в [Вертикальный срез.md](<Вертикальный срез.md>).
 

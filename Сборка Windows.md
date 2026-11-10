@@ -4,9 +4,9 @@
 
 Запуск:
 
-`D:\Build\HamsterAdventures\HamsterAdventures.exe`
+`D:\Build\HamsterAdventures_SliceLatest\HamsterAdventures_SliceLatest.exe`
 
-Сборка содержит только сцену `Assets/Scenes/Level01_VerticalSlice.unity`, запускается в окне 1600×900 и сразу показывает выбор режима:
+Сборка содержит только сцену `Assets/Scenes/Level01_VerticalSlice.unity`, запускается в окне 1600×900 и сразу показывает выбор режима. В правом нижнем углу отображается номер сборки — по нему можно убедиться, что запущена свежая версия:
 
 - `1` — соло за Хомяка;
 - `2` — соло за Хомячиху;

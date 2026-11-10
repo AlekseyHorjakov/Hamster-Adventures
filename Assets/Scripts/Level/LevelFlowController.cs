@@ -173,6 +173,8 @@ public class LevelFlowController : MonoBehaviour
         {
             GUI.Label(new Rect(24f, 18f, Screen.width - 48f, 32f), levelTitle, titleStyle);
             GUI.Label(new Rect(24f, 52f, Screen.width - 48f, 30f), ObjectiveText(), textStyle);
+            GUI.Label(new Rect(Screen.width - 300f, Screen.height - 28f, 280f, 22f),
+                "build " + Application.version, textStyle);
             return;
         }
 
