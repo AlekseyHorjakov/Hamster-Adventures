@@ -28,8 +28,8 @@ public static class PartnerThrowBuilder
 
         InputMigrationBuilder.BuildAll();
 
-        Sprite hamsterFlight = ImportSprite("Assets/Art/Hamster/Flight/Hamster_Flight.png", 400f);
-        Sprite girlFlight = ImportSprite("Assets/Art/HamsterGirl/Flight/HamsterGirl_Flight.png", 400f);
+        Sprite hamsterFlight = ImportSprite("Assets/Art/Hamster/Flight/Hamster_Flight.png", 250f);
+        Sprite girlFlight = ImportSprite("Assets/Art/HamsterGirl/Flight/HamsterGirl_Flight.png", 250f);
 
         Sprite streak = ImportSprite(ArtFolder + "/air_streak.png", 100f);
         Sprite wisp = ImportSprite(ArtFolder + "/air_wisp.png", 100f);
