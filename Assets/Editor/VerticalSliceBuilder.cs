@@ -61,9 +61,9 @@ public static class VerticalSliceBuilder
     private static void ConfigureGrounds(Scene scene)
     {
         ConfigureGround(FindRoot(scene, "Ground"), new Vector3(-10f, -0.5f, 0f), new Vector2(16f, 1f));
-        ConfigureGround(FindRoot(scene, "Ground (1)"), new Vector3(28.5f, -0.5f, 0f), new Vector2(43f, 1f));
+        ConfigureGround(FindRoot(scene, "Ground (1)"), new Vector3(27.5f, -0.5f, 0f), new Vector2(45f, 1f));
         ConfigureGround(FindRoot(scene, "Ground (2)"), new Vector3(-1f, 1.5f, 0f), new Vector2(4f, 1f));
-        ConfigureGround(FindRoot(scene, "Ground (3)"), new Vector3(3.5f, 3.5f, 0f), new Vector2(4f, 1f));
+        ConfigureGround(FindRoot(scene, "Ground (3)"), new Vector3(3.25f, 3.5f, 0f), new Vector2(4.5f, 1f));
         ConfigureGround(FindRoot(scene, "Ground (4)"), new Vector3(14f, 3.5f, 0f), new Vector2(5f, 1f));
     }
 
