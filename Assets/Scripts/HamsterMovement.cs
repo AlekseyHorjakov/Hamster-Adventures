@@ -37,6 +37,8 @@ public class HamsterMovement : MonoBehaviour
     private Camera mainCamera;
 
     private float moveInput;
+    private float runtimeSpeedMultiplier = 1f;
+    private float runtimeJumpMultiplier = 1f;
     private int jumpsRemaining;
     private bool isGrounded;
 
@@ -147,7 +149,7 @@ public class HamsterMovement : MonoBehaviour
 
         rb.linearVelocity = new Vector2(
             rb.linearVelocity.x,
-            jumpForce
+            jumpForce * runtimeJumpMultiplier
         );
 
         jumpsRemaining--;
@@ -205,6 +207,13 @@ public class HamsterMovement : MonoBehaviour
     public Rigidbody2D Body => rb;
 
     /// <summary>Запрещает или разрешает движение (используется во время удара).</summary>
+    /// <summary>Временные множители скорости и прыжка для суперформы.</summary>
+    public void SetRuntimeMovementMultipliers(float speedMultiplier, float jumpMultiplier)
+    {
+        runtimeSpeedMultiplier = Mathf.Max(0.01f, speedMultiplier);
+        runtimeJumpMultiplier = Mathf.Max(0.01f, jumpMultiplier);
+    }
+
     public void SetControlLocked(bool locked)
     {
         controlLocked = locked;
@@ -276,7 +285,7 @@ public class HamsterMovement : MonoBehaviour
         if (externalHorizontalControl)
             return;
 
-        float targetSpeed = moveInput * moveSpeed;
+        float targetSpeed = moveInput * moveSpeed * runtimeSpeedMultiplier;
 
         if (partner != null)
         {

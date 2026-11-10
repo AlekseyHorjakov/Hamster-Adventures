@@ -15,6 +15,7 @@ public class Hitbox : MonoBehaviour
     private HitData data;
     private Vector2 offset;
     private int facing = 1;
+    private float damageMultiplier = 1f;
     private bool active;
 
     public void Activate(HitData hitData, int facingDirection)
@@ -24,6 +25,11 @@ public class Hitbox : MonoBehaviour
         offset = new Vector2(hitData.hitboxOffset.x * facing, hitData.hitboxOffset.y);
         alreadyHit.Clear();
         active = true;
+    }
+
+    public void SetDamageMultiplier(float multiplier)
+    {
+        damageMultiplier = Mathf.Max(0f, multiplier);
     }
 
     public void Deactivate()
@@ -59,7 +65,7 @@ public class Hitbox : MonoBehaviour
 
             health.TakeDamage(new DamageInfo
             {
-                amount = data.damage,
+                amount = data.damage * damageMultiplier,
                 hitPoint = center,
                 knockback = new Vector2(data.knockback * facing, 0f),
                 hitStop = data.hitStop,
@@ -71,6 +77,10 @@ public class Hitbox : MonoBehaviour
             HitStop.Play(data.hitStop);
             CameraFollow.Shake(0.2f, 0.16f);
             SpawnSpark(center);
+
+            SuperMeter sourceMeter = transform.root.GetComponent<SuperMeter>();
+            if (sourceMeter != null)
+                sourceMeter.AddCharge(sourceMeter.HitChargeGain);
         }
     }
 

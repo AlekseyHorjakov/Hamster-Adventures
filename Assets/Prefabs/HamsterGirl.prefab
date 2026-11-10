@@ -252,6 +252,7 @@ GameObject:
   - component: {fileID: 1245928816243196256}
   - component: {fileID: 1341860569719620440}
   - component: {fileID: 6634242945800650396}
+  - component: {fileID: 7308987572974654370}
   m_Layer: 3
   m_Name: HamsterGirl
   m_TagString: Untagged
@@ -603,3 +604,21 @@ MonoBehaviour:
   mainRenderer: {fileID: 8917514157010363790}
   carryRenderer: {fileID: 4917555930541998772}
   horizontalMoveThreshold: 0.08
+--- !u!114 &7308987572974654370
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7313605111358297189}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d95e48ec31d08a24dbdbd91f8acff238, type: 3}
+  m_Name:
+  m_EditorClassIdentifier: Assembly-CSharp::SuperMeter
+  maxCharge: 100
+  hitChargeGain: 20
+  damageChargeGain: 10
+  startingCharge: 0
+  hamsterBar: 0
+  health: {fileID: 7773680787068127644}

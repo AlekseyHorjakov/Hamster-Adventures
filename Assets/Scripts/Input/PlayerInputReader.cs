@@ -17,6 +17,7 @@ public class PlayerInputReader : MonoBehaviour
     private InputAction attack;
     private InputAction interact;
     private InputAction throwAction;
+    private InputAction superAction;
     private InputAction any;
     private InputActionMap map;
 
@@ -28,6 +29,7 @@ public class PlayerInputReader : MonoBehaviour
     public bool AnyPressed => any != null && any.WasPressedThisFrame();
     public bool InteractHeld => interact != null && interact.IsPressed();
     public bool ThrowPressed => throwAction != null && throwAction.WasPressedThisFrame();
+    public bool SuperPressed => superAction != null && superAction.WasPressedThisFrame();
 
     private void Awake()
     {
@@ -49,6 +51,7 @@ public class PlayerInputReader : MonoBehaviour
         attack = map.FindAction("Attack", false);
         interact = map.FindAction("Interact", false);
         throwAction = map.FindAction("Throw", false);
+        superAction = map.FindAction("Super", false);
         any = map.FindAction("Any", false);
         map.Enable();
     }

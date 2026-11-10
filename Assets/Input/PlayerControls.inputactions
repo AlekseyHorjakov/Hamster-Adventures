@@ -4,12 +4,12 @@
     "maps": [
         {
             "name": "Hamster",
-            "id": "2a36d3d2-e6e0-4dce-883b-e565902dc954",
+            "id": "4707940b-2a32-4e17-8f40-7c3d69835f09",
             "actions": [
                 {
                     "name": "Move",
                     "type": "Value",
-                    "id": "467304ae-d227-4f26-87af-75467c475a08",
+                    "id": "c68a714f-7883-48a4-bf9f-341deec96937",
                     "expectedControlType": "",
                     "processors": "",
                     "interactions": "",
@@ -19,7 +19,7 @@
                 {
                     "name": "Jump",
                     "type": "Button",
-                    "id": "f986d525-2288-4947-aab8-880225d59b37",
+                    "id": "17e34787-e32d-401b-94e2-d5ba98db4c69",
                     "expectedControlType": "",
                     "processors": "",
                     "interactions": "",
@@ -29,7 +29,7 @@
                 {
                     "name": "Attack",
                     "type": "Button",
-                    "id": "3aaa4d80-8c69-469b-b5be-f7dd076f3ab8",
+                    "id": "d5843af1-d92e-4478-9657-e0f6051b9315",
                     "expectedControlType": "",
                     "processors": "",
                     "interactions": "",
@@ -39,7 +39,7 @@
                 {
                     "name": "Interact",
                     "type": "Button",
-                    "id": "dd01369d-4535-4700-814e-f58478cde59e",
+                    "id": "ec7d7d21-929e-47d0-b1f3-1563d55a4995",
                     "expectedControlType": "",
                     "processors": "",
                     "interactions": "",
@@ -49,7 +49,17 @@
                 {
                     "name": "Throw",
                     "type": "Button",
-                    "id": "771bb02b-cae9-42f3-af26-1ee061e1622d",
+                    "id": "2e8411ee-60c4-4212-a322-586292b78b58",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false,
+                    "priority": 0
+                },
+                {
+                    "name": "Super",
+                    "type": "Button",
+                    "id": "9e769a9e-53e5-464c-a100-2a6b84fa5aa2",
                     "expectedControlType": "",
                     "processors": "",
                     "interactions": "",
@@ -59,7 +69,7 @@
                 {
                     "name": "Any",
                     "type": "Button",
-                    "id": "c9394972-1ad5-4e80-bad5-e663be015fee",
+                    "id": "546fcce3-f483-403a-b350-bbaa9ba20d87",
                     "expectedControlType": "",
                     "processors": "",
                     "interactions": "",
@@ -70,7 +80,7 @@
             "bindings": [
                 {
                     "name": "1DAxis",
-                    "id": "33d97d3d-537d-4f10-9cea-614252a4706c",
+                    "id": "2224847d-e60e-48c0-929b-c1f509833234",
                     "path": "1DAxis",
                     "interactions": "",
                     "processors": "",
@@ -81,7 +91,7 @@
                 },
                 {
                     "name": "Negative",
-                    "id": "03852455-0fa4-4286-b6b2-ff798daf9109",
+                    "id": "9b200060-87e7-44b9-b790-dbd4b5100da0",
                     "path": "<Keyboard>/a",
                     "interactions": "",
                     "processors": "",
@@ -92,7 +102,7 @@
                 },
                 {
                     "name": "Positive",
-                    "id": "e162aa12-2f05-4ef6-9725-7430407320d1",
+                    "id": "5743ccd7-ffa7-4df5-ac24-08f2bf266ec0",
                     "path": "<Keyboard>/d",
                     "interactions": "",
                     "processors": "",
@@ -103,7 +113,7 @@
                 },
                 {
                     "name": "",
-                    "id": "f6431259-8ae4-45ed-8e2e-45599b352702",
+                    "id": "4f6325ee-c001-4191-ba4b-e7cc8654c908",
                     "path": "<Keyboard>/w",
                     "interactions": "",
                     "processors": "",
@@ -114,7 +124,7 @@
                 },
                 {
                     "name": "",
-                    "id": "cfaed406-2768-4f71-a333-3421063086b8",
+                    "id": "9ded6b26-6216-4d87-969a-1e782a6f9c75",
                     "path": "<Keyboard>/f",
                     "interactions": "",
                     "processors": "",
@@ -125,7 +135,7 @@
                 },
                 {
                     "name": "",
-                    "id": "1d571cbe-d774-4293-ac30-bc2de48abe84",
+                    "id": "60490b1b-92a0-4019-ba97-dbc6d2b55652",
                     "path": "<Keyboard>/e",
                     "interactions": "",
                     "processors": "",
@@ -136,7 +146,7 @@
                 },
                 {
                     "name": "",
-                    "id": "a4cb8f56-ddfc-46ee-a74f-e865cf9b4d9a",
+                    "id": "e83703e1-1311-4499-a4d5-e1c326a47a6b",
                     "path": "<Keyboard>/r",
                     "interactions": "",
                     "processors": "",
@@ -147,7 +157,18 @@
                 },
                 {
                     "name": "",
-                    "id": "7baa29f9-e9b1-403b-9138-2589342a4500",
+                    "id": "b5475e23-f33e-4b9f-9bdc-f8af26d7275a",
+                    "path": "<Keyboard>/q",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Super",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "05d25211-2064-49c0-a31b-ac888aa5b760",
                     "path": "<Keyboard>/anyKey",
                     "interactions": "",
                     "processors": "",
@@ -160,12 +181,12 @@
         },
         {
             "name": "HamsterGirl",
-            "id": "c037a26d-a7b9-4307-b2e0-0e888b16f2f7",
+            "id": "91677524-0b33-4412-8e87-e0baae7fcffb",
             "actions": [
                 {
                     "name": "Move",
                     "type": "Value",
-                    "id": "378b6219-5a16-4989-be22-3e10995d0df9",
+                    "id": "e39d3a07-5b19-40e1-aa7f-277c54ed9250",
                     "expectedControlType": "",
                     "processors": "",
                     "interactions": "",
@@ -175,7 +196,7 @@
                 {
                     "name": "Jump",
                     "type": "Button",
-                    "id": "725e6bea-492b-4fff-bdc2-2973bd0b4677",
+                    "id": "fd5e4176-fc5c-4fb1-bc98-56943b16a251",
                     "expectedControlType": "",
                     "processors": "",
                     "interactions": "",
@@ -185,7 +206,7 @@
                 {
                     "name": "Attack",
                     "type": "Button",
-                    "id": "f6e2a7c6-59a9-489f-bd36-4b6bb887bbc9",
+                    "id": "dd2902ef-511b-4ec8-8c2e-883dc7e9681e",
                     "expectedControlType": "",
                     "processors": "",
                     "interactions": "",
@@ -195,7 +216,7 @@
                 {
                     "name": "Interact",
                     "type": "Button",
-                    "id": "332164be-d888-47ea-9652-0d114636d2d8",
+                    "id": "a4792728-be18-46c8-89d5-c6ad838a7d71",
                     "expectedControlType": "",
                     "processors": "",
                     "interactions": "",
@@ -205,7 +226,17 @@
                 {
                     "name": "Throw",
                     "type": "Button",
-                    "id": "916aa110-9154-4c48-b17f-37f510b2cf1e",
+                    "id": "83413364-48b4-4de8-8640-80c59a593360",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false,
+                    "priority": 0
+                },
+                {
+                    "name": "Super",
+                    "type": "Button",
+                    "id": "eab38203-3698-4acd-a2cb-34407d75490f",
                     "expectedControlType": "",
                     "processors": "",
                     "interactions": "",
@@ -215,7 +246,7 @@
                 {
                     "name": "Any",
                     "type": "Button",
-                    "id": "3f1b5bb7-4e7a-43a0-8c82-bfde74aa1258",
+                    "id": "c311a79f-ab62-48f3-beef-fa4a229ecf54",
                     "expectedControlType": "",
                     "processors": "",
                     "interactions": "",
@@ -226,7 +257,7 @@
             "bindings": [
                 {
                     "name": "1DAxis",
-                    "id": "21ee11c9-05f7-4185-a92c-a9dd2b15d756",
+                    "id": "1a8881b2-86a5-4459-bf0a-86347123e1a5",
                     "path": "1DAxis",
                     "interactions": "",
                     "processors": "",
@@ -237,7 +268,7 @@
                 },
                 {
                     "name": "Negative",
-                    "id": "7d3707e9-a2e3-437b-9b4c-52d92bde7706",
+                    "id": "256f7cd2-58b0-435a-a753-0bf4b7994730",
                     "path": "<Keyboard>/h",
                     "interactions": "",
                     "processors": "",
@@ -248,7 +279,7 @@
                 },
                 {
                     "name": "Positive",
-                    "id": "49101b95-a0b6-4756-ac9e-24f21535b52c",
+                    "id": "0d6a1a42-1ac4-4859-8135-8cc867d41c46",
                     "path": "<Keyboard>/k",
                     "interactions": "",
                     "processors": "",
@@ -259,7 +290,7 @@
                 },
                 {
                     "name": "",
-                    "id": "31133a94-271a-4284-beb1-c389ef26bf6d",
+                    "id": "ce27bde4-5610-4c0b-96db-dd3af837ab2d",
                     "path": "<Keyboard>/u",
                     "interactions": "",
                     "processors": "",
@@ -270,7 +301,7 @@
                 },
                 {
                     "name": "",
-                    "id": "7e2d1207-4419-4121-bc80-75ab141614f8",
+                    "id": "1065a3a1-be53-4393-b4d2-d5ee907cc80f",
                     "path": "<Keyboard>/l",
                     "interactions": "",
                     "processors": "",
@@ -281,7 +312,7 @@
                 },
                 {
                     "name": "",
-                    "id": "179c16ee-c3cb-4749-97ac-459f8b92828e",
+                    "id": "6a99867c-2c0d-47a8-ae3d-7763c9f9e892",
                     "path": "<Keyboard>/o",
                     "interactions": "",
                     "processors": "",
@@ -292,7 +323,7 @@
                 },
                 {
                     "name": "",
-                    "id": "0b2254dc-9c5b-45d7-aa9c-fb1014d1d239",
+                    "id": "039b7d01-4756-4c6f-a6c6-3ceb551568a5",
                     "path": "<Keyboard>/p",
                     "interactions": "",
                     "processors": "",
@@ -303,7 +334,18 @@
                 },
                 {
                     "name": "",
-                    "id": "a4fb5e5e-6715-431a-8288-518ee2c8ff61",
+                    "id": "8225ceb1-4ceb-417e-a0cb-af1a2707ad65",
+                    "path": "<Keyboard>/i",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Super",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "19457ce0-59b9-4d76-ac31-7993219b4048",
                     "path": "<Keyboard>/anyKey",
                     "interactions": "",
                     "processors": "",

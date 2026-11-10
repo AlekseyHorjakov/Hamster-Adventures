@@ -107,6 +107,15 @@ public class AttackController : MonoBehaviour
     private Vector3 dashFrom;
     private HitData currentHit;
     private ChargeVFXController chargeVfx;
+    private bool runtimeProfileSaved;
+    private string[] savedAttackStates;
+    private float[] savedAttackDurations;
+    private float[] savedCancelTimes;
+    private float[] savedStepSpeeds;
+    private float savedMovementLock;
+    private float savedComboResetTime;
+
+    public bool IsAttacking => attacking || dashing || charging;
 
     public void Configure(HamsterMovement movementRef, Hitbox hitboxRef, HitData[] hits, string[] states)
     {
@@ -114,6 +123,74 @@ public class AttackController : MonoBehaviour
         hitbox = hitboxRef;
         comboHits = hits;
         attackStates = states;
+    }
+
+    /// <summary>Временно заменяет комбо и урон на профиль суперформы.</summary>
+    public void SetRuntimeAttackProfile(string[] states, float[] durations, float[] cancels,
+        float[] steps, float lockTime, float resetTime, float damageMultiplier)
+    {
+        if (!runtimeProfileSaved)
+        {
+            savedAttackStates = attackStates;
+            savedAttackDurations = attackDurations;
+            savedCancelTimes = cancelTimes;
+            savedStepSpeeds = stepSpeeds;
+            savedMovementLock = movementLock;
+            savedComboResetTime = comboResetTime;
+            runtimeProfileSaved = true;
+        }
+
+        attackStates = states;
+        attackDurations = durations;
+        cancelTimes = cancels;
+        stepSpeeds = steps;
+        movementLock = lockTime;
+        comboResetTime = resetTime;
+
+        if (hitbox != null)
+            hitbox.SetDamageMultiplier(damageMultiplier);
+    }
+
+    /// <summary>Возвращает обычное комбо после окончания суперформы.</summary>
+    public void RestoreRuntimeAttackProfile()
+    {
+        if (!runtimeProfileSaved)
+            return;
+
+        attackStates = savedAttackStates;
+        attackDurations = savedAttackDurations;
+        cancelTimes = savedCancelTimes;
+        stepSpeeds = savedStepSpeeds;
+        movementLock = savedMovementLock;
+        comboResetTime = savedComboResetTime;
+        runtimeProfileSaved = false;
+
+        if (hitbox != null)
+            hitbox.SetDamageMultiplier(1f);
+    }
+
+    /// <summary>Безопасно обрывает текущий удар перед сменой формы.</summary>
+    public void CancelCurrentAttack()
+    {
+        charging = false;
+        dashing = false;
+        attacking = false;
+        airAttack = false;
+        codeDrivenHitbox = false;
+
+        if (hitbox != null)
+            hitbox.Deactivate();
+
+        if (movement != null)
+        {
+            movement.SetExternalHorizontalControl(false);
+            movement.SetControlLocked(false);
+        }
+
+        if (chargeVfx != null)
+            chargeVfx.Stop();
+
+        ResetChargeTint();
     }
 
     /// <summary>Настройка удара в воздухе.</summary>
