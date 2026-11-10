@@ -116,6 +116,7 @@ public class AttackController : MonoBehaviour
     private float savedComboResetTime;
 
     public bool IsAttacking => attacking || dashing || charging;
+    public bool IsStriking => attacking || dashing;
 
     public void Configure(HamsterMovement movementRef, Hitbox hitboxRef, HitData[] hits, string[] states)
     {
@@ -123,6 +124,20 @@ public class AttackController : MonoBehaviour
         hitbox = hitboxRef;
         comboHits = hits;
         attackStates = states;
+    }
+
+    /// <summary>Множитель урона без смены анимаций комбо.</summary>
+    public void SetTemporaryDamageMultiplier(float multiplier)
+    {
+        if (hitbox != null)
+            hitbox.SetDamageMultiplier(multiplier);
+    }
+
+    /// <summary>Возвращает обычный урон после суперспособности.</summary>
+    public void ClearTemporaryDamageMultiplier()
+    {
+        if (hitbox != null)
+            hitbox.SetDamageMultiplier(1f);
     }
 
     /// <summary>Временно заменяет комбо и урон на профиль суперформы.</summary>

@@ -1,0 +1,6112 @@
+fileFormatVersion: 2
+guid: 32eeab149b713c544a201932e6bce282
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 6373845529365383832
+    second: GirlSuper_Sheet_0
+  - first:
+      213: 7441811190702971863
+    second: GirlSuper_Sheet_1
+  - first:
+      213: -7274937273801692747
+    second: GirlSuper_Sheet_2
+  - first:
+      213: -882444114332016325
+    second: GirlSuper_Sheet_3
+  - first:
+      213: -6912555073035135279
+    second: GirlSuper_Sheet_4
+  - first:
+      213: 2596567519365635216
+    second: GirlSuper_Sheet_5
+  - first:
+      213: -4087600777493712132
+    second: GirlSuper_Sheet_6
+  - first:
+      213: -2574518447123814406
+    second: GirlSuper_Sheet_7
+  - first:
+      213: -4797291955905269938
+    second: GirlSuper_Sheet_8
+  - first:
+      213: 6654899637302898357
+    second: GirlSuper_Sheet_9
+  - first:
+      213: -1198078566482628264
+    second: GirlSuper_Sheet_10
+  - first:
+      213: 7305021536554002272
+    second: GirlSuper_Sheet_11
+  - first:
+      213: 2075825519721119935
+    second: GirlSuper_Sheet_12
+  - first:
+      213: 1472791483258654666
+    second: GirlSuper_Sheet_13
+  - first:
+      213: 8089540969724137519
+    second: GirlSuper_Sheet_14
+  - first:
+      213: -2031464125806976825
+    second: GirlSuper_Sheet_15
+  - first:
+      213: 4003875504431557675
+    second: GirlSuper_Sheet_16
+  - first:
+      213: 2590542930574910681
+    second: GirlSuper_Sheet_17
+  - first:
+      213: 3264831519728038077
+    second: GirlSuper_Sheet_18
+  - first:
+      213: 4869972933442807862
+    second: GirlSuper_Sheet_19
+  - first:
+      213: 2217363806425839266
+    second: GirlSuper_Sheet_20
+  - first:
+      213: 2963453091943732922
+    second: GirlSuper_Sheet_21
+  - first:
+      213: 865547216380245558
+    second: GirlSuper_Sheet_22
+  - first:
+      213: -3099310586440834080
+    second: GirlSuper_Sheet_23
+  - first:
+      213: -2763574795852250739
+    second: GirlSuper_Sheet_24
+  - first:
+      213: -7401811476305359219
+    second: GirlSuper_Sheet_25
+  - first:
+      213: -5716053167328437307
+    second: GirlSuper_Sheet_26
+  - first:
+      213: -4988935089845295091
+    second: GirlSuper_Sheet_27
+  - first:
+      213: -2377856167762087522
+    second: GirlSuper_Sheet_28
+  - first:
+      213: 7750983254926334690
+    second: GirlSuper_Sheet_29
+  - first:
+      213: 8978087124559109358
+    second: GirlSuper_Sheet_30
+  - first:
+      213: -1614860482105193260
+    second: GirlSuper_Sheet_31
+  - first:
+      213: 4746972966374683104
+    second: GirlSuper_Sheet_32
+  - first:
+      213: 133976685037141749
+    second: GirlSuper_Sheet_33
+  - first:
+      213: -4632846426749059652
+    second: GirlSuper_Sheet_34
+  - first:
+      213: -3731271901386443048
+    second: GirlSuper_Sheet_35
+  - first:
+      213: -6642388612321588196
+    second: GirlSuper_Sheet_36
+  - first:
+      213: -602540187926972600
+    second: GirlSuper_Sheet_37
+  - first:
+      213: 4992075883850278754
+    second: GirlSuper_Sheet_38
+  - first:
+      213: 317450349090685916
+    second: GirlSuper_Sheet_39
+  - first:
+      213: -4952132375092808384
+    second: GirlSuper_Sheet_40
+  - first:
+      213: -7947422847267064573
+    second: GirlSuper_Sheet_41
+  - first:
+      213: 752969757199463686
+    second: GirlSuper_Sheet_42
+  - first:
+      213: -337348179340429645
+    second: GirlSuper_Sheet_43
+  - first:
+      213: 5397744430678021783
+    second: GirlSuper_Sheet_44
+  - first:
+      213: -3350386305885872114
+    second: GirlSuper_Sheet_45
+  - first:
+      213: -7000401212305793808
+    second: GirlSuper_Sheet_46
+  - first:
+      213: -2949589191256221406
+    second: GirlSuper_Sheet_47
+  - first:
+      213: 8081202970601661881
+    second: GirlSuper_Sheet_48
+  - first:
+      213: -5824464591914727928
+    second: GirlSuper_Sheet_49
+  - first:
+      213: -5489474894934565984
+    second: GirlSuper_Sheet_50
+  - first:
+      213: -1408186223093574188
+    second: GirlSuper_Sheet_51
+  - first:
+      213: 6263465562683371238
+    second: GirlSuper_Sheet_52
+  - first:
+      213: 5548223465813752498
+    second: GirlSuper_Sheet_53
+  - first:
+      213: 3883342559167384378
+    second: GirlSuper_Sheet_54
+  - first:
+      213: -7077418076880130567
+    second: GirlSuper_Sheet_55
+  - first:
+      213: -6229075033607129963
+    second: GirlSuper_Sheet_56
+  - first:
+      213: -7116107060509590905
+    second: GirlSuper_Sheet_57
+  - first:
+      213: -5761832720576022840
+    second: GirlSuper_Sheet_58
+  - first:
+      213: 6133306654880712765
+    second: GirlSuper_Sheet_59
+  - first:
+      213: 7007224220569526151
+    second: GirlSuper_Sheet_60
+  - first:
+      213: 3141852533806416285
+    second: GirlSuper_Sheet_61
+  - first:
+      213: 9167958307106815401
+    second: GirlSuper_Sheet_62
+  - first:
+      213: 7498985814894310150
+    second: GirlSuper_Sheet_63
+  - first:
+      213: 908249233868117645
+    second: GirlSuper_Sheet_64
+  - first:
+      213: 1206627726212133918
+    second: GirlSuper_Sheet_65
+  - first:
+      213: 5718621248862159572
+    second: GirlSuper_Sheet_66
+  - first:
+      213: -6024481957720922110
+    second: GirlSuper_Sheet_67
+  - first:
+      213: -4710320748456898442
+    second: GirlSuper_Sheet_68
+  - first:
+      213: 960138768617611909
+    second: GirlSuper_Sheet_69
+  - first:
+      213: 2179317777112232008
+    second: GirlSuper_Sheet_70
+  - first:
+      213: -1876583261095082501
+    second: GirlSuper_Sheet_71
+  - first:
+      213: -4317847450281611502
+    second: GirlSuper_Sheet_72
+  - first:
+      213: 6182204204809367240
+    second: GirlSuper_Sheet_73
+  - first:
+      213: 2556850293359613453
+    second: GirlSuper_Sheet_74
+  - first:
+      213: -5427039172697787968
+    second: GirlSuper_Sheet_75
+  - first:
+      213: 8604190038420466221
+    second: GirlSuper_Sheet_76
+  - first:
+      213: 979874427012916785
+    second: GirlSuper_Sheet_77
+  - first:
+      213: -8781110771259662997
+    second: GirlSuper_Sheet_78
+  - first:
+      213: 6323306770490693480
+    second: GirlSuper_Sheet_79
+  - first:
+      213: 7768229344115303018
+    second: GirlSuper_Sheet_80
+  - first:
+      213: 1949528834865632935
+    second: GirlSuper_Sheet_81
+  - first:
+      213: 3616455530943939876
+    second: GirlSuper_Sheet_82
+  - first:
+      213: -8724652457140914195
+    second: GirlSuper_Sheet_83
+  - first:
+      213: -2324152270575057493
+    second: GirlSuper_Sheet_84
+  - first:
+      213: 221383169392458232
+    second: GirlSuper_Sheet_85
+  - first:
+      213: 2648809856119004080
+    second: GirlSuper_Sheet_86
+  - first:
+      213: -4455080004323557328
+    second: GirlSuper_Sheet_87
+  - first:
+      213: -1586156928446380439
+    second: GirlSuper_Sheet_88
+  - first:
+      213: 4358157398198828402
+    second: GirlSuper_Sheet_89
+  - first:
+      213: 5126888035224761238
+    second: GirlSuper_Sheet_90
+  - first:
+      213: -5870246274536806334
+    second: GirlSuper_Sheet_91
+  - first:
+      213: -9003822719981016696
+    second: GirlSuper_Sheet_92
+  - first:
+      213: 8354318500128842660
+    second: GirlSuper_Sheet_93
+  - first:
+      213: -3653996779162715609
+    second: GirlSuper_Sheet_94
+  - first:
+      213: -3527150177656204496
+    second: GirlSuper_Sheet_95
+  - first:
+      213: -9218330051303572238
+    second: GirlSuper_Sheet_96
+  - first:
+      213: -3158826612949119865
+    second: GirlSuper_Sheet_97
+  - first:
+      213: 763608616947603867
+    second: GirlSuper_Sheet_98
+  - first:
+      213: 7261218743688765179
+    second: GirlSuper_Sheet_99
+  - first:
+      213: 7239759561409561779
+    second: GirlSuper_Sheet_100
+  - first:
+      213: -5505138233884472373
+    second: GirlSuper_Sheet_101
+  - first:
+      213: -7067860970032950779
+    second: GirlSuper_Sheet_102
+  - first:
+      213: -3991387906328837381
+    second: GirlSuper_Sheet_103
+  - first:
+      213: -7208584400250608324
+    second: GirlSuper_Sheet_104
+  - first:
+      213: 6900524741079822061
+    second: GirlSuper_Sheet_105
+  - first:
+      213: -1781260403415059900
+    second: GirlSuper_Sheet_106
+  - first:
+      213: 1653957046028281793
+    second: GirlSuper_Sheet_107
+  - first:
+      213: 2656706765202631747
+    second: GirlSuper_Sheet_108
+  - first:
+      213: 5433414710357649272
+    second: GirlSuper_Sheet_109
+  - first:
+      213: 6342299633529252944
+    second: GirlSuper_Sheet_110
+  - first:
+      213: 524139725553181569
+    second: GirlSuper_Sheet_111
+  - first:
+      213: 7307685599817083369
+    second: GirlSuper_Sheet_112
+  - first:
+      213: 6996927042014811119
+    second: GirlSuper_Sheet_113
+  - first:
+      213: -7184786426468681364
+    second: GirlSuper_Sheet_114
+  - first:
+      213: -1754242257265143612
+    second: GirlSuper_Sheet_115
+  - first:
+      213: -6765344383877833853
+    second: GirlSuper_Sheet_116
+  - first:
+      213: -3214711476626921632
+    second: GirlSuper_Sheet_117
+  - first:
+      213: 1881095914363562388
+    second: GirlSuper_Sheet_118
+  - first:
+      213: -3267884186594367670
+    second: GirlSuper_Sheet_119
+  - first:
+      213: 6707918606670819872
+    second: GirlSuper_Sheet_120
+  - first:
+      213: -2441659887502152386
+    second: GirlSuper_Sheet_121
+  - first:
+      213: 9061640602573902379
+    second: GirlSuper_Sheet_122
+  - first:
+      213: -6233605525063720529
+    second: GirlSuper_Sheet_123
+  - first:
+      213: 3844514810489740495
+    second: GirlSuper_Sheet_124
+  - first:
+      213: 7909545410784653752
+    second: GirlSuper_Sheet_125
+  - first:
+      213: -8506960562921420949
+    second: GirlSuper_Sheet_126
+  - first:
+      213: -8102750505523717872
+    second: GirlSuper_Sheet_127
+  - first:
+      213: 8038575465508987861
+    second: GirlSuper_Sheet_128
+  - first:
+      213: 5104928036559488715
+    second: GirlSuper_Sheet_129
+  - first:
+      213: 1828711398674610670
+    second: GirlSuper_Sheet_130
+  - first:
+      213: 3165626934503674581
+    second: GirlSuper_Sheet_131
+  - first:
+      213: 6819829123360850870
+    second: GirlSuper_Sheet_132
+  - first:
+      213: 9146634610393151578
+    second: GirlSuper_Sheet_133
+  - first:
+      213: 4698754482024410457
+    second: GirlSuper_Sheet_134
+  - first:
+      213: 7099102756810539436
+    second: GirlSuper_Sheet_135
+  - first:
+      213: -3075876223630553659
+    second: GirlSuper_Sheet_136
+  - first:
+      213: 8387729148980561494
+    second: GirlSuper_Sheet_137
+  - first:
+      213: -30162957634119951
+    second: GirlSuper_Sheet_138
+  - first:
+      213: -3683355634751292069
+    second: GirlSuper_Sheet_139
+  - first:
+      213: -2666132713803898735
+    second: GirlSuper_Sheet_140
+  - first:
+      213: 8652293928947232220
+    second: GirlSuper_Sheet_141
+  - first:
+      213: 698897818939393444
+    second: GirlSuper_Sheet_142
+  - first:
+      213: -5428161769572457240
+    second: GirlSuper_Sheet_143
+  - first:
+      213: 1557482841780485406
+    second: GirlSuper_Sheet_144
+  - first:
+      213: -5203925700096254461
+    second: GirlSuper_Sheet_145
+  - first:
+      213: -4618385977094846678
+    second: GirlSuper_Sheet_146
+  - first:
+      213: 6173265421479565800
+    second: GirlSuper_Sheet_147
+  - first:
+      213: 4941343566725224049
+    second: GirlSuper_Sheet_148
+  - first:
+      213: -3086732371988824081
+    second: GirlSuper_Sheet_149
+  - first:
+      213: -5761882426892523555
+    second: GirlSuper_Sheet_150
+  - first:
+      213: -6446413427186165600
+    second: GirlSuper_Sheet_151
+  - first:
+      213: 2766350456633446554
+    second: GirlSuper_Sheet_152
+  - first:
+      213: 7203366357241911917
+    second: GirlSuper_Sheet_153
+  - first:
+      213: 2014203055577372631
+    second: GirlSuper_Sheet_154
+  - first:
+      213: -3786264100235123657
+    second: GirlSuper_Sheet_155
+  - first:
+      213: 5300666611644210649
+    second: GirlSuper_Sheet_156
+  - first:
+      213: 7008531088757733415
+    second: GirlSuper_Sheet_157
+  - first:
+      213: -6140621279378976158
+    second: GirlSuper_Sheet_158
+  - first:
+      213: -1678457691354184406
+    second: GirlSuper_Sheet_159
+  - first:
+      213: 8074823963957644803
+    second: GirlSuper_Sheet_160
+  - first:
+      213: -6196446610987033902
+    second: GirlSuper_Sheet_161
+  - first:
+      213: -5851931514142847661
+    second: GirlSuper_Sheet_162
+  - first:
+      213: -5090443890320613911
+    second: GirlSuper_Sheet_163
+  - first:
+      213: 3969148691916118300
+    second: GirlSuper_Sheet_164
+  - first:
+      213: -1794426925123304161
+    second: GirlSuper_Sheet_165
+  - first:
+      213: -120227098975060383
+    second: GirlSuper_Sheet_166
+  - first:
+      213: -5090920613883204983
+    second: GirlSuper_Sheet_167
+  - first:
+      213: 4733103250065165596
+    second: GirlSuper_Sheet_168
+  - first:
+      213: 5522471995347967581
+    second: GirlSuper_Sheet_169
+  - first:
+      213: -5487328413137170175
+    second: GirlSuper_Sheet_170
+  - first:
+      213: 5001087820256960921
+    second: GirlSuper_Sheet_171
+  - first:
+      213: -1459205699031532920
+    second: GirlSuper_Sheet_172
+  - first:
+      213: 2268717519125471312
+    second: GirlSuper_Sheet_173
+  - first:
+      213: 5806872069844767427
+    second: GirlSuper_Sheet_174
+  - first:
+      213: -800051132196268066
+    second: GirlSuper_Sheet_175
+  - first:
+      213: 7793398350888239142
+    second: GirlSuper_Sheet_176
+  - first:
+      213: 8937148102865155332
+    second: GirlSuper_Sheet_177
+  - first:
+      213: -8022631981291139597
+    second: GirlSuper_Sheet_178
+  - first:
+      213: 5277371666822376453
+    second: GirlSuper_Sheet_179
+  - first:
+      213: 5237739896535305741
+    second: GirlSuper_Sheet_180
+  - first:
+      213: -1800116950633284138
+    second: GirlSuper_Sheet_181
+  - first:
+      213: 6988912560014125324
+    second: GirlSuper_Sheet_182
+  - first:
+      213: -4714583619319482852
+    second: GirlSuper_Sheet_183
+  - first:
+      213: -5167262803488912159
+    second: GirlSuper_Sheet_184
+  - first:
+      213: -7442115556172736581
+    second: GirlSuper_Sheet_185
+  - first:
+      213: -421681014886290152
+    second: GirlSuper_Sheet_186
+  - first:
+      213: -3114591382264197285
+    second: GirlSuper_Sheet_187
+  - first:
+      213: 4687919631968642333
+    second: GirlSuper_Sheet_188
+  - first:
+      213: 5283432913981375360
+    second: GirlSuper_Sheet_189
+  - first:
+      213: 3795853734186251118
+    second: GirlSuper_Sheet_190
+  - first:
+      213: -1010978453319899606
+    second: GirlSuper_Sheet_191
+  - first:
+      213: 5886016822341009569
+    second: GirlSuper_Sheet_192
+  - first:
+      213: -7571170344697784323
+    second: GirlSuper_Sheet_193
+  - first:
+      213: 900299260072742256
+    second: GirlSuper_Sheet_194
+  - first:
+      213: 1017110790001627732
+    second: GirlSuper_Sheet_195
+  - first:
+      213: -6392025643985761617
+    second: GirlSuper_Sheet_196
+  - first:
+      213: 8157925609052596997
+    second: GirlSuper_Sheet_197
+  - first:
+      213: 7974873565972627558
+    second: GirlSuper_Sheet_198
+  - first:
+      213: 9056662230538745390
+    second: GirlSuper_Sheet_199
+  - first:
+      213: -4530043812128795519
+    second: GirlSuper_Sheet_200
+  - first:
+      213: -8005320307015774056
+    second: GirlSuper_Sheet_201
+  - first:
+      213: -5686016358056687934
+    second: GirlSuper_Sheet_202
+  - first:
+      213: 3941407013782524870
+    second: GirlSuper_Sheet_203
+  - first:
+      213: -8728274951575163380
+    second: GirlSuper_Sheet_204
+  - first:
+      213: 9141787324478805173
+    second: GirlSuper_Sheet_205
+  - first:
+      213: -8820544575027425997
+    second: GirlSuper_Sheet_206
+  - first:
+      213: 5166997158218846675
+    second: GirlSuper_Sheet_207
+  - first:
+      213: 2054750857015605248
+    second: GirlSuper_Sheet_208
+  - first:
+      213: -4164971409219965606
+    second: GirlSuper_Sheet_209
+  - first:
+      213: -4219260812730734489
+    second: GirlSuper_Sheet_210
+  - first:
+      213: 8691554328824624970
+    second: GirlSuper_Sheet_211
+  - first:
+      213: 35756940040683050
+    second: GirlSuper_Sheet_212
+  - first:
+      213: -6290552116366382255
+    second: GirlSuper_Sheet_213
+  - first:
+      213: 2820313872222089845
+    second: GirlSuper_Sheet_214
+  - first:
+      213: -8111784625161700848
+    second: GirlSuper_Sheet_215
+  - first:
+      213: 2287274997345361558
+    second: GirlSuper_Sheet_216
+  - first:
+      213: 2607229957366405802
+    second: GirlSuper_Sheet_217
+  - first:
+      213: -4187661889662280886
+    second: GirlSuper_Sheet_218
+  - first:
+      213: -4434240773579483007
+    second: GirlSuper_Sheet_219
+  - first:
+      213: -1527828545978316482
+    second: GirlSuper_Sheet_220
+  - first:
+      213: 8759724527947706629
+    second: GirlSuper_Sheet_221
+  - first:
+      213: -7711587698967373078
+    second: GirlSuper_Sheet_222
+  - first:
+      213: -7685912892779630021
+    second: GirlSuper_Sheet_223
+  - first:
+      213: -1933442860979831062
+    second: GirlSuper_Sheet_224
+  - first:
+      213: 3929756170934748642
+    second: GirlSuper_Sheet_225
+  - first:
+      213: -3586833173541468353
+    second: GirlSuper_Sheet_226
+  - first:
+      213: -4394420943946282908
+    second: GirlSuper_Sheet_227
+  - first:
+      213: -7488487047950494015
+    second: GirlSuper_Sheet_228
+  - first:
+      213: 1576187971891733737
+    second: GirlSuper_Sheet_229
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationMethod: 0
+  spriteTessellationDetail: -1
+  spriteGeometrySubdivision: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: GirlSuper_Sheet_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 2172
+        height: 718
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 89a09072db2747850800000000000000
+      internalID: 6373845529365383832
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GirlSuper_Sheet_1
+      rect:
+        serializedVersion: 2
+        x: 529
+        y: 669
+        width: 53
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7db906b79df964760800000000000000
+      internalID: 7441811190702971863
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GirlSuper_Sheet_2
+      rect:
+        serializedVersion: 2
+        x: 670
+        y: 707
+        width: 23
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5b92dcff71b3a0b90800000000000000
+      internalID: -7274937273801692747
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GirlSuper_Sheet_3
+      rect:
+        serializedVersion: 2
+        x: 734
+        y: 705
+        width: 9
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b312b1fd0cde0c3f0800000000000000
+      internalID: -882444114332016325
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GirlSuper_Sheet_4
+      rect:
+        serializedVersion: 2
+        x: 742
+        y: 707
+        width: 7
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1d69a6d09cba110a0800000000000000
+      internalID: -6912555073035135279
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GirlSuper_Sheet_5
+      rect:
+        serializedVersion: 2
+        x: 746
+        y: 707
+        width: 29
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 09c1b13d66cd80420800000000000000
+      internalID: 2596567519365635216
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GirlSuper_Sheet_6
+      rect:
+        serializedVersion: 2
+        x: 746
+        y: 705
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cf270e9ffbce547c0800000000000000
+      internalID: -4087600777493712132
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GirlSuper_Sheet_7
+      rect:
+        serializedVersion: 2
+        x: 777
+        y: 711
+        width: 8
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: af7ae7bdc19754cd0800000000000000
+      internalID: -2574518447123814406
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GirlSuper_Sheet_8
+      rect:
+        serializedVersion: 2
+        x: 827
+        y: 711
+        width: 9
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e4f6d6c12689c6db0800000000000000
+      internalID: -4797291955905269938
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GirlSuper_Sheet_9
+      rect:
+        serializedVersion: 2
+        x: 973
+        y: 709
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5bea05106f3fa5c50800000000000000
+      internalID: 6654899637302898357
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GirlSuper_Sheet_10
+      rect:
+        serializedVersion: 2
+        x: 1456
+        y: 703
+        width: 15
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8513bc734e19f5fe0800000000000000
+      internalID: -1198078566482628264
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GirlSuper_Sheet_11
+      rect:
+        serializedVersion: 2
+        x: 406
+        y: 689
+        width: 46
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 06721e24266a06560800000000000000
+      internalID: 7305021536554002272
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GirlSuper_Sheet_12
+      rect:
+        serializedVersion: 2
+        x: 1448
+        y: 699
+        width: 7
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fb00baedf40decc10800000000000000
+      internalID: 2075825519721119935
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GirlSuper_Sheet_13
+      rect:
+        serializedVersion: 2
+        x: 1953
+        y: 672
+        width: 52
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: acf4ad30d08607410800000000000000
+      internalID: 1472791483258654666
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GirlSuper_Sheet_14
+      rect:
+        serializedVersion: 2
+        x: 489
+        y: 152
+        width: 9
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f205068d6a2d34070800000000000000
+      internalID: 8089540969724137519
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GirlSuper_Sheet_15
+      rect:
+        serializedVersion: 2
+        x: 861
+        y: 154
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7c06357042acec3e0800000000000000
+      internalID: -2031464125806976825
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GirlSuper_Sheet_16
+      rect:
+        serializedVersion: 2
+        x: 1205
+        y: 83
+        width: 43
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b2ce78ece8f909730800000000000000
+      internalID: 4003875504431557675
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GirlSuper_Sheet_17
+      rect:
+        serializedVersion: 2
+        x: 1233
+        y: 150
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9d42150f11573f320800000000000000
+      internalID: 2590542930574910681
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GirlSuper_Sheet_18
+      rect:
+        serializedVersion: 2
+        x: 1245
+        y: 141
+        width: 9
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: db073e828f20f4d20800000000000000
+      internalID: 3264831519728038077
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GirlSuper_Sheet_19
+      rect:
+        serializedVersion: 2
+        x: 1438
+        y: 152
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 63820aba49e959340800000000000000
+      internalID: 4869972933442807862
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GirlSuper_Sheet_20
+      rect:
+        serializedVersion: 2
+        x: 1524
+        y: 150
+        width: 12
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2a6f1d342a8a5ce10800000000000000
+      internalID: 2217363806425839266
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GirlSuper_Sheet_21
+      rect:
+        serializedVersion: 2
+        x: 1579
+        y: 140
+        width: 13
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ab6d6d5d2ec402920800000000000000
+      internalID: 2963453091943732922
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GirlSuper_Sheet_22
+      rect:
+        serializedVersion: 2
+        x: 1591
+        y: 138
+        width: 9
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6363ca08b9a030c00800000000000000
+      internalID: 865547216380245558
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GirlSuper_Sheet_23
+      rect:
+        serializedVersion: 2
+        x: 1709
+        y: 143
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0e3269641790df4d0800000000000000
+      internalID: -3099310586440834080
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GirlSuper_Sheet_24
+      rect:
+        serializedVersion: 2
+        x: 143
+        y: 134
+        width: 9
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d81010f7d5fc5a9d0800000000000000
+      internalID: -2763574795852250739
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GirlSuper_Sheet_25
+      rect:
+        serializedVersion: 2
+        x: 306
+        y: 136
+        width: 7
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d8ec864cdab774990800000000000000
+      internalID: -7401811476305359219
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GirlSuper_Sheet_26
+      rect:
+        serializedVersion: 2
+        x: 412
+        y: 114
+        width: 50
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5cb5424edef7ca0b0800000000000000
+      internalID: -5716053167328437307
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GirlSuper_Sheet_27
+      rect:
+        serializedVersion: 2
+        x: 961
+        y: 132
+        width: 9
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d082a42e7fdb3cab0800000000000000
+      internalID: -4988935089845295091
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GirlSuper_Sheet_28
+      rect:
+        serializedVersion: 2
+        x: 967
+        y: 114
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e91b191f968200fd0800000000000000
+      internalID: -2377856167762087522
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GirlSuper_Sheet_29
+      rect:
+        serializedVersion: 2
+        x: 1534
+        y: 146
+        width: 10
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2ea92e13436019b60800000000000000
+      internalID: 7750983254926334690
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GirlSuper_Sheet_30
+      rect:
+        serializedVersion: 2
+        x: 1542
+        y: 146
+        width: 10
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eec9addfba2989c70800000000000000
+      internalID: 8978087124559109358
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GirlSuper_Sheet_31
+      rect:
+        serializedVersion: 2
+        x: 1703
+        y: 141
+        width: 7
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4dccd4a82fcd699e0800000000000000
+      internalID: -1614860482105193260
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GirlSuper_Sheet_32
+      rect:
+        serializedVersion: 2
+        x: 151
+        y: 131
+        width: 9
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0e1352b23c2a0e140800000000000000
+      internalID: 4746972966374683104
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GirlSuper_Sheet_33
+      rect:
+        serializedVersion: 2
+        x: 370
+        y: 126
+        width: 7
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5feb2dfc51bfbd100800000000000000
+      internalID: 133976685037141749
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GirlSuper_Sheet_34
+      rect:
+        serializedVersion: 2
+        x: 375
+        y: 122
+        width: 14
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cbd3fa288b2d4bfb0800000000000000
+      internalID: -4632846426749059652
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GirlSuper_Sheet_35
+      rect:
+        serializedVersion: 2
+        x: 408
+        y: 128
+        width: 6
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8d6f67d89fbd73cc0800000000000000
+      internalID: -3731271901386443048
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GirlSuper_Sheet_36
+      rect:
+        serializedVersion: 2
+        x: 455
+        y: 126
+        width: 9
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c1cc87effbe71d3a0800000000000000
+      internalID: -6642388612321588196
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GirlSuper_Sheet_37
+      rect:
+        serializedVersion: 2
+        x: 461
+        y: 132
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 84737b734e853a7f0800000000000000
+      internalID: -602540187926972600
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GirlSuper_Sheet_38
+      rect:
+        serializedVersion: 2
+        x: 473
+        y: 128
+        width: 9
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 267a0b4319a674540800000000000000
+      internalID: 4992075883850278754
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GirlSuper_Sheet_39
+      rect:
+        serializedVersion: 2
+        x: 627
+        y: 136
+        width: 8
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cd3cf5b196fc76400800000000000000
+      internalID: 317450349090685916
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GirlSuper_Sheet_40
+      rect:
+        serializedVersion: 2
+        x: 941
+        y: 116
+        width: 27
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 045b1e5a7dd764bb0800000000000000
+      internalID: -4952132375092808384
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GirlSuper_Sheet_41
+      rect:
+        serializedVersion: 2
+        x: 987
+        y: 134
+        width: 8
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 305b2d4170515b190800000000000000
+      internalID: -7947422847267064573
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GirlSuper_Sheet_42
+      rect:
+        serializedVersion: 2
+        x: 1365
+        y: 132
+        width: 12
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6057c783106137a00800000000000000
+      internalID: 752969757199463686
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GirlSuper_Sheet_43
+      rect:
+        serializedVersion: 2
+        x: 1398
+        y: 126
+        width: 17
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3b6f9c44e9f715bf0800000000000000
+      internalID: -337348179340429645
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GirlSuper_Sheet_44
+      rect:
+        serializedVersion: 2
+        x: 1649
+        y: 118
+        width: 15
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 79618e216f3a8ea40800000000000000
+      internalID: 5397744430678021783
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GirlSuper_Sheet_45
+      rect:
+        serializedVersion: 2
+        x: 1663
+        y: 103
+        width: 17
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e00e659e7690181d0800000000000000
+      internalID: -3350386305885872114
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GirlSuper_Sheet_46
+      rect:
+        serializedVersion: 2
+        x: 1679
+        y: 124
+        width: 11
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0fc9c47ef2499de90800000000000000
+      internalID: -7000401212305793808
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GirlSuper_Sheet_47
+      rect:
+        serializedVersion: 2
+        x: 1703
+        y: 134
+        width: 12
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 22957d51244f017d0800000000000000
+      internalID: -2949589191256221406
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GirlSuper_Sheet_48
+      rect:
+        serializedVersion: 2
+        x: 394
+        y: 124
+        width: 9
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9b52b842943362070800000000000000
+      internalID: 8081202970601661881
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GirlSuper_Sheet_49
+      rect:
+        serializedVersion: 2
+        x: 603
+        y: 112
+        width: 11
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 806051020585b2fa0800000000000000
+      internalID: -5824464591914727928
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GirlSuper_Sheet_50
+      rect:
+        serializedVersion: 2
+        x: 617
+        y: 110
+        width: 9
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0ab1004eaa771d3b0800000000000000
+      internalID: -5489474894934565984
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GirlSuper_Sheet_51
+      rect:
+        serializedVersion: 2
+        x: 818
+        y: 112
+        width: 25
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4d598ea471e157ce0800000000000000
+      internalID: -1408186223093574188
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GirlSuper_Sheet_52
+      rect:
+        serializedVersion: 2
+        x: 1420
+        y: 116
+        width: 7
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6ee62a67ebc4ce650800000000000000
+      internalID: 6263465562683371238
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GirlSuper_Sheet_53
+      rect:
+        serializedVersion: 2
+        x: 1542
+        y: 120
+        width: 6
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2bab05ea8df3ffc40800000000000000
+      internalID: 5548223465813752498
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GirlSuper_Sheet_54
+      rect:
+        serializedVersion: 2
+        x: 1547
+        y: 124
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a3b04549b7764e530800000000000000
+      internalID: 3883342559167384378
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GirlSuper_Sheet_55
+      rect:
+        serializedVersion: 2
+        x: 263
+        y: 90
+        width: 28
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9fda1a0c1c5f7cd90800000000000000
+      internalID: -7077418076880130567
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GirlSuper_Sheet_56
+      rect:
+        serializedVersion: 2
+        x: 338
+        y: 101
+        width: 15
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 594b79e8241ed89a0800000000000000
+      internalID: -6229075033607129963
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GirlSuper_Sheet_57
+      rect:
+        serializedVersion: 2
+        x: 437
+        y: 78
+        width: 37
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 78a3daac4528e3d90800000000000000
+      internalID: -7116107060509590905
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GirlSuper_Sheet_58
+      rect:
+        serializedVersion: 2
+        x: 473
+        y: 112
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8c6f7da0babd900b0800000000000000
+      internalID: -5761832720576022840
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GirlSuper_Sheet_59
+      rect:
+        serializedVersion: 2
+        x: 625
+        y: 110
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d3844be28e1ed1550800000000000000
+      internalID: 6133306654880712765
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GirlSuper_Sheet_60
+      rect:
+        serializedVersion: 2
+        x: 873
+        y: 43
+        width: 49
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 78f5f808d49ae3160800000000000000
+      internalID: 7007224220569526151
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GirlSuper_Sheet_61
+      rect:
+        serializedVersion: 2
+        x: 931
+        y: 95
+        width: 17
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d914136bb3a1a9b20800000000000000
+      internalID: 3141852533806416285
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GirlSuper_Sheet_62
+      rect:
+        serializedVersion: 2
+        x: 943
+        y: 116
+        width: 9
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9ad71b2a1812b3f70800000000000000
+      internalID: 9167958307106815401
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GirlSuper_Sheet_63
+      rect:
+        serializedVersion: 2
+        x: 989
+        y: 114
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 603f7780edfb11860800000000000000
+      internalID: 7498985814894310150
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GirlSuper_Sheet_64
+      rect:
+        serializedVersion: 2
+        x: 1134
+        y: 74
+        width: 45
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d86da38bddfba9c00800000000000000
+      internalID: 908249233868117645
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GirlSuper_Sheet_65
+      rect:
+        serializedVersion: 2
+        x: 1166
+        y: 63
+        width: 56
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e14f205268dceb010800000000000000
+      internalID: 1206627726212133918
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GirlSuper_Sheet_66
+      rect:
+        serializedVersion: 2
+        x: 1424
+        y: 63
+        width: 31
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4d20e6f2abf9c5f40800000000000000
+      internalID: 5718621248862159572
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GirlSuper_Sheet_67
+      rect:
+        serializedVersion: 2
+        x: 1546
+        y: 112
+        width: 12
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2086b4a149db46ca0800000000000000
+      internalID: -6024481957720922110
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GirlSuper_Sheet_68
+      rect:
+        serializedVersion: 2
+        x: 2025
+        y: 91
+        width: 23
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 67013125c3491aeb0800000000000000
+      internalID: -4710320748456898442
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GirlSuper_Sheet_69
+      rect:
+        serializedVersion: 2
+        x: 123
+        y: 71
+        width: 57
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 582a88e7f19135d00800000000000000
+      internalID: 960138768617611909
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GirlSuper_Sheet_70
+      rect:
+        serializedVersion: 2
+        x: 193
+        y: 90
+        width: 15
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 840f775c8fd7e3e10800000000000000
+      internalID: 2179317777112232008
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GirlSuper_Sheet_71
+      rect:
+        serializedVersion: 2
+        x: 380
+        y: 75
+        width: 31
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bf5cbf2777905f5e0800000000000000
+      internalID: -1876583261095082501
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GirlSuper_Sheet_72
+      rect:
+        serializedVersion: 2
+        x: 434
+        y: 103
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 21f63a3fe9ce314c0800000000000000
+      internalID: -4317847450281611502
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GirlSuper_Sheet_73
+      rect:
+        serializedVersion: 2
+        x: 722
+        y: 101
+        width: 11
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8cea69438f99bc550800000000000000
+      internalID: 6182204204809367240
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GirlSuper_Sheet_74
+      rect:
+        serializedVersion: 2
+        x: 857
+        y: 93
+        width: 15
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d069d878bc1cb7320800000000000000
+      internalID: 2556850293359613453
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GirlSuper_Sheet_75
+      rect:
+        serializedVersion: 2
+        x: 1022
+        y: 98
+        width: 7
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0c1f73940a84fa4b0800000000000000
+      internalID: -5427039172697787968
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GirlSuper_Sheet_76
+      rect:
+        serializedVersion: 2
+        x: 1945
+        y: 73
+        width: 27
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d2aa104c049386770800000000000000
+      internalID: 8604190038420466221
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GirlSuper_Sheet_77
+      rect:
+        serializedVersion: 2
+        x: 2051
+        y: 95
+        width: 9
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 136289a8996399d00800000000000000
+      internalID: 979874427012916785
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GirlSuper_Sheet_78
+      rect:
+        serializedVersion: 2
+        x: 2134
+        y: 108
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b6d16b1274a332680800000000000000
+      internalID: -8781110771259662997
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GirlSuper_Sheet_79
+      rect:
+        serializedVersion: 2
+        x: 473
+        y: 61
+        width: 51
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8679be46106e0c750800000000000000
+      internalID: 6323306770490693480
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GirlSuper_Sheet_80
+      rect:
+        serializedVersion: 2
+        x: 535
+        y: 93
+        width: 13
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a6222cd3e6b4ecb60800000000000000
+      internalID: 7768229344115303018
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GirlSuper_Sheet_81
+      rect:
+        serializedVersion: 2
+        x: 698
+        y: 57
+        width: 35
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7a61c81752e1e0b10800000000000000
+      internalID: 1949528834865632935
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GirlSuper_Sheet_82
+      rect:
+        serializedVersion: 2
+        x: 812
+        y: 98
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 42509e3052b303230800000000000000
+      internalID: 3616455530943939876
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GirlSuper_Sheet_83
+      rect:
+        serializedVersion: 2
+        x: 935
+        y: 89
+        width: 7
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: de7706fb0decbe680800000000000000
+      internalID: -8724652457140914195
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GirlSuper_Sheet_84
+      rect:
+        serializedVersion: 2
+        x: 957
+        y: 97
+        width: 7
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ba5c474e2d3febfd0800000000000000
+      internalID: -2324152270575057493
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GirlSuper_Sheet_85
+      rect:
+        serializedVersion: 2
+        x: 993
+        y: 100
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8f933e2d1d2821300800000000000000
+      internalID: 221383169392458232
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GirlSuper_Sheet_86
+      rect:
+        serializedVersion: 2
+        x: 993
+        y: 87
+        width: 12
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0bbd687b78672c420800000000000000
+      internalID: 2648809856119004080
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GirlSuper_Sheet_87
+      rect:
+        serializedVersion: 2
+        x: 1005
+        y: 98
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 030495017506c22c0800000000000000
+      internalID: -4455080004323557328
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GirlSuper_Sheet_88
+      rect:
+        serializedVersion: 2
+        x: 1351
+        y: 98
+        width: 10
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 966cde96da6dcf9e0800000000000000
+      internalID: -1586156928446380439
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GirlSuper_Sheet_89
+      rect:
+        serializedVersion: 2
+        x: 1575
+        y: 59
+        width: 51
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 27db1ea20194b7c30800000000000000
+      internalID: 4358157398198828402
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GirlSuper_Sheet_90
+      rect:
+        serializedVersion: 2
+        x: 1615
+        y: 91
+        width: 13
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 693b5ce218d562740800000000000000
+      internalID: 5126888035224761238
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GirlSuper_Sheet_91
+      rect:
+        serializedVersion: 2
+        x: 1697
+        y: 93
+        width: 26
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2486c2e7d12b88ea0800000000000000
+      internalID: -5870246274536806334
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GirlSuper_Sheet_92
+      rect:
+        serializedVersion: 2
+        x: 1804
+        y: 93
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 889a0f2c0fefb0380800000000000000
+      internalID: -9003822719981016696
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GirlSuper_Sheet_93
+      rect:
+        serializedVersion: 2
+        x: 177
+        y: 37
+        width: 21
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4a367aca96080f370800000000000000
+      internalID: 8354318500128842660
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GirlSuper_Sheet_94
+      rect:
+        serializedVersion: 2
+        x: 284
+        y: 83
+        width: 11
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 72ab59ff9456a4dc0800000000000000
+      internalID: -3653996779162715609
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GirlSuper_Sheet_95
+      rect:
+        serializedVersion: 2
+        x: 529
+        y: 61
+        width: 21
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 033985fd99b0d0fc0800000000000000
+      internalID: -3527150177656204496
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GirlSuper_Sheet_96
+      rect:
+        serializedVersion: 2
+        x: 738
+        y: 67
+        width: 19
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2fcfdbdb8a9e11080800000000000000
+      internalID: -9218330051303572238
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GirlSuper_Sheet_97
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 93
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 78c0e148ee79924d0800000000000000
+      internalID: -3158826612949119865
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GirlSuper_Sheet_98
+      rect:
+        serializedVersion: 2
+        x: 923
+        y: 75
+        width: 9
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b99d698cdf1e89a00800000000000000
+      internalID: 763608616947603867
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GirlSuper_Sheet_99
+      rect:
+        serializedVersion: 2
+        x: 979
+        y: 91
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bfe1afdc9f705c460800000000000000
+      internalID: 7261218743688765179
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GirlSuper_Sheet_100
+      rect:
+        serializedVersion: 2
+        x: 1345
+        y: 88
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3b40e0596fac87460800000000000000
+      internalID: 7239759561409561779
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GirlSuper_Sheet_101
+      rect:
+        serializedVersion: 2
+        x: 1448
+        y: 83
+        width: 19
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bcb05e991f1d993b0800000000000000
+      internalID: -5505138233884472373
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GirlSuper_Sheet_102
+      rect:
+        serializedVersion: 2
+        x: 1532
+        y: 89
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 502965715e9e9ed90800000000000000
+      internalID: -7067860970032950779
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GirlSuper_Sheet_103
+      rect:
+        serializedVersion: 2
+        x: 74
+        y: 79
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bf2ca72b8ddbb98c0800000000000000
+      internalID: -3991387906328837381
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GirlSuper_Sheet_104
+      rect:
+        serializedVersion: 2
+        x: 88
+        y: 81
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c35e3a14ea6f5fb90800000000000000
+      internalID: -7208584400250608324
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GirlSuper_Sheet_105
+      rect:
+        serializedVersion: 2
+        x: 402
+        y: 47
+        width: 15
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dee6bd301b693cf50800000000000000
+      internalID: 6900524741079822061
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GirlSuper_Sheet_106
+      rect:
+        serializedVersion: 2
+        x: 434
+        y: 79
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 442f9f1c911b747e0800000000000000
+      internalID: -1781260403415059900
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GirlSuper_Sheet_107
+      rect:
+        serializedVersion: 2
+        x: 639
+        y: 85
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1c7254a9b2904f610800000000000000
+      internalID: 1653957046028281793
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GirlSuper_Sheet_108
+      rect:
+        serializedVersion: 2
+        x: 676
+        y: 81
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 34ca7442ab48ed420800000000000000
+      internalID: 2656706765202631747
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GirlSuper_Sheet_109
+      rect:
+        serializedVersion: 2
+        x: 802
+        y: 79
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 877ef3044ed576b40800000000000000
+      internalID: 5433414710357649272
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GirlSuper_Sheet_110
+      rect:
+        serializedVersion: 2
+        x: 810
+        y: 85
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 05ce99be9ef540850800000000000000
+      internalID: 6342299633529252944
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GirlSuper_Sheet_111
+      rect:
+        serializedVersion: 2
+        x: 812
+        y: 77
+        width: 12
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 183a44aad4e164700800000000000000
+      internalID: 524139725553181569
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GirlSuper_Sheet_112
+      rect:
+        serializedVersion: 2
+        x: 816
+        y: 85
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9e9a553d55d1a6560800000000000000
+      internalID: 7307685599817083369
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GirlSuper_Sheet_113
+      rect:
+        serializedVersion: 2
+        x: 931
+        y: 65
+        width: 21
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fe31e9ac2141a1160800000000000000
+      internalID: 6996927042014811119
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GirlSuper_Sheet_114
+      rect:
+        serializedVersion: 2
+        x: 1084
+        y: 79
+        width: 11
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c69394fcfc28a4c90800000000000000
+      internalID: -7184786426468681364
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GirlSuper_Sheet_115
+      rect:
+        serializedVersion: 2
+        x: 1273
+        y: 61
+        width: 19
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4c05bbd16fda7a7e0800000000000000
+      internalID: -1754242257265143612
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GirlSuper_Sheet_116
+      rect:
+        serializedVersion: 2
+        x: 1303
+        y: 75
+        width: 7
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 38b17cf802bac12a0800000000000000
+      internalID: -6765344383877833853
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GirlSuper_Sheet_117
+      rect:
+        serializedVersion: 2
+        x: 1309
+        y: 73
+        width: 9
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 067e74cb1fc0363d0800000000000000
+      internalID: -3214711476626921632
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GirlSuper_Sheet_118
+      rect:
+        serializedVersion: 2
+        x: 1343
+        y: 82
+        width: 10
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 499241484cefa1a10800000000000000
+      internalID: 1881095914363562388
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GirlSuper_Sheet_119
+      rect:
+        serializedVersion: 2
+        x: 1361
+        y: 75
+        width: 10
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a472de275a426a2d0800000000000000
+      internalID: -3267884186594367670
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GirlSuper_Sheet_120
+      rect:
+        serializedVersion: 2
+        x: 1549
+        y: 63
+        width: 13
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 022f8d4ce60571d50800000000000000
+      internalID: 6707918606670819872
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GirlSuper_Sheet_121
+      rect:
+        serializedVersion: 2
+        x: 1878
+        y: 61
+        width: 22
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e3d2d1fc44b7d1ed0800000000000000
+      internalID: -2441659887502152386
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GirlSuper_Sheet_122
+      rect:
+        serializedVersion: 2
+        x: 1963
+        y: 49
+        width: 23
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b229cae0e1a61cd70800000000000000
+      internalID: 9061640602573902379
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GirlSuper_Sheet_123
+      rect:
+        serializedVersion: 2
+        x: 2035
+        y: 79
+        width: 7
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fa12aa05dc8cd79a0800000000000000
+      internalID: -6233605525063720529
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GirlSuper_Sheet_124
+      rect:
+        serializedVersion: 2
+        x: 2094
+        y: 67
+        width: 13
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fcc18fcd9d57a5530800000000000000
+      internalID: 3844514810489740495
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GirlSuper_Sheet_125
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 77
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8b1f3a005a954cd60800000000000000
+      internalID: 7909545410784653752
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GirlSuper_Sheet_126
+      rect:
+        serializedVersion: 2
+        x: 631
+        y: 77
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b67cfc8907431f980800000000000000
+      internalID: -8506960562921420949
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GirlSuper_Sheet_127
+      rect:
+        serializedVersion: 2
+        x: 770
+        y: 31
+        width: 17
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 01954ae685f3d8f80800000000000000
+      internalID: -8102750505523717872
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GirlSuper_Sheet_128
+      rect:
+        serializedVersion: 2
+        x: 804
+        y: 75
+        width: 9
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5d365d1bbc1ce8f60800000000000000
+      internalID: 8038575465508987861
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GirlSuper_Sheet_129
+      rect:
+        serializedVersion: 2
+        x: 812
+        y: 71
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bc68f0f800958d640800000000000000
+      internalID: 5104928036559488715
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GirlSuper_Sheet_130
+      rect:
+        serializedVersion: 2
+        x: 923
+        y: 57
+        width: 11
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ee935b20453e06910800000000000000
+      internalID: 1828711398674610670
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GirlSuper_Sheet_131
+      rect:
+        serializedVersion: 2
+        x: 979
+        y: 75
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5d2108abce09eeb20800000000000000
+      internalID: 3165626934503674581
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GirlSuper_Sheet_132
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 65
+        width: 12
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6b389c66476e4ae50800000000000000
+      internalID: 6819829123360850870
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GirlSuper_Sheet_133
+      rect:
+        serializedVersion: 2
+        x: 1285
+        y: 41
+        width: 27
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a58f6ca97bf5fee70800000000000000
+      internalID: 9146634610393151578
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GirlSuper_Sheet_134
+      rect:
+        serializedVersion: 2
+        x: 1544
+        y: 74
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 95de6db6e44553140800000000000000
+      internalID: 4698754482024410457
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GirlSuper_Sheet_135
+      rect:
+        serializedVersion: 2
+        x: 1673
+        y: 17
+        width: 41
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ca140bb3854158260800000000000000
+      internalID: 7099102756810539436
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GirlSuper_Sheet_136
+      rect:
+        serializedVersion: 2
+        x: 276
+        y: 53
+        width: 15
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5cd4e6d0fda4055d0800000000000000
+      internalID: -3075876223630553659
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GirlSuper_Sheet_137
+      rect:
+        serializedVersion: 2
+        x: 292
+        y: 19
+        width: 31
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6560d2d8833376470800000000000000
+      internalID: 8387729148980561494
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GirlSuper_Sheet_138
+      rect:
+        serializedVersion: 2
+        x: 378
+        y: 55
+        width: 7
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1f6d7d823f6d49ff0800000000000000
+      internalID: -30162957634119951
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GirlSuper_Sheet_139
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 55
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b5d3731c09712ecc0800000000000000
+      internalID: -3683355634751292069
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GirlSuper_Sheet_140
+      rect:
+        serializedVersion: 2
+        x: 571
+        y: 65
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 190abad2c6efffad0800000000000000
+      internalID: -2666132713803898735
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GirlSuper_Sheet_141
+      rect:
+        serializedVersion: 2
+        x: 639
+        y: 59
+        width: 20
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cdd2b2f8c7f131870800000000000000
+      internalID: 8652293928947232220
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GirlSuper_Sheet_142
+      rect:
+        serializedVersion: 2
+        x: 810
+        y: 53
+        width: 22
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4a58d280ddbf2b900800000000000000
+      internalID: 698897818939393444
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GirlSuper_Sheet_143
+      rect:
+        serializedVersion: 2
+        x: 861
+        y: 49
+        width: 13
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8e4274551ab4ba4b0800000000000000
+      internalID: -5428161769572457240
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GirlSuper_Sheet_144
+      rect:
+        serializedVersion: 2
+        x: 1060
+        y: 55
+        width: 9
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e1d7718846a4d9510800000000000000
+      internalID: 1557482841780485406
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GirlSuper_Sheet_145
+      rect:
+        serializedVersion: 2
+        x: 1124
+        y: 61
+        width: 9
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 30e9c38b521f7c7b0800000000000000
+      internalID: -5203925700096254461
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GirlSuper_Sheet_146
+      rect:
+        serializedVersion: 2
+        x: 1132
+        y: 61
+        width: 9
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a27cd9f4c6238efb0800000000000000
+      internalID: -4618385977094846678
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GirlSuper_Sheet_147
+      rect:
+        serializedVersion: 2
+        x: 1359
+        y: 65
+        width: 10
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8e9dd778138dba550800000000000000
+      internalID: 6173265421479565800
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GirlSuper_Sheet_148
+      rect:
+        serializedVersion: 2
+        x: 1398
+        y: 55
+        width: 9
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 17691d72bcd239440800000000000000
+      internalID: 4941343566725224049
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GirlSuper_Sheet_149
+      rect:
+        serializedVersion: 2
+        x: 1471
+        y: 55
+        width: 8
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fef38ea0349b925d0800000000000000
+      internalID: -3086732371988824081
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GirlSuper_Sheet_150
+      rect:
+        serializedVersion: 2
+        x: 1729
+        y: 65
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dd76183e57ea900b0800000000000000
+      internalID: -5761882426892523555
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GirlSuper_Sheet_151
+      rect:
+        serializedVersion: 2
+        x: 1770
+        y: 65
+        width: 7
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0a8924d742db986a0800000000000000
+      internalID: -6446413427186165600
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GirlSuper_Sheet_152
+      rect:
+        serializedVersion: 2
+        x: 2053
+        y: 67
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a9050e3651d046620800000000000000
+      internalID: 2766350456633446554
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GirlSuper_Sheet_153
+      rect:
+        serializedVersion: 2
+        x: 215
+        y: 29
+        width: 33
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d6a576e698f77f360800000000000000
+      internalID: 7203366357241911917
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GirlSuper_Sheet_154
+      rect:
+        serializedVersion: 2
+        x: 290
+        y: 49
+        width: 11
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7d71231e103e3fb10800000000000000
+      internalID: 2014203055577372631
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GirlSuper_Sheet_155
+      rect:
+        serializedVersion: 2
+        x: 412
+        y: 43
+        width: 7
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 734ebaf7cdc747bc0800000000000000
+      internalID: -3786264100235123657
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GirlSuper_Sheet_156
+      rect:
+        serializedVersion: 2
+        x: 458
+        y: 45
+        width: 18
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9dd93dbf230cf8940800000000000000
+      internalID: 5300666611644210649
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GirlSuper_Sheet_157
+      rect:
+        serializedVersion: 2
+        x: 545
+        y: 15
+        width: 23
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 728bfa674ed434160800000000000000
+      internalID: 7008531088757733415
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GirlSuper_Sheet_158
+      rect:
+        serializedVersion: 2
+        x: 583
+        y: 46
+        width: 19
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 26259661b7128caa0800000000000000
+      internalID: -6140621279378976158
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GirlSuper_Sheet_159
+      rect:
+        serializedVersion: 2
+        x: 674
+        y: 47
+        width: 11
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a25cf406f9be4b8e0800000000000000
+      internalID: -1678457691354184406
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GirlSuper_Sheet_160
+      rect:
+        serializedVersion: 2
+        x: 977
+        y: 17
+        width: 30
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 30ec18bec998f0070800000000000000
+      internalID: 8074823963957644803
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GirlSuper_Sheet_161
+      rect:
+        serializedVersion: 2
+        x: 1000
+        y: 17
+        width: 31
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2dad17233acc10aa0800000000000000
+      internalID: -6196446610987033902
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GirlSuper_Sheet_162
+      rect:
+        serializedVersion: 2
+        x: 1016
+        y: 57
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 35d0a91fa43c9cea0800000000000000
+      internalID: -5851931514142847661
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GirlSuper_Sheet_163
+      rect:
+        serializedVersion: 2
+        x: 1094
+        y: 30
+        width: 19
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9edd168804c1b59b0800000000000000
+      internalID: -5090443890320613911
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GirlSuper_Sheet_164
+      rect:
+        serializedVersion: 2
+        x: 1180
+        y: 21
+        width: 42
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c19dd52b4bf351730800000000000000
+      internalID: 3969148691916118300
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GirlSuper_Sheet_165
+      rect:
+        serializedVersion: 2
+        x: 1392
+        y: 49
+        width: 9
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f1501a8083ae817e0800000000000000
+      internalID: -1794426925123304161
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GirlSuper_Sheet_166
+      rect:
+        serializedVersion: 2
+        x: 1480
+        y: 55
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 16e3739271ed45ef0800000000000000
+      internalID: -120227098975060383
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GirlSuper_Sheet_167
+      rect:
+        serializedVersion: 2
+        x: 1486
+        y: 53
+        width: 11
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 98a27cdacaa6959b0800000000000000
+      internalID: -5090920613883204983
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GirlSuper_Sheet_168
+      rect:
+        serializedVersion: 2
+        x: 1524
+        y: 45
+        width: 16
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c1d8161345c5fa140800000000000000
+      internalID: 4733103250065165596
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GirlSuper_Sheet_169
+      rect:
+        serializedVersion: 2
+        x: 1550
+        y: 49
+        width: 8
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d5e12cc3503c3ac40800000000000000
+      internalID: 5522471995347967581
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GirlSuper_Sheet_170
+      rect:
+        serializedVersion: 2
+        x: 1804
+        y: 53
+        width: 9
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1011d01a1e719d3b0800000000000000
+      internalID: -5487328413137170175
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GirlSuper_Sheet_171
+      rect:
+        serializedVersion: 2
+        x: 1856
+        y: 33
+        width: 11
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 991e2f820ee676540800000000000000
+      internalID: 5001087820256960921
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GirlSuper_Sheet_172
+      rect:
+        serializedVersion: 2
+        x: 1866
+        y: 47
+        width: 7
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 88afffed52cdfbbe0800000000000000
+      internalID: -1459205699031532920
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GirlSuper_Sheet_173
+      rect:
+        serializedVersion: 2
+        x: 1894
+        y: 47
+        width: 14
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 050ed2f309a1c7f10800000000000000
+      internalID: 2268717519125471312
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GirlSuper_Sheet_174
+      rect:
+        serializedVersion: 2
+        x: 2073
+        y: 47
+        width: 18
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3c21c33a167269050800000000000000
+      internalID: 5806872069844767427
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GirlSuper_Sheet_175
+      rect:
+        serializedVersion: 2
+        x: 314
+        y: 17
+        width: 35
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ed7da4febb5a5e4f0800000000000000
+      internalID: -800051132196268066
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GirlSuper_Sheet_176
+      rect:
+        serializedVersion: 2
+        x: 346
+        y: 31
+        width: 23
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6200fc94286b72c60800000000000000
+      internalID: 7793398350888239142
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GirlSuper_Sheet_177
+      rect:
+        serializedVersion: 2
+        x: 392
+        y: 33
+        width: 11
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 405755839d0270c70800000000000000
+      internalID: 8937148102865155332
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GirlSuper_Sheet_178
+      rect:
+        serializedVersion: 2
+        x: 481
+        y: 19
+        width: 17
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3fd047ff7b2e9a090800000000000000
+      internalID: -8022631981291139597
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GirlSuper_Sheet_179
+      rect:
+        serializedVersion: 2
+        x: 664
+        y: 45
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 50ca8acf19dfc3940800000000000000
+      internalID: 5277371666822376453
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GirlSuper_Sheet_180
+      rect:
+        serializedVersion: 2
+        x: 766
+        y: 43
+        width: 6
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d0ec0e66fa030b840800000000000000
+      internalID: 5237739896535305741
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GirlSuper_Sheet_181
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 33
+        width: 16
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6ddf75bbb23b407e0800000000000000
+      internalID: -1800116950633284138
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GirlSuper_Sheet_182
+      rect:
+        serializedVersion: 2
+        x: 1080
+        y: 42
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c0968e9c1fa9df060800000000000000
+      internalID: 6988912560014125324
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GirlSuper_Sheet_183
+      rect:
+        serializedVersion: 2
+        x: 1452
+        y: 45
+        width: 7
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c16369a5d2f629eb0800000000000000
+      internalID: -4714583619319482852
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GirlSuper_Sheet_184
+      rect:
+        serializedVersion: 2
+        x: 1611
+        y: 33
+        width: 13
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1ec44f88bd13a48b0800000000000000
+      internalID: -5167262803488912159
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GirlSuper_Sheet_185
+      rect:
+        serializedVersion: 2
+        x: 1621
+        y: 17
+        width: 23
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bb75ae8e45b48b890800000000000000
+      internalID: -7442115556172736581
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GirlSuper_Sheet_186
+      rect:
+        serializedVersion: 2
+        x: 1905
+        y: 49
+        width: 9
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 81d2d23e953e52af0800000000000000
+      internalID: -421681014886290152
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GirlSuper_Sheet_187
+      rect:
+        serializedVersion: 2
+        x: 74
+        y: 33
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b5f46afb3afb6c4d0800000000000000
+      internalID: -3114591382264197285
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GirlSuper_Sheet_188
+      rect:
+        serializedVersion: 2
+        x: 88
+        y: 33
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d15221f4116de0140800000000000000
+      internalID: 4687919631968642333
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GirlSuper_Sheet_189
+      rect:
+        serializedVersion: 2
+        x: 207
+        y: 39
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 08387701e36825940800000000000000
+      internalID: 5283432913981375360
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GirlSuper_Sheet_190
+      rect:
+        serializedVersion: 2
+        x: 279
+        y: 27
+        width: 12
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e63f2852cd49da430800000000000000
+      internalID: 3795853734186251118
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GirlSuper_Sheet_191
+      rect:
+        serializedVersion: 2
+        x: 593
+        y: 31
+        width: 7
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a262b4ef37848f1f0800000000000000
+      internalID: -1010978453319899606
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GirlSuper_Sheet_192
+      rect:
+        serializedVersion: 2
+        x: 698
+        y: 31
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1a00c9d4d155fa150800000000000000
+      internalID: 5886016822341009569
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GirlSuper_Sheet_193
+      rect:
+        serializedVersion: 2
+        x: 746
+        y: 29
+        width: 11
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: df7115e6faccde690800000000000000
+      internalID: -7571170344697784323
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GirlSuper_Sheet_194
+      rect:
+        serializedVersion: 2
+        x: 816
+        y: 19
+        width: 20
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 07dce2438618e7c00800000000000000
+      internalID: 900299260072742256
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GirlSuper_Sheet_195
+      rect:
+        serializedVersion: 2
+        x: 835
+        y: 17
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4529347efd08d1e00800000000000000
+      internalID: 1017110790001627732
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GirlSuper_Sheet_196
+      rect:
+        serializedVersion: 2
+        x: 835
+        y: 29
+        width: 7
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: faa8a0f0b86fa47a0800000000000000
+      internalID: -6392025643985761617
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GirlSuper_Sheet_197
+      rect:
+        serializedVersion: 2
+        x: 877
+        y: 33
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 50b64af6e16c63170800000000000000
+      internalID: 8157925609052596997
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GirlSuper_Sheet_198
+      rect:
+        serializedVersion: 2
+        x: 1337
+        y: 13
+        width: 18
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 660837c61417cae60800000000000000
+      internalID: 7974873565972627558
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GirlSuper_Sheet_199
+      rect:
+        serializedVersion: 2
+        x: 1651
+        y: 29
+        width: 7
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e2675fd705abfad70800000000000000
+      internalID: 9056662230538745390
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GirlSuper_Sheet_200
+      rect:
+        serializedVersion: 2
+        x: 1802
+        y: 37
+        width: 7
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1845b11772d0221c0800000000000000
+      internalID: -4530043812128795519
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GirlSuper_Sheet_201
+      rect:
+        serializedVersion: 2
+        x: 1810
+        y: 33
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8909a13489367e090800000000000000
+      internalID: -8005320307015774056
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GirlSuper_Sheet_202
+      rect:
+        serializedVersion: 2
+        x: 1850
+        y: 33
+        width: 8
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2c688f68f363711b0800000000000000
+      internalID: -5686016358056687934
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GirlSuper_Sheet_203
+      rect:
+        serializedVersion: 2
+        x: 1854
+        y: 23
+        width: 7
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6c39dbbebc0b2b630800000000000000
+      internalID: 3941407013782524870
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GirlSuper_Sheet_204
+      rect:
+        serializedVersion: 2
+        x: 1986
+        y: 33
+        width: 8
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c0e2c690d20fed680800000000000000
+      internalID: -8728274951575163380
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GirlSuper_Sheet_205
+      rect:
+        serializedVersion: 2
+        x: 2091
+        y: 33
+        width: 16
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5b45ab7e2272ede70800000000000000
+      internalID: 9141787324478805173
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GirlSuper_Sheet_206
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 11
+        width: 33
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 33dcdf73171279580800000000000000
+      internalID: -8820544575027425997
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GirlSuper_Sheet_207
+      rect:
+        serializedVersion: 2
+        x: 380
+        y: 23
+        width: 9
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3d1561b1a8cd4b740800000000000000
+      internalID: 5166997158218846675
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GirlSuper_Sheet_208
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 23
+        width: 18
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 00838569401f38c10800000000000000
+      internalID: 2054750857015605248
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GirlSuper_Sheet_209
+      rect:
+        serializedVersion: 2
+        x: 670
+        y: 17
+        width: 13
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a5d29cdf19c0336c0800000000000000
+      internalID: -4164971409219965606
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GirlSuper_Sheet_210
+      rect:
+        serializedVersion: 2
+        x: 758
+        y: 17
+        width: 23
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 768657a35ac2275c0800000000000000
+      internalID: -4219260812730734489
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GirlSuper_Sheet_211
+      rect:
+        serializedVersion: 2
+        x: 780
+        y: 17
+        width: 7
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a47b99bbc9a9e9870800000000000000
+      internalID: 8691554328824624970
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GirlSuper_Sheet_212
+      rect:
+        serializedVersion: 2
+        x: 975
+        y: 27
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a2e316d5fb80f7000800000000000000
+      internalID: 35756940040683050
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GirlSuper_Sheet_213
+      rect:
+        serializedVersion: 2
+        x: 1084
+        y: 17
+        width: 9
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 15b66eecd2873b8a0800000000000000
+      internalID: -6290552116366382255
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GirlSuper_Sheet_214
+      rect:
+        serializedVersion: 2
+        x: 1259
+        y: 15
+        width: 15
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 57277ec2684c32720800000000000000
+      internalID: 2820313872222089845
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GirlSuper_Sheet_215
+      rect:
+        serializedVersion: 2
+        x: 1406
+        y: 17
+        width: 11
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 01af2ca8cd62d6f80800000000000000
+      internalID: -8111784625161700848
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GirlSuper_Sheet_216
+      rect:
+        serializedVersion: 2
+        x: 1422
+        y: 15
+        width: 25
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 69e1768dd780ebf10800000000000000
+      internalID: 2287274997345361558
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GirlSuper_Sheet_217
+      rect:
+        serializedVersion: 2
+        x: 1770
+        y: 23
+        width: 7
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aaad49025ddbe2420800000000000000
+      internalID: 2607229957366405802
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GirlSuper_Sheet_218
+      rect:
+        serializedVersion: 2
+        x: 1864
+        y: 19
+        width: 7
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a4b1d33d2bf62e5c0800000000000000
+      internalID: -4187661889662280886
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GirlSuper_Sheet_219
+      rect:
+        serializedVersion: 2
+        x: 1874
+        y: 17
+        width: 9
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 188dd3292896672c0800000000000000
+      internalID: -4434240773579483007
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GirlSuper_Sheet_220
+      rect:
+        serializedVersion: 2
+        x: 2015
+        y: 15
+        width: 21
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e39c24f38001ccae0800000000000000
+      internalID: -1527828545978316482
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GirlSuper_Sheet_221
+      rect:
+        serializedVersion: 2
+        x: 2041
+        y: 15
+        width: 17
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 50179921c0bc09970800000000000000
+      internalID: 8759724527947706629
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GirlSuper_Sheet_222
+      rect:
+        serializedVersion: 2
+        x: 2136
+        y: 17
+        width: 19
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aea17c478dfeaf490800000000000000
+      internalID: -7711587698967373078
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GirlSuper_Sheet_223
+      rect:
+        serializedVersion: 2
+        x: 2166
+        y: 19
+        width: 6
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b32764b12f6265590800000000000000
+      internalID: -7685912892779630021
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GirlSuper_Sheet_224
+      rect:
+        serializedVersion: 2
+        x: 513
+        y: 17
+        width: 9
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aee38c536f70b25e0800000000000000
+      internalID: -1933442860979831062
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GirlSuper_Sheet_225
+      rect:
+        serializedVersion: 2
+        x: 561
+        y: 18
+        width: 9
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2e5077eaa6c498630800000000000000
+      internalID: 3929756170934748642
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GirlSuper_Sheet_226
+      rect:
+        serializedVersion: 2
+        x: 1172
+        y: 17
+        width: 10
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f3749768b32093ec0800000000000000
+      internalID: -3586833173541468353
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GirlSuper_Sheet_227
+      rect:
+        serializedVersion: 2
+        x: 1526
+        y: 17
+        width: 12
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4688b822f61e303c0800000000000000
+      internalID: -4394420943946282908
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GirlSuper_Sheet_228
+      rect:
+        serializedVersion: 2
+        x: 1571
+        y: 19
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1c61cc1a4bc831890800000000000000
+      internalID: -7488487047950494015
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GirlSuper_Sheet_229
+      rect:
+        serializedVersion: 2
+        x: 1158
+        y: 9
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9e4a9d30c9ebfd510800000000000000
+      internalID: 1576187971891733737
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      GirlSuper_Sheet_0: 6373845529365383832
+      GirlSuper_Sheet_1: 7441811190702971863
+      GirlSuper_Sheet_10: -1198078566482628264
+      GirlSuper_Sheet_100: 7239759561409561779
+      GirlSuper_Sheet_101: -5505138233884472373
+      GirlSuper_Sheet_102: -7067860970032950779
+      GirlSuper_Sheet_103: -3991387906328837381
+      GirlSuper_Sheet_104: -7208584400250608324
+      GirlSuper_Sheet_105: 6900524741079822061
+      GirlSuper_Sheet_106: -1781260403415059900
+      GirlSuper_Sheet_107: 1653957046028281793
+      GirlSuper_Sheet_108: 2656706765202631747
+      GirlSuper_Sheet_109: 5433414710357649272
+      GirlSuper_Sheet_11: 7305021536554002272
+      GirlSuper_Sheet_110: 6342299633529252944
+      GirlSuper_Sheet_111: 524139725553181569
+      GirlSuper_Sheet_112: 7307685599817083369
+      GirlSuper_Sheet_113: 6996927042014811119
+      GirlSuper_Sheet_114: -7184786426468681364
+      GirlSuper_Sheet_115: -1754242257265143612
+      GirlSuper_Sheet_116: -6765344383877833853
+      GirlSuper_Sheet_117: -3214711476626921632
+      GirlSuper_Sheet_118: 1881095914363562388
+      GirlSuper_Sheet_119: -3267884186594367670
+      GirlSuper_Sheet_12: 2075825519721119935
+      GirlSuper_Sheet_120: 6707918606670819872
+      GirlSuper_Sheet_121: -2441659887502152386
+      GirlSuper_Sheet_122: 9061640602573902379
+      GirlSuper_Sheet_123: -6233605525063720529
+      GirlSuper_Sheet_124: 3844514810489740495
+      GirlSuper_Sheet_125: 7909545410784653752
+      GirlSuper_Sheet_126: -8506960562921420949
+      GirlSuper_Sheet_127: -8102750505523717872
+      GirlSuper_Sheet_128: 8038575465508987861
+      GirlSuper_Sheet_129: 5104928036559488715
+      GirlSuper_Sheet_13: 1472791483258654666
+      GirlSuper_Sheet_130: 1828711398674610670
+      GirlSuper_Sheet_131: 3165626934503674581
+      GirlSuper_Sheet_132: 6819829123360850870
+      GirlSuper_Sheet_133: 9146634610393151578
+      GirlSuper_Sheet_134: 4698754482024410457
+      GirlSuper_Sheet_135: 7099102756810539436
+      GirlSuper_Sheet_136: -3075876223630553659
+      GirlSuper_Sheet_137: 8387729148980561494
+      GirlSuper_Sheet_138: -30162957634119951
+      GirlSuper_Sheet_139: -3683355634751292069
+      GirlSuper_Sheet_14: 8089540969724137519
+      GirlSuper_Sheet_140: -2666132713803898735
+      GirlSuper_Sheet_141: 8652293928947232220
+      GirlSuper_Sheet_142: 698897818939393444
+      GirlSuper_Sheet_143: -5428161769572457240
+      GirlSuper_Sheet_144: 1557482841780485406
+      GirlSuper_Sheet_145: -5203925700096254461
+      GirlSuper_Sheet_146: -4618385977094846678
+      GirlSuper_Sheet_147: 6173265421479565800
+      GirlSuper_Sheet_148: 4941343566725224049
+      GirlSuper_Sheet_149: -3086732371988824081
+      GirlSuper_Sheet_15: -2031464125806976825
+      GirlSuper_Sheet_150: -5761882426892523555
+      GirlSuper_Sheet_151: -6446413427186165600
+      GirlSuper_Sheet_152: 2766350456633446554
+      GirlSuper_Sheet_153: 7203366357241911917
+      GirlSuper_Sheet_154: 2014203055577372631
+      GirlSuper_Sheet_155: -3786264100235123657
+      GirlSuper_Sheet_156: 5300666611644210649
+      GirlSuper_Sheet_157: 7008531088757733415
+      GirlSuper_Sheet_158: -6140621279378976158
+      GirlSuper_Sheet_159: -1678457691354184406
+      GirlSuper_Sheet_16: 4003875504431557675
+      GirlSuper_Sheet_160: 8074823963957644803
+      GirlSuper_Sheet_161: -6196446610987033902
+      GirlSuper_Sheet_162: -5851931514142847661
+      GirlSuper_Sheet_163: -5090443890320613911
+      GirlSuper_Sheet_164: 3969148691916118300
+      GirlSuper_Sheet_165: -1794426925123304161
+      GirlSuper_Sheet_166: -120227098975060383
+      GirlSuper_Sheet_167: -5090920613883204983
+      GirlSuper_Sheet_168: 4733103250065165596
+      GirlSuper_Sheet_169: 5522471995347967581
+      GirlSuper_Sheet_17: 2590542930574910681
+      GirlSuper_Sheet_170: -5487328413137170175
+      GirlSuper_Sheet_171: 5001087820256960921
+      GirlSuper_Sheet_172: -1459205699031532920
+      GirlSuper_Sheet_173: 2268717519125471312
+      GirlSuper_Sheet_174: 5806872069844767427
+      GirlSuper_Sheet_175: -800051132196268066
+      GirlSuper_Sheet_176: 7793398350888239142
+      GirlSuper_Sheet_177: 8937148102865155332
+      GirlSuper_Sheet_178: -8022631981291139597
+      GirlSuper_Sheet_179: 5277371666822376453
+      GirlSuper_Sheet_18: 3264831519728038077
+      GirlSuper_Sheet_180: 5237739896535305741
+      GirlSuper_Sheet_181: -1800116950633284138
+      GirlSuper_Sheet_182: 6988912560014125324
+      GirlSuper_Sheet_183: -4714583619319482852
+      GirlSuper_Sheet_184: -5167262803488912159
+      GirlSuper_Sheet_185: -7442115556172736581
+      GirlSuper_Sheet_186: -421681014886290152
+      GirlSuper_Sheet_187: -3114591382264197285
+      GirlSuper_Sheet_188: 4687919631968642333
+      GirlSuper_Sheet_189: 5283432913981375360
+      GirlSuper_Sheet_19: 4869972933442807862
+      GirlSuper_Sheet_190: 3795853734186251118
+      GirlSuper_Sheet_191: -1010978453319899606
+      GirlSuper_Sheet_192: 5886016822341009569
+      GirlSuper_Sheet_193: -7571170344697784323
+      GirlSuper_Sheet_194: 900299260072742256
+      GirlSuper_Sheet_195: 1017110790001627732
+      GirlSuper_Sheet_196: -6392025643985761617
+      GirlSuper_Sheet_197: 8157925609052596997
+      GirlSuper_Sheet_198: 7974873565972627558
+      GirlSuper_Sheet_199: 9056662230538745390
+      GirlSuper_Sheet_2: -7274937273801692747
+      GirlSuper_Sheet_20: 2217363806425839266
+      GirlSuper_Sheet_200: -4530043812128795519
+      GirlSuper_Sheet_201: -8005320307015774056
+      GirlSuper_Sheet_202: -5686016358056687934
+      GirlSuper_Sheet_203: 3941407013782524870
+      GirlSuper_Sheet_204: -8728274951575163380
+      GirlSuper_Sheet_205: 9141787324478805173
+      GirlSuper_Sheet_206: -8820544575027425997
+      GirlSuper_Sheet_207: 5166997158218846675
+      GirlSuper_Sheet_208: 2054750857015605248
+      GirlSuper_Sheet_209: -4164971409219965606
+      GirlSuper_Sheet_21: 2963453091943732922
+      GirlSuper_Sheet_210: -4219260812730734489
+      GirlSuper_Sheet_211: 8691554328824624970
+      GirlSuper_Sheet_212: 35756940040683050
+      GirlSuper_Sheet_213: -6290552116366382255
+      GirlSuper_Sheet_214: 2820313872222089845
+      GirlSuper_Sheet_215: -8111784625161700848
+      GirlSuper_Sheet_216: 2287274997345361558
+      GirlSuper_Sheet_217: 2607229957366405802
+      GirlSuper_Sheet_218: -4187661889662280886
+      GirlSuper_Sheet_219: -4434240773579483007
+      GirlSuper_Sheet_22: 865547216380245558
+      GirlSuper_Sheet_220: -1527828545978316482
+      GirlSuper_Sheet_221: 8759724527947706629
+      GirlSuper_Sheet_222: -7711587698967373078
+      GirlSuper_Sheet_223: -7685912892779630021
+      GirlSuper_Sheet_224: -1933442860979831062
+      GirlSuper_Sheet_225: 3929756170934748642
+      GirlSuper_Sheet_226: -3586833173541468353
+      GirlSuper_Sheet_227: -4394420943946282908
+      GirlSuper_Sheet_228: -7488487047950494015
+      GirlSuper_Sheet_229: 1576187971891733737
+      GirlSuper_Sheet_23: -3099310586440834080
+      GirlSuper_Sheet_24: -2763574795852250739
+      GirlSuper_Sheet_25: -7401811476305359219
+      GirlSuper_Sheet_26: -5716053167328437307
+      GirlSuper_Sheet_27: -4988935089845295091
+      GirlSuper_Sheet_28: -2377856167762087522
+      GirlSuper_Sheet_29: 7750983254926334690
+      GirlSuper_Sheet_3: -882444114332016325
+      GirlSuper_Sheet_30: 8978087124559109358
+      GirlSuper_Sheet_31: -1614860482105193260
+      GirlSuper_Sheet_32: 4746972966374683104
+      GirlSuper_Sheet_33: 133976685037141749
+      GirlSuper_Sheet_34: -4632846426749059652
+      GirlSuper_Sheet_35: -3731271901386443048
+      GirlSuper_Sheet_36: -6642388612321588196
+      GirlSuper_Sheet_37: -602540187926972600
+      GirlSuper_Sheet_38: 4992075883850278754
+      GirlSuper_Sheet_39: 317450349090685916
+      GirlSuper_Sheet_4: -6912555073035135279
+      GirlSuper_Sheet_40: -4952132375092808384
+      GirlSuper_Sheet_41: -7947422847267064573
+      GirlSuper_Sheet_42: 752969757199463686
+      GirlSuper_Sheet_43: -337348179340429645
+      GirlSuper_Sheet_44: 5397744430678021783
+      GirlSuper_Sheet_45: -3350386305885872114
+      GirlSuper_Sheet_46: -7000401212305793808
+      GirlSuper_Sheet_47: -2949589191256221406
+      GirlSuper_Sheet_48: 8081202970601661881
+      GirlSuper_Sheet_49: -5824464591914727928
+      GirlSuper_Sheet_5: 2596567519365635216
+      GirlSuper_Sheet_50: -5489474894934565984
+      GirlSuper_Sheet_51: -1408186223093574188
+      GirlSuper_Sheet_52: 6263465562683371238
+      GirlSuper_Sheet_53: 5548223465813752498
+      GirlSuper_Sheet_54: 3883342559167384378
+      GirlSuper_Sheet_55: -7077418076880130567
+      GirlSuper_Sheet_56: -6229075033607129963
+      GirlSuper_Sheet_57: -7116107060509590905
+      GirlSuper_Sheet_58: -5761832720576022840
+      GirlSuper_Sheet_59: 6133306654880712765
+      GirlSuper_Sheet_6: -4087600777493712132
+      GirlSuper_Sheet_60: 7007224220569526151
+      GirlSuper_Sheet_61: 3141852533806416285
+      GirlSuper_Sheet_62: 9167958307106815401
+      GirlSuper_Sheet_63: 7498985814894310150
+      GirlSuper_Sheet_64: 908249233868117645
+      GirlSuper_Sheet_65: 1206627726212133918
+      GirlSuper_Sheet_66: 5718621248862159572
+      GirlSuper_Sheet_67: -6024481957720922110
+      GirlSuper_Sheet_68: -4710320748456898442
+      GirlSuper_Sheet_69: 960138768617611909
+      GirlSuper_Sheet_7: -2574518447123814406
+      GirlSuper_Sheet_70: 2179317777112232008
+      GirlSuper_Sheet_71: -1876583261095082501
+      GirlSuper_Sheet_72: -4317847450281611502
+      GirlSuper_Sheet_73: 6182204204809367240
+      GirlSuper_Sheet_74: 2556850293359613453
+      GirlSuper_Sheet_75: -5427039172697787968
+      GirlSuper_Sheet_76: 8604190038420466221
+      GirlSuper_Sheet_77: 979874427012916785
+      GirlSuper_Sheet_78: -8781110771259662997
+      GirlSuper_Sheet_79: 6323306770490693480
+      GirlSuper_Sheet_8: -4797291955905269938
+      GirlSuper_Sheet_80: 7768229344115303018
+      GirlSuper_Sheet_81: 1949528834865632935
+      GirlSuper_Sheet_82: 3616455530943939876
+      GirlSuper_Sheet_83: -8724652457140914195
+      GirlSuper_Sheet_84: -2324152270575057493
+      GirlSuper_Sheet_85: 221383169392458232
+      GirlSuper_Sheet_86: 2648809856119004080
+      GirlSuper_Sheet_87: -4455080004323557328
+      GirlSuper_Sheet_88: -1586156928446380439
+      GirlSuper_Sheet_89: 4358157398198828402
+      GirlSuper_Sheet_9: 6654899637302898357
+      GirlSuper_Sheet_90: 5126888035224761238
+      GirlSuper_Sheet_91: -5870246274536806334
+      GirlSuper_Sheet_92: -9003822719981016696
+      GirlSuper_Sheet_93: 8354318500128842660
+      GirlSuper_Sheet_94: -3653996779162715609
+      GirlSuper_Sheet_95: -3527150177656204496
+      GirlSuper_Sheet_96: -9218330051303572238
+      GirlSuper_Sheet_97: -3158826612949119865
+      GirlSuper_Sheet_98: 763608616947603867
+      GirlSuper_Sheet_99: 7261218743688765179
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
