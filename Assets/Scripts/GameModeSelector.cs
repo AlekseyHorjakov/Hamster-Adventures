@@ -98,10 +98,20 @@ public class GameModeSelector : MonoBehaviour
                 hamster = player;
         }
 
+        bool hamsterActive = mode != GameMode.SoloHamsterGirl;
+        bool girlActive = mode != GameMode.SoloHamster;
+
         if (hamster != null)
-            hamster.gameObject.SetActive(mode != GameMode.SoloHamsterGirl);
+        {
+            hamster.SetPartner(mode == GameMode.Coop && girl != null ? girl.transform : null);
+            hamster.gameObject.SetActive(hamsterActive);
+        }
+
         if (girl != null)
-            girl.gameObject.SetActive(mode != GameMode.SoloHamster);
+        {
+            girl.SetPartner(mode == GameMode.Coop && hamster != null ? hamster.transform : null);
+            girl.gameObject.SetActive(girlActive);
+        }
     }
 
     private static void PrepareStyles()

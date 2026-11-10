@@ -214,6 +214,12 @@ public class HamsterMovement : MonoBehaviour
         runtimeJumpMultiplier = Mathf.Max(0.01f, jumpMultiplier);
     }
 
+    /// <summary>Назначает или сбрасывает напарника для ограничения дистанции.</summary>
+    public void SetPartner(Transform partnerTransform)
+    {
+        partner = partnerTransform;
+    }
+
     public void SetControlLocked(bool locked)
     {
         controlLocked = locked;
@@ -287,7 +293,7 @@ public class HamsterMovement : MonoBehaviour
 
         float targetSpeed = moveInput * moveSpeed * runtimeSpeedMultiplier;
 
-        if (partner != null)
+        if (partner != null && partner.gameObject.activeInHierarchy)
         {
             Vector2 position = rb.position;
             Vector2 partnerPosition = partner.position;
