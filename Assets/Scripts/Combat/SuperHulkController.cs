@@ -156,8 +156,13 @@ public class SuperHulkController : MonoBehaviour
         mainRenderer.enabled = false;
         hulkVisual.SetActive(true);
         if (hulkRenderer != null) hulkRenderer.enabled = true;
-        AlignHulkVisualToGround();
+
+        // Сначала принудительно проигрываем нулевой кадр, чтобы у SpriteRenderer
+        // появились реальные границы, и только потом ставим фигуру на землю.
         playState(transformInState);
+        if (animator != null)
+            animator.Update(0f);
+        AlignHulkVisualToGround();
 
         SpawnTransformVfx();
         CameraFollow.Shake(0.55f, 0.35f);
@@ -297,20 +302,27 @@ public class SuperHulkController : MonoBehaviour
     /// </summary>
     private void AlignHulkVisualToGround()
     {
-        if (hulkVisual == null || bodyCollider == null)
+        if (hulkVisual == null || hulkRenderer == null)
             return;
 
         const float canvasHeightPixels = 512f;
         const float feetInsetPixels = 64f;
-        const float ppu = 25f;
 
-        float worldScaleY = hulkVisual.transform.lossyScale.y;
-        float fullHeightWorld = canvasHeightPixels / ppu * worldScaleY;
-        float feetInsetWorld = feetInsetPixels / ppu * worldScaleY;
-        float desiredCenterY = bodyCollider.bounds.min.y + fullHeightWorld * 0.5f - feetInsetWorld;
+        // Ориентир — низ обычного спрайта героя: именно там сейчас стоят его
+        // ступни. Низ коллайдера может быть ниже видимых ступней и даёт зазор.
+        float groundY = mainRenderer != null
+            ? mainRenderer.bounds.min.y
+            : bodyCollider != null ? bodyCollider.bounds.min.y : transform.position.y;
+
+        Bounds hulkBounds = hulkRenderer.bounds;
+        if (hulkBounds.size.y <= 0.01f)
+            return;
+
+        float visibleBottom = hulkBounds.min.y + hulkBounds.size.y * (feetInsetPixels / canvasHeightPixels);
+        float correction = groundY - visibleBottom;
 
         Vector3 position = hulkVisual.transform.position;
-        position.y = desiredCenterY;
+        position.y += correction;
         hulkVisual.transform.position = position;
     }
 
