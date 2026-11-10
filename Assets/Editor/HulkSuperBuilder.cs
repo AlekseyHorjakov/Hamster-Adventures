@@ -229,7 +229,7 @@ public static class HulkSuperBuilder
         so.FindProperty("hulkRenderer").objectReferenceValue = hulkRenderer;
         so.FindProperty("transformVfxPrefab").objectReferenceValue = transformVfxPrefab;
 
-        so.FindProperty("hulkDuration").floatValue = 7f;
+        so.FindProperty("hulkDuration").floatValue = 10f;
         so.FindProperty("transformInDuration").floatValue = 0.7f;
         so.FindProperty("transformOutDuration").floatValue = 0.56f;
         so.FindProperty("speedMultiplier").floatValue = 0.55f;

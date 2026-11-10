@@ -695,7 +695,7 @@ MonoBehaviour:
   hulkVisual: {fileID: 2858935696133417369}
   hulkRenderer: {fileID: 8444471078486252842}
   transformVfxPrefab: {fileID: 3576727294524917641, guid: c8240a3eefe5a564192bdd629c1aaff4, type: 3}
-  hulkDuration: 7
+  hulkDuration: 10
   transformInDuration: 0.7
   transformOutDuration: 0.56
   speedMultiplier: 0.55

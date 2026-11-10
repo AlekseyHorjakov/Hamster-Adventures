@@ -27,13 +27,14 @@ public class SuperHulkController : MonoBehaviour
     [SerializeField] private PartnerThrowController partnerThrow;
     [SerializeField] private Animator animator;
     [SerializeField] private Rigidbody2D body;
+    [SerializeField] private Collider2D bodyCollider;
     [SerializeField] private SpriteRenderer mainRenderer;
     [SerializeField] private GameObject hulkVisual;
     [SerializeField] private SpriteRenderer hulkRenderer;
     [SerializeField] private GameObject transformVfxPrefab;
 
     [Header("Форма халка")]
-    [SerializeField] private float hulkDuration = 7f;
+    [SerializeField] private float hulkDuration = 10f;
     [SerializeField] private float transformInDuration = 0.7f;
     [SerializeField] private float transformOutDuration = 0.56f;
     [Tooltip("Скорость передвижения в форме халка")]
@@ -75,6 +76,7 @@ public class SuperHulkController : MonoBehaviour
         if (partnerThrow == null) partnerThrow = GetComponent<PartnerThrowController>();
         if (animator == null) animator = GetComponent<Animator>();
         if (body == null) body = GetComponent<Rigidbody2D>();
+        if (bodyCollider == null) bodyCollider = GetComponent<Collider2D>();
         if (mainRenderer == null) mainRenderer = GetComponentInChildren<SpriteRenderer>();
 
         if (hulkVisual != null)
@@ -154,6 +156,7 @@ public class SuperHulkController : MonoBehaviour
         mainRenderer.enabled = false;
         hulkVisual.SetActive(true);
         if (hulkRenderer != null) hulkRenderer.enabled = true;
+        AlignHulkVisualToGround();
         playState(transformInState);
 
         SpawnTransformVfx();
@@ -286,6 +289,29 @@ public class SuperHulkController : MonoBehaviour
 
         if (!animator.GetCurrentAnimatorStateInfo(0).IsName(desired))
             playState(desired);
+    }
+
+    /// <summary>
+    /// Кадры халка нормализованы на холст 512 px с отступом 64 px под ступнями.
+    /// Ставим низ видимой фигуры ровно на низ коллайдера героя.
+    /// </summary>
+    private void AlignHulkVisualToGround()
+    {
+        if (hulkVisual == null || bodyCollider == null)
+            return;
+
+        const float canvasHeightPixels = 512f;
+        const float feetInsetPixels = 64f;
+        const float ppu = 25f;
+
+        float worldScaleY = hulkVisual.transform.lossyScale.y;
+        float fullHeightWorld = canvasHeightPixels / ppu * worldScaleY;
+        float feetInsetWorld = feetInsetPixels / ppu * worldScaleY;
+        float desiredCenterY = bodyCollider.bounds.min.y + fullHeightWorld * 0.5f - feetInsetWorld;
+
+        Vector3 position = hulkVisual.transform.position;
+        position.y = desiredCenterY;
+        hulkVisual.transform.position = position;
     }
 
     private void SpawnTransformVfx()
