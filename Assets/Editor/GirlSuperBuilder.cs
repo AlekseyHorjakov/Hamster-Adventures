@@ -137,7 +137,7 @@ public static class GirlSuperBuilder
         SpriteRenderer cage = cageObject.AddComponent<SpriteRenderer>();
         cage.sprite = cageFrames[0];
         cage.sortingLayerName = "Characters";
-        cage.sortingOrder = -16;
+        cage.sortingOrder = 1;
         cage.color = Color.white;
 
         Vector3[] positions =
@@ -169,7 +169,7 @@ public static class GirlSuperBuilder
             SpriteRenderer bolt = boltObject.AddComponent<SpriteRenderer>();
             bolt.sprite = boltFrames[i % boltFrames.Length];
             bolt.sortingLayerName = "Characters";
-            bolt.sortingOrder = -15;
+            bolt.sortingOrder = 2;
             bolt.color = Color.white;
             bolts[i] = bolt;
         }

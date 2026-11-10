@@ -127,7 +127,7 @@ public class GirlSuperAuraVFXController : MonoBehaviour
         cage = cageObject.AddComponent<SpriteRenderer>();
         cage.sprite = cageFramesBuilt[0];
         cage.sortingLayerName = "Characters";
-        cage.sortingOrder = -16;
+        cage.sortingOrder = 1;
         cageFrames = cageFramesBuilt;
 
         Vector3[] positions =
@@ -159,7 +159,7 @@ public class GirlSuperAuraVFXController : MonoBehaviour
             SpriteRenderer bolt = boltObject.AddComponent<SpriteRenderer>();
             bolt.sprite = boltFramesBuilt[i % boltFramesBuilt.Length];
             bolt.sortingLayerName = "Characters";
-            bolt.sortingOrder = -15;
+            bolt.sortingOrder = 2;
             bolts[i] = bolt;
         }
 
