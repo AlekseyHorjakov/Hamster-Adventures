@@ -74,7 +74,7 @@ public static class ReviveSystemBuilder
         so.FindProperty("bubblePrefab").objectReferenceValue = bubblePrefab;
         so.FindProperty("reviveStateName").stringValue = "Revive";
         so.FindProperty("idleStateName").stringValue = idleState;
-        so.FindProperty("bubbleLeadTime").floatValue = 1f;
+        so.FindProperty("bubbleLeadTime").floatValue = 2f;
         so.ApplyModifiedPropertiesWithoutUndo();
         PrefabUtility.SaveAsPrefabAsset(contents, prefabPath);
         PrefabUtility.UnloadPrefabContents(contents);

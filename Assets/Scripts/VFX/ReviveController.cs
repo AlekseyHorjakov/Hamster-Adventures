@@ -18,7 +18,8 @@ public class ReviveController : MonoBehaviour
     [SerializeField] private float reviveRange = 2.2f;
     [SerializeField] private float reviveDuration = 3f;
     [SerializeField] private float reviveHealthFraction = 0.3f;
-    [SerializeField] private float bubbleLeadTime = 1f;
+    [Tooltip("За сколько секунд до конца оживления показать бабл")]
+    [SerializeField] private float bubbleLeadTime = 2f;
     [SerializeField] private string reviveStateName = "Revive";
     [SerializeField] private string idleStateName = "Idle 0";
     [SerializeField] private string bubbleText = "УХУ ЕЛИ?";
@@ -66,7 +67,8 @@ public class ReviveController : MonoBehaviour
 
         progress += Time.deltaTime;
 
-        // Бабл и финальная поза появляются только в последнюю секунду.
+        // Процесс длится 3 секунды: бабл появляется со второй секунды
+        // и остаётся до завершения оживления.
         if (bubble == null && progress >= reviveDuration - bubbleLeadTime)
             ShowBubble();
 
