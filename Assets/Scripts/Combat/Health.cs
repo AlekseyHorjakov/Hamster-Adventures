@@ -27,8 +27,10 @@ public class Health : MonoBehaviour, IDamageable
     public float Max => maxHealth;
     public float Current { get; private set; }
     public bool IsAlive => Current > 0f;
+    public bool IsDamageImmune => damageImmune;
 
     private float invulnerableUntil;
+    private bool damageImmune;
 
     private void Awake()
     {
@@ -40,7 +42,7 @@ public class Health : MonoBehaviour, IDamageable
         if (!IsAlive)
             return;
 
-        if (Time.time < invulnerableUntil)
+        if (damageImmune || Time.time < invulnerableUntil)
             return;
 
         Current = Mathf.Max(0f, Current - info.amount);
@@ -70,6 +72,12 @@ public class Health : MonoBehaviour, IDamageable
         Current = Mathf.Clamp(maxHealth * fraction, 1f, maxHealth);
         invulnerableUntil = Time.time + 1f;
         Changed?.Invoke(Current, maxHealth);
+    }
+
+    /// <summary>Временная неуязвимость для переносимого или летящего напарника.</summary>
+    public void SetDamageImmune(bool value)
+    {
+        damageImmune = value;
     }
 
     public void ResetHealth()

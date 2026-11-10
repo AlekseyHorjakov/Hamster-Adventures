@@ -111,6 +111,7 @@ GameObject:
   - component: {fileID: 5250570610276498038}
   - component: {fileID: 4215429347300269409}
   - component: {fileID: 8535784843576600956}
+  - component: {fileID: 5003702993588395419}
   m_Layer: 3
   m_Name: Hamster
   m_TagString: Untagged
@@ -218,7 +219,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 0b6e90299c9550b43b06f650e162440f, type: 3}
-  m_Name: 
+  m_Name:
   m_EditorClassIdentifier: Assembly-CSharp::HamsterMovement
   moveSpeed: 15
   airAcceleration: 60
@@ -250,7 +251,7 @@ Animator:
   m_LinearVelocityBlending: 0
   m_StabilizeFeet: 0
   m_AnimatePhysics: 0
-  m_WarningMessage: 
+  m_WarningMessage:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
@@ -265,7 +266,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 82341ceb6a6eb4e4d8ad87dedf019352, type: 3}
-  m_Name: 
+  m_Name:
   m_EditorClassIdentifier: Assembly-CSharp::Health
   maxHealth: 100
   applyKnockback: 1
@@ -281,7 +282,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 66914db8cfbaf5447a69a0f55daee7f7, type: 3}
-  m_Name: 
+  m_Name:
   m_EditorClassIdentifier: Assembly-CSharp::AttackController
   comboHits:
   - {fileID: 11400000, guid: 959add4ef89537d49bcc2e747d08d355, type: 2}
@@ -335,7 +336,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b71ae70a0ae41b648a77a32b1bce957e, type: 3}
-  m_Name: 
+  m_Name:
   m_EditorClassIdentifier: Assembly-CSharp::IdleSpecialController
   movement: {fileID: 4868555397632928063}
   animator: {fileID: 6724994769446981160}
@@ -355,7 +356,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 8eb5c14dbb3808841a7c9405de28f18e, type: 3}
-  m_Name: 
+  m_Name:
   m_EditorClassIdentifier: Assembly-CSharp::PlayerInputReader
   actions: {fileID: -944628639613478452, guid: 79053acb82ce4af4aa9ca1b6b0a8cff3, type: 3}
   mapName: Hamster
@@ -369,7 +370,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f88b0e27503367c49b8949d62c7e620b, type: 3}
-  m_Name: 
+  m_Name:
   m_EditorClassIdentifier: Assembly-CSharp::PlayerCombatState
   animator: {fileID: 6724994769446981160}
   movement: {fileID: 4868555397632928063}
@@ -391,7 +392,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e6b731ee7f2033b488aa3569d9c73451, type: 3}
-  m_Name: 
+  m_Name:
   m_EditorClassIdentifier: Assembly-CSharp::ReviveController
   input: {fileID: 5250570610276498038}
   movement: {fileID: 4868555397632928063}
@@ -406,6 +407,42 @@ MonoBehaviour:
   reviveStateName: Revive
   idleStateName: Idle 0
   bubbleText: "\u0423\u0425\u0423 \u0415\u041B\u0418?"
+--- !u!114 &5003702993588395419
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6507534076535526295}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d2c4753a74ec595409085868dcc66a0b, type: 3}
+  m_Name:
+  m_EditorClassIdentifier: Assembly-CSharp::PartnerThrowController
+  input: {fileID: 5250570610276498038}
+  movement: {fileID: 4868555397632928063}
+  attack: {fileID: 1791010570302103970}
+  animator: {fileID: 6724994769446981160}
+  body: {fileID: 5635404578978476577}
+  bodyCollider: {fileID: 7096359204421194412}
+  sprite: {fileID: 4254153408764022622}
+  health: {fileID: 8845710667774388682}
+  combatState: {fileID: 4215429347300269409}
+  pickupRange: 2.4
+  carryLift: 0.08
+  idleStateName: Idle 0
+  carriedStateName: HJump
+  thrownStateName: JumpKick
+  launchSpeed: 13
+  launchAcceleration: 24
+  flightDuration: 0.55
+  launchForwardOffset: 1
+  afterHitFlightTime: 0.1
+  throwHit: {fileID: 11400000, guid: 3a882280bfda40943998788f0efc44fd, type: 2}
+  flightVfxPrefab: {fileID: 836087661105166436, guid: dfc59ed31c3b3b943ab5a0714508dcde, type: 3}
+  impactVfxPrefab: {fileID: 1054191130165651006, guid: 4b1dea73d19711e4ea5a69b4ae910974, type: 3}
+  impactShakeStrength: 0.55
+  impactShakeDuration: 0.24
 --- !u!1 &9088040696783955624
 GameObject:
   m_ObjectHideFlags: 0
@@ -448,7 +485,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ab8c6f557c134a04682f46960cb75822, type: 3}
-  m_Name: 
+  m_Name:
   m_EditorClassIdentifier: Assembly-CSharp::Hitbox
   targetMask:
     serializedVersion: 2

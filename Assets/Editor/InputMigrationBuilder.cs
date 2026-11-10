@@ -5,7 +5,7 @@ using UnityEngine.InputSystem;
 
 /// <summary>
 /// Создаёт Assets/Input/PlayerControls.inputactions с картами Hamster
-/// (A/D/W/F) и HamsterGirl (H/K/U/L), затем добавляет PlayerInputReader
+/// (A/D/W/F/E/R) и HamsterGirl (H/K/U/L/O/P), затем добавляет PlayerInputReader
 /// на оба префаба и связывает его с HamsterMovement.
 ///
 /// Запуск: Tools/Hamster/Migrate Input или batchmode
@@ -39,8 +39,8 @@ public static class InputMigrationBuilder
         InputActionAsset asset = ScriptableObject.CreateInstance<InputActionAsset>();
         asset.name = "PlayerControls";
 
-        AddMap(asset, "Hamster", "<Keyboard>/a", "<Keyboard>/d", "<Keyboard>/w", "<Keyboard>/f");
-        AddMap(asset, "HamsterGirl", "<Keyboard>/h", "<Keyboard>/k", "<Keyboard>/u", "<Keyboard>/l");
+        AddMap(asset, "Hamster", "<Keyboard>/a", "<Keyboard>/d", "<Keyboard>/w", "<Keyboard>/f", "<Keyboard>/e", "<Keyboard>/r");
+        AddMap(asset, "HamsterGirl", "<Keyboard>/h", "<Keyboard>/k", "<Keyboard>/u", "<Keyboard>/l", "<Keyboard>/o", "<Keyboard>/p");
 
         Directory.CreateDirectory(Folder);
         File.WriteAllText(AssetPath, asset.ToJson());
@@ -54,7 +54,7 @@ public static class InputMigrationBuilder
     }
 
     private static void AddMap(InputActionAsset asset, string mapName,
-        string left, string right, string jump, string attack)
+        string left, string right, string jump, string attack, string interact, string throwKey)
     {
         InputActionMap map = asset.AddActionMap(mapName);
 
@@ -65,6 +65,8 @@ public static class InputMigrationBuilder
 
         map.AddAction("Jump", InputActionType.Button).AddBinding(jump);
         map.AddAction("Attack", InputActionType.Button).AddBinding(attack);
+        map.AddAction("Interact", InputActionType.Button).AddBinding(interact);
+        map.AddAction("Throw", InputActionType.Button).AddBinding(throwKey);
         map.AddAction("Any", InputActionType.Button).AddBinding("<Keyboard>/anyKey");
     }
 
