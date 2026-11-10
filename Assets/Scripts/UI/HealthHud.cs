@@ -31,6 +31,8 @@ public class HealthHud : MonoBehaviour
 
     private Health hamsterHealth;
     private Health girlHealth;
+    private GameObject hamsterPlate;
+    private GameObject girlPlate;
 
     [RuntimeInitializeOnLoadMethod(RuntimeInitializeLoadType.AfterSceneLoad)]
     private static void Bootstrap()
@@ -62,8 +64,8 @@ public class HealthHud : MonoBehaviour
 
     private void Update()
     {
-        UpdateFill(hamsterHealth, hamsterHealthFill);
-        UpdateFill(girlHealth, girlHealthFill);
+        UpdateHealthPlate(hamsterHealth, hamsterHealthFill, hamsterPlate);
+        UpdateHealthPlate(girlHealth, girlHealthFill, girlPlate);
     }
 
     /// <summary>Заполнение нижней полоски суперудара у Хомяка, 0..1.</summary>
@@ -96,6 +98,20 @@ public class HealthHud : MonoBehaviour
 
         hamsterHealthFill = BuildPlate(canvasGo.transform, "Hamster", false, out hamsterSuperFill);
         girlHealthFill = BuildPlate(canvasGo.transform, "Girl", true, out girlSuperFill);
+
+        hamsterPlate = canvasGo.transform.Find("HamsterPlate")?.gameObject;
+        girlPlate = canvasGo.transform.Find("GirlPlate")?.gameObject;
+    }
+
+    private static void UpdateHealthPlate(Health health, Image fill, GameObject plate)
+    {
+        bool active = health != null && health.gameObject.activeInHierarchy;
+
+        if (plate != null && plate.activeSelf != active)
+            plate.SetActive(active);
+
+        if (active)
+            UpdateFill(health, fill);
     }
 
     private Image BuildPlate(Transform canvas, string prefix, bool right, out Image superFill)

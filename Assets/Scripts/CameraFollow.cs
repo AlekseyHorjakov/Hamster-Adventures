@@ -62,10 +62,26 @@ public class CameraFollow : MonoBehaviour
 
     private void LateUpdate()
     {
-        if (hamster == null || hamsterGirl == null)
+        bool hasHamster = hamster != null && hamster.gameObject.activeInHierarchy;
+        bool hasGirl = hamsterGirl != null && hamsterGirl.gameObject.activeInHierarchy;
+
+        if (!hasHamster && !hasGirl)
             return;
 
-        Vector3 midpoint = (hamster.position + hamsterGirl.position) * 0.5f;
+        Vector3 midpoint;
+        float distanceX = 0f;
+        float distanceY = 0f;
+
+        if (hasHamster && hasGirl)
+        {
+            midpoint = (hamster.position + hamsterGirl.position) * 0.5f;
+            distanceX = Mathf.Abs(hamster.position.x - hamsterGirl.position.x);
+            distanceY = Mathf.Abs(hamster.position.y - hamsterGirl.position.y);
+        }
+        else
+        {
+            midpoint = hasHamster ? hamster.position : hamsterGirl.position;
+        }
 
         Vector3 targetPosition = new Vector3(
             midpoint.x,
@@ -79,9 +95,6 @@ public class CameraFollow : MonoBehaviour
             ref moveVelocity,
             moveSmoothTime
         );
-
-        float distanceX = Mathf.Abs(hamster.position.x - hamsterGirl.position.x);
-        float distanceY = Mathf.Abs(hamster.position.y - hamsterGirl.position.y);
 
         float requiredHeight = distanceY * 0.5f + zoomPadding;
         float requiredWidth = (distanceX * 0.5f + zoomPadding) / cam.aspect;
