@@ -48,8 +48,8 @@ public static class VerticalSliceBuilder
         BuildExit(out exitGate);
 
         LevelFlowController flow = BuildFlow(arenaRoot, hyenas, boss, exitGate);
-        BuildTrigger("ArenaTrigger", new Vector3(6.5f, 2f, 0f), new Vector2(1.4f, 7f), flow, LevelTriggerAction.StartArena);
-        BuildTrigger("FinishTrigger", new Vector3(47f, 2f, 0f), new Vector2(1.5f, 7f), flow, LevelTriggerAction.Finish);
+        BuildTrigger("ArenaTrigger", new Vector3(20.5f, 2f, 0f), new Vector2(1.4f, 7f), flow, LevelTriggerAction.StartArena);
+        BuildTrigger("FinishTrigger", new Vector3(51.5f, 2f, 0f), new Vector2(1.5f, 7f), flow, LevelTriggerAction.Finish);
 
         EditorSceneManager.MarkSceneDirty(scene);
         EditorSceneManager.SaveScene(scene, ScenePath);
@@ -62,11 +62,11 @@ public static class VerticalSliceBuilder
 
     private static void ConfigureGrounds(Scene scene)
     {
-        ConfigureGround(FindRoot(scene, "Ground"), new Vector3(-10f, -0.5f, 0f), new Vector2(16f, 1f));
-        ConfigureGround(FindRoot(scene, "Ground (1)"), new Vector3(27.5f, -0.5f, 0f), new Vector2(45f, 1f));
-        ConfigureGround(FindRoot(scene, "Ground (2)"), new Vector3(-1f, 1.5f, 0f), new Vector2(4f, 1f));
-        ConfigureGround(FindRoot(scene, "Ground (3)"), new Vector3(3.25f, 3.5f, 0f), new Vector2(4.5f, 1f));
-        ConfigureGround(FindRoot(scene, "Ground (4)"), new Vector3(14f, 3.5f, 0f), new Vector2(5f, 1f));
+        ConfigureGround(FindRoot(scene, "Ground"), new Vector3(-8f, -0.5f, 0f), new Vector2(20f, 1f));
+        ConfigureGround(FindRoot(scene, "Ground (1)"), new Vector3(35.5f, -0.5f, 0f), new Vector2(33f, 1f));
+        ConfigureGround(FindRoot(scene, "Ground (2)"), new Vector3(5.5f, 1.5f, 0f), new Vector2(4f, 1f));
+        ConfigureGround(FindRoot(scene, "Ground (3)"), new Vector3(11f, 3.5f, 0f), new Vector2(4.5f, 1f));
+        ConfigureGround(FindRoot(scene, "Ground (4)"), new Vector3(16.5f, 1.5f, 0f), new Vector2(5f, 1f));
     }
 
     private static void ConfigureGround(GameObject ground, Vector3 position, Vector2 size)
@@ -172,7 +172,7 @@ public static class VerticalSliceBuilder
         GameObject prefab = AssetDatabase.LoadAssetAtPath<GameObject>(HyenaPrefabPath);
         hyenas = new HyenaAI[2];
 
-        float[] positions = { 19f, 29f };
+        float[] positions = { 27f, 35f };
         for (int i = 0; i < positions.Length; i++)
         {
             GameObject hyena = (GameObject)PrefabUtility.InstantiatePrefab(prefab);
@@ -191,7 +191,7 @@ public static class VerticalSliceBuilder
         boss = (GameObject)PrefabUtility.InstantiatePrefab(prefab);
         boss.name = "HyenaBoss";
         boss.transform.localScale = Vector3.one * 2.6f;
-        PlaceOnGround(boss, 39f, 0f);
+        PlaceOnGround(boss, 43f, 0f);
 
         Health health = boss.GetComponent<Health>();
         if (health != null)
@@ -214,7 +214,7 @@ public static class VerticalSliceBuilder
             ?.GetComponent<SpriteRenderer>()?.sprite;
 
         exitGate = new GameObject("ExitGate");
-        exitGate.transform.position = new Vector3(43.8f, 3.5f, 0f);
+        exitGate.transform.position = new Vector3(48.5f, 3.5f, 0f);
         exitGate.transform.localScale = new Vector3(1f, 7f, 1f);
 
         SpriteRenderer renderer = exitGate.AddComponent<SpriteRenderer>();

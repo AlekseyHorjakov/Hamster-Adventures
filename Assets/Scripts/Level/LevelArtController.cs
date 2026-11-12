@@ -1,3 +1,4 @@
+using System.Linq;
 using UnityEngine;
 
 /// <summary>
@@ -35,6 +36,7 @@ public class LevelArtController : MonoBehaviour
         BuildParallax();
         ReplaceGroundVisuals();
         PlaceArenaAndFinish();
+        ReplaceBossVisual();
     }
 
     private void LoadSprites()
@@ -60,6 +62,13 @@ public class LevelArtController : MonoBehaviour
             new Vector3(cam.transform.position.x, cam.transform.position.y, 0f),
             screenHeight * 1.08f, 1f, 1f, Color.white);
 
+        float zoneWidth = screenWidth * 1.22f;
+        float zoneHeight = zoneWidth * 0.5f;
+        CreateZoneLayer("CampZone", camp, "Mid", -20, cam.transform, zoneHeight,
+            -100f, 6f, 5f, Color.white);
+        CreateZoneLayer("LakeZone", lake, "Mid", -15, cam.transform, zoneHeight,
+            2f, 24f, 5f, new Color(0.92f, 0.98f, 1f, 1f));
+
         CreateLayer("Mountains", mountains, "Far", -20,
             new Vector3(cam.transform.position.x, cam.transform.position.y + 3f, 0f),
             screenWidth * 0.6f, 0.98f, 0.98f,
@@ -76,14 +85,14 @@ public class LevelArtController : MonoBehaviour
             new Color(0.74f, 0.9f, 0.74f, 1f));
     }
 
-    private void CreateLayer(string name, Sprite sprite, string sortingLayer, int sortingOrder,
+    private GameObject CreateLayer(string name, Sprite sprite, string sortingLayer, int sortingOrder,
         Vector3 position, float targetHeight, float horizontalFactor, float verticalFactor,
         Color tint)
     {
         if (sprite == null)
         {
             Debug.LogWarning("[LevelArt] Не найден спрайт слоя " + name);
-            return;
+            return null;
         }
 
         GameObject go = new GameObject(name);
@@ -101,8 +110,56 @@ public class LevelArtController : MonoBehaviour
 
         ParallaxLayer parallax = go.AddComponent<ParallaxLayer>();
         parallax.Initialize(cam.transform, horizontalFactor, verticalFactor);
+        return go;
     }
 
+    private void CreateZoneLayer(string name, Sprite sprite, string sortingLayer, int sortingOrder,
+        Transform cameraTransform, float targetHeight, float zoneStartX, float zoneEndX,
+        float fade, Color tint)
+    {
+        GameObject go = CreateLayer(name, sprite, sortingLayer, sortingOrder,
+            new Vector3(cameraTransform.position.x, cameraTransform.position.y, 0f),
+            targetHeight, 1f, 1f, tint);
+
+        if (go == null)
+            return;
+
+        ZoneFadeLayer fadeLayer = go.AddComponent<ZoneFadeLayer>();
+        fadeLayer.Initialize(cameraTransform, zoneStartX, zoneEndX, fade, tint);
+    }
+
+    private void ReplaceBossVisual()
+    {
+        Sprite bossSprite = Resources.Load<Sprite>("Level01/Boss");
+        if (bossSprite == null)
+            return;
+
+        HyenaAI boss = FindObjectsByType<HyenaAI>(
+            FindObjectsInactive.Include, FindObjectsSortMode.None)
+            .FirstOrDefault(enemy => enemy != null && enemy.name.Contains("Boss"));
+        if (boss == null)
+            return;
+
+        foreach (SpriteRenderer oldRenderer in boss.GetComponentsInChildren<SpriteRenderer>(true))
+            oldRenderer.enabled = false;
+
+        float localWorldHeight = 8f / Mathf.Abs(boss.transform.lossyScale.y);
+        float spriteHeight = bossSprite.bounds.size.y;
+        float localScale = localWorldHeight / spriteHeight;
+
+        BoxCollider2D box = boss.GetComponent<BoxCollider2D>();
+        float bottomLocal = box != null ? box.offset.y - box.size.y * 0.5f : 0f;
+
+        GameObject visual = new GameObject("BossArtVisual");
+        visual.transform.SetParent(boss.transform, false);
+        visual.transform.localPosition = new Vector3(0f, bottomLocal + localWorldHeight * 0.5f, 0f);
+        visual.transform.localScale = Vector3.one * localScale;
+
+        SpriteRenderer renderer = visual.AddComponent<SpriteRenderer>();
+        renderer.sprite = bossSprite;
+        renderer.sortingLayerName = "Characters";
+        renderer.sortingOrder = 1;
+    }
     private void ReplaceGroundVisuals()
     {
         SpriteRenderer[] renderers = FindObjectsByType<SpriteRenderer>(
@@ -167,12 +224,12 @@ public class LevelArtController : MonoBehaviour
     {
         if (arenaFence != null)
         {
-            PlaceGroundDecoration("ArenaFenceLeft", arenaFence, 8.5f, 6.2f, "Ground", 20);
-            PlaceGroundDecoration("ArenaFenceRight", arenaFence, 43.5f, 6.2f, "Ground", 20);
+            PlaceGroundDecoration("ArenaFenceLeft", arenaFence, 20.5f, 6.2f, "Ground", 20);
+            PlaceGroundDecoration("ArenaFenceRight", arenaFence, 48.5f, 6.2f, "Ground", 20);
         }
 
         if (finishGate != null)
-            PlaceGroundDecoration("FinishGateVisual", finishGate, 47f, 8.2f, "Ground", 25);
+            PlaceGroundDecoration("FinishGateVisual", finishGate, 51.5f, 8.2f, "Ground", 25);
     }
 
     private void PlaceGroundDecoration(string name, Sprite sprite, float x, float height,
