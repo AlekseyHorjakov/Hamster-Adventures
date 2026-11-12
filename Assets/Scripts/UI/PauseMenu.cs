@@ -142,7 +142,7 @@ public class PauseMenu : MonoBehaviour
     {
         Resume();
         GameSession.Clear();
-        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        SceneManager.LoadScene("MainMenu");
     }
 
     private void OnDisable()

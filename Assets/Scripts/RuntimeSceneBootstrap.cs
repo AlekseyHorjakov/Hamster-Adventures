@@ -27,7 +27,5 @@ public static class RuntimeSceneBootstrap
         if (hasPlayers && Object.FindFirstObjectByType<HealthHud>() == null)
             new GameObject("HealthHUD").AddComponent<HealthHud>();
 
-        if (!GameSession.HasSelection && Object.FindFirstObjectByType<GameModeSelector>() == null)
-            new GameObject("GameModeSelector").AddComponent<GameModeSelector>();
     }
 }

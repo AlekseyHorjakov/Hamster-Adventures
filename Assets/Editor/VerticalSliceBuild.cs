@@ -7,6 +7,7 @@ using UnityEngine;
 /// <summary>Собирает вертикальный срез в готовый Windows-билд.</summary>
 public static class VerticalSliceBuild
 {
+    private const string MenuScenePath = "Assets/Scenes/MainMenu.unity";
     private const string ScenePath = "Assets/Scenes/Level01_VerticalSlice.unity";
     private const string OutputDirectory = "D:/Build/HamsterAdventures_SliceLatest";
     private const string OutputExe = OutputDirectory + "/HamsterAdventures_SliceLatest.exe";
@@ -14,10 +15,10 @@ public static class VerticalSliceBuild
     [MenuItem("Tools/Hamster/Build Windows Vertical Slice")]
     public static void BuildWindows64()
     {
-        string[] scenes = { ScenePath };
+        string[] scenes = { MenuScenePath, ScenePath };
         if (scenes.Any(scene => AssetDatabase.LoadAssetAtPath<SceneAsset>(scene) == null))
         {
-            Debug.LogError("[Build] Нет сцены " + ScenePath);
+            Debug.LogError("[Build] Нет одной из сцен: " + string.Join(", ", scenes));
             EditorApplication.Exit(1);
             return;
         }
