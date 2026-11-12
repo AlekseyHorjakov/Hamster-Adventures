@@ -26,6 +26,8 @@ public class LevelFlowController : MonoBehaviour
     [SerializeField] private GameObject exitGate;
 
     private Phase phase = Phase.Intro;
+
+    public bool IsEndScreen => phase == Phase.Completed || phase == Phase.GameOver;
     private Health bossHealth;
     private GUIStyle titleStyle;
     private GUIStyle textStyle;

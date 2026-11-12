@@ -24,7 +24,7 @@ public class HitStop : MonoBehaviour
 
     public static void Play(float duration)
     {
-        if (duration <= 0f)
+        if (duration <= 0f || GamePause.IsPaused)
             return;
 
         if (instance == null)
@@ -48,7 +48,8 @@ public class HitStop : MonoBehaviour
         if (remaining <= 0f)
         {
             remaining = 0f;
-            Time.timeScale = 1f;
+            if (!GamePause.IsPaused)
+                Time.timeScale = 1f;
         }
     }
 
@@ -57,7 +58,8 @@ public class HitStop : MonoBehaviour
         // Если игру остановили во время заморозки — вернуть время,
         // иначе следующий запуск начнётся в замершем состоянии.
         remaining = 0f;
-        Time.timeScale = 1f;
+        if (!GamePause.IsPaused)
+            Time.timeScale = 1f;
     }
 
     private void OnDestroy()
@@ -65,6 +67,7 @@ public class HitStop : MonoBehaviour
         if (instance == this)
             instance = null;
 
-        Time.timeScale = 1f;
+        if (!GamePause.IsPaused)
+            Time.timeScale = 1f;
     }
 }

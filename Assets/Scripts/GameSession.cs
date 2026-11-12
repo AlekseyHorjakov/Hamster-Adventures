@@ -24,6 +24,12 @@ public static class GameSession
         HasSelection = false;
     }
 
+    /// <summary>Сбрасывает выбранный режим перед возвратом в меню.</summary>
+    public static void Clear()
+    {
+        HasSelection = false;
+    }
+
     public static void SetMode(GameMode mode)
     {
         Mode = mode;

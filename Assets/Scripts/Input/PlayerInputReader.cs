@@ -56,6 +56,18 @@ public class PlayerInputReader : MonoBehaviour
         map.Enable();
     }
 
+    /// <summary>Отключает карту ввода на время паузы и меню.</summary>
+    public void SetInputEnabled(bool enabled)
+    {
+        if (map == null)
+            return;
+
+        if (enabled)
+            map.Enable();
+        else
+            map.Disable();
+    }
+
     private void OnEnable()
     {
         map?.Enable();
