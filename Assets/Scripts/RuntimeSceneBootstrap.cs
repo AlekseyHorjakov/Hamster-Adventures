@@ -20,8 +20,6 @@ public static class RuntimeSceneBootstrap
         if (Object.FindFirstObjectByType<PauseMenu>() == null)
             new GameObject("PauseMenu").AddComponent<PauseMenu>();
 
-        if (Object.FindFirstObjectByType<ControlsHintHud>() == null)
-            new GameObject("ControlsHintHUD").AddComponent<ControlsHintHud>();
 
         bool hasPlayers = Object.FindObjectsByType<Health>(FindObjectsSortMode.None)
             .Any(health => health.name.Contains("Hamster"));
