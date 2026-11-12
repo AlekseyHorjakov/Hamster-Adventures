@@ -29,6 +29,8 @@ public class LevelFlowController : MonoBehaviour
 
     public bool IsEndScreen => phase == Phase.Completed || phase == Phase.GameOver;
     private Health bossHealth;
+    private float levelStartedAt;
+    private float completionTime;
     private GUIStyle titleStyle;
     private GUIStyle textStyle;
     private GUIStyle buttonStyle;
@@ -36,6 +38,7 @@ public class LevelFlowController : MonoBehaviour
     private void Start()
     {
         GameSession.ApplyModeToPlayers();
+        levelStartedAt = Time.unscaledTime;
 
         if (arenaRoot != null)
             arenaRoot.SetActive(false);
@@ -62,8 +65,15 @@ public class LevelFlowController : MonoBehaviour
 
         if (phase == Phase.Completed || phase == Phase.GameOver)
         {
-            if (Keyboard.current != null && Keyboard.current.rKey.wasPressedThisFrame)
-                RestartScene();
+            if (Keyboard.current != null)
+            {
+                if (Keyboard.current.rKey.wasPressedThisFrame)
+                    RestartScene();
+                else if (Keyboard.current.enterKey.wasPressedThisFrame
+                         || Keyboard.current.numpadEnterKey.wasPressedThisFrame
+                         || Keyboard.current.escapeKey.wasPressedThisFrame)
+                    ReturnToMainMenu();
+            }
             return;
         }
 
@@ -109,6 +119,8 @@ public class LevelFlowController : MonoBehaviour
             return;
 
         phase = Phase.Completed;
+        completionTime = Mathf.Max(0f, Time.unscaledTime - levelStartedAt);
+        GameProgress.MarkLevelCompleted();
         Time.timeScale = 0f;
     }
 
@@ -245,6 +257,24 @@ public class LevelFlowController : MonoBehaviour
         return true;
     }
 
+    private static void ReturnToMainMenu()
+    {
+        Time.timeScale = 1f;
+        GameSession.Clear();
+        SceneManager.LoadScene("MainMenu");
+    }
+
+    private string CompletionDetails()
+    {
+        int totalSeconds = Mathf.FloorToInt(completionTime);
+        string time = string.Format("{0:00}:{1:00}", totalSeconds / 60, totalSeconds % 60);
+        string mode = GameSession.Mode == GameMode.Coop
+            ? "Два игрока"
+            : GameSession.Mode == GameMode.SoloHamsterGirl
+                ? "Соло: Хомячиха"
+                : "Соло: Хомяк";
+        return "Время: " + time + "\nРежим: " + mode;
+    }
     private void RestartScene()
     {
         Time.timeScale = 1f;
@@ -289,16 +319,28 @@ public class LevelFlowController : MonoBehaviour
         GUI.color = Color.white;
 
         float width = Mathf.Min(620f, Screen.width - 40f);
-        Rect panel = new Rect((Screen.width - width) * 0.5f, Screen.height * 0.32f, width, 240f);
+        Rect panel = new Rect((Screen.width - width) * 0.5f, Screen.height * 0.28f, width, 330f);
         GUILayout.BeginArea(panel);
-        GUILayout.Label(phase == Phase.Completed ? "ЭТАП ПРОЙДЕН!" : "ИГРА ОКОНЧЕНА", titleStyle);
-        GUILayout.Space(20f);
+        GUILayout.Label(phase == Phase.Completed ? "УРОВЕНЬ ПРОЙДЕН!" : "ИГРА ОКОНЧЕНА", titleStyle);
+        GUILayout.Space(18f);
         GUILayout.Label(phase == Phase.Completed
-            ? "Основной игровой цикл среза работает."
+            ? CompletionDetails()
             : "Оба доступных героя выведены из строя.", textStyle);
-        GUILayout.Space(26f);
-        if (GUILayout.Button("R — пройти заново", buttonStyle, GUILayout.Height(52f)))
+        GUILayout.Space(24f);
+        if (GUILayout.Button("В главное меню", buttonStyle, GUILayout.Height(52f)))
+        {
+            ReturnToMainMenu();
+            return;
+        }
+        GUILayout.Space(10f);
+        if (GUILayout.Button(phase == Phase.Completed ? "Пройти ещё раз" : "Начать заново",
+            buttonStyle, GUILayout.Height(52f)))
+        {
             RestartScene();
+            return;
+        }
+        GUILayout.Space(12f);
+        GUILayout.Label("R — быстрый перезапуск", textStyle);
         GUILayout.EndArea();
     }
 

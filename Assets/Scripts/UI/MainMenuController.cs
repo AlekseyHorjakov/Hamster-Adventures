@@ -358,7 +358,9 @@ public class MainMenuController : MonoBehaviour
 
         if (!GameProgress.TryBeginContinue(out GameMode mode))
         {
-            ShowInfo("Сохранение не найдено. Начни новую игру.");
+            ShowInfo(GameProgress.IsCompleted
+                ? "Текущее прохождение завершено. Начни новую игру."
+                : "Сохранение не найдено. Начни новую игру.");
             return;
         }
 
@@ -373,11 +375,12 @@ public class MainMenuController : MonoBehaviour
         if (continueButton == null)
             return;
 
-        continueButton.interactable = GameProgress.HasCheckpoint;
+        bool canContinue = GameProgress.CanContinue;
+        continueButton.interactable = canContinue;
         CanvasGroup group = continueButton.GetComponent<CanvasGroup>();
         if (group == null)
             group = continueButton.gameObject.AddComponent<CanvasGroup>();
-        group.alpha = GameProgress.HasCheckpoint ? 1f : 0.45f;
+        group.alpha = canContinue ? 1f : 0.45f;
     }
 
     private void ShowInfo(string message)

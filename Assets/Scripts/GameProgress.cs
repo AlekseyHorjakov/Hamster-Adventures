@@ -7,6 +7,7 @@ public class CheckpointData
     public bool valid;
     public int mode;
     public int checkpoint;
+    public bool completed;
     public bool hasHamster;
     public float hamsterX;
     public float hamsterY;
@@ -25,6 +26,8 @@ public static class GameProgress
     private static bool newGamePending;
 
     public static bool HasCheckpoint { get; private set; }
+    public static bool CanContinue => HasCheckpoint && current != null && !current.completed;
+    public static bool IsCompleted => current != null && current.completed;
     public static GameMode Mode => current != null ? (GameMode)current.mode : GameMode.SoloHamster;
     public static int Checkpoint => current != null ? current.checkpoint : 0;
 
@@ -42,7 +45,8 @@ public static class GameProgress
         {
             valid = true,
             mode = (int)mode,
-            checkpoint = 0
+            checkpoint = 0,
+            completed = false
         };
         HasCheckpoint = true;
         newGamePending = true;
@@ -53,7 +57,7 @@ public static class GameProgress
     public static bool TryBeginContinue(out GameMode mode)
     {
         Load();
-        if (!HasCheckpoint || current == null)
+        if (!HasCheckpoint || current == null || current.completed)
         {
             mode = default;
             return false;
@@ -65,6 +69,19 @@ public static class GameProgress
         return true;
     }
 
+    public static void MarkLevelCompleted()
+    {
+        if (current == null)
+            current = new CheckpointData();
+
+        current.valid = true;
+        current.completed = true;
+        current.checkpoint = 4;
+        HasCheckpoint = true;
+        resumeRequested = false;
+        newGamePending = false;
+        Save();
+    }
     public static bool ConsumeResume(out CheckpointData data)
     {
         if (!resumeRequested || current == null)
