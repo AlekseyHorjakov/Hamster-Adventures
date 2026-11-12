@@ -17,6 +17,9 @@ public static class RuntimeSceneBootstrap
 
     private static void HandleSceneLoaded(Scene scene, LoadSceneMode mode)
     {
+        if (GameSession.HasSelection)
+            GameSession.ApplyModeToPlayers();
+
         if (Object.FindFirstObjectByType<PauseMenu>() == null)
             new GameObject("PauseMenu").AddComponent<PauseMenu>();
 

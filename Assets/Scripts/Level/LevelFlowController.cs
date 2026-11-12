@@ -35,6 +35,8 @@ public class LevelFlowController : MonoBehaviour
 
     private void Start()
     {
+        GameSession.ApplyModeToPlayers();
+
         if (arenaRoot != null)
             arenaRoot.SetActive(false);
 
@@ -46,6 +48,11 @@ public class LevelFlowController : MonoBehaviour
 
         if (exitGate != null)
             exitGate.SetActive(true);
+
+        if (GameProgress.ConsumeResume(out CheckpointData checkpoint))
+            ApplyCheckpoint(checkpoint);
+        else if (GameProgress.ConsumeNewGame())
+            SaveCheckpointAt(0);
     }
 
     private void Update()
@@ -72,6 +79,7 @@ public class LevelFlowController : MonoBehaviour
             phase = Phase.Boss;
             if (boss != null)
                 boss.SetActive(true);
+            SaveCheckpointAt(2);
             return;
         }
 
@@ -80,6 +88,7 @@ public class LevelFlowController : MonoBehaviour
             phase = Phase.ExitOpen;
             if (exitGate != null)
                 exitGate.SetActive(false);
+            SaveCheckpointAt(3);
         }
     }
 
@@ -91,6 +100,7 @@ public class LevelFlowController : MonoBehaviour
         phase = Phase.Arena;
         if (arenaRoot != null)
             arenaRoot.SetActive(true);
+        SaveCheckpointAt(1);
     }
 
     public void NotifyFinishEntered()
@@ -102,6 +112,100 @@ public class LevelFlowController : MonoBehaviour
         Time.timeScale = 0f;
     }
 
+    private void ApplyCheckpoint(CheckpointData checkpoint)
+    {
+        RestorePlayerPositions(checkpoint);
+
+        if (checkpoint.checkpoint <= 0)
+            return;
+
+        if (arenaRoot != null)
+            arenaRoot.SetActive(true);
+
+        if (checkpoint.checkpoint >= 2)
+        {
+            SetArenaEnemiesActive(false);
+
+            if (boss != null)
+            {
+                boss.SetActive(checkpoint.checkpoint < 3);
+                bossHealth = boss.GetComponent<Health>();
+            }
+
+            if (checkpoint.checkpoint >= 3)
+            {
+                phase = Phase.ExitOpen;
+                if (exitGate != null)
+                    exitGate.SetActive(false);
+            }
+            else
+            {
+                phase = Phase.Boss;
+            }
+        }
+        else
+        {
+            phase = Phase.Arena;
+        }
+    }
+
+    private static void RestorePlayerPositions(CheckpointData checkpoint)
+    {
+        HamsterMovement[] players = FindObjectsByType<HamsterMovement>(
+            FindObjectsInactive.Exclude, FindObjectsSortMode.None);
+
+        foreach (HamsterMovement player in players)
+        {
+            if (player == null)
+                continue;
+
+            bool isGirl = player.name.Contains("HamsterGirl");
+            bool hasPosition = isGirl ? checkpoint.hasGirl : checkpoint.hasHamster;
+            if (!hasPosition)
+                continue;
+
+            Vector2 position = isGirl
+                ? new Vector2(checkpoint.girlX, checkpoint.girlY)
+                : new Vector2(checkpoint.hamsterX, checkpoint.hamsterY);
+
+            player.Body.position = position;
+            player.Body.linearVelocity = Vector2.zero;
+        }
+    }
+
+    private void SetArenaEnemiesActive(bool active)
+    {
+        if (arenaEnemies == null)
+            return;
+
+        foreach (HyenaAI enemy in arenaEnemies)
+        {
+            if (enemy != null)
+                enemy.gameObject.SetActive(active);
+        }
+    }
+
+    private static void SaveCheckpointAt(int checkpoint)
+    {
+        HamsterMovement[] players = FindObjectsByType<HamsterMovement>(
+            FindObjectsInactive.Exclude, FindObjectsSortMode.None);
+
+        Vector2? hamster = null;
+        Vector2? girl = null;
+
+        foreach (HamsterMovement player in players)
+        {
+            if (player == null)
+                continue;
+
+            if (player.name.Contains("HamsterGirl"))
+                girl = player.transform.position;
+            else if (player.name.Contains("Hamster"))
+                hamster = player.transform.position;
+        }
+
+        GameProgress.SaveCheckpoint(checkpoint, hamster, girl);
+    }
     private bool AllArenaEnemiesDefeated()
     {
         if (arenaEnemies == null || arenaEnemies.Length == 0)
