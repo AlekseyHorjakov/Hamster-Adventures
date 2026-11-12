@@ -130,6 +130,7 @@ public class PlayerCombatState : MonoBehaviour
         IsDead = true;
         IsDowned = false;
         hurtPlaying = false;
+        health.Kill();
 
         if (hurtRoutine != null)
         {

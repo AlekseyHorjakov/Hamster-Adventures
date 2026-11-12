@@ -62,8 +62,13 @@ public class CameraFollow : MonoBehaviour
 
     private void LateUpdate()
     {
-        bool hasHamster = hamster != null && hamster.gameObject.activeInHierarchy;
-        bool hasGirl = hamsterGirl != null && hamsterGirl.gameObject.activeInHierarchy;
+        PlayerCombatState hamsterState = hamster != null ? hamster.GetComponent<PlayerCombatState>() : null;
+        PlayerCombatState girlState = hamsterGirl != null ? hamsterGirl.GetComponent<PlayerCombatState>() : null;
+
+        bool hasHamster = hamster != null && hamster.gameObject.activeInHierarchy
+            && (hamsterState == null || !hamsterState.IsDead);
+        bool hasGirl = hamsterGirl != null && hamsterGirl.gameObject.activeInHierarchy
+            && (girlState == null || !girlState.IsDead);
 
         if (!hasHamster && !hasGirl)
             return;

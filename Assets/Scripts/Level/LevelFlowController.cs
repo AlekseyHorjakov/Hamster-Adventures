@@ -249,6 +249,9 @@ public class LevelFlowController : MonoBehaviour
             if (player == null)
                 continue;
 
+            if (player.IsDead)
+                continue;
+
             Health health = player.GetComponent<Health>();
             if (health != null && health.IsAlive)
                 return false;
@@ -278,6 +281,7 @@ public class LevelFlowController : MonoBehaviour
     private void RestartScene()
     {
         Time.timeScale = 1f;
+        GameProgress.StartNew(GameSession.Mode);
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
 
@@ -325,7 +329,7 @@ public class LevelFlowController : MonoBehaviour
         GUILayout.Space(18f);
         GUILayout.Label(phase == Phase.Completed
             ? CompletionDetails()
-            : "Оба доступных героя выведены из строя.", textStyle);
+            : "Все доступные герои выведены из строя.", textStyle);
         GUILayout.Space(24f);
         if (GUILayout.Button("В главное меню", buttonStyle, GUILayout.Height(52f)))
         {
@@ -333,7 +337,7 @@ public class LevelFlowController : MonoBehaviour
             return;
         }
         GUILayout.Space(10f);
-        if (GUILayout.Button(phase == Phase.Completed ? "Пройти ещё раз" : "Начать заново",
+        if (GUILayout.Button(phase == Phase.Completed ? "Пройти ещё раз" : "Начать сначала",
             buttonStyle, GUILayout.Height(52f)))
         {
             RestartScene();

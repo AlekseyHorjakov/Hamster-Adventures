@@ -76,6 +76,16 @@ public class Health : MonoBehaviour, IDamageable
             Died?.Invoke();
     }
 
+    /// <summary>Мгновенно убивает объект, например при падении в яму.</summary>
+    public void Kill()
+    {
+        if (!IsAlive)
+            return;
+
+        Current = 0f;
+        Changed?.Invoke(Current, maxHealth);
+        Died?.Invoke();
+    }
     public void Revive(float fraction)
     {
         Current = Mathf.Clamp(maxHealth * fraction, 1f, maxHealth);

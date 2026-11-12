@@ -145,6 +145,8 @@ public class PauseMenu : MonoBehaviour
         else if (keyboard.digit3Key.wasPressedThisFrame)
             page = Page.Settings;
         else if (keyboard.digit4Key.wasPressedThisFrame)
+            RestartLevel();
+        else if (keyboard.digit5Key.wasPressedThisFrame)
             confirmationOpen = true;
     }
 
@@ -176,6 +178,13 @@ public class PauseMenu : MonoBehaviour
         }
     }
 
+    private void RestartLevel()
+    {
+        GameMode mode = GameSession.Mode;
+        Resume();
+        GameProgress.StartNew(mode);
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+    }
     private void ExitToMenu()
     {
         Resume();
@@ -233,36 +242,42 @@ public class PauseMenu : MonoBehaviour
     private void DrawMainPage(Rect board, float centreX)
     {
         float width = Mathf.Min(480f, board.width * 0.54f);
-        float height = 58f;
+        float height = 54f;
         float x = centreX - width * 0.5f;
-        float y = board.y + 128f;
+        float y = board.y + 118f;
 
         if (GUI.Button(new Rect(x, y, width, height), "Продолжить", buttonStyle))
         {
             Resume();
             return;
         }
-        y += 80f;
+        y += 72f;
         if (GUI.Button(new Rect(x, y, width, height), "Управление", buttonStyle))
         {
             page = Page.Controls;
             return;
         }
-        y += 80f;
+        y += 72f;
         if (GUI.Button(new Rect(x, y, width, height), "Настройки", buttonStyle))
         {
             page = Page.Settings;
             return;
         }
-        y += 80f;
+        y += 72f;
+        if (GUI.Button(new Rect(x, y, width, height), "Начать сначала", buttonStyle))
+        {
+            RestartLevel();
+            return;
+        }
+        y += 72f;
         if (GUI.Button(new Rect(x, y, width, height), "В меню", buttonStyle))
         {
             confirmationOpen = true;
             return;
         }
 
-        GUI.Label(new Rect(board.x, board.yMax - 52f, board.width, 26f),
-            "1–4 — выбор · Esc — продолжить", hintStyle);
+        GUI.Label(new Rect(board.x, board.yMax - 48f, board.width, 26f),
+            "1–5 — выбор · Esc — продолжить", hintStyle);
     }
 
     private void DrawControlsPage(Rect board, float centreX)
