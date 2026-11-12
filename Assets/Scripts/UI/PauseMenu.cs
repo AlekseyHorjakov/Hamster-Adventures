@@ -267,9 +267,9 @@ public class PauseMenu : MonoBehaviour
 
     private void DrawControlsPage(Rect board, float centreX)
     {
-        float left = board.x + 105f;
-        float width = board.width - 210f;
-        GUI.Label(new Rect(left, board.y + 112f, width, board.height - 220f),
+        float left = board.x + board.width * 0.18f;
+        float width = board.width * 0.64f;
+        GUI.Label(new Rect(left, board.y + 128f, width, board.height - 230f),
             "Хомяк\n" +
             "A / D — движение, W — прыжок, F — удар.\n" +
             "Удерживай F — заряженный удар, Q — суперудар.\n" +
@@ -440,9 +440,9 @@ public class PauseMenu : MonoBehaviour
         bodyStyle = new GUIStyle(GUI.skin.label)
         {
             font = font,
-            fontSize = 19,
+            fontSize = 18,
             wordWrap = true,
-            alignment = TextAnchor.UpperLeft,
+            alignment = TextAnchor.UpperCenter,
             normal = { textColor = new Color(0.92f, 0.96f, 1f, 1f) }
         };
 
