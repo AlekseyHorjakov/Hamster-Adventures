@@ -125,13 +125,13 @@ public static class VerticalSliceBuilder
             float scale = width / sprite.bounds.size.x;
             float visualHeight = sprite.bounds.size.y * scale;
             visual.transform.localScale = Vector3.one * scale;
-            visual.transform.localPosition = new Vector3(0f, 0.5f - visualHeight * 0.5f, 0f);
+            visual.transform.localPosition = new Vector3(0f, 0.5f - visualHeight * 0.5f + 0.45f, 0f);
         }
         else
         {
             renderer.drawMode = SpriteDrawMode.Tiled;
             renderer.size = new Vector2(width, sprite.bounds.size.y);
-            visual.transform.localPosition = new Vector3(0f, 0.5f - sprite.bounds.size.y * 0.5f, 0f);
+            visual.transform.localPosition = new Vector3(0f, 0.5f - sprite.bounds.size.y * 0.5f + 0.45f, 0f);
         }
     }
 
