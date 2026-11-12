@@ -17,6 +17,8 @@ public static class VerticalSliceBuilder
     private const string HyenaPrefabPath = "Assets/Prefabs/Hyena.prefab";
     private const string HamsterPrefabPath = "Assets/Prefabs/Hamster.prefab";
     private const string GirlPrefabPath = "Assets/Prefabs/HamsterGirl.prefab";
+    private const string GroundSpritePath = "Assets/Resources/Level01/Ground.png";
+    private const string PlatformSpritePath = "Assets/Resources/Level01/Platform.png";
 
     [MenuItem("Tools/Hamster/Build Vertical Slice")]
     public static void BuildAll()
@@ -33,7 +35,7 @@ public static class VerticalSliceBuilder
         AssetDatabase.Refresh();
         Scene scene = EditorSceneManager.OpenScene(ScenePath, OpenSceneMode.Single);
 
-        ConfigureGrounds(scene);
+        BuildLevelGeometry(scene);
         ConfigurePlayers(scene);
         ConfigureFallZone(scene);
         CloneTrainingDummies(scene);
@@ -48,8 +50,8 @@ public static class VerticalSliceBuilder
         BuildExit(out exitGate);
 
         LevelFlowController flow = BuildFlow(arenaRoot, hyenas, boss, exitGate);
-        BuildTrigger("ArenaTrigger", new Vector3(20.5f, 2f, 0f), new Vector2(1.4f, 7f), flow, LevelTriggerAction.StartArena);
-        BuildTrigger("FinishTrigger", new Vector3(51.5f, 2f, 0f), new Vector2(1.5f, 7f), flow, LevelTriggerAction.Finish);
+        BuildTrigger("ArenaTrigger", new Vector3(132f, 2f, 0f), new Vector2(1.4f, 7f), flow, LevelTriggerAction.StartArena);
+        BuildTrigger("FinishTrigger", new Vector3(204f, 2f, 0f), new Vector2(1.5f, 7f), flow, LevelTriggerAction.Finish);
 
         EditorSceneManager.MarkSceneDirty(scene);
         EditorSceneManager.SaveScene(scene, ScenePath);
@@ -60,27 +62,77 @@ public static class VerticalSliceBuilder
         Debug.Log("[Slice] Готово: Level01_VerticalSlice с ареной, мини-боссом и финишем.");
     }
 
-    private static void ConfigureGrounds(Scene scene)
+    private static void BuildLevelGeometry(Scene scene)
     {
-        ConfigureGround(FindRoot(scene, "Ground"), new Vector3(-8f, -0.5f, 0f), new Vector2(20f, 1f));
-        ConfigureGround(FindRoot(scene, "Ground (1)"), new Vector3(35.5f, -0.5f, 0f), new Vector2(33f, 1f));
-        ConfigureGround(FindRoot(scene, "Ground (2)"), new Vector3(5.5f, 1.5f, 0f), new Vector2(4f, 1f));
-        ConfigureGround(FindRoot(scene, "Ground (3)"), new Vector3(11f, 3.5f, 0f), new Vector2(4.5f, 1f));
-        ConfigureGround(FindRoot(scene, "Ground (4)"), new Vector3(16.5f, 1.5f, 0f), new Vector2(5f, 1f));
+        // Удаляем старые тестовые прямоугольники из MainLevel: геометрия
+        // уровня теперь создаётся вместе с визуалом.
+        foreach (GameObject root in scene.GetRootGameObjects())
+        {
+            if (root.name == "Ground" || root.name.StartsWith("Ground ("))
+                Object.DestroyImmediate(root);
+        }
+
+        CreateGroundSegment("CampGround", -18f, 48f, 0f, false);
+        CreateGroundSegment("LakePlatform1", 53f, 61f, 2f, true);
+        CreateGroundSegment("LakePlatform2", 67f, 74f, 3.5f, true);
+        CreateGroundSegment("LakePlatform3", 80f, 87f, 2f, true);
+        CreateGroundSegment("LakePlatform4", 93f, 101f, 4f, true);
+        CreateGroundSegment("LakePlatform5", 107f, 114f, 2.5f, true);
+        CreateGroundSegment("LakePlatform6", 118f, 126f, 1f, true);
+        CreateGroundSegment("ArenaGround", 126f, 214f, 0f, false);
+        CreateGroundSegment("ArenaRaisedLedge", 154f, 166f, 3.5f, true);
     }
 
-    private static void ConfigureGround(GameObject ground, Vector3 position, Vector2 size)
+    private static void CreateGroundSegment(string name, float left, float right,
+        float topY, bool usePlatformArt)
     {
-        if (ground == null)
+        float width = right - left;
+        Sprite sprite = AssetDatabase.LoadAssetAtPath<Sprite>(usePlatformArt
+            ? PlatformSpritePath
+            : GroundSpritePath);
+
+        if (sprite == null)
+        {
+            Debug.LogError("[Slice] Не найден спрайт платформы для " + name);
             return;
+        }
 
-        ground.SetActive(true);
-        ground.transform.position = position;
-        ground.transform.localScale = new Vector3(size.x, size.y, 1f);
+        GameObject root = new GameObject(name);
+        root.transform.position = new Vector3((left + right) * 0.5f, topY - 0.5f, 0f);
 
-        SpriteRenderer renderer = ground.GetComponent<SpriteRenderer>();
-        if (renderer != null)
-            renderer.color = new Color(0.28f, 0.52f, 0.24f, 1f);
+        BoxCollider2D collider = root.AddComponent<BoxCollider2D>();
+        collider.size = new Vector2(width, 1f);
+        collider.usedByEffector = true;
+
+        PlatformEffector2D effector = root.AddComponent<PlatformEffector2D>();
+        effector.useOneWay = true;
+        effector.useOneWayGrouping = true;
+        effector.surfaceArc = 170f;
+        effector.useSideFriction = false;
+        effector.useSideBounce = false;
+        effector.sideArc = 1f;
+
+        GameObject visual = new GameObject("Visual");
+        visual.transform.SetParent(root.transform, false);
+
+        SpriteRenderer renderer = visual.AddComponent<SpriteRenderer>();
+        renderer.sprite = sprite;
+        renderer.sortingLayerName = "Ground";
+        renderer.sortingOrder = 10;
+
+        if (usePlatformArt)
+        {
+            float scale = width / sprite.bounds.size.x;
+            float visualHeight = sprite.bounds.size.y * scale;
+            visual.transform.localScale = Vector3.one * scale;
+            visual.transform.localPosition = new Vector3(0f, 0.5f - visualHeight * 0.5f, 0f);
+        }
+        else
+        {
+            renderer.drawMode = SpriteDrawMode.Tiled;
+            renderer.size = new Vector2(width, sprite.bounds.size.y);
+            visual.transform.localPosition = new Vector3(0f, 0.5f - sprite.bounds.size.y * 0.5f, 0f);
+        }
     }
 
     private static void ConfigurePlayers(Scene scene)
@@ -119,6 +171,9 @@ public static class VerticalSliceBuilder
                 SerializedObject followSo = new SerializedObject(follow);
                 followSo.FindProperty("hamster").objectReferenceValue = hamster.transform;
                 followSo.FindProperty("hamsterGirl").objectReferenceValue = girl.transform;
+                followSo.FindProperty("useBounds").boolValue = true;
+                followSo.FindProperty("boundsMin").vector2Value = new Vector2(-14f, 5.5f);
+                followSo.FindProperty("boundsMax").vector2Value = new Vector2(210f, 12f);
                 followSo.ApplyModifiedPropertiesWithoutUndo();
             }
         }
@@ -130,7 +185,7 @@ public static class VerticalSliceBuilder
         if (fallZone == null)
             return;
 
-        fallZone.transform.position = new Vector3(18f, -11f, 0f);
+        fallZone.transform.position = new Vector3(100f, -11f, 0f);
         BoxCollider2D collider = fallZone.GetComponent<BoxCollider2D>();
         if (collider != null)
             collider.size = new Vector2(300f, 2f);
@@ -153,7 +208,7 @@ public static class VerticalSliceBuilder
         GameObject root = new GameObject("TrainingDummies");
         SceneManager.MoveGameObjectToScene(root, targetScene);
 
-        float[] positions = { -11.5f, -8.2f };
+        float[] positions = { -10f, -5f };
         for (int i = 0; i < positions.Length; i++)
         {
             GameObject dummy = Object.Instantiate(template.gameObject);
@@ -172,7 +227,7 @@ public static class VerticalSliceBuilder
         GameObject prefab = AssetDatabase.LoadAssetAtPath<GameObject>(HyenaPrefabPath);
         hyenas = new HyenaAI[2];
 
-        float[] positions = { 27f, 35f };
+        float[] positions = { 148f, 162f };
         for (int i = 0; i < positions.Length; i++)
         {
             GameObject hyena = (GameObject)PrefabUtility.InstantiatePrefab(prefab);
@@ -191,7 +246,7 @@ public static class VerticalSliceBuilder
         boss = (GameObject)PrefabUtility.InstantiatePrefab(prefab);
         boss.name = "HyenaBoss";
         boss.transform.localScale = Vector3.one * 2.6f;
-        PlaceOnGround(boss, 43f, 0f);
+        PlaceOnGround(boss, 178f, 0f);
 
         Health health = boss.GetComponent<Health>();
         if (health != null)
@@ -210,21 +265,11 @@ public static class VerticalSliceBuilder
 
     private static void BuildExit(out GameObject exitGate)
     {
-        Sprite groundSprite = FindRoot(SceneManager.GetActiveScene(), "Ground")
-            ?.GetComponent<SpriteRenderer>()?.sprite;
-
         exitGate = new GameObject("ExitGate");
-        exitGate.transform.position = new Vector3(48.5f, 3.5f, 0f);
-        exitGate.transform.localScale = new Vector3(1f, 7f, 1f);
-
-        SpriteRenderer renderer = exitGate.AddComponent<SpriteRenderer>();
-        renderer.sprite = groundSprite;
-        renderer.color = new Color(0.85f, 0.20f, 0.16f, 0.88f);
-        renderer.sortingLayerName = "Ground";
-        renderer.sortingOrder = 5;
+        exitGate.transform.position = new Vector3(194f, 3.5f, 0f);
 
         BoxCollider2D collider = exitGate.AddComponent<BoxCollider2D>();
-        collider.size = Vector2.one;
+        collider.size = new Vector2(1f, 7f);
     }
 
     private static LevelFlowController BuildFlow(GameObject arenaRoot, HyenaAI[] hyenas,

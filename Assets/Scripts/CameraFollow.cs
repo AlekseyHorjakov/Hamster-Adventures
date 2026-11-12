@@ -13,6 +13,10 @@ public class CameraFollow : MonoBehaviour
     [SerializeField] private float zoomPadding = 3f;
     [SerializeField] private float zoomSmoothTime = 0.3f;
 
+    [Header("Level Bounds")]
+    [SerializeField] private bool useBounds;
+    [SerializeField] private Vector2 boundsMin = new Vector2(-100f, -20f);
+    [SerializeField] private Vector2 boundsMax = new Vector2(100f, 40f);
     [Header("Camera Movement")]
     [SerializeField] private float moveSmoothTime = 0.15f;
 
@@ -100,6 +104,12 @@ public class CameraFollow : MonoBehaviour
             ref moveVelocity,
             moveSmoothTime
         );
+
+        if (useBounds)
+        {
+            smoothedPosition.x = Mathf.Clamp(smoothedPosition.x, boundsMin.x, boundsMax.x);
+            smoothedPosition.y = Mathf.Clamp(smoothedPosition.y, boundsMin.y, boundsMax.y);
+        }
 
         float requiredHeight = distanceY * 0.5f + zoomPadding;
         float requiredWidth = (distanceX * 0.5f + zoomPadding) / cam.aspect;

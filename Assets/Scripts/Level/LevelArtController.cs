@@ -34,7 +34,7 @@ public class LevelArtController : MonoBehaviour
         artRoot = new GameObject("GeneratedLevelArt").transform;
 
         BuildParallax();
-        ReplaceGroundVisuals();
+
         PlaceArenaAndFinish();
         ReplaceBossVisual();
     }
@@ -62,12 +62,12 @@ public class LevelArtController : MonoBehaviour
             new Vector3(cam.transform.position.x, cam.transform.position.y, 0f),
             screenHeight * 1.08f, 1f, 1f, Color.white);
 
-        float zoneWidth = screenWidth * 1.22f;
+        float zoneWidth = screenWidth;
         float zoneHeight = zoneWidth * 0.5f;
         CreateZoneLayer("CampZone", camp, "Mid", -20, cam.transform, zoneHeight,
-            -100f, 6f, 5f, Color.white);
+            -100f, 52f, 10f, Color.white);
         CreateZoneLayer("LakeZone", lake, "Mid", -15, cam.transform, zoneHeight,
-            2f, 24f, 5f, new Color(0.92f, 0.98f, 1f, 1f));
+            42f, 132f, 10f, new Color(0.92f, 0.98f, 1f, 1f));
 
         CreateLayer("Mountains", mountains, "Far", -20,
             new Vector3(cam.transform.position.x, cam.transform.position.y + 3f, 0f),
@@ -224,12 +224,12 @@ public class LevelArtController : MonoBehaviour
     {
         if (arenaFence != null)
         {
-            PlaceGroundDecoration("ArenaFenceLeft", arenaFence, 20.5f, 6.2f, "Ground", 20);
-            PlaceGroundDecoration("ArenaFenceRight", arenaFence, 48.5f, 6.2f, "Ground", 20);
+            PlaceGroundDecoration("ArenaFenceLeft", arenaFence, 132f, 6.2f, "Ground", 20);
+            PlaceGroundDecoration("ArenaFenceRight", arenaFence, 192f, 6.2f, "Ground", 20);
         }
 
         if (finishGate != null)
-            PlaceGroundDecoration("FinishGateVisual", finishGate, 51.5f, 8.2f, "Ground", 25);
+            PlaceGroundDecoration("FinishGateVisual", finishGate, 194f, 8.2f, "Ground", 25);
     }
 
     private void PlaceGroundDecoration(string name, Sprite sprite, float x, float height,
