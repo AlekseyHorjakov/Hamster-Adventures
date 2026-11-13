@@ -1,10 +1,16 @@
 fileFormatVersion: 2
-guid: 6c07194425ca1414f81c4f1fa66bf26c
+guid: 65d9e2b2494f45d4bac347fa7cff4ddc
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -662257558451751898
-    second: CampTentLeft_0
+      213: -6524316729050163763
+    second: CampWorld_0
+  - first:
+      213: -4171288069291761647
+    second: CampWorld_1
+  - first:
+      213: 2803522126164878920
+    second: CampWorld_2
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -115,13 +121,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: CampTentLeft_0
+      name: CampWorld_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 800
-        height: 571
+        width: 1774
+        height: 857
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -130,8 +136,52 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 6247aa662403fc6f0800000000000000
-      internalID: -662257558451751898
+      spriteID: dc593d29088f475a0800000000000000
+      internalID: -6524316729050163763
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CampWorld_1
+      rect:
+        serializedVersion: 2
+        x: 393
+        y: 0
+        width: 97
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1102a06f99b9c16c0800000000000000
+      internalID: -4171288069291761647
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CampWorld_2
+      rect:
+        serializedVersion: 2
+        x: 750
+        y: 0
+        width: 57
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8466102258c18e620800000000000000
+      internalID: 2803522126164878920
       vertices: []
       indices: 
       edges: []
@@ -150,7 +200,9 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      CampTentLeft_0: -662257558451751898
+      CampWorld_0: -6524316729050163763
+      CampWorld_1: -4171288069291761647
+      CampWorld_2: 2803522126164878920
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

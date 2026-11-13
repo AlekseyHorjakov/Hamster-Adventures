@@ -1,4 +1,3 @@
-using System.Linq;
 using UnityEngine;
 
 /// <summary>
@@ -15,12 +14,9 @@ public class LevelArtController : MonoBehaviour
     private Sprite forest;
     private Sprite foreground;
     private Sprite lake;
-    private Sprite camp;
-    private Sprite ground;
-    private Sprite platform;
     private Sprite arenaFence;
     private Sprite finishGate;
-    private Sprite campTentLeft;
+    private Sprite campWorld;
 
     private void Start()
     {
@@ -48,12 +44,9 @@ public class LevelArtController : MonoBehaviour
         forest = Resources.Load<Sprite>("Level01/Forest");
         foreground = Resources.Load<Sprite>("Level01/Foreground");
         lake = Resources.Load<Sprite>("Level01/Lake");
-        camp = Resources.Load<Sprite>("Level01/Camp");
-        ground = Resources.Load<Sprite>("Level01/Ground");
-        platform = Resources.Load<Sprite>("Level01/Platform");
         arenaFence = Resources.Load<Sprite>("Level01/ArenaFence");
         finishGate = Resources.Load<Sprite>("Level01/FinishGate");
-        campTentLeft = Resources.Load<Sprite>("Level01/CampTentLeft");
+        campWorld = Resources.Load<Sprite>("Level01/CampWorld");
     }
 
     private void BuildParallax()
@@ -129,70 +122,10 @@ public class LevelArtController : MonoBehaviour
         fadeLayer.Initialize(cameraTransform, zoneStartX, zoneEndX, fade, tint);
     }
 
-    private void ReplaceGroundVisuals()
-    {
-        SpriteRenderer[] renderers = FindObjectsByType<SpriteRenderer>(
-            FindObjectsInactive.Exclude, FindObjectsSortMode.None);
-
-        foreach (SpriteRenderer oldRenderer in renderers)
-        {
-            if (oldRenderer == null)
-                continue;
-
-            string objectName = oldRenderer.gameObject.name;
-            if (objectName != "Ground" && !objectName.StartsWith("Ground ("))
-                continue;
-
-            BoxCollider2D box = oldRenderer.GetComponent<BoxCollider2D>();
-            if (box == null)
-                continue;
-
-            oldRenderer.enabled = false;
-            Bounds bounds = box.bounds;
-            bool longGround = bounds.size.x >= 10f;
-
-            if (longGround && ground != null)
-                CreateLongGroundVisual(bounds);
-            else if (platform != null)
-                CreatePlatformVisual(bounds);
-        }
-    }
-
-    private void CreateLongGroundVisual(Bounds bounds)
-    {
-        GameObject go = new GameObject("GroundVisual");
-        go.transform.SetParent(artRoot, false);
-        go.transform.position = new Vector3(bounds.center.x, bounds.max.y - ground.bounds.size.y * 0.5f, 0f);
-
-        SpriteRenderer renderer = go.AddComponent<SpriteRenderer>();
-        renderer.sprite = ground;
-        renderer.drawMode = SpriteDrawMode.Tiled;
-        renderer.size = new Vector2(bounds.size.x, ground.bounds.size.y);
-        renderer.sortingLayerName = "Ground";
-        renderer.sortingOrder = 10;
-    }
-
-    private void CreatePlatformVisual(Bounds bounds)
-    {
-        float aspect = platform.bounds.size.x / platform.bounds.size.y;
-        float width = bounds.size.x * 1.06f;
-        float height = width / aspect;
-
-        GameObject go = new GameObject("PlatformVisual");
-        go.transform.SetParent(artRoot, false);
-        go.transform.position = new Vector3(bounds.center.x, bounds.max.y - height * 0.5f, 0f);
-        go.transform.localScale = Vector3.one * (width / platform.bounds.size.x);
-
-        SpriteRenderer renderer = go.AddComponent<SpriteRenderer>();
-        renderer.sprite = platform;
-        renderer.sortingLayerName = "Ground";
-        renderer.sortingOrder = 11;
-    }
-
     private void PlaceCampProps()
     {
-        if (campTentLeft != null)
-            PlaceGroundDecoration("CampTentLeftVisual", campTentLeft, -32f, 6f, "Mid", -5);
+        if (campWorld != null)
+            PlaceGroundDecoration("CampWorldVisual", campWorld, -6f, 24f, "Mid", -5);
     }
     private void PlaceArenaAndFinish()
     {
