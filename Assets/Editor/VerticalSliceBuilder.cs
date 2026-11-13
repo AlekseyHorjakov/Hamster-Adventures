@@ -82,7 +82,7 @@ public static class VerticalSliceBuilder
         CreateGroundSegment("LakePlatform6", 118f, 126f, 1f, true);
         CreateGroundSegment("ArenaGround", 126f, 214f, 0f, false);
         CreateGroundSegment("ArenaRaisedLedge", 154f, 166f, 3.5f, true);
-        CreateBoundary("LeftLevelBoundary", -51f);
+        CreateBoundary("LeftLevelBoundary", -29f);
         CreateBoundary("RightLevelBoundary", 213f);
     }
 
