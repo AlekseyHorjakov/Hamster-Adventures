@@ -162,7 +162,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1e15e0a2dd307bb40965e9c3cd578383, type: 3}
-  m_Name:
+  m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ParallaxLayer
   cameraTransform: {fileID: 519420032}
   horizontalFactor: 1.02
@@ -331,8 +331,8 @@ Transform:
   m_GameObject: {fileID: 168775447}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -0.87192523, z: 0}
-  m_LocalScale: {x: 0.626087, y: 0.72918147, z: 0.5610098}
+  m_LocalPosition: {x: 0, y: -0.30182335, z: 0}
+  m_LocalScale: {x: 0.5610098, y: 0.5610098, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1399833487}
@@ -548,8 +548,8 @@ Transform:
   m_GameObject: {fileID: 272440667}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -0.0640955, z: 0}
-  m_LocalScale: {x: 0.66863257, y: 0.4908836, z: 0.4908836}
+  m_LocalPosition: {x: 0, y: -0.06409539, z: 0}
+  m_LocalScale: {x: 0.4908836, y: 0.4908836, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1732125019}
@@ -834,7 +834,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 999b66bc1b073bc408f9af8a2594c457, type: 3}
-  m_Name:
+  m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::LevelTrigger
   level: {fileID: 812858390}
   action: 1
@@ -937,8 +937,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: a79441f348de89743a2939f4d699eac1, type: 3}
-  m_Name:
-  m_EditorClassIdentifier:
+  m_Name: 
+  m_EditorClassIdentifier: 
   m_RenderShadows: 1
   m_RequiresDepthTextureOption: 2
   m_RequiresOpaqueTextureOption: 2
@@ -1047,7 +1047,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 8f4f290a413a2e541886eb1301b00d7e, type: 3}
-  m_Name:
+  m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::CameraFollow
   hamster: {fileID: 1828578904}
   hamsterGirl: {fileID: 1934180886}
@@ -1086,8 +1086,8 @@ Transform:
   m_GameObject: {fileID: 604537300}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -0.30182338, z: 0}
-  m_LocalScale: {x: 0.5610098, y: 0.5610098, z: 0.5610098}
+  m_LocalPosition: {x: 0, y: -0.30182335, z: 0}
+  m_LocalScale: {x: 0.5610098, y: 0.5610098, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1418664872}
@@ -1271,8 +1271,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 073797afb82c5a1438f328866b10b3f0, type: 3}
-  m_Name:
-  m_EditorClassIdentifier:
+  m_Name: 
+  m_EditorClassIdentifier: 
   m_ComponentVersion: 4
   m_LightType: 4
   m_BlendStyleIndex: 0
@@ -1418,7 +1418,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3132992963662219560, guid: db1041561a2fc094e947e255dd572fdf, type: 3}
       propertyPath: m_Controller
-      value:
+      value: 
       objectReference: {fileID: 9100000, guid: fc19578c0f9f39d4187c766d7d0adaab, type: 2}
     - target: {fileID: 3958163101106336452, guid: db1041561a2fc094e947e255dd572fdf, type: 3}
       propertyPath: centerOnRootCollider
@@ -1580,7 +1580,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1e15e0a2dd307bb40965e9c3cd578383, type: 3}
-  m_Name:
+  m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ParallaxLayer
   cameraTransform: {fileID: 519420032}
   horizontalFactor: 0.98
@@ -1898,7 +1898,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ffbb038a2ebe50249b2e48d5fbaca723, type: 3}
-  m_Name:
+  m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::LevelFlowController
   levelTitle: "\u042D\u0442\u0430\u043F 1 \u2014 \u0432\u0435\u0440\u0442\u0438\u043A\u0430\u043B\u044C\u043D\u044B\u0439 \u0441\u0440\u0435\u0437"
   arenaRoot: {fileID: 189762488}
@@ -1948,8 +1948,8 @@ Transform:
   m_GameObject: {fileID: 841517892}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -0.9923755, z: 0}
-  m_LocalScale: {x: 0.5997756, y: 0.7647125, z: 0.5610098}
+  m_LocalPosition: {x: 0, y: -0.30182335, z: 0}
+  m_LocalScale: {x: 0.5610098, y: 0.5610098, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1250398349}
@@ -2042,7 +2042,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 999b66bc1b073bc408f9af8a2594c457, type: 3}
-  m_Name:
+  m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::LevelTrigger
   level: {fileID: 812858390}
   action: 0
@@ -2150,7 +2150,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1e15e0a2dd307bb40965e9c3cd578383, type: 3}
-  m_Name:
+  m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ParallaxLayer
   cameraTransform: {fileID: 519420032}
   horizontalFactor: 0.95
@@ -2350,7 +2350,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1e15e0a2dd307bb40965e9c3cd578383, type: 3}
-  m_Name:
+  m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ParallaxLayer
   cameraTransform: {fileID: 519420032}
   horizontalFactor: 1
@@ -2507,7 +2507,7 @@ Transform:
   m_GameObject: {fileID: 1019440842}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 70.7, y: 3.8640952, z: 0}
+  m_LocalPosition: {x: 70.5, y: 3, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -2673,7 +2673,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 10.1465, y: 1}
+  m_Size: {x: 7, y: 1}
   m_EdgeRadius: 0
 --- !u!4 &1048555871
 Transform:
@@ -2684,7 +2684,7 @@ Transform:
   m_GameObject: {fileID: 1048555868}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 113.8, y: -1.5359045, z: 0}
+  m_LocalPosition: {x: 110.5, y: 2, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -2761,7 +2761,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 61209b059bb60374eb272d9b95200c3b, type: 3}
-  m_Name:
+  m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::HyenaAI
 --- !u!4 &1098236933 stripped
 Transform:
@@ -3066,7 +3066,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 8.5528, y: 1}
+  m_Size: {x: 8, y: 1}
   m_EdgeRadius: 0
 --- !u!4 &1250398349
 Transform:
@@ -3077,7 +3077,7 @@ Transform:
   m_GameObject: {fileID: 1250398346}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 46.33, y: -0.70762455, z: 0}
+  m_LocalPosition: {x: 57, y: 1.5, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -3128,7 +3128,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f6b4c01659425ea498faaaf70521f517, type: 3}
-  m_Name:
+  m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ZoneFadeLayer
   cameraTransform: {fileID: 519420032}
   baseColor: {r: 0.92, g: 0.98, b: 1, a: 1}
@@ -3145,7 +3145,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1e15e0a2dd307bb40965e9c3cd578383, type: 3}
-  m_Name:
+  m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ParallaxLayer
   cameraTransform: {fileID: 519420032}
   horizontalFactor: 1
@@ -3291,7 +3291,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 8.928, y: 1}
+  m_Size: {x: 8, y: 1}
   m_EdgeRadius: 0
 --- !u!4 &1399833487
 Transform:
@@ -3302,7 +3302,7 @@ Transform:
   m_GameObject: {fileID: 1399833484}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 126.24, y: -0.8250748, z: 0}
+  m_LocalPosition: {x: 122, y: 0.5, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -3401,7 +3401,7 @@ Transform:
   m_GameObject: {fileID: 1418664869}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 100.1, y: 2.0018234, z: 0}
+  m_LocalPosition: {x: 97, y: 3.5, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -3483,7 +3483,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 61209b059bb60374eb272d9b95200c3b, type: 3}
-  m_Name:
+  m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::HyenaAI
 --- !u!1 &1554337447
 GameObject:
@@ -3511,8 +3511,8 @@ Transform:
   m_GameObject: {fileID: 1554337447}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -0.06409526, z: 0}
-  m_LocalScale: {x: 0.4908836, y: 0.4908836, z: 0.4908836}
+  m_LocalPosition: {x: 0, y: -0.06409539, z: 0}
+  m_LocalScale: {x: 0.4908836, y: 0.4908836, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1019440845}
@@ -3908,7 +3908,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4220594d6f63a9b41b32636a4bcbec9b, type: 3}
-  m_Name:
+  m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::HitReaction
   flashColor: {r: 1, g: 1, b: 1, a: 1}
   flashDuration: 0.12
@@ -3926,7 +3926,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1e144d432be97504ba0d4ebfe8d9b48d, type: 3}
-  m_Name:
+  m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Dummy
   respawnDelay: 3
 --- !u!114 &1662346165
@@ -3939,7 +3939,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 82341ceb6a6eb4e4d8ad87dedf019352, type: 3}
-  m_Name:
+  m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Health
   maxHealth: 100
   applyKnockback: 1
@@ -4191,7 +4191,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 9.5347, y: 1}
+  m_Size: {x: 7, y: 1}
   m_EdgeRadius: 0
 --- !u!4 &1732125019
 Transform:
@@ -4202,7 +4202,7 @@ Transform:
   m_GameObject: {fileID: 1732125016}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 83.6, y: 5.6640954, z: 0}
+  m_LocalPosition: {x: 83.5, y: 1.5, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -4351,7 +4351,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4868555397632928063, guid: c4ea2231147850b4ba04fc0e33b7b396, type: 3}
       propertyPath: partner
-      value:
+      value: 
       objectReference: {fileID: 1934180886}
     - target: {fileID: 6507534076535526295, guid: c4ea2231147850b4ba04fc0e33b7b396, type: 3}
       propertyPath: m_Name
@@ -4421,7 +4421,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7389103765779009765, guid: 175672d0f244b944987bf0f340a66594, type: 3}
       propertyPath: partner
-      value:
+      value: 
       objectReference: {fileID: 1828578904}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -4742,7 +4742,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4220594d6f63a9b41b32636a4bcbec9b, type: 3}
-  m_Name:
+  m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::HitReaction
   flashColor: {r: 1, g: 1, b: 1, a: 1}
   flashDuration: 0.12
@@ -4760,7 +4760,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1e144d432be97504ba0d4ebfe8d9b48d, type: 3}
-  m_Name:
+  m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Dummy
   respawnDelay: 3
 --- !u!114 &2031516198
@@ -4773,7 +4773,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 82341ceb6a6eb4e4d8ad87dedf019352, type: 3}
-  m_Name:
+  m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Health
   maxHealth: 100
   applyKnockback: 1
@@ -4878,8 +4878,8 @@ Transform:
   m_GameObject: {fileID: 2043794608}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -0.06409538, z: 0}
-  m_LocalScale: {x: 0.71153575, y: 0.4908836, z: 0.4908836}
+  m_LocalPosition: {x: 0, y: -0.06409539, z: 0}
+  m_LocalScale: {x: 0.4908836, y: 0.4908836, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1048555871}
@@ -5033,7 +5033,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: bb909c7bbc799154b9065ae622e66743, type: 3}
-  m_Name:
+  m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::FallZone
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
