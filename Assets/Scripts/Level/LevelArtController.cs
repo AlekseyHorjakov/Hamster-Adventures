@@ -20,6 +20,7 @@ public class LevelArtController : MonoBehaviour
     private Sprite platform;
     private Sprite arenaFence;
     private Sprite finishGate;
+    private Sprite campTentLeft;
 
     private void Start()
     {
@@ -36,7 +37,8 @@ public class LevelArtController : MonoBehaviour
         BuildParallax();
 
         PlaceArenaAndFinish();
-        ReplaceBossVisual();
+        PlaceCampProps();
+
     }
 
     private void LoadSprites()
@@ -51,6 +53,7 @@ public class LevelArtController : MonoBehaviour
         platform = Resources.Load<Sprite>("Level01/Platform");
         arenaFence = Resources.Load<Sprite>("Level01/ArenaFence");
         finishGate = Resources.Load<Sprite>("Level01/FinishGate");
+        campTentLeft = Resources.Load<Sprite>("Level01/CampTentLeft");
     }
 
     private void BuildParallax()
@@ -64,8 +67,6 @@ public class LevelArtController : MonoBehaviour
 
         float zoneWidth = screenWidth;
         float zoneHeight = zoneWidth * 0.5f;
-        CreateZoneLayer("CampZone", camp, "Mid", -20, cam.transform, zoneHeight,
-            -100f, 52f, 10f, Color.white);
         CreateZoneLayer("LakeZone", lake, "Mid", -15, cam.transform, zoneHeight,
             42f, 132f, 10f, new Color(0.92f, 0.98f, 1f, 1f));
 
@@ -128,38 +129,6 @@ public class LevelArtController : MonoBehaviour
         fadeLayer.Initialize(cameraTransform, zoneStartX, zoneEndX, fade, tint);
     }
 
-    private void ReplaceBossVisual()
-    {
-        Sprite bossSprite = Resources.Load<Sprite>("Level01/Boss");
-        if (bossSprite == null)
-            return;
-
-        HyenaAI boss = FindObjectsByType<HyenaAI>(
-            FindObjectsInactive.Include, FindObjectsSortMode.None)
-            .FirstOrDefault(enemy => enemy != null && enemy.name.Contains("Boss"));
-        if (boss == null)
-            return;
-
-        foreach (SpriteRenderer oldRenderer in boss.GetComponentsInChildren<SpriteRenderer>(true))
-            oldRenderer.enabled = false;
-
-        float localWorldHeight = 8f / Mathf.Abs(boss.transform.lossyScale.y);
-        float spriteHeight = bossSprite.bounds.size.y;
-        float localScale = localWorldHeight / spriteHeight;
-
-        BoxCollider2D box = boss.GetComponent<BoxCollider2D>();
-        float bottomLocal = box != null ? box.offset.y - box.size.y * 0.5f : 0f;
-
-        GameObject visual = new GameObject("BossArtVisual");
-        visual.transform.SetParent(boss.transform, false);
-        visual.transform.localPosition = new Vector3(0f, bottomLocal + localWorldHeight * 0.5f, 0f);
-        visual.transform.localScale = Vector3.one * localScale;
-
-        SpriteRenderer renderer = visual.AddComponent<SpriteRenderer>();
-        renderer.sprite = bossSprite;
-        renderer.sortingLayerName = "Characters";
-        renderer.sortingOrder = 1;
-    }
     private void ReplaceGroundVisuals()
     {
         SpriteRenderer[] renderers = FindObjectsByType<SpriteRenderer>(
@@ -220,6 +189,11 @@ public class LevelArtController : MonoBehaviour
         renderer.sortingOrder = 11;
     }
 
+    private void PlaceCampProps()
+    {
+        if (campTentLeft != null)
+            PlaceGroundDecoration("CampTentLeftVisual", campTentLeft, -32f, 6f, "Mid", -5);
+    }
     private void PlaceArenaAndFinish()
     {
         if (arenaFence != null)

@@ -19,6 +19,7 @@ public static class VerticalSliceBuilder
     private const string GirlPrefabPath = "Assets/Prefabs/HamsterGirl.prefab";
     private const string GroundSpritePath = "Assets/Resources/Level01/Ground.png";
     private const string PlatformSpritePath = "Assets/Resources/Level01/Platform.png";
+    private const string BossControllerPath = "Assets/Animations/Enemies/HyenaBoss/HyenaBoss.controller";
 
     [MenuItem("Tools/Hamster/Build Vertical Slice")]
     public static void BuildAll()
@@ -72,7 +73,7 @@ public static class VerticalSliceBuilder
                 Object.DestroyImmediate(root);
         }
 
-        CreateGroundSegment("CampGround", -18f, 48f, 0f, false);
+        CreateGroundSegment("CampGround", -40f, 48f, 0f, false);
         CreateGroundSegment("LakePlatform1", 53f, 61f, 2f, true);
         CreateGroundSegment("LakePlatform2", 67f, 74f, 3.5f, true);
         CreateGroundSegment("LakePlatform3", 80f, 87f, 2f, true);
@@ -173,7 +174,7 @@ public static class VerticalSliceBuilder
                 followSo.FindProperty("hamsterGirl").objectReferenceValue = girl.transform;
                 followSo.FindProperty("useBounds").boolValue = true;
                 followSo.FindProperty("boundsMin").vector2Value = new Vector2(-14f, 5.5f);
-                followSo.FindProperty("boundsMax").vector2Value = new Vector2(210f, 12f);
+                followSo.FindProperty("boundsMax").vector2Value = new Vector2(196f, 12f);
                 followSo.ApplyModifiedPropertiesWithoutUndo();
             }
         }
@@ -256,9 +257,15 @@ public static class VerticalSliceBuilder
             so.ApplyModifiedPropertiesWithoutUndo();
         }
 
+        Animator animator = boss.GetComponent<Animator>();
+        RuntimeAnimatorController bossController =
+            AssetDatabase.LoadAssetAtPath<RuntimeAnimatorController>(BossControllerPath);
+        if (animator != null && bossController != null)
+            animator.runtimeAnimatorController = bossController;
+
         SpriteRenderer renderer = boss.GetComponentInChildren<SpriteRenderer>();
         if (renderer != null)
-            renderer.color = new Color(1f, 0.72f, 0.72f, 1f);
+            renderer.color = Color.white;
 
         boss.SetActive(false);
     }
