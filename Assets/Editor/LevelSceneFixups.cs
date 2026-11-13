@@ -24,6 +24,7 @@ public static class LevelSceneFixups
         EditorSceneManager.OpenScene(ScenePath, OpenSceneMode.Single);
         AlignAll();
         AddCampSeamMasks();
+        AddUndergroundFills();
         EditorSceneManager.MarkSceneDirty(UnityEngine.SceneManagement.SceneManager.GetActiveScene());
         EditorSceneManager.SaveScene(UnityEngine.SceneManagement.SceneManager.GetActiveScene(), ScenePath);
         Debug.Log("[Fixup] Коллайдеры выровнены, маски лагеря добавлены.");
@@ -63,6 +64,44 @@ public static class LevelSceneFixups
         }
     }
 
+    private static void AddUndergroundFills()
+    {
+        Sprite dirt = AssetDatabase.LoadAssetAtPath<Sprite>("Assets/Resources/Level01/DirtFill.png");
+        if (dirt == null)
+            return;
+
+        PlatformEffector2D[] platforms = Object.FindObjectsByType<PlatformEffector2D>(
+            FindObjectsInactive.Include, FindObjectsSortMode.None);
+
+        foreach (PlatformEffector2D platform in platforms)
+        {
+            Transform root = platform.transform;
+            Transform visual = root.Find("Visual");
+            SpriteRenderer sprite = visual != null ? visual.GetComponent<SpriteRenderer>() : null;
+            if (sprite == null || sprite.bounds.size.x < 20f)
+                continue;
+
+            Transform oldFill = root.Find("UndergroundFill");
+            if (oldFill != null)
+                Object.DestroyImmediate(oldFill.gameObject);
+
+            GameObject fill = new GameObject("UndergroundFill");
+            fill.transform.SetParent(root, true);
+
+            Bounds visualBounds = sprite.bounds;
+            float height = 14f;
+            fill.transform.position = new Vector3(visualBounds.center.x,
+                visualBounds.min.y + 0.15f - height * 0.5f, 0f);
+            fill.transform.localScale = Vector3.one;
+
+            SpriteRenderer renderer = fill.AddComponent<SpriteRenderer>();
+            renderer.sprite = dirt;
+            renderer.drawMode = SpriteDrawMode.Tiled;
+            renderer.size = new Vector2(visualBounds.size.x + 2f, height);
+            renderer.sortingLayerName = "Ground";
+            renderer.sortingOrder = 9;
+        }
+    }
     private static void AddCampSeamMasks()
     {
         GameObject artRoot = GameObject.Find("BakedLevelArt");
