@@ -4,11 +4,18 @@ using UnityEngine;
 [DefaultExecutionOrder(100)]
 public class ParallaxLayer : MonoBehaviour
 {
-    private Transform cameraTransform;
+    [SerializeField] private Transform cameraTransform;
+    [SerializeField] private float horizontalFactor;
+    [SerializeField] private float verticalFactor;
+
     private Vector3 initialCameraPosition;
     private Vector3 initialPosition;
-    private float horizontalFactor;
-    private float verticalFactor;
+
+    private void Awake()
+    {
+        if (cameraTransform != null)
+            Initialize(cameraTransform, horizontalFactor, verticalFactor);
+    }
 
     public void Initialize(Transform targetCamera, float horizontal, float vertical)
     {

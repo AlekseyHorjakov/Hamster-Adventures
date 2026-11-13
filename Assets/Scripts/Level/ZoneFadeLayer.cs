@@ -4,12 +4,18 @@ using UnityEngine;
 [DefaultExecutionOrder(110)]
 public class ZoneFadeLayer : MonoBehaviour
 {
-    private Transform cameraTransform;
+    [SerializeField] private Transform cameraTransform;
+    [SerializeField] private Color baseColor = Color.white;
+    [SerializeField] private float startX;
+    [SerializeField] private float endX;
+    [SerializeField] private float fadeDistance = 1f;
+
     private SpriteRenderer spriteRenderer;
-    private Color baseColor;
-    private float startX;
-    private float endX;
-    private float fadeDistance;
+
+    private void Awake()
+    {
+        spriteRenderer = GetComponent<SpriteRenderer>();
+    }
 
     public void Initialize(Transform targetCamera, float zoneStartX, float zoneEndX,
         float fade, Color tint)

@@ -31,7 +31,8 @@ public static class RuntimeSceneBootstrap
             new GameObject("HealthHUD").AddComponent<HealthHud>();
 
         if (Object.FindFirstObjectByType<LevelFlowController>() != null
-            && Object.FindFirstObjectByType<LevelArtController>() == null)
+            && Object.FindFirstObjectByType<LevelArtController>() == null
+            && GameObject.Find("BakedLevelArt") == null)
             new GameObject("LevelArt").AddComponent<LevelArtController>();
 
     }
