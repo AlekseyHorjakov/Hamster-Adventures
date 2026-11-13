@@ -122,11 +122,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 82341ceb6a6eb4e4d8ad87dedf019352, type: 3}
-  m_Name:
+  m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Health
   maxHealth: 45
   applyKnockback: 1
-  invulnerabilityAfterHit: 0.05
+  invulnerabilityAfterHit: 0.08
   logDamage: 0
 --- !u!114 &9106850596266058449
 MonoBehaviour:
@@ -138,14 +138,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4220594d6f63a9b41b32636a4bcbec9b, type: 3}
-  m_Name:
+  m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::HitReaction
-  flashColor: {r: 1, g: 1, b: 1, a: 1}
-  flashDuration: 0.1
+  defaultFlashColor: {r: 1, g: 1, b: 1, a: 1}
+  defaultFlashDuration: 0.08
   hitScale: 1.08
-  spinSpeed: 900
-  lieDownTime: 0.6
+  lightRecoilSpeed: 2.2
+  mediumLift: 2.2
+  heavyLift: 4.2
   maxFlightTime: 1.5
+  groundCheckDistance: 0.16
+  recoveryFallbackTime: 0.28
+  maxVisualTilt: 28
 --- !u!95 &3132992963662219560
 Animator:
   serializedVersion: 7
@@ -163,7 +167,7 @@ Animator:
   m_LinearVelocityBlending: 0
   m_StabilizeFeet: 0
   m_AnimatePhysics: 0
-  m_WarningMessage:
+  m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
@@ -178,7 +182,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 61209b059bb60374eb272d9b95200c3b, type: 3}
-  m_Name:
+  m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::HyenaAI
   detectionRange: 10
   loseRange: 16
@@ -341,8 +345,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ab8c6f557c134a04682f46960cb75822, type: 3}
-  m_Name:
+  m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Hitbox
   targetMask:
     serializedVersion: 2
     m_Bits: 8
+  centerOnRootCollider: 0

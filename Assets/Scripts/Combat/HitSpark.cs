@@ -12,11 +12,23 @@ public class HitSpark : MonoBehaviour
     private SpriteRenderer sprite;
     private int index;
     private float timer;
+    private float playbackScale = 1f;
 
     public void Configure(Sprite[] sprites, float time)
     {
         frames = sprites;
         frameTime = time;
+    }
+
+    /// <summary>
+    /// Настраивает цвет и скорость проигрывания под вес удара.
+    /// Масштаб задаёт вызывающая система через Transform.
+    /// </summary>
+    public void Play(float intensity, Color tint)
+    {
+        playbackScale = Mathf.Lerp(1.25f, 0.75f, Mathf.Clamp01(intensity));
+        if (sprite != null)
+            sprite.color = tint;
     }
 
     private void Awake()
@@ -34,14 +46,14 @@ public class HitSpark : MonoBehaviour
 
         timer += Time.unscaledDeltaTime;
 
-        while (timer >= frameTime && index < frames.Length - 1)
+        while (timer >= frameTime * playbackScale && index < frames.Length - 1)
         {
-            timer -= frameTime;
+            timer -= frameTime * playbackScale;
             index++;
             sprite.sprite = frames[index];
         }
 
-        if (index >= frames.Length - 1 && timer >= frameTime)
+        if (index >= frames.Length - 1 && timer >= frameTime * playbackScale)
             Destroy(gameObject);
     }
 }

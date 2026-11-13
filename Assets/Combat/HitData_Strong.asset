@@ -16,6 +16,16 @@ MonoBehaviour:
   knockback: 0
   hitStop: 0.14
   hitStun: 0.35
+  impactWeight: 3
   launchVelocity: {x: 10, y: 10}
+  hitFlashColor: {r: 1, g: 0.7, b: 0.35, a: 1}
+  hitFlashDuration: 0.12
+  sparkTint: {r: 1, g: 0.55, b: 0.2, a: 1}
+  sparkScale: 1.35
+  sparkCount: 2
+  cameraShakeStrength: 0.28
+  cameraShakeDuration: 0.18
+  reactionTilt: 22
+  reactionRecovery: 0.22
   hitboxSize: {x: 2.1, y: 1.7}
   hitboxOffset: {x: 1.5, y: 0}

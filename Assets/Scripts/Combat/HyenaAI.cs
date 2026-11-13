@@ -113,7 +113,8 @@ public class HyenaAI : MonoBehaviour
         // и не включаем ходьбу поверх анимации получения урона.
         if (reaction != null && (reaction.IsStunned || reaction.IsLaunched))
         {
-            StopHorizontal();
+            // Не перебиваем скорость, которую задал HitReaction: иначе
+            // физический отброс/полёт мгновенно обнуляется в том же кадре.
             return;
         }
 
@@ -433,6 +434,11 @@ public class HyenaAI : MonoBehaviour
     private IEnumerator HurtRoutine()
     {
         yield return new WaitForSeconds(hurtAnimationDuration);
+
+        // Не возвращаемся в Idle, пока цель ещё летит или оглушена.
+        while (!dead && reaction != null && (reaction.IsLaunched || reaction.IsStunned))
+            yield return null;
+
         hurtPlaying = false;
 
         if (!dead)

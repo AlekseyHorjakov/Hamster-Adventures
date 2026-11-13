@@ -105,6 +105,7 @@ public class AttackController : MonoBehaviour
     private float dashEndsAt;
     private float lastAttackEnd;
     private float lockUntil;
+    private float attackMomentumUntil;
     private Vector3 dashFrom;
     private HitData currentHit;
     private ChargeVFXController chargeVfx;
@@ -211,6 +212,7 @@ public class AttackController : MonoBehaviour
         attacking = false;
         airAttack = false;
         codeDrivenHitbox = false;
+        attackMomentumUntil = 0f;
 
         if (hitbox != null)
             hitbox.Deactivate();
@@ -349,6 +351,9 @@ public class AttackController : MonoBehaviour
         if (dashing)
             return;
 
+        if (attackMomentumUntil > 0f && Time.unscaledTime >= attackMomentumUntil)
+            EndAttackMomentum();
+
         bool inputLocked = Time.time < attackInputLockedUntil;
         if (inputLocked)
         {
@@ -392,6 +397,7 @@ public class AttackController : MonoBehaviour
                 attacking = false;
                 airAttack = false;
                 lastAttackEnd = Time.time;
+                EndAttackMomentum();
             }
 
             // Наземное комбо можно прервать следующим ударом, воздушное — нет.
@@ -689,6 +695,13 @@ public class AttackController : MonoBehaviour
         {
             int facing = movement.Facing;
             float step = StepAt(index);
+
+            if (movement.Grounded)
+            {
+                movement.SetExternalHorizontalControl(true);
+                attackMomentumUntil = Time.unscaledTime + movementLock;
+            }
+
             movement.Body.linearVelocity = new Vector2(facing * step, movement.Body.linearVelocity.y);
         }
 
@@ -707,9 +720,18 @@ public class AttackController : MonoBehaviour
     {
         lockUntil = 0f;
         lastAttackEnd = Time.time;
+        EndAttackMomentum();
 
         if (movement != null)
             movement.SetControlLocked(false);
+    }
+
+    private void EndAttackMomentum()
+    {
+        attackMomentumUntil = 0f;
+
+        if (movement != null && !dashing)
+            movement.SetExternalHorizontalControl(false);
     }
 
     // Вызываются событиями анимации в клипах удара.

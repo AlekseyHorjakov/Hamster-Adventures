@@ -84,27 +84,36 @@ public class Hitbox : MonoBehaviour
             if (!alreadyHit.Add(health))
                 continue;
 
+            Vector2 hitPoint = collider != null ? collider.ClosestPoint(center) : center;
+
             health.TakeDamage(new DamageInfo
             {
                 amount = data.damage * damageMultiplier,
-                hitPoint = center,
+                hitPoint = hitPoint,
                 knockback = new Vector2(data.knockback * facing, 0f),
                 hitStop = data.hitStop,
                 hitStun = data.hitStun,
+                impactWeight = data.impactWeight,
                 launchVelocity = new Vector2(data.launchVelocity.x * facing, data.launchVelocity.y),
+                hitFlashColor = data.hitFlashColor,
+                hitFlashDuration = data.hitFlashDuration,
+                reactionTilt = data.reactionTilt,
+                reactionRecovery = data.reactionRecovery,
                 source = transform.root.gameObject
             });
 
             HitStop.Play(data.hitStop);
-            CameraFollow.Shake(0.2f, 0.16f);
-            SpawnSpark(center);
 
+            if (data.cameraShakeStrength > 0f && data.cameraShakeDuration > 0f)
+                CameraFollow.Shake(data.cameraShakeStrength, data.cameraShakeDuration);
+
+            SpawnSparks(hitPoint);
         }
     }
 
     private static GameObject sparkPrefab;
 
-    private static void SpawnSpark(Vector2 position)
+    private void SpawnSparks(Vector2 position)
     {
         if (sparkPrefab == null)
             sparkPrefab = Resources.Load<GameObject>("HitSpark");
@@ -112,8 +121,29 @@ public class Hitbox : MonoBehaviour
         if (sparkPrefab == null)
             return;
 
-        var spark = Instantiate(sparkPrefab, position, Quaternion.Euler(0f, 0f, Random.Range(0f, 360f)));
-        spark.transform.localScale = Vector3.one * Random.Range(0.85f, 1.15f);
+        int count = Mathf.Clamp(data.sparkCount, 1, 5);
+        float baseScale = Mathf.Max(0.1f, data.sparkScale);
+        Color tint = data.sparkTint.a > 0.01f ? data.sparkTint : Color.white;
+
+        for (int i = 0; i < count; i++)
+        {
+            Vector2 offset = count > 1
+                ? Random.insideUnitCircle * 0.18f
+                : Vector2.zero;
+
+            float angle = Random.Range(-25f, 25f);
+            GameObject spark = Instantiate(
+                sparkPrefab,
+                position + offset,
+                Quaternion.Euler(0f, 0f, angle)
+            );
+
+            spark.transform.localScale = Vector3.one * baseScale * Random.Range(0.88f, 1.12f);
+
+            HitSpark sparkView = spark.GetComponent<HitSpark>();
+            if (sparkView != null)
+                sparkView.Play(baseScale, tint);
+        }
     }
 
     private void OnDrawGizmosSelected()

@@ -28,6 +28,8 @@ public class Health : MonoBehaviour, IDamageable
     public float Current { get; private set; }
     public bool IsAlive => Current > 0f;
     public bool IsDamageImmune => damageImmune;
+    public bool IsInvulnerable => damageImmune || Time.time < invulnerableUntil;
+    public float InvulnerableRemaining => Mathf.Max(0f, invulnerableUntil - Time.time);
 
     private float invulnerableUntil;
     private bool damageImmune;
@@ -42,7 +44,7 @@ public class Health : MonoBehaviour, IDamageable
         if (!IsAlive)
             return;
 
-        if (damageImmune || Time.time < invulnerableUntil)
+        if (IsInvulnerable)
             return;
 
         Current = Mathf.Max(0f, Current - info.amount);
@@ -50,7 +52,10 @@ public class Health : MonoBehaviour, IDamageable
         if (invulnerabilityAfterHit > 0f)
             invulnerableUntil = Time.time + invulnerabilityAfterHit;
 
-        if (applyKnockback && info.knockback.sqrMagnitude > 0.01f)
+        // Если у цели есть HitReaction, именно он управляет физикой реакции.
+        // Для манекенов и простых объектов оставляем прежний fallback.
+        if (applyKnockback && info.knockback.sqrMagnitude > 0.01f &&
+            !TryGetComponent<HitReaction>(out _))
         {
             var body = GetComponent<Rigidbody2D>();
             if (body != null)

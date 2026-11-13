@@ -1,4 +1,4 @@
-
+using System;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
@@ -9,9 +9,19 @@ public class HamsterMovement : MonoBehaviour
     [Header("Movement")]
     [SerializeField] private float moveSpeed = 5f;
 
+    [Header("Ground Feel")]
+    [Tooltip("Ускорение разгона на земле")]
+    [SerializeField] private float groundAcceleration = 75f;
+    [Tooltip("Торможение при отпускании ввода")]
+    [SerializeField] private float groundDeceleration = 100f;
+    [Tooltip("Ускорение при попытке развернуться против текущей скорости")]
+    [SerializeField] private float turnAcceleration = 130f;
+
     [Header("Air Movement")]
     [SerializeField] private float airAcceleration = 60f;
     [SerializeField] private float airDeceleration = 70f;
+    [Tooltip("Множитель торможения в воздухе без ввода")]
+    [SerializeField] private float airStopMultiplier = 0.65f;
 
     [Header("Controls")]
     [SerializeField] private Key leftKey = Key.A;
@@ -25,6 +35,29 @@ public class HamsterMovement : MonoBehaviour
     [Header("Jump")]
     [SerializeField] private float jumpForce = 10f;
     [SerializeField] private int maxJumps = 2;
+    [Tooltip("Сколько секунд после схода с земли разрешён прыжок")]
+    [SerializeField] private float coyoteTime = 0.10f;
+    [Tooltip("Сколько секунд нажатие прыжка ждёт возможности сработать")]
+    [SerializeField] private float jumpBufferTime = 0.12f;
+    [Tooltip("Множитель вертикальной скорости при коротком нажатии")]
+    [SerializeField] private float jumpCutMultiplier = 0.52f;
+    [Tooltip("Окно, в котором отпускание кнопки обрезает прыжок")]
+    [SerializeField] private float jumpCutWindow = 0.14f;
+
+    [Header("Fall Feel")]
+    [SerializeField] private float riseGravityMultiplier = 1f;
+    [SerializeField] private float fallGravityMultiplier = 1.55f;
+    [SerializeField] private float maxFallSpeed = 26f;
+
+    [Header("Landing")]
+    [Tooltip("Минимальная скорость падения, после которой сообщаем о приземлении")]
+    [SerializeField] private float landingFeedbackThreshold = 2f;
+
+    [Header("Hit Reaction Physics")]
+    [Tooltip("Торможение горизонтального отброса на земле")]
+    [SerializeField] private float knockbackGroundDeceleration = 35f;
+    [Tooltip("Торможение горизонтального отброса в воздухе")]
+    [SerializeField] private float knockbackAirDeceleration = 2f;
 
     [Header("Partner Distance")]
     [SerializeField] private Transform partner;
@@ -34,6 +67,7 @@ public class HamsterMovement : MonoBehaviour
     private Rigidbody2D rb;
     private SpriteRenderer spriteRenderer;
     private Animator animator;
+    private HitReaction hitReaction;
     private Camera mainCamera;
 
     private float moveInput;
@@ -41,6 +75,18 @@ public class HamsterMovement : MonoBehaviour
     private float runtimeJumpMultiplier = 1f;
     private int jumpsRemaining;
     private bool isGrounded;
+    private bool jumpLocked;
+    private float baseGravityScale = 2.5f;
+
+    private float coyoteUntil;
+    private float jumpBufferedUntil;
+    private float jumpStartedAt;
+    private bool jumpCutArmed;
+    private bool jumpHeld;
+    private bool jumpReleasedThisFrame;
+    private float previousVerticalVelocity;
+    private int lastDirection = 1;
+    private bool wasMoving;
 
     // Блокировка управления на время удара — её ставит AttackController.
     private bool controlLocked;
@@ -56,22 +102,22 @@ public class HamsterMovement : MonoBehaviour
     private bool attackHeld;
     private bool attackReleased;
 
-    private static readonly int IsMovingHash =
-        Animator.StringToHash("IsMoving");
+    private static readonly int IsMovingHash = Animator.StringToHash("IsMoving");
+    private static readonly int IsGroundedHash = Animator.StringToHash("IsGrounded");
+    private static readonly int IsJumpingHash = Animator.StringToHash("IsJumping");
 
-    private static readonly int IsGroundedHash =
-        Animator.StringToHash("IsGrounded");
-
-    private static readonly int IsJumpingHash =
-        Animator.StringToHash("IsJumping");
+    public event Action Jumped;
+    public event Action<float> Landed;
+    public event Action StartedMoving;
+    public event Action StoppedMoving;
+    public event Action<int> DirectionChanged;
 
     private void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
-        // Спрайт живёт на дочернем объекте Visual, чтобы анимации масштаба
-        // не задевали коллайдер, поэтому ищем рендерер во вложенных объектах.
         spriteRenderer = GetComponentInChildren<SpriteRenderer>();
         animator = GetComponent<Animator>();
+        hitReaction = GetComponent<HitReaction>();
         mainCamera = Camera.main;
 
         if (input == null)
@@ -81,6 +127,7 @@ public class HamsterMovement : MonoBehaviour
             Debug.LogWarning("[HamsterMovement] SpriteRenderer не найден у " + name +
                              " — разворот персонажа работать не будет");
 
+        baseGravityScale = rb != null && rb.gravityScale > 0.001f ? rb.gravityScale : 2.5f;
         jumpsRemaining = maxJumps;
         LastInputTime = Time.time;
     }
@@ -89,8 +136,11 @@ public class HamsterMovement : MonoBehaviour
     {
         ReadMovementInput();
         ReadJumpInput();
+        TryBufferedJump();
+        HandleJumpCut();
         ReadAttackInput();
         UpdateAnimation();
+        UpdateMotionEvents();
 
         // Для «особого бездействия»: любой ввод сбрасывает таймер.
         bool anyKey = input != null
@@ -135,14 +185,26 @@ public class HamsterMovement : MonoBehaviour
             ? input.JumpPressed
             : Keyboard.current != null && Keyboard.current[jumpKey].wasPressedThisFrame;
 
-        if (!jumpPressed || jumpsRemaining <= 0)
+        jumpHeld = input != null
+            ? input.JumpHeld
+            : Keyboard.current != null && Keyboard.current[jumpKey].isPressed;
+
+        jumpReleasedThisFrame = input != null
+            ? input.JumpReleased
+            : Keyboard.current != null && Keyboard.current[jumpKey].wasReleasedThisFrame;
+
+        if (jumpPressed && !jumpLocked)
+            jumpBufferedUntil = Time.time + jumpBufferTime;
+    }
+
+    private void TryBufferedJump()
+    {
+        if (jumpLocked || Time.time > jumpBufferedUntil || jumpsRemaining <= 0)
             return;
 
-        // Не разрешаем прыгать за верхнюю границу
-        // области, доступной обоим игрокам.
+        // Не разрешаем прыгать за верхнюю границу области, доступной обоим игрокам.
         if (partner != null &&
-            transform.position.y >= partner.position.y +
-            GetMaxVerticalSeparation() * 0.5f)
+            transform.position.y >= partner.position.y + GetMaxVerticalSeparation() * 0.5f)
         {
             return;
         }
@@ -154,6 +216,38 @@ public class HamsterMovement : MonoBehaviour
 
         jumpsRemaining--;
         isGrounded = false;
+        coyoteUntil = 0f;
+        jumpBufferedUntil = 0f;
+        jumpStartedAt = Time.time;
+        jumpCutArmed = true;
+        Jumped?.Invoke();
+    }
+
+    private void HandleJumpCut()
+    {
+        if (rb == null)
+            return;
+
+        if (rb.linearVelocity.y <= 0.05f)
+        {
+            jumpCutArmed = false;
+            return;
+        }
+
+        if (!jumpCutArmed || !jumpReleasedThisFrame)
+            return;
+
+        if (Time.time - jumpStartedAt > jumpCutWindow)
+        {
+            jumpCutArmed = false;
+            return;
+        }
+
+        rb.linearVelocity = new Vector2(
+            rb.linearVelocity.x,
+            rb.linearVelocity.y * jumpCutMultiplier
+        );
+        jumpCutArmed = false;
     }
 
     private void ReadAttackInput()
@@ -200,13 +294,17 @@ public class HamsterMovement : MonoBehaviour
     /// <summary>Стоит ли герой на земле. Только для диагностики.</summary>
     public bool Grounded => isGrounded;
 
+    public bool IsRising => rb != null && rb.linearVelocity.y > 0.05f;
+    public bool IsFalling => rb != null && rb.linearVelocity.y < -0.05f;
+    public float HorizontalSpeed => rb != null ? rb.linearVelocity.x : 0f;
+    public float VerticalSpeed => rb != null ? rb.linearVelocity.y : 0f;
+
     /// <summary>Когда последний раз был хоть какой-то ввод. Нужно особому бездействию.</summary>
     public float LastInputTime { get; private set; }
 
     /// <summary>Физическое тело — нужно удару для шага вперёд.</summary>
     public Rigidbody2D Body => rb;
 
-    /// <summary>Запрещает или разрешает движение (используется во время удара).</summary>
     /// <summary>Временные множители скорости и прыжка для суперформы.</summary>
     public void SetRuntimeMovementMultipliers(float speedMultiplier, float jumpMultiplier)
     {
@@ -226,6 +324,15 @@ public class HamsterMovement : MonoBehaviour
 
         if (locked)
             moveInput = 0f;
+    }
+
+    /// <summary>Отдельная блокировка прыжка на время hurt/downed/death.</summary>
+    public void SetJumpLocked(bool locked)
+    {
+        jumpLocked = locked;
+
+        if (locked)
+            jumpBufferedUntil = 0f;
     }
 
     /// <summary>Возвращает true ровно один раз на каждое нажатие атаки.</summary>
@@ -268,28 +375,72 @@ public class HamsterMovement : MonoBehaviour
         if (animator == null)
             return;
 
-        animator.SetBool(
-            IsMovingHash,
-            Mathf.Abs(moveInput) > 0.01f
-        );
+        float horizontalSpeed = rb != null ? Mathf.Abs(rb.linearVelocity.x) : 0f;
+        bool moving = horizontalSpeed > 0.15f || Mathf.Abs(moveInput) > 0.01f;
 
-        animator.SetBool(
-            IsGroundedHash,
-            isGrounded
-        );
+        animator.SetBool(IsMovingHash, moving);
+        animator.SetBool(IsGroundedHash, isGrounded);
+        animator.SetBool(IsJumpingHash, !isGrounded);
+    }
 
-        animator.SetBool(
-            IsJumpingHash,
-            !isGrounded
-        );
+    private void UpdateMotionEvents()
+    {
+        if (rb == null)
+            return;
+
+        float horizontal = rb.linearVelocity.x;
+        bool moving = Mathf.Abs(horizontal) > 0.2f;
+
+        if (moving && !wasMoving)
+            StartedMoving?.Invoke();
+        else if (!moving && wasMoving)
+            StoppedMoving?.Invoke();
+
+        wasMoving = moving;
+
+        if (Mathf.Abs(horizontal) > 0.2f)
+        {
+            int direction = horizontal > 0f ? 1 : -1;
+            if (direction != lastDirection)
+            {
+                lastDirection = direction;
+                DirectionChanged?.Invoke(direction);
+            }
+        }
     }
 
     private void FixedUpdate()
     {
+        if (rb == null)
+            return;
+
+        previousVerticalVelocity = rb.linearVelocity.y;
+
         // Во время рывка горизонтальную скорость задаёт удар: если трогать её
         // здесь, движение первым же кадром обнулит рывок.
-        if (externalHorizontalControl)
+        if (!externalHorizontalControl)
+            UpdateHorizontalMovement();
+
+        ApplyGravityFeel();
+    }
+
+    private void UpdateHorizontalMovement()
+    {
+        // Во время hit reaction физикой отброса управляет HitReaction.
+        // Не обнуляем её мгновенно, а даём телу погасить скорость.
+        if (hitReaction != null && hitReaction.IsReacting)
+        {
+            float deceleration = isGrounded
+                ? knockbackGroundDeceleration
+                : knockbackAirDeceleration;
+            float slowedSpeed = Mathf.MoveTowards(
+                rb.linearVelocity.x,
+                0f,
+                deceleration * Time.fixedDeltaTime
+            );
+            rb.linearVelocity = new Vector2(slowedSpeed, rb.linearVelocity.y);
             return;
+        }
 
         float targetSpeed = moveInput * moveSpeed * runtimeSpeedMultiplier;
 
@@ -298,22 +449,17 @@ public class HamsterMovement : MonoBehaviour
             Vector2 position = rb.position;
             Vector2 partnerPosition = partner.position;
 
-            float maxHorizontalSeparation =
-                GetMaxHorizontalSeparation();
-
-            float maxVerticalSeparation =
-                GetMaxVerticalSeparation();
+            float maxHorizontalSeparation = GetMaxHorizontalSeparation();
+            float maxVerticalSeparation = GetMaxVerticalSeparation();
 
             float distanceX = position.x - partnerPosition.x;
             float distanceY = position.y - partnerPosition.y;
 
-            // Ограничиваем движение по горизонтали.
             bool movingAwayHorizontally =
                 (distanceX > 0f && moveInput > 0f) ||
                 (distanceX < 0f && moveInput < 0f);
 
-            if (Mathf.Abs(distanceX) >=
-                maxHorizontalSeparation * 0.5f &&
+            if (Mathf.Abs(distanceX) >= maxHorizontalSeparation * 0.5f &&
                 movingAwayHorizontally)
             {
                 targetSpeed = 0f;
@@ -321,51 +467,65 @@ public class HamsterMovement : MonoBehaviour
                 if ((distanceX > 0f && rb.linearVelocity.x > 0f) ||
                     (distanceX < 0f && rb.linearVelocity.x < 0f))
                 {
-                    rb.linearVelocity = new Vector2(
-                        0f,
-                        rb.linearVelocity.y
-                    );
+                    rb.linearVelocity = new Vector2(0f, rb.linearVelocity.y);
                 }
             }
 
-            // Ограничиваем подъём одного героя относительно другого.
             bool movingAwayVertically =
                 (distanceY > 0f && rb.linearVelocity.y > 0f) ||
                 (distanceY < 0f && rb.linearVelocity.y < 0f);
 
-            if (Mathf.Abs(distanceY) >=
-                maxVerticalSeparation * 0.5f &&
+            if (Mathf.Abs(distanceY) >= maxVerticalSeparation * 0.5f &&
                 movingAwayVertically)
             {
-                rb.linearVelocity = new Vector2(
-                    rb.linearVelocity.x,
-                    0f
-                );
+                rb.linearVelocity = new Vector2(rb.linearVelocity.x, 0f);
             }
         }
 
+        float currentSpeed = rb.linearVelocity.x;
+        float acceleration;
+
         if (isGrounded)
         {
-            rb.linearVelocity = new Vector2(
-                targetSpeed,
-                rb.linearVelocity.y
-            );
+            if (Mathf.Abs(moveInput) < 0.01f)
+                acceleration = groundDeceleration;
+            else if (Mathf.Abs(currentSpeed) > 0.15f &&
+                     Mathf.Sign(currentSpeed) != Mathf.Sign(moveInput))
+                acceleration = turnAcceleration;
+            else
+                acceleration = groundAcceleration;
         }
         else
         {
-            float acceleration = moveInput == 0f
-                ? airDeceleration
+            acceleration = Mathf.Abs(moveInput) < 0.01f
+                ? airDeceleration * airStopMultiplier
                 : airAcceleration;
+        }
 
-            float newSpeed = Mathf.MoveTowards(
-                rb.linearVelocity.x,
-                targetSpeed,
-                acceleration * Time.fixedDeltaTime
-            );
+        float newSpeed = Mathf.MoveTowards(
+            currentSpeed,
+            targetSpeed,
+            acceleration * Time.fixedDeltaTime
+        );
 
+        rb.linearVelocity = new Vector2(newSpeed, rb.linearVelocity.y);
+    }
+
+    private void ApplyGravityFeel()
+    {
+        float gravityMultiplier = isGrounded
+            ? 1f
+            : rb.linearVelocity.y > 0.05f
+                ? riseGravityMultiplier
+                : fallGravityMultiplier;
+
+        rb.gravityScale = baseGravityScale * Mathf.Max(0.01f, gravityMultiplier);
+
+        if (rb.linearVelocity.y < -maxFallSpeed)
+        {
             rb.linearVelocity = new Vector2(
-                newSpeed,
-                rb.linearVelocity.y
+                rb.linearVelocity.x,
+                -maxFallSpeed
             );
         }
     }
@@ -386,10 +546,7 @@ public class HamsterMovement : MonoBehaviour
 
     private float GetMaxVerticalSeparation()
     {
-        return 2f * Mathf.Max(
-            1f,
-            maxCameraSize - screenMargin
-        );
+        return 2f * Mathf.Max(1f, maxCameraSize - screenMargin);
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
@@ -448,7 +605,15 @@ public class HamsterMovement : MonoBehaviour
                 rb.linearVelocity.y <= 0.1f)
             {
                 if (!isGrounded)
+                {
                     jumpsRemaining = maxJumps;
+                    coyoteUntil = Time.time + coyoteTime;
+                    jumpCutArmed = false;
+
+                    float impactSpeed = Mathf.Abs(previousVerticalVelocity);
+                    if (impactSpeed >= landingFeedbackThreshold)
+                        Landed?.Invoke(impactSpeed);
+                }
 
                 isGrounded = true;
                 return;

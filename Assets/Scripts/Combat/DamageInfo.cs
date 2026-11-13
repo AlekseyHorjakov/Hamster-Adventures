@@ -11,9 +11,15 @@ public struct DamageInfo
     public Vector2 knockback;
     public float hitStop;
     public float hitStun;
+    public HitImpactWeight impactWeight;
 
     /// <summary>Если не ноль — цель уходит в полёт, а не просто отходит.</summary>
     public Vector2 launchVelocity;
+
+    public Color hitFlashColor;
+    public float hitFlashDuration;
+    public float reactionTilt;
+    public float reactionRecovery;
 
     public GameObject source;
 }

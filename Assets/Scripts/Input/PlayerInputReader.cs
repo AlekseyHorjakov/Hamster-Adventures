@@ -23,6 +23,8 @@ public class PlayerInputReader : MonoBehaviour
 
     public float Move => move != null ? move.ReadValue<float>() : 0f;
     public bool JumpPressed => jump != null && jump.WasPressedThisFrame();
+    public bool JumpHeld => jump != null && jump.IsPressed();
+    public bool JumpReleased => jump != null && jump.WasReleasedThisFrame();
     public bool AttackPressed => attack != null && attack.WasPressedThisFrame();
     public bool AttackHeld => attack != null && attack.IsPressed();
     public bool AttackReleased => attack != null && attack.WasReleasedThisFrame();
@@ -78,3 +80,4 @@ public class PlayerInputReader : MonoBehaviour
         map?.Disable();
     }
 }
+

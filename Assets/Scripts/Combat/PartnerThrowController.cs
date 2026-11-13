@@ -379,7 +379,12 @@ public class PartnerThrowController : MonoBehaviour
             knockback = new Vector2(throwHit.knockback * throwFacing, 0f),
             hitStop = throwHit.hitStop,
             hitStun = throwHit.hitStun,
+            impactWeight = throwHit.impactWeight,
             launchVelocity = new Vector2(throwHit.launchVelocity.x * throwFacing, throwHit.launchVelocity.y),
+            hitFlashColor = throwHit.hitFlashColor,
+            hitFlashDuration = throwHit.hitFlashDuration,
+            reactionTilt = throwHit.reactionTilt,
+            reactionRecovery = throwHit.reactionRecovery,
             source = thrower
         });
 

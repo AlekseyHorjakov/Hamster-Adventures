@@ -42,11 +42,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ab8c6f557c134a04682f46960cb75822, type: 3}
-  m_Name:
+  m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Hitbox
   targetMask:
     serializedVersion: 2
     m_Bits: 4294967295
+  centerOnRootCollider: 0
 --- !u!1 &5988124740728209711
 GameObject:
   m_ObjectHideFlags: 0
@@ -254,6 +255,8 @@ GameObject:
   - component: {fileID: 6634242945800650396}
   - component: {fileID: 7308987572974654370}
   - component: {fileID: 5622307160665400651}
+  - component: {fileID: 4718834083846773095}
+  - component: {fileID: 4343587772203816286}
   m_Layer: 3
   m_Name: HamsterGirl
   m_TagString: Untagged
@@ -363,11 +366,15 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 0b6e90299c9550b43b06f650e162440f, type: 3}
-  m_Name:
+  m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::HamsterMovement
   moveSpeed: 15
+  groundAcceleration: 75
+  groundDeceleration: 100
+  turnAcceleration: 130
   airAcceleration: 60
   airDeceleration: 70
+  airStopMultiplier: 0.65
   leftKey: 22
   rightKey: 25
   jumpKey: 35
@@ -375,6 +382,14 @@ MonoBehaviour:
   input: {fileID: 7521601888296858565}
   jumpForce: 10
   maxJumps: 2
+  coyoteTime: 0.1
+  jumpBufferTime: 0.12
+  jumpCutMultiplier: 0.52
+  jumpCutWindow: 0.14
+  riseGravityMultiplier: 1
+  fallGravityMultiplier: 1.55
+  maxFallSpeed: 26
+  landingFeedbackThreshold: 2
   partner: {fileID: 0}
   maxCameraSize: 15
   screenMargin: 4
@@ -395,7 +410,7 @@ Animator:
   m_LinearVelocityBlending: 0
   m_StabilizeFeet: 0
   m_AnimatePhysics: 0
-  m_WarningMessage:
+  m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
@@ -410,11 +425,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 82341ceb6a6eb4e4d8ad87dedf019352, type: 3}
-  m_Name:
+  m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Health
   maxHealth: 100
   applyKnockback: 1
-  invulnerabilityAfterHit: 0
+  invulnerabilityAfterHit: 0.55
   logDamage: 0
 --- !u!114 &8675463877990214191
 MonoBehaviour:
@@ -426,7 +441,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 66914db8cfbaf5447a69a0f55daee7f7, type: 3}
-  m_Name:
+  m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::AttackController
   comboHits:
   - {fileID: 11400000, guid: 959add4ef89537d49bcc2e747d08d355, type: 2}
@@ -437,13 +452,13 @@ MonoBehaviour:
   - HGHook
   - HGSpin
   attackDurations:
-  - 0.28
-  - 0.24
-  - 0.62
+  - 0.2638889
+  - 0.225
+  - 0.6
   cancelTimes:
-  - 0.28
-  - 0.24
-  - 0.62
+  - 0.22
+  - 0.19
+  - 0.42
   movementLock: 0.14
   comboResetTime: 0.45
   stepSpeeds:
@@ -452,7 +467,7 @@ MonoBehaviour:
   - 4
   airHit: {fileID: 11400000, guid: 4a363cc3e1a30fd4a883512cc28add9d, type: 2}
   airStateName: HGJumpKick
-  airDuration: 0.3
+  airDuration: 0.225
   chargedHit: {fileID: 11400000, guid: 7c1a4f2b9d6e4a5f8b3c2d1e0a9b8c7d, type: 2}
   chargedStateName: ChargedPunch
   chargeStateName: Charge
@@ -480,7 +495,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b71ae70a0ae41b648a77a32b1bce957e, type: 3}
-  m_Name:
+  m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::IdleSpecialController
   movement: {fileID: 7389103765779009765}
   animator: {fileID: 1998099670385249206}
@@ -500,7 +515,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 8eb5c14dbb3808841a7c9405de28f18e, type: 3}
-  m_Name:
+  m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerInputReader
   actions: {fileID: -944628639613478452, guid: 79053acb82ce4af4aa9ca1b6b0a8cff3, type: 3}
   mapName: HamsterGirl
@@ -514,7 +529,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f88b0e27503367c49b8949d62c7e620b, type: 3}
-  m_Name:
+  m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerCombatState
   animator: {fileID: 1998099670385249206}
   movement: {fileID: 7389103765779009765}
@@ -536,7 +551,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e6b731ee7f2033b488aa3569d9c73451, type: 3}
-  m_Name:
+  m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ReviveController
   input: {fileID: 7521601888296858565}
   movement: {fileID: 7389103765779009765}
@@ -561,7 +576,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d2c4753a74ec595409085868dcc66a0b, type: 3}
-  m_Name:
+  m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PartnerThrowController
   input: {fileID: 7521601888296858565}
   movement: {fileID: 7389103765779009765}
@@ -598,7 +613,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1f8d4805ac19bd44b8de221b12f11d45, type: 3}
-  m_Name:
+  m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::CarryPoseController
   throwController: {fileID: 1341860569719620440}
   movement: {fileID: 7389103765779009765}
@@ -616,7 +631,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d95e48ec31d08a24dbdbd91f8acff238, type: 3}
-  m_Name:
+  m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SuperMeter
   maxCharge: 100
   hitChargeGain: 20
@@ -634,7 +649,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 709e246f5446e664eb480dc5ce4283bd, type: 3}
-  m_Name:
+  m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SuperGirlController
   input: {fileID: 7521601888296858565}
   meter: {fileID: 7308987572974654370}
@@ -664,6 +679,60 @@ MonoBehaviour:
   normalRunState: HGRun
   normalJumpState: HGJump
   superAttackState: GirlSuperAttack
+--- !u!114 &4718834083846773095
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7313605111358297189}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4220594d6f63a9b41b32636a4bcbec9b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::HitReaction
+  defaultFlashColor: {r: 1, g: 1, b: 1, a: 1}
+  defaultFlashDuration: 0.08
+  hitScale: 1.06
+  lightRecoilSpeed: 2.2
+  mediumLift: 2.2
+  heavyLift: 4.2
+  maxFlightTime: 1.35
+  groundCheckDistance: 0.16
+  recoveryFallbackTime: 0.28
+  maxVisualTilt: 28
+--- !u!114 &4343587772203816286
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7313605111358297189}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bb5fb82b39c1f874e91a0a153682b34b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CharacterMotionVisual
+  movement: {fileID: 7389103765779009765}
+  attack: {fileID: 8675463877990214191}
+  hitReaction: {fileID: 4718834083846773095}
+  combatState: {fileID: 2445444458852127743}
+  visual: {fileID: 8854273110789400730}
+  spriteRenderer: {fileID: 8917514157010363790}
+  referenceSpeed: 15
+  maxLeanDegrees: 8
+  leanSmooth: 12
+  turnLeanMultiplier: 1.35
+  landingSquashY: 0.86
+  landingStretchX: 1.08
+  landingSquashDuration: 0.1
+  minLandingImpact: 6
+  dustPrefab: {fileID: 927343428038882865, guid: 29915efba0d64e14b88b257dd9838a31, type: 3}
+  dustTint: {r: 0.65, g: 0.55, b: 0.42, a: 0.55}
+  dustScale: 0.55
+  heavyLandingImpact: 16
+  landingCameraShakeStrength: 0.08
+  landingCameraShakeDuration: 0.08
 --- !u!1 &7801995536759811198
 GameObject:
   m_ObjectHideFlags: 0

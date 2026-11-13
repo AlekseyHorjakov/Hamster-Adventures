@@ -25,6 +25,7 @@ public class PlayerCombatState : MonoBehaviour
     private Health health;
     private Coroutine hurtRoutine;
     private bool hurtPlaying;
+    private float currentHurtDuration;
     private GameObject activeDizzyStars;
 
     public bool IsDowned { get; private set; }
@@ -60,21 +61,36 @@ public class PlayerCombatState : MonoBehaviour
             StopCoroutine(hurtRoutine);
 
         hurtPlaying = true;
-        if (movement != null) movement.SetControlLocked(true);
+        currentHurtDuration = Mathf.Max(hurtDuration, info.hitStun);
+
+        if (attack != null)
+            attack.CancelCurrentAttack();
+
+        if (movement != null)
+        {
+            movement.SetControlLocked(true);
+            movement.SetJumpLocked(true);
+        }
+
         if (animator != null) animator.Play(hurtStateName, 0, 0f);
         hurtRoutine = StartCoroutine(HurtRoutine());
     }
 
     private IEnumerator HurtRoutine()
     {
-        yield return new WaitForSeconds(hurtDuration);
+        yield return new WaitForSeconds(currentHurtDuration);
         hurtPlaying = false;
         hurtRoutine = null;
 
         if (IsDowned || IsDead || !health.IsAlive)
             yield break;
 
-        if (movement != null) movement.SetControlLocked(false);
+        if (movement != null)
+        {
+            movement.SetControlLocked(false);
+            movement.SetJumpLocked(false);
+        }
+
         if (animator != null) animator.Play(idleStateName, 0, 0f);
     }
 
@@ -113,6 +129,7 @@ public class PlayerCombatState : MonoBehaviour
         {
             movement.enabled = true;
             movement.SetControlLocked(false);
+            movement.SetJumpLocked(false);
         }
 
         if (attack != null)
@@ -180,6 +197,7 @@ public class PlayerCombatState : MonoBehaviour
         if (movement != null)
         {
             movement.SetControlLocked(true);
+            movement.SetJumpLocked(true);
             movement.enabled = false;
         }
 
