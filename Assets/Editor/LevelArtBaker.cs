@@ -31,6 +31,8 @@ public static class LevelArtBaker
         Sprite campWorld = Load("CampWorld");
         Sprite arenaFence = Load("ArenaFence");
         Sprite finishGate = Load("FinishGate");
+        Sprite seamTree = Load("CampSeamTree");
+        Sprite seamBush = Load("CampSeamBush");
 
         GameObject root = new GameObject("BakedLevelArt");
         float screenHeight = cam.orthographicSize * 2f;
@@ -54,6 +56,7 @@ public static class LevelArtBaker
         PlaceGroundDecoration(root.transform, "ArenaFenceLeft", arenaFence, 132f, 6.2f, "Ground", 20);
         PlaceGroundDecoration(root.transform, "ArenaFenceRight", arenaFence, 192f, 6.2f, "Ground", 20);
         PlaceGroundDecoration(root.transform, "FinishGateVisual", finishGate, 194f, 8.2f, "Ground", 25);
+        AddCampSeamMasks(root.transform, seamTree, seamBush);
 
         EditorSceneManager.MarkSceneDirty(scene);
         EditorSceneManager.SaveScene(scene, ScenePath);
@@ -61,6 +64,17 @@ public static class LevelArtBaker
         Debug.Log("[Bake] Визуал перенесён в сцену: BakedLevelArt.");
     }
 
+    private static void AddCampSeamMasks(Transform root, Sprite tree, Sprite bush)
+    {
+        Transform camp = root.Find("CampWorldVisual");
+        SpriteRenderer campRenderer = camp != null ? camp.GetComponent<SpriteRenderer>() : null;
+        if (campRenderer == null)
+            return;
+
+        float seamX = campRenderer.bounds.max.x;
+        PlaceGroundDecoration(root, "CampSeamTree", tree, seamX - 0.1f, 12f, "Mid", -4);
+        PlaceGroundDecoration(root, "CampSeamBush", bush, seamX + 0.9f, 4.6f, "Mid", -3);
+    }
     private static Sprite Load(string name)
     {
         return AssetDatabase.LoadAssetAtPath<Sprite>("Assets/Resources/Level01/" + name + ".png");
