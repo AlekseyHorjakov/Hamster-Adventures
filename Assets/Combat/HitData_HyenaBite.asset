@@ -17,5 +17,5 @@ MonoBehaviour:
   hitStop: 0.06
   hitStun: 0.32
   launchVelocity: {x: 0, y: 0}
-  hitboxSize: {x: 1.8, y: 1}
-  hitboxOffset: {x: 1.5, y: 0}
+  hitboxSize: {x: 2, y: 1.6}
+  hitboxOffset: {x: 1.5, y: -1}

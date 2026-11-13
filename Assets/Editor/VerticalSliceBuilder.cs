@@ -73,7 +73,7 @@ public static class VerticalSliceBuilder
                 Object.DestroyImmediate(root);
         }
 
-        CreateGroundSegment("CampGround", -40f, 48f, 0f, false);
+        CreateGroundSegment("CampGround", -52f, 48f, 0f, false);
         CreateGroundSegment("LakePlatform1", 53f, 61f, 2f, true);
         CreateGroundSegment("LakePlatform2", 67f, 74f, 3.5f, true);
         CreateGroundSegment("LakePlatform3", 80f, 87f, 2f, true);
@@ -82,8 +82,17 @@ public static class VerticalSliceBuilder
         CreateGroundSegment("LakePlatform6", 118f, 126f, 1f, true);
         CreateGroundSegment("ArenaGround", 126f, 214f, 0f, false);
         CreateGroundSegment("ArenaRaisedLedge", 154f, 166f, 3.5f, true);
+        CreateBoundary("LeftLevelBoundary", -51f);
+        CreateBoundary("RightLevelBoundary", 213f);
     }
 
+    private static void CreateBoundary(string name, float x)
+    {
+        GameObject boundary = new GameObject(name);
+        boundary.transform.position = new Vector3(x, 10f, 0f);
+        BoxCollider2D collider = boundary.AddComponent<BoxCollider2D>();
+        collider.size = new Vector2(1f, 20f);
+    }
     private static void CreateGroundSegment(string name, float left, float right,
         float topY, bool usePlatformArt)
     {
@@ -173,7 +182,7 @@ public static class VerticalSliceBuilder
                 followSo.FindProperty("hamster").objectReferenceValue = hamster.transform;
                 followSo.FindProperty("hamsterGirl").objectReferenceValue = girl.transform;
                 followSo.FindProperty("useBounds").boolValue = true;
-                followSo.FindProperty("boundsMin").vector2Value = new Vector2(-14f, 5.5f);
+                followSo.FindProperty("boundsMin").vector2Value = new Vector2(-34f, 5.5f);
                 followSo.FindProperty("boundsMax").vector2Value = new Vector2(196f, 12f);
                 followSo.ApplyModifiedPropertiesWithoutUndo();
             }
@@ -235,6 +244,7 @@ public static class VerticalSliceBuilder
             hyena.name = "ArenaHyena" + (i + 1);
             hyena.transform.SetParent(arenaRoot.transform, true);
             PlaceOnGround(hyena, positions[i], 0f);
+            ConfigureEnemyHitbox(hyena);
             hyenas[i] = hyena.GetComponent<HyenaAI>();
         }
 
@@ -248,6 +258,7 @@ public static class VerticalSliceBuilder
         boss.name = "HyenaBoss";
         boss.transform.localScale = Vector3.one * 2.6f;
         PlaceOnGround(boss, 178f, 0f);
+        ConfigureEnemyHitbox(boss);
 
         Health health = boss.GetComponent<Health>();
         if (health != null)
@@ -270,6 +281,20 @@ public static class VerticalSliceBuilder
         boss.SetActive(false);
     }
 
+    private static void ConfigureEnemyHitbox(GameObject enemy)
+    {
+        Hitbox hitbox = enemy.GetComponentInChildren<Hitbox>(true);
+        if (hitbox == null)
+            return;
+
+        SerializedObject so = new SerializedObject(hitbox);
+        SerializedProperty center = so.FindProperty("centerOnRootCollider");
+        if (center != null)
+        {
+            center.boolValue = true;
+            so.ApplyModifiedPropertiesWithoutUndo();
+        }
+    }
     private static void BuildExit(out GameObject exitGate)
     {
         exitGate = new GameObject("ExitGate");

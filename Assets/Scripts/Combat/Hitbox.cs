@@ -10,6 +10,7 @@ public class Hitbox : MonoBehaviour
 {
     [Tooltip("Кого можно бить. Оставьте Everything, если не уверены.")]
     [SerializeField] private LayerMask targetMask = ~0;
+    [SerializeField] private bool centerOnRootCollider;
 
     private readonly HashSet<Health> alreadyHit = new HashSet<Health>();
     private HitData data;
@@ -54,7 +55,15 @@ public class Hitbox : MonoBehaviour
         if (!active || data == null)
             return;
 
-        Vector2 center = (Vector2)transform.root.position + offset;
+        Vector2 origin = transform.root.position;
+        if (centerOnRootCollider)
+        {
+            Collider2D ownerCollider = transform.root.GetComponent<Collider2D>();
+            if (ownerCollider != null)
+                origin = ownerCollider.bounds.center;
+        }
+
+        Vector2 center = origin + offset;
         Vector2 size = data.hitboxSize * geometrySizeMultiplier;
         var hits = Physics2D.OverlapBoxAll(center, size, 0f, targetMask);
 
