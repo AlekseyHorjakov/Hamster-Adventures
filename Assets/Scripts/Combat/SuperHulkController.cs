@@ -32,6 +32,7 @@ public class SuperHulkController : MonoBehaviour
     [SerializeField] private GameObject hulkVisual;
     [SerializeField] private SpriteRenderer hulkRenderer;
     [SerializeField] private GameObject transformVfxPrefab;
+    [SerializeField] private HitReaction hitReaction;
 
     [Header("Форма халка")]
     [SerializeField] private float hulkDuration = 10f;
@@ -76,6 +77,7 @@ public class SuperHulkController : MonoBehaviour
         if (combatState == null) combatState = GetComponent<PlayerCombatState>();
         if (idleSpecial == null) idleSpecial = GetComponent<IdleSpecialController>();
         if (partnerThrow == null) partnerThrow = GetComponent<PartnerThrowController>();
+        if (hitReaction == null) hitReaction = GetComponent<HitReaction>();
         if (animator == null) animator = GetComponent<Animator>();
         if (body == null) body = GetComponent<Rigidbody2D>();
         if (bodyCollider == null) bodyCollider = GetComponent<Collider2D>();
@@ -158,6 +160,7 @@ public class SuperHulkController : MonoBehaviour
         mainRenderer.enabled = false;
         hulkVisual.SetActive(true);
         if (hulkRenderer != null) hulkRenderer.enabled = true;
+        if (hitReaction != null) hitReaction.SetVisualOverride(hulkRenderer);
 
         // Сначала принудительно проигрываем нулевой кадр, чтобы у SpriteRenderer
         // появились реальные границы, и только потом ставим фигуру на землю.
@@ -235,6 +238,7 @@ public class SuperHulkController : MonoBehaviour
         attack.RestoreRuntimeAttackProfile();
         movement.SetRuntimeMovementMultipliers(1f, 1f);
 
+        if (hitReaction != null) hitReaction.SetVisualOverride(null);
         if (hulkRenderer != null) hulkRenderer.enabled = false;
         if (hulkVisual != null) hulkVisual.SetActive(false);
         if (mainRenderer != null) mainRenderer.enabled = true;
@@ -266,6 +270,7 @@ public class SuperHulkController : MonoBehaviour
         attack.RestoreRuntimeAttackProfile();
         movement.SetRuntimeMovementMultipliers(1f, 1f);
 
+        if (hitReaction != null) hitReaction.SetVisualOverride(null);
         if (hulkRenderer != null) hulkRenderer.enabled = false;
         if (hulkVisual != null) hulkVisual.SetActive(false);
         if (mainRenderer != null) mainRenderer.enabled = true;

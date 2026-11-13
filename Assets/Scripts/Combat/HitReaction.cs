@@ -27,7 +27,10 @@ public class HitReaction : MonoBehaviour
     private Rigidbody2D body;
     private Collider2D bodyCollider;
     private SpriteRenderer sprite;
+    private SpriteRenderer defaultSprite;
+    private SpriteRenderer spriteOverride;
     private Transform visual;
+    private bool flashWasEnabled = true;
 
     private Color baseColor;
     private Vector3 reactionBaseScale;
@@ -49,6 +52,7 @@ public class HitReaction : MonoBehaviour
         body = GetComponent<Rigidbody2D>();
         bodyCollider = GetComponent<Collider2D>();
         sprite = GetComponentInChildren<SpriteRenderer>();
+        defaultSprite = sprite;
         visual = sprite != null ? sprite.transform : transform;
 
         if (sprite != null)
@@ -59,6 +63,20 @@ public class HitReaction : MonoBehaviour
             reactionBaseScale = visual.localScale;
             reactionBaseRotation = visual.localRotation;
         }
+    }
+
+    /// <summary>
+    /// Позволяет временно перенаправить вспышку/мерцание на другой визуал,
+    /// например на HulkRenderer во время суперформы.
+    /// </summary>
+    public void SetVisualOverride(SpriteRenderer renderer)
+    {
+        spriteOverride = renderer;
+        sprite = renderer != null ? renderer : defaultSprite;
+        visual = sprite != null ? sprite.transform : transform;
+
+        if (sprite != null)
+            baseColor = sprite.color;
     }
 
     private void OnEnable()
@@ -88,7 +106,7 @@ public class HitReaction : MonoBehaviour
         if (sprite != null)
         {
             sprite.color = baseColor;
-            sprite.enabled = true;
+            sprite.enabled = flashWasEnabled;
         }
     }
 
@@ -147,8 +165,16 @@ public class HitReaction : MonoBehaviour
             yield break;
 
         flashBaseScale = visual != null ? visual.localScale : Vector3.one;
+        flashWasEnabled = sprite.enabled;
 
-        sprite.enabled = true;
+        // Не включаем скрытый renderer: во время Hulk-формы обычный спрайт
+        // должен оставаться выключенным.
+        if (!flashWasEnabled)
+        {
+            flashRoutine = null;
+            yield break;
+        }
+
         sprite.color = flashColor;
         if (visual != null)
             visual.localScale = flashBaseScale * hitScale;
@@ -178,7 +204,7 @@ public class HitReaction : MonoBehaviour
             }
 
             if (sprite != null)
-                sprite.enabled = true;
+                sprite.enabled = flashWasEnabled;
         }
 
         flashRoutine = null;
