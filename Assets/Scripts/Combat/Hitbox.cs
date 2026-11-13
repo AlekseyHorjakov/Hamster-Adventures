@@ -55,10 +55,12 @@ public class Hitbox : MonoBehaviour
         if (!active || data == null)
             return;
 
-        Vector2 origin = transform.root.position;
+        Transform owner = ResolveOwner();
+        Vector2 origin = owner.position;
+
         if (centerOnRootCollider)
         {
-            Collider2D ownerCollider = transform.root.GetComponent<Collider2D>();
+            Collider2D ownerCollider = owner.GetComponent<Collider2D>();
             if (ownerCollider != null)
                 origin = ownerCollider.bounds.center;
         }
@@ -78,7 +80,7 @@ public class Hitbox : MonoBehaviour
             if (reaction != null && reaction.IsLaunched)
                 continue;
 
-            if (health.transform.root == transform.root)
+            if (health.transform == owner || health.transform.IsChildOf(owner))
                 continue;
 
             if (!alreadyHit.Add(health))
@@ -99,7 +101,7 @@ public class Hitbox : MonoBehaviour
                 hitFlashDuration = data.hitFlashDuration,
                 reactionTilt = data.reactionTilt,
                 reactionRecovery = data.reactionRecovery,
-                source = transform.root.gameObject
+                source = owner.gameObject
             });
 
             HitStop.Play(data.hitStop);
@@ -109,6 +111,15 @@ public class Hitbox : MonoBehaviour
 
             SpawnSparks(hitPoint);
         }
+    }
+
+    private Transform ResolveOwner()
+    {
+        Health ownerHealth = GetComponentInParent<Health>();
+        if (ownerHealth != null)
+            return ownerHealth.transform;
+
+        return transform.parent != null ? transform.parent : transform;
     }
 
     private static GameObject sparkPrefab;
@@ -151,10 +162,11 @@ public class Hitbox : MonoBehaviour
         if (data == null)
             return;
 
+        Transform owner = ResolveOwner();
         Gizmos.color = new Color(1f, 0.4f, 0.2f, 0.35f);
         Vector2 offset = new Vector2(
             data.hitboxOffset.x * geometryOffsetMultiplier,
             data.hitboxOffset.y * geometryOffsetMultiplier);
-        Gizmos.DrawCube((Vector2)transform.root.position + offset, data.hitboxSize * geometrySizeMultiplier);
+        Gizmos.DrawCube((Vector2)owner.position + offset, data.hitboxSize * geometrySizeMultiplier);
     }
 }

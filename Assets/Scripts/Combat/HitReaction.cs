@@ -31,6 +31,7 @@ public class HitReaction : MonoBehaviour
 
     private Color baseColor;
     private Vector3 reactionBaseScale;
+    private Vector3 flashBaseScale;
     private Quaternion reactionBaseRotation;
     private Coroutine flashRoutine;
     private Coroutine reactionRoutine;
@@ -145,12 +146,12 @@ public class HitReaction : MonoBehaviour
         if (sprite == null)
             yield break;
 
-        reactionBaseScale = visual != null ? visual.localScale : Vector3.one;
+        flashBaseScale = visual != null ? visual.localScale : Vector3.one;
 
         sprite.enabled = true;
         sprite.color = flashColor;
         if (visual != null)
-            visual.localScale = reactionBaseScale * hitScale;
+            visual.localScale = flashBaseScale * hitScale;
 
         float elapsed = 0f;
         while (elapsed < duration)
@@ -161,7 +162,7 @@ public class HitReaction : MonoBehaviour
 
         sprite.color = baseColor;
         if (visual != null)
-            visual.localScale = reactionBaseScale;
+            visual.localScale = flashBaseScale;
 
         // Мерцание i-frames должно быть видимым даже во время hit stop.
         if (health != null && health.InvulnerableRemaining > 0f)
@@ -186,8 +187,6 @@ public class HitReaction : MonoBehaviour
     private IEnumerator LightRoutine(DamageInfo info)
     {
         reacting = true;
-        reactionBaseScale = visual != null ? visual.localScale : Vector3.one;
-        reactionBaseRotation = visual != null ? visual.localRotation : Quaternion.identity;
 
         float direction = ResolveDirection(info);
         float recoil = Mathf.Max(lightRecoilSpeed, Mathf.Abs(info.knockback.x));
@@ -206,8 +205,6 @@ public class HitReaction : MonoBehaviour
     private IEnumerator MediumRoutine(DamageInfo info)
     {
         reacting = true;
-        reactionBaseScale = visual != null ? visual.localScale : Vector3.one;
-        reactionBaseRotation = visual != null ? visual.localRotation : Quaternion.identity;
 
         float direction = ResolveDirection(info);
         float recoil = Mathf.Max(3.5f, Mathf.Abs(info.knockback.x));
@@ -227,8 +224,6 @@ public class HitReaction : MonoBehaviour
     {
         reacting = true;
         launched = true;
-        reactionBaseScale = visual != null ? visual.localScale : Vector3.one;
-        reactionBaseRotation = visual != null ? visual.localRotation : Quaternion.identity;
 
         float direction = ResolveDirection(info);
         float horizontal = Mathf.Max(6f, Mathf.Abs(info.knockback.x));
@@ -254,8 +249,6 @@ public class HitReaction : MonoBehaviour
     {
         reacting = true;
         launched = true;
-        reactionBaseScale = visual != null ? visual.localScale : Vector3.one;
-        reactionBaseRotation = visual != null ? visual.localRotation : Quaternion.identity;
 
         float direction = ResolveDirection(info);
         Vector2 launch = info.launchVelocity;
