@@ -30,6 +30,7 @@ public class PlayerCombatState : MonoBehaviour
 
     public bool IsDowned { get; private set; }
     public bool IsDead { get; private set; }
+    public bool IsRespawning { get; private set; }
 
     private void Awake()
     {
@@ -164,6 +165,80 @@ public class PlayerCombatState : MonoBehaviour
         }
 
         if (animator != null) animator.Play(deathStateName, 0, 0f);
+    }
+
+    /// <summary>
+    /// Возвращает героя в бой после падения или загрузки чекпоинта.
+    /// Не меняет боевые правила: используется только зонами безопасного
+    /// возрождения и восстановлением прогресса.
+    /// </summary>
+    /// <summary>Прячет героя на короткое время падения, не запуская поражение уровня.</summary>
+    public void BeginRespawn()
+    {
+        if (IsDead || IsRespawning)
+            return;
+
+        IsRespawning = true;
+        hurtPlaying = false;
+
+        if (hurtRoutine != null)
+        {
+            StopCoroutine(hurtRoutine);
+            hurtRoutine = null;
+        }
+
+        DisableControl();
+        HideDizzyStars();
+
+        if (body != null)
+        {
+            body.linearVelocity = Vector2.zero;
+            body.simulated = false;
+        }
+
+        if (animator != null)
+            animator.Play(deathStateName, 0, 0f);
+    }
+
+    public void RespawnAt(Vector2 position, float healthFraction)
+    {
+        IsDead = false;
+        IsDowned = false;
+        IsRespawning = false;
+        hurtPlaying = false;
+
+        if (hurtRoutine != null)
+        {
+            StopCoroutine(hurtRoutine);
+            hurtRoutine = null;
+        }
+
+        HideDizzyStars();
+
+        if (body != null)
+        {
+            body.simulated = true;
+            body.position = position;
+            body.linearVelocity = Vector2.zero;
+            body.angularVelocity = 0f;
+        }
+
+        transform.position = position;
+
+        if (movement != null)
+        {
+            movement.enabled = true;
+            movement.SetControlLocked(false);
+            movement.SetJumpLocked(false);
+        }
+
+        if (attack != null)
+            attack.enabled = true;
+
+        health.Revive(Mathf.Clamp(healthFraction, 0.2f, 1f));
+
+        if (animator != null)
+            animator.Play(idleStateName, 0, 0f);
     }
 
     private void ShowDizzyStars()

@@ -1,0 +1,732 @@
+fileFormatVersion: 2
+guid: bf75e9de90489c54cba5816f70e3ca31
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 1476836907344624998
+    second: TrapDebris_0
+  - first:
+      213: -8994979311810574958
+    second: TrapDebris_1
+  - first:
+      213: 8982612279363179216
+    second: TrapDebris_2
+  - first:
+      213: -6035533277336625589
+    second: TrapDebris_3
+  - first:
+      213: -7570394895040907249
+    second: TrapDebris_4
+  - first:
+      213: 7471239612253429781
+    second: TrapDebris_5
+  - first:
+      213: 1554720546975240044
+    second: TrapDebris_6
+  - first:
+      213: 2248230574265882987
+    second: TrapDebris_7
+  - first:
+      213: 2082351433949350754
+    second: TrapDebris_8
+  - first:
+      213: 3196171707521953399
+    second: TrapDebris_9
+  - first:
+      213: 7637648280199544969
+    second: TrapDebris_10
+  - first:
+      213: -1100316041647534183
+    second: TrapDebris_11
+  - first:
+      213: -7966943805415819214
+    second: TrapDebris_12
+  - first:
+      213: 7506810031404592971
+    second: TrapDebris_13
+  - first:
+      213: -1853250040591946079
+    second: TrapDebris_14
+  - first:
+      213: -1120772219115794716
+    second: TrapDebris_15
+  - first:
+      213: 6653558955852849230
+    second: TrapDebris_16
+  - first:
+      213: -6040641734056326630
+    second: TrapDebris_17
+  - first:
+      213: 7246068941579550012
+    second: TrapDebris_18
+  - first:
+      213: -6606448322587195434
+    second: TrapDebris_19
+  - first:
+      213: 5865725622303749899
+    second: TrapDebris_20
+  - first:
+      213: 4351845431882771796
+    second: TrapDebris_21
+  - first:
+      213: 358719307641185417
+    second: TrapDebris_22
+  - first:
+      213: 4184017682322486452
+    second: TrapDebris_23
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 1
+  spriteExtrude: 1
+  spriteMeshType: 0
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationMethod: 0
+  spriteTessellationDetail: -1
+  spriteGeometrySubdivision: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: TrapDebris_0
+      rect:
+        serializedVersion: 2
+        x: 392
+        y: 173
+        width: 29
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 66d7675b757ce7410800000000000000
+      internalID: 1476836907344624998
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TrapDebris_1
+      rect:
+        serializedVersion: 2
+        x: 544
+        y: 165
+        width: 29
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2950b8d29f96b2380800000000000000
+      internalID: -8994979311810574958
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TrapDebris_2
+      rect:
+        serializedVersion: 2
+        x: 572
+        y: 124
+        width: 71
+        height: 94
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0d21182b646a8ac70800000000000000
+      internalID: 8982612279363179216
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TrapDebris_3
+      rect:
+        serializedVersion: 2
+        x: 654
+        y: 182
+        width: 37
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b4e1d4e367a7d3ca0800000000000000
+      internalID: -6035533277336625589
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TrapDebris_4
+      rect:
+        serializedVersion: 2
+        x: 824
+        y: 157
+        width: 64
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f08f7afd3fd80f690800000000000000
+      internalID: -7570394895040907249
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TrapDebris_5
+      rect:
+        serializedVersion: 2
+        x: 894
+        y: 128
+        width: 110
+        height: 89
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5106130d7dc2fa760800000000000000
+      internalID: 7471239612253429781
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TrapDebris_6
+      rect:
+        serializedVersion: 2
+        x: 900
+        y: 201
+        width: 28
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c6fc577a91a739510800000000000000
+      internalID: 1554720546975240044
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TrapDebris_7
+      rect:
+        serializedVersion: 2
+        x: 1173
+        y: 156
+        width: 56
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b695a40bbc1533f10800000000000000
+      internalID: 2248230574265882987
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TrapDebris_8
+      rect:
+        serializedVersion: 2
+        x: 14
+        y: 71
+        width: 228
+        height: 115
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 26b831ea89ff5ec10800000000000000
+      internalID: 2082351433949350754
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TrapDebris_9
+      rect:
+        serializedVersion: 2
+        x: 270
+        y: 44
+        width: 228
+        height: 114
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 77eeff3eb351b5c20800000000000000
+      internalID: 3196171707521953399
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TrapDebris_10
+      rect:
+        serializedVersion: 2
+        x: 345
+        y: 157
+        width: 30
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 980caa415a06ef960800000000000000
+      internalID: 7637648280199544969
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TrapDebris_11
+      rect:
+        serializedVersion: 2
+        x: 410
+        y: 155
+        width: 35
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 99f4fecc364eab0f0800000000000000
+      internalID: -1100316041647534183
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TrapDebris_12
+      rect:
+        serializedVersion: 2
+        x: 526
+        y: 32
+        width: 228
+        height: 154
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 238f0b4d1dabf6190800000000000000
+      internalID: -7966943805415819214
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TrapDebris_13
+      rect:
+        serializedVersion: 2
+        x: 787
+        y: 14
+        width: 214
+        height: 144
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b4fa53663fb8d2860800000000000000
+      internalID: 7506810031404592971
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TrapDebris_14
+      rect:
+        serializedVersion: 2
+        x: 797
+        y: 150
+        width: 36
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1aee98238eee746e0800000000000000
+      internalID: -1853250040591946079
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TrapDebris_15
+      rect:
+        serializedVersion: 2
+        x: 847
+        y: 146
+        width: 15
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4ee0a75da973270f0800000000000000
+      internalID: -1120772219115794716
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TrapDebris_16
+      rect:
+        serializedVersion: 2
+        x: 1067
+        y: 150
+        width: 25
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e406ab74e90365c50800000000000000
+      internalID: 6653558955852849230
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TrapDebris_17
+      rect:
+        serializedVersion: 2
+        x: 1076
+        y: 108
+        width: 59
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a1a4c2af8545b2ca0800000000000000
+      internalID: -6040641734056326630
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TrapDebris_18
+      rect:
+        serializedVersion: 2
+        x: 1162
+        y: 158
+        width: 10
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c3df6d0af453f8460800000000000000
+      internalID: 7246068941579550012
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TrapDebris_19
+      rect:
+        serializedVersion: 2
+        x: 1346
+        y: 129
+        width: 41
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6d70739c04e2154a0800000000000000
+      internalID: -6606448322587195434
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TrapDebris_20
+      rect:
+        serializedVersion: 2
+        x: 1413
+        y: 156
+        width: 27
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b077253206e376150800000000000000
+      internalID: 5865725622303749899
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TrapDebris_21
+      rect:
+        serializedVersion: 2
+        x: 1038
+        y: 46
+        width: 228
+        height: 99
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 45d67ccfc5cd46c30800000000000000
+      internalID: 4351845431882771796
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TrapDebris_22
+      rect:
+        serializedVersion: 2
+        x: 1172
+        y: 119
+        width: 28
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 984e60a4f4d6af400800000000000000
+      internalID: 358719307641185417
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TrapDebris_23
+      rect:
+        serializedVersion: 2
+        x: 1294
+        y: 75
+        width: 228
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4b4f8c80aed901a30800000000000000
+      internalID: 4184017682322486452
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable: {}
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

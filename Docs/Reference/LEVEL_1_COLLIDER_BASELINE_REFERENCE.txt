@@ -1,0 +1,961 @@
+ZONE1_COLLIDER_BASELINE
+scene=Assets/Scenes/Level01_Full.unity
+OBJECT|BakedLevelArt/BridgeAbyss
+  active=True tag=Untagged
+  pos=(181,-14,0) localScale=(1,1,1)
+  sprite=Ground_Soil_Tile layer=Background/-5 bounds=(159,-26,-0.1)..(203,-2,0.1) color=RGBA(0.300, 0.220, 0.180, 1.000)
+OBJECT|BakedLevelArt/GroundRuns/BridgeEntryRun/BridgeEntryRun_LeftCap
+  active=True tag=Untagged
+  pos=(152.1,-0.275,0) localScale=(1,1,1)
+  sprite=Ground_Cap_Left layer=Ground/11 bounds=(149,-3.8,-0.1)..(155.2,3.25,0.1) color=RGBA(1.000, 1.000, 1.000, 1.000)
+OBJECT|BakedLevelArt/GroundRuns/BridgeEntryRun/BridgeEntryRun_RightCap
+  active=True tag=Untagged
+  pos=(164.9,-0.275,0) localScale=(1,1,1)
+  sprite=Ground_Cap_Right layer=Ground/11 bounds=(161.8,-3.8,-0.1)..(168,3.25,0.1) color=RGBA(1.000, 1.000, 1.000, 1.000)
+OBJECT|BakedLevelArt/GroundRuns/BridgeEntryRun/BridgeEntryRun_Tile
+  active=True tag=Untagged
+  pos=(158.5,-0.275,0) localScale=(1,1,1)
+  sprite=Ground_Tile layer=Ground/10 bounds=(148.9,-3.8,-0.1)..(168.1,3.25,0.1) color=RGBA(1.000, 1.000, 1.000, 1.000)
+OBJECT|BakedLevelArt/GroundRuns/BridgeEntryRun/BridgeEntryRun_UndergroundFill
+  active=True tag=Untagged
+  pos=(158.5,-13.45,0) localScale=(1,1,1)
+  sprite=Ground_Soil_Tile layer=Ground/12 bounds=(148.7,-23.45,-0.1)..(168.3,-3.45,0.1) color=RGBA(1.000, 1.000, 1.000, 1.000)
+OBJECT|BakedLevelArt/GroundRuns/BridgeExitRun/BridgeExitRun_LeftCap
+  active=True tag=Untagged
+  pos=(195.1,-0.275,0) localScale=(1,1,1)
+  sprite=Ground_Cap_Left layer=Ground/11 bounds=(192,-3.8,-0.1)..(198.2,3.25,0.1) color=RGBA(1.000, 1.000, 1.000, 1.000)
+OBJECT|BakedLevelArt/GroundRuns/BridgeExitRun/BridgeExitRun_RightCap
+  active=True tag=Untagged
+  pos=(198.9,-0.275,0) localScale=(1,1,1)
+  sprite=Ground_Cap_Right layer=Ground/11 bounds=(195.8,-3.8,-0.1)..(202,3.25,0.1) color=RGBA(1.000, 1.000, 1.000, 1.000)
+OBJECT|BakedLevelArt/GroundRuns/BridgeExitRun/BridgeExitRun_Tile
+  active=True tag=Untagged
+  pos=(197,-0.275,0) localScale=(1,1,1)
+  sprite=Ground_Tile layer=Ground/10 bounds=(191.9,-3.8,-0.1)..(202.1,3.25,0.1) color=RGBA(1.000, 1.000, 1.000, 1.000)
+OBJECT|BakedLevelArt/GroundRuns/BridgeExitRun/BridgeExitRun_UndergroundFill
+  active=True tag=Untagged
+  pos=(197,-13.45,0) localScale=(1,1,1)
+  sprite=Ground_Soil_Tile layer=Ground/12 bounds=(191.7,-23.45,-0.1)..(202.3,-3.45,0.1) color=RGBA(1.000, 1.000, 1.000, 1.000)
+OBJECT|BakedLevelArt/Zone1Trees/BridgeTree_Apple
+  active=True tag=Untagged
+  pos=(200,8.5,0) localScale=(3.28283,3.28283,3.28283)
+  sprite=Tree_Apple layer=Mid/-7 bounds=(195.5682,2,-0.32828)..(204.4318,15,0.32828) color=RGBA(0.930, 0.980, 0.940, 1.000)
+OBJECT|BakedLevelArt/Zone1Trees/BridgeTree_Willow
+  active=True tag=Untagged
+  pos=(163,8.5,0) localScale=(3.30789,3.30789,3.30789)
+  sprite=Tree_Willow layer=Mid/-7 bounds=(158.3193,2,-0.33079)..(167.6807,15,0.33079) color=RGBA(0.860, 0.930, 0.880, 1.000)
+OBJECT|BakedLevelArt/Zone1Trees/Bush_119
+  active=True tag=Untagged
+  pos=(119,3.1,0) localScale=(0.625,0.625,0.625)
+  sprite=ForestBush layer=Mid/-5 bounds=(115.8,1.5,-0.0625)..(122.2,4.7,0.0625) color=RGBA(1.000, 1.000, 1.000, 1.000)
+OBJECT|BakedLevelArt/Zone1Trees/Bush_132
+  active=True tag=Untagged
+  pos=(132,3.5,0) localScale=(0.58594,0.58594,0.58594)
+  sprite=ForestBush layer=Mid/-5 bounds=(129,2,-0.05859)..(135,5,0.05859) color=RGBA(1.000, 1.000, 1.000, 1.000)
+OBJECT|BakedLevelArt/CampClearing/Bush_-18
+  active=True tag=Untagged
+  pos=(-18,1.2,0) localScale=(0.46875,0.46875,0.46875)
+  sprite=ForestBush layer=Mid/-6 bounds=(-20.4,0,-0.04688)..(-15.6,2.4,0.04688) color=RGBA(1.000, 1.000, 1.000, 1.000)
+OBJECT|BakedLevelArt/CampClearing/Bush_25
+  active=True tag=Untagged
+  pos=(25,1.45,0) localScale=(0.56641,0.56641,0.56641)
+  sprite=ForestBush layer=Mid/-6 bounds=(22.1,0,-0.05664)..(27.9,2.9,0.05664) color=RGBA(1.000, 1.000, 1.000, 1.000)
+OBJECT|BakedLevelArt/CampClearing/Bush_-25
+  active=True tag=Untagged
+  pos=(-25,1.4,0) localScale=(0.54688,0.54688,0.54688)
+  sprite=ForestBush layer=Mid/-6 bounds=(-27.8,0,-0.05469)..(-22.2,2.8,0.05469) color=RGBA(1.000, 1.000, 1.000, 1.000)
+OBJECT|BakedLevelArt/CampClearing/Bush_40
+  active=True tag=Untagged
+  pos=(40,1.25,0) localScale=(0.48828,0.48828,0.48828)
+  sprite=ForestBush layer=Mid/-6 bounds=(37.5,0,-0.04883)..(42.5,2.5,0.04883) color=RGBA(1.000, 1.000, 1.000, 1.000)
+OBJECT|BakedLevelArt/CampClearing/Bush_-5
+  active=True tag=Untagged
+  pos=(-5,1.3,0) localScale=(0.50781,0.50781,0.50781)
+  sprite=ForestBush layer=Mid/-6 bounds=(-7.6,0,-0.05078)..(-2.4,2.6,0.05078) color=RGBA(1.000, 1.000, 1.000, 1.000)
+OBJECT|BakedLevelArt/Zone1Trees/Bush_51
+  active=True tag=Untagged
+  pos=(51,1.6,0) localScale=(0.625,0.625,0.625)
+  sprite=ForestBush layer=Mid/-5 bounds=(47.8,0,-0.0625)..(54.2,3.2,0.0625) color=RGBA(1.000, 1.000, 1.000, 1.000)
+OBJECT|BakedLevelArt/Zone1Trees/Bush_66
+  active=True tag=Untagged
+  pos=(66,1.4,0) localScale=(0.54688,0.54688,0.54688)
+  sprite=ForestBush layer=Mid/-5 bounds=(63.2,0,-0.05469)..(68.8,2.8,0.05469) color=RGBA(1.000, 1.000, 1.000, 1.000)
+OBJECT|BakedLevelArt/Zone1Trees/Bush_80
+  active=True tag=Untagged
+  pos=(80,1.65,0) localScale=(0.64453,0.64453,0.64453)
+  sprite=ForestBush layer=Mid/-5 bounds=(76.7,0,-0.06445)..(83.3,3.3,0.06445) color=RGBA(1.000, 1.000, 1.000, 1.000)
+OBJECT|BakedLevelArt/CampClearing/Bush_9
+  active=True tag=Untagged
+  pos=(9,1.25,0) localScale=(0.48828,0.48828,0.48828)
+  sprite=ForestBush layer=Mid/-6 bounds=(6.5,0,-0.04883)..(11.5,2.5,0.04883) color=RGBA(1.000, 1.000, 1.000, 1.000)
+OBJECT|BakedLevelArt/CampClearing/CampBench_A
+  active=True tag=Untagged
+  pos=(-18.4,0.65,0) localScale=(1.08333,1.08333,1.08333)
+  sprite=CampBench layer=Ground/13 bounds=(-19.94375,0,-0.10833)..(-16.85625,1.3,0.10833) color=RGBA(1.000, 1.000, 1.000, 1.000)
+OBJECT|BakedLevelArt/CampClearing/CampChest_A
+  active=True tag=Untagged
+  pos=(-7.5,0.6,0) localScale=(1.2,1.2,1.2)
+  sprite=CampChest_Wood layer=Ground/14 bounds=(-8.4,0,-0.12)..(-6.6,1.2,0.12) color=RGBA(1.000, 1.000, 1.000, 1.000)
+OBJECT|BakedLevelArt/CampClearing/CampLantern_Red
+  active=True tag=Untagged
+  pos=(-23.5,1.2,0) localScale=(1.51899,1.51899,1.51899)
+  sprite=CampLantern_Red layer=Ground/14 bounds=(-24.32785,0,-0.1519)..(-22.67215,2.4,0.1519) color=RGBA(1.000, 1.000, 1.000, 1.000)
+OBJECT|BakedLevelArt/CampClearing/CampTable_Long
+  active=True tag=Untagged
+  pos=(-15.7,1.05,0) localScale=(1.44828,1.44828,1.44828)
+  sprite=CampTable_Long layer=Ground/12 bounds=(-17.75655,0,-0.14483)..(-13.64345,2.1,0.14483) color=RGBA(1.000, 1.000, 1.000, 1.000)
+OBJECT|BakedLevelArt/CampClearing/CampTent_Beige
+  active=True tag=Untagged
+  pos=(-11.6,2.4,0) localScale=(2.38806,2.38806,2.38806)
+  sprite=CampTent_Beige layer=Mid/-3 bounds=(-14.46567,0,-0.23881)..(-8.73433,4.8,0.23881) color=RGBA(1.000, 1.000, 1.000, 1.000)
+OBJECT|BakedLevelArt/CampClearing/CampTent_Green
+  active=True tag=Untagged
+  pos=(-26.2,2.6,0) localScale=(2.5,2.5,2.5)
+  sprite=CampTent_Green layer=Mid/-3 bounds=(-29.0625,0,-0.25)..(-23.3375,5.2,0.25) color=RGBA(1.000, 1.000, 1.000, 1.000)
+OBJECT|BakedLevelArt/CampClearing/CampTree_Autumn
+  active=True tag=Untagged
+  pos=(16,6.5,0) localScale=(3.23383,3.23383,3.23383)
+  sprite=Tree_Autumn layer=Mid/-8 bounds=(11.73134,0,-0.32338)..(20.26866,13,0.32338) color=RGBA(0.930, 0.980, 0.940, 1.000)
+OBJECT|BakedLevelArt/CampClearing/CampTree_Birch
+  active=True tag=Untagged
+  pos=(-15,6.5,0) localScale=(3.03738,3.03738,3.03738)
+  sprite=Tree_Birch layer=Mid/-8 bounds=(-18.69042,0,-0.30374)..(-11.30958,13,0.30374) color=RGBA(0.930, 0.980, 0.940, 1.000)
+OBJECT|BakedLevelArt/CampClearing/CampTree_Fir
+  active=True tag=Untagged
+  pos=(33,7.5,0) localScale=(3.4965,3.4965,3.4965)
+  sprite=Tree_Fir layer=Mid/-8 bounds=(28.75175,0,-0.34965)..(37.24825,15,0.34965) color=RGBA(0.860, 0.930, 0.880, 1.000)
+OBJECT|BakedLevelArt/CampClearing/CampTree_Flowering
+  active=True tag=Untagged
+  pos=(0,7,0) localScale=(3.87812,3.87812,3.87812)
+  sprite=Tree_FloweringGreen layer=Mid/-8 bounds=(-4.75069,0,-0.38781)..(4.75069,14,0.38781) color=RGBA(0.930, 0.980, 0.940, 1.000)
+OBJECT|BakedLevelArt/CampClearing/CampTree_Oak
+  active=True tag=Untagged
+  pos=(-30,7.5,0) localScale=(3.34076,3.34076,3.34076)
+  sprite=Tree_Oak layer=Mid/-8 bounds=(-35.47884,0,-0.33408)..(-24.52116,15,0.33408) color=RGBA(0.860, 0.930, 0.880, 1.000)
+OBJECT|BakedLevelArt/CheckpointMarker_Camp
+  active=True tag=Untagged
+  pos=(-18,0.08,0) localScale=(0.625,0.28646,1)
+  sprite=Shadow_Soft layer=Ground/11 bounds=(-19.6,-0.195,-0.1)..(-16.4,0.355,0.1) color=RGBA(1.000, 0.720, 0.220, 0.300)
+OBJECT|BakedLevelArt/ContactShadows/ContactShadow
+  active=True tag=Untagged
+  pos=(-30,0.03,0) localScale=(0.82031,0.52083,1)
+  sprite=Shadow_Soft layer=Ground/11 bounds=(-32.1,-0.47,-0.1)..(-27.9,0.53,0.1) color=RGBA(1.000, 1.000, 1.000, 0.600)
+OBJECT|BakedLevelArt/ContactShadows/ContactShadow
+  active=True tag=Untagged
+  pos=(-15,0.03,0) localScale=(0.72079,0.52083,1)
+  sprite=Shadow_Soft layer=Ground/11 bounds=(-16.84521,-0.47,-0.1)..(-13.15479,0.53,0.1) color=RGBA(1.000, 1.000, 1.000, 0.600)
+OBJECT|BakedLevelArt/ContactShadows/ContactShadow
+  active=True tag=Untagged
+  pos=(0,0.03,0) localScale=(0.82031,0.52083,1)
+  sprite=Shadow_Soft layer=Ground/11 bounds=(-2.1,-0.47,-0.1)..(2.1,0.53,0.1) color=RGBA(1.000, 1.000, 1.000, 0.600)
+OBJECT|BakedLevelArt/ContactShadows/ContactShadow
+  active=True tag=Untagged
+  pos=(16,0.03,0) localScale=(0.82031,0.52083,1)
+  sprite=Shadow_Soft layer=Ground/11 bounds=(13.9,-0.47,-0.1)..(18.1,0.53,0.1) color=RGBA(1.000, 1.000, 1.000, 0.600)
+OBJECT|BakedLevelArt/ContactShadows/ContactShadow
+  active=True tag=Untagged
+  pos=(33,0.03,0) localScale=(0.82031,0.52083,1)
+  sprite=Shadow_Soft layer=Ground/11 bounds=(30.9,-0.47,-0.1)..(35.1,0.53,0.1) color=RGBA(1.000, 1.000, 1.000, 0.600)
+OBJECT|BakedLevelArt/ContactShadows/ContactShadow
+  active=True tag=Untagged
+  pos=(-25,0.03,0) localScale=(0.54688,0.40833,1)
+  sprite=Shadow_Soft layer=Ground/11 bounds=(-26.4,-0.362,-0.1)..(-23.6,0.422,0.1) color=RGBA(1.000, 1.000, 1.000, 0.600)
+OBJECT|BakedLevelArt/ContactShadows/ContactShadow
+  active=True tag=Untagged
+  pos=(-18,0.03,0) localScale=(0.46875,0.35,1)
+  sprite=Shadow_Soft layer=Ground/11 bounds=(-19.2,-0.306,-0.1)..(-16.8,0.366,0.1) color=RGBA(1.000, 1.000, 1.000, 0.600)
+OBJECT|BakedLevelArt/ContactShadows/ContactShadow
+  active=True tag=Untagged
+  pos=(-5,0.03,0) localScale=(0.50781,0.37917,1)
+  sprite=Shadow_Soft layer=Ground/11 bounds=(-6.3,-0.334,-0.1)..(-3.7,0.394,0.1) color=RGBA(1.000, 1.000, 1.000, 0.600)
+OBJECT|BakedLevelArt/ContactShadows/ContactShadow
+  active=True tag=Untagged
+  pos=(9,0.03,0) localScale=(0.48828,0.36458,1)
+  sprite=Shadow_Soft layer=Ground/11 bounds=(7.75,-0.32,-0.1)..(10.25,0.38,0.1) color=RGBA(1.000, 1.000, 1.000, 0.600)
+OBJECT|BakedLevelArt/ContactShadows/ContactShadow
+  active=True tag=Untagged
+  pos=(25,0.03,0) localScale=(0.56641,0.42292,1)
+  sprite=Shadow_Soft layer=Ground/11 bounds=(23.55,-0.376,-0.1)..(26.45,0.436,0.1) color=RGBA(1.000, 1.000, 1.000, 0.600)
+OBJECT|BakedLevelArt/ContactShadows/ContactShadow
+  active=True tag=Untagged
+  pos=(40,0.03,0) localScale=(0.48828,0.36458,1)
+  sprite=Shadow_Soft layer=Ground/11 bounds=(38.75,-0.32,-0.1)..(41.25,0.38,0.1) color=RGBA(1.000, 1.000, 1.000, 0.600)
+OBJECT|BakedLevelArt/ContactShadows/ContactShadow
+  active=True tag=Untagged
+  pos=(-26.2,0.03,0) localScale=(0.55908,0.41745,1)
+  sprite=Shadow_Soft layer=Ground/11 bounds=(-27.63125,-0.37075,-0.1)..(-24.76875,0.43075,0.1) color=RGBA(1.000, 1.000, 1.000, 0.600)
+OBJECT|BakedLevelArt/ContactShadows/ContactShadow
+  active=True tag=Untagged
+  pos=(-11.6,0.03,0) localScale=(0.5597,0.41791,1)
+  sprite=Shadow_Soft layer=Ground/11 bounds=(-13.03284,-0.37119,-0.1)..(-10.16716,0.43119,0.1) color=RGBA(1.000, 1.000, 1.000, 0.600)
+OBJECT|BakedLevelArt/ContactShadows/ContactShadow
+  active=True tag=Untagged
+  pos=(-15.7,0.03,0) localScale=(0.40167,0.29991,1)
+  sprite=Shadow_Soft layer=Ground/11 bounds=(-16.72828,-0.25792,-0.1)..(-14.67172,0.31792,0.1) color=RGBA(1.000, 1.000, 1.000, 0.600)
+OBJECT|BakedLevelArt/ContactShadows/ContactShadow
+  active=True tag=Untagged
+  pos=(-18.4,0.03,0) localScale=(0.30151,0.22513,1)
+  sprite=Shadow_Soft layer=Ground/11 bounds=(-19.17188,-0.18613,-0.1)..(-17.62812,0.24613,0.1) color=RGBA(1.000, 1.000, 1.000, 0.600)
+OBJECT|BakedLevelArt/ContactShadows/ContactShadow
+  active=True tag=Untagged
+  pos=(-23.5,0.03,0) localScale=(0.16169,0.12073,1)
+  sprite=Shadow_Soft layer=Ground/11 bounds=(-23.91392,-0.0859,-0.1)..(-23.08608,0.1459,0.1) color=RGBA(1.000, 1.000, 1.000, 0.600)
+OBJECT|BakedLevelArt/ContactShadows/ContactShadow
+  active=True tag=Untagged
+  pos=(-7.5,0.03,0) localScale=(0.17578,0.13125,1)
+  sprite=Shadow_Soft layer=Ground/11 bounds=(-7.95,-0.096,-0.1)..(-7.05,0.156,0.1) color=RGBA(1.000, 1.000, 1.000, 0.600)
+OBJECT|BakedLevelArt/ContactShadows/ContactShadow
+  active=True tag=Untagged
+  pos=(-28.6,0.03,0) localScale=(0.22013,0.16437,1)
+  sprite=Shadow_Soft layer=Ground/11 bounds=(-29.16355,-0.12779,-0.1)..(-28.03646,0.18779,0.1) color=RGBA(1.000, 1.000, 1.000, 0.600)
+OBJECT|BakedLevelArt/ContactShadows/ContactShadow
+  active=True tag=Untagged
+  pos=(-20.8,0.03,0) localScale=(0.17578,0.13125,1)
+  sprite=Shadow_Soft layer=Ground/11 bounds=(-21.25,-0.096,-0.1)..(-20.35,0.156,0.1) color=RGBA(1.000, 1.000, 1.000, 0.600)
+OBJECT|BakedLevelArt/ContactShadows/ContactShadow
+  active=True tag=Untagged
+  pos=(-17.8,0.03,0) localScale=(0.31825,0.23763,1)
+  sprite=Shadow_Soft layer=Ground/11 bounds=(-18.61473,-0.19813,-0.1)..(-16.98527,0.25813,0.1) color=RGBA(1.000, 1.000, 1.000, 0.600)
+OBJECT|BakedLevelArt/ContactShadows/ContactShadow
+  active=True tag=Untagged
+  pos=(-8.9,0.03,0) localScale=(0.21821,0.16293,1)
+  sprite=Shadow_Soft layer=Ground/11 bounds=(-9.45861,-0.12641,-0.1)..(-8.34139,0.18641,0.1) color=RGBA(1.000, 1.000, 1.000, 0.600)
+OBJECT|BakedLevelArt/ContactShadows/ContactShadow
+  active=True tag=Untagged
+  pos=(0.8,0.03,0) localScale=(0.19812,0.14793,1)
+  sprite=Shadow_Soft layer=Ground/11 bounds=(0.29281,-0.11201,-0.1)..(1.30719,0.17201,0.1) color=RGBA(1.000, 1.000, 1.000, 0.600)
+OBJECT|BakedLevelArt/ContactShadows/ContactShadow
+  active=True tag=Untagged
+  pos=(6.2,0.03,0) localScale=(0.16276,0.12153,1)
+  sprite=Shadow_Soft layer=Ground/11 bounds=(5.78333,-0.08667,-0.1)..(6.61667,0.14667,0.1) color=RGBA(1.000, 1.000, 1.000, 0.600)
+OBJECT|BakedLevelArt/ContactShadows/ContactShadow
+  active=True tag=Untagged
+  pos=(13.4,0.03,0) localScale=(0.15549,0.1161,1)
+  sprite=Shadow_Soft layer=Ground/11 bounds=(13.00196,-0.08145,-0.1)..(13.79804,0.14145,0.1) color=RGBA(1.000, 1.000, 1.000, 0.600)
+OBJECT|BakedLevelArt/ContactShadows/ContactShadow
+  active=True tag=Untagged
+  pos=(18.6,0.03,0) localScale=(0.28006,0.20911,1)
+  sprite=Shadow_Soft layer=Ground/11 bounds=(17.88304,-0.17075,-0.1)..(19.31697,0.23075,0.1) color=RGBA(1.000, 1.000, 1.000, 0.600)
+OBJECT|BakedLevelArt/ContactShadows/ContactShadow
+  active=True tag=Untagged
+  pos=(25.5,0.03,0) localScale=(0.19812,0.14793,1)
+  sprite=Shadow_Soft layer=Ground/11 bounds=(24.99281,-0.11201,-0.1)..(26.00719,0.17201,0.1) color=RGBA(1.000, 1.000, 1.000, 0.600)
+OBJECT|BakedLevelArt/ContactShadows/ContactShadow
+  active=True tag=Untagged
+  pos=(34,0.03,0) localScale=(0.15625,0.11667,1)
+  sprite=Shadow_Soft layer=Ground/11 bounds=(33.6,-0.082,-0.1)..(34.4,0.142,0.1) color=RGBA(1.000, 1.000, 1.000, 0.600)
+OBJECT|BakedLevelArt/ContactShadows/ContactShadow
+  active=True tag=Untagged
+  pos=(42.5,0.03,0) localScale=(0.24439,0.18248,1)
+  sprite=Shadow_Soft layer=Ground/11 bounds=(41.87435,-0.14518,-0.1)..(43.12565,0.20518,0.1) color=RGBA(1.000, 1.000, 1.000, 0.600)
+OBJECT|BakedLevelArt/ContactShadows/ContactShadow
+  active=True tag=Untagged
+  pos=(57,0.03,0) localScale=(0.72079,0.52083,1)
+  sprite=Shadow_Soft layer=Ground/11 bounds=(55.15479,-0.47,-0.1)..(58.84521,0.53,0.1) color=RGBA(1.000, 1.000, 1.000, 0.600)
+OBJECT|BakedLevelArt/ContactShadows/ContactShadow
+  active=True tag=Untagged
+  pos=(73,0.03,0) localScale=(0.76959,0.52083,1)
+  sprite=Shadow_Soft layer=Ground/11 bounds=(71.02985,-0.47,-0.1)..(74.97015,0.53,0.1) color=RGBA(1.000, 1.000, 1.000, 0.600)
+OBJECT|BakedLevelArt/ContactShadows/ContactShadow
+  active=True tag=Untagged
+  pos=(82,0.03,0) localScale=(0.77442,0.52083,1)
+  sprite=Shadow_Soft layer=Ground/11 bounds=(80.01748,-0.47,-0.1)..(83.98252,0.53,0.1) color=RGBA(1.000, 1.000, 1.000, 0.600)
+OBJECT|BakedLevelArt/ContactShadows/ContactShadow
+  active=True tag=Untagged
+  pos=(90,0.03,0) localScale=(0.82031,0.52083,1)
+  sprite=Shadow_Soft layer=Ground/11 bounds=(87.9,-0.47,-0.1)..(92.1,0.53,0.1) color=RGBA(1.000, 1.000, 1.000, 0.600)
+OBJECT|BakedLevelArt/ContactShadows/ContactShadow
+  active=True tag=Untagged
+  pos=(118,1.53,0) localScale=(0.72188,0.52083,1)
+  sprite=Shadow_Soft layer=Ground/11 bounds=(116.152,1.03,-0.1)..(119.848,2.03,0.1) color=RGBA(1.000, 1.000, 1.000, 0.600)
+OBJECT|BakedLevelArt/ContactShadows/ContactShadow
+  active=True tag=Untagged
+  pos=(126,3.66,0) localScale=(0.82031,0.52083,1)
+  sprite=Shadow_Soft layer=Ground/11 bounds=(123.9,3.16,-0.1)..(128.1,4.16,0.1) color=RGBA(1.000, 1.000, 1.000, 0.600)
+OBJECT|BakedLevelArt/ContactShadows/ContactShadow
+  active=True tag=Untagged
+  pos=(155,2.03,0) localScale=(0.71911,0.52083,1)
+  sprite=Shadow_Soft layer=Ground/11 bounds=(153.1591,1.53,-0.1)..(156.8409,2.53,0.1) color=RGBA(1.000, 1.000, 1.000, 0.600)
+OBJECT|BakedLevelArt/ContactShadows/ContactShadow
+  active=True tag=Untagged
+  pos=(163,2.03,0) localScale=(0.82031,0.52083,1)
+  sprite=Shadow_Soft layer=Ground/11 bounds=(160.9,1.53,-0.1)..(165.1,2.53,0.1) color=RGBA(1.000, 1.000, 1.000, 0.600)
+OBJECT|BakedLevelArt/ContactShadows/ContactShadow
+  active=True tag=Untagged
+  pos=(200,2.03,0) localScale=(0.82031,0.52083,1)
+  sprite=Shadow_Soft layer=Ground/11 bounds=(197.9,1.53,-0.1)..(202.1,2.53,0.1) color=RGBA(1.000, 1.000, 1.000, 0.600)
+OBJECT|BakedLevelArt/ContactShadows/ContactShadow
+  active=True tag=Untagged
+  pos=(51,0.03,0) localScale=(0.625,0.46667,1)
+  sprite=Shadow_Soft layer=Ground/11 bounds=(49.4,-0.418,-0.1)..(52.6,0.478,0.1) color=RGBA(1.000, 1.000, 1.000, 0.600)
+OBJECT|BakedLevelArt/ContactShadows/ContactShadow
+  active=True tag=Untagged
+  pos=(66,0.03,0) localScale=(0.54688,0.40833,1)
+  sprite=Shadow_Soft layer=Ground/11 bounds=(64.6,-0.362,-0.1)..(67.4,0.422,0.1) color=RGBA(1.000, 1.000, 1.000, 0.600)
+OBJECT|BakedLevelArt/ContactShadows/ContactShadow
+  active=True tag=Untagged
+  pos=(80,0.03,0) localScale=(0.64453,0.48125,1)
+  sprite=Shadow_Soft layer=Ground/11 bounds=(78.35,-0.432,-0.1)..(81.65,0.492,0.1) color=RGBA(1.000, 1.000, 1.000, 0.600)
+OBJECT|BakedLevelArt/ContactShadows/ContactShadow
+  active=True tag=Untagged
+  pos=(119,1.53,0) localScale=(0.625,0.46667,1)
+  sprite=Shadow_Soft layer=Ground/11 bounds=(117.4,1.082,-0.1)..(120.6,1.978,0.1) color=RGBA(1.000, 1.000, 1.000, 0.600)
+OBJECT|BakedLevelArt/ContactShadows/ContactShadow
+  active=True tag=Untagged
+  pos=(132,2.03,0) localScale=(0.58594,0.4375,1)
+  sprite=Shadow_Soft layer=Ground/11 bounds=(130.5,1.61,-0.1)..(133.5,2.45,0.1) color=RGBA(1.000, 1.000, 1.000, 0.600)
+OBJECT|BakedLevelArt/Parallax/Foreground
+  active=True tag=Untagged
+  pos=(-10,-10,0) localScale=(1.1274,1.1274,1.1274)
+  sprite=Foreground layer=Props/100 bounds=(-20,-15,-0.11274)..(0,-5,0.11274) color=RGBA(0.780, 0.900, 0.780, 0.750)
+OBJECT|BakedLevelArt/Parallax/Forest
+  active=True tag=Untagged
+  pos=(-10,6,0) localScale=(4.2841,4.2841,4.2841)
+  sprite=Forest layer=Mid/-20 bounds=(-48,-13,-0.42841)..(28,25,0.42841) color=RGBA(0.800, 0.920, 0.820, 1.000)
+OBJECT|BakedLevelArt/GroundRuns/GladeHighRun/GladeHighRun_LeftCap
+  active=True tag=Untagged
+  pos=(111.1,-0.775,0) localScale=(1,1,1)
+  sprite=Ground_Cap_Left layer=Ground/11 bounds=(108,-4.3,-0.1)..(114.2,2.75,0.1) color=RGBA(1.000, 1.000, 1.000, 1.000)
+OBJECT|BakedLevelArt/GroundRuns/GladeHighRun/GladeHighRun_RightCap
+  active=True tag=Untagged
+  pos=(118.9,-0.775,0) localScale=(1,1,1)
+  sprite=Ground_Cap_Right layer=Ground/11 bounds=(115.8,-4.3,-0.1)..(122,2.75,0.1) color=RGBA(1.000, 1.000, 1.000, 1.000)
+OBJECT|BakedLevelArt/GroundRuns/GladeHighRun/GladeHighRun_Tile
+  active=True tag=Untagged
+  pos=(115,-0.775,0) localScale=(1,1,1)
+  sprite=Ground_Tile layer=Ground/10 bounds=(107.9,-4.3,-0.1)..(122.1,2.75,0.1) color=RGBA(1.000, 1.000, 1.000, 1.000)
+OBJECT|BakedLevelArt/GroundRuns/GladeHighRun/GladeHighRun_UndergroundFill
+  active=True tag=Untagged
+  pos=(115,-13.95,0) localScale=(1,1,1)
+  sprite=Ground_Soil_Tile layer=Ground/12 bounds=(107.7,-23.95,-0.1)..(122.3,-3.95,0.1) color=RGBA(1.000, 1.000, 1.000, 1.000)
+OBJECT|BakedLevelArt/Zone1Trees/GladeTree_Bonsai
+  active=True tag=Untagged
+  pos=(118,6,0) localScale=(2.4,2.4,2.4)
+  sprite=Tree_Bonsai layer=Mid/-6 bounds=(114.304,1.5,-0.24)..(121.696,10.5,0.24) color=RGBA(0.930, 0.980, 0.940, 1.000)
+OBJECT|BakedLevelArt/Zone1Trees/GladeTree_Oak
+  active=True tag=Untagged
+  pos=(90,7,0) localScale=(3.11804,3.11804,3.11804)
+  sprite=Tree_Oak layer=Mid/-7 bounds=(84.88641,0,-0.3118)..(95.11359,14,0.3118) color=RGBA(0.860, 0.930, 0.880, 1.000)
+OBJECT|BakedLevelArt/GroundRuns/LowRun/LowRun_LeftCap
+  active=True tag=Untagged
+  pos=(-48.9,-2.275,0) localScale=(1,1,1)
+  sprite=Ground_Cap_Left layer=Ground/11 bounds=(-52,-5.8,-0.1)..(-45.8,1.25,0.1) color=RGBA(1.000, 1.000, 1.000, 1.000)
+OBJECT|BakedLevelArt/GroundRuns/LowRun/LowRun_RightCap
+  active=True tag=Untagged
+  pos=(98.9,-2.275,0) localScale=(1,1,1)
+  sprite=Ground_Cap_Right layer=Ground/11 bounds=(95.8,-5.8,-0.1)..(102,1.25,0.1) color=RGBA(1.000, 1.000, 1.000, 1.000)
+OBJECT|BakedLevelArt/GroundRuns/LowRun/LowRun_Tile
+  active=True tag=Untagged
+  pos=(25,-2.275,0) localScale=(1,1,1)
+  sprite=Ground_Tile layer=Ground/10 bounds=(-52.1,-5.8,-0.1)..(102.1,1.25,0.1) color=RGBA(1.000, 1.000, 1.000, 1.000)
+OBJECT|BakedLevelArt/GroundRuns/LowRun/LowRun_UndergroundFill
+  active=True tag=Untagged
+  pos=(25,-15.45,0) localScale=(1,1,1)
+  sprite=Ground_Soil_Tile layer=Ground/12 bounds=(-52.3,-25.45,-0.1)..(102.3,-5.45,0.1) color=RGBA(1.000, 1.000, 1.000, 1.000)
+OBJECT|BakedLevelArt/Parallax/Mountains
+  active=True tag=Untagged
+  pos=(-10,9,0) localScale=(4.2841,4.2841,4.2841)
+  sprite=Mountains layer=Far/-30 bounds=(-48,-10,-0.42841)..(28,28,0.42841) color=RGBA(0.860, 0.930, 0.990, 1.000)
+OBJECT|BakedLevelArt/CampClearing/Prop_Fern_-17,8
+  active=True tag=Untagged
+  pos=(-17.8,1.25,0) localScale=(0.89286,0.89286,0.89286)
+  sprite=Prop_Fern layer=Ground/14 bounds=(-19.42946,0,-0.08929)..(-16.17053,2.5,0.08929) color=RGBA(1.000, 1.000, 1.000, 1.000)
+OBJECT|BakedLevelArt/CampClearing/Prop_Fern_18,6
+  active=True tag=Untagged
+  pos=(18.6,1.1,0) localScale=(0.78571,0.78571,0.78571)
+  sprite=Prop_Fern layer=Ground/14 bounds=(17.16607,0,-0.07857)..(20.03393,2.2,0.07857) color=RGBA(1.000, 1.000, 1.000, 1.000)
+OBJECT|BakedLevelArt/CampClearing/Prop_Flowers_-20,8
+  active=True tag=Untagged
+  pos=(-20.8,0.675,0) localScale=(0.625,0.625,0.625)
+  sprite=Prop_Flowers layer=Ground/14 bounds=(-21.7,0,-0.0625)..(-19.9,1.35,0.0625) color=RGBA(1.000, 1.000, 1.000, 1.000)
+OBJECT|BakedLevelArt/CampClearing/Prop_Flowers_34
+  active=True tag=Untagged
+  pos=(34,0.6,0) localScale=(0.55556,0.55556,0.55556)
+  sprite=Prop_Flowers layer=Ground/14 bounds=(33.2,0,-0.05556)..(34.8,1.2,0.05556) color=RGBA(1.000, 1.000, 1.000, 1.000)
+OBJECT|BakedLevelArt/CampClearing/Prop_Flowers_6,2
+  active=True tag=Untagged
+  pos=(6.2,0.625,0) localScale=(0.5787,0.5787,0.5787)
+  sprite=Prop_Flowers layer=Ground/14 bounds=(5.36667,0,-0.05787)..(7.03333,1.25,0.05787) color=RGBA(1.000, 1.000, 1.000, 1.000)
+OBJECT|BakedLevelArt/CampClearing/Prop_Grass_0,8
+  active=True tag=Untagged
+  pos=(0.8,0.9,0) localScale=(0.60201,0.60201,0.60201)
+  sprite=Prop_Grass layer=Ground/14 bounds=(-0.21438,0,-0.0602)..(1.81438,1.8,0.0602) color=RGBA(1.000, 1.000, 1.000, 1.000)
+OBJECT|BakedLevelArt/CampClearing/Prop_Grass_25,5
+  active=True tag=Untagged
+  pos=(25.5,0.9,0) localScale=(0.60201,0.60201,0.60201)
+  sprite=Prop_Grass layer=Ground/14 bounds=(24.48562,0,-0.0602)..(26.51438,1.8,0.0602) color=RGBA(1.000, 1.000, 1.000, 1.000)
+OBJECT|BakedLevelArt/CampClearing/Prop_Grass_-28,6
+  active=True tag=Untagged
+  pos=(-28.6,1,0) localScale=(0.6689,0.6689,0.6689)
+  sprite=Prop_Grass layer=Ground/14 bounds=(-29.72709,0,-0.06689)..(-27.47291,2,0.06689) color=RGBA(1.000, 1.000, 1.000, 1.000)
+OBJECT|BakedLevelArt/CampClearing/Prop_Mushroom_13,4
+  active=True tag=Untagged
+  pos=(13.4,0.675,0) localScale=(0.51527,0.51527,0.51527)
+  sprite=Prop_Mushroom layer=Ground/14 bounds=(12.60391,0,-0.05153)..(14.19609,1.35,0.05153) color=RGBA(1.000, 1.000, 1.000, 1.000)
+OBJECT|BakedLevelArt/CampClearing/Prop_Rock_42,5
+  active=True tag=Untagged
+  pos=(42.5,0.7,0) localScale=(0.72539,0.72539,0.72539)
+  sprite=Prop_Rock layer=Ground/14 bounds=(41.2487,0,-0.07254)..(43.7513,1.4,0.07254) color=RGBA(1.000, 1.000, 1.000, 1.000)
+OBJECT|BakedLevelArt/CampClearing/Prop_Rock_-8,9
+  active=True tag=Untagged
+  pos=(-8.9,0.625,0) localScale=(0.64767,0.64767,0.64767)
+  sprite=Prop_Rock layer=Ground/14 bounds=(-10.01723,0,-0.06477)..(-7.78277,1.25,0.06477) color=RGBA(1.000, 1.000, 1.000, 1.000)
+OBJECT|BakedLevelArt/Parallax/Sky
+  active=True tag=Untagged
+  pos=(-10,5,0) localScale=(3.95833,3.95833,3.95833)
+  sprite=Sky layer=Background/-100 bounds=(-48,-16.375,-0.39583)..(28,26.375,0.39583) color=RGBA(1.000, 1.000, 1.000, 1.000)
+OBJECT|BakedLevelArt/StepCliffs/Step108_Cliff
+  active=True tag=Untagged
+  pos=(108.15,0.2,0) localScale=(0.98859,0.98859,1)
+  sprite=Cliff_Chunk_A layer=Ground/9 bounds=(106.7561,-1.1,-0.1)..(109.5439,1.5,0.1) color=RGBA(1.000, 1.000, 1.000, 1.000)
+OBJECT|BakedLevelArt/StepCliffs/Step122_Cliff
+  active=True tag=Untagged
+  pos=(121.95,0.8,0) localScale=(-0.91255,0.91255,1)
+  sprite=Cliff_Chunk_B layer=Ground/9 bounds=(121.1789,-0.4,-0.1)..(122.7211,2,0.1) color=RGBA(1.000, 1.000, 1.000, 1.000)
+OBJECT|BakedLevelArt/StepMask/Step122_GroundCover
+  active=True tag=Untagged
+  pos=(122,-0.825,0) localScale=(0.68,1,1)
+  sprite=Ground_Seam_Patch layer=Ground/12 bounds=(120.3,-4.35,-0.1)..(123.7,2.7,0.1) color=RGBA(1.000, 1.000, 1.000, 1.000)
+OBJECT|BakedLevelArt/StepMask/Step122_Rock
+  active=True tag=Untagged
+  pos=(122,2.2,0) localScale=(0.56995,0.56995,0.56995)
+  sprite=Prop_Rock layer=Ground/14 bounds=(121.0168,1.65,-0.05699)..(122.9832,2.75,0.05699) color=RGBA(1.000, 1.000, 1.000, 1.000)
+OBJECT|BakedLevelArt/Zone1Trees/TrailTree_Autumn
+  active=True tag=Untagged
+  pos=(73,6,0) localScale=(2.98508,2.98508,2.98508)
+  sprite=Tree_Autumn layer=Mid/-7 bounds=(69.0597,0,-0.29851)..(76.9403,12,0.29851) color=RGBA(0.930, 0.980, 0.940, 1.000)
+OBJECT|BakedLevelArt/Zone1Trees/TrailTree_Birch
+  active=True tag=Untagged
+  pos=(57,6.5,0) localScale=(3.03738,3.03738,3.03738)
+  sprite=Tree_Birch layer=Mid/-7 bounds=(53.30958,0,-0.30374)..(60.69042,13,0.30374) color=RGBA(0.930, 0.980, 0.940, 1.000)
+OBJECT|BakedLevelArt/Zone1Trees/TrailTree_Fir
+  active=True tag=Untagged
+  pos=(82,7,0) localScale=(3.2634,3.2634,3.2634)
+  sprite=Tree_Fir layer=Mid/-8 bounds=(78.03497,0,-0.32634)..(85.96503,14,0.32634) color=RGBA(0.930, 0.980, 0.940, 1.000)
+OBJECT|BakedLevelArt/GroundRuns/TrainingRun/TrainingRun_LeftCap
+  active=True tag=Untagged
+  pos=(124.7,-0.275,0) localScale=(1,1,1)
+  sprite=Ground_Cap_Left layer=Ground/11 bounds=(121.6,-3.8,-0.1)..(127.8,3.25,0.1) color=RGBA(1.000, 1.000, 1.000, 1.000)
+OBJECT|BakedLevelArt/GroundRuns/TrainingRun/TrainingRun_RightCap
+  active=True tag=Untagged
+  pos=(138.9,-0.275,0) localScale=(1,1,1)
+  sprite=Ground_Cap_Right layer=Ground/11 bounds=(135.8,-3.8,-0.1)..(142,3.25,0.1) color=RGBA(1.000, 1.000, 1.000, 1.000)
+OBJECT|BakedLevelArt/GroundRuns/TrainingRun/TrainingRun_Tile
+  active=True tag=Untagged
+  pos=(131.8,-0.275,0) localScale=(1,1,1)
+  sprite=Ground_Tile layer=Ground/10 bounds=(121.5,-3.8,-0.1)..(142.1,3.25,0.1) color=RGBA(1.000, 1.000, 1.000, 1.000)
+OBJECT|BakedLevelArt/GroundRuns/TrainingRun/TrainingRun_UndergroundFill
+  active=True tag=Untagged
+  pos=(131.8,-13.45,0) localScale=(1,1,1)
+  sprite=Ground_Soil_Tile layer=Ground/12 bounds=(121.3,-23.45,-0.1)..(142.3,-3.45,0.1) color=RGBA(1.000, 1.000, 1.000, 1.000)
+OBJECT|BakedLevelArt/Zone1Trees/TrainingTree_Fir
+  active=True tag=Untagged
+  pos=(155,8.5,0) localScale=(3.0303,3.0303,3.0303)
+  sprite=Tree_Fir layer=Mid/-8 bounds=(151.3182,2,-0.30303)..(158.6818,15,0.30303) color=RGBA(0.930, 0.980, 0.940, 1.000)
+OBJECT|BakedLevelArt/Zone1Trees/TrainingTree_Old
+  active=True tag=Untagged
+  pos=(126,10.63,0) localScale=(3.5533,3.5533,3.5533)
+  sprite=Tree_OldHollow layer=Mid/-7 bounds=(121.2208,3.63,-0.35533)..(130.7792,17.63,0.35533) color=RGBA(0.930, 0.980, 0.940, 1.000)
+OBJECT|BakedLevelArt/Zone1FinishGate
+  active=True tag=Untagged
+  pos=(202.4,5.4,0) localScale=(0.85062,0.85062,0.85062)
+  sprite=FinishGate layer=Ground/25 bounds=(196.5052,1.3,-0.08506)..(208.2948,9.5,0.08506) color=RGBA(1.000, 1.000, 1.000, 1.000)
+OBJECT|Hamster/CarryPose
+  active=True tag=Untagged
+  pos=(-22.6,1.91274,0) localScale=(1,1,1)
+  sprite=Hamster_Carry layer=Characters/1 bounds=(-24.29844,-0.3482,-0.1)..(-20.90156,4.17368,0.1) color=RGBA(1.000, 1.000, 1.000, 1.000)
+OBJECT|Hamster/ContactShadow
+  active=True tag=Untagged
+  pos=(-22.6,-0.07726,0) localScale=(0.63046,0.47074,1)
+  sprite=Shadow_Soft layer=Ground/11 bounds=(-23.40699,-0.30322,-0.1)..(-21.79301,0.14869,0.1) color=RGBA(1.000, 1.000, 1.000, 0.600)
+OBJECT|Hamster
+  active=True tag=Untagged
+  pos=(-22.6,1.49274,0) localScale=(0.5,0.5,1)
+  collider=BoxCollider2D enabled=True trigger=False offset=(-0.07421,-1.57645) size=(3.69648,2.69804) usedByEffector=False bounds=(-23.56122,0.03,0)..(-21.71298,1.37902,0)
+OBJECT|Hamster/HulkVisual
+  active=False tag=Untagged
+  pos=(-22.6,3.87274,0) localScale=(1,1,1)
+  sprite=NULL layer=Characters/0 bounds=(-22.6,3.87274,0)..(-22.6,3.87274,0) color=RGBA(1.000, 1.000, 1.000, 1.000)
+OBJECT|Hamster/Visual
+  active=True tag=Untagged
+  pos=(-22.6,1.49274,0) localScale=(1,1,1)
+  sprite=Hamster_Player.png_animation_sheet_0 layer=Characters/0 bounds=(-23.99136,-0.10726,-0.1)..(-21.20864,3.09274,0.1) color=RGBA(1.000, 1.000, 1.000, 1.000)
+OBJECT|HamsterGirl/CarryPose
+  active=True tag=Untagged
+  pos=(-21,2.02728,0) localScale=(1,1,1)
+  sprite=HamsterGirl_Carry layer=Characters/1 bounds=(-22.73511,-0.19794,-0.33433)..(-19.26489,4.25249,0.33433) color=RGBA(1.000, 1.000, 1.000, 1.000)
+OBJECT|HamsterGirl/ContactShadow
+  active=True tag=Untagged
+  pos=(-21,-0.08104,0) localScale=(0.59586,0.46256,1)
+  sprite=Shadow_Soft layer=Ground/11 bounds=(-21.77988,-0.29941,-0.33433)..(-20.22012,0.13733,0.33433) color=RGBA(1.000, 1.000, 1.000, 0.600)
+OBJECT|HamsterGirl/GirlSuperVisual
+  active=False tag=Untagged
+  pos=(-21,1.54535,0) localScale=(1,1,1)
+  sprite=NULL layer=Characters/0 bounds=(-21,1.54535,0)..(-21,1.54535,0) color=RGBA(1.000, 1.000, 1.000, 1.000)
+OBJECT|HamsterGirl
+  active=True tag=Untagged
+  pos=(-21,1.54535,0) localScale=(0.51127,0.49176,3.34335)
+  collider=BoxCollider2D enabled=True trigger=False offset=(0.02032,-1.15075) size=(3.06756,3.86148) usedByEffector=False bounds=(-21.77378,0.03,0)..(-20.20544,1.92892,0)
+OBJECT|HamsterGirl/Visual
+  active=True tag=Untagged
+  pos=(-21,1.54535,0) localScale=(1,1,1)
+  sprite=run_normalized_6x1 1_0 layer=Characters/0 bounds=(-22.34463,-0.11104,-0.33433)..(-19.65537,3.20174,0.33433) color=RGBA(1.000, 1.000, 1.000, 1.000)
+OBJECT|Rooms/Room_01_Camp/Checkpoint_Camp/Base
+  active=True tag=Untagged
+  pos=(-18,0.72,0) localScale=(2.2,2.2,2.2)
+  sprite=Checkpoint_Campfire_Unlit layer=Ground/20 bounds=(-19.397,0.005,-0.22)..(-16.603,1.435,0.22) color=RGBA(1.000, 1.000, 1.000, 1.000)
+OBJECT|Rooms/Room_05_OldBridge/BridgeBarrel
+  active=True tag=Untagged
+  pos=(165.4439,2.61,0) localScale=(1.8791,1.7589,1)
+  sprite=Barrel_Intact layer=Ground/18 bounds=(164.4949,1.58104,-0.1)..(166.3928,3.63896,0.1) color=RGBA(1.000, 1.000, 1.000, 1.000)
+  collider=BoxCollider2D enabled=True trigger=False offset=(0,0) size=(0.88,1.02) usedByEffector=False bounds=(164.6171,1.71296,0)..(166.2707,3.50704,0)
+  interactive=BreakableProp
+OBJECT|Rooms/Room_05_OldBridge/BridgeEntryGround
+  active=True tag=Untagged
+  pos=(164,1.5,0) localScale=(1,1,1)
+  collider=BoxCollider2D enabled=True trigger=False offset=(0,0) size=(8,1) usedByEffector=False bounds=(160,1,0)..(168,2,0)
+OBJECT|Rooms/Room_05_OldBridge/BridgeExitGround
+  active=True tag=Untagged
+  pos=(197,1.5,0) localScale=(1,1,1)
+  collider=BoxCollider2D enabled=True trigger=False offset=(0,0) size=(10,1) usedByEffector=False bounds=(192,1,0)..(202,2,0)
+OBJECT|Rooms/Room_05_OldBridge/BridgeSection_01
+  active=True tag=Untagged
+  pos=(170.5,1.5,0) localScale=(1,1,1)
+  collider=BoxCollider2D enabled=True trigger=False offset=(0,0.225) size=(5,0.55) usedByEffector=True bounds=(168,1.45,0)..(173,2,0)
+OBJECT|Rooms/Room_05_OldBridge/BridgeSection_02
+  active=True tag=Untagged
+  pos=(178,2.1,0) localScale=(1,1,1)
+  collider=BoxCollider2D enabled=True trigger=False offset=(0,0.225) size=(4,0.55) usedByEffector=True bounds=(176,2.05,0)..(180,2.6,0)
+OBJECT|Rooms/Room_05_OldBridge/BridgeSection_03
+  active=True tag=Untagged
+  pos=(185.5,2.7,0) localScale=(1,1,1)
+  collider=BoxCollider2D enabled=True trigger=False offset=(0,0.225) size=(5,0.55) usedByEffector=True bounds=(183,2.65,0)..(188,3.2,0)
+OBJECT|Rooms/Room_05_OldBridge/BridgeSection_04
+  active=True tag=Untagged
+  pos=(192,2.1,0) localScale=(1,1,1)
+  collider=BoxCollider2D enabled=True trigger=False offset=(0,0.225) size=(4,0.55) usedByEffector=True bounds=(190,2.05,0)..(194,2.6,0)
+OBJECT|Rooms/Room_01_Camp/CampGround
+  active=True tag=Untagged
+  pos=(-2,-0.5,0) localScale=(1,1,1)
+  collider=BoxCollider2D enabled=True trigger=False offset=(0,0) size=(100,1) usedByEffector=False bounds=(-52,-1,0)..(48,0,0)
+OBJECT|Rooms/Room_01_Camp/Checkpoint_Camp
+  active=True tag=Untagged
+  pos=(-18,0,0) localScale=(1,1,1)
+  collider=BoxCollider2D enabled=True trigger=True offset=(0,1.6) size=(3.2,3.2) usedByEffector=False bounds=(-19.6,0,0)..(-16.4,3.2,0)
+  interactive=RoomCheckpoint
+OBJECT|Rooms/Room_01_Camp/TrainingDummies/TrainingDummy2/ContactShadow
+  active=True tag=Untagged
+  pos=(-5,0.25,0) localScale=(0.10762,0.10417,1)
+  sprite=Shadow_Soft layer=Ground/11 bounds=(-5.2755,0.15,-0.1)..(-4.7245,0.35,0.1) color=RGBA(1.000, 1.000, 1.000, 0.600)
+OBJECT|Rooms/Room_02_CampExit/Reward_Acorn/ContactShadow
+  active=True tag=Untagged
+  pos=(74,-0.193,0) localScale=(0.30473,0.22753,1)
+  sprite=Shadow_Soft layer=Ground/11 bounds=(73.29791,-0.38959,-0.09)..(74.70209,0.00359,0.09) color=RGBA(1.000, 1.000, 1.000, 0.600)
+OBJECT|Rooms/Room_03_ForestGlade/GladeTrainingDummy/ContactShadow
+  active=True tag=Untagged
+  pos=(115.46,1.24,0) localScale=(0.10762,0.10417,1)
+  sprite=Shadow_Soft layer=Ground/11 bounds=(115.1845,1.14,-0.1)..(115.7355,1.34,0.1) color=RGBA(1.000, 1.000, 1.000, 0.600)
+OBJECT|Rooms/Room_03_ForestGlade/Reward_Acorn/ContactShadow
+  active=True tag=Untagged
+  pos=(106.5,1.057,0) localScale=(0.30473,0.22753,1)
+  sprite=Shadow_Soft layer=Ground/11 bounds=(105.7979,0.86041,-0.09)..(107.2021,1.25359,0.09) color=RGBA(1.000, 1.000, 1.000, 0.600)
+OBJECT|Rooms/Room_04_TrainingGround/Encounter_Room04/TrainingHyena_A/ContactShadow
+  active=False tag=Untagged
+  pos=(134,1.92462,0) localScale=(0.26634,0.17756,1)
+  sprite=Shadow_Soft layer=Ground/11 bounds=(132.5,1.54962,-0.22)..(135.5,2.29962,0.22) color=RGBA(0.980, 0.340, 0.140, 0.720)
+OBJECT|Rooms/Room_04_TrainingGround/Encounter_Room04/TrainingHyena_B/ContactShadow
+  active=False tag=Untagged
+  pos=(153,1.92462,0) localScale=(0.26634,0.17756,1)
+  sprite=Shadow_Soft layer=Ground/11 bounds=(151.5,1.54962,-0.22)..(154.5,2.29962,0.22) color=RGBA(0.980, 0.340, 0.140, 0.720)
+OBJECT|Rooms/Room_04_TrainingGround/TrainingCrate/ContactShadow
+  active=True tag=Untagged
+  pos=(124.2,2.005,0) localScale=(0.12008,0.10417,1)
+  sprite=Shadow_Soft layer=Ground/11 bounds=(123.8926,1.905,-0.1)..(124.5074,2.105,0.1) color=RGBA(1.000, 1.000, 1.000, 0.600)
+OBJECT|Rooms/Room_04_TrainingGround/TrainingBarrel/ContactShadow
+  active=True tag=Untagged
+  pos=(155.4636,1.77258,0) localScale=(0.11441,0.09708,1)
+  sprite=Shadow_Soft layer=Ground/11 bounds=(154.9018,1.61527,-0.1)..(156.0254,1.92989,0.1) color=RGBA(1.000, 1.000, 1.000, 0.600)
+OBJECT|Rooms/Room_04_TrainingGround/Reward_Acorn/ContactShadow
+  active=True tag=Untagged
+  pos=(150.5,3.307,0) localScale=(0.30473,0.22753,1)
+  sprite=Shadow_Soft layer=Ground/11 bounds=(149.7979,3.11042,-0.09)..(151.2021,3.50359,0.09) color=RGBA(1.000, 1.000, 1.000, 0.600)
+OBJECT|Rooms/Room_05_OldBridge/BridgeBarrel/ContactShadow
+  active=True tag=Untagged
+  pos=(165.4439,1.61104,0) localScale=(0.11441,0.09127,1)
+  sprite=Shadow_Soft layer=Ground/11 bounds=(164.8935,1.45694,-0.1)..(165.9943,1.76515,0.1) color=RGBA(1.000, 1.000, 1.000, 0.600)
+OBJECT|Rooms/Room_05_OldBridge/Reward_Acorn/ContactShadow
+  active=True tag=Untagged
+  pos=(196.8,1.807,0) localScale=(0.30473,0.22753,1)
+  sprite=Shadow_Soft layer=Ground/11 bounds=(196.0979,1.61042,-0.09)..(197.5021,2.00359,0.09) color=RGBA(1.000, 1.000, 1.000, 0.600)
+OBJECT|Rooms/Room_04_TrainingGround/Encounter_Room04
+  active=True tag=Untagged
+  pos=(123.2,2,0) localScale=(1,1,1)
+  collider=BoxCollider2D enabled=True trigger=True offset=(0,2.25) size=(1.2,4.5) usedByEffector=False bounds=(122.6,2,0)..(123.8,6.5,0)
+OBJECT|Rooms/Room_01_Camp/Checkpoint_Camp/Flame
+  active=True tag=Untagged
+  pos=(-18,1.55,0) localScale=(1.9,1.9,1.9)
+  sprite=Campfire_Flame_02 layer=Ground/21 bounds=(-18.5225,0.638,-0.19)..(-17.4775,2.462,0.19) color=RGBA(1.000, 1.000, 1.000, 1.000)
+OBJECT|Rooms/Room_04_TrainingGround/TrainingGate/GateVisual
+  active=False tag=Untagged
+  pos=(159.2,3.5,0) localScale=(0.56511,0.56511,0.56511)
+  sprite=ArenaFence layer=Ground/30 bounds=(155.1453,1.2,-0.05651)..(163.2547,5.8,0.05651) color=RGBA(1.000, 1.000, 1.000, 1.000)
+OBJECT|Rooms/Room_03_ForestGlade/GladeGround_A
+  active=True tag=Untagged
+  pos=(93,-0.5,0) localScale=(1,1,1)
+  collider=BoxCollider2D enabled=True trigger=False offset=(0,0) size=(18,1) usedByEffector=False bounds=(84,-1,0)..(102,0,0)
+OBJECT|Rooms/Room_03_ForestGlade/GladeGround_B
+  active=True tag=Untagged
+  pos=(115,1,0) localScale=(1,1,1)
+  collider=BoxCollider2D enabled=True trigger=False offset=(0,0) size=(14,1) usedByEffector=False bounds=(108,0.5,0)..(122,1.5,0)
+OBJECT|Rooms/Room_03_ForestGlade/GladePitVisual
+  active=True tag=Untagged
+  pos=(105,-1.76,0) localScale=(1.64103,1,1)
+  sprite=PitFloor layer=Ground/10 bounds=(101.8,-2.135,-0.1)..(108.2,-1.385,0.1) color=RGBA(1.000, 1.000, 1.000, 1.000)
+OBJECT|Rooms/Room_03_ForestGlade/GladePitVisual_EdgeRockL
+  active=True tag=Untagged
+  pos=(102.4,0.4,0) localScale=(0.41451,0.41451,0.41451)
+  sprite=Prop_Rock layer=Ground/14 bounds=(101.685,0,-0.04145)..(103.115,0.8,0.04145) color=RGBA(1.000, 1.000, 1.000, 1.000)
+OBJECT|Rooms/Room_03_ForestGlade/GladePitVisual_EdgeRockR
+  active=True tag=Untagged
+  pos=(107.6,0.4,0) localScale=(0.41451,0.41451,0.41451)
+  sprite=Prop_Rock layer=Ground/14 bounds=(106.885,0,-0.04145)..(108.315,0.8,0.04145) color=RGBA(1.000, 1.000, 1.000, 1.000)
+OBJECT|Rooms/Room_03_ForestGlade/GladePitVisual_FallZone
+  active=True tag=Untagged
+  pos=(105,-3.48,0) localScale=(1,1,1)
+  collider=BoxCollider2D enabled=True trigger=True offset=(0,0) size=(7,3.2) usedByEffector=False bounds=(101.5,-5.08,0)..(108.5,-1.88,0)
+OBJECT|Rooms/Room_03_ForestGlade/GladePitVisual_Floor
+  active=True tag=Untagged
+  pos=(105,-1.88,0) localScale=(1,1,1)
+  collider=BoxCollider2D enabled=True trigger=False offset=(0,0) size=(7,0.6) usedByEffector=False bounds=(101.5,-2.18,0)..(108.5,-1.58,0)
+OBJECT|Rooms/Room_03_ForestGlade/GladePitVisual_PitWalls
+  active=True tag=Untagged
+  pos=(105,-1.03,0) localScale=(1,1,1)
+  sprite=Ground_Soil_Tile layer=Ground/8 bounds=(101.65,-2.08,-0.1)..(108.35,0.02,0.1) color=RGBA(0.240, 0.130, 0.090, 1.000)
+OBJECT|Rooms/Room_03_ForestGlade/GladePitVisual_Step
+  active=True tag=Untagged
+  pos=(106.24,-0.63,0) localScale=(1,1,1)
+  collider=BoxCollider2D enabled=True trigger=False offset=(0,0.225) size=(1.7,0.55) usedByEffector=True bounds=(105.39,-0.68,0)..(107.09,-0.13,0)
+OBJECT|Rooms/Room_03_ForestGlade/GladePitVisual_Underfill
+  active=True tag=Untagged
+  pos=(105,-8.03,0) localScale=(1,1,1)
+  sprite=Ground_Soil_Tile layer=Ground/12 bounds=(101.6,-14.03,-0.1)..(108.4,-2.03,0.1) color=RGBA(1.000, 1.000, 1.000, 1.000)
+OBJECT|Rooms/Room_03_ForestGlade/GladePitVisual_WallL
+  active=True tag=Untagged
+  pos=(102.05,-0.74,0) localScale=(1,1,1)
+  collider=BoxCollider2D enabled=True trigger=False offset=(0,0) size=(0.3,1.88) usedByEffector=False bounds=(101.9,-1.68,0)..(102.2,0.2,0)
+OBJECT|Rooms/Room_03_ForestGlade/GladePitVisual_WallR
+  active=True tag=Untagged
+  pos=(107.95,-0.74,0) localScale=(1,1,1)
+  collider=BoxCollider2D enabled=True trigger=False offset=(0,0) size=(0.3,1.88) usedByEffector=False bounds=(107.8,-1.68,0)..(108.1,0.2,0)
+OBJECT|Rooms/Room_03_ForestGlade/GladeStep_A
+  active=True tag=Untagged
+  pos=(100.5,0.25,0) localScale=(1,1,1)
+  collider=BoxCollider2D enabled=True trigger=False offset=(0,0.225) size=(5,0.55) usedByEffector=True bounds=(98,0.2,0)..(103,0.75,0)
+OBJECT|Rooms/Room_03_ForestGlade/GladeStep_B
+  active=True tag=Untagged
+  pos=(107,0.75,0) localScale=(1,1,1)
+  collider=BoxCollider2D enabled=True trigger=False offset=(0,0.225) size=(4,0.55) usedByEffector=True bounds=(105,0.7,0)..(109,1.25,0)
+OBJECT|Rooms/Room_03_ForestGlade/GladeTrainingDummy
+  active=True tag=Untagged
+  pos=(115.5,2.53,0) localScale=(1,1,1)
+  collider=BoxCollider2D enabled=True trigger=False offset=(0,-0.2) size=(0.7,1.6) usedByEffector=False bounds=(115.15,1.53,0)..(115.85,3.13,0)
+OBJECT|Rooms/Room_01_Camp/LeftLevelBoundary
+  active=True tag=Untagged
+  pos=(-29,10,0) localScale=(1,1,1)
+  collider=BoxCollider2D enabled=True trigger=False offset=(0,0) size=(1,24) usedByEffector=False bounds=(-29.5,-2,0)..(-28.5,22,0)
+OBJECT|Rooms/Room_05_OldBridge/OldBridgeFall
+  active=True tag=Untagged
+  pos=(180,-3.6,0) localScale=(1,1,1)
+  collider=BoxCollider2D enabled=True trigger=True offset=(0,0) size=(31,3.4) usedByEffector=False bounds=(164.5,-5.3,0)..(195.5,-1.9,0)
+OBJECT|Rooms/Room_02_CampExit/PathGround_02
+  active=True tag=Untagged
+  pos=(66,-0.5,0) localScale=(1,1,1)
+  collider=BoxCollider2D enabled=True trigger=False offset=(0,0) size=(36,1) usedByEffector=False bounds=(48,-1,0)..(84,0,0)
+OBJECT|Rooms/Room_04_TrainingGround/Prop_Fern_139
+  active=True tag=Untagged
+  pos=(139,3,0) localScale=(0.71429,0.71429,0.71429)
+  sprite=Prop_Fern layer=Ground/14 bounds=(137.6964,2,-0.07143)..(140.3036,4,0.07143) color=RGBA(1.000, 1.000, 1.000, 1.000)
+OBJECT|Rooms/Room_02_CampExit/Prop_Fern_70
+  active=True tag=Untagged
+  pos=(70,1.25,0) localScale=(0.89286,0.89286,0.89286)
+  sprite=Prop_Fern layer=Ground/14 bounds=(68.37054,0,-0.08929)..(71.62946,2.5,0.08929) color=RGBA(1.000, 1.000, 1.000, 1.000)
+OBJECT|Rooms/Room_03_ForestGlade/Prop_Fern_96
+  active=True tag=Untagged
+  pos=(96,1.15,0) localScale=(0.82143,0.82143,0.82143)
+  sprite=Prop_Fern layer=Ground/14 bounds=(94.50089,0,-0.08214)..(97.49911,2.3,0.08214) color=RGBA(1.000, 1.000, 1.000, 1.000)
+OBJECT|Rooms/Room_03_ForestGlade/Prop_Flowers_118
+  active=True tag=Untagged
+  pos=(118,2.2,0) localScale=(0.64815,0.64815,0.64815)
+  sprite=Prop_Flowers layer=Ground/14 bounds=(117.0667,1.5,-0.06481)..(118.9333,2.9,0.06481) color=RGBA(1.000, 1.000, 1.000, 1.000)
+OBJECT|Rooms/Room_02_CampExit/Prop_Flowers_59
+  active=True tag=Untagged
+  pos=(59,0.6,0) localScale=(0.55556,0.55556,0.55556)
+  sprite=Prop_Flowers layer=Ground/14 bounds=(58.2,0,-0.05556)..(59.8,1.2,0.05556) color=RGBA(1.000, 1.000, 1.000, 1.000)
+OBJECT|Rooms/Room_01_Camp/Prop_Log_-13,6
+  active=True tag=Untagged
+  pos=(-13.6,0.7,0) localScale=(0.58824,0.58824,0.58824)
+  sprite=Prop_Log layer=Ground/14 bounds=(-14.86471,0,-0.05882)..(-12.33529,1.4,0.05882) color=RGBA(1.000, 1.000, 1.000, 1.000)
+OBJECT|Rooms/Room_02_CampExit/Prop_Log_63
+  active=True tag=Untagged
+  pos=(63,0.7,0) localScale=(0.58824,0.58824,0.58824)
+  sprite=Prop_Log layer=Ground/14 bounds=(61.73529,0,-0.05882)..(64.26471,1.4,0.05882) color=RGBA(1.000, 1.000, 1.000, 1.000)
+OBJECT|Rooms/Room_04_TrainingGround/Prop_Mushroom_157
+  active=True tag=Untagged
+  pos=(157,2.6,0) localScale=(0.45802,0.45802,0.45802)
+  sprite=Prop_Mushroom layer=Ground/14 bounds=(156.2924,2,-0.0458)..(157.7076,3.2,0.0458) color=RGBA(1.000, 1.000, 1.000, 1.000)
+OBJECT|Rooms/Room_03_ForestGlade/Prop_Mushroom_89
+  active=True tag=Untagged
+  pos=(89,0.8,0) localScale=(0.61069,0.61069,0.61069)
+  sprite=Prop_Mushroom layer=Ground/14 bounds=(88.05649,0,-0.06107)..(89.94351,1.6,0.06107) color=RGBA(1.000, 1.000, 1.000, 1.000)
+OBJECT|Rooms/Room_03_ForestGlade/Prop_Rock_101
+  active=True tag=Untagged
+  pos=(101,0.7,0) localScale=(0.72539,0.72539,0.72539)
+  sprite=Prop_Rock layer=Ground/14 bounds=(99.7487,0,-0.07254)..(102.2513,1.4,0.07254) color=RGBA(1.000, 1.000, 1.000, 1.000)
+OBJECT|Rooms/Room_04_TrainingGround/Prop_Rock_127
+  active=True tag=Untagged
+  pos=(127,2.6,0) localScale=(0.62176,0.62176,0.62176)
+  sprite=Prop_Rock layer=Ground/14 bounds=(125.9275,2,-0.06218)..(128.0725,3.2,0.06218) color=RGBA(1.000, 1.000, 1.000, 1.000)
+OBJECT|Rooms/Room_05_OldBridge/Prop_Rock_164
+  active=True tag=Untagged
+  pos=(164,2.6,0) localScale=(0.62176,0.62176,0.62176)
+  sprite=Prop_Rock layer=Ground/14 bounds=(162.9275,2,-0.06218)..(165.0725,3.2,0.06218) color=RGBA(1.000, 1.000, 1.000, 1.000)
+OBJECT|Rooms/Room_02_CampExit/Prop_Rock_79
+  active=True tag=Untagged
+  pos=(79,0.65,0) localScale=(0.67358,0.67358,0.67358)
+  sprite=Prop_Rock layer=Ground/14 bounds=(77.83808,0,-0.06736)..(80.16192,1.3,0.06736) color=RGBA(1.000, 1.000, 1.000, 1.000)
+OBJECT|Rooms/Room_05_OldBridge/Prop_Sign_198
+  active=True tag=Untagged
+  pos=(198,3.5,0) localScale=(0.84986,0.84986,0.84986)
+  sprite=Prop_Sign layer=Ground/15 bounds=(196.6402,2,-0.08499)..(199.3598,5,0.08499) color=RGBA(1.000, 1.000, 1.000, 1.000)
+OBJECT|Rooms/Room_02_CampExit/Prop_Sign_54
+  active=True tag=Untagged
+  pos=(54,1.5,0) localScale=(0.84986,0.84986,0.84986)
+  sprite=Prop_Sign layer=Ground/15 bounds=(52.64023,0,-0.08499)..(55.35977,3,0.08499) color=RGBA(1.000, 1.000, 1.000, 1.000)
+OBJECT|Rooms/Room_03_ForestGlade/Prop_Stump_113
+  active=True tag=Untagged
+  pos=(113,2.65,0) localScale=(0.9465,0.9465,0.9465)
+  sprite=Prop_Stump layer=Ground/14 bounds=(111.178,1.5,-0.09465)..(114.822,3.8,0.09465) color=RGBA(1.000, 1.000, 1.000, 1.000)
+OBJECT|Rooms/Room_01_Camp/Prop_Stump_27,5
+  active=True tag=Untagged
+  pos=(27.5,1.05,0) localScale=(0.8642,0.8642,0.8642)
+  sprite=Prop_Stump layer=Ground/14 bounds=(25.83642,0,-0.08642)..(29.16358,2.1,0.08642) color=RGBA(1.000, 1.000, 1.000, 1.000)
+OBJECT|Rooms/Room_02_CampExit/Reward_Acorn
+  active=True tag=Untagged
+  pos=(74,1.1,0) localScale=(0.9,0.9,0.9)
+  sprite=Reward_Acorn_01 layer=Ground/16 bounds=(72.7895,-0.223,-0.09)..(75.2105,2.423,0.09) color=RGBA(1.000, 1.000, 1.000, 1.000)
+  collider=CircleCollider2D enabled=True trigger=True bounds=(73.55,0.65,0)..(74.45,1.55,0)
+  interactive=RewardPickup
+OBJECT|Rooms/Room_03_ForestGlade/Reward_Acorn
+  active=True tag=Untagged
+  pos=(106.5,2.35,0) localScale=(0.9,0.9,0.9)
+  sprite=Reward_Acorn_01 layer=Ground/16 bounds=(105.2895,1.027,-0.09)..(107.7105,3.673,0.09) color=RGBA(1.000, 1.000, 1.000, 1.000)
+  collider=CircleCollider2D enabled=True trigger=True bounds=(106.05,1.9,0)..(106.95,2.8,0)
+  interactive=RewardPickup
+OBJECT|Rooms/Room_04_TrainingGround/Reward_Acorn
+  active=True tag=Untagged
+  pos=(150.5,4.6,0) localScale=(0.9,0.9,0.9)
+  sprite=Reward_Acorn_01 layer=Ground/16 bounds=(149.2895,3.277,-0.09)..(151.7105,5.923,0.09) color=RGBA(1.000, 1.000, 1.000, 1.000)
+  collider=CircleCollider2D enabled=True trigger=True bounds=(150.05,4.15,0)..(150.95,5.05,0)
+  interactive=RewardPickup
+OBJECT|Rooms/Room_05_OldBridge/Reward_Acorn
+  active=True tag=Untagged
+  pos=(196.8,3.1,0) localScale=(0.9,0.9,0.9)
+  sprite=Reward_Acorn_01 layer=Ground/16 bounds=(195.5895,1.777,-0.09)..(198.0105,4.423,0.09) color=RGBA(1.000, 1.000, 1.000, 1.000)
+  collider=CircleCollider2D enabled=True trigger=True bounds=(196.35,2.65,0)..(197.25,3.55,0)
+  interactive=RewardPickup
+OBJECT|Rooms/Room_02_CampExit/Room_01_BackTrigger
+  active=True tag=Untagged
+  pos=(47.7,6,0) localScale=(1,1,1)
+  collider=BoxCollider2D enabled=True trigger=True offset=(0,0) size=(1.1,12) usedByEffector=False bounds=(47.15,0,0)..(48.25,12,0)
+OBJECT|Rooms/Room_01_Camp/Room_01_Trigger
+  active=True tag=Untagged
+  pos=(-27.5,6,0) localScale=(1,1,1)
+  collider=BoxCollider2D enabled=True trigger=True offset=(0,0) size=(1.1,12) usedByEffector=False bounds=(-28.05,0,0)..(-26.95,12,0)
+OBJECT|Rooms/Room_03_ForestGlade/Room_02_BackTrigger
+  active=True tag=Untagged
+  pos=(83.7,6,0) localScale=(1,1,1)
+  collider=BoxCollider2D enabled=True trigger=True offset=(0,0) size=(1.1,12) usedByEffector=False bounds=(83.14999,0,0)..(84.25,12,0)
+OBJECT|Rooms/Room_02_CampExit/Room_02_Trigger
+  active=True tag=Untagged
+  pos=(48.3,6,0) localScale=(1,1,1)
+  collider=BoxCollider2D enabled=True trigger=True offset=(0,0) size=(1.1,12) usedByEffector=False bounds=(47.75,0,0)..(48.85,12,0)
+OBJECT|Rooms/Room_04_TrainingGround/Room_03_BackTrigger
+  active=True tag=Untagged
+  pos=(121.7,7.5,0) localScale=(1,1,1)
+  collider=BoxCollider2D enabled=True trigger=True offset=(0,0) size=(1.1,12) usedByEffector=False bounds=(121.15,1.5,0)..(122.25,13.5,0)
+OBJECT|Rooms/Room_03_ForestGlade/Room_03_Trigger
+  active=True tag=Untagged
+  pos=(84.3,6,0) localScale=(1,1,1)
+  collider=BoxCollider2D enabled=True trigger=True offset=(0,0) size=(1.1,12) usedByEffector=False bounds=(83.75,0,0)..(84.85001,12,0)
+OBJECT|Rooms/Room_05_OldBridge/Room_04_BackTrigger
+  active=True tag=Untagged
+  pos=(159.7,8.5,0) localScale=(1,1,1)
+  collider=BoxCollider2D enabled=True trigger=True offset=(0,0) size=(1.1,13) usedByEffector=False bounds=(159.15,2,0)..(160.25,15,0)
+OBJECT|Rooms/Room_04_TrainingGround/Room_04_Trigger
+  active=True tag=Untagged
+  pos=(122.3,8,0) localScale=(1,1,1)
+  collider=BoxCollider2D enabled=True trigger=True offset=(0,0) size=(1.1,12) usedByEffector=False bounds=(121.75,2,0)..(122.85,14,0)
+OBJECT|Rooms/Room_05_OldBridge/Room_05_Trigger
+  active=True tag=Untagged
+  pos=(160.3,8.5,0) localScale=(1,1,1)
+  collider=BoxCollider2D enabled=True trigger=True offset=(0,0) size=(1.1,13) usedByEffector=False bounds=(159.75,2,0)..(160.85,15,0)
+OBJECT|Rooms/Room_04_TrainingGround/TrainingBarrel
+  active=True tag=Untagged
+  pos=(155.4636,2.73,0) localScale=(1.9181,1.6879,1)
+  sprite=Barrel_Intact layer=Ground/18 bounds=(154.4949,1.74258,-0.1)..(156.4322,3.71742,0.1) color=RGBA(1.000, 1.000, 1.000, 1.000)
+  collider=BoxCollider2D enabled=True trigger=False offset=(0,0) size=(0.88,1.02) usedByEffector=False bounds=(154.6196,1.86917,0)..(156.3076,3.59083,0)
+  interactive=BreakableProp
+OBJECT|Rooms/Room_04_TrainingGround/TrainingCrate
+  active=True tag=Untagged
+  pos=(124.2,2.54,0) localScale=(1,1,1)
+  sprite=Crate_Intact layer=Ground/18 bounds=(123.67,1.975,-0.1)..(124.73,3.105,0.1) color=RGBA(1.000, 1.000, 1.000, 1.000)
+  collider=BoxCollider2D enabled=True trigger=False offset=(0,0) size=(0.95,1.02) usedByEffector=False bounds=(123.725,2.03,0)..(124.675,3.05,0)
+  interactive=BreakableProp
+OBJECT|Rooms/Room_01_Camp/TrainingDummies/TrainingDummy1
+  active=True tag=Untagged
+  pos=(-10,1.03,0) localScale=(1,1,1)
+  collider=BoxCollider2D enabled=True trigger=False offset=(0,-0.2) size=(0.7,1.6) usedByEffector=False bounds=(-10.35,0.03,0)..(-9.65,1.63,0)
+OBJECT|Rooms/Room_01_Camp/TrainingDummies/TrainingDummy2
+  active=True tag=Untagged
+  pos=(-5,1.03,0) localScale=(1,1,1)
+  collider=BoxCollider2D enabled=True trigger=False offset=(0,-0.2) size=(0.7,1.6) usedByEffector=False bounds=(-5.35,0.03,0)..(-4.65,1.63,0)
+OBJECT|Rooms/Room_04_TrainingGround/TrainingGate
+  active=False tag=Untagged
+  pos=(159.2,4.3,0) localScale=(1,1,1)
+  collider=BoxCollider2D enabled=True trigger=False offset=(0,0) size=(2.1,4.6) usedByEffector=False bounds=(159.2,4.3,0)..(159.2,4.3,0)
+OBJECT|Rooms/Room_04_TrainingGround/TrainingGround_A
+  active=True tag=Untagged
+  pos=(131.8,1.5,0) localScale=(1,1,1)
+  collider=BoxCollider2D enabled=True trigger=False offset=(0,0) size=(20.4,1) usedByEffector=False bounds=(121.6,1,0)..(142,2,0)
+OBJECT|Rooms/Room_04_TrainingGround/TrainingGround_B
+  active=True tag=Untagged
+  pos=(154.5,1.5,0) localScale=(1,1,1)
+  collider=BoxCollider2D enabled=True trigger=False offset=(0,0) size=(11,1) usedByEffector=False bounds=(149,1,0)..(160,2,0)
+OBJECT|Rooms/Room_04_TrainingGround/TrainingGroundDummy_1
+  active=True tag=Untagged
+  pos=(126,3.03,0) localScale=(1,1,1)
+  collider=BoxCollider2D enabled=True trigger=False offset=(0,-0.2) size=(0.7,1.6) usedByEffector=False bounds=(125.65,2.03,0)..(126.35,3.63,0)
+OBJECT|Rooms/Room_04_TrainingGround/TrainingGroundDummy_2
+  active=True tag=Untagged
+  pos=(130,3.03,0) localScale=(1,1,1)
+  collider=BoxCollider2D enabled=True trigger=False offset=(0,-0.2) size=(0.7,1.6) usedByEffector=False bounds=(129.65,2.03,0)..(130.35,3.63,0)
+OBJECT|Rooms/Room_04_TrainingGround/Encounter_Room04/TrainingHyena_A
+  active=False tag=Untagged
+  pos=(134,3.856,0) localScale=(2.2,2.2,2.2)
+  collider=BoxCollider2D enabled=True trigger=False offset=(0,-0.08) size=(0.82,1.5) usedByEffector=False bounds=(134,3.856,0)..(134,3.856,0)
+OBJECT|Rooms/Room_04_TrainingGround/Encounter_Room04/TrainingHyena_B
+  active=False tag=Untagged
+  pos=(153,3.856,0) localScale=(2.2,2.2,2.2)
+  collider=BoxCollider2D enabled=True trigger=False offset=(0,-0.08) size=(0.82,1.5) usedByEffector=False bounds=(153,3.856,0)..(153,3.856,0)
+OBJECT|Rooms/Room_04_TrainingGround/TrainingPitVisual
+  active=True tag=Untagged
+  pos=(145.5,0.09,0) localScale=(1.89744,1,1)
+  sprite=PitFloor layer=Ground/10 bounds=(141.8,-0.285,-0.1)..(149.2,0.465,0.1) color=RGBA(1.000, 1.000, 1.000, 1.000)
+OBJECT|Rooms/Room_04_TrainingGround/TrainingPitVisual_EdgeRockL
+  active=True tag=Untagged
+  pos=(142.4,2.4,0) localScale=(0.41451,0.41451,0.41451)
+  sprite=Prop_Rock layer=Ground/14 bounds=(141.685,2,-0.04145)..(143.115,2.8,0.04145) color=RGBA(1.000, 1.000, 1.000, 1.000)
+OBJECT|Rooms/Room_04_TrainingGround/TrainingPitVisual_EdgeRockR
+  active=True tag=Untagged
+  pos=(148.6,2.4,0) localScale=(0.41451,0.41451,0.41451)
+  sprite=Prop_Rock layer=Ground/14 bounds=(147.885,2,-0.04145)..(149.315,2.8,0.04145) color=RGBA(1.000, 1.000, 1.000, 1.000)
+OBJECT|Rooms/Room_04_TrainingGround/TrainingPitVisual_FallZone
+  active=True tag=Untagged
+  pos=(145.5,-1.63,0) localScale=(1,1,1)
+  collider=BoxCollider2D enabled=True trigger=True offset=(0,0) size=(8,3.2) usedByEffector=False bounds=(141.5,-3.23,0)..(149.5,-0.03,0)
+OBJECT|Rooms/Room_04_TrainingGround/TrainingPitVisual_Floor
+  active=True tag=Untagged
+  pos=(145.5,-0.03,0) localScale=(1,1,1)
+  collider=BoxCollider2D enabled=True trigger=False offset=(0,0) size=(8,0.6) usedByEffector=False bounds=(141.5,-0.33,0)..(149.5,0.27,0)
+OBJECT|Rooms/Room_04_TrainingGround/TrainingPitVisual_PitWalls
+  active=True tag=Untagged
+  pos=(145.5,0.895,0) localScale=(1,1,1)
+  sprite=Ground_Soil_Tile layer=Ground/8 bounds=(141.65,-0.23,-0.1)..(149.35,2.02,0.1) color=RGBA(0.240, 0.130, 0.090, 1.000)
+OBJECT|Rooms/Room_04_TrainingGround/TrainingPitVisual_Step
+  active=True tag=Untagged
+  pos=(146.94,1.22,0) localScale=(1,1,1)
+  collider=BoxCollider2D enabled=True trigger=False offset=(0,0.225) size=(1.7,0.55) usedByEffector=True bounds=(146.09,1.17,0)..(147.79,1.72,0)
+OBJECT|Rooms/Room_04_TrainingGround/TrainingPitVisual_Underfill
+  active=True tag=Untagged
+  pos=(145.5,-6.18,0) localScale=(1,1,1)
+  sprite=Ground_Soil_Tile layer=Ground/12 bounds=(141.6,-12.18,-0.1)..(149.4,-0.18,0.1) color=RGBA(1.000, 1.000, 1.000, 1.000)
+OBJECT|Rooms/Room_04_TrainingGround/TrainingPitVisual_WallL
+  active=True tag=Untagged
+  pos=(142.05,1.185,0) localScale=(1,1,1)
+  collider=BoxCollider2D enabled=True trigger=False offset=(0,0) size=(0.3,2.03) usedByEffector=False bounds=(141.9,0.17,0)..(142.2,2.2,0)
+OBJECT|Rooms/Room_04_TrainingGround/TrainingPitVisual_WallR
+  active=True tag=Untagged
+  pos=(148.95,1.185,0) localScale=(1,1,1)
+  collider=BoxCollider2D enabled=True trigger=False offset=(0,0) size=(0.3,2.03) usedByEffector=False bounds=(148.8,0.17,0)..(149.1,2.2,0)
+OBJECT|Rooms/Room_04_TrainingGround/TrainingStep_A
+  active=True tag=Untagged
+  pos=(140.5,2.7,0) localScale=(1,1,1)
+  collider=BoxCollider2D enabled=True trigger=False offset=(0,0.225) size=(5,0.55) usedByEffector=True bounds=(138,2.65,0)..(143,3.2,0)
+OBJECT|Rooms/Room_04_TrainingGround/TrainingStep_B
+  active=True tag=Untagged
+  pos=(149.5,3,0) localScale=(1,1,1)
+  collider=BoxCollider2D enabled=True trigger=False offset=(0,0.225) size=(5,0.55) usedByEffector=True bounds=(147,2.95,0)..(152,3.5,0)
+OBJECT|Rooms/Room_01_Camp/TrainingDummies/TrainingDummy2/Visual
+  active=True tag=Untagged
+  pos=(-5,1.03,0) localScale=(1,1,1)
+  sprite=Dummy_0 layer=Characters/0 bounds=(-5.475,0.22,-0.1)..(-4.525,1.84,0.1) color=RGBA(1.000, 1.000, 1.000, 1.000)
+OBJECT|Rooms/Room_03_ForestGlade/GladeStep_A/Visual
+  active=True tag=Untagged
+  pos=(100.5,-0.05242,0) localScale=(1.37363,1.37363,1.37363)
+  sprite=Platform_End_A layer=Ground/12 bounds=(98,-0.93154,-0.13736)..(103,0.8267,0.13736) color=RGBA(1.000, 1.000, 1.000, 1.000)
+OBJECT|Rooms/Room_03_ForestGlade/GladeStep_B/Visual
+  active=True tag=Untagged
+  pos=(107,0.0763,0) localScale=(2.17391,2.17391,2.17391)
+  sprite=Platform_Small_B layer=Ground/12 bounds=(105,-1.815,-0.21739)..(109,1.96761,0.21739) color=RGBA(1.000, 1.000, 1.000, 1.000)
+OBJECT|Rooms/Room_03_ForestGlade/GladeTrainingDummy/Visual
+  active=True tag=Untagged
+  pos=(115.46,2.02,0) localScale=(1,1,1)
+  sprite=Dummy_0 layer=Characters/0 bounds=(114.985,1.21,-0.1)..(115.935,2.83,0.1) color=RGBA(1.000, 1.000, 1.000, 1.000)
+OBJECT|Rooms/Room_03_ForestGlade/GladePitVisual_Step/Visual
+  active=True tag=Untagged
+  pos=(106.24,-0.64032,0) localScale=(0.92391,0.92391,0.92391)
+  sprite=Platform_Small_B layer=Ground/12 bounds=(105.39,-1.44413,-0.09239)..(107.09,0.16348,0.09239) color=RGBA(1.000, 1.000, 1.000, 1.000)
+OBJECT|Rooms/Room_04_TrainingGround/TrainingStep_A/Visual
+  active=True tag=Untagged
+  pos=(140.5,2.49548,0) localScale=(1.08696,1.08696,1.08696)
+  sprite=Platform_Wide_B layer=Ground/12 bounds=(138,1.452,-0.1087)..(143,3.53896,0.1087) color=RGBA(1.000, 1.000, 1.000, 1.000)
+OBJECT|Rooms/Room_04_TrainingGround/TrainingStep_B/Visual
+  active=True tag=Untagged
+  pos=(149.5,2.91523,0) localScale=(1.09649,1.09649,1.09649)
+  sprite=Platform_Wide_A layer=Ground/12 bounds=(147,1.94484,-0.10965)..(152,3.88563,0.10965) color=RGBA(1.000, 1.000, 1.000, 1.000)
+OBJECT|Rooms/Room_04_TrainingGround/Encounter_Room04/TrainingHyena_A/Visual
+  active=False tag=Untagged
+  pos=(134,1.89462,0) localScale=(1,1,1)
+  sprite=Hyena_Attack_01 layer=Characters/0 bounds=(131.2923,1.89462,-0.22)..(136.7077,5.95615,0.22) color=RGBA(1.000, 1.000, 1.000, 1.000)
+OBJECT|Rooms/Room_04_TrainingGround/Encounter_Room04/TrainingHyena_B/Visual
+  active=False tag=Untagged
+  pos=(153,1.89462,0) localScale=(1,1,1)
+  sprite=Hyena_Attack_01 layer=Characters/0 bounds=(150.2923,1.89462,-0.22)..(155.7077,5.95615,0.22) color=RGBA(1.000, 1.000, 1.000, 1.000)
+OBJECT|Rooms/Room_04_TrainingGround/TrainingPitVisual_Step/Visual
+  active=True tag=Untagged
+  pos=(146.94,1.20968,0) localScale=(0.92391,0.92391,0.92391)
+  sprite=Platform_Small_B layer=Ground/12 bounds=(146.09,0.40588,-0.09239)..(147.79,2.01348,0.09239) color=RGBA(1.000, 1.000, 1.000, 1.000)
+OBJECT|Rooms/Room_05_OldBridge/BridgeSection_01/Visual
+  active=True tag=Untagged
+  pos=(170.5,1.67432,0) localScale=(1.05263,1.05263,1.05263)
+  sprite=Bridge_Section_01 layer=Ground/12 bounds=(168,0.40063,-0.10526)..(173,2.948,0.10526) color=RGBA(1.000, 1.000, 1.000, 1.000)
+OBJECT|Rooms/Room_05_OldBridge/BridgeSection_02/Visual
+  active=True tag=Untagged
+  pos=(178,2.36057,0) localScale=(0.7619,0.7619,0.7619)
+  sprite=Bridge_Section_02 layer=Ground/12 bounds=(176,1.44629,-0.07619)..(180,3.27486,0.07619) color=RGBA(1.000, 1.000, 1.000, 1.000)
+OBJECT|Rooms/Room_05_OldBridge/BridgeSection_03/Visual
+  active=True tag=Untagged
+  pos=(185.5,2.87106,0) localScale=(1.06383,1.06383,1.06383)
+  sprite=Bridge_Section_03 layer=Ground/12 bounds=(183,1.58383,-0.10638)..(188,4.1583,0.10638) color=RGBA(1.000, 1.000, 1.000, 1.000)
+OBJECT|Rooms/Room_05_OldBridge/BridgeSection_04/Visual
+  active=True tag=Untagged
+  pos=(192,2.26685,0) localScale=(1.59363,1.59363,1.59363)
+  sprite=Bridge_Patch_01 layer=Ground/12 bounds=(190,1.22303,-0.15936)..(194,3.31068,0.15936) color=RGBA(1.000, 1.000, 1.000, 1.000)
+OBJECT|Rooms/Room_05_OldBridge/ZoneOneEndBoundary
+  active=True tag=Untagged
+  pos=(202.2,12,0) localScale=(1,1,1)
+  collider=BoxCollider2D enabled=True trigger=False offset=(0,0) size=(1,24) usedByEffector=False bounds=(201.7,0,0)..(202.7,24,0)
+OBJECT|Rooms/Room_05_OldBridge/ZoneOneEndTrigger
+  active=True tag=Untagged
+  pos=(201.3,6.5,0) localScale=(1,1,1)
+  collider=BoxCollider2D enabled=True trigger=True offset=(0,0) size=(1.2,9) usedByEffector=False bounds=(200.7,2,0)..(201.9,11,0)

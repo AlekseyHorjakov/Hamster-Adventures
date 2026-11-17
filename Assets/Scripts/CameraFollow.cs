@@ -17,6 +17,11 @@ public class CameraFollow : MonoBehaviour
     [SerializeField] private bool useBounds;
     [SerializeField] private Vector2 boundsMin = new Vector2(-100f, -20f);
     [SerializeField] private Vector2 boundsMax = new Vector2(100f, 40f);
+    [SerializeField] private bool useWorldBounds;
+    [SerializeField] private bool useMinY;
+    [SerializeField] private float minY;
+    [SerializeField] private Vector2 worldBoundsMin = new Vector2(-100f, -20f);
+    [SerializeField] private Vector2 worldBoundsMax = new Vector2(100f, 40f);
     [Header("Camera Movement")]
     [SerializeField] private float moveSmoothTime = 0.15f;
 
@@ -37,6 +42,31 @@ public class CameraFollow : MonoBehaviour
     private float shakeStrength;
 
     public float MaxSize => maxSize;
+
+    /// <summary>Переключает камеру на границы текущей комнаты.</summary>
+    public void SetBounds(Vector2 min, Vector2 max)
+    {
+        useBounds = true;
+        useWorldBounds = false;
+        boundsMin = min;
+        boundsMax = max;
+    }
+
+    /// <summary>Не даёт камере уехать под землю, когда герой падает в яму.</summary>
+    public void SetMinY(float value)
+    {
+        useMinY = true;
+        minY = value;
+    }
+
+    /// <summary>Границы комнаты в мировых координатах с учётом текущего aspect ratio.</summary>
+    public void SetWorldBounds(Vector2 min, Vector2 max)
+    {
+        useBounds = false;
+        useWorldBounds = true;
+        worldBoundsMin = min;
+        worldBoundsMax = max;
+    }
 
     private static CameraFollow instance;
 
@@ -105,12 +135,6 @@ public class CameraFollow : MonoBehaviour
             moveSmoothTime
         );
 
-        if (useBounds)
-        {
-            smoothedPosition.x = Mathf.Clamp(smoothedPosition.x, boundsMin.x, boundsMax.x);
-            smoothedPosition.y = Mathf.Clamp(smoothedPosition.y, boundsMin.y, boundsMax.y);
-        }
-
         float requiredHeight = distanceY * 0.5f + zoomPadding;
         float requiredWidth = (distanceX * 0.5f + zoomPadding) / cam.aspect;
 
@@ -126,6 +150,31 @@ public class CameraFollow : MonoBehaviour
             ref zoomVelocity,
             zoomSmoothTime
         );
+
+        if (useWorldBounds)
+        {
+            float halfHeight = cam.orthographicSize;
+            float halfWidth = halfHeight * cam.aspect;
+            float minX = worldBoundsMin.x + halfWidth;
+            float maxX = worldBoundsMax.x - halfWidth;
+            float minY = worldBoundsMin.y + halfHeight;
+            float maxY = worldBoundsMax.y - halfHeight;
+
+            smoothedPosition.x = minX <= maxX
+                ? Mathf.Clamp(smoothedPosition.x, minX, maxX)
+                : (worldBoundsMin.x + worldBoundsMax.x) * 0.5f;
+            smoothedPosition.y = minY <= maxY
+                ? Mathf.Clamp(smoothedPosition.y, minY, maxY)
+                : (worldBoundsMin.y + worldBoundsMax.y) * 0.5f;
+        }
+        else if (useBounds)
+        {
+            smoothedPosition.x = Mathf.Clamp(smoothedPosition.x, boundsMin.x, boundsMax.x);
+            smoothedPosition.y = Mathf.Clamp(smoothedPosition.y, boundsMin.y, boundsMax.y);
+        }
+
+        if (useMinY)
+            smoothedPosition.y = Mathf.Max(smoothedPosition.y, minY);
 
         Vector3 offset = Vector3.zero;
 

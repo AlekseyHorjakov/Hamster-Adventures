@@ -35,5 +35,83 @@ public static class RuntimeSceneBootstrap
             && GameObject.Find("BakedLevelArt") == null)
             new GameObject("LevelArt").AddComponent<LevelArtController>();
 
+        if (System.Environment.GetCommandLineArgs().Contains("-diag"))
+        {
+            var go = new GameObject("Diag");
+            Object.DontDestroyOnLoad(go);
+            go.AddComponent<DiagRunner>();
+        }
+    }
+}
+
+/// <summary>Диагностика раскладки уровня в собранном билде (ключ -diag).</summary>
+public sealed class DiagRunner : MonoBehaviour
+{
+    private System.Collections.IEnumerator Start()
+    {
+        yield return new WaitForSecondsRealtime(2.0f);
+        if (SceneManager.GetActiveScene().name == "MainMenu")
+        {
+            GameSession.SetMode(GameMode.Coop);
+            GameProgress.StartNew(GameMode.Coop);
+            yield return SceneManager.LoadSceneAsync("Level01_Full");
+            yield return new WaitForSecondsRealtime(2.5f);
+        }
+        Camera cam = Camera.main;
+        Debug.Log("[Diag] scene=" + SceneManager.GetActiveScene().name +
+                  " cam=" + (cam == null ? "NULL" : cam.transform.position.ToString("F2") + " ortho=" + cam.orthographicSize.ToString("F2")));
+
+        foreach (string n in new[] { "CampTent_Green", "CampTent_Beige", "CampTree_Oak", "CampChest_A", "Checkpoint_Camp", "LowRun_Tile", "GroundRuns" })
+        {
+            GameObject go = GameObject.Find(n);
+            if (go == null) { Debug.Log("[Diag] " + n + "=NULL"); continue; }
+            var sr = go.GetComponentInChildren<SpriteRenderer>();
+            Debug.Log("[Diag] " + n + " pos=" + go.transform.position.ToString("F2") +
+                      (sr == null ? "" : " sprite=" + (sr.sprite == null ? "NULL" : sr.sprite.name) +
+                       " bottom=" + sr.bounds.min.y.ToString("F2") + " top=" + sr.bounds.max.y.ToString("F2")));
+        }
+
+        HamsterMovement[] players = Object.FindObjectsByType<HamsterMovement>(FindObjectsInactive.Exclude);
+        foreach (var pl in players)
+        {
+            var col = pl.GetComponent<Collider2D>();
+            Debug.Log("[Diag] player " + pl.name + " pos=" + pl.transform.position.ToString("F2") +
+                      " bottom=" + (col == null ? 0f : col.bounds.min.y).ToString("F2"));
+        }
+
+        string[] cli = System.Environment.GetCommandLineArgs();
+        int xi = System.Array.IndexOf(cli, "-diagx");
+        if (xi >= 0 && xi + 1 < cli.Length && float.TryParse(cli[xi + 1], out float spawnX))
+        {
+            var hero = players.FirstOrDefault(pl => pl.name == "Hamster");
+            if (hero != null)
+            {
+                hero.Body.simulated = true;
+                hero.Body.position = new Vector2(spawnX, 12f);
+                hero.Body.linearVelocity = Vector2.zero;
+            }
+        }
+
+        if (cli.Contains("-diagpit"))
+        {
+            var hamster = players.FirstOrDefault(pl => pl.name == "Hamster");
+            if (hamster != null)
+            {
+                hamster.Body.simulated = true;
+                hamster.Body.position = new Vector2(105f, 0.6f);
+                hamster.Body.linearVelocity = Vector2.zero;
+                for (int i = 0; i < 16; i++)
+                {
+                    yield return new WaitForSecondsRealtime(0.25f);
+                    var st = hamster.GetComponent<PlayerCombatState>();
+                    Debug.Log("[DiagPit] t=" + (i * 0.25f).ToString("F2") +
+                              " y=" + hamster.transform.position.y.ToString("F2") +
+                              " x=" + hamster.transform.position.x.ToString("F2") +
+                              " dead=" + (st != null && st.IsDead) +
+                              " respawn=" + (st != null && st.IsRespawning) +
+                              " camY=" + (Camera.main == null ? 0f : Camera.main.transform.position.y).ToString("F2"));
+                }
+            }
+        }
     }
 }

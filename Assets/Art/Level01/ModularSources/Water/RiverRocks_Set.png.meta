@@ -1,0 +1,707 @@
+fileFormatVersion: 2
+guid: 20618110cb1d804409b0d8a967ddd1ed
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -285261365119358611
+    second: RiverRocks_Set_0
+  - first:
+      213: 3846022030598967145
+    second: RiverRocks_Set_1
+  - first:
+      213: 5916688369835388260
+    second: RiverRocks_Set_2
+  - first:
+      213: -6823898629840041096
+    second: RiverRocks_Set_3
+  - first:
+      213: 7957699367472887697
+    second: RiverRocks_Set_4
+  - first:
+      213: -2103699190837093387
+    second: RiverRocks_Set_5
+  - first:
+      213: -1624521276572261102
+    second: RiverRocks_Set_6
+  - first:
+      213: -566628328562505770
+    second: RiverRocks_Set_7
+  - first:
+      213: 2712630650432515169
+    second: RiverRocks_Set_8
+  - first:
+      213: 4036681332910888786
+    second: RiverRocks_Set_9
+  - first:
+      213: 696933141579837554
+    second: RiverRocks_Set_10
+  - first:
+      213: 2479783797580436483
+    second: RiverRocks_Set_11
+  - first:
+      213: 5516183510284296698
+    second: RiverRocks_Set_12
+  - first:
+      213: 8127251076648650598
+    second: RiverRocks_Set_13
+  - first:
+      213: -3638185901892726672
+    second: RiverRocks_Set_14
+  - first:
+      213: -6259735496684425282
+    second: RiverRocks_Set_15
+  - first:
+      213: -5250623652226102986
+    second: RiverRocks_Set_16
+  - first:
+      213: 7886276921958560130
+    second: RiverRocks_Set_17
+  - first:
+      213: 4550797011406242775
+    second: RiverRocks_Set_18
+  - first:
+      213: 1869200851030757652
+    second: RiverRocks_Set_19
+  - first:
+      213: 2369190672111166760
+    second: RiverRocks_Set_20
+  - first:
+      213: 2792369522295978253
+    second: RiverRocks_Set_21
+  - first:
+      213: 539270825631256826
+    second: RiverRocks_Set_22
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 1
+  spriteExtrude: 1
+  spriteMeshType: 0
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationMethod: 0
+  spriteTessellationDetail: -1
+  spriteGeometrySubdivision: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: RiverRocks_Set_0
+      rect:
+        serializedVersion: 2
+        x: 774
+        y: 789
+        width: 188
+        height: 226
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d69eaefbc4c8a0cf0800000000000000
+      internalID: -285261365119358611
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RiverRocks_Set_1
+      rect:
+        serializedVersion: 2
+        x: 992
+        y: 769
+        width: 211
+        height: 225
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 96f8d24e8a0df5530800000000000000
+      internalID: 3846022030598967145
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RiverRocks_Set_2
+      rect:
+        serializedVersion: 2
+        x: 1066
+        y: 982
+        width: 17
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 46d29b279bc4c1250800000000000000
+      internalID: 5916688369835388260
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RiverRocks_Set_3
+      rect:
+        serializedVersion: 2
+        x: 1372
+        y: 991
+        width: 21
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 87b0c19c954ac41a0800000000000000
+      internalID: -6823898629840041096
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RiverRocks_Set_4
+      rect:
+        serializedVersion: 2
+        x: 58
+        y: 775
+        width: 201
+        height: 213
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 197729bb96d6f6e60800000000000000
+      internalID: 7957699367472887697
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RiverRocks_Set_5
+      rect:
+        serializedVersion: 2
+        x: 270
+        y: 775
+        width: 226
+        height: 215
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5fbd0e75bb82ec2e0800000000000000
+      internalID: -2103699190837093387
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RiverRocks_Set_6
+      rect:
+        serializedVersion: 2
+        x: 511
+        y: 783
+        width: 244
+        height: 170
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 215a8db818a8479e0800000000000000
+      internalID: -1624521276572261102
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RiverRocks_Set_7
+      rect:
+        serializedVersion: 2
+        x: 1216
+        y: 781
+        width: 283
+        height: 205
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6d7cb5c898ee228f0800000000000000
+      internalID: -566628328562505770
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RiverRocks_Set_8
+      rect:
+        serializedVersion: 2
+        x: 1479
+        y: 945
+        width: 28
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 16cedd5543335a520800000000000000
+      internalID: 2712630650432515169
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RiverRocks_Set_9
+      rect:
+        serializedVersion: 2
+        x: 377
+        y: 803
+        width: 8
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2579a97f84c250830800000000000000
+      internalID: 4036681332910888786
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RiverRocks_Set_10
+      rect:
+        serializedVersion: 2
+        x: 1198
+        y: 797
+        width: 17
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2703010fff00ca900800000000000000
+      internalID: 696933141579837554
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RiverRocks_Set_11
+      rect:
+        serializedVersion: 2
+        x: 1214
+        y: 798
+        width: 11
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3041d86b936f96220800000000000000
+      internalID: 2479783797580436483
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RiverRocks_Set_12
+      rect:
+        serializedVersion: 2
+        x: 1216
+        y: 809
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: af1ec563dab6d8c40800000000000000
+      internalID: 5516183510284296698
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RiverRocks_Set_13
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 775
+        width: 11
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 667cd005bcbc9c070800000000000000
+      internalID: 8127251076648650598
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RiverRocks_Set_14
+      rect:
+        serializedVersion: 2
+        x: 53
+        y: 561
+        width: 444
+        height: 201
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 07099dab231928dc0800000000000000
+      internalID: -3638185901892726672
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RiverRocks_Set_15
+      rect:
+        serializedVersion: 2
+        x: 268
+        y: 557
+        width: 39
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ebfa8343bb3f029a0800000000000000
+      internalID: -6259735496684425282
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RiverRocks_Set_16
+      rect:
+        serializedVersion: 2
+        x: 504
+        y: 554
+        width: 469
+        height: 217
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6398cc77b990227b0800000000000000
+      internalID: -5250623652226102986
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RiverRocks_Set_17
+      rect:
+        serializedVersion: 2
+        x: 984
+        y: 544
+        width: 509
+        height: 224
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 28173b5c31fa17d60800000000000000
+      internalID: 7886276921958560130
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RiverRocks_Set_18
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 241
+        width: 1511
+        height: 312
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7d347cd45cda72f30800000000000000
+      internalID: 4550797011406242775
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RiverRocks_Set_19
+      rect:
+        serializedVersion: 2
+        x: 46
+        y: 41
+        width: 295
+        height: 233
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 411db83454cb0f910800000000000000
+      internalID: 1869200851030757652
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RiverRocks_Set_20
+      rect:
+        serializedVersion: 2
+        x: 340
+        y: 33
+        width: 639
+        height: 223
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 825ea502d5e01e020800000000000000
+      internalID: 2369190672111166760
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RiverRocks_Set_21
+      rect:
+        serializedVersion: 2
+        x: 1190
+        y: 23
+        width: 304
+        height: 224
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d093412394d70c620800000000000000
+      internalID: 2792369522295978253
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RiverRocks_Set_22
+      rect:
+        serializedVersion: 2
+        x: 980
+        y: 93
+        width: 206
+        height: 132
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: af09b7f65ffdb7700800000000000000
+      internalID: 539270825631256826
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable: {}
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

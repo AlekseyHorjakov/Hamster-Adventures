@@ -1,0 +1,2732 @@
+fileFormatVersion: 2
+guid: 07f82bf5eda638d4389803adafca653a
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -3635976688796163035
+    second: Reward_Coin_0
+  - first:
+      213: 455271961035886944
+    second: Reward_Coin_1
+  - first:
+      213: 3834548080572430883
+    second: Reward_Coin_2
+  - first:
+      213: -2596809232204178743
+    second: Reward_Coin_3
+  - first:
+      213: 5779580990232362525
+    second: Reward_Coin_4
+  - first:
+      213: 6100937270905034495
+    second: Reward_Coin_5
+  - first:
+      213: 328520627443239628
+    second: Reward_Coin_6
+  - first:
+      213: 332949317618402180
+    second: Reward_Coin_7
+  - first:
+      213: 2917113044384987974
+    second: Reward_Coin_8
+  - first:
+      213: 8912672064294679795
+    second: Reward_Coin_9
+  - first:
+      213: 8710281462655683616
+    second: Reward_Coin_10
+  - first:
+      213: 3563100676242865138
+    second: Reward_Coin_11
+  - first:
+      213: -1063092151980409792
+    second: Reward_Coin_12
+  - first:
+      213: -4584989056623859925
+    second: Reward_Coin_13
+  - first:
+      213: 264518551930699685
+    second: Reward_Coin_14
+  - first:
+      213: -5854454400424062241
+    second: Reward_Coin_15
+  - first:
+      213: 2698103636083901549
+    second: Reward_Coin_16
+  - first:
+      213: 7455947349640635678
+    second: Reward_Coin_17
+  - first:
+      213: -4697464873632164340
+    second: Reward_Coin_18
+  - first:
+      213: -3270089180660483668
+    second: Reward_Coin_19
+  - first:
+      213: -4228910623880373196
+    second: Reward_Coin_20
+  - first:
+      213: -6385082777605653813
+    second: Reward_Coin_21
+  - first:
+      213: -4102172847333562132
+    second: Reward_Coin_22
+  - first:
+      213: 3793759518177634678
+    second: Reward_Coin_23
+  - first:
+      213: -876272603880846375
+    second: Reward_Coin_24
+  - first:
+      213: 8864117428833909260
+    second: Reward_Coin_25
+  - first:
+      213: -6144364336869677811
+    second: Reward_Coin_26
+  - first:
+      213: -4802545179078622775
+    second: Reward_Coin_27
+  - first:
+      213: 3989955022628978784
+    second: Reward_Coin_28
+  - first:
+      213: 1283393026412561427
+    second: Reward_Coin_29
+  - first:
+      213: -3676645726915328679
+    second: Reward_Coin_30
+  - first:
+      213: -4880915611294060536
+    second: Reward_Coin_31
+  - first:
+      213: 3701435029720279251
+    second: Reward_Coin_32
+  - first:
+      213: 5791960181944026857
+    second: Reward_Coin_33
+  - first:
+      213: -3017316018171450921
+    second: Reward_Coin_34
+  - first:
+      213: 2839712609609495498
+    second: Reward_Coin_35
+  - first:
+      213: 5258997126332641524
+    second: Reward_Coin_36
+  - first:
+      213: 2266709862057689300
+    second: Reward_Coin_37
+  - first:
+      213: 411942410514869884
+    second: Reward_Coin_38
+  - first:
+      213: 8612015586707023611
+    second: Reward_Coin_39
+  - first:
+      213: -1637235444553883908
+    second: Reward_Coin_40
+  - first:
+      213: -6397638468870272056
+    second: Reward_Coin_41
+  - first:
+      213: 6866639598297422714
+    second: Reward_Coin_42
+  - first:
+      213: -4245483739012195553
+    second: Reward_Coin_43
+  - first:
+      213: -7391765661210041348
+    second: Reward_Coin_44
+  - first:
+      213: 7138959890711232393
+    second: Reward_Coin_45
+  - first:
+      213: 3903014354814573013
+    second: Reward_Coin_46
+  - first:
+      213: 6902568328002229359
+    second: Reward_Coin_47
+  - first:
+      213: -1447779597470278105
+    second: Reward_Coin_48
+  - first:
+      213: 8216490669319552467
+    second: Reward_Coin_49
+  - first:
+      213: -1335369189416640836
+    second: Reward_Coin_50
+  - first:
+      213: -6988330661375389890
+    second: Reward_Coin_51
+  - first:
+      213: -5938770084202806669
+    second: Reward_Coin_52
+  - first:
+      213: 9013683596420304949
+    second: Reward_Coin_53
+  - first:
+      213: 4602977176615439248
+    second: Reward_Coin_54
+  - first:
+      213: 4931754136512597217
+    second: Reward_Coin_55
+  - first:
+      213: 7841847290344737645
+    second: Reward_Coin_56
+  - first:
+      213: -4907237597761561146
+    second: Reward_Coin_57
+  - first:
+      213: -1155267488918876055
+    second: Reward_Coin_58
+  - first:
+      213: -2577565624257304609
+    second: Reward_Coin_59
+  - first:
+      213: -2699298818751555706
+    second: Reward_Coin_60
+  - first:
+      213: -4101212810826405635
+    second: Reward_Coin_61
+  - first:
+      213: 8802051939760324956
+    second: Reward_Coin_62
+  - first:
+      213: 5178041804977353743
+    second: Reward_Coin_63
+  - first:
+      213: 1090922541487279621
+    second: Reward_Coin_64
+  - first:
+      213: 7517575824302902377
+    second: Reward_Coin_65
+  - first:
+      213: 5439048789457914454
+    second: Reward_Coin_66
+  - first:
+      213: 2456776723280894388
+    second: Reward_Coin_67
+  - first:
+      213: 2582355275738758467
+    second: Reward_Coin_68
+  - first:
+      213: -3313507339769803383
+    second: Reward_Coin_69
+  - first:
+      213: -8732051210324081450
+    second: Reward_Coin_70
+  - first:
+      213: -7703795729418869206
+    second: Reward_Coin_71
+  - first:
+      213: -3387666946451411585
+    second: Reward_Coin_72
+  - first:
+      213: 7228863965593565291
+    second: Reward_Coin_73
+  - first:
+      213: -9030622851876298206
+    second: Reward_Coin_74
+  - first:
+      213: 723893359421193077
+    second: Reward_Coin_75
+  - first:
+      213: 6123291376347749856
+    second: Reward_Coin_76
+  - first:
+      213: 8286171646449302389
+    second: Reward_Coin_77
+  - first:
+      213: -3290767713628841511
+    second: Reward_Coin_78
+  - first:
+      213: 6441840085159996173
+    second: Reward_Coin_79
+  - first:
+      213: -7305972699484876574
+    second: Reward_Coin_80
+  - first:
+      213: 1423713989010632491
+    second: Reward_Coin_81
+  - first:
+      213: 428672727982351165
+    second: Reward_Coin_82
+  - first:
+      213: -4806781148817892361
+    second: Reward_Coin_83
+  - first:
+      213: -1728494189748508730
+    second: Reward_Coin_84
+  - first:
+      213: 7219581747743191461
+    second: Reward_Coin_85
+  - first:
+      213: 1048297707930848402
+    second: Reward_Coin_86
+  - first:
+      213: 7364854630525274067
+    second: Reward_Coin_87
+  - first:
+      213: 496970972556744621
+    second: Reward_Coin_88
+  - first:
+      213: 310750598498813825
+    second: Reward_Coin_89
+  - first:
+      213: -3600140719348127446
+    second: Reward_Coin_90
+  - first:
+      213: -4243422721251578514
+    second: Reward_Coin_91
+  - first:
+      213: 4182897804628809684
+    second: Reward_Coin_92
+  - first:
+      213: -5227958879674274552
+    second: Reward_Coin_93
+  - first:
+      213: -1044968509641759534
+    second: Reward_Coin_94
+  - first:
+      213: -550890891966047125
+    second: Reward_Coin_95
+  - first:
+      213: -5137800163661893199
+    second: Reward_Coin_96
+  - first:
+      213: -5638344263399379620
+    second: Reward_Coin_97
+  - first:
+      213: 6323102020451533754
+    second: Reward_Coin_98
+  - first:
+      213: 7538522448047184679
+    second: Reward_Coin_99
+  - first:
+      213: 7895895968105592556
+    second: Reward_Coin_100
+  - first:
+      213: -7128830348509393441
+    second: Reward_Coin_101
+  - first:
+      213: -8723933198420339470
+    second: Reward_Coin_102
+  - first:
+      213: -4454653268022128000
+    second: Reward_Coin_103
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 1
+  spriteExtrude: 1
+  spriteMeshType: 0
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationMethod: 0
+  spriteTessellationDetail: -1
+  spriteGeometrySubdivision: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Reward_Coin_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1019
+        width: 250
+        height: 217
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 52424bc377a6a8dc0800000000000000
+      internalID: -3635976688796163035
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Reward_Coin_1
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 1026
+        width: 298
+        height: 204
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0615db9bf63715600800000000000000
+      internalID: 455271961035886944
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Reward_Coin_2
+      rect:
+        serializedVersion: 2
+        x: 370
+        y: 1173
+        width: 119
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 32afca8b92d073530800000000000000
+      internalID: 3834548080572430883
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Reward_Coin_3
+      rect:
+        serializedVersion: 2
+        x: 739
+        y: 1173
+        width: 16
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9cad30503c746fbd0800000000000000
+      internalID: -2596809232204178743
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Reward_Coin_4
+      rect:
+        serializedVersion: 2
+        x: 756
+        y: 1140
+        width: 19
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d1e76610a42353050800000000000000
+      internalID: 5779580990232362525
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Reward_Coin_5
+      rect:
+        serializedVersion: 2
+        x: 842
+        y: 1066
+        width: 57
+        height: 116
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ff65c3daf12eaa450800000000000000
+      internalID: 6100937270905034495
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Reward_Coin_6
+      rect:
+        serializedVersion: 2
+        x: 934
+        y: 1144
+        width: 10
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cca842425c32f8400800000000000000
+      internalID: 328520627443239628
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Reward_Coin_7
+      rect:
+        serializedVersion: 2
+        x: 946
+        y: 1142
+        width: 32
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4838adce3afde9400800000000000000
+      internalID: 332949317618402180
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Reward_Coin_8
+      rect:
+        serializedVersion: 2
+        x: 1025
+        y: 1148
+        width: 77
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 64bb93cbbdaab7820800000000000000
+      internalID: 2917113044384987974
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Reward_Coin_9
+      rect:
+        serializedVersion: 2
+        x: 1039
+        y: 1034
+        width: 112
+        height: 122
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3f4f4d7650c20bb70800000000000000
+      internalID: 8912672064294679795
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Reward_Coin_10
+      rect:
+        serializedVersion: 2
+        x: 1135
+        y: 1106
+        width: 36
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 02c034b57d221e870800000000000000
+      internalID: 8710281462655683616
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Reward_Coin_11
+      rect:
+        serializedVersion: 2
+        x: 247
+        y: 1084
+        width: 48
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2fbf86adf2da27130800000000000000
+      internalID: 3563100676242865138
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Reward_Coin_12
+      rect:
+        serializedVersion: 2
+        x: 297
+        y: 1124
+        width: 9
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 04cb3bdf1532f31f0800000000000000
+      internalID: -1063092151980409792
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Reward_Coin_13
+      rect:
+        serializedVersion: 2
+        x: 305
+        y: 1126
+        width: 7
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b27a1ecceb8de50c0800000000000000
+      internalID: -4584989056623859925
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Reward_Coin_14
+      rect:
+        serializedVersion: 2
+        x: 309
+        y: 1114
+        width: 20
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5af7454b832cba300800000000000000
+      internalID: 264518551930699685
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Reward_Coin_15
+      rect:
+        serializedVersion: 2
+        x: 318
+        y: 1090
+        width: 53
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fd25005bdbcc0cea0800000000000000
+      internalID: -5854454400424062241
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Reward_Coin_16
+      rect:
+        serializedVersion: 2
+        x: 522
+        y: 1114
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d6488fb36f6917520800000000000000
+      internalID: 2698103636083901549
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Reward_Coin_17
+      rect:
+        serializedVersion: 2
+        x: 631
+        y: 1052
+        width: 40
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e1568577c98d87760800000000000000
+      internalID: 7455947349640635678
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Reward_Coin_18
+      rect:
+        serializedVersion: 2
+        x: 667
+        y: 1032
+        width: 104
+        height: 89
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c06974ee5904fceb0800000000000000
+      internalID: -4697464873632164340
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Reward_Coin_19
+      rect:
+        serializedVersion: 2
+        x: 749
+        y: 1038
+        width: 90
+        height: 89
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ca932e2473f4e92d0800000000000000
+      internalID: -3270089180660483668
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Reward_Coin_20
+      rect:
+        serializedVersion: 2
+        x: 770
+        y: 1106
+        width: 31
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 43c1cbc7134ef45c0800000000000000
+      internalID: -4228910623880373196
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Reward_Coin_21
+      rect:
+        serializedVersion: 2
+        x: 872
+        y: 1048
+        width: 84
+        height: 69
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bcab95b1b01a367a0800000000000000
+      internalID: -6385082777605653813
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Reward_Coin_22
+      rect:
+        serializedVersion: 2
+        x: 898
+        y: 1124
+        width: 17
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ce82e6397872217c0800000000000000
+      internalID: -4102172847333562132
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Reward_Coin_23
+      rect:
+        serializedVersion: 2
+        x: 924
+        y: 1124
+        width: 16
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6792c3c7e2426a430800000000000000
+      internalID: 3793759518177634678
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Reward_Coin_24
+      rect:
+        serializedVersion: 2
+        x: 975
+        y: 1078
+        width: 85
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9db864f95bad6d3f0800000000000000
+      internalID: -876272603880846375
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Reward_Coin_25
+      rect:
+        serializedVersion: 2
+        x: 1137
+        y: 1114
+        width: 8
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c0a7ef066dba30b70800000000000000
+      internalID: 8864117428833909260
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Reward_Coin_26
+      rect:
+        serializedVersion: 2
+        x: 1174
+        y: 1068
+        width: 80
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d05ed4a9035dabaa0800000000000000
+      internalID: -6144364336869677811
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Reward_Coin_27
+      rect:
+        serializedVersion: 2
+        x: 106
+        y: 1088
+        width: 20
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9c10147ca9ee95db0800000000000000
+      internalID: -4802545179078622775
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Reward_Coin_28
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 1082
+        width: 34
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 060069114fa2f5730800000000000000
+      internalID: 3989955022628978784
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Reward_Coin_29
+      rect:
+        serializedVersion: 2
+        x: 555
+        y: 1084
+        width: 7
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 314c88668278fc110800000000000000
+      internalID: 1283393026412561427
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Reward_Coin_30
+      rect:
+        serializedVersion: 2
+        x: 585
+        y: 1092
+        width: 13
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 955014ae03ee9fcc0800000000000000
+      internalID: -3676645726915328679
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Reward_Coin_31
+      rect:
+        serializedVersion: 2
+        x: 609
+        y: 1100
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 800b82a9c11834cb0800000000000000
+      internalID: -4880915611294060536
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Reward_Coin_32
+      rect:
+        serializedVersion: 2
+        x: 1131
+        y: 1104
+        width: 10
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3d82aa96c832e5330800000000000000
+      internalID: 3701435029720279251
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Reward_Coin_33
+      rect:
+        serializedVersion: 2
+        x: 119
+        y: 1082
+        width: 11
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9e60bfd291d216050800000000000000
+      internalID: 5791960181944026857
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Reward_Coin_34
+      rect:
+        serializedVersion: 2
+        x: 129
+        y: 1082
+        width: 9
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7d96bc161175026d0800000000000000
+      internalID: -3017316018171450921
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Reward_Coin_35
+      rect:
+        serializedVersion: 2
+        x: 137
+        y: 1092
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ac3b8ffa29fa86720800000000000000
+      internalID: 2839712609609495498
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Reward_Coin_36
+      rect:
+        serializedVersion: 2
+        x: 147
+        y: 1086
+        width: 15
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4f07bd5e506bbf840800000000000000
+      internalID: 5258997126332641524
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Reward_Coin_37
+      rect:
+        serializedVersion: 2
+        x: 213
+        y: 1088
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4d0c2d82c98f47f10800000000000000
+      internalID: 2266709862057689300
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Reward_Coin_38
+      rect:
+        serializedVersion: 2
+        x: 271
+        y: 1030
+        width: 56
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c7e28a6907387b500800000000000000
+      internalID: 411942410514869884
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Reward_Coin_39
+      rect:
+        serializedVersion: 2
+        x: 514
+        y: 1092
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bf6acc53c86048770800000000000000
+      internalID: 8612015586707023611
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Reward_Coin_40
+      rect:
+        serializedVersion: 2
+        x: 561
+        y: 1086
+        width: 7
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cfedfa1a90f5749e0800000000000000
+      internalID: -1637235444553883908
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Reward_Coin_41
+      rect:
+        serializedVersion: 2
+        x: 118
+        y: 1066
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8cb0d9d65b50737a0800000000000000
+      internalID: -6397638468870272056
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Reward_Coin_42
+      rect:
+        serializedVersion: 2
+        x: 127
+        y: 1068
+        width: 9
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a7b162965543b4f50800000000000000
+      internalID: 6866639598297422714
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Reward_Coin_43
+      rect:
+        serializedVersion: 2
+        x: 504
+        y: 1065
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f1b1b7c68030515c0800000000000000
+      internalID: -4245483739012195553
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Reward_Coin_44
+      rect:
+        serializedVersion: 2
+        x: 569
+        y: 1047
+        width: 29
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cf325ac5b4c2b6990800000000000000
+      internalID: -7391765661210041348
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Reward_Coin_45
+      rect:
+        serializedVersion: 2
+        x: 802
+        y: 1058
+        width: 19
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 98fba9f523ea21360800000000000000
+      internalID: 7138959890711232393
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Reward_Coin_46
+      rect:
+        serializedVersion: 2
+        x: 826
+        y: 1052
+        width: 11
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5d919fb60ea4a2630800000000000000
+      internalID: 3903014354814573013
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Reward_Coin_47
+      rect:
+        serializedVersion: 2
+        x: 1159
+        y: 996
+        width: 84
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f645f6ca259dacf50800000000000000
+      internalID: 6902568328002229359
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Reward_Coin_48
+      rect:
+        serializedVersion: 2
+        x: 442
+        y: 1054
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 72ed9b3702478ebe0800000000000000
+      internalID: -1447779597470278105
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Reward_Coin_49
+      rect:
+        serializedVersion: 2
+        x: 583
+        y: 1040
+        width: 11
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3dd7a1d1bb6d60270800000000000000
+      internalID: 8216490669319552467
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Reward_Coin_50
+      rect:
+        serializedVersion: 2
+        x: 946
+        y: 1028
+        width: 50
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cbed1dc1cc0d77de0800000000000000
+      internalID: -1335369189416640836
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Reward_Coin_51
+      rect:
+        serializedVersion: 2
+        x: 1119
+        y: 1046
+        width: 24
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e3fcfbb0a46740f90800000000000000
+      internalID: -6988330661375389890
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Reward_Coin_52
+      rect:
+        serializedVersion: 2
+        x: 498
+        y: 1036
+        width: 10
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3720068c210459da0800000000000000
+      internalID: -5938770084202806669
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Reward_Coin_53
+      rect:
+        serializedVersion: 2
+        x: 587
+        y: 1037
+        width: 7
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 530d5627979071d70800000000000000
+      internalID: 9013683596420304949
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Reward_Coin_54
+      rect:
+        serializedVersion: 2
+        x: 888
+        y: 1030
+        width: 20
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 09bc461ca5f01ef30800000000000000
+      internalID: 4602977176615439248
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Reward_Coin_55
+      rect:
+        serializedVersion: 2
+        x: 906
+        y: 1026
+        width: 13
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1ec8562f14c117440800000000000000
+      internalID: 4931754136512597217
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Reward_Coin_56
+      rect:
+        serializedVersion: 2
+        x: 922
+        y: 1020
+        width: 14
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d6b8bdb0096d3dc60800000000000000
+      internalID: 7841847290344737645
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Reward_Coin_57
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 642
+        width: 944
+        height: 380
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6cd1bfc876df5ebb0800000000000000
+      internalID: -4907237597761561146
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Reward_Coin_58
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1000
+        width: 5
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 960de66f65aa7ffe0800000000000000
+      internalID: -1155267488918876055
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Reward_Coin_59
+      rect:
+        serializedVersion: 2
+        x: 1198
+        y: 1012
+        width: 7
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fd7a2e4a8b5aa3cd0800000000000000
+      internalID: -2577565624257304609
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Reward_Coin_60
+      rect:
+        serializedVersion: 2
+        x: 912
+        y: 680
+        width: 340
+        height: 318
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6879ead960a2a8ad0800000000000000
+      internalID: -2699298818751555706
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Reward_Coin_61
+      rect:
+        serializedVersion: 2
+        x: 1149
+        y: 980
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: df8296e7da09517c0800000000000000
+      internalID: -4101212810826405635
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Reward_Coin_62
+      rect:
+        serializedVersion: 2
+        x: 1228
+        y: 795
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c51c3fb9a9b272a70800000000000000
+      internalID: 8802051939760324956
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Reward_Coin_63
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 1254
+        height: 705
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f043cc156991cd740800000000000000
+      internalID: 5178041804977353743
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Reward_Coin_64
+      rect:
+        serializedVersion: 2
+        x: 908
+        y: 682
+        width: 31
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 50ec0d2854cb32f00800000000000000
+      internalID: 1090922541487279621
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Reward_Coin_65
+      rect:
+        serializedVersion: 2
+        x: 1150
+        y: 656
+        width: 71
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 96c83a3e16bc35860800000000000000
+      internalID: 7517575824302902377
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Reward_Coin_66
+      rect:
+        serializedVersion: 2
+        x: 1221
+        y: 695
+        width: 13
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 65a48a38e026b7b40800000000000000
+      internalID: 5439048789457914454
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Reward_Coin_67
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 258
+        width: 10
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4b91b9bc969381220800000000000000
+      internalID: 2456776723280894388
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Reward_Coin_68
+      rect:
+        serializedVersion: 2
+        x: 127
+        y: 262
+        width: 9
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 34db34ef07e56d320800000000000000
+      internalID: 2582355275738758467
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Reward_Coin_69
+      rect:
+        serializedVersion: 2
+        x: 239
+        y: 264
+        width: 11
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 98d0f5451ae0402d0800000000000000
+      internalID: -3313507339769803383
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Reward_Coin_70
+      rect:
+        serializedVersion: 2
+        x: 657
+        y: 262
+        width: 9
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6d40d1840b581d680800000000000000
+      internalID: -8732051210324081450
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Reward_Coin_71
+      rect:
+        serializedVersion: 2
+        x: 295
+        y: 244
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a2621ddb99e961590800000000000000
+      internalID: -7703795729418869206
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Reward_Coin_72
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 230
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f7d6e6f5cd69cf0d0800000000000000
+      internalID: -3387666946451411585
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Reward_Coin_73
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 227
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b6873def975125460800000000000000
+      internalID: 7228863965593565291
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Reward_Coin_74
+      rect:
+        serializedVersion: 2
+        x: 115
+        y: 232
+        width: 13
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 222636dcc58cca280800000000000000
+      internalID: -9030622851876298206
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Reward_Coin_75
+      rect:
+        serializedVersion: 2
+        x: 721
+        y: 232
+        width: 8
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 57b709fcc29cb0a00800000000000000
+      internalID: 723893359421193077
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Reward_Coin_76
+      rect:
+        serializedVersion: 2
+        x: 745
+        y: 232
+        width: 6
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0ed9b6f601d4af450800000000000000
+      internalID: 6123291376347749856
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Reward_Coin_77
+      rect:
+        serializedVersion: 2
+        x: 997
+        y: 230
+        width: 7
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 57b368ed5356ef270800000000000000
+      internalID: 8286171646449302389
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Reward_Coin_78
+      rect:
+        serializedVersion: 2
+        x: 1073
+        y: 232
+        width: 11
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9d914de1338d452d0800000000000000
+      internalID: -3290767713628841511
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Reward_Coin_79
+      rect:
+        serializedVersion: 2
+        x: 1099
+        y: 218
+        width: 17
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d0b65d75d63066950800000000000000
+      internalID: 6441840085159996173
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Reward_Coin_80
+      rect:
+        serializedVersion: 2
+        x: 259
+        y: 208
+        width: 16
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2e0908cd988fb9a90800000000000000
+      internalID: -7305972699484876574
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Reward_Coin_81
+      rect:
+        serializedVersion: 2
+        x: 360
+        y: 200
+        width: 13
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b2fabb0745c02c310800000000000000
+      internalID: 1423713989010632491
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Reward_Coin_82
+      rect:
+        serializedVersion: 2
+        x: 506
+        y: 210
+        width: 9
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d33294c2393f2f500800000000000000
+      internalID: 428672727982351165
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Reward_Coin_83
+      rect:
+        serializedVersion: 2
+        x: 563
+        y: 204
+        width: 15
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7fb5aa73302ea4db0800000000000000
+      internalID: -4806781148817892361
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Reward_Coin_84
+      rect:
+        serializedVersion: 2
+        x: 822
+        y: 194
+        width: 7
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6c7a6bf31b72308e0800000000000000
+      internalID: -1728494189748508730
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Reward_Coin_85
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 176
+        width: 7
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5a1702d395b113460800000000000000
+      internalID: 7219581747743191461
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Reward_Coin_86
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 182
+        width: 7
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 29c0314163d4c8e00800000000000000
+      internalID: 1048297707930848402
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Reward_Coin_87
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 171
+        width: 56
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3d789da0448353660800000000000000
+      internalID: 7364854630525274067
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Reward_Coin_88
+      rect:
+        serializedVersion: 2
+        x: 303
+        y: 190
+        width: 12
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: da7dcea677895e600800000000000000
+      internalID: 496970972556744621
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Reward_Coin_89
+      rect:
+        serializedVersion: 2
+        x: 898
+        y: 184
+        width: 9
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 187034dd502005400800000000000000
+      internalID: 310750598498813825
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Reward_Coin_90
+      rect:
+        serializedVersion: 2
+        x: 924
+        y: 182
+        width: 14
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a29e5d1171bb90ec0800000000000000
+      internalID: -3600140719348127446
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Reward_Coin_91
+      rect:
+        serializedVersion: 2
+        x: 721
+        y: 180
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e6d6af384855c15c0800000000000000
+      internalID: -4243422721251578514
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Reward_Coin_92
+      rect:
+        serializedVersion: 2
+        x: 1180
+        y: 176
+        width: 11
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4d759a03463ac0a30800000000000000
+      internalID: 4182897804628809684
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Reward_Coin_93
+      rect:
+        serializedVersion: 2
+        x: 311
+        y: 155
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 80d6aac091f8277b0800000000000000
+      internalID: -5227958879674274552
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Reward_Coin_94
+      rect:
+        serializedVersion: 2
+        x: 338
+        y: 146
+        width: 7
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2d4655d4da68f71f0800000000000000
+      internalID: -1044968509641759534
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Reward_Coin_95
+      rect:
+        serializedVersion: 2
+        x: 729
+        y: 160
+        width: 24
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b6c9d5a07a7da58f0800000000000000
+      internalID: -550890891966047125
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Reward_Coin_96
+      rect:
+        serializedVersion: 2
+        x: 1051
+        y: 152
+        width: 9
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1b13dfde8fdd2b8b0800000000000000
+      internalID: -5137800163661893199
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Reward_Coin_97
+      rect:
+        serializedVersion: 2
+        x: 116
+        y: 128
+        width: 20
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c5de7b204c390c1b0800000000000000
+      internalID: -5638344263399379620
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Reward_Coin_98
+      rect:
+        serializedVersion: 2
+        x: 326
+        y: 147
+        width: 13
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ab3819f49cb20c750800000000000000
+      internalID: 6323102020451533754
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Reward_Coin_99
+      rect:
+        serializedVersion: 2
+        x: 617
+        y: 117
+        width: 41
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 72b1927c9363e9860800000000000000
+      internalID: 7538522448047184679
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Reward_Coin_100
+      rect:
+        serializedVersion: 2
+        x: 297
+        y: 128
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ce67f5a7c8bd39d60800000000000000
+      internalID: 7895895968105592556
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Reward_Coin_101
+      rect:
+        serializedVersion: 2
+        x: 1165
+        y: 118
+        width: 8
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fddc215719e411d90800000000000000
+      internalID: -7128830348509393441
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Reward_Coin_102
+      rect:
+        serializedVersion: 2
+        x: 526
+        y: 101
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2f41be73afc5ee680800000000000000
+      internalID: -8723933198420339470
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Reward_Coin_103
+      rect:
+        serializedVersion: 2
+        x: 1149
+        y: 24
+        width: 12
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 082120a5474ed22c0800000000000000
+      internalID: -4454653268022128000
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable: {}
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

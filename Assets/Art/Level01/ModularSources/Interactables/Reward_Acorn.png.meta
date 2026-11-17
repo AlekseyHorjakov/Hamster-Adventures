@@ -1,0 +1,3007 @@
+fileFormatVersion: 2
+guid: 25e63cf7cde1fcc4d87eb011c52ead63
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -8388375050629284450
+    second: Reward_Acorn_0
+  - first:
+      213: 1691620291116800019
+    second: Reward_Acorn_1
+  - first:
+      213: 5477121297497986276
+    second: Reward_Acorn_2
+  - first:
+      213: 6852591564373782148
+    second: Reward_Acorn_3
+  - first:
+      213: -6409912687974840918
+    second: Reward_Acorn_4
+  - first:
+      213: -7096312084473769222
+    second: Reward_Acorn_5
+  - first:
+      213: 1468426788468482243
+    second: Reward_Acorn_6
+  - first:
+      213: 6177889350603968159
+    second: Reward_Acorn_7
+  - first:
+      213: -3058655516206743034
+    second: Reward_Acorn_8
+  - first:
+      213: 1966314294937288352
+    second: Reward_Acorn_9
+  - first:
+      213: -4454506931170653055
+    second: Reward_Acorn_10
+  - first:
+      213: -4351571277421863264
+    second: Reward_Acorn_11
+  - first:
+      213: -2504505354170630993
+    second: Reward_Acorn_12
+  - first:
+      213: -2928924263997330957
+    second: Reward_Acorn_13
+  - first:
+      213: -9073372688129238565
+    second: Reward_Acorn_14
+  - first:
+      213: 1048459623736202500
+    second: Reward_Acorn_15
+  - first:
+      213: -3913673472736925199
+    second: Reward_Acorn_16
+  - first:
+      213: 3009228913657755500
+    second: Reward_Acorn_17
+  - first:
+      213: 1929913771153619437
+    second: Reward_Acorn_18
+  - first:
+      213: 4677392427018904215
+    second: Reward_Acorn_19
+  - first:
+      213: 2867976296808830825
+    second: Reward_Acorn_20
+  - first:
+      213: -5095575496278029471
+    second: Reward_Acorn_21
+  - first:
+      213: -7697481248574404647
+    second: Reward_Acorn_22
+  - first:
+      213: 8355777032027996928
+    second: Reward_Acorn_23
+  - first:
+      213: -4295630433165481875
+    second: Reward_Acorn_24
+  - first:
+      213: 6292997311188529853
+    second: Reward_Acorn_25
+  - first:
+      213: -6766157887689837280
+    second: Reward_Acorn_26
+  - first:
+      213: 6810901083768878440
+    second: Reward_Acorn_27
+  - first:
+      213: -85392164699356791
+    second: Reward_Acorn_28
+  - first:
+      213: -4594901664925730396
+    second: Reward_Acorn_29
+  - first:
+      213: 1059001403625731060
+    second: Reward_Acorn_30
+  - first:
+      213: -1644736708119841248
+    second: Reward_Acorn_31
+  - first:
+      213: -1252196667146452669
+    second: Reward_Acorn_32
+  - first:
+      213: 7681609754477094443
+    second: Reward_Acorn_33
+  - first:
+      213: -6900569353512583144
+    second: Reward_Acorn_34
+  - first:
+      213: -8752966168299499930
+    second: Reward_Acorn_35
+  - first:
+      213: 4200070987287065843
+    second: Reward_Acorn_36
+  - first:
+      213: 8285057908237463220
+    second: Reward_Acorn_37
+  - first:
+      213: -6821353213820528809
+    second: Reward_Acorn_38
+  - first:
+      213: 6198993155265101018
+    second: Reward_Acorn_39
+  - first:
+      213: -5834447368894434264
+    second: Reward_Acorn_40
+  - first:
+      213: 7514721067156514089
+    second: Reward_Acorn_41
+  - first:
+      213: 7452426294155296315
+    second: Reward_Acorn_42
+  - first:
+      213: 49079578560599403
+    second: Reward_Acorn_43
+  - first:
+      213: -8653478347244881867
+    second: Reward_Acorn_44
+  - first:
+      213: -995646976415143524
+    second: Reward_Acorn_45
+  - first:
+      213: 7158756190691707089
+    second: Reward_Acorn_46
+  - first:
+      213: 1490658016083372576
+    second: Reward_Acorn_47
+  - first:
+      213: 6591694371958696146
+    second: Reward_Acorn_48
+  - first:
+      213: -7012079113441893254
+    second: Reward_Acorn_49
+  - first:
+      213: -7428586371044170200
+    second: Reward_Acorn_50
+  - first:
+      213: -3678778841565092260
+    second: Reward_Acorn_51
+  - first:
+      213: -4848554215472222549
+    second: Reward_Acorn_52
+  - first:
+      213: -6977369519867507952
+    second: Reward_Acorn_53
+  - first:
+      213: -327721439728271635
+    second: Reward_Acorn_54
+  - first:
+      213: 790800121410582999
+    second: Reward_Acorn_55
+  - first:
+      213: 5226442229022211724
+    second: Reward_Acorn_56
+  - first:
+      213: -1073529353898920994
+    second: Reward_Acorn_57
+  - first:
+      213: 104738660757276146
+    second: Reward_Acorn_58
+  - first:
+      213: -696596076216648128
+    second: Reward_Acorn_59
+  - first:
+      213: 9189960764097906314
+    second: Reward_Acorn_60
+  - first:
+      213: 7080093637864447320
+    second: Reward_Acorn_61
+  - first:
+      213: -1412813271054790020
+    second: Reward_Acorn_62
+  - first:
+      213: 8798591213575177409
+    second: Reward_Acorn_63
+  - first:
+      213: -7698779322053031246
+    second: Reward_Acorn_64
+  - first:
+      213: -4505209161011664139
+    second: Reward_Acorn_65
+  - first:
+      213: -9056020862776740925
+    second: Reward_Acorn_66
+  - first:
+      213: -6687908532733192060
+    second: Reward_Acorn_67
+  - first:
+      213: -2605883785305661779
+    second: Reward_Acorn_68
+  - first:
+      213: -8589127671689455842
+    second: Reward_Acorn_69
+  - first:
+      213: 498033154413920345
+    second: Reward_Acorn_70
+  - first:
+      213: 3541570707881092380
+    second: Reward_Acorn_71
+  - first:
+      213: -2094386311412578832
+    second: Reward_Acorn_72
+  - first:
+      213: -7858257468700082574
+    second: Reward_Acorn_73
+  - first:
+      213: -4867794899337845805
+    second: Reward_Acorn_74
+  - first:
+      213: -374390310883962724
+    second: Reward_Acorn_75
+  - first:
+      213: -842814515089666423
+    second: Reward_Acorn_76
+  - first:
+      213: -3613558250573721833
+    second: Reward_Acorn_77
+  - first:
+      213: -6686103894260141011
+    second: Reward_Acorn_78
+  - first:
+      213: -3897582936147397058
+    second: Reward_Acorn_79
+  - first:
+      213: 6593583377557980490
+    second: Reward_Acorn_80
+  - first:
+      213: 448747941023601644
+    second: Reward_Acorn_81
+  - first:
+      213: 7121390359518617727
+    second: Reward_Acorn_82
+  - first:
+      213: -4389152489752205147
+    second: Reward_Acorn_83
+  - first:
+      213: -782189606903391437
+    second: Reward_Acorn_84
+  - first:
+      213: 6490443131551735287
+    second: Reward_Acorn_85
+  - first:
+      213: -3676363890602002645
+    second: Reward_Acorn_86
+  - first:
+      213: -195017843005231109
+    second: Reward_Acorn_87
+  - first:
+      213: -4480427677758455042
+    second: Reward_Acorn_88
+  - first:
+      213: -7765437691694699538
+    second: Reward_Acorn_89
+  - first:
+      213: 6719777301868445220
+    second: Reward_Acorn_90
+  - first:
+      213: -7549870866918835197
+    second: Reward_Acorn_91
+  - first:
+      213: -1539669852618936324
+    second: Reward_Acorn_92
+  - first:
+      213: 2106825172729382057
+    second: Reward_Acorn_93
+  - first:
+      213: -3970367303252289357
+    second: Reward_Acorn_94
+  - first:
+      213: -3624952529759253052
+    second: Reward_Acorn_95
+  - first:
+      213: 6584123910545024458
+    second: Reward_Acorn_96
+  - first:
+      213: -629634585681499554
+    second: Reward_Acorn_97
+  - first:
+      213: -1536379176328492491
+    second: Reward_Acorn_98
+  - first:
+      213: 3440189824456510989
+    second: Reward_Acorn_99
+  - first:
+      213: -941035268974292663
+    second: Reward_Acorn_100
+  - first:
+      213: 7191833727815097179
+    second: Reward_Acorn_101
+  - first:
+      213: 7455666719036211071
+    second: Reward_Acorn_102
+  - first:
+      213: 3689229918119455225
+    second: Reward_Acorn_103
+  - first:
+      213: -8534043852085052431
+    second: Reward_Acorn_104
+  - first:
+      213: 713504995599856435
+    second: Reward_Acorn_105
+  - first:
+      213: -2729373208750368926
+    second: Reward_Acorn_106
+  - first:
+      213: 2402192228873687848
+    second: Reward_Acorn_107
+  - first:
+      213: 7886085000957923239
+    second: Reward_Acorn_108
+  - first:
+      213: 4265617842522730076
+    second: Reward_Acorn_109
+  - first:
+      213: 4159422100945288330
+    second: Reward_Acorn_110
+  - first:
+      213: 4544376736505632141
+    second: Reward_Acorn_111
+  - first:
+      213: -3928841862419638057
+    second: Reward_Acorn_112
+  - first:
+      213: 3749097724429396960
+    second: Reward_Acorn_113
+  - first:
+      213: 237505516368401407
+    second: Reward_Acorn_114
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 1
+  spriteExtrude: 1
+  spriteMeshType: 0
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationMethod: 0
+  spriteTessellationDetail: -1
+  spriteGeometrySubdivision: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Reward_Acorn_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1084
+        width: 102
+        height: 142
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e9dfd70c551869b80800000000000000
+      internalID: -8388375050629284450
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Reward_Acorn_1
+      rect:
+        serializedVersion: 2
+        x: 175
+        y: 1062
+        width: 196
+        height: 172
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3181cd231b7d97710800000000000000
+      internalID: 1691620291116800019
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Reward_Acorn_2
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 1191
+        width: 40
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4e418111dc4a20c40800000000000000
+      internalID: 5477121297497986276
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Reward_Acorn_3
+      rect:
+        serializedVersion: 2
+        x: 627
+        y: 1070
+        width: 81
+        height: 144
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 48e6651a8bb491f50800000000000000
+      internalID: 6852591564373782148
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Reward_Acorn_4
+      rect:
+        serializedVersion: 2
+        x: 707
+        y: 1183
+        width: 66
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aa58df71f5a6b07a0800000000000000
+      internalID: -6409912687974840918
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Reward_Acorn_5
+      rect:
+        serializedVersion: 2
+        x: 820
+        y: 1173
+        width: 41
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: af211adc1c5d48d90800000000000000
+      internalID: -7096312084473769222
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Reward_Acorn_6
+      rect:
+        serializedVersion: 2
+        x: 888
+        y: 1126
+        width: 74
+        height: 93
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3c0e4515266e06410800000000000000
+      internalID: 1468426788468482243
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Reward_Acorn_7
+      rect:
+        serializedVersion: 2
+        x: 1011
+        y: 1189
+        width: 15
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f9e0b6ce1a54cb550800000000000000
+      internalID: 6177889350603968159
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Reward_Acorn_8
+      rect:
+        serializedVersion: 2
+        x: 1039
+        y: 1171
+        width: 49
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 602453273097d85d0800000000000000
+      internalID: -3058655516206743034
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Reward_Acorn_9
+      rect:
+        serializedVersion: 2
+        x: 1099
+        y: 1203
+        width: 7
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0ae728aee60c94b10800000000000000
+      internalID: 1966314294937288352
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Reward_Acorn_10
+      rect:
+        serializedVersion: 2
+        x: 1101
+        y: 1189
+        width: 15
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 18cce0e0c896e22c0800000000000000
+      internalID: -4454506931170653055
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Reward_Acorn_11
+      rect:
+        serializedVersion: 2
+        x: 1131
+        y: 1152
+        width: 80
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0ae1a729afc1c93c0800000000000000
+      internalID: -4351571277421863264
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Reward_Acorn_12
+      rect:
+        serializedVersion: 2
+        x: 143
+        y: 1092
+        width: 85
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fac789a56a53e3dd0800000000000000
+      internalID: -2504505354170630993
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Reward_Acorn_13
+      rect:
+        serializedVersion: 2
+        x: 376
+        y: 1060
+        width: 196
+        height: 140
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3f9aa6666ee5a57d0800000000000000
+      internalID: -2928924263997330957
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Reward_Acorn_14
+      rect:
+        serializedVersion: 2
+        x: 778
+        y: 1142
+        width: 49
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bd95359ec97e41280800000000000000
+      internalID: -9073372688129238565
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Reward_Acorn_15
+      rect:
+        serializedVersion: 2
+        x: 796
+        y: 1172
+        width: 7
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 405d22a0970ec8e00800000000000000
+      internalID: 1048459623736202500
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Reward_Acorn_16
+      rect:
+        serializedVersion: 2
+        x: 824
+        y: 1160
+        width: 13
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1f965aa46b6dfa9c0800000000000000
+      internalID: -3913673472736925199
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Reward_Acorn_17
+      rect:
+        serializedVersion: 2
+        x: 826
+        y: 1060
+        width: 49
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c67b76ed0cde2c920800000000000000
+      internalID: 3009228913657755500
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Reward_Acorn_18
+      rect:
+        serializedVersion: 2
+        x: 961
+        y: 1169
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: de9feb8895e68ca10800000000000000
+      internalID: 1929913771153619437
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Reward_Acorn_19
+      rect:
+        serializedVersion: 2
+        x: 964
+        y: 1161
+        width: 24
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 792609761af69e040800000000000000
+      internalID: 4677392427018904215
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Reward_Acorn_20
+      rect:
+        serializedVersion: 2
+        x: 969
+        y: 1012
+        width: 270
+        height: 152
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 967d78b2f391dc720800000000000000
+      internalID: 2867976296808830825
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Reward_Acorn_21
+      rect:
+        serializedVersion: 2
+        x: 1081
+        y: 1167
+        width: 11
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 16bc92a6511e849b0800000000000000
+      internalID: -5095575496278029471
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Reward_Acorn_22
+      rect:
+        serializedVersion: 2
+        x: 1091
+        y: 1162
+        width: 33
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9d70e71669d0d2590800000000000000
+      internalID: -7697481248574404647
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Reward_Acorn_23
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 1128
+        width: 35
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 003856890fea5f370800000000000000
+      internalID: 8355777032027996928
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Reward_Acorn_24
+      rect:
+        serializedVersion: 2
+        x: 691
+        y: 1062
+        width: 120
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d6860d851ead264c0800000000000000
+      internalID: -4295630433165481875
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Reward_Acorn_25
+      rect:
+        serializedVersion: 2
+        x: 792
+        y: 1140
+        width: 11
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: db271e976b7355750800000000000000
+      internalID: 6292997311188529853
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Reward_Acorn_26
+      rect:
+        serializedVersion: 2
+        x: 114
+        y: 1108
+        width: 24
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0253a02ff37c912a0800000000000000
+      internalID: -6766157887689837280
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Reward_Acorn_27
+      rect:
+        serializedVersion: 2
+        x: 360
+        y: 1105
+        width: 29
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 865fd52337e258e50800000000000000
+      internalID: 6810901083768878440
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Reward_Acorn_28
+      rect:
+        serializedVersion: 2
+        x: 553
+        y: 1120
+        width: 7
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9814e745740a0def0800000000000000
+      internalID: -85392164699356791
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Reward_Acorn_29
+      rect:
+        serializedVersion: 2
+        x: 577
+        y: 1116
+        width: 21
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4a93044d741ab30c0800000000000000
+      internalID: -4594901664925730396
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Reward_Acorn_30
+      rect:
+        serializedVersion: 2
+        x: 924
+        y: 1124
+        width: 10
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4f370cf6a2452be00800000000000000
+      internalID: 1059001403625731060
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Reward_Acorn_31
+      rect:
+        serializedVersion: 2
+        x: 930
+        y: 1124
+        width: 10
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 026b87b9da8bc29e0800000000000000
+      internalID: -1644736708119841248
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Reward_Acorn_32
+      rect:
+        serializedVersion: 2
+        x: 936
+        y: 1060
+        width: 30
+        height: 69
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 341cec104cd4f9ee0800000000000000
+      internalID: -1252196667146452669
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Reward_Acorn_33
+      rect:
+        serializedVersion: 2
+        x: 247
+        y: 1093
+        width: 9
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b2668ce6f5f8a9a60800000000000000
+      internalID: 7681609754477094443
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Reward_Acorn_34
+      rect:
+        serializedVersion: 2
+        x: 323
+        y: 1112
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8108fe7dbb04c30a0800000000000000
+      internalID: -6900569353512583144
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Reward_Acorn_35
+      rect:
+        serializedVersion: 2
+        x: 390
+        y: 1102
+        width: 11
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 66e0f7725a7378680800000000000000
+      internalID: -8752966168299499930
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Reward_Acorn_36
+      rect:
+        serializedVersion: 2
+        x: 705
+        y: 1108
+        width: 7
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3f47bac5f46a94a30800000000000000
+      internalID: 4200070987287065843
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Reward_Acorn_37
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 1090
+        width: 24
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4bee80c75407af270800000000000000
+      internalID: 8285057908237463220
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Reward_Acorn_38
+      rect:
+        serializedVersion: 2
+        x: 464
+        y: 1061
+        width: 9
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 75712c2a46fa551a0800000000000000
+      internalID: -6821353213820528809
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Reward_Acorn_39
+      rect:
+        serializedVersion: 2
+        x: 583
+        y: 1072
+        width: 29
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: adc77a85e6f370650800000000000000
+      internalID: 6198993155265101018
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Reward_Acorn_40
+      rect:
+        serializedVersion: 2
+        x: 812
+        y: 1074
+        width: 15
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 824b55cb701e70fa0800000000000000
+      internalID: -5834447368894434264
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Reward_Acorn_41
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 628
+        width: 1254
+        height: 435
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9252202fef6a94860800000000000000
+      internalID: 7514721067156514089
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Reward_Acorn_42
+      rect:
+        serializedVersion: 2
+        x: 183
+        y: 1042
+        width: 9
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b3e38e9da365c6760800000000000000
+      internalID: 7452426294155296315
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Reward_Acorn_43
+      rect:
+        serializedVersion: 2
+        x: 368
+        y: 1040
+        width: 33
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b6594dddd9d5ea000800000000000000
+      internalID: 49079578560599403
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Reward_Acorn_44
+      rect:
+        serializedVersion: 2
+        x: 1172
+        y: 660
+        width: 41
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5383fe09a4ba8e780800000000000000
+      internalID: -8653478347244881867
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Reward_Acorn_45
+      rect:
+        serializedVersion: 2
+        x: 1236
+        y: 713
+        width: 9
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c996511a950ce22f0800000000000000
+      internalID: -995646976415143524
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Reward_Acorn_46
+      rect:
+        serializedVersion: 2
+        x: 241
+        y: 674
+        width: 7
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1d8cec3a3d2095360800000000000000
+      internalID: 7158756190691707089
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Reward_Acorn_47
+      rect:
+        serializedVersion: 2
+        x: 249
+        y: 674
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 02aec3a5191efa410800000000000000
+      internalID: 1490658016083372576
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Reward_Acorn_48
+      rect:
+        serializedVersion: 2
+        x: 265
+        y: 673
+        width: 25
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2d82a846b176a7b50800000000000000
+      internalID: 6591694371958696146
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Reward_Acorn_49
+      rect:
+        serializedVersion: 2
+        x: 319
+        y: 663
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a742c5aa23710be90800000000000000
+      internalID: -7012079113441893254
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Reward_Acorn_50
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 676
+        width: 14
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 826aa9acd0c58e890800000000000000
+      internalID: -7428586371044170200
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Reward_Acorn_51
+      rect:
+        serializedVersion: 2
+        x: 613
+        y: 666
+        width: 17
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c562a45722a52fcc0800000000000000
+      internalID: -3678778841565092260
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Reward_Acorn_52
+      rect:
+        serializedVersion: 2
+        x: 627
+        y: 676
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bae2e8831a976bcb0800000000000000
+      internalID: -4848554215472222549
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Reward_Acorn_53
+      rect:
+        serializedVersion: 2
+        x: 689
+        y: 666
+        width: 9
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 01bc8ada3676b2f90800000000000000
+      internalID: -6977369519867507952
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Reward_Acorn_54
+      rect:
+        serializedVersion: 2
+        x: 737
+        y: 666
+        width: 12
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dee77bf3613b37bf0800000000000000
+      internalID: -327721439728271635
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Reward_Acorn_55
+      rect:
+        serializedVersion: 2
+        x: 752
+        y: 661
+        width: 29
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7d97305458c79fa00800000000000000
+      internalID: 790800121410582999
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Reward_Acorn_56
+      rect:
+        serializedVersion: 2
+        x: 979
+        y: 666
+        width: 25
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c8e38f3348d088840800000000000000
+      internalID: 5226442229022211724
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Reward_Acorn_57
+      rect:
+        serializedVersion: 2
+        x: 1123
+        y: 658
+        width: 20
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ed376ec8dbe0a11f0800000000000000
+      internalID: -1073529353898920994
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Reward_Acorn_58
+      rect:
+        serializedVersion: 2
+        x: 673
+        y: 658
+        width: 10
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2f500bcc14b147100800000000000000
+      internalID: 104738660757276146
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Reward_Acorn_59
+      rect:
+        serializedVersion: 2
+        x: 709
+        y: 660
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 04efc253f813556f0800000000000000
+      internalID: -696596076216648128
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Reward_Acorn_60
+      rect:
+        serializedVersion: 2
+        x: 745
+        y: 664
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a8645dbdf9c498f70800000000000000
+      internalID: 9189960764097906314
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Reward_Acorn_61
+      rect:
+        serializedVersion: 2
+        x: 778
+        y: 656
+        width: 9
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 85dd965d6ab814260800000000000000
+      internalID: 7080093637864447320
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Reward_Acorn_62
+      rect:
+        serializedVersion: 2
+        x: 295
+        y: 648
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c7252dcb0dda46ce0800000000000000
+      internalID: -1412813271054790020
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Reward_Acorn_63
+      rect:
+        serializedVersion: 2
+        x: 1011
+        y: 622
+        width: 17
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1c485018710ea1a70800000000000000
+      internalID: 8798591213575177409
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Reward_Acorn_64
+      rect:
+        serializedVersion: 2
+        x: 1109
+        y: 643
+        width: 7
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2ba08e81ff0782590800000000000000
+      internalID: -7698779322053031246
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Reward_Acorn_65
+      rect:
+        serializedVersion: 2
+        x: 1115
+        y: 648
+        width: 11
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5fa601f33284a71c0800000000000000
+      internalID: -4505209161011664139
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Reward_Acorn_66
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 1254
+        height: 632
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3c37aa3910d825280800000000000000
+      internalID: -9056020862776740925
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Reward_Acorn_67
+      rect:
+        serializedVersion: 2
+        x: 46
+        y: 632
+        width: 11
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4885220af96cf23a0800000000000000
+      internalID: -6687908532733192060
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Reward_Acorn_68
+      rect:
+        serializedVersion: 2
+        x: 956
+        y: 623
+        width: 24
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: daed7eaf08a06dbd0800000000000000
+      internalID: -2605883785305661779
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Reward_Acorn_69
+      rect:
+        serializedVersion: 2
+        x: 987
+        y: 626
+        width: 9
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e17d876c3e94dc880800000000000000
+      internalID: -8589127671689455842
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Reward_Acorn_70
+      rect:
+        serializedVersion: 2
+        x: 1174
+        y: 628
+        width: 7
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9508537e38e59e600800000000000000
+      internalID: 498033154413920345
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Reward_Acorn_71
+      rect:
+        serializedVersion: 2
+        x: 84
+        y: 612
+        width: 12
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c156e267bcf262130800000000000000
+      internalID: 3541570707881092380
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Reward_Acorn_72
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 449
+        width: 5
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0f500dd0fbe3fe2e0800000000000000
+      internalID: -2094386311412578832
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Reward_Acorn_73
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 417
+        width: 5
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 27e3290977cd1f290800000000000000
+      internalID: -7858257468700082574
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Reward_Acorn_74
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 278
+        width: 5
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3d36289645e127cb0800000000000000
+      internalID: -4867794899337845805
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Reward_Acorn_75
+      rect:
+        serializedVersion: 2
+        x: 161
+        y: 214
+        width: 15
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c90d960fef5edcaf0800000000000000
+      internalID: -374390310883962724
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Reward_Acorn_76
+      rect:
+        serializedVersion: 2
+        x: 723
+        y: 212
+        width: 16
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 98e8988f9a8bd44f0800000000000000
+      internalID: -842814515089666423
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Reward_Acorn_77
+      rect:
+        serializedVersion: 2
+        x: 1133
+        y: 210
+        width: 7
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 71f0f53aaef0addc0800000000000000
+      internalID: -3613558250573721833
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Reward_Acorn_78
+      rect:
+        serializedVersion: 2
+        x: 1139
+        y: 212
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d24b443ceef2633a0800000000000000
+      internalID: -6686103894260141011
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Reward_Acorn_79
+      rect:
+        serializedVersion: 2
+        x: 802
+        y: 198
+        width: 7
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e367f4848f009e9c0800000000000000
+      internalID: -3897582936147397058
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Reward_Acorn_80
+      rect:
+        serializedVersion: 2
+        x: 1149
+        y: 205
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a458348c52d118b50800000000000000
+      internalID: 6593583377557980490
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Reward_Acorn_81
+      rect:
+        serializedVersion: 2
+        x: 1149
+        y: 179
+        width: 24
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ce35662ffd54a3600800000000000000
+      internalID: 448747941023601644
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Reward_Acorn_82
+      rect:
+        serializedVersion: 2
+        x: 191
+        y: 180
+        width: 9
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f70affd1dc244d260800000000000000
+      internalID: 7121390359518617727
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Reward_Acorn_83
+      rect:
+        serializedVersion: 2
+        x: 305
+        y: 166
+        width: 32
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5a86c47b0199613c0800000000000000
+      internalID: -4389152489752205147
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Reward_Acorn_84
+      rect:
+        serializedVersion: 2
+        x: 810
+        y: 194
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 33b558d52ba1525f0800000000000000
+      internalID: -782189606903391437
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Reward_Acorn_85
+      rect:
+        serializedVersion: 2
+        x: 297
+        y: 179
+        width: 11
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7fdd30be3afa21a50800000000000000
+      internalID: 6490443131551735287
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Reward_Acorn_86
+      rect:
+        serializedVersion: 2
+        x: 490
+        y: 182
+        width: 7
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b27389b058eeafcc0800000000000000
+      internalID: -3676363890602002645
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Reward_Acorn_87
+      rect:
+        serializedVersion: 2
+        x: 1083
+        y: 164
+        width: 25
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bff6fc61e482b4df0800000000000000
+      internalID: -195017843005231109
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Reward_Acorn_88
+      rect:
+        serializedVersion: 2
+        x: 74
+        y: 166
+        width: 7
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ef20161f3c252d1c0800000000000000
+      internalID: -4480427677758455042
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Reward_Acorn_89
+      rect:
+        serializedVersion: 2
+        x: 498
+        y: 136
+        width: 20
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eebab1dff8f9b3490800000000000000
+      internalID: -7765437691694699538
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Reward_Acorn_90
+      rect:
+        serializedVersion: 2
+        x: 715
+        y: 160
+        width: 11
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 42ef9976ad1714d50800000000000000
+      internalID: 6719777301868445220
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Reward_Acorn_91
+      rect:
+        serializedVersion: 2
+        x: 940
+        y: 160
+        width: 6
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 30c7b3d8278793790800000000000000
+      internalID: -7549870866918835197
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Reward_Acorn_92
+      rect:
+        serializedVersion: 2
+        x: 1045
+        y: 160
+        width: 7
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cff25433d6ef1aae0800000000000000
+      internalID: -1539669852618936324
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Reward_Acorn_93
+      rect:
+        serializedVersion: 2
+        x: 1115
+        y: 162
+        width: 9
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9a4c2680552fc3d10800000000000000
+      internalID: 2106825172729382057
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Reward_Acorn_94
+      rect:
+        serializedVersion: 2
+        x: 1155
+        y: 158
+        width: 8
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3b852dd39fb66e8c0800000000000000
+      internalID: -3970367303252289357
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Reward_Acorn_95
+      rect:
+        serializedVersion: 2
+        x: 454
+        y: 150
+        width: 11
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4cdcb0841e491bdc0800000000000000
+      internalID: -3624952529759253052
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Reward_Acorn_96
+      rect:
+        serializedVersion: 2
+        x: 464
+        y: 147
+        width: 13
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ac5213dffc18f5b50800000000000000
+      internalID: 6584123910545024458
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Reward_Acorn_97
+      rect:
+        serializedVersion: 2
+        x: 1129
+        y: 156
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e5a67262ea61347f0800000000000000
+      internalID: -629634585681499554
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Reward_Acorn_98
+      rect:
+        serializedVersion: 2
+        x: 1133
+        y: 150
+        width: 12
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 53a02aa774fadaae0800000000000000
+      internalID: -1536379176328492491
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Reward_Acorn_99
+      rect:
+        serializedVersion: 2
+        x: 1141
+        y: 154
+        width: 10
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d0ec4ae1b620ebf20800000000000000
+      internalID: 3440189824456510989
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Reward_Acorn_100
+      rect:
+        serializedVersion: 2
+        x: 279
+        y: 130
+        width: 9
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9415caf9865c0f2f0800000000000000
+      internalID: -941035268974292663
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Reward_Acorn_101
+      rect:
+        serializedVersion: 2
+        x: 717
+        y: 144
+        width: 8
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b5b9716eba68ec360800000000000000
+      internalID: 7191833727815097179
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Reward_Acorn_102
+      rect:
+        serializedVersion: 2
+        x: 742
+        y: 134
+        width: 11
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f7ffadf0169d77760800000000000000
+      internalID: 7455666719036211071
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Reward_Acorn_103
+      rect:
+        serializedVersion: 2
+        x: 756
+        y: 122
+        width: 31
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9f9e04c6017c23330800000000000000
+      internalID: 3689229918119455225
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Reward_Acorn_104
+      rect:
+        serializedVersion: 2
+        x: 932
+        y: 128
+        width: 16
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1fb3dd2f45cf09980800000000000000
+      internalID: -8534043852085052431
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Reward_Acorn_105
+      rect:
+        serializedVersion: 2
+        x: 434
+        y: 120
+        width: 7
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 33332306301e6e900800000000000000
+      internalID: 713504995599856435
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Reward_Acorn_106
+      rect:
+        serializedVersion: 2
+        x: 737
+        y: 136
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 26757f807815f1ad0800000000000000
+      internalID: -2729373208750368926
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Reward_Acorn_107
+      rect:
+        serializedVersion: 2
+        x: 892
+        y: 128
+        width: 7
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8235834da1d465120800000000000000
+      internalID: 2402192228873687848
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Reward_Acorn_108
+      rect:
+        serializedVersion: 2
+        x: 1084
+        y: 93
+        width: 26
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7af02aea680017d60800000000000000
+      internalID: 7886085000957923239
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Reward_Acorn_109
+      rect:
+        serializedVersion: 2
+        x: 1159
+        y: 99
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c5ea22bd3d4823b30800000000000000
+      internalID: 4265617842522730076
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Reward_Acorn_110
+      rect:
+        serializedVersion: 2
+        x: 739
+        y: 89
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a8cb0cdfc5c39b930800000000000000
+      internalID: 4159422100945288330
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Reward_Acorn_111
+      rect:
+        serializedVersion: 2
+        x: 954
+        y: 85
+        width: 6
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d8597f0909ed01f30800000000000000
+      internalID: 4544376736505632141
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Reward_Acorn_112
+      rect:
+        serializedVersion: 2
+        x: 1117
+        y: 88
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7d81bcb5423f979c0800000000000000
+      internalID: -3928841862419638057
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Reward_Acorn_113
+      rect:
+        serializedVersion: 2
+        x: 944
+        y: 73
+        width: 14
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0ebe6dc4488770430800000000000000
+      internalID: 3749097724429396960
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Reward_Acorn_114
+      rect:
+        serializedVersion: 2
+        x: 506
+        y: 7
+        width: 10
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ff3955f320acb4300800000000000000
+      internalID: 237505516368401407
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable: {}
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

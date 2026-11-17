@@ -6,7 +6,7 @@ using UnityEngine.UI;
 /// <summary>Стартовый экран, выбор режима и героя, продолжение с чекпоинта.</summary>
 public class MainMenuController : MonoBehaviour
 {
-    private const string LevelSceneName = "Level01_VerticalSlice";
+    private const string LevelSceneName = "Level01_Full";
 
     private enum Screen
     {
@@ -82,6 +82,7 @@ public class MainMenuController : MonoBehaviour
         WireButtons();
 
         ShowMainMenu();
+
     }
 
     private void Update()

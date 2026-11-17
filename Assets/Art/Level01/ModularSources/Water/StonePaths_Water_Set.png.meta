@@ -1,0 +1,1432 @@
+fileFormatVersion: 2
+guid: 0ae3054195fe9cd43a6a871df6dd6efe
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -6473435629819618634
+    second: StonePaths_Water_Set_0
+  - first:
+      213: 2436772910476916790
+    second: StonePaths_Water_Set_1
+  - first:
+      213: -3252734557123570161
+    second: StonePaths_Water_Set_2
+  - first:
+      213: 5700383896591406289
+    second: StonePaths_Water_Set_3
+  - first:
+      213: -5580394684644935342
+    second: StonePaths_Water_Set_4
+  - first:
+      213: -5800996355587799362
+    second: StonePaths_Water_Set_5
+  - first:
+      213: 6071160563657180874
+    second: StonePaths_Water_Set_6
+  - first:
+      213: -7413666450541352057
+    second: StonePaths_Water_Set_7
+  - first:
+      213: 2555675556096132296
+    second: StonePaths_Water_Set_8
+  - first:
+      213: 1382644105920622566
+    second: StonePaths_Water_Set_9
+  - first:
+      213: 9170395951772730939
+    second: StonePaths_Water_Set_10
+  - first:
+      213: 2786264055055765783
+    second: StonePaths_Water_Set_11
+  - first:
+      213: 1681813635672590419
+    second: StonePaths_Water_Set_12
+  - first:
+      213: -7842259948235694160
+    second: StonePaths_Water_Set_13
+  - first:
+      213: 8306606491532204397
+    second: StonePaths_Water_Set_14
+  - first:
+      213: -1896164032798869514
+    second: StonePaths_Water_Set_15
+  - first:
+      213: -4199540401700027277
+    second: StonePaths_Water_Set_16
+  - first:
+      213: -7589342407834063312
+    second: StonePaths_Water_Set_17
+  - first:
+      213: -4566367215849463213
+    second: StonePaths_Water_Set_18
+  - first:
+      213: -6093002779563630178
+    second: StonePaths_Water_Set_19
+  - first:
+      213: 9181146008346304932
+    second: StonePaths_Water_Set_20
+  - first:
+      213: 7704270950583626019
+    second: StonePaths_Water_Set_21
+  - first:
+      213: 7484588643372118670
+    second: StonePaths_Water_Set_22
+  - first:
+      213: 2349049094621264158
+    second: StonePaths_Water_Set_23
+  - first:
+      213: 3244707007100456943
+    second: StonePaths_Water_Set_24
+  - first:
+      213: 6161198421960762865
+    second: StonePaths_Water_Set_25
+  - first:
+      213: -162751703817319533
+    second: StonePaths_Water_Set_26
+  - first:
+      213: -7823830056791403341
+    second: StonePaths_Water_Set_27
+  - first:
+      213: 1914408090927427769
+    second: StonePaths_Water_Set_28
+  - first:
+      213: 1976580594056277089
+    second: StonePaths_Water_Set_29
+  - first:
+      213: -7183063062106446303
+    second: StonePaths_Water_Set_30
+  - first:
+      213: 7487425529055149838
+    second: StonePaths_Water_Set_31
+  - first:
+      213: -4363639894390997538
+    second: StonePaths_Water_Set_32
+  - first:
+      213: 4789281510831398313
+    second: StonePaths_Water_Set_33
+  - first:
+      213: 6181272073596279497
+    second: StonePaths_Water_Set_34
+  - first:
+      213: 4153351002768384773
+    second: StonePaths_Water_Set_35
+  - first:
+      213: -5075029044976529101
+    second: StonePaths_Water_Set_36
+  - first:
+      213: 5852022724235174586
+    second: StonePaths_Water_Set_37
+  - first:
+      213: -3555246669942511463
+    second: StonePaths_Water_Set_38
+  - first:
+      213: -7252985585123471371
+    second: StonePaths_Water_Set_39
+  - first:
+      213: 3122764584014959973
+    second: StonePaths_Water_Set_40
+  - first:
+      213: 9122800490905765616
+    second: StonePaths_Water_Set_41
+  - first:
+      213: -7412553419376867130
+    second: StonePaths_Water_Set_42
+  - first:
+      213: -4429223439633049275
+    second: StonePaths_Water_Set_43
+  - first:
+      213: 4188935149136405919
+    second: StonePaths_Water_Set_44
+  - first:
+      213: -9025869579339406474
+    second: StonePaths_Water_Set_45
+  - first:
+      213: 3633528189831571621
+    second: StonePaths_Water_Set_46
+  - first:
+      213: 3248919985826931914
+    second: StonePaths_Water_Set_47
+  - first:
+      213: 3498734568524097136
+    second: StonePaths_Water_Set_48
+  - first:
+      213: -1595588115655046095
+    second: StonePaths_Water_Set_49
+  - first:
+      213: -7292743971187504578
+    second: StonePaths_Water_Set_50
+  - first:
+      213: -9063575545175813768
+    second: StonePaths_Water_Set_51
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 1
+  spriteExtrude: 1
+  spriteMeshType: 0
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationMethod: 0
+  spriteTessellationDetail: -1
+  spriteGeometrySubdivision: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: StonePaths_Water_Set_0
+      rect:
+        serializedVersion: 2
+        x: 74
+        y: 959
+        width: 25
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6ba9e38a79cb926a0800000000000000
+      internalID: -6473435629819618634
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: StonePaths_Water_Set_1
+      rect:
+        serializedVersion: 2
+        x: 94
+        y: 937
+        width: 35
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 638754f2d0821d120800000000000000
+      internalID: 2436772910476916790
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: StonePaths_Water_Set_2
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 943
+        width: 75
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f06130e6727fbd2d0800000000000000
+      internalID: -3252734557123570161
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: StonePaths_Water_Set_3
+      rect:
+        serializedVersion: 2
+        x: 268
+        y: 949
+        width: 95
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1d410b7b3f4db1f40800000000000000
+      internalID: 5700383896591406289
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: StonePaths_Water_Set_4
+      rect:
+        serializedVersion: 2
+        x: 382
+        y: 786
+        width: 209
+        height: 224
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 259b24bb9947e82b0800000000000000
+      internalID: -5580394684644935342
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: StonePaths_Water_Set_5
+      rect:
+        serializedVersion: 2
+        x: 494
+        y: 985
+        width: 33
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eb68ad1bc88be7fa0800000000000000
+      internalID: -5800996355587799362
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: StonePaths_Water_Set_6
+      rect:
+        serializedVersion: 2
+        x: 558
+        y: 969
+        width: 19
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ac68523cd58114450800000000000000
+      internalID: 6071160563657180874
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: StonePaths_Water_Set_7
+      rect:
+        serializedVersion: 2
+        x: 574
+        y: 996
+        width: 19
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 78b604c74ad5d1990800000000000000
+      internalID: -7413666450541352057
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: StonePaths_Water_Set_8
+      rect:
+        serializedVersion: 2
+        x: 584
+        y: 977
+        width: 11
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8c44242b065977320800000000000000
+      internalID: 2555675556096132296
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: StonePaths_Water_Set_9
+      rect:
+        serializedVersion: 2
+        x: 598
+        y: 961
+        width: 55
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6efaf202d73203310800000000000000
+      internalID: 1382644105920622566
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: StonePaths_Water_Set_10
+      rect:
+        serializedVersion: 2
+        x: 868
+        y: 970
+        width: 39
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b360813088ac34f70800000000000000
+      internalID: 9170395951772730939
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: StonePaths_Water_Set_11
+      rect:
+        serializedVersion: 2
+        x: 1016
+        y: 814
+        width: 211
+        height: 184
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 711d904556ccaa620800000000000000
+      internalID: 2786264055055765783
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: StonePaths_Water_Set_12
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 949
+        width: 25
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3584cac4790075710800000000000000
+      internalID: 1681813635672590419
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: StonePaths_Water_Set_13
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 965
+        width: 65
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0bf532d8022ba2390800000000000000
+      internalID: -7842259948235694160
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: StonePaths_Water_Set_14
+      rect:
+        serializedVersion: 2
+        x: 650
+        y: 951
+        width: 61
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d691bb0089ef64370800000000000000
+      internalID: 8306606491532204397
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: StonePaths_Water_Set_15
+      rect:
+        serializedVersion: 2
+        x: 743
+        y: 943
+        width: 80
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6f7b625cbd87fa5e0800000000000000
+      internalID: -1896164032798869514
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: StonePaths_Water_Set_16
+      rect:
+        serializedVersion: 2
+        x: 816
+        y: 815
+        width: 191
+        height: 175
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 374c4c8314c38b5c0800000000000000
+      internalID: -4199540401700027277
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: StonePaths_Water_Set_17
+      rect:
+        serializedVersion: 2
+        x: 866
+        y: 973
+        width: 7
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 03e2e364a4d3da690800000000000000
+      internalID: -7589342407834063312
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: StonePaths_Water_Set_18
+      rect:
+        serializedVersion: 2
+        x: 880
+        y: 969
+        width: 7
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 352ad49f53101a0c0800000000000000
+      internalID: -4566367215849463213
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: StonePaths_Water_Set_19
+      rect:
+        serializedVersion: 2
+        x: 1247
+        y: 817
+        width: 263
+        height: 166
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e9164ac014e417ba0800000000000000
+      internalID: -6093002779563630178
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: StonePaths_Water_Set_20
+      rect:
+        serializedVersion: 2
+        x: 186
+        y: 789
+        width: 202
+        height: 163
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4a12a7a96abf96f70800000000000000
+      internalID: 9181146008346304932
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: StonePaths_Water_Set_21
+      rect:
+        serializedVersion: 2
+        x: 386
+        y: 929
+        width: 15
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 329e5ee4c911bea60800000000000000
+      internalID: 7704270950583626019
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: StonePaths_Water_Set_22
+      rect:
+        serializedVersion: 2
+        x: 590
+        y: 801
+        width: 207
+        height: 144
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e823e1257b99ed760800000000000000
+      internalID: 7484588643372118670
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: StonePaths_Water_Set_23
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 737
+        width: 187
+        height: 187
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e197adca4bf799020800000000000000
+      internalID: 2349049094621264158
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: StonePaths_Water_Set_24
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 613
+        width: 247
+        height: 157
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fef817ee4d3870d20800000000000000
+      internalID: 3244707007100456943
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: StonePaths_Water_Set_25
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 805
+        width: 13
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1f52ba34259f08550800000000000000
+      internalID: 6161198421960762865
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: StonePaths_Water_Set_26
+      rect:
+        serializedVersion: 2
+        x: 118
+        y: 799
+        width: 9
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 39b016b003acdbdf0800000000000000
+      internalID: -162751703817319533
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: StonePaths_Water_Set_27
+      rect:
+        serializedVersion: 2
+        x: 188
+        y: 807
+        width: 47
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3b49ce9040c2c6390800000000000000
+      internalID: -7823830056791403341
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: StonePaths_Water_Set_28
+      rect:
+        serializedVersion: 2
+        x: 232
+        y: 613
+        width: 283
+        height: 194
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9b0fcd60408519a10800000000000000
+      internalID: 1914408090927427769
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: StonePaths_Water_Set_29
+      rect:
+        serializedVersion: 2
+        x: 232
+        y: 778
+        width: 9
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 16ca7a2f3993e6b10800000000000000
+      internalID: 1976580594056277089
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: StonePaths_Water_Set_30
+      rect:
+        serializedVersion: 2
+        x: 234
+        y: 797
+        width: 29
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1266ae7d332a05c90800000000000000
+      internalID: -7183063062106446303
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: StonePaths_Water_Set_31
+      rect:
+        serializedVersion: 2
+        x: 350
+        y: 794
+        width: 21
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e0ff58d39dda8e760800000000000000
+      internalID: 7487425529055149838
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: StonePaths_Water_Set_32
+      rect:
+        serializedVersion: 2
+        x: 390
+        y: 807
+        width: 17
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eddf917b2ac3173c0800000000000000
+      internalID: -4363639894390997538
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: StonePaths_Water_Set_33
+      rect:
+        serializedVersion: 2
+        x: 474
+        y: 753
+        width: 37
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9ad937ec822f67240800000000000000
+      internalID: 4789281510831398313
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: StonePaths_Water_Set_34
+      rect:
+        serializedVersion: 2
+        x: 516
+        y: 615
+        width: 291
+        height: 191
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9ca9fbe733a48c550800000000000000
+      internalID: 6181272073596279497
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: StonePaths_Water_Set_35
+      rect:
+        serializedVersion: 2
+        x: 582
+        y: 801
+        width: 25
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 503a58b4bbaa3a930800000000000000
+      internalID: 4153351002768384773
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: StonePaths_Water_Set_36
+      rect:
+        serializedVersion: 2
+        x: 732
+        y: 781
+        width: 25
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3315265e8ffd199b0800000000000000
+      internalID: -5075029044976529101
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: StonePaths_Water_Set_37
+      rect:
+        serializedVersion: 2
+        x: 812
+        y: 607
+        width: 329
+        height: 211
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ab22d8f89af863150800000000000000
+      internalID: 5852022724235174586
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: StonePaths_Water_Set_38
+      rect:
+        serializedVersion: 2
+        x: 830
+        y: 806
+        width: 25
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 998af2d7df939aec0800000000000000
+      internalID: -3555246669942511463
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: StonePaths_Water_Set_39
+      rect:
+        serializedVersion: 2
+        x: 1144
+        y: 599
+        width: 373
+        height: 219
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5ffcfadc908385b90800000000000000
+      internalID: -7252985585123471371
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: StonePaths_Water_Set_40
+      rect:
+        serializedVersion: 2
+        x: 806
+        y: 703
+        width: 9
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 565d16318d9465b20800000000000000
+      internalID: 3122764584014959973
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: StonePaths_Water_Set_41
+      rect:
+        serializedVersion: 2
+        x: 260
+        y: 613
+        width: 19
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0f6823936b2ba9e70800000000000000
+      internalID: 9122800490905765616
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: StonePaths_Water_Set_42
+      rect:
+        serializedVersion: 2
+        x: 376
+        y: 622
+        width: 15
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6c84f6f30f1512990800000000000000
+      internalID: -7412553419376867130
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: StonePaths_Water_Set_43
+      rect:
+        serializedVersion: 2
+        x: 442
+        y: 612
+        width: 23
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 54996d9afbc3882c0800000000000000
+      internalID: -4429223439633049275
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: StonePaths_Water_Set_44
+      rect:
+        serializedVersion: 2
+        x: 558
+        y: 610
+        width: 15
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f956c6ff256122a30800000000000000
+      internalID: 4188935149136405919
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: StonePaths_Water_Set_45
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 1536
+        height: 618
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 673687e407badb280800000000000000
+      internalID: -9025869579339406474
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: StonePaths_Water_Set_46
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 607
+        width: 13
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5a8674c23a2ec6230800000000000000
+      internalID: 3633528189831571621
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: StonePaths_Water_Set_47
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 605
+        width: 15
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ac4a1ea738b761d20800000000000000
+      internalID: 3248919985826931914
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: StonePaths_Water_Set_48
+      rect:
+        serializedVersion: 2
+        x: 152
+        y: 609
+        width: 7
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 07622409d800e8030800000000000000
+      internalID: 3498734568524097136
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: StonePaths_Water_Set_49
+      rect:
+        serializedVersion: 2
+        x: 314
+        y: 587
+        width: 13
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 13ccb8600155bd9e0800000000000000
+      internalID: -1595588115655046095
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: StonePaths_Water_Set_50
+      rect:
+        serializedVersion: 2
+        x: 358
+        y: 607
+        width: 9
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e3a4f7f2ff7faca90800000000000000
+      internalID: -7292743971187504578
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: StonePaths_Water_Set_51
+      rect:
+        serializedVersion: 2
+        x: 408
+        y: 571
+        width: 41
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 871d0e20016b73280800000000000000
+      internalID: -9063575545175813768
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable: {}
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

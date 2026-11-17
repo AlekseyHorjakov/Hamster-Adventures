@@ -11,6 +11,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Level01_VerticalSlice.unity
     guid: 565540fe97fb24347be9068a44db7ab3
+  - enabled: 1
+    path: Assets/Scenes/Level01_Full.unity
+    guid: 72279ce5366aaac49a31b3f176353b68
   m_configObjects:
     com.unity.input.settings: {fileID: 11400000, guid: fd066c0e695b3b34e968ff61059a4960, type: 2}
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}

@@ -1,0 +1,932 @@
+fileFormatVersion: 2
+guid: 10a59aa5c4f250e41b72257b2410984c
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 8377160361299642298
+    second: LandingDust_0
+  - first:
+      213: 3876601899081650688
+    second: LandingDust_1
+  - first:
+      213: -6327491042200409986
+    second: LandingDust_2
+  - first:
+      213: 5297300990211702298
+    second: LandingDust_3
+  - first:
+      213: -3742542746470881531
+    second: LandingDust_4
+  - first:
+      213: -8090645818632971399
+    second: LandingDust_5
+  - first:
+      213: -6302559204558278915
+    second: LandingDust_6
+  - first:
+      213: 7727159358827484223
+    second: LandingDust_7
+  - first:
+      213: -1117206028140989878
+    second: LandingDust_8
+  - first:
+      213: 5813225184908919741
+    second: LandingDust_9
+  - first:
+      213: -2645094425360524582
+    second: LandingDust_10
+  - first:
+      213: 3872710628057932109
+    second: LandingDust_11
+  - first:
+      213: 8961490540405705999
+    second: LandingDust_12
+  - first:
+      213: -8359168726328658418
+    second: LandingDust_13
+  - first:
+      213: 571839429570770494
+    second: LandingDust_14
+  - first:
+      213: -5882322972671493025
+    second: LandingDust_15
+  - first:
+      213: -1814130814092803962
+    second: LandingDust_16
+  - first:
+      213: -5180955292908334352
+    second: LandingDust_17
+  - first:
+      213: -6053840225585996826
+    second: LandingDust_18
+  - first:
+      213: -4055431986959931573
+    second: LandingDust_19
+  - first:
+      213: 1037348991718832380
+    second: LandingDust_20
+  - first:
+      213: 7311648691151104399
+    second: LandingDust_21
+  - first:
+      213: 6725558930650753992
+    second: LandingDust_22
+  - first:
+      213: 2199646043374638183
+    second: LandingDust_23
+  - first:
+      213: 2223489669030275732
+    second: LandingDust_24
+  - first:
+      213: -6999877866964570661
+    second: LandingDust_25
+  - first:
+      213: 2046115804839678973
+    second: LandingDust_26
+  - first:
+      213: -7228879870115482845
+    second: LandingDust_27
+  - first:
+      213: -4296615372396851318
+    second: LandingDust_28
+  - first:
+      213: 1834892772462745656
+    second: LandingDust_29
+  - first:
+      213: -2272038350229777509
+    second: LandingDust_30
+  - first:
+      213: 9053834380925708678
+    second: LandingDust_31
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 1
+  spriteExtrude: 1
+  spriteMeshType: 0
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationMethod: 0
+  spriteTessellationDetail: -1
+  spriteGeometrySubdivision: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: LandingDust_0
+      rect:
+        serializedVersion: 2
+        x: 779
+        y: 30
+        width: 230
+        height: 173
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ab78fb9e6f6a14470800000000000000
+      internalID: 8377160361299642298
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LandingDust_1
+      rect:
+        serializedVersion: 2
+        x: 799
+        y: 166
+        width: 41
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 002dd5a53e47cc530800000000000000
+      internalID: 3876601899081650688
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LandingDust_2
+      rect:
+        serializedVersion: 2
+        x: 899
+        y: 202
+        width: 30
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e78ad2eeb6c3038a0800000000000000
+      internalID: -6327491042200409986
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LandingDust_3
+      rect:
+        serializedVersion: 2
+        x: 938
+        y: 174
+        width: 33
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a1eb4ed2f2bc38940800000000000000
+      internalID: 5297300990211702298
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LandingDust_4
+      rect:
+        serializedVersion: 2
+        x: 1179
+        y: 174
+        width: 31
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 50763ef6331df0cc0800000000000000
+      internalID: -3742542746470881531
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LandingDust_5
+      rect:
+        serializedVersion: 2
+        x: 230
+        y: 144
+        width: 15
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 97bd1e87e7048bf80800000000000000
+      internalID: -8090645818632971399
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LandingDust_6
+      rect:
+        serializedVersion: 2
+        x: 366
+        y: 149
+        width: 30
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dfe6f6cbbcfc888a0800000000000000
+      internalID: -6302559204558278915
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LandingDust_7
+      rect:
+        serializedVersion: 2
+        x: 523
+        y: 62
+        width: 186
+        height: 109
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f345fb12f726c3b60800000000000000
+      internalID: 7727159358827484223
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LandingDust_8
+      rect:
+        serializedVersion: 2
+        x: 530
+        y: 148
+        width: 33
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a423bbf5903ee70f0800000000000000
+      internalID: -1117206028140989878
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LandingDust_9
+      rect:
+        serializedVersion: 2
+        x: 618
+        y: 165
+        width: 36
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: db3c9d18189bca050800000000000000
+      internalID: 5813225184908919741
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LandingDust_10
+      rect:
+        serializedVersion: 2
+        x: 732
+        y: 156
+        width: 25
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ada150b62acba4bd0800000000000000
+      internalID: -2645094425360524582
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LandingDust_11
+      rect:
+        serializedVersion: 2
+        x: 1036
+        y: 52
+        width: 159
+        height: 125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d41e5473cc1aeb530800000000000000
+      internalID: 3872710628057932109
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LandingDust_12
+      rect:
+        serializedVersion: 2
+        x: 1072
+        y: 143
+        width: 50
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f0dc7ee9a2c9d5c70800000000000000
+      internalID: 8961490540405705999
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LandingDust_13
+      rect:
+        serializedVersion: 2
+        x: 1396
+        y: 164
+        width: 31
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e0630a905544efb80800000000000000
+      internalID: -8359168726328658418
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LandingDust_14
+      rect:
+        serializedVersion: 2
+        x: 14
+        y: 88
+        width: 143
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e36b0247ee49fe700800000000000000
+      internalID: 571839429570770494
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LandingDust_15
+      rect:
+        serializedVersion: 2
+        x: 267
+        y: 80
+        width: 175
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f5cbbc71c6acd5ea0800000000000000
+      internalID: -5882322972671493025
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LandingDust_16
+      rect:
+        serializedVersion: 2
+        x: 281
+        y: 134
+        width: 28
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 68088e1e2a9e2d6e0800000000000000
+      internalID: -1814130814092803962
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LandingDust_17
+      rect:
+        serializedVersion: 2
+        x: 482
+        y: 141
+        width: 19
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0f2d4096c9c8918b0800000000000000
+      internalID: -5180955292908334352
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LandingDust_18
+      rect:
+        serializedVersion: 2
+        x: 976
+        y: 105
+        width: 34
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6ebd9f2b3607cfba0800000000000000
+      internalID: -6053840225585996826
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LandingDust_19
+      rect:
+        serializedVersion: 2
+        x: 1203
+        y: 133
+        width: 18
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b472f7e281638b7c0800000000000000
+      internalID: -4055431986959931573
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LandingDust_20
+      rect:
+        serializedVersion: 2
+        x: 1223
+        y: 127
+        width: 29
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cf8b28f6967656e00800000000000000
+      internalID: 1037348991718832380
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LandingDust_21
+      rect:
+        serializedVersion: 2
+        x: 1317
+        y: 98
+        width: 72
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f89e28eeeb1387560800000000000000
+      internalID: 7311648691151104399
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LandingDust_22
+      rect:
+        serializedVersion: 2
+        x: 1467
+        y: 105
+        width: 31
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8cbe461c63cf55d50800000000000000
+      internalID: 6725558930650753992
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LandingDust_23
+      rect:
+        serializedVersion: 2
+        x: 141
+        y: 109
+        width: 24
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 76450f61c66b68e10800000000000000
+      internalID: 2199646043374638183
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LandingDust_24
+      rect:
+        serializedVersion: 2
+        x: 223
+        y: 91
+        width: 22
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 49aec4cc21c6bde10800000000000000
+      internalID: 2223489669030275732
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LandingDust_25
+      rect:
+        serializedVersion: 2
+        x: 467
+        y: 80
+        width: 34
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bdd257cba207bde90800000000000000
+      internalID: -6999877866964570661
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LandingDust_26
+      rect:
+        serializedVersion: 2
+        x: 731
+        y: 64
+        width: 26
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: df318c4db73456c10800000000000000
+      internalID: 2046115804839678973
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LandingDust_27
+      rect:
+        serializedVersion: 2
+        x: 1148
+        y: 52
+        width: 118
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3237bc1fe0cddab90800000000000000
+      internalID: -7228879870115482845
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LandingDust_28
+      rect:
+        serializedVersion: 2
+        x: 1366
+        y: 82
+        width: 37
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a8f8dcf451b5f54c0800000000000000
+      internalID: -4296615372396851318
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LandingDust_29
+      rect:
+        serializedVersion: 2
+        x: 1424
+        y: 65
+        width: 69
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 838d29f3149d67910800000000000000
+      internalID: 1834892772462745656
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LandingDust_30
+      rect:
+        serializedVersion: 2
+        x: 1294
+        y: 65
+        width: 39
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b935d7288291870e0800000000000000
+      internalID: -2272038350229777509
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LandingDust_31
+      rect:
+        serializedVersion: 2
+        x: 1497
+        y: 80
+        width: 25
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 689ab42766ea5ad70800000000000000
+      internalID: 9053834380925708678
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable: {}
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

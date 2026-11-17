@@ -1,0 +1,1757 @@
+fileFormatVersion: 2
+guid: 2be8a4c5b566d4e4aa89e0ee4c47a40b
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -2531345089855849982
+    second: WaterRocksPlants_Set_0
+  - first:
+      213: 3472375387287768127
+    second: WaterRocksPlants_Set_1
+  - first:
+      213: 3317758414372346329
+    second: WaterRocksPlants_Set_2
+  - first:
+      213: 6381669409068783412
+    second: WaterRocksPlants_Set_3
+  - first:
+      213: -1275570044093203702
+    second: WaterRocksPlants_Set_4
+  - first:
+      213: -2326875715028321935
+    second: WaterRocksPlants_Set_5
+  - first:
+      213: 5580902595821093619
+    second: WaterRocksPlants_Set_6
+  - first:
+      213: 8932138178692517861
+    second: WaterRocksPlants_Set_7
+  - first:
+      213: 7058231564495944082
+    second: WaterRocksPlants_Set_8
+  - first:
+      213: -9043442767897841069
+    second: WaterRocksPlants_Set_9
+  - first:
+      213: -1143267727092436902
+    second: WaterRocksPlants_Set_10
+  - first:
+      213: -3851098715990913954
+    second: WaterRocksPlants_Set_11
+  - first:
+      213: 8357844903575495644
+    second: WaterRocksPlants_Set_12
+  - first:
+      213: -485929325291727885
+    second: WaterRocksPlants_Set_13
+  - first:
+      213: 6893042839165913775
+    second: WaterRocksPlants_Set_14
+  - first:
+      213: -5023424576722654110
+    second: WaterRocksPlants_Set_15
+  - first:
+      213: -4020124861253352432
+    second: WaterRocksPlants_Set_16
+  - first:
+      213: 3908069176334630949
+    second: WaterRocksPlants_Set_17
+  - first:
+      213: 7118888719622465601
+    second: WaterRocksPlants_Set_18
+  - first:
+      213: -2945304880658119883
+    second: WaterRocksPlants_Set_19
+  - first:
+      213: -9074882164310170556
+    second: WaterRocksPlants_Set_20
+  - first:
+      213: -3716435292074539770
+    second: WaterRocksPlants_Set_21
+  - first:
+      213: -1178389669998645256
+    second: WaterRocksPlants_Set_22
+  - first:
+      213: 5032149454312935395
+    second: WaterRocksPlants_Set_23
+  - first:
+      213: 1159944852249606607
+    second: WaterRocksPlants_Set_24
+  - first:
+      213: -9159259742867695562
+    second: WaterRocksPlants_Set_25
+  - first:
+      213: -4209623052372657208
+    second: WaterRocksPlants_Set_26
+  - first:
+      213: 732001092192414322
+    second: WaterRocksPlants_Set_27
+  - first:
+      213: 6100555077662422281
+    second: WaterRocksPlants_Set_28
+  - first:
+      213: 7559123892294271325
+    second: WaterRocksPlants_Set_29
+  - first:
+      213: -160007861028064967
+    second: WaterRocksPlants_Set_30
+  - first:
+      213: 1179796790286359683
+    second: WaterRocksPlants_Set_31
+  - first:
+      213: -5827567874448004614
+    second: WaterRocksPlants_Set_32
+  - first:
+      213: 8324591924589997135
+    second: WaterRocksPlants_Set_33
+  - first:
+      213: -1410556478874489663
+    second: WaterRocksPlants_Set_34
+  - first:
+      213: -3808173291804516971
+    second: WaterRocksPlants_Set_35
+  - first:
+      213: 5901390458782356864
+    second: WaterRocksPlants_Set_36
+  - first:
+      213: -1633325159840295200
+    second: WaterRocksPlants_Set_37
+  - first:
+      213: 6090686791997910586
+    second: WaterRocksPlants_Set_38
+  - first:
+      213: -4046902561814378485
+    second: WaterRocksPlants_Set_39
+  - first:
+      213: -2081699730593295820
+    second: WaterRocksPlants_Set_40
+  - first:
+      213: -4392113582415542943
+    second: WaterRocksPlants_Set_41
+  - first:
+      213: 8738626262202805682
+    second: WaterRocksPlants_Set_42
+  - first:
+      213: 2863705896294435325
+    second: WaterRocksPlants_Set_43
+  - first:
+      213: 2045055415133570990
+    second: WaterRocksPlants_Set_44
+  - first:
+      213: -2351595539483180891
+    second: WaterRocksPlants_Set_45
+  - first:
+      213: 2768807004026358672
+    second: WaterRocksPlants_Set_46
+  - first:
+      213: -5340829380026845410
+    second: WaterRocksPlants_Set_47
+  - first:
+      213: -8949371157040039763
+    second: WaterRocksPlants_Set_48
+  - first:
+      213: -6635455493837111955
+    second: WaterRocksPlants_Set_49
+  - first:
+      213: 683012397107701263
+    second: WaterRocksPlants_Set_50
+  - first:
+      213: 6709143852752445206
+    second: WaterRocksPlants_Set_51
+  - first:
+      213: 7438775701594174551
+    second: WaterRocksPlants_Set_52
+  - first:
+      213: -5900550345517963876
+    second: WaterRocksPlants_Set_53
+  - first:
+      213: -5585313752020333151
+    second: WaterRocksPlants_Set_54
+  - first:
+      213: 7708436718189970511
+    second: WaterRocksPlants_Set_55
+  - first:
+      213: -2864168955940978037
+    second: WaterRocksPlants_Set_56
+  - first:
+      213: 4296160928442147712
+    second: WaterRocksPlants_Set_57
+  - first:
+      213: -7411345791505233339
+    second: WaterRocksPlants_Set_58
+  - first:
+      213: 3642166442079257305
+    second: WaterRocksPlants_Set_59
+  - first:
+      213: 3523918813404253961
+    second: WaterRocksPlants_Set_60
+  - first:
+      213: -7507687394580617480
+    second: WaterRocksPlants_Set_61
+  - first:
+      213: 5007706856995741063
+    second: WaterRocksPlants_Set_62
+  - first:
+      213: 4875410981122977217
+    second: WaterRocksPlants_Set_63
+  - first:
+      213: 3470330243567680099
+    second: WaterRocksPlants_Set_64
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 1
+  spriteExtrude: 1
+  spriteMeshType: 0
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationMethod: 0
+  spriteTessellationDetail: -1
+  spriteGeometrySubdivision: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: WaterRocksPlants_Set_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 871
+        width: 233
+        height: 153
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 20a763b6d0bdedcd0800000000000000
+      internalID: -2531345089855849982
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WaterRocksPlants_Set_1
+      rect:
+        serializedVersion: 2
+        x: 260
+        y: 1005
+        width: 11
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f3cc81e640b503030800000000000000
+      internalID: 3472375387287768127
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WaterRocksPlants_Set_2
+      rect:
+        serializedVersion: 2
+        x: 296
+        y: 1015
+        width: 8
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9d91a3b13bb0b0e20800000000000000
+      internalID: 3317758414372346329
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WaterRocksPlants_Set_3
+      rect:
+        serializedVersion: 2
+        x: 460
+        y: 831
+        width: 222
+        height: 185
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4379589148e309850800000000000000
+      internalID: 6381669409068783412
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WaterRocksPlants_Set_4
+      rect:
+        serializedVersion: 2
+        x: 1284
+        y: 799
+        width: 252
+        height: 224
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a0bf1bb9dc34c4ee0800000000000000
+      internalID: -1275570044093203702
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WaterRocksPlants_Set_5
+      rect:
+        serializedVersion: 2
+        x: 230
+        y: 989
+        width: 13
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 179f0419dd645bfd0800000000000000
+      internalID: -2326875715028321935
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WaterRocksPlants_Set_6
+      rect:
+        serializedVersion: 2
+        x: 250
+        y: 851
+        width: 193
+        height: 157
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3f2c8fd8759537d40800000000000000
+      internalID: 5580902595821093619
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WaterRocksPlants_Set_7
+      rect:
+        serializedVersion: 2
+        x: 681
+        y: 823
+        width: 182
+        height: 185
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5ef0ca9595455fb70800000000000000
+      internalID: 8932138178692517861
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WaterRocksPlants_Set_8
+      rect:
+        serializedVersion: 2
+        x: 852
+        y: 981
+        width: 27
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 299fa383630e3f160800000000000000
+      internalID: 7058231564495944082
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WaterRocksPlants_Set_9
+      rect:
+        serializedVersion: 2
+        x: 888
+        y: 847
+        width: 170
+        height: 153
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 352bfd087bc3f7280800000000000000
+      internalID: -9043442767897841069
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WaterRocksPlants_Set_10
+      rect:
+        serializedVersion: 2
+        x: 1072
+        y: 849
+        width: 177
+        height: 160
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a50bc7b3f0c4220f0800000000000000
+      internalID: -1143267727092436902
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WaterRocksPlants_Set_11
+      rect:
+        serializedVersion: 2
+        x: 1270
+        y: 975
+        width: 27
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e5c066e2f162e8ac0800000000000000
+      internalID: -3851098715990913954
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WaterRocksPlants_Set_12
+      rect:
+        serializedVersion: 2
+        x: 1318
+        y: 999
+        width: 6
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cd32d6578a70df370800000000000000
+      internalID: 8357844903575495644
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WaterRocksPlants_Set_13
+      rect:
+        serializedVersion: 2
+        x: 1322
+        y: 995
+        width: 7
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3f39a0c6ad1a149f0800000000000000
+      internalID: -485929325291727885
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WaterRocksPlants_Set_14
+      rect:
+        serializedVersion: 2
+        x: 74
+        y: 839
+        width: 167
+        height: 135
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: faac80af0f109af50800000000000000
+      internalID: 6893042839165913775
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WaterRocksPlants_Set_15
+      rect:
+        serializedVersion: 2
+        x: 231
+        y: 955
+        width: 24
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 26caa7476f5394ab0800000000000000
+      internalID: -5023424576722654110
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WaterRocksPlants_Set_16
+      rect:
+        serializedVersion: 2
+        x: 870
+        y: 943
+        width: 17
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 014074cfcb5a538c0800000000000000
+      internalID: -4020124861253352432
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WaterRocksPlants_Set_17
+      rect:
+        serializedVersion: 2
+        x: 482
+        y: 910
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5204415c5304c3630800000000000000
+      internalID: 3908069176334630949
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WaterRocksPlants_Set_18
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 787
+        width: 69
+        height: 87
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 148e1a0b29f5bc260800000000000000
+      internalID: 7118888719622465601
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WaterRocksPlants_Set_19
+      rect:
+        serializedVersion: 2
+        x: 26
+        y: 868
+        width: 19
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5330621e0dc2027d0800000000000000
+      internalID: -2945304880658119883
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WaterRocksPlants_Set_20
+      rect:
+        serializedVersion: 2
+        x: 446
+        y: 847
+        width: 17
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 444a3c990ca8f0280800000000000000
+      internalID: -9074882164310170556
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WaterRocksPlants_Set_21
+      rect:
+        serializedVersion: 2
+        x: 1048
+        y: 863
+        width: 19
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6050c29dac19c6cc0800000000000000
+      internalID: -3716435292074539770
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WaterRocksPlants_Set_22
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 839
+        width: 25
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8ffadb8a6d485afe0800000000000000
+      internalID: -1178389669998645256
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WaterRocksPlants_Set_23
+      rect:
+        serializedVersion: 2
+        x: 382
+        y: 854
+        width: 11
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3ef8ff86449c5d540800000000000000
+      internalID: 5032149454312935395
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WaterRocksPlants_Set_24
+      rect:
+        serializedVersion: 2
+        x: 1180
+        y: 682
+        width: 307
+        height: 182
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fc9716d82b3f81010800000000000000
+      internalID: 1159944852249606607
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WaterRocksPlants_Set_25
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 671
+        width: 274
+        height: 171
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 638d5dcaac5c3e080800000000000000
+      internalID: -9159259742867695562
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WaterRocksPlants_Set_26
+      rect:
+        serializedVersion: 2
+        x: 170
+        y: 823
+        width: 33
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8cb380d232a6495c0800000000000000
+      internalID: -4209623052372657208
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WaterRocksPlants_Set_27
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 817
+        width: 23
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 27aa3537d17982a00800000000000000
+      internalID: 732001092192414322
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WaterRocksPlants_Set_28
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 831
+        width: 7
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 90536c0658689a450800000000000000
+      internalID: 6100555077662422281
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WaterRocksPlants_Set_29
+      rect:
+        serializedVersion: 2
+        x: 632
+        y: 839
+        width: 11
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d514e5d412767e860800000000000000
+      internalID: 7559123892294271325
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WaterRocksPlants_Set_30
+      rect:
+        serializedVersion: 2
+        x: 874
+        y: 686
+        width: 297
+        height: 154
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 931f62ab2b987cdf0800000000000000
+      internalID: -160007861028064967
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WaterRocksPlants_Set_31
+      rect:
+        serializedVersion: 2
+        x: 319
+        y: 671
+        width: 268
+        height: 163
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 38c1a201eea7f5010800000000000000
+      internalID: 1179796790286359683
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WaterRocksPlants_Set_32
+      rect:
+        serializedVersion: 2
+        x: 586
+        y: 671
+        width: 267
+        height: 155
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: af96c0bd4e1502fa0800000000000000
+      internalID: -5827567874448004614
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WaterRocksPlants_Set_33
+      rect:
+        serializedVersion: 2
+        x: 856
+        y: 807
+        width: 9
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f4ca545ff34e68370800000000000000
+      internalID: 8324591924589997135
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WaterRocksPlants_Set_34
+      rect:
+        serializedVersion: 2
+        x: 228
+        y: 671
+        width: 45
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1cc6f0d1b52bc6ce0800000000000000
+      internalID: -1410556478874489663
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WaterRocksPlants_Set_35
+      rect:
+        serializedVersion: 2
+        x: 1078
+        y: 433
+        width: 441
+        height: 257
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 59d9cd25196a62bc0800000000000000
+      internalID: -3808173291804516971
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WaterRocksPlants_Set_36
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 219
+        width: 1109
+        height: 231
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0851a98fa53f5e150800000000000000
+      internalID: 5901390458782356864
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WaterRocksPlants_Set_37
+      rect:
+        serializedVersion: 2
+        x: 30
+        y: 445
+        width: 331
+        height: 225
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0e6d20dbb634559e0800000000000000
+      internalID: -1633325159840295200
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WaterRocksPlants_Set_38
+      rect:
+        serializedVersion: 2
+        x: 381
+        y: 459
+        width: 352
+        height: 211
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a3ee2331e57768450800000000000000
+      internalID: 6090686791997910586
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WaterRocksPlants_Set_39
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 423
+        width: 21
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b088f6abf8386d7c0800000000000000
+      internalID: -4046902561814378485
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WaterRocksPlants_Set_40
+      rect:
+        serializedVersion: 2
+        x: 560
+        y: 439
+        width: 11
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 432d5f4df115c13e0800000000000000
+      internalID: -2081699730593295820
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WaterRocksPlants_Set_41
+      rect:
+        serializedVersion: 2
+        x: 732
+        y: 447
+        width: 331
+        height: 221
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 16504fa97f31c03c0800000000000000
+      internalID: -4392113582415542943
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WaterRocksPlants_Set_42
+      rect:
+        serializedVersion: 2
+        x: 1111
+        y: 439
+        width: 8
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2bd6f774946d54970800000000000000
+      internalID: 8738626262202805682
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WaterRocksPlants_Set_43
+      rect:
+        serializedVersion: 2
+        x: 392
+        y: 0
+        width: 773
+        height: 264
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: df942d1175dedb720800000000000000
+      internalID: 2863705896294435325
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WaterRocksPlants_Set_44
+      rect:
+        serializedVersion: 2
+        x: 1098
+        y: 234
+        width: 438
+        height: 208
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ea7860d901f716c10800000000000000
+      internalID: 2045055415133570990
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WaterRocksPlants_Set_45
+      rect:
+        serializedVersion: 2
+        x: 1164
+        y: 0
+        width: 372
+        height: 242
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5a046bde0547d5fd0800000000000000
+      internalID: -2351595539483180891
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WaterRocksPlants_Set_46
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 393
+        height: 209
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 09bca96ec47cc6620800000000000000
+      internalID: 2768807004026358672
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WaterRocksPlants_Set_47
+      rect:
+        serializedVersion: 2
+        x: 1157
+        y: 177
+        width: 10
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e17b78dc9ff81e5b0800000000000000
+      internalID: -5340829380026845410
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WaterRocksPlants_Set_48
+      rect:
+        serializedVersion: 2
+        x: 1152
+        y: 82
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: da8708539527dc380800000000000000
+      internalID: -8949371157040039763
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WaterRocksPlants_Set_49
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 21
+        width: 15
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d6dbcee62602ae3a0800000000000000
+      internalID: -6635455493837111955
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WaterRocksPlants_Set_50
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 25
+        width: 7
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f06eaca082c8a7900800000000000000
+      internalID: 683012397107701263
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WaterRocksPlants_Set_51
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 23
+        width: 9
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 61f1e4a99caab1d50800000000000000
+      internalID: 6709143852752445206
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WaterRocksPlants_Set_52
+      rect:
+        serializedVersion: 2
+        x: 54
+        y: 15
+        width: 37
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 754f3599617db3760800000000000000
+      internalID: 7438775701594174551
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WaterRocksPlants_Set_53
+      rect:
+        serializedVersion: 2
+        x: 88
+        y: 29
+        width: 7
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c95e71429b80d1ea0800000000000000
+      internalID: -5900550345517963876
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WaterRocksPlants_Set_54
+      rect:
+        serializedVersion: 2
+        x: 92
+        y: 18
+        width: 11
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1ad49bb1cbafc72b0800000000000000
+      internalID: -5585313752020333151
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WaterRocksPlants_Set_55
+      rect:
+        serializedVersion: 2
+        x: 101
+        y: 17
+        width: 10
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f448a49aa5ed9fa60800000000000000
+      internalID: 7708436718189970511
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WaterRocksPlants_Set_56
+      rect:
+        serializedVersion: 2
+        x: 232
+        y: 28
+        width: 11
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b82cf64728d6048d0800000000000000
+      internalID: -2864168955940978037
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WaterRocksPlants_Set_57
+      rect:
+        serializedVersion: 2
+        x: 294
+        y: 12
+        width: 17
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 083e4b53a970f9b30800000000000000
+      internalID: 4296160928442147712
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WaterRocksPlants_Set_58
+      rect:
+        serializedVersion: 2
+        x: 312
+        y: 25
+        width: 10
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 54a8eb5054c952990800000000000000
+      internalID: -7411345791505233339
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WaterRocksPlants_Set_59
+      rect:
+        serializedVersion: 2
+        x: 442
+        y: 9
+        width: 37
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9d28bf005139b8230800000000000000
+      internalID: 3642166442079257305
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WaterRocksPlants_Set_60
+      rect:
+        serializedVersion: 2
+        x: 1156
+        y: 15
+        width: 37
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 90fc6428d7977e030800000000000000
+      internalID: 3523918813404253961
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WaterRocksPlants_Set_61
+      rect:
+        serializedVersion: 2
+        x: 1478
+        y: 13
+        width: 17
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8f6285197165fc790800000000000000
+      internalID: -7507687394580617480
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WaterRocksPlants_Set_62
+      rect:
+        serializedVersion: 2
+        x: 1494
+        y: 17
+        width: 9
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 78dd48ebad2fe7540800000000000000
+      internalID: 5007706856995741063
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WaterRocksPlants_Set_63
+      rect:
+        serializedVersion: 2
+        x: 1152
+        y: 16
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1cdafdfc470f8a340800000000000000
+      internalID: 4875410981122977217
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WaterRocksPlants_Set_64
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 7
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 36a752d48f6192030800000000000000
+      internalID: 3470330243567680099
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable: {}
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

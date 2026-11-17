@@ -1,0 +1,907 @@
+fileFormatVersion: 2
+guid: 3a879f5e06cfc094586b996bb995f19e
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 3064216440100270142
+    second: WaterSurface_Tile_0
+  - first:
+      213: -3985535740751007088
+    second: WaterSurface_Tile_1
+  - first:
+      213: 5826333808012762339
+    second: WaterSurface_Tile_2
+  - first:
+      213: -3393605063550203194
+    second: WaterSurface_Tile_3
+  - first:
+      213: 6928771669116525883
+    second: WaterSurface_Tile_4
+  - first:
+      213: -3632649229947892807
+    second: WaterSurface_Tile_5
+  - first:
+      213: 3336276238839750422
+    second: WaterSurface_Tile_6
+  - first:
+      213: 3633192611848654830
+    second: WaterSurface_Tile_7
+  - first:
+      213: 3185697213637959650
+    second: WaterSurface_Tile_8
+  - first:
+      213: 4691522583188771385
+    second: WaterSurface_Tile_9
+  - first:
+      213: -8771366027811009674
+    second: WaterSurface_Tile_10
+  - first:
+      213: 8940126536315063336
+    second: WaterSurface_Tile_11
+  - first:
+      213: -8595889785803647042
+    second: WaterSurface_Tile_12
+  - first:
+      213: -1364863469506650202
+    second: WaterSurface_Tile_13
+  - first:
+      213: -6068377248541141704
+    second: WaterSurface_Tile_14
+  - first:
+      213: 3353083957018566505
+    second: WaterSurface_Tile_15
+  - first:
+      213: -546588285879351900
+    second: WaterSurface_Tile_16
+  - first:
+      213: 6178846384907743314
+    second: WaterSurface_Tile_17
+  - first:
+      213: 8136959743041257002
+    second: WaterSurface_Tile_18
+  - first:
+      213: -889103916387458334
+    second: WaterSurface_Tile_19
+  - first:
+      213: -2677118986800976525
+    second: WaterSurface_Tile_20
+  - first:
+      213: -2611493793273690073
+    second: WaterSurface_Tile_21
+  - first:
+      213: -6352190276092443944
+    second: WaterSurface_Tile_22
+  - first:
+      213: -4852954912531559319
+    second: WaterSurface_Tile_23
+  - first:
+      213: 2030051460548417875
+    second: WaterSurface_Tile_24
+  - first:
+      213: -2635432599407017843
+    second: WaterSurface_Tile_25
+  - first:
+      213: 5717363035616469208
+    second: WaterSurface_Tile_26
+  - first:
+      213: -2441676263464492741
+    second: WaterSurface_Tile_27
+  - first:
+      213: -8756377428051902291
+    second: WaterSurface_Tile_28
+  - first:
+      213: 1858722614782723022
+    second: WaterSurface_Tile_29
+  - first:
+      213: 8694784560540449898
+    second: WaterSurface_Tile_30
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 0
+    wrapV: 0
+    wrapW: 0
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 1
+  spriteExtrude: 1
+  spriteMeshType: 0
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationMethod: 0
+  spriteTessellationDetail: -1
+  spriteGeometrySubdivision: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: WaterSurface_Tile_0
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 605
+        width: 366
+        height: 354
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e30b61b0e98468a20800000000000000
+      internalID: 3064216440100270142
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WaterSurface_Tile_1
+      rect:
+        serializedVersion: 2
+        x: 396
+        y: 605
+        width: 366
+        height: 354
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 092b9ec2c5880b8c0800000000000000
+      internalID: -3985535740751007088
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WaterSurface_Tile_2
+      rect:
+        serializedVersion: 2
+        x: 772
+        y: 605
+        width: 367
+        height: 355
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3ec1379aabb4bd050800000000000000
+      internalID: 5826333808012762339
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WaterSurface_Tile_3
+      rect:
+        serializedVersion: 2
+        x: 1148
+        y: 607
+        width: 368
+        height: 353
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6ca8f1fbc2e77e0d0800000000000000
+      internalID: -3393605063550203194
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WaterSurface_Tile_4
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 348
+        width: 365
+        height: 228
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b3d1b737f11f72060800000000000000
+      internalID: 6928771669116525883
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WaterSurface_Tile_5
+      rect:
+        serializedVersion: 2
+        x: 399
+        y: 345
+        width: 360
+        height: 205
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9bb0c5f95cc369dc0800000000000000
+      internalID: -3632649229947892807
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WaterSurface_Tile_6
+      rect:
+        serializedVersion: 2
+        x: 773
+        y: 348
+        width: 365
+        height: 219
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 61f9e981095dc4e20800000000000000
+      internalID: 3336276238839750422
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WaterSurface_Tile_7
+      rect:
+        serializedVersion: 2
+        x: 1150
+        y: 349
+        width: 365
+        height: 209
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eef00d55e61bb6230800000000000000
+      internalID: 3633192611848654830
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WaterSurface_Tile_8
+      rect:
+        serializedVersion: 2
+        x: 193
+        y: 288
+        width: 9
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2ef97dcbcbed53c20800000000000000
+      internalID: 3185697213637959650
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WaterSurface_Tile_9
+      rect:
+        serializedVersion: 2
+        x: 314
+        y: 283
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 93290b2cee2ab1140800000000000000
+      internalID: 4691522583188771385
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WaterSurface_Tile_10
+      rect:
+        serializedVersion: 2
+        x: 355
+        y: 274
+        width: 16
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 67b45650219d54680800000000000000
+      internalID: -8771366027811009674
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WaterSurface_Tile_11
+      rect:
+        serializedVersion: 2
+        x: 382
+        y: 289
+        width: 12
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 82c4a1cc7b5b11c70800000000000000
+      internalID: 8940126536315063336
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WaterSurface_Tile_12
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 202
+        width: 154
+        height: 91
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eb7d3c468c345b880800000000000000
+      internalID: -8595889785803647042
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WaterSurface_Tile_13
+      rect:
+        serializedVersion: 2
+        x: 456
+        y: 278
+        width: 15
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6af1625e7e70f0de0800000000000000
+      internalID: -1364863469506650202
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WaterSurface_Tile_14
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 289
+        width: 19
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 83594a94b0bc8cba0800000000000000
+      internalID: -6068377248541141704
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WaterSurface_Tile_15
+      rect:
+        serializedVersion: 2
+        x: 541
+        y: 285
+        width: 18
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 96f1720f71c888e20800000000000000
+      internalID: 3353083957018566505
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WaterSurface_Tile_16
+      rect:
+        serializedVersion: 2
+        x: 634
+        y: 276
+        width: 15
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4a585c599d02a68f0800000000000000
+      internalID: -546588285879351900
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WaterSurface_Tile_17
+      rect:
+        serializedVersion: 2
+        x: 1217
+        y: 209
+        width: 161
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 250f126dc0cafb550800000000000000
+      internalID: 6178846384907743314
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WaterSurface_Tile_18
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 209
+        width: 66
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a2eb0ab56c94ce070800000000000000
+      internalID: 8136959743041257002
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WaterSurface_Tile_19
+      rect:
+        serializedVersion: 2
+        x: 145
+        y: 207
+        width: 98
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2e2215fd2b449a3f0800000000000000
+      internalID: -889103916387458334
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WaterSurface_Tile_20
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 204
+        width: 122
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 37d264a2776f8dad0800000000000000
+      internalID: -2677118986800976525
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WaterSurface_Tile_21
+      rect:
+        serializedVersion: 2
+        x: 588
+        y: 196
+        width: 147
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 728c8c63b3c12cbd0800000000000000
+      internalID: -2611493793273690073
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WaterSurface_Tile_22
+      rect:
+        serializedVersion: 2
+        x: 784
+        y: 234
+        width: 16
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8d2c1d7699c78d7a0800000000000000
+      internalID: -6352190276092443944
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WaterSurface_Tile_23
+      rect:
+        serializedVersion: 2
+        x: 801
+        y: 226
+        width: 87
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 96cc1971837d6acb0800000000000000
+      internalID: -4852954912531559319
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WaterSurface_Tile_24
+      rect:
+        serializedVersion: 2
+        x: 920
+        y: 223
+        width: 120
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 35950c53c013c2c10800000000000000
+      internalID: 2030051460548417875
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WaterSurface_Tile_25
+      rect:
+        serializedVersion: 2
+        x: 1058
+        y: 213
+        width: 145
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d804cd293001d6bd0800000000000000
+      internalID: -2635432599407017843
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WaterSurface_Tile_26
+      rect:
+        serializedVersion: 2
+        x: 1388
+        y: 210
+        width: 137
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8d06ed59367285f40800000000000000
+      internalID: 5717363035616469208
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WaterSurface_Tile_27
+      rect:
+        serializedVersion: 2
+        x: 23
+        y: 63
+        width: 358
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b3122bbff5c6d1ed0800000000000000
+      internalID: -2441676263464492741
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WaterSurface_Tile_28
+      rect:
+        serializedVersion: 2
+        x: 402
+        y: 64
+        width: 361
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: da0c7b95f191b7680800000000000000
+      internalID: -8756377428051902291
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WaterSurface_Tile_29
+      rect:
+        serializedVersion: 2
+        x: 784
+        y: 61
+        width: 366
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ec30c16ce528bc910800000000000000
+      internalID: 1858722614782723022
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WaterSurface_Tile_30
+      rect:
+        serializedVersion: 2
+        x: 1169
+        y: 58
+        width: 345
+        height: 83
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a6c7099ad741aa870800000000000000
+      internalID: 8694784560540449898
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable: {}
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

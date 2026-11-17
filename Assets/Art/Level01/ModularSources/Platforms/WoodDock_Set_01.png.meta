@@ -1,0 +1,1007 @@
+fileFormatVersion: 2
+guid: da6ade8ec58f0f24ea697c0f4f27bf9d
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 928253618339425196
+    second: WoodDock_Set_01_0
+  - first:
+      213: 7528548557989014873
+    second: WoodDock_Set_01_1
+  - first:
+      213: 972225547672735649
+    second: WoodDock_Set_01_2
+  - first:
+      213: 2705515663733824623
+    second: WoodDock_Set_01_3
+  - first:
+      213: -7818004002707546405
+    second: WoodDock_Set_01_4
+  - first:
+      213: -6552847047988357083
+    second: WoodDock_Set_01_5
+  - first:
+      213: -5663087538849573200
+    second: WoodDock_Set_01_6
+  - first:
+      213: 8345132283762475390
+    second: WoodDock_Set_01_7
+  - first:
+      213: -2511140378002144046
+    second: WoodDock_Set_01_8
+  - first:
+      213: 2122886833439832504
+    second: WoodDock_Set_01_9
+  - first:
+      213: -8752519287638735197
+    second: WoodDock_Set_01_10
+  - first:
+      213: -5319090005458578070
+    second: WoodDock_Set_01_11
+  - first:
+      213: 1784754975417798497
+    second: WoodDock_Set_01_12
+  - first:
+      213: 4844671353859453489
+    second: WoodDock_Set_01_13
+  - first:
+      213: -1505726626214402248
+    second: WoodDock_Set_01_14
+  - first:
+      213: -1017669131347569874
+    second: WoodDock_Set_01_15
+  - first:
+      213: 6328103490462346961
+    second: WoodDock_Set_01_16
+  - first:
+      213: 5134669043592602239
+    second: WoodDock_Set_01_17
+  - first:
+      213: 7876008987409497688
+    second: WoodDock_Set_01_18
+  - first:
+      213: 3002001732736896689
+    second: WoodDock_Set_01_19
+  - first:
+      213: 3120613487893973375
+    second: WoodDock_Set_01_20
+  - first:
+      213: -107921768360948389
+    second: WoodDock_Set_01_21
+  - first:
+      213: -1186672933450858439
+    second: WoodDock_Set_01_22
+  - first:
+      213: 1631432211873828701
+    second: WoodDock_Set_01_23
+  - first:
+      213: 7590703600112598041
+    second: WoodDock_Set_01_24
+  - first:
+      213: -3299938992854268357
+    second: WoodDock_Set_01_25
+  - first:
+      213: -4671729143912333254
+    second: WoodDock_Set_01_26
+  - first:
+      213: -1565757285134106480
+    second: WoodDock_Set_01_27
+  - first:
+      213: -7644996546599066105
+    second: WoodDock_Set_01_28
+  - first:
+      213: 3544432351785034235
+    second: WoodDock_Set_01_29
+  - first:
+      213: 854561834143835802
+    second: WoodDock_Set_01_30
+  - first:
+      213: -8489120960805888978
+    second: WoodDock_Set_01_31
+  - first:
+      213: -4109948178753882308
+    second: WoodDock_Set_01_32
+  - first:
+      213: -6504557733494238547
+    second: WoodDock_Set_01_33
+  - first:
+      213: -8119228257567539644
+    second: WoodDock_Set_01_34
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 1
+  spriteExtrude: 1
+  spriteMeshType: 0
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationMethod: 0
+  spriteTessellationDetail: -1
+  spriteGeometrySubdivision: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: WoodDock_Set_01_0
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 809
+        width: 609
+        height: 215
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: caba79e6fb1d1ec00800000000000000
+      internalID: 928253618339425196
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WoodDock_Set_01_1
+      rect:
+        serializedVersion: 2
+        x: 631
+        y: 805
+        width: 896
+        height: 219
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 95de6398607ca7860800000000000000
+      internalID: 7528548557989014873
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WoodDock_Set_01_2
+      rect:
+        serializedVersion: 2
+        x: 871
+        y: 669
+        width: 256
+        height: 143
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1afc79a0cf90e7d00800000000000000
+      internalID: 972225547672735649
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WoodDock_Set_01_3
+      rect:
+        serializedVersion: 2
+        x: 13
+        y: 680
+        width: 124
+        height: 105
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f6c1c17692ceb8520800000000000000
+      internalID: 2705515663733824623
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WoodDock_Set_01_4
+      rect:
+        serializedVersion: 2
+        x: 151
+        y: 727
+        width: 338
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bded806f7ced08390800000000000000
+      internalID: -7818004002707546405
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WoodDock_Set_01_5
+      rect:
+        serializedVersion: 2
+        x: 491
+        y: 681
+        width: 366
+        height: 123
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 528df2d045c9f05a0800000000000000
+      internalID: -6552847047988357083
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WoodDock_Set_01_6
+      rect:
+        serializedVersion: 2
+        x: 1133
+        y: 665
+        width: 384
+        height: 135
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0b61ee243eba861b0800000000000000
+      internalID: -5663087538849573200
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WoodDock_Set_01_7
+      rect:
+        serializedVersion: 2
+        x: 28
+        y: 551
+        width: 253
+        height: 109
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e718e41099ddfc370800000000000000
+      internalID: 8345132283762475390
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WoodDock_Set_01_8
+      rect:
+        serializedVersion: 2
+        x: 286
+        y: 567
+        width: 82
+        height: 112
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2d4ca0c7123a62dd0800000000000000
+      internalID: -2511140378002144046
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WoodDock_Set_01_9
+      rect:
+        serializedVersion: 2
+        x: 373
+        y: 545
+        width: 165
+        height: 131
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8b9f885d352067d10800000000000000
+      internalID: 2122886833439832504
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WoodDock_Set_01_10
+      rect:
+        serializedVersion: 2
+        x: 559
+        y: 559
+        width: 81
+        height: 114
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3a6c98aa41ec88680800000000000000
+      internalID: -8752519287638735197
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WoodDock_Set_01_11
+      rect:
+        serializedVersion: 2
+        x: 646
+        y: 560
+        width: 75
+        height: 97
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a659f4062dbce26b0800000000000000
+      internalID: -5319090005458578070
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WoodDock_Set_01_12
+      rect:
+        serializedVersion: 2
+        x: 726
+        y: 559
+        width: 75
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 16f83e0b139b4c810800000000000000
+      internalID: 1784754975417798497
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WoodDock_Set_01_13
+      rect:
+        serializedVersion: 2
+        x: 811
+        y: 561
+        width: 65
+        height: 81
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 132bd4c9deabb3340800000000000000
+      internalID: 4844671353859453489
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WoodDock_Set_01_14
+      rect:
+        serializedVersion: 2
+        x: 871
+        y: 563
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 837a4a37c959a1be0800000000000000
+      internalID: -1505726626214402248
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WoodDock_Set_01_15
+      rect:
+        serializedVersion: 2
+        x: 939
+        y: 531
+        width: 168
+        height: 139
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e23d52f115380e1f0800000000000000
+      internalID: -1017669131347569874
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WoodDock_Set_01_16
+      rect:
+        serializedVersion: 2
+        x: 1110
+        y: 541
+        width: 195
+        height: 109
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1deeaeac890f1d750800000000000000
+      internalID: 6328103490462346961
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WoodDock_Set_01_17
+      rect:
+        serializedVersion: 2
+        x: 1299
+        y: 551
+        width: 207
+        height: 114
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f72288e5a42024740800000000000000
+      internalID: 5134669043592602239
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WoodDock_Set_01_18
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 416
+        width: 385
+        height: 97
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 85eb356f1743d4d60800000000000000
+      internalID: 7876008987409497688
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WoodDock_Set_01_19
+      rect:
+        serializedVersion: 2
+        x: 454
+        y: 233
+        width: 123
+        height: 307
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1bec3eeaba049a920800000000000000
+      internalID: 3002001732736896689
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WoodDock_Set_01_20
+      rect:
+        serializedVersion: 2
+        x: 605
+        y: 385
+        width: 356
+        height: 144
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f79863bfe65ae4b20800000000000000
+      internalID: 3120613487893973375
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WoodDock_Set_01_21
+      rect:
+        serializedVersion: 2
+        x: 948
+        y: 377
+        width: 565
+        height: 149
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b5d405539b5908ef0800000000000000
+      internalID: -107921768360948389
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WoodDock_Set_01_22
+      rect:
+        serializedVersion: 2
+        x: 47
+        y: 271
+        width: 74
+        height: 116
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 93047191147188fe0800000000000000
+      internalID: -1186672933450858439
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WoodDock_Set_01_23
+      rect:
+        serializedVersion: 2
+        x: 127
+        y: 278
+        width: 89
+        height: 99
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d5f8ed7f3f204a610800000000000000
+      internalID: 1631432211873828701
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WoodDock_Set_01_24
+      rect:
+        serializedVersion: 2
+        x: 223
+        y: 279
+        width: 58
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 91c7dfff4b8975960800000000000000
+      internalID: 7590703600112598041
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WoodDock_Set_01_25
+      rect:
+        serializedVersion: 2
+        x: 293
+        y: 279
+        width: 173
+        height: 106
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b36067648f24432d0800000000000000
+      internalID: -3299938992854268357
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WoodDock_Set_01_26
+      rect:
+        serializedVersion: 2
+        x: 511
+        y: 279
+        width: 226
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a300442781faa2fb0800000000000000
+      internalID: -4671729143912333254
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WoodDock_Set_01_27
+      rect:
+        serializedVersion: 2
+        x: 757
+        y: 286
+        width: 84
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0900a1f7b00554ae0800000000000000
+      internalID: -1565757285134106480
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WoodDock_Set_01_28
+      rect:
+        serializedVersion: 2
+        x: 843
+        y: 257
+        width: 134
+        height: 107
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 706efd2552487e590800000000000000
+      internalID: -7644996546599066105
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WoodDock_Set_01_29
+      rect:
+        serializedVersion: 2
+        x: 983
+        y: 243
+        width: 530
+        height: 139
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bf1ac8ad17a503130800000000000000
+      internalID: 3544432351785034235
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WoodDock_Set_01_30
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 95
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a96efb2e5730cdb00800000000000000
+      internalID: 854561834143835802
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WoodDock_Set_01_31
+      rect:
+        serializedVersion: 2
+        x: 13
+        y: 0
+        width: 450
+        height: 243
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e2c97d3a675903a80800000000000000
+      internalID: -8489120960805888978
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WoodDock_Set_01_32
+      rect:
+        serializedVersion: 2
+        x: 463
+        y: 1
+        width: 402
+        height: 229
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c377c1828e786f6c0800000000000000
+      internalID: -4109948178753882308
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WoodDock_Set_01_33
+      rect:
+        serializedVersion: 2
+        x: 862
+        y: 0
+        width: 355
+        height: 238
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: da25e0a343b2bb5a0800000000000000
+      internalID: -6504557733494238547
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WoodDock_Set_01_34
+      rect:
+        serializedVersion: 2
+        x: 1189
+        y: 87
+        width: 285
+        height: 154
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 44e7f51dae4b25f80800000000000000
+      internalID: -8119228257567539644
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable: {}
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
