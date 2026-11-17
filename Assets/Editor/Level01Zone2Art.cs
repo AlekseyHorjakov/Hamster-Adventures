@@ -119,12 +119,43 @@ public static class Level01Zone2Art
         AddFallZone(root.transform, level, "FallZone_Lake", 238f, -5.2f, 78f);
 
         // Земля: зона I рисует себе арт в BakedLevelArt, здесь свой слой.
-        TiledGround(art, "Z2_LedgeGround", 202f, 207.4f, 2f, 10);
-        TiledGround(art, "Z2_StepGround_1", 206.6f, 210f, 1.4f, 11);
-        TiledGround(art, "Z2_StepGround_2", 209.2f, 212.6f, 0.75f, 12);
-        TiledGround(art, "Z2_BeachGround", 211.6f, 238f, 0.1f, 13);
+        TiledGround(art, "Z2_LedgeGround", 202f, 207.2f, 2f, 10);
 
-        Decor(art, "Prop_Sign", 217.5f, 0.1f, 1.6f);
+        Sprite slope = Load("Slope_Down");
+        if (slope != null)
+        {
+            GameObject slopeObject = new GameObject("Z2_DescentSlope");
+            slopeObject.transform.SetParent(art, false);
+            slopeObject.transform.position = new Vector3(209.6f, 2f - 0.95f, 0f);
+            SpriteRenderer slopeRenderer = slopeObject.AddComponent<SpriteRenderer>();
+            slopeRenderer.sprite = slope;
+            slopeRenderer.sortingLayerName = "Ground";
+            slopeRenderer.sortingOrder = 11;
+            slopeObject.transform.localScale = new Vector3(5.2f / slope.bounds.size.x, 1.9f / slope.bounds.size.y, 1f);
+        }
+
+        // Под клином спуска нужен грунт, иначе снизу просвечивает вода.
+        UndergroundFill(art, "Z2_DescentFill", 207f, 212.2f, 0.1f, 9);
+
+        TiledGround(art, "Z2_BeachGround", 211.6f, 238f, 0.1f, 12);
+
+        Sprite cliff = Load("GroundEdge_CliffA");
+        if (cliff != null)
+        {
+            GameObject cliffObject = new GameObject("Z2_BeachEdge");
+            cliffObject.transform.SetParent(art, false);
+            cliffObject.transform.position = new Vector3(237.2f, 0.1f - 2.5f * 0.5f, 0f);
+            SpriteRenderer cliffRenderer = cliffObject.AddComponent<SpriteRenderer>();
+            cliffRenderer.sprite = cliff;
+            cliffRenderer.sortingLayerName = "Ground";
+            cliffRenderer.sortingOrder = 14;
+            cliffObject.transform.localScale = new Vector3(2.6f / cliff.bounds.size.x, 2.5f / cliff.bounds.size.y, 1f);
+        }
+
+        float signHeight = ReferenceHeight("Prop_Sign");
+        if (signHeight <= 0.01f)
+            signHeight = 1.6f;
+        Decor(art, "Prop_Sign", 217.5f, 0.1f, signHeight);
         Decor(art, "Prop_Lantern", 221.4f, 0.1f, 1.7f);
         Decor(art, "Prop_Rock", 226f, 0.1f, 0.8f);
         Decor(art, "Prop_Rock", 233.5f, 0.1f, 0.7f);
@@ -147,9 +178,8 @@ public static class Level01Zone2Art
         if (previous != null)
             AddTrigger(root.transform, "Room_06_BackTrigger", 237.7f, 3.1f, level, previous);
 
-        AddDockFence(root.transform, 266.1f, 2f);
-        AddDockFence(root.transform, 273.9f, 2f);
-        GameObject shallowHyena = SpawnHyenaAt(root.transform, "ShallowsHyena", 270f, 2.6f);
+        GameObject shallowHyena = SpawnHyenaAt(root.transform, "ShallowsHyena", 270f, 2f);
+        SetLeash(shallowHyena, 266.6f, 273.4f);
         AddEncounter(root.transform, level, room, "Мелководье", 240f, 3f, 8f, 10f,
             new[] { shallowHyena }, new GameObject[0]);
         AddFallZone(root.transform, level, "FallZone_Shallows", 258f, -5.2f, 80f);
@@ -166,21 +196,18 @@ public static class Level01Zone2Art
         GameObject root = new GameObject("Room_08_Islands");
         root.transform.SetParent(roomsRoot, false);
 
-        AddPlatform(root.transform, "Island_1", 274f, 282f, 2.5f, "SteppingStone_04", 4.7f);
-        AddPlatform(root.transform, "Island_2", 286f, 294f, 3.2f, "SteppingStone_05", 5.4f);
-        AddPlatform(root.transform, "Island_3", 298f, 306f, 4f, "SteppingStone_06", 6.2f);
-        AddPlatform(root.transform, "Island_Final", 309f, 314f, 2f, "SteppingStone_07", 4.2f);
+        AddPlatform(root.transform, "Island_1", 274f, 282f, 2.5f, "SteppingStone_04", 4.7f, true);
+        AddPlatform(root.transform, "Island_2", 286f, 294f, 3.2f, "SteppingStone_05", 5.4f, true);
+        AddPlatform(root.transform, "Island_3", 298f, 306f, 4f, "SteppingStone_06", 6.2f, true);
+        AddPlatform(root.transform, "Island_Final", 309f, 314f, 2f, "SteppingStone_07", 4.2f, true);
 
         AddTrigger(root.transform, "Room_08_Trigger", 274.3f, 6.5f, level, room);
         AddTrigger(root.transform, "Room_07_BackTrigger", 273.7f, 4.5f, level, previous);
 
-        Fence(root.transform, 274.2f, 2.5f);
-        Fence(root.transform, 281.8f, 2.5f);
-        Fence(root.transform, 298.2f, 4f);
-        Fence(root.transform, 305.8f, 4f);
-
-        GameObject hyenaA = SpawnHyenaAt(root.transform, "IslandHyena_A", 279f, 3.2f);
-        GameObject hyenaB = SpawnHyenaAt(root.transform, "IslandHyena_B", 302f, 4.7f);
+        GameObject hyenaA = SpawnHyenaAt(root.transform, "IslandHyena_A", 279f, 2.5f);
+        SetLeash(hyenaA, 275f, 281f);
+        GameObject hyenaB = SpawnHyenaAt(root.transform, "IslandHyena_B", 302f, 4f);
+        SetLeash(hyenaB, 299f, 305f);
 
         GameObject gate = Gate(root.transform, "IslandGate", 313.6f, 6f);
         AddEncounter(root.transform, level, room, "Островки", 277.5f, 5f, 14f, 10f,
@@ -198,15 +225,17 @@ public static class Level01Zone2Art
         TiledGround(art, "Z2_CrossStartGround", 314f, 321f, 2f, 10);
         TiledGround(art, "Z2_CrossExitGround", 348f, 352f, 4f, 10);
 
-        AddPlatform(root.transform, "CrossPlatform_1", 325f, 330f, 2.8f, "Platform_Wide_A", 0.9f);
-        AddPlatform(root.transform, "CrossPlatform_2", 334f, 339f, 3.6f, "Platform_Wide_B", 0.9f);
-        AddPlatform(root.transform, "CrossPlatform_3", 343f, 348f, 4.4f, "Platform_Wide_A", 0.9f);
+        AddPlatform(root.transform, "CrossPlatform_1", 325f, 330f, 2.8f, "Platform_Wide_A", 0.9f, false);
+        AddPlatform(root.transform, "CrossPlatform_2", 334f, 339f, 3.6f, "Platform_Wide_B", 0.9f, false);
+        AddPlatform(root.transform, "CrossPlatform_3", 343f, 348f, 4.4f, "Platform_Wide_A", 0.9f, false);
 
         AddTrigger(root.transform, "Room_09_Trigger", 314.3f, 7f, level, room);
         AddTrigger(root.transform, "Room_08_BackTrigger", 313.7f, 5f, level, previous);
 
-        SpawnHyenaAt(root.transform, "CrossHyena_A", 327.4f, 3.6f);
-        SpawnHyenaAt(root.transform, "CrossHyena_B", 345.4f, 5.2f);
+        GameObject crossA = SpawnHyenaAt(root.transform, "CrossHyena_A", 327.4f, 2.8f);
+        SetLeash(crossA, 325.4f, 329.6f);
+        GameObject crossB = SpawnHyenaAt(root.transform, "CrossHyena_B", 345.4f, 4.4f);
+        SetLeash(crossB, 343.4f, 347.6f);
     }
 
     private static void BuildRoom10(Transform roomsRoot, Transform art, LevelFlowController level,
@@ -218,9 +247,9 @@ public static class Level01Zone2Art
         AddGround(root.transform, "FallBase", 352f, 358f, 4f);
         TiledGround(art, "Z2_FallBaseGround", 352f, 358f, 4f, 10);
 
-        AddPlatform(root.transform, "FallLedge_1", 360f, 364f, 5f, "SteppingStone_05", 2.4f);
-        AddPlatform(root.transform, "FallLedge_2", 367f, 371f, 6f, "SteppingStone_06", 2.4f);
-        AddPlatform(root.transform, "FallLedge_3", 374f, 378f, 7f, "SteppingStone_07", 2.4f);
+        AddPlatform(root.transform, "FallLedge_1", 360f, 364f, 5f, "SteppingStone_05", 2.4f, true);
+        AddPlatform(root.transform, "FallLedge_2", 367f, 371f, 6f, "SteppingStone_06", 2.4f, true);
+        AddPlatform(root.transform, "FallLedge_3", 374f, 378f, 7f, "SteppingStone_07", 2.4f, true);
 
         AddGround(root.transform, "FallTop", 380f, 390f, 8f);
         TiledGround(art, "Z2_FallTopGround", 380f, 390f, 8f, 10);
@@ -228,9 +257,8 @@ public static class Level01Zone2Art
         AddTrigger(root.transform, "Room_10_Trigger", 352.3f, 10f, level, room);
         AddTrigger(root.transform, "Room_09_BackTrigger", 351.7f, 8f, level, previous);
 
-        Fence(root.transform, 380.2f, 8f);
-        Fence(root.transform, 389.8f, 8f);
-        SpawnHyenaAt(root.transform, "FallHyena", 385f, 8.9f);
+        GameObject fallHyena = SpawnHyenaAt(root.transform, "FallHyena", 385f, 8f);
+        SetLeash(fallHyena, 381f, 389f);
 
         Sprite falls = Load("Waterfall_A");
         if (falls != null)
@@ -246,16 +274,64 @@ public static class Level01Zone2Art
         }
     }
 
+    private static readonly (string sprite, float fraction)[] FlatLines =
+    {
+        ("SteppingStone_01", 0.167f), ("SteppingStone_02", 0.104f), ("SteppingStone_03", 0.348f),
+        ("SteppingStone_04", 0.368f), ("SteppingStone_05", 0.371f), ("SteppingStone_06", 0.083f),
+        ("SteppingStone_07", 0.092f), ("SteppingStone_08", 0.091f),
+        ("Platform_Wide_A", 0.232f), ("Platform_Wide_B", 0.182f)
+    };
+
+    private static float FlatFraction(string spriteName)
+    {
+        foreach (var entry in FlatLines)
+            if (entry.sprite == spriteName)
+                return entry.fraction;
+        return 0.1f;
+    }
+
     private static void AddPlatform(Transform parent, string name, float left, float right, float top,
-        string spriteName, float visualHeight)
+        string spriteName, float visualHeight, bool silhouette)
     {
         GameObject go = new GameObject(name);
         go.transform.SetParent(parent, false);
         go.transform.position = new Vector3((left + right) * 0.5f, top - 0.3f, 0f);
-        BoxCollider2D box = go.AddComponent<BoxCollider2D>();
-        box.size = new Vector2(right - left, 0.6f);
 
         Sprite sprite = Load(spriteName);
+        bool polygon = false;
+        if (silhouette && sprite != null)
+        {
+            PolygonCollider2D shape = go.AddComponent<PolygonCollider2D>();
+            shape.pathCount = 0;
+            shape.CreateFromSprite(sprite);
+            polygon = shape.pathCount > 0;
+            if (polygon)
+            {
+                float sx = (right - left) / sprite.bounds.size.x;
+                float sy = visualHeight / sprite.bounds.size.y;
+                for (int path = 0; path < shape.pathCount; path++)
+                {
+                    Vector2[] points = shape.GetPath(path);
+                    for (int i = 0; i < points.Length; i++)
+                        points[i] = new Vector2(points[i].x * sx, points[i].y * sy);
+                    shape.SetPath(path, points);
+                }
+                shape.offset = new Vector2(0f, 0.3f - visualHeight * 0.5f);
+
+                // Плоская кромка сверху: по ней герой стоит ровно, силуэт остаётся полигональным.
+                BoxCollider2D ledgeTop = go.AddComponent<BoxCollider2D>();
+                ledgeTop.size = new Vector2((right - left) * 0.96f, 0.12f);
+                ledgeTop.offset = new Vector2(0f, 0.24f);
+            }
+            if (!polygon)
+                Object.DestroyImmediate(shape);
+        }
+        if (!polygon)
+        {
+            BoxCollider2D box = go.AddComponent<BoxCollider2D>();
+            box.size = new Vector2(right - left, 0.6f);
+        }
+
         if (sprite == null)
             return;
         GameObject visual = new GameObject("Visual");
@@ -266,18 +342,13 @@ public static class Level01Zone2Art
         renderer.sortingOrder = 11;
         // Верх спрайта = верх коллайдера, низ уходит в воду на нужную глубину.
         float scaleX = (right - left) / sprite.bounds.size.x;
-        float scaleY = visualHeight / sprite.bounds.size.y;
+        float fraction = FlatFraction(spriteName);
+        float depth = visualHeight;
+        float scaleY = depth / Mathf.Max(0.05f, (1f - fraction) * sprite.bounds.size.y);
         visual.transform.localScale = new Vector3(scaleX, scaleY, 1f);
-        visual.transform.localPosition = new Vector3(0f, 0.3f - visualHeight * 0.5f + 0.03f, 0f);
-    }
-
-    private static void Fence(Transform parent, float x, float top)
-    {
-        GameObject fence = new GameObject("Fence_" + x.ToString("0.#"));
-        fence.transform.SetParent(parent, false);
-        fence.transform.position = new Vector3(x, top + 1f, 0f);
-        BoxCollider2D box = fence.AddComponent<BoxCollider2D>();
-        box.size = new Vector2(0.2f, 2f);
+        float scaledHeight = sprite.bounds.size.y * scaleY;
+        // Линия травы спрайта ставится ровно на верх коллайдера.
+        visual.transform.localPosition = new Vector3(0f, -depth + scaledHeight * 0.5f + 0.3f, 0f);
     }
 
     private static GameObject Gate(Transform parent, string name, float x, float height)
@@ -319,6 +390,21 @@ public static class Level01Zone2Art
         so.ApplyModifiedPropertiesWithoutUndo();
     }
 
+    private static void SetLeash(GameObject enemy, float minX, float maxX)
+    {
+        if (enemy == null)
+            return;
+        var ai = enemy.GetComponent("HyenaAI");
+        if (ai == null)
+            return;
+        SerializedObject so = new SerializedObject(ai);
+        SerializedProperty min = so.FindProperty("leashMinX");
+        SerializedProperty max = so.FindProperty("leashMaxX");
+        if (min != null) min.floatValue = minX;
+        if (max != null) max.floatValue = maxX;
+        so.ApplyModifiedPropertiesWithoutUndo();
+    }
+
     private static GameObject SpawnHyenaAt(Transform parent, string name, float x, float y)
     {
         GameObject prefab = AssetDatabase.LoadAssetAtPath<GameObject>("Assets/Prefabs/Hyena.prefab");
@@ -331,7 +417,17 @@ public static class Level01Zone2Art
         hyena.SetActive(false);
         hyena.name = name;
         hyena.transform.SetParent(parent, false);
-        hyena.transform.position = new Vector3(x, y, 0f);
+        hyena.transform.position = new Vector3(x, y + 3f, 0f);
+        Collider2D hyenaCollider = hyena.GetComponent<Collider2D>();
+        if (hyenaCollider != null)
+        {
+            float delta = y - hyenaCollider.bounds.min.y;
+            hyena.transform.position = new Vector3(x, hyena.transform.position.y + delta, 0f);
+        }
+        else
+        {
+            hyena.transform.position = new Vector3(x, y, 0f);
+        }
         UnityEngine.Debug.Log("[Zone2] spawn " + hyena.name + " parent=" + hyena.transform.parent.name +
                               " inScene=" + hyena.scene.IsValid() + " active=" + hyena.activeSelf);
         return hyena;
@@ -349,7 +445,7 @@ public static class Level01Zone2Art
             SpriteRenderer renderer = layer.GetComponent<SpriteRenderer>();
             if (renderer == null)
                 continue;
-            float uniform = layer.lossyScale.y * 1.15f;
+            float uniform = layer.name == "Sky" ? 3.96f : 4.28f;
             layer.localScale = new Vector3(uniform, uniform, 1f);
             renderer.drawMode = SpriteDrawMode.Simple;
         }
@@ -372,26 +468,32 @@ public static class Level01Zone2Art
         box.size = new Vector2(right - left, 1f);
     }
 
-    private static void AddStone(Transform parent, string name, float left, float right, float top, string sprite)
+    private static void AddStone(Transform parent, string name, float left, float right, float top, string spriteName)
     {
+        Sprite stone = Load(spriteName);
+        if (stone == null)
+            return;
+
         GameObject go = new GameObject(name);
         go.transform.SetParent(parent, false);
         go.transform.position = new Vector3((left + right) * 0.5f, top - 0.35f, 0f);
         BoxCollider2D box = go.AddComponent<BoxCollider2D>();
         box.size = new Vector2(right - left, 0.7f);
 
-        Sprite stone = Load(sprite);
-        if (stone == null)
-            return;
         GameObject visual = new GameObject("Visual");
         visual.transform.SetParent(go.transform, false);
         SpriteRenderer renderer = visual.AddComponent<SpriteRenderer>();
         renderer.sprite = stone;
         renderer.sortingLayerName = "Ground";
         renderer.sortingOrder = 11;
-        float scale = (right - left) / stone.bounds.size.x;
-        visual.transform.localScale = Vector3.one * scale;
-        visual.transform.localPosition = new Vector3(0f, 0.35f - stone.bounds.size.y * scale * 0.5f, 0f);
+
+        float fraction = FlatFraction(spriteName);
+        const float depth = 0.7f;
+        float scaleX = (right - left) / stone.bounds.size.x;
+        float scaleY = depth / Mathf.Max(0.05f, (1f - fraction) * stone.bounds.size.y);
+        visual.transform.localScale = new Vector3(scaleX, scaleY, 1f);
+        float scaledHeight = stone.bounds.size.y * scaleY;
+        visual.transform.localPosition = new Vector3(0f, -depth + scaledHeight * 0.5f + 0.35f, 0f);
     }
 
     private static void AddDock(Transform parent, Transform art, string name, float left, float right, float top)
@@ -441,24 +543,30 @@ public static class Level01Zone2Art
         Sprite baseSprite = Load("Checkpoint_Campfire_Unlit");
         GameObject baseVisual = new GameObject("Base");
         baseVisual.transform.SetParent(go.transform, false);
+        baseVisual.transform.localPosition = new Vector3(0f, 0.72f, 0f);
         SpriteRenderer baseRenderer = baseVisual.AddComponent<SpriteRenderer>();
         baseRenderer.sprite = baseSprite;
         baseRenderer.sortingLayerName = "Props";
         baseRenderer.sortingOrder = 3;
-        float baseHeight = 1.44f;
+        float baseHeight = ReferenceHeight("Checkpoint_Campfire_Unlit");
+        if (baseHeight <= 0.01f)
+            baseHeight = 1.44f;
         if (baseSprite != null)
             baseVisual.transform.localScale = Vector3.one * (baseHeight / baseSprite.bounds.size.y);
 
         GameObject flame = new GameObject("Flame");
         flame.transform.SetParent(go.transform, false);
-        flame.transform.localPosition = new Vector3(0f, 0.55f, 0f);
+        flame.transform.localPosition = new Vector3(0f, 1.55f, 0f);
         SpriteRenderer flameRenderer = flame.AddComponent<SpriteRenderer>();
         Sprite flameSprite = Load("Campfire_Flame_01");
         flameRenderer.sprite = flameSprite;
         flameRenderer.sortingLayerName = "Props";
         flameRenderer.sortingOrder = 4;
+        float flameHeight = ReferenceHeight("Campfire_Flame");
+        if (flameHeight <= 0.01f)
+            flameHeight = 1.82f;
         if (flameSprite != null)
-            flame.transform.localScale = Vector3.one * 0.9f;
+            flame.transform.localScale = Vector3.one * (flameHeight / flameSprite.bounds.size.y);
         flameRenderer.enabled = false;
 
         BoxCollider2D box = go.AddComponent<BoxCollider2D>();
@@ -494,27 +602,6 @@ public static class Level01Zone2Art
         so.FindProperty("level").objectReferenceValue = level;
         so.ApplyModifiedPropertiesWithoutUndo();
     }
-
-    private static void AddDockFence(Transform parent, float x, float top)
-    {
-        GameObject fence = new GameObject("DockFence_" + x.ToString("0"));
-        fence.transform.SetParent(parent, false);
-        fence.transform.position = new Vector3(x, top + 1f, 0f);
-        BoxCollider2D box = fence.AddComponent<BoxCollider2D>();
-        box.size = new Vector2(0.2f, 2f);
-    }
-    private static void SpawnHyena(Transform parent, float x, float y)
-    {
-        GameObject prefab = AssetDatabase.LoadAssetAtPath<GameObject>("Assets/Prefabs/Hyena.prefab");
-        if (prefab == null)
-            return;
-        GameObject hyena = Object.Instantiate(prefab);
-        hyena.name = "ShallowsHyena";
-        hyena.transform.SetParent(parent, false);
-        hyena.transform.position = new Vector3(x, y, 0f);
-    }
-
-    // ---------- арт ----------
 
     private static void TiledGround(Transform parent, string name, float left, float right, float top, int order)
     {
@@ -715,6 +802,18 @@ public static class Level01Zone2Art
             .Count(t => t != null && (t.name.Contains("IslandHyena") || t.name.Contains("CrossHyena") ||
                                       t.name.Contains("FallHyena") || t.name.Contains("ShallowsHyena")));
     }
+    private static float ReferenceHeight(string spriteName)
+    {
+        float best = 0f;
+        foreach (SpriteRenderer renderer in Object.FindObjectsByType<SpriteRenderer>(FindObjectsInactive.Include, FindObjectsSortMode.None))
+        {
+            if (renderer.sprite == null || !renderer.sprite.name.StartsWith(spriteName))
+                continue;
+            best = Mathf.Max(best, renderer.bounds.size.y);
+        }
+        return best;
+    }
+
     private static void RemoveAll(string name)
     {
         GameObject go = GameObject.Find(name);
@@ -731,6 +830,7 @@ public static class Level01Zone2Art
             Object.DestroyImmediate(go);
     }
 }
+
 
 
 

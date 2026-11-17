@@ -19,6 +19,8 @@ public class HyenaAI : MonoBehaviour
 
     [Header("Движение")]
     [SerializeField] private float patrolRadius = 3f;
+    [SerializeField] private float leashMinX;
+    [SerializeField] private float leashMaxX;
     [SerializeField] private float patrolSpeed = 2f;
     [SerializeField] private float chaseSpeed = 5.2f;
     [SerializeField] private float patrolPause = 0.45f;
@@ -108,6 +110,17 @@ public class HyenaAI : MonoBehaviour
     {
         if (dead || body == null)
             return;
+
+        if (leashMaxX > leashMinX)
+        {
+            Vector2 position = body.position;
+            float clampedX = Mathf.Clamp(position.x, leashMinX, leashMaxX);
+            if (!Mathf.Approximately(clampedX, position.x))
+            {
+                body.position = new Vector2(clampedX, position.y);
+                body.linearVelocity = new Vector2(0f, body.linearVelocity.y);
+            }
+        }
 
         // Пока гиена оглушена или летит от удара, не перебиваем физику
         // и не включаем ходьбу поверх анимации получения урона.
@@ -526,3 +539,4 @@ public class HyenaAI : MonoBehaviour
         Gizmos.DrawWireSphere(transform.position, attackRange);
     }
 }
+
