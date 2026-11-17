@@ -224,7 +224,10 @@ public sealed class Zone1PlayModeTests
 
         yield return MovePlayer(hamster, new Vector2(201.4f, 5.5f));
         yield return new WaitForSecondsRealtime(0.35f);
-        Assert.AreEqual(0f, Time.timeScale, "Триггер конца зоны I срабатывает");
+        Assert.AreEqual(1f, Time.timeScale, "На выходе из комнаты 05 зона не завершается");
+        Component zoneEnd = FindComponent("ZoneEndTrigger");
+        Assert.IsNotNull(zoneEnd, "Финальный триггер зоны существует");
+        Assert.Greater(zoneEnd.transform.position.x, 380f, "Финальный триггер перенесён за комнату 10");
 
         Time.timeScale = 1f;
     }
@@ -302,6 +305,7 @@ public sealed class Zone1PlayModeTests
         return field != null ? field.GetValue(target) as T : null;
     }
 }
+
 
 
 
