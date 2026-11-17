@@ -137,6 +137,20 @@ public static class Level01Zone2Art
         // Под клином спуска нужен грунт, иначе снизу просвечивает вода.
         UndergroundFill(art, "Z2_DescentFill", 207f, 212.2f, 0.1f, 9);
 
+        Sprite shore = Load("Shore_Row_A");
+        if (shore != null)
+        {
+            GameObject shoreBand = new GameObject("Z2_ShoreBand");
+            shoreBand.transform.SetParent(art, false);
+            shoreBand.transform.position = new Vector3(225f, 0.1f - 0.75f, 0f);
+            SpriteRenderer shoreRenderer = shoreBand.AddComponent<SpriteRenderer>();
+            shoreRenderer.sprite = shore;
+            shoreRenderer.drawMode = SpriteDrawMode.Tiled;
+            shoreRenderer.size = new Vector2(26f, 1.5f);
+            shoreRenderer.sortingLayerName = "Ground";
+            shoreRenderer.sortingOrder = 14;
+        }
+
         TiledGround(art, "Z2_BeachGround", 211.6f, 238f, 0.1f, 12);
 
         Sprite cliff = Load("GroundEdge_CliffA");
@@ -169,6 +183,7 @@ public static class Level01Zone2Art
         GameObject root = new GameObject("Room_07_Shallows");
         root.transform.SetParent(roomsRoot, false);
 
+        AddStone(root.transform, "ShoreStone", 239f, 241f, 0.2f, "SteppingStone_08");
         AddStone(root.transform, "Stone_A", 241f, 245f, 0.2f, "SteppingStone_01");
         AddStone(root.transform, "Stone_B", 249f, 253f, 0.8f, "SteppingStone_02");
         AddStone(root.transform, "Stone_C", 257f, 261f, 1.4f, "SteppingStone_03");
@@ -204,10 +219,10 @@ public static class Level01Zone2Art
         AddTrigger(root.transform, "Room_08_Trigger", 274.3f, 6.5f, level, room);
         AddTrigger(root.transform, "Room_07_BackTrigger", 273.7f, 4.5f, level, previous);
 
-        GameObject hyenaA = SpawnHyenaAt(root.transform, "IslandHyena_A", 279f, 2.5f);
-        SetLeash(hyenaA, 275f, 281f);
+        GameObject hyenaA = SpawnHyenaAt(root.transform, "IslandHyena_A", 278f, 2.5f);
+        SetLeash(hyenaA, 276f, 280f);
         GameObject hyenaB = SpawnHyenaAt(root.transform, "IslandHyena_B", 302f, 4f);
-        SetLeash(hyenaB, 299f, 305f);
+        SetLeash(hyenaB, 300f, 304f);
 
         GameObject gate = Gate(root.transform, "IslandGate", 313.6f, 6f);
         AddEncounter(root.transform, level, room, "Островки", 277.5f, 5f, 14f, 10f,
@@ -348,7 +363,7 @@ public static class Level01Zone2Art
         visual.transform.localScale = new Vector3(scaleX, scaleY, 1f);
         float scaledHeight = sprite.bounds.size.y * scaleY;
         // Линия травы спрайта ставится ровно на верх коллайдера.
-        visual.transform.localPosition = new Vector3(0f, -depth + scaledHeight * 0.5f + 0.3f, 0f);
+        visual.transform.localPosition = new Vector3(0f, -depth + scaledHeight * 0.5f + 0.24f, 0f);
     }
 
     private static GameObject Gate(Transform parent, string name, float x, float height)
@@ -446,6 +461,11 @@ public static class Level01Zone2Art
             if (renderer == null)
                 continue;
             float uniform = layer.name == "Sky" ? 3.96f : 4.28f;
+            float horizontal = layer.name == "Forest" ? 0.97f : layer.name == "Mountains" ? 0.99f : 1f;
+            SerializedObject layerSo = new SerializedObject(layer.GetComponent<ParallaxLayer>());
+            SerializedProperty h = layerSo.FindProperty("horizontalFactor");
+            if (h != null) h.floatValue = horizontal;
+            layerSo.ApplyModifiedPropertiesWithoutUndo();
             layer.localScale = new Vector3(uniform, uniform, 1f);
             renderer.drawMode = SpriteDrawMode.Simple;
         }
@@ -488,12 +508,12 @@ public static class Level01Zone2Art
         renderer.sortingOrder = 11;
 
         float fraction = FlatFraction(spriteName);
-        const float depth = 0.7f;
+        const float depth = 1.9f;
         float scaleX = (right - left) / stone.bounds.size.x;
         float scaleY = depth / Mathf.Max(0.05f, (1f - fraction) * stone.bounds.size.y);
         visual.transform.localScale = new Vector3(scaleX, scaleY, 1f);
         float scaledHeight = stone.bounds.size.y * scaleY;
-        visual.transform.localPosition = new Vector3(0f, -depth + scaledHeight * 0.5f + 0.35f, 0f);
+        visual.transform.localPosition = new Vector3(0f, -depth + scaledHeight * 0.5f + 0.29f, 0f);
     }
 
     private static void AddDock(Transform parent, Transform art, string name, float left, float right, float top)

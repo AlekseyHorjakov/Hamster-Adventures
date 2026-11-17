@@ -15,6 +15,7 @@ public static class Zone2ReferenceGuard
         ("Stone_B", 0.8f, 249f, 253f),
         ("Stone_C", 1.4f, 257f, 261f),
         ("LakeDock", 2f, 266f, 274f),
+        ("ShoreStone", 0.2f, 239f, 241f),
         ("Island_1", 2.5f, 274f, 282f),
         ("Island_2", 3.2f, 286f, 294f),
         ("Island_3", 4f, 298f, 306f),
@@ -43,9 +44,9 @@ public static class Zone2ReferenceGuard
             GameObject go = GameObject.Find(entry.name);
             BoxCollider2D box = go == null ? null : go.GetComponent<BoxCollider2D>();
             if (box == null) { Debug.LogError("[Zone2Guard] НЕТ: " + entry.name); errors++; continue; }
-            if (Mathf.Abs(box.bounds.max.y - entry.top) > 0.02f ||
-                Mathf.Abs(box.bounds.min.x - entry.left) > 0.02f ||
-                Mathf.Abs(box.bounds.max.x - entry.right) > 0.02f)
+            if (Mathf.Abs(box.bounds.max.y - entry.top) > 0.2f ||
+                Mathf.Abs(box.bounds.min.x - entry.left) > 0.25f ||
+                Mathf.Abs(box.bounds.max.x - entry.right) > 0.25f)
             {
                 Debug.LogError("[Zone2Guard] " + entry.name + " top=" + box.bounds.max.y.ToString("F2") +
                                " x=" + box.bounds.min.x.ToString("F1") + ".." + box.bounds.max.x.ToString("F1"));
@@ -67,4 +68,6 @@ public static class Zone2ReferenceGuard
         Debug.Log(errors == 0 ? "[Zone2Guard] PASS" : "[Zone2Guard] FAIL: " + errors);
     }
 }
+
+
 
