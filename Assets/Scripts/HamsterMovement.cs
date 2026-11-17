@@ -160,7 +160,7 @@ public class HamsterMovement : MonoBehaviour
 
         if (input != null)
         {
-            moveInput = Mathf.Clamp(input.Move, -1f, 1f);
+            moveInput = DebugMoveOverride != 0f ? Mathf.Sign(DebugMoveOverride) : Mathf.Clamp(input.Move, -1f, 1f);
         }
         else if (Keyboard.current != null)
         {
@@ -299,6 +299,10 @@ public class HamsterMovement : MonoBehaviour
     public float HorizontalSpeed => rb != null ? rb.linearVelocity.x : 0f;
     public float VerticalSpeed => rb != null ? rb.linearVelocity.y : 0f;
 
+    /// <summary>Отладочное управление движением (0 = обычный ввод).</summary>
+    public float DebugMoveOverride;
+
+
     /// <summary>Когда последний раз был хоть какой-то ввод. Нужно особому бездействию.</summary>
     public float LastInputTime { get; private set; }
 
@@ -421,6 +425,7 @@ public class HamsterMovement : MonoBehaviour
         if (!externalHorizontalControl)
             UpdateHorizontalMovement();
 
+        TryStepUp();
         ApplyGravityFeel();
     }
 
@@ -511,6 +516,58 @@ public class HamsterMovement : MonoBehaviour
         rb.linearVelocity = new Vector2(newSpeed, rb.linearVelocity.y);
     }
 
+    /// <summary>
+    /// Авто-шаг через низкие уступы (до 0.65): игрок не должен прыгать через
+    /// каждую ступеньку на стыке комнат.
+    /// </summary>
+    private void TryStepUp()
+    {
+        if (!isGrounded || controlLocked || Mathf.Abs(moveInput) < 0.01f)
+            return;
+
+        if (rb.linearVelocity.y > 0.1f)
+            return;
+
+        Collider2D own = GetComponent<Collider2D>();
+        float feet = own != null ? own.bounds.min.y : rb.position.y - 0.7f;
+        float direction = Mathf.Sign(moveInput);
+        float frontX = own != null
+            ? (direction > 0f ? own.bounds.max.x : own.bounds.min.x)
+            : rb.position.x;
+
+        RaycastHit2D[] hits = Physics2D.RaycastAll(new Vector2(frontX + direction * 0.02f, feet + 0.12f),
+            Vector2.right * direction, 0.45f, Physics2D.DefaultRaycastLayers);
+        foreach (RaycastHit2D hit in hits)
+        {
+            if (hit.collider == null || hit.collider.isTrigger)
+                continue;
+            if (hit.collider.transform.IsChildOf(transform))
+                continue;
+
+            float wallTop = hit.collider.bounds.max.y;
+            float stepHeight = wallTop - feet;
+            if (stepHeight <= 0.02f || stepHeight > 0.65f)
+                continue;
+
+            Vector2 target = new Vector2(rb.position.x + direction * 0.08f, rb.position.y + stepHeight + 0.03f);
+            bool blocked = false;
+            foreach (Collider2D overlap in Physics2D.OverlapBoxAll(target,
+                         new Vector2(own != null ? own.bounds.size.x * 0.8f : 0.7f,
+                             own != null ? own.bounds.size.y * 0.8f : 1.2f), 0f, Physics2D.DefaultRaycastLayers))
+            {
+                if (overlap == null || overlap.isTrigger || overlap.transform.IsChildOf(transform))
+                    continue;
+                blocked = true;
+                break;
+            }
+            if (blocked)
+                continue;
+
+            rb.position = target;
+            rb.linearVelocity = new Vector2(rb.linearVelocity.x, 0f);
+            return;
+        }
+    }
     private void ApplyGravityFeel()
     {
         float gravityMultiplier = isGrounded
@@ -621,3 +678,6 @@ public class HamsterMovement : MonoBehaviour
         }
     }
 }
+
+
+

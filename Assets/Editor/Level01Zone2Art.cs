@@ -69,6 +69,11 @@ public static class Level01Zone2Art
 
         // Старый финальный триггер Зоны I больше не должен останавливать проход:
         // переносим его на конец Зоны II (после комнаты 10).
+        // Твёрдая граница Зоны I тоже переносится на конец Зоны II.
+        GameObject endBoundary = GameObject.Find("ZoneOneEndBoundary");
+        if (endBoundary != null)
+            endBoundary.transform.position = new Vector3(390f, 12f, 0f);
+
         ZoneEndTrigger zoneEnd = Object.FindFirstObjectByType<ZoneEndTrigger>();
         if (zoneEnd != null)
         {
@@ -726,6 +731,7 @@ public static class Level01Zone2Art
             Object.DestroyImmediate(go);
     }
 }
+
 
 
 

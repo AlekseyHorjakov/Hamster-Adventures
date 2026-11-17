@@ -92,6 +92,28 @@ public sealed class DiagRunner : MonoBehaviour
             }
         }
 
+        int wi = System.Array.IndexOf(cli, "-diagwalk");
+        if (wi >= 0 && wi + 1 < cli.Length && float.TryParse(cli[wi + 1], out float walkX))
+        {
+            var hero = players.FirstOrDefault(pl => pl.name == "Hamster");
+            if (hero != null)
+            {
+                hero.Body.simulated = true;
+                hero.Body.position = new Vector2(walkX, 12f);
+                hero.Body.linearVelocity = Vector2.zero;
+                yield return new WaitForSecondsRealtime(1.2f);
+                hero.SetPartner(null);
+                hero.DebugMoveOverride = 1f;
+                for (int i = 0; i < 14; i++)
+                {
+                    yield return new WaitForSecondsRealtime(0.35f);
+                    Debug.Log("[DiagWalk] x=" + hero.transform.position.x.ToString("F1") +
+                              " y=" + hero.transform.position.y.ToString("F2"));
+                }
+                hero.DebugMoveOverride = 0f;
+            }
+        }
+
         if (cli.Contains("-diagpit"))
         {
             var hamster = players.FirstOrDefault(pl => pl.name == "Hamster");
@@ -115,3 +137,5 @@ public sealed class DiagRunner : MonoBehaviour
         }
     }
 }
+
+
