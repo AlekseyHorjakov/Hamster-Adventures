@@ -82,7 +82,9 @@ public sealed class Zone1PlayModeTests
         Assert.IsNotNull(GameObject.Find("BakedLevelArt"), "Запечённый арт зоны I присутствует");
         Assert.IsNull(FindComponent("LevelArtController"), "Runtime-арт вертикального среза не дублируется");
 
-        Component checkpoint = FindComponent("RoomCheckpoint");
+        GameObject campCheckpointObject = GameObject.Find("Checkpoint_Camp");
+        Assert.IsNotNull(campCheckpointObject, "Стартовый чекпоинт найден по имени");
+        Component checkpoint = campCheckpointObject.GetComponent(TypeOf("RoomCheckpoint"));
         Assert.IsNotNull(checkpoint, "Стартовый чекпоинт найден");
         SpriteRenderer flame = GetPrivate<SpriteRenderer>(checkpoint, "flameRenderer");
         Assert.IsNotNull(flame, "Огонь чекпоинта найден");
@@ -299,6 +301,7 @@ public sealed class Zone1PlayModeTests
         return field != null ? field.GetValue(target) as T : null;
     }
 }
+
 
 
 
