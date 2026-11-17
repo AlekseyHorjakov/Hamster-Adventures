@@ -66,6 +66,20 @@ public static class Level01Zone2Art
         WaterPatch(art.transform, "Water_Patch_A", 372f, 2.6f);
         Debug.Log("[Zone2] after patches=" + CountHyenas());
         RestoreParallaxScale();
+
+        // Старый финальный триггер Зоны I больше не должен останавливать проход:
+        // переносим его на конец Зоны II (после комнаты 10).
+        ZoneEndTrigger zoneEnd = Object.FindFirstObjectByType<ZoneEndTrigger>();
+        if (zoneEnd != null)
+        {
+            zoneEnd.transform.position = new Vector3(389f, 10f, 0f);
+            SerializedObject zoneSo = new SerializedObject(zoneEnd);
+            SerializedProperty completed = zoneSo.FindProperty("completedRooms");
+            if (completed != null)
+                completed.intValue = 10;
+            zoneSo.ApplyModifiedPropertiesWithoutUndo();
+            EditorUtility.SetDirty(zoneEnd);
+        }
         Debug.Log("[Zone2] after parallax=" + CountHyenas());
 
         var zoneHyenas = Object.FindObjectsByType<Transform>(FindObjectsInactive.Include, FindObjectsSortMode.None)
@@ -712,6 +726,7 @@ public static class Level01Zone2Art
             Object.DestroyImmediate(go);
     }
 }
+
 
 
 

@@ -643,12 +643,12 @@ public class LevelFlowController : MonoBehaviour
         float width = Mathf.Min(720f, Screen.width - 40f);
         Rect panel = new Rect((Screen.width - width) * 0.5f, Screen.height * 0.22f, width, 410f);
         GUILayout.BeginArea(panel);
-        GUILayout.Label("ЗОНА I СОБРАНА", titleStyle);
+        GUILayout.Label("ЗОНА ПРОЙДЕНА", titleStyle);
         GUILayout.Space(14f);
         GUILayout.Label("Комнаты 01–05 соединены и готовы к игровому тестированию.\n" +
                         "Следующая контрольная точка — зона II «Озеро» (комнаты 06–10).", textStyle);
         GUILayout.Space(20f);
-        GUILayout.Label("Пройдено комнат: " + roomsCompleted + "/5", textStyle);
+        GUILayout.Label("Пройдено комнат: " + roomsCompleted, textStyle);
         GUILayout.Space(24f);
         if (GUILayout.Button("Начать зону заново", buttonStyle, GUILayout.Height(52f)))
         {
@@ -735,3 +735,4 @@ public class LevelFlowController : MonoBehaviour
         };
     }
 }
+
