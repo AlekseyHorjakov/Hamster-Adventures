@@ -20,14 +20,34 @@ public static class Level01Zone2Art
         var level = Object.FindFirstObjectByType<LevelFlowController>();
         Transform roomsRoot = GameObject.Find("Rooms").transform;
 
+        // Чистим все прежние экземпляры гиен зоны II (могли накопиться между запусками).
+        var strays = Object.FindObjectsByType<Transform>(FindObjectsInactive.Include, FindObjectsSortMode.None)
+            .Where(t => t != null && (t.name.Contains("IslandHyena") || t.name.Contains("CrossHyena") ||
+                                      t.name.Contains("FallHyena") || t.name.Contains("ShallowsHyena")))
+            .Select(t => t.gameObject)
+            .ToArray();
+        foreach (GameObject stray in strays)
+            if (stray != null)
+                Object.DestroyImmediate(stray);
+
+        RemoveObject("Z2_BackdropMatte");
         RemoveObject("BakedZone2Art");
-        RemoveObject("Room_06_LakeShore");
-        RemoveObject("Room_07_Shallows");
+        RemoveAll("Room_06_LakeShore");
+        RemoveAll("Room_07_Shallows");
+        RemoveAll("Room_08_Islands");
+        RemoveAll("Room_09_Crossing");
+        RemoveAll("Room_10_Waterfall");
 
         RoomDefinition room06 = EnsureRoom(6, "Берег озера", 0.1f, 202f, 238f,
             "Спустись по ступеням к воде и дойди до мелководья.");
         RoomDefinition room07 = EnsureRoom(7, "Мелководье", 0.6f, 238f, 274f,
             "Перепрыгни по камням и доберись до дока.");
+        RoomDefinition room08 = EnsureRoom(8, "Островки", 2.5f, 274f, 314f,
+            "Перепрыгни по островам и победи гиен.");
+        RoomDefinition room09 = EnsureRoom(9, "Переправа", 3f, 314f, 352f,
+            "Переберись по платформам на другой берег.");
+        RoomDefinition room10 = EnsureRoom(10, "Водопад", 5f, 352f, 390f,
+            "Поднимись по уступам вдоль водопада.");
         WireLevelRooms(level);
         RoomDefinition room05 = AssetDatabase.LoadAssetAtPath<RoomDefinition>(
             "Assets/Level/Rooms/Zone1/Room_05.asset");
@@ -35,6 +55,23 @@ public static class Level01Zone2Art
         GameObject art = new GameObject("BakedZone2Art");
         BuildRoom06(roomsRoot, art.transform, level, room06, room05);
         BuildRoom07(roomsRoot, art.transform, level, room07, room06);
+        BuildRoom08(roomsRoot, art.transform, level, room08, room07);
+        BuildRoom09(roomsRoot, art.transform, level, room09, room08);
+        BuildRoom10(roomsRoot, art.transform, level, room10, room09);
+        Debug.Log("[Zone2] after rooms=" + CountHyenas());
+        Water(art.transform, 196f, 392f, -1.2f, -9.4f);
+        Debug.Log("[Zone2] after water=" + CountHyenas());
+        WaterPatch(art.transform, "Water_Patch_D", 285f, 2.3f);
+        WaterPatch(art.transform, "Water_Patch_B", 330f, 2.2f);
+        WaterPatch(art.transform, "Water_Patch_A", 372f, 2.6f);
+        Debug.Log("[Zone2] after patches=" + CountHyenas());
+        RestoreParallaxScale();
+        Debug.Log("[Zone2] after parallax=" + CountHyenas());
+
+        var zoneHyenas = Object.FindObjectsByType<Transform>(FindObjectsInactive.Include, FindObjectsSortMode.None)
+            .Where(t => t != null && (t.name.Contains("IslandHyena") || t.name.Contains("CrossHyena") || t.name.Contains("FallHyena") || t.name.Contains("ShallowsHyena")))
+            .ToArray();
+        Debug.Log("[Zone2] before save zoneHyenas=" + zoneHyenas.Length + " roots=" + string.Join(",", zoneHyenas.Select(t => t.name + "@" + t.position.y.ToString("F1"))));
 
         EditorSceneManager.MarkSceneDirty(scene);
         EditorSceneManager.SaveScene(scene);
@@ -68,7 +105,6 @@ public static class Level01Zone2Art
         TiledGround(art, "Z2_StepGround_2", 209.2f, 212.6f, 0.75f, 12);
         TiledGround(art, "Z2_BeachGround", 211.6f, 238f, 0.1f, 13);
 
-        Water(art, 196f, 278f, -1.2f, -9.2f);
         Decor(art, "Prop_Sign", 217.5f, 0.1f, 1.6f);
         Decor(art, "Prop_Lantern", 221.4f, 0.1f, 1.7f);
         Decor(art, "Prop_Rock", 226f, 0.1f, 0.8f);
@@ -94,16 +130,218 @@ public static class Level01Zone2Art
 
         AddDockFence(root.transform, 266.1f, 2f);
         AddDockFence(root.transform, 273.9f, 2f);
-        SpawnHyena(root.transform, 270f, 2.6f);
+        GameObject shallowHyena = SpawnHyenaAt(root.transform, "ShallowsHyena", 270f, 2.6f);
+        AddEncounter(root.transform, level, room, "Мелководье", 240f, 3f, 8f, 10f,
+            new[] { shallowHyena }, new GameObject[0]);
         AddFallZone(root.transform, level, "FallZone_Shallows", 258f, -5.2f, 80f);
 
-        Water(art, 196f, 278f, -1.2f, -9.2f);
         WaterPatch(art, "Water_Patch_A", 222f, 2.6f);
         WaterPatch(art, "Water_Patch_B", 245f, 2.4f);
         WaterPatch(art, "Water_Patch_C", 259f, 2.3f);
         WaterPatch(art, "Water_Patch_D", 274f, 2.2f);
     }
 
+    private static void BuildRoom08(Transform roomsRoot, Transform art, LevelFlowController level,
+        RoomDefinition room, RoomDefinition previous)
+    {
+        GameObject root = new GameObject("Room_08_Islands");
+        root.transform.SetParent(roomsRoot, false);
+
+        AddPlatform(root.transform, "Island_1", 274f, 282f, 2.5f, "SteppingStone_04", 4.7f);
+        AddPlatform(root.transform, "Island_2", 286f, 294f, 3.2f, "SteppingStone_05", 5.4f);
+        AddPlatform(root.transform, "Island_3", 298f, 306f, 4f, "SteppingStone_06", 6.2f);
+        AddPlatform(root.transform, "Island_Final", 309f, 314f, 2f, "SteppingStone_07", 4.2f);
+
+        AddTrigger(root.transform, "Room_08_Trigger", 274.3f, 6.5f, level, room);
+        AddTrigger(root.transform, "Room_07_BackTrigger", 273.7f, 4.5f, level, previous);
+
+        Fence(root.transform, 274.2f, 2.5f);
+        Fence(root.transform, 281.8f, 2.5f);
+        Fence(root.transform, 298.2f, 4f);
+        Fence(root.transform, 305.8f, 4f);
+
+        GameObject hyenaA = SpawnHyenaAt(root.transform, "IslandHyena_A", 279f, 3.2f);
+        GameObject hyenaB = SpawnHyenaAt(root.transform, "IslandHyena_B", 302f, 4.7f);
+
+        GameObject gate = Gate(root.transform, "IslandGate", 313.6f, 6f);
+        AddEncounter(root.transform, level, room, "Островки", 277.5f, 5f, 14f, 10f,
+            new[] { hyenaA, hyenaB }, new[] { gate });
+    }
+
+    private static void BuildRoom09(Transform roomsRoot, Transform art, LevelFlowController level,
+        RoomDefinition room, RoomDefinition previous)
+    {
+        GameObject root = new GameObject("Room_09_Crossing");
+        root.transform.SetParent(roomsRoot, false);
+
+        AddGround(root.transform, "CrossStart", 314f, 321f, 2f);
+        AddGround(root.transform, "CrossExit", 348f, 352f, 4f);
+        TiledGround(art, "Z2_CrossStartGround", 314f, 321f, 2f, 10);
+        TiledGround(art, "Z2_CrossExitGround", 348f, 352f, 4f, 10);
+
+        AddPlatform(root.transform, "CrossPlatform_1", 325f, 330f, 2.8f, "Platform_Wide_A", 0.9f);
+        AddPlatform(root.transform, "CrossPlatform_2", 334f, 339f, 3.6f, "Platform_Wide_B", 0.9f);
+        AddPlatform(root.transform, "CrossPlatform_3", 343f, 348f, 4.4f, "Platform_Wide_A", 0.9f);
+
+        AddTrigger(root.transform, "Room_09_Trigger", 314.3f, 7f, level, room);
+        AddTrigger(root.transform, "Room_08_BackTrigger", 313.7f, 5f, level, previous);
+
+        SpawnHyenaAt(root.transform, "CrossHyena_A", 327.4f, 3.6f);
+        SpawnHyenaAt(root.transform, "CrossHyena_B", 345.4f, 5.2f);
+    }
+
+    private static void BuildRoom10(Transform roomsRoot, Transform art, LevelFlowController level,
+        RoomDefinition room, RoomDefinition previous)
+    {
+        GameObject root = new GameObject("Room_10_Waterfall");
+        root.transform.SetParent(roomsRoot, false);
+
+        AddGround(root.transform, "FallBase", 352f, 358f, 4f);
+        TiledGround(art, "Z2_FallBaseGround", 352f, 358f, 4f, 10);
+
+        AddPlatform(root.transform, "FallLedge_1", 360f, 364f, 5f, "SteppingStone_05", 2.4f);
+        AddPlatform(root.transform, "FallLedge_2", 367f, 371f, 6f, "SteppingStone_06", 2.4f);
+        AddPlatform(root.transform, "FallLedge_3", 374f, 378f, 7f, "SteppingStone_07", 2.4f);
+
+        AddGround(root.transform, "FallTop", 380f, 390f, 8f);
+        TiledGround(art, "Z2_FallTopGround", 380f, 390f, 8f, 10);
+
+        AddTrigger(root.transform, "Room_10_Trigger", 352.3f, 10f, level, room);
+        AddTrigger(root.transform, "Room_09_BackTrigger", 351.7f, 8f, level, previous);
+
+        Fence(root.transform, 380.2f, 8f);
+        Fence(root.transform, 389.8f, 8f);
+        SpawnHyenaAt(root.transform, "FallHyena", 385f, 8.9f);
+
+        Sprite falls = Load("Waterfall_A");
+        if (falls != null)
+        {
+            GameObject waterfall = new GameObject("Z2_Waterfall");
+            waterfall.transform.SetParent(art, false);
+            waterfall.transform.position = new Vector3(368f, 3f, 0f);
+            SpriteRenderer renderer = waterfall.AddComponent<SpriteRenderer>();
+            renderer.sprite = falls;
+            renderer.sortingLayerName = "Ground";
+            renderer.sortingOrder = 9;
+            waterfall.transform.localScale = new Vector3(4.2f / falls.bounds.size.x, 10f / falls.bounds.size.y, 1f);
+        }
+    }
+
+    private static void AddPlatform(Transform parent, string name, float left, float right, float top,
+        string spriteName, float visualHeight)
+    {
+        GameObject go = new GameObject(name);
+        go.transform.SetParent(parent, false);
+        go.transform.position = new Vector3((left + right) * 0.5f, top - 0.3f, 0f);
+        BoxCollider2D box = go.AddComponent<BoxCollider2D>();
+        box.size = new Vector2(right - left, 0.6f);
+
+        Sprite sprite = Load(spriteName);
+        if (sprite == null)
+            return;
+        GameObject visual = new GameObject("Visual");
+        visual.transform.SetParent(go.transform, false);
+        SpriteRenderer renderer = visual.AddComponent<SpriteRenderer>();
+        renderer.sprite = sprite;
+        renderer.sortingLayerName = "Ground";
+        renderer.sortingOrder = 11;
+        // Верх спрайта = верх коллайдера, низ уходит в воду на нужную глубину.
+        float scaleX = (right - left) / sprite.bounds.size.x;
+        float scaleY = visualHeight / sprite.bounds.size.y;
+        visual.transform.localScale = new Vector3(scaleX, scaleY, 1f);
+        visual.transform.localPosition = new Vector3(0f, 0.3f - visualHeight * 0.5f + 0.03f, 0f);
+    }
+
+    private static void Fence(Transform parent, float x, float top)
+    {
+        GameObject fence = new GameObject("Fence_" + x.ToString("0.#"));
+        fence.transform.SetParent(parent, false);
+        fence.transform.position = new Vector3(x, top + 1f, 0f);
+        BoxCollider2D box = fence.AddComponent<BoxCollider2D>();
+        box.size = new Vector2(0.2f, 2f);
+    }
+
+    private static GameObject Gate(Transform parent, string name, float x, float height)
+    {
+        GameObject gate = new GameObject(name);
+        gate.transform.SetParent(parent, false);
+        gate.transform.position = new Vector3(x, 4f + height * 0.5f, 0f);
+        BoxCollider2D box = gate.AddComponent<BoxCollider2D>();
+        box.size = new Vector2(0.4f, height);
+        return gate;
+    }
+
+    private static void AddEncounter(Transform parent, LevelFlowController level, RoomDefinition room, string name,
+        float x, float y, float width, float height, GameObject[] enemies, GameObject[] gates)
+    {
+        GameObject go = new GameObject("Encounter_" + name);
+        go.transform.SetParent(parent, false);
+        go.transform.position = new Vector3(x, y, 0f);
+        BoxCollider2D box = go.AddComponent<BoxCollider2D>();
+        box.isTrigger = true;
+        box.size = new Vector2(width, height);
+
+        EncounterController encounter = go.AddComponent<EncounterController>();
+        SerializedObject so = new SerializedObject(encounter);
+        so.FindProperty("level").objectReferenceValue = level;
+        so.FindProperty("room").objectReferenceValue = room;
+        so.FindProperty("encounterName").stringValue = name;
+
+        SerializedProperty enemiesProp = so.FindProperty("enemies");
+        enemiesProp.arraySize = enemies.Length;
+        for (int i = 0; i < enemies.Length; i++)
+            enemiesProp.GetArrayElementAtIndex(i).objectReferenceValue = enemies[i];
+
+        SerializedProperty gatesProp = so.FindProperty("gates");
+        gatesProp.arraySize = gates.Length;
+        for (int i = 0; i < gates.Length; i++)
+            gatesProp.GetArrayElementAtIndex(i).objectReferenceValue = gates[i];
+
+        so.ApplyModifiedPropertiesWithoutUndo();
+    }
+
+    private static GameObject SpawnHyenaAt(Transform parent, string name, float x, float y)
+    {
+        GameObject prefab = AssetDatabase.LoadAssetAtPath<GameObject>("Assets/Prefabs/Hyena.prefab");
+        UnityEngine.Debug.Log("[Zone2] hyena prefab=" + (prefab == null ? "NULL" : prefab.name) + " for " + name);
+        if (prefab == null)
+            return null;
+        // Клонируем экземпляр из сцены: такие объекты гарантированно сохраняются.
+        GameObject template = GameObject.Find("TrainingHyena_B");
+        GameObject hyena = template != null ? Object.Instantiate(template) : Object.Instantiate(prefab);
+        hyena.SetActive(false);
+        hyena.name = name;
+        hyena.transform.SetParent(parent, false);
+        hyena.transform.position = new Vector3(x, y, 0f);
+        UnityEngine.Debug.Log("[Zone2] spawn " + hyena.name + " parent=" + hyena.transform.parent.name +
+                              " inScene=" + hyena.scene.IsValid() + " active=" + hyena.activeSelf);
+        return hyena;
+    }
+    private static void RestoreParallaxScale()
+    {
+        // Единый масштаб слоёв фона: ранее size в Tiled-режиме растянул их по X.
+        Transform art = GameObject.Find("BakedLevelArt")?.transform;
+        Transform parallax = art == null ? null : art.Find("Parallax");
+        if (parallax == null)
+            return;
+
+        foreach (Transform layer in parallax)
+        {
+            SpriteRenderer renderer = layer.GetComponent<SpriteRenderer>();
+            if (renderer == null)
+                continue;
+            float uniform = layer.lossyScale.y * 1.15f;
+            layer.localScale = new Vector3(uniform, uniform, 1f);
+            renderer.drawMode = SpriteDrawMode.Simple;
+        }
+
+        
+
+        RemoveObject("Z2_BackdropMatte");
+        Camera camera = Camera.main;
+        if (camera != null)
+            camera.backgroundColor = new Color(0.19215687f, 0.3019608f, 0.4745098f, 0f);
+    }
     // ---------- примитивы сцены ----------
 
     private static void AddGround(Transform parent, string name, float left, float right, float top)
@@ -251,7 +489,7 @@ public static class Level01Zone2Art
         GameObject prefab = AssetDatabase.LoadAssetAtPath<GameObject>("Assets/Prefabs/Hyena.prefab");
         if (prefab == null)
             return;
-        GameObject hyena = (GameObject)PrefabUtility.InstantiatePrefab(prefab);
+        GameObject hyena = Object.Instantiate(prefab);
         hyena.name = "ShallowsHyena";
         hyena.transform.SetParent(parent, false);
         hyena.transform.position = new Vector3(x, y, 0f);
@@ -424,7 +662,7 @@ public static class Level01Zone2Art
         if (level == null)
             return;
 
-        RoomDefinition[] rooms = Enumerable.Range(1, 7)
+        RoomDefinition[] rooms = Enumerable.Range(1, 10)
             .Select(id =>
             {
                 string folder = id <= 5 ? "Assets/Level/Rooms/Zone1" : RoomsPath;
@@ -452,6 +690,21 @@ public static class Level01Zone2Art
         return AssetDatabase.LoadAssetAtPath<Sprite>(SlicesPath + "/" + name + ".png");
     }
 
+    private static int CountHyenas()
+    {
+        return Object.FindObjectsByType<Transform>(FindObjectsInactive.Include, FindObjectsSortMode.None)
+            .Count(t => t != null && (t.name.Contains("IslandHyena") || t.name.Contains("CrossHyena") ||
+                                      t.name.Contains("FallHyena") || t.name.Contains("ShallowsHyena")));
+    }
+    private static void RemoveAll(string name)
+    {
+        GameObject go = GameObject.Find(name);
+        while (go != null)
+        {
+            Object.DestroyImmediate(go);
+            go = GameObject.Find(name);
+        }
+    }
     private static void RemoveObject(string name)
     {
         GameObject go = GameObject.Find(name);
@@ -459,5 +712,27 @@ public static class Level01Zone2Art
             Object.DestroyImmediate(go);
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 

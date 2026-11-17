@@ -14,10 +14,24 @@ public static class Zone2ReferenceGuard
         ("Stone_A", 0.2f, 241f, 245f),
         ("Stone_B", 0.8f, 249f, 253f),
         ("Stone_C", 1.4f, 257f, 261f),
-        ("LakeDock", 2f, 266f, 274f)
+        ("LakeDock", 2f, 266f, 274f),
+        ("Island_1", 2.5f, 274f, 282f),
+        ("Island_2", 3.2f, 286f, 294f),
+        ("Island_3", 4f, 298f, 306f),
+        ("Island_Final", 2f, 309f, 314f),
+        ("CrossStart", 2f, 314f, 321f),
+        ("CrossPlatform_1", 2.8f, 325f, 330f),
+        ("CrossPlatform_2", 3.6f, 334f, 339f),
+        ("CrossPlatform_3", 4.4f, 343f, 348f),
+        ("CrossExit", 4f, 348f, 352f),
+        ("FallBase", 4f, 352f, 358f),
+        ("FallLedge_1", 5f, 360f, 364f),
+        ("FallLedge_2", 6f, 367f, 371f),
+        ("FallLedge_3", 7f, 374f, 378f),
+        ("FallTop", 8f, 380f, 390f)
     };
 
-    private static readonly (string asset, float surfaceY)[] Rooms = { ("Room_06", 0.1f), ("Room_07", 0.6f) };
+    private static readonly (string asset, float surfaceY)[] Rooms = { ("Room_06", 0.1f), ("Room_07", 0.6f), ("Room_08", 2.5f), ("Room_09", 3f), ("Room_10", 5f) };
 
     [MenuItem("Tools/Hamster/Проверить эталон Зоны II")]
     public static void Run()
@@ -53,3 +67,4 @@ public static class Zone2ReferenceGuard
         Debug.Log(errors == 0 ? "[Zone2Guard] PASS" : "[Zone2Guard] FAIL: " + errors);
     }
 }
+

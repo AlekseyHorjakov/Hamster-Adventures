@@ -129,8 +129,9 @@ public sealed class Zone1PlayModeTests
         Assert.Greater(hamster.transform.position.y, 3.2f,
             "В начале комнаты 04 герой не проваливается сквозь землю");
 
-        Component encounter = FindComponent("EncounterController");
-        Assert.IsNotNull(encounter, "Encounter комнаты 04 найден");
+        GameObject encounterObject = GameObject.Find("Encounter_Room04");
+        Assert.IsNotNull(encounterObject, "Encounter комнаты 04 найден по имени");
+        Component encounter = encounterObject.GetComponent(TypeOf("EncounterController"));
 
         yield return MovePlayer(hamster, new Vector2(123.6f, 3.2f));
         yield return new WaitForSecondsRealtime(0.35f);
@@ -301,6 +302,7 @@ public sealed class Zone1PlayModeTests
         return field != null ? field.GetValue(target) as T : null;
     }
 }
+
 
 
 
