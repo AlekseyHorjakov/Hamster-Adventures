@@ -19,7 +19,8 @@ public static class ZoneShot
         {
             ("board", 269f, -0.5f, 7f, new Vector2(268f, -0.9f)),
             ("bridges", 368f, 7.5f, 9f, new Vector2(364f, 6.3f)),
-            ("lakewide", 294f, 6f, 14f, new Vector2(288f, 3.6f))
+            ("lakewide", 294f, 6f, 14f, new Vector2(288f, 3.6f)),
+            ("waterfall", 181f, 9f, 14f, new Vector2(176f, 3.5f))
         };
 
         Directory.CreateDirectory("C:/Windows/Temp/zshots2");
