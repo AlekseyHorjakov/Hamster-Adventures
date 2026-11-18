@@ -114,6 +114,18 @@ public sealed class DiagRunner : MonoBehaviour
             }
         }
 
+        var heroForLog = players.FirstOrDefault(pl => pl.name == "Hamster");
+        if (heroForLog != null && Camera.main != null)
+        {
+            yield return new WaitForSecondsRealtime(3f);
+            var groundHits = Physics2D.OverlapBoxAll(new Vector2(heroForLog.transform.position.x, heroForLog.GetComponent<Collider2D>().bounds.min.y + 0.05f), new Vector2(0.4f, 0.15f), 0f);
+            foreach (var hit in groundHits)
+                Debug.Log("[Frame] under=" + hit.name + " type=" + hit.GetType().Name + " top=" + hit.bounds.max.y.ToString("F2") + " parent=" + (hit.transform.parent == null ? "-" : hit.transform.parent.name));
+            Debug.Log("[Frame] cam=" + Camera.main.transform.position.ToString("F2") + " ortho=" + Camera.main.orthographicSize.ToString("F2") +
+                      " hero=" + heroForLog.transform.position.ToString("F2") +
+                      " ground=" + (heroForLog.GetComponent<Collider2D>() != null ? heroForLog.GetComponent<Collider2D>().bounds.min.y.ToString("F2") : "-"));
+        }
+
         if (cli.Contains("-diagpit"))
         {
             var hamster = players.FirstOrDefault(pl => pl.name == "Hamster");
@@ -137,5 +149,7 @@ public sealed class DiagRunner : MonoBehaviour
         }
     }
 }
+
+
 
 
