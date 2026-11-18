@@ -158,6 +158,28 @@ public sealed class DiagRunner : MonoBehaviour
             }
         }
 
+        int ji = System.Array.IndexOf(cli, "-diagjump");
+        if (ji >= 0 && ji + 1 < cli.Length && float.TryParse(cli[ji + 1], out float jumpX))
+        {
+            var hero = players.FirstOrDefault(pl => pl.name == "Hamster");
+            if (hero != null)
+            {
+                hero.Body.simulated = true;
+                hero.Body.position = new Vector2(jumpX, 12f);
+                hero.Body.linearVelocity = Vector2.zero;
+                yield return new WaitForSecondsRealtime(2f);
+                float startY = hero.transform.position.y;
+                hero.DebugJump();
+                float maxY = startY;
+                for (int i = 0; i < 20; i++)
+                {
+                    yield return new WaitForSecondsRealtime(0.05f);
+                    maxY = Mathf.Max(maxY, hero.transform.position.y);
+                }
+                Debug.Log("[Jump] x=" + jumpX + " start=" + startY.ToString("F2") + " max=" + maxY.ToString("F2") + " rise=" + (maxY - startY).ToString("F2"));
+            }
+        }
+
         if (cli.Contains("-diagpit"))
         {
             var hamster = players.FirstOrDefault(pl => pl.name == "Hamster");
@@ -181,6 +203,7 @@ public sealed class DiagRunner : MonoBehaviour
         }
     }
 }
+
 
 
 

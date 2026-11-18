@@ -28,6 +28,7 @@ public static class Zone2Cleanup
 
         int removedColliders = RemoveOrphanColliders();
         RestoreBank();
+        RebuildLakeBackdrop();
 
         EditorSceneManager.MarkSceneDirty(scene);
         EditorSceneManager.SaveScene(scene);
@@ -43,8 +44,10 @@ public static class Zone2Cleanup
             if (go == null)
                 continue;
 
-            // Если у объекта нет ни одного спрайта — платформа удалена, коллайдер лишний.
-            if (go.GetComponentInChildren<SpriteRenderer>(true) != null)
+            // Платформа считается удалённой, если у неё нет ни одного видимого спрайта.
+            bool hasVisibleSprite = go.GetComponentsInChildren<SpriteRenderer>(true)
+                .Any(sr => sr != null && sr.sprite != null && sr.enabled);
+            if (hasVisibleSprite)
                 continue;
 
             foreach (Collider2D col in go.GetComponents<Collider2D>())
@@ -57,6 +60,25 @@ public static class Zone2Cleanup
                 Object.DestroyImmediate(go);
         }
         return removed;
+    }
+
+    private static void RebuildLakeBackdrop()
+    {
+        GameObject old = GameObject.Find("Z2W_LakeBackdrop");
+        if (old != null)
+            Object.DestroyImmediate(old);
+
+        Sprite lake = AssetDatabase.LoadAssetAtPath<Sprite>("Assets/Art/Level01/WaterSlices/LakeBackdrop_Fade.png");
+        if (lake == null)
+            return;
+
+        GameObject backdrop = new GameObject("Z2W_LakeBackdrop");
+        backdrop.transform.position = new Vector3(294f, 0.1f, 0f);
+        SpriteRenderer renderer = backdrop.AddComponent<SpriteRenderer>();
+        renderer.sprite = lake;
+        renderer.sortingLayerName = "Mid";
+        renderer.sortingOrder = -19;
+        backdrop.transform.localScale = new Vector3(200f / lake.bounds.size.x, 22f / lake.bounds.size.y, 1f);
     }
 
     private static void RestoreBank()

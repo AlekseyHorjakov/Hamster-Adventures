@@ -322,6 +322,12 @@ public class HamsterMovement : MonoBehaviour
         partner = partnerTransform;
     }
 
+    /// <summary>Отладочный прыжок (для проверки коллизий в билде).</summary>
+    public void DebugJump()
+    {
+        jumpBufferedUntil = Time.time + 0.25f;
+    }
+
     public void SetControlLocked(bool locked)
     {
         controlLocked = locked;
@@ -678,6 +684,7 @@ public class HamsterMovement : MonoBehaviour
         }
     }
 }
+
 
 
 
