@@ -118,6 +118,16 @@ public static class Level01Zone2Art
         AddCheckpoint(root.transform, level, room, 1, "Берег озера", 220f, 0.1f);
         AddFallZone(root.transform, level, "FallZone_Lake", 238f, -5.2f, 78f);
 
+        var beachHyenas = new GameObject[3];
+        for (int i = 0; i < beachHyenas.Length; i++)
+        {
+            beachHyenas[i] = SpawnHyenaAt(root.transform, "BeachHyena_" + (i + 1), 232f + i * 2.5f, 0.1f);
+            SetLeash(beachHyenas[i], 226f, 238f);
+        }
+
+        AddEncounter(root.transform, level, room, "Берег озера", 229.5f, 2.5f, 16f, 10f,
+            beachHyenas, new GameObject[0]);
+
         // Земля: зона I рисует себе арт в BakedLevelArt, здесь свой слой.
         TiledGround(art, "Z2_LedgeGround", 202f, 207.2f, 2f, 10);
 
@@ -193,10 +203,6 @@ public static class Level01Zone2Art
         if (previous != null)
             AddTrigger(root.transform, "Room_06_BackTrigger", 237.7f, 3.1f, level, previous);
 
-        GameObject shallowHyena = SpawnHyenaAt(root.transform, "ShallowsHyena", 270f, 2f);
-        SetLeash(shallowHyena, 266.6f, 273.4f);
-        AddEncounter(root.transform, level, room, "Мелководье", 240f, 3f, 8f, 10f,
-            new[] { shallowHyena }, new GameObject[0]);
         AddFallZone(root.transform, level, "FallZone_Shallows", 258f, -5.2f, 80f);
 
         WaterPatch(art, "Water_Patch_A", 222f, 2.6f);
@@ -247,10 +253,6 @@ public static class Level01Zone2Art
         AddTrigger(root.transform, "Room_09_Trigger", 314.3f, 7f, level, room);
         AddTrigger(root.transform, "Room_08_BackTrigger", 313.7f, 5f, level, previous);
 
-        GameObject crossA = SpawnHyenaAt(root.transform, "CrossHyena_A", 327.4f, 2.8f);
-        SetLeash(crossA, 325.4f, 329.6f);
-        GameObject crossB = SpawnHyenaAt(root.transform, "CrossHyena_B", 345.4f, 4.4f);
-        SetLeash(crossB, 343.4f, 347.6f);
     }
 
     private static void BuildRoom10(Transform roomsRoot, Transform art, LevelFlowController level,
@@ -272,8 +274,6 @@ public static class Level01Zone2Art
         AddTrigger(root.transform, "Room_10_Trigger", 352.3f, 10f, level, room);
         AddTrigger(root.transform, "Room_09_BackTrigger", 351.7f, 8f, level, previous);
 
-        GameObject fallHyena = SpawnHyenaAt(root.transform, "FallHyena", 385f, 8f);
-        SetLeash(fallHyena, 381f, 389f);
 
         Sprite falls = Load("Waterfall_A");
         if (falls != null)
@@ -324,19 +324,18 @@ public static class Level01Zone2Art
             {
                 float sx = (right - left) / sprite.bounds.size.x;
                 float sy = visualHeight / sprite.bounds.size.y;
+                float flatLine = (0.5f - FlatFraction(spriteName)) * visualHeight;
                 for (int path = 0; path < shape.pathCount; path++)
                 {
                     Vector2[] points = shape.GetPath(path);
                     for (int i = 0; i < points.Length; i++)
-                        points[i] = new Vector2(points[i].x * sx, points[i].y * sy);
+                    {
+                        float pointY = Mathf.Min(points[i].y * sy, flatLine);
+                        points[i] = new Vector2(points[i].x * sx, pointY);
+                    }
                     shape.SetPath(path, points);
                 }
                 shape.offset = new Vector2(0f, 0.3f - visualHeight * 0.5f);
-
-                // Плоская кромка сверху: по ней герой стоит ровно, силуэт остаётся полигональным.
-                BoxCollider2D ledgeTop = go.AddComponent<BoxCollider2D>();
-                ledgeTop.size = new Vector2((right - left) * 0.96f, 0.12f);
-                ledgeTop.offset = new Vector2(0f, 0.24f);
             }
             if (!polygon)
                 Object.DestroyImmediate(shape);

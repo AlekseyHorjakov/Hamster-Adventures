@@ -42,7 +42,7 @@ public static class Zone2ReferenceGuard
         foreach (var entry in Expected)
         {
             GameObject go = GameObject.Find(entry.name);
-            BoxCollider2D box = go == null ? null : go.GetComponent<BoxCollider2D>();
+            Collider2D box = go == null ? null : go.GetComponent<Collider2D>();
             if (box == null) { Debug.LogError("[Zone2Guard] НЕТ: " + entry.name); errors++; continue; }
             if (Mathf.Abs(box.bounds.max.y - entry.top) > 0.2f ||
                 Mathf.Abs(box.bounds.min.x - entry.left) > 0.25f ||
