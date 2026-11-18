@@ -7,7 +7,7 @@ public static class LevelArtImporter
 {
     private const string Root = "Assets/Resources/Level01";
 
-    [MenuItem("Tools/Hamster/Configure Level Art")]
+    [MenuItem("Tools/Хомяк/Арт: настроить импорт")]
     public static void Configure()
     {
         if (!Directory.Exists(Root))

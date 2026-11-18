@@ -12,7 +12,7 @@ public static class VerticalSliceBuild
     private const string OutputDirectory = "D:/Build/HamsterAdventures_SliceLatest";
     private const string OutputExe = OutputDirectory + "/HamsterAdventures_SliceLatest.exe";
 
-    [MenuItem("Tools/Hamster/Build Windows Vertical Slice")]
+    [MenuItem("Tools/Хомяк/СБОРКА: Windows — вертикальный срез")]
     public static void BuildWindows64()
     {
         string[] scenes = { MenuScenePath, ScenePath };

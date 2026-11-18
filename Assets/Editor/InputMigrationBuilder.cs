@@ -8,7 +8,7 @@ using UnityEngine.InputSystem;
 /// (A/D/W/F/E/R/Q) и HamsterGirl (H/K/U/L/O/P/I), затем добавляет PlayerInputReader
 /// на оба префаба и связывает его с HamsterMovement.
 ///
-/// Запуск: Tools/Hamster/Migrate Input или batchmode
+/// Запуск: Tools/Хомяк/Ввод: миграция на Input System или batchmode
 /// -executeMethod InputMigrationBuilder.BuildAll
 /// </summary>
 public static class InputMigrationBuilder
@@ -16,7 +16,7 @@ public static class InputMigrationBuilder
     private const string Folder = "Assets/Input";
     private const string AssetPath = Folder + "/PlayerControls.inputactions";
 
-    [MenuItem("Tools/Hamster/Migrate Input")]
+    [MenuItem("Tools/Хомяк/Ввод: миграция на Input System")]
     public static void BuildAll()
     {
         InputActionAsset asset = BuildAsset();

@@ -8,7 +8,7 @@ public static class LevelSceneFixups
     private const string ScenePath = "Assets/Scenes/Level01_VerticalSlice.unity";
     private const float GroundArtLift = 1.1f;
 
-    [MenuItem("Tools/Hamster/Align Ground Colliders To Visuals")]
+    [MenuItem("Tools/Хомяк/Уровень: выровнять коллайдеры по визуалу")]
     public static void AlignGroundColliders()
     {
         EditorSceneManager.OpenScene(ScenePath, OpenSceneMode.Single);
@@ -18,7 +18,7 @@ public static class LevelSceneFixups
         Debug.Log("[Fixup] Коллайдеры площадок выровнены по визуалам.");
     }
 
-    [MenuItem("Tools/Hamster/Apply Level Fixups")]
+    [MenuItem("Tools/Хомяк/Уровень: применить фиксы")]
     public static void ApplyAll()
     {
         EditorSceneManager.OpenScene(ScenePath, OpenSceneMode.Single);

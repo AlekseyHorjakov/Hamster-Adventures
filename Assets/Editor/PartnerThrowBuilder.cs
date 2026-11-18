@@ -5,7 +5,7 @@ using UnityEngine;
 /// <summary>
 /// Собирает бросок напарника: воздушные VFX, эффект столкновения, HitData
 /// и компонент PartnerThrowController на обоих героях.
-/// Меню: Tools/Hamster/Build Partner Throw.
+/// Меню: Tools/Хомяк/Кооп: бросок напарника.
 /// </summary>
 public static class PartnerThrowBuilder
 {
@@ -16,7 +16,7 @@ public static class PartnerThrowBuilder
     private const string ImpactPrefabPath = PrefabFolder + "/PartnerThrowImpact.prefab";
     private const string HitDataPath = "Assets/Combat/HitData_ThrownPartner.asset";
 
-    [MenuItem("Tools/Hamster/Build Partner Throw")]
+    [MenuItem("Tools/Хомяк/Кооп: бросок напарника")]
     public static void BuildAll()
     {
         EnsureFolder("Assets/VFX");

@@ -6,7 +6,7 @@ using UnityEngine;
 /// <summary>
 /// Эталон Зоны I (комнаты 01-05). Фиксирует ключевые коллайдеры и высоты комнат,
 /// чтобы будущие правки арта не сдвинули проходимость и не сломали прыжки.
-/// Меню: Tools/Hamster/Проверить эталон Зоны I.
+/// Меню: Tools/Хомяк/Проверка: эталон Зоны I.
 /// </summary>
 public static class Zone1ReferenceGuard
 {
@@ -41,7 +41,7 @@ public static class Zone1ReferenceGuard
         ("Room_01", 0f), ("Room_02", 0f), ("Room_03", 0.75f), ("Room_04", 2f), ("Room_05", 2f)
     };
 
-    [MenuItem("Tools/Hamster/Проверить эталон Зоны I")]
+    [MenuItem("Tools/Хомяк/Проверка: эталон Зоны I")]
     public static void Run()
     {
         EditorSceneManager.OpenScene("Assets/Scenes/Level01_Full.unity", OpenSceneMode.Single);

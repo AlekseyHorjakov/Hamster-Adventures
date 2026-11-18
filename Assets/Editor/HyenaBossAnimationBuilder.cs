@@ -11,7 +11,7 @@ public static class HyenaBossAnimationBuilder
     private const string AnimationsFolder = "Assets/Animations/Enemies/HyenaBoss";
     private const string ControllerPath = AnimationsFolder + "/HyenaBoss.controller";
 
-    [MenuItem("Tools/Hamster/Build Boss Animations")]
+    [MenuItem("Tools/Хомяк/Босс: анимации")]
     public static void Build()
     {
         ConfigureFrameImporters();

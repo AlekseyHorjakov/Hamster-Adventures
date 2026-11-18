@@ -44,13 +44,13 @@ public static class Level01Zone1Builder
     private static Sprite[] flameFrames;
     private static Sprite arenaFence;
 
-    [MenuItem("Tools/Hamster/Build Level 01 - Zone I (Rooms 01-05)")]
+    [MenuItem("Tools/Хомяк/Зона I: собрать комнаты 01-05")]
     public static void BuildZoneOne()
     {
         BuildZoneOneInternal(false);
     }
 
-    [MenuItem("Tools/Hamster/Force Rebuild Level 01 - Zone I (overwrite manual edits)")]
+    [MenuItem("Tools/Хомяк/Зона I: пересобрать принудительно (СОТРЁТ ручные правки!)")]
     public static void ForceRebuildZoneOne()
     {
         BuildZoneOneInternal(true);

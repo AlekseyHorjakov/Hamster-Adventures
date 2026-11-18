@@ -6,7 +6,7 @@ public static class PauseMenuArtBuilder
 {
     private const string BoardPath = "Assets/Resources/UI/PauseMenu_Signboard.png";
 
-    [MenuItem("Tools/Hamster/Configure Pause Menu Art")]
+    [MenuItem("Tools/Хомяк/Меню: арт паузы")]
     public static void Configure()
     {
         AssetDatabase.ImportAsset(BoardPath, ImportAssetOptions.ForceSynchronousImport);

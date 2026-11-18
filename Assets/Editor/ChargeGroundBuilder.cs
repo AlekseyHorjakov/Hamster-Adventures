@@ -11,7 +11,7 @@ using UnityEngine;
 /// Кадры уже нормализованы под тот же холст 960×900 и ту же линию ступней,
 /// что и остальные анимации: 730 для Хомяка, 742 для Хомячихи.
 ///
-/// Запуск: Tools/Hamster/Build Charge Ground или
+/// Запуск: Tools/Хомяк/VFX: земля заряда или
 /// Unity.exe -batchmode -quit -executeMethod ChargeGroundBuilder.BuildAll
 /// </summary>
 public static class ChargeGroundBuilder
@@ -20,7 +20,7 @@ public static class ChargeGroundBuilder
     private const float GirlPpu = 98f;
     private const float ClipSeconds = 0.36f;
 
-    [MenuItem("Tools/Hamster/Build Charge Ground")]
+    [MenuItem("Tools/Хомяк/VFX: земля заряда")]
     public static void BuildAll()
     {
         Sprite[] hamsterFrames = ImportFrames(

@@ -7,7 +7,7 @@ using UnityEngine.SceneManagement;
 /// <summary>
 /// Собирает вертикальный срез первого уровня: стартовая зона, платформинг,
 /// манекены, арена с гиенами, мини-босс, выход и экран завершения.
-/// Меню: Tools/Hamster/Build Vertical Slice.
+/// Меню: Tools/Хомяк/Вертикальный срез: собрать.
 /// </summary>
 public static class VerticalSliceBuilder
 {
@@ -21,7 +21,7 @@ public static class VerticalSliceBuilder
     private const string PlatformSpritePath = "Assets/Resources/Level01/Platform.png";
     private const string BossControllerPath = "Assets/Animations/Enemies/HyenaBoss/HyenaBoss.controller";
 
-    [MenuItem("Tools/Hamster/Build Vertical Slice")]
+    [MenuItem("Tools/Хомяк/Вертикальный срез: собрать")]
     public static void BuildAll()
     {
         if (AssetDatabase.LoadAssetAtPath<SceneAsset>(ScenePath) != null)

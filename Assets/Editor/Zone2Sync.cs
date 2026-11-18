@@ -28,7 +28,7 @@ public static class Zone2Sync
         ("Platform_Wide_A", 0.232f), ("Platform_Wide_B", 0.182f)
     };
 
-    [MenuItem("Tools/Hamster/Синхронизировать коллайдеры и бой Зоны II")]
+    [MenuItem("Tools/Хомяк/Зона II: синхронизировать коллайдеры и бой")]
     public static void Run()
     {
         var scene = EditorSceneManager.OpenScene(ScenePath, OpenSceneMode.Single);

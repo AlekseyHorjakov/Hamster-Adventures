@@ -12,7 +12,7 @@ public static class ReviveSystemBuilder
     private const string BubbleController = "Assets/Animations/VFX/ReviveBubble.controller";
     private const string BubblePrefab = "Assets/VFX/Prefabs/ReviveBubble.prefab";
 
-    [MenuItem("Tools/Hamster/Build Revive System")]
+    [MenuItem("Tools/Хомяк/Кооп: система воскрешения")]
     public static void BuildAll()
     {
         EnsureFolder("Assets/Animations/VFX");

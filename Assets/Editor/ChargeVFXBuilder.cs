@@ -6,7 +6,7 @@ using UnityEngine;
 
 /// <summary>
 /// Сборщик VFX заряженного удара из присланных кадров.
-/// Запускается из меню Tools/Hamster/Build Charge VFX или в batchmode:
+/// Запускается из меню Tools/Хомяк/VFX: пламя заряда или в batchmode:
 /// Unity.exe -batchmode -quit -projectPath ... -executeMethod ChargeVFXBuilder.BuildAll
 ///
 /// Кадры лежат в Assets/VFX/Art/ChargeVFX (шесть наборов: flame_tongue,
@@ -27,7 +27,7 @@ public static class ChargeVFXBuilder
     // только разгорающееся пламя. Вернуть — поставить true.
     private const bool BuildHalo = false;
 
-    [MenuItem("Tools/Hamster/Build Charge VFX")]
+    [MenuItem("Tools/Хомяк/VFX: пламя заряда")]
     public static void BuildAll()
     {
         EnsureFolder(VfxRoot);

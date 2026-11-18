@@ -7,7 +7,7 @@ using UnityEngine;
 /// </summary>
 public static class FeelSystemsSetup
 {
-    [MenuItem("Tools/Hamster/Apply Feel Setup")]
+    [MenuItem("Tools/Хомяк/Ощущения: применить настройку")]
     public static void Apply()
     {
         ConfigurePlayerPrefab("Assets/Prefabs/Hamster.prefab");

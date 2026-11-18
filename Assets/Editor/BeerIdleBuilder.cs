@@ -11,7 +11,7 @@ using UnityEngine;
 /// Цикл: кадры 5–9 по 0,25 с; последний кадр «рыгнул и стоит довольный»
 /// держится 1,2 секунды, затем повтор.
 ///
-/// Запуск: Tools/Hamster/Build Hamster Beer Idle или
+/// Запуск: Tools/Хомяк/Пиво: анимация бездействия или
 /// Unity.exe -batchmode -quit -executeMethod BeerIdleBuilder.BuildAll
 /// </summary>
 public static class BeerIdleBuilder
@@ -32,7 +32,7 @@ public static class BeerIdleBuilder
     private const string IntroState = "BeerIntro";
     private const string LoopState = "BeerIdle";
 
-    [MenuItem("Tools/Hamster/Build Hamster Beer Idle")]
+    [MenuItem("Tools/Хомяк/Пиво: анимация бездействия")]
     public static void BuildAll()
     {
         Sprite[] frames = ImportFrames();

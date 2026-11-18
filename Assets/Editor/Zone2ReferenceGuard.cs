@@ -2,7 +2,7 @@ using UnityEditor;
 using UnityEditor.SceneManagement;
 using UnityEngine;
 
-/// <summary>Эталон Зоны II, этап 1: комнаты 06-07. Меню: Tools/Hamster/Проверить эталон Зоны II.</summary>
+/// <summary>Эталон Зоны II, этап 1: комнаты 06-07. Меню: Tools/Хомяк/Проверка: эталон Зоны II.</summary>
 public static class Zone2ReferenceGuard
 {
     private static readonly (string name, float top, float left, float right)[] Expected =
@@ -34,7 +34,7 @@ public static class Zone2ReferenceGuard
 
     private static readonly (string asset, float surfaceY)[] Rooms = { ("Room_06", 0.1f), ("Room_07", 0.6f), ("Room_08", 2.5f), ("Room_09", 3f), ("Room_10", 5f) };
 
-    [MenuItem("Tools/Hamster/Проверить эталон Зоны II")]
+    [MenuItem("Tools/Хомяк/Проверка: эталон Зоны II")]
     public static void Run()
     {
         EditorSceneManager.OpenScene("Assets/Scenes/Level01_Full.unity", OpenSceneMode.Single);

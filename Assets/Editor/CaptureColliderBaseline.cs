@@ -8,7 +8,7 @@ using UnityEngine.SceneManagement;
 
 public static class CaptureColliderBaseline
 {
-    [MenuItem("Tools/Hamster/Capture Zone 1 Collider Baseline")]
+    [MenuItem("Tools/Хомяк/Проверка: снять слепок коллайдеров Зоны I")]
     public static void Run()
     {
         Scene scene = EditorSceneManager.OpenScene("Assets/Scenes/Level01_Full.unity", OpenSceneMode.Single);

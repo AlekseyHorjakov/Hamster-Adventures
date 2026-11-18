@@ -17,7 +17,7 @@ public static class HyenaBuilder
     private const string AttackFramePath = "Assets/Art/Enemies/Hyena/Attack/Hyena_Attack_01.png";
     private const string ControllerPath = "Assets/Animations/Enemies/Hyena/Hyena.controller";
 
-    [MenuItem("Tools/Hamster/Build Hyena Prototype")]
+    [MenuItem("Tools/Хомяк/Гиена: прототип")]
     public static void BuildAll()
     {
         EnsureFolder("Assets/Prefabs");
@@ -36,7 +36,7 @@ public static class HyenaBuilder
         Debug.Log("[Hyena] Прототип собран: здоровье 45, укус 10, анимации Run/Attack/Hurt/Death.");
     }
 
-    [MenuItem("Tools/Hamster/Apply Combat Fixes")]
+    [MenuItem("Tools/Хомяк/Гиена: правки боя")]
     public static void ApplyCombatFixes()
     {
         BuildAll();

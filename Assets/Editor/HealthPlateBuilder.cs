@@ -4,7 +4,7 @@ using UnityEngine;
 /// <summary>
 /// Импортирует плашки здоровья и маски заливки как UI-спрайты:
 /// полный прямоугольник, без сжатия, с прозрачностью.
-/// Запуск: Tools/Hamster/Build Health Plates или batchmode
+/// Запуск: Tools/Хомяк/HUD: собрать плашки здоровья или batchmode
 /// -executeMethod HealthPlateBuilder.BuildAll
 /// </summary>
 public static class HealthPlateBuilder
@@ -20,7 +20,7 @@ public static class HealthPlateBuilder
         "Girl_SuperFill"
     };
 
-    [MenuItem("Tools/Hamster/Build Health Plates")]
+    [MenuItem("Tools/Хомяк/HUD: собрать плашки здоровья")]
     public static void BuildAll()
     {
         foreach (string name in Names)
@@ -62,7 +62,7 @@ public static class HealthPlateBuilder
         Debug.Log("[HealthPlates] Готово: 6 спрайтов");
     }
 
-    [MenuItem("Tools/Hamster/Check Health HUD")]
+    [MenuItem("Tools/Хомяк/HUD: проверить здоровье")]
     public static void CheckHud()
     {
         foreach (string name in Names)

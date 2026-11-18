@@ -13,7 +13,7 @@ using UnityEngine;
 ///               полного «СОСИСОЧКА» и держит последний кадр 1 секунду,
 ///               затем зацикливается.
 ///
-/// Запуск: Tools/Hamster/Build Girl Sing Idle или
+/// Запуск: Tools/Хомяк/Хомячиха: пение (idle) или
 /// Unity.exe -batchmode -quit -executeMethod SingIdleBuilder.BuildAll
 /// </summary>
 public static class SingIdleBuilder
@@ -37,7 +37,7 @@ public static class SingIdleBuilder
     private const string IntroState = "SingIntro";
     private const string LoopState = "SingIdle";
 
-    [MenuItem("Tools/Hamster/Build Girl Sing Idle")]
+    [MenuItem("Tools/Хомяк/Хомячиха: пение (idle)")]
     public static void BuildAll()
     {
         Sprite[] frames = ImportFrames();

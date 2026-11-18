@@ -27,7 +27,7 @@ public static class HyenaAnimationBuilder
     private const string HurtState = "Hurt";
     private const string DeathState = "Death";
 
-    [MenuItem("Tools/Hamster/Build Hyena Animations")]
+    [MenuItem("Tools/Хомяк/Гиена: анимации")]
     public static void BuildAll()
     {
         EnsureFolder("Assets/Animations/Enemies/Hyena");

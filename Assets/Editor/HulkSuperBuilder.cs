@@ -6,7 +6,7 @@ using UnityEngine;
 /// <summary>
 /// Собирает суперудар Хомяка: кадры халка, анимации, HulkVisual,
 /// шкалу суперудара и аркадный VFX превращения.
-/// Меню: Tools/Hamster/Build Hulk Super.
+/// Меню: Tools/Хомяк/Хомяк: супер-халк.
 /// </summary>
 public static class HulkSuperBuilder
 {
@@ -20,7 +20,7 @@ public static class HulkSuperBuilder
     private const string VfxPrefabPath = "Assets/VFX/Prefabs/Hulk_Transform_VFX.prefab";
     private const float HulkPpu = 25f;
 
-    [MenuItem("Tools/Hamster/Build Hulk Super")]
+    [MenuItem("Tools/Хомяк/Хомяк: супер-халк")]
     public static void BuildAll()
     {
         EnsureFolder("Assets/VFX/Art");

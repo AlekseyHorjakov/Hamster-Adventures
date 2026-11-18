@@ -12,7 +12,7 @@ public static class Zone2WaterPass
     private const string ScenePath = "Assets/Scenes/Level01_Full.unity";
     private const string Slices = "Assets/Art/Level01/WaterSlices";
 
-    [MenuItem("Tools/Hamster/Вода и водопад Зоны II")]
+    [MenuItem("Tools/Хомяк/Зона II: вода, водопад, декор, фон")]
     public static void Run()
     {
         var scene = EditorSceneManager.OpenScene(ScenePath, OpenSceneMode.Single);
@@ -222,7 +222,7 @@ public static class Zone2WaterPass
 
     private static void BuildLakeBackdrop()
     {
-        Sprite lake = AssetDatabase.LoadAssetAtPath<Sprite>("Assets/Resources/Level01/Lake.png");
+        Sprite lake = AssetDatabase.LoadAssetAtPath<Sprite>("Assets/Art/Level01/WaterSlices/LakeBackdrop_Fade.png");
         if (lake == null)
             return;
 
@@ -232,7 +232,7 @@ public static class Zone2WaterPass
         renderer.sprite = lake;
         renderer.sortingLayerName = "Mid";
         renderer.sortingOrder = -19;
-        backdrop.transform.localScale = new Vector3(200f / lake.bounds.size.x, 22f / lake.bounds.size.y, 1f);
+        backdrop.transform.localScale = new Vector3(220f / lake.bounds.size.x, 22f / lake.bounds.size.y, 1f);
     }
 
     // ---------- прочее ----------

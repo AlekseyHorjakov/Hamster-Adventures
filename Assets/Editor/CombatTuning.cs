@@ -6,14 +6,14 @@ using UnityEngine;
 /// заряд растянут до 3 секунд, а у финишёров кадр бота/сумочки раньше
 /// уходил в конец клипа и обрывался переходом в покой.
 ///
-/// Запуск из меню Tools/Hamster/Apply Combat Timing или в batchmode:
+/// Запуск из меню Tools/Хомяк/Бой: применить тайминги или в batchmode:
 /// Unity.exe -batchmode -quit -projectPath ... -executeMethod CombatTuning.ApplyAllAndRebuildVfx
 /// </summary>
 public static class CombatTuning
 {
     private const float ChargeSeconds = 3f;
 
-    [MenuItem("Tools/Hamster/Apply Combat Timing")]
+    [MenuItem("Tools/Хомяк/Бой: применить тайминги")]
     public static void ApplyAll()
     {
         FixFinisher("Assets/Animations/Hamster/Spin.anim");

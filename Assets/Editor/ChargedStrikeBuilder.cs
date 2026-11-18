@@ -8,7 +8,7 @@ using UnityEngine;
 /// </summary>
 public static class ChargedStrikeBuilder
 {
-    [MenuItem("Tools/Hamster/Enable Charged Punch")]
+    [MenuItem("Tools/Хомяк/Бой: включить заряженный удар")]
     public static void Apply()
     {
         WireCharacter("Assets/Prefabs/Hamster.prefab");

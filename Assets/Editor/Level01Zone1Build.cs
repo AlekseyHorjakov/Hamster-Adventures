@@ -12,7 +12,7 @@ public static class Level01Zone1Build
     private const string OutputDirectory = "D:/Build/HamsterAdventures_Level01_Zone1";
     private const string OutputExe = OutputDirectory + "/HamsterAdventures_Level01_Zone1.exe";
 
-    [MenuItem("Tools/Hamster/Build Windows Level 01 - Zone I")]
+    [MenuItem("Tools/Хомяк/СБОРКА: Windows — Зона I")]
     public static void BuildWindows64()
     {
         string[] scenes = { MenuScenePath, LevelScenePath };

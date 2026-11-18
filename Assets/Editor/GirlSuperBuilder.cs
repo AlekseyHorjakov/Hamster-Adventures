@@ -6,7 +6,7 @@ using UnityEngine;
 /// <summary>
 /// Собирает суперудар Хомячихи: анимацию крика, фиолетовую молнию,
 /// звуковые кольца и контроллер усиленных атак.
-/// Меню: Tools/Hamster/Build Girl Super.
+/// Меню: Tools/Хомяк/Хомячиха: супер-крик.
 /// </summary>
 public static class GirlSuperBuilder
 {
@@ -20,7 +20,7 @@ public static class GirlSuperBuilder
     private const string WavePrefabPath = VfxPrefabRoot + "/Girl_Sound_Wave.prefab";
     private const float GirlSuperPpu = 46.5f;
 
-    [MenuItem("Tools/Hamster/Build Girl Super")]
+    [MenuItem("Tools/Хомяк/Хомячиха: супер-крик")]
     public static void BuildAll()
     {
         InputMigrationBuilder.BuildAll();

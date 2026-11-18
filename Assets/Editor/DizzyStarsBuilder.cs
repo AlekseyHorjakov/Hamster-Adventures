@@ -12,7 +12,7 @@ public static class DizzyStarsBuilder
     private const string ControllerPath = Anim + "/DizzyStars.controller";
     private const string PrefabPath = "Assets/VFX/Prefabs/DizzyStars.prefab";
 
-    [MenuItem("Tools/Hamster/Build Dizzy Stars")]
+    [MenuItem("Tools/Хомяк/VFX: звёздочки оглушения")]
     public static void BuildAll()
     {
         EnsureFolder("Assets/Animations/VFX");

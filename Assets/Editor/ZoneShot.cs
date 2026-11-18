@@ -6,7 +6,7 @@ using UnityEngine;
 /// <summary>Быстрый редакторный рендер для проверки стойки на платформах Зоны II.</summary>
 public static class ZoneShot
 {
-    [MenuItem("Tools/Hamster/Снимки Зоны II")]
+    [MenuItem("Tools/Хомяк/Зона II: снимки для проверки")]
     public static void Run()
     {
         EditorSceneManager.OpenScene("Assets/Scenes/Level01_Full.unity", OpenSceneMode.Single);
@@ -20,7 +20,8 @@ public static class ZoneShot
             ("waterfall", 181f, 9f, 14f, new Vector2(176f, 3.5f)),
             ("stones07", 252f, 1.6f, 8f, new Vector2(250f, 1.4f)),
             ("beach", 226f, 2.6f, 8f, new Vector2(222f, 1.58f)),
-            ("lakewide", 294f, 6f, 14f, new Vector2(288f, 3.6f))
+            ("lakewide", 294f, 6f, 14f, new Vector2(288f, 3.6f)),
+            ("lakeedge", 200f, 4f, 10f, new Vector2(206f, 3.4f))
         };
 
         Directory.CreateDirectory("C:/Windows/Temp/zshots2");

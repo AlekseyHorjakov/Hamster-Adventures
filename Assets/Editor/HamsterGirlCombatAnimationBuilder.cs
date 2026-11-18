@@ -13,7 +13,7 @@ public static class HamsterGirlCombatAnimationBuilder
     private const float Ppu = 98f;
     private const int Count = 8;
 
-    [MenuItem("Tools/Hamster/Build Hamster Girl Combat Animations")]
+    [MenuItem("Tools/Хомяк/Хомячиха: анимации боя")]
     public static void BuildAll()
     {
         Sprite[] hurt = Import("Hurt", "HamsterGirl_Hurt_");

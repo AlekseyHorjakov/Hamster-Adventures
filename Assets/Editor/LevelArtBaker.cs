@@ -8,7 +8,7 @@ public static class LevelArtBaker
 {
     private const string ScenePath = "Assets/Scenes/Level01_VerticalSlice.unity";
 
-    [MenuItem("Tools/Hamster/Bake Level Art Into Scene")]
+    [MenuItem("Tools/Хомяк/Арт: запечь в сцену")]
     public static void Bake()
     {
         Scene scene = EditorSceneManager.OpenScene(ScenePath, OpenSceneMode.Single);

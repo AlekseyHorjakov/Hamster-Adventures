@@ -6,7 +6,7 @@ public static class WaterSlicesImporter
 {
     private const string Folder = "Assets/Art/Level01/WaterSlices";
 
-    [MenuItem("Tools/Hamster/Импортировать водные слайсы")]
+    [MenuItem("Tools/Хомяк/Арт: импортировать водные слайсы")]
     public static void Run()
     {
         string[] guids = AssetDatabase.FindAssets("t:Texture2D", new[] { Folder });

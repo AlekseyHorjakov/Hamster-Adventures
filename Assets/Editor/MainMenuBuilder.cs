@@ -18,7 +18,7 @@ public static class MainMenuBuilder
 
     private const float CharacterHeight = 430f;
 
-    [MenuItem("Tools/Hamster/Build Main Menu")]
+    [MenuItem("Tools/Хомяк/Меню: собрать главное меню")]
     public static void BuildMainMenu()
     {
         ConfigureSprite(BackgroundPath, false);

@@ -7,7 +7,7 @@ using UnityEngine;
 /// 6 затухание), SpriteRenderer на слое Ground и компонент FireTrail.
 /// Подключает префаб в trailPrefab обоих героев.
 ///
-/// Запуск: Tools/Hamster/Build Fire Trail или
+/// Запуск: Tools/Хомяк/VFX: огненный след или
 /// Unity.exe -batchmode -quit -executeMethod FireTrailBuilder.BuildAll
 /// </summary>
 public static class FireTrailBuilder
@@ -18,7 +18,7 @@ public static class FireTrailBuilder
     private const float Ppu = 362f;
     private const float FrameSeconds = 0.12f;
 
-    [MenuItem("Tools/Hamster/Build Fire Trail")]
+    [MenuItem("Tools/Хомяк/VFX: огненный след")]
     public static void BuildAll()
     {
         Sprite[] frames = ImportFrames();

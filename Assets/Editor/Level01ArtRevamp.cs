@@ -15,7 +15,7 @@ public static class Level01ArtRevamp
     private const string SliceFolder = "Assets/Art/Level01/ModularSlices";
     private const string GroundSlice = "Ground_SingleLayer";
 
-    [MenuItem("Tools/Hamster/Art Revamp - Zone I (preserve colliders)")]
+    [MenuItem("Tools/Хомяк/Зона I: пересобрать арт (коллайдеры не трогать)")]
     public static void Apply()
     {
         AssetDatabase.Refresh(ImportAssetOptions.ForceSynchronousImport);

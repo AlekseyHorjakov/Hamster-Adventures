@@ -13,7 +13,7 @@ public static class Level01Zone2Art
     private const string SlicesPath = "Assets/Art/Level01/ModularSlices";
     private const string RoomsPath = "Assets/Level/Rooms/Zone2";
 
-    [MenuItem("Tools/Hamster/Пересобрать арт Зоны II (06-07)")]
+    [MenuItem("Tools/Хомяк/Зона II: пересобрать арт (06-07)")]
     public static void Apply()
     {
         var scene = EditorSceneManager.OpenScene(ScenePath, OpenSceneMode.Single);
