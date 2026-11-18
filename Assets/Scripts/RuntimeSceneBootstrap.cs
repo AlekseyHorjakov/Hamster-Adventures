@@ -126,6 +126,38 @@ public sealed class DiagRunner : MonoBehaviour
                       " ground=" + (heroForLog.GetComponent<Collider2D>() != null ? heroForLog.GetComponent<Collider2D>().bounds.min.y.ToString("F2") : "-"));
         }
 
+        int si = System.Array.IndexOf(cli, "-shot");
+        if (si >= 0 && si + 1 < cli.Length)
+        {
+            yield return new WaitForSecondsRealtime(2.5f);
+            string path = cli[si + 1];
+            ScreenCapture.CaptureScreenshot(path);
+            yield return new WaitForSecondsRealtime(0.6f);
+            Debug.Log("[Shot] saved " + path + " hero=" + (heroForLog != null ? heroForLog.transform.position.ToString("F2") : "-"));
+        }
+
+        int sti = System.Array.IndexOf(cli, "-diagstand");
+        if (sti >= 0 && sti + 1 < cli.Length && float.TryParse(cli[sti + 1], out float standX))
+        {
+            var hero = players.FirstOrDefault(pl => pl.name == "Hamster");
+            if (hero != null)
+            {
+                hero.Body.simulated = true;
+                hero.Body.position = new Vector2(standX, 12f);
+                hero.Body.linearVelocity = Vector2.zero;
+                yield return new WaitForSecondsRealtime(1.5f);
+                for (int i = 0; i < 6; i++)
+                {
+                    var hits = Physics2D.OverlapBoxAll(new Vector2(hero.transform.position.x, hero.GetComponent<Collider2D>().bounds.min.y - 0.05f), new Vector2(0.5f, 0.12f), 0f);
+                    string under = "none";
+                    foreach (var h in hits)
+                        if (h != null && !h.isTrigger && !h.transform.IsChildOf(hero.transform)) { under = h.name + " top=" + h.bounds.max.y.ToString("F2"); break; }
+                    Debug.Log("[Stand] t=" + (i * 0.5f).ToString("F1") + " pos=" + hero.transform.position.ToString("F2") + " under=" + under);
+                    yield return new WaitForSecondsRealtime(0.5f);
+                }
+            }
+        }
+
         if (cli.Contains("-diagpit"))
         {
             var hamster = players.FirstOrDefault(pl => pl.name == "Hamster");
@@ -149,6 +181,8 @@ public sealed class DiagRunner : MonoBehaviour
         }
     }
 }
+
+
 
 
 
