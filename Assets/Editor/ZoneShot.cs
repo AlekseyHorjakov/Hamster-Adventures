@@ -18,6 +18,7 @@ public static class ZoneShot
         var shots = new (string name, float x, float y, float size, Vector2 hero)[]
         {
             ("board", 269f, -0.5f, 7f, new Vector2(268f, -0.9f)),
+            ("beach", 226f, 2.6f, 8f, new Vector2(222f, 1.58f)),
             ("bridges", 368f, 7.5f, 9f, new Vector2(364f, 6.3f)),
             ("lakewide", 294f, 6f, 14f, new Vector2(288f, 3.6f)),
             ("waterfall", 181f, 9f, 14f, new Vector2(176f, 3.5f))
