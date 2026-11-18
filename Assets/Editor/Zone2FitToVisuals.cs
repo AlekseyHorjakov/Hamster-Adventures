@@ -65,7 +65,19 @@ public static class Zone2FitToVisuals
             BoxCollider2D box = root.AddComponent<BoxCollider2D>();
             box.size = new Vector2(widthLocal, heightLocal);
             box.offset = new Vector2(offsetX, offsetY);
-            box.usedByEffector = false;
+
+            // Мосты и доски — односторонние: снизу можно запрыгнуть, сверху стоишь.
+            bool oneWay = name.StartsWith("Bridge_");
+            box.usedByEffector = oneWay;
+            if (oneWay)
+            {
+                PlatformEffector2D effector = root.GetComponent<PlatformEffector2D>();
+                if (effector == null)
+                    effector = root.AddComponent<PlatformEffector2D>();
+                effector.useOneWay = true;
+                effector.useOneWayGrouping = true;
+                effector.surfaceArc = 170f;
+            }
 
             visual.sortingLayerName = "Ground";
             if (visual.sortingOrder < 11)
