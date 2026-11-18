@@ -34,6 +34,7 @@ public static class Zone2Sync
         var scene = EditorSceneManager.OpenScene(ScenePath, OpenSceneMode.Single);
         int fixedPlatforms = SyncPlatforms();
         int hyenas = ResetHyenas();
+        BuildShallowWater();
         EditorSceneManager.MarkSceneDirty(scene);
         EditorSceneManager.SaveScene(scene);
         Debug.Log("[Zone2Sync] платформ подтянуто: " + fixedPlatforms + ", гиен в комнате 06: " + hyenas);
@@ -116,6 +117,72 @@ public static class Zone2Sync
         }
 
         return count;
+    }
+
+    private static void BuildShallowWater()
+    {
+        // Мелководье 07: проходимое дно под водой, камень — укрытие и ступень.
+        GameObject oldFloor = GameObject.Find("ShallowFloor");
+        if (oldFloor != null)
+            Object.DestroyImmediate(oldFloor);
+        GameObject oldOverlay = GameObject.Find("ShallowOverlay");
+        if (oldOverlay != null)
+            Object.DestroyImmediate(oldOverlay);
+
+        GameObject room07 = GameObject.Find("Room_07_Shallows");
+        if (room07 == null)
+            return;
+
+        const float left = 238f;
+        const float right = 274f;
+        const float floorTop = -0.55f;
+
+        GameObject floor = new GameObject("ShallowFloor");
+        floor.transform.SetParent(room07.transform, false);
+        floor.transform.position = new Vector3((left + right) * 0.5f, floorTop - 0.4f, 0f);
+        BoxCollider2D box = floor.AddComponent<BoxCollider2D>();
+        box.size = new Vector2(right - left, 0.8f);
+
+        SpriteRenderer floorRenderer = floor.AddComponent<SpriteRenderer>();
+        Sprite pebbles = AssetDatabase.LoadAssetAtPath<Sprite>("Assets/Art/Level01/ModularSlices/Ground_Soil_Tile.png");
+        if (pebbles != null)
+        {
+            floorRenderer.sprite = pebbles;
+            floorRenderer.drawMode = SpriteDrawMode.Tiled;
+            floorRenderer.size = new Vector2(right - left, 0.8f);
+            floorRenderer.sortingLayerName = "Ground";
+            floorRenderer.sortingOrder = 10;
+            floorRenderer.color = new Color(0.35f, 0.55f, 0.62f, 1f);
+        }
+
+        GameObject overlay = new GameObject("ShallowOverlay");
+        overlay.transform.SetParent(room07.transform, false);
+        overlay.transform.position = new Vector3((left + right) * 0.5f, -0.15f - 0.45f, 0f);
+        SpriteRenderer water = overlay.AddComponent<SpriteRenderer>();
+        Sprite waterSprite = AssetDatabase.LoadAssetAtPath<Sprite>("Assets/Art/Level01/ModularSlices/LakeWater.png");
+        if (waterSprite != null)
+        {
+            water.sprite = waterSprite;
+            water.sortingLayerName = "Ground";
+            water.sortingOrder = 11;
+            water.color = new Color(1f, 1f, 1f, 0.72f);
+            overlay.transform.localScale = new Vector3((right - left) / waterSprite.bounds.size.x,
+                0.9f / waterSprite.bounds.size.y, 1f);
+        }
+
+        GameObject line = new GameObject("ShallowLine");
+        line.transform.SetParent(room07.transform, false);
+        line.transform.position = new Vector3((left + right) * 0.5f, -0.2f, 0f);
+        SpriteRenderer lineRenderer = line.AddComponent<SpriteRenderer>();
+        Sprite wave = AssetDatabase.LoadAssetAtPath<Sprite>("Assets/Art/Level01/ModularSlices/Water_Wave_Thin.png");
+        if (wave != null)
+        {
+            lineRenderer.sprite = wave;
+            lineRenderer.drawMode = SpriteDrawMode.Tiled;
+            lineRenderer.size = new Vector2(right - left, 0.45f);
+            lineRenderer.sortingLayerName = "Ground";
+            lineRenderer.sortingOrder = 12;
+        }
     }
 
     private static int ResetHyenas()

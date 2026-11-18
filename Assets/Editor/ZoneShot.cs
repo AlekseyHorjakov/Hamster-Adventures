@@ -20,6 +20,7 @@ public static class ZoneShot
             ("islands", 283f, 5.5f, 8f, new Vector2(279f, 3.98f)),
             ("beach", 228f, 3.2f, 8f, new Vector2(222f, 1.58f)),
             ("stones", 252f, 3.0f, 8f, new Vector2(251f, 2.28f)),
+            ("shallow", 250f, 1.0f, 7f, new Vector2(248f, 0.93f)),
             ("ledges", 370f, 8.0f, 8f, new Vector2(369f, 7.48f))
         };
 
