@@ -151,7 +151,7 @@ public sealed class DiagRunner : MonoBehaviour
                     var hits = Physics2D.OverlapBoxAll(new Vector2(hero.transform.position.x, hero.GetComponent<Collider2D>().bounds.min.y - 0.05f), new Vector2(0.5f, 0.12f), 0f);
                     string under = "none";
                     foreach (var h in hits)
-                        if (h != null && !h.isTrigger && !h.transform.IsChildOf(hero.transform)) { under = h.name + " top=" + h.bounds.max.y.ToString("F2"); break; }
+                        if (h != null && !h.isTrigger && !h.transform.IsChildOf(hero.transform)) { var srUnder = h.GetComponentInChildren<SpriteRenderer>(true); under = h.name + " top=" + h.bounds.max.y.ToString("F2") + " sprite=" + (srUnder == null || srUnder.sprite == null ? "NONE" : srUnder.sprite.name + " spriteTop=" + srUnder.bounds.max.y.ToString("F2")); break; }
                     Debug.Log("[Stand] t=" + (i * 0.5f).ToString("F1") + " pos=" + hero.transform.position.ToString("F2") + " under=" + under);
                     yield return new WaitForSecondsRealtime(0.5f);
                 }
@@ -203,6 +203,7 @@ public sealed class DiagRunner : MonoBehaviour
         }
     }
 }
+
 
 
 
