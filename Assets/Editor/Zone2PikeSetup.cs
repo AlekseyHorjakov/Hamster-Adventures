@@ -65,6 +65,7 @@ public static class Zone2PikeSetup
         if (sr == null)
             sr = root.AddComponent<SpriteRenderer>();
         sr.sprite = frames[0];
+        sr.sortingLayerName = "Ground";
         sr.sortingOrder = PikeSortingOrder;
         sr.enabled = false;
 
