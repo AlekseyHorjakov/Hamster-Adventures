@@ -44,3 +44,10 @@ $u='C:\Program Files\Unity\Hub\Editor\6000.6.5f1\Editor\Unity.exe'
 1. Пользователь сам добавляет окружение в редактор.
 2. После его правок: коллайдеры не трогать, только `PlatformColliderSync` по просьбе.
 3. Продолжить этап 3: комнаты 11–13 (лес: вход, засада, арена).
+
+## 2026-11-19 — Щука и тонущая секция моста
+- `Bridge_Section_02` (x 337.55) получила `SinkingPlatform` — тонет как доски `Bridge_Patch_04`.
+- Щука: лист 2172x724 нарезан 6x2 → `Assets/Art/Enemies/Pike/Slices/Pike_Jump_01..12.png` (PPU 100, пивот по низу).
+- `PikeLeap` (Assets/Scripts/Combat) стоит в промежутке 343.2–349.7 (x 346.8, низ кадра на линии воды -2.27, scale 0.8, sorting 15). Раз в ~2.8 с выпрыгивает, бьёт на 50% максимального здоровья и отбрасывает; `Health` нет — убить нельзя.
+- Проверено PlayMode-тестом `PikeLeapPlayModeTests`: здоровье 100 → 50. Запуск: `-runTests -testPlatform playmode -testFilter PikeLeapPlayModeTests` (без `-quit`).
+- Инструменты: `Tools → Хомяк → Зона II: щука и тонущая секция` (идемпотентный setup), `... проверить посадку щуки` (PikeCheck).

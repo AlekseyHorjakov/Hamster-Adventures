@@ -1,0 +1,2732 @@
+fileFormatVersion: 2
+guid: 2baf02a835b2eec49ba6fede57e189dc
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 7090433761536471080
+    second: Pike_JumpSheet_0
+  - first:
+      213: 2739408772096935662
+    second: Pike_JumpSheet_1
+  - first:
+      213: -1775677372774658420
+    second: Pike_JumpSheet_2
+  - first:
+      213: -4733284643721420877
+    second: Pike_JumpSheet_3
+  - first:
+      213: 2062854933383313653
+    second: Pike_JumpSheet_4
+  - first:
+      213: 4340779195185714016
+    second: Pike_JumpSheet_5
+  - first:
+      213: 4838358139720417533
+    second: Pike_JumpSheet_6
+  - first:
+      213: 1452662670651147340
+    second: Pike_JumpSheet_7
+  - first:
+      213: 6513467954281981166
+    second: Pike_JumpSheet_8
+  - first:
+      213: 2903895684646473687
+    second: Pike_JumpSheet_9
+  - first:
+      213: 1859507770316269876
+    second: Pike_JumpSheet_10
+  - first:
+      213: -2632816634385993206
+    second: Pike_JumpSheet_11
+  - first:
+      213: 2193839805175355916
+    second: Pike_JumpSheet_12
+  - first:
+      213: -4206687365109250412
+    second: Pike_JumpSheet_13
+  - first:
+      213: 681972172835607599
+    second: Pike_JumpSheet_14
+  - first:
+      213: -5266515205150041910
+    second: Pike_JumpSheet_15
+  - first:
+      213: 9058469296525825354
+    second: Pike_JumpSheet_16
+  - first:
+      213: -2167318297670927029
+    second: Pike_JumpSheet_17
+  - first:
+      213: -3738079910272602234
+    second: Pike_JumpSheet_18
+  - first:
+      213: 8430194223588287868
+    second: Pike_JumpSheet_19
+  - first:
+      213: 3277978138838026454
+    second: Pike_JumpSheet_20
+  - first:
+      213: -5501411556213904646
+    second: Pike_JumpSheet_21
+  - first:
+      213: 6547395858773389055
+    second: Pike_JumpSheet_22
+  - first:
+      213: -2826229307278036895
+    second: Pike_JumpSheet_23
+  - first:
+      213: 7382354797819138801
+    second: Pike_JumpSheet_24
+  - first:
+      213: -8552434689973382417
+    second: Pike_JumpSheet_25
+  - first:
+      213: -495308075086715162
+    second: Pike_JumpSheet_26
+  - first:
+      213: -297504178771513576
+    second: Pike_JumpSheet_27
+  - first:
+      213: -2090925727096441540
+    second: Pike_JumpSheet_28
+  - first:
+      213: 559284229273896544
+    second: Pike_JumpSheet_29
+  - first:
+      213: 2311382169119208399
+    second: Pike_JumpSheet_30
+  - first:
+      213: -1773608015785600407
+    second: Pike_JumpSheet_31
+  - first:
+      213: 2049076905269048473
+    second: Pike_JumpSheet_32
+  - first:
+      213: 3426639299980614059
+    second: Pike_JumpSheet_33
+  - first:
+      213: 6392505944530950479
+    second: Pike_JumpSheet_34
+  - first:
+      213: -3228956569646504133
+    second: Pike_JumpSheet_35
+  - first:
+      213: 9167478307064141011
+    second: Pike_JumpSheet_36
+  - first:
+      213: 6012712284576248914
+    second: Pike_JumpSheet_37
+  - first:
+      213: -4400759180444290632
+    second: Pike_JumpSheet_38
+  - first:
+      213: 2186673942751938640
+    second: Pike_JumpSheet_39
+  - first:
+      213: -734759458128547117
+    second: Pike_JumpSheet_40
+  - first:
+      213: -6094006586393322782
+    second: Pike_JumpSheet_41
+  - first:
+      213: 216157416421306705
+    second: Pike_JumpSheet_42
+  - first:
+      213: 6313337284598733884
+    second: Pike_JumpSheet_43
+  - first:
+      213: -87871757236368584
+    second: Pike_JumpSheet_44
+  - first:
+      213: -780236238752931434
+    second: Pike_JumpSheet_45
+  - first:
+      213: -2444660515371820082
+    second: Pike_JumpSheet_46
+  - first:
+      213: -2041381795857818457
+    second: Pike_JumpSheet_47
+  - first:
+      213: 2437818459792818537
+    second: Pike_JumpSheet_48
+  - first:
+      213: 3708522724544676497
+    second: Pike_JumpSheet_49
+  - first:
+      213: -6768886127855638638
+    second: Pike_JumpSheet_50
+  - first:
+      213: -8906403603455914237
+    second: Pike_JumpSheet_51
+  - first:
+      213: 5786289252985056895
+    second: Pike_JumpSheet_52
+  - first:
+      213: -9195678004215173510
+    second: Pike_JumpSheet_53
+  - first:
+      213: 3800737996945910217
+    second: Pike_JumpSheet_54
+  - first:
+      213: -2823339694687297634
+    second: Pike_JumpSheet_55
+  - first:
+      213: -4552555315431890761
+    second: Pike_JumpSheet_56
+  - first:
+      213: -5415002169544035574
+    second: Pike_JumpSheet_57
+  - first:
+      213: -2829119917135843904
+    second: Pike_JumpSheet_58
+  - first:
+      213: 8829365622347139965
+    second: Pike_JumpSheet_59
+  - first:
+      213: 7181375672792454560
+    second: Pike_JumpSheet_60
+  - first:
+      213: -8226079019500771750
+    second: Pike_JumpSheet_61
+  - first:
+      213: 3996197689587673253
+    second: Pike_JumpSheet_62
+  - first:
+      213: 3753331155457710259
+    second: Pike_JumpSheet_63
+  - first:
+      213: -7065844395168497914
+    second: Pike_JumpSheet_64
+  - first:
+      213: -1238628995041484868
+    second: Pike_JumpSheet_65
+  - first:
+      213: 4438523893576122015
+    second: Pike_JumpSheet_66
+  - first:
+      213: -1321790154580090087
+    second: Pike_JumpSheet_67
+  - first:
+      213: 6191839492947949369
+    second: Pike_JumpSheet_68
+  - first:
+      213: 8287732687652798844
+    second: Pike_JumpSheet_69
+  - first:
+      213: 8870859168808717339
+    second: Pike_JumpSheet_70
+  - first:
+      213: -1201649340772290701
+    second: Pike_JumpSheet_71
+  - first:
+      213: 2049300235302118425
+    second: Pike_JumpSheet_72
+  - first:
+      213: -440253388458997593
+    second: Pike_JumpSheet_73
+  - first:
+      213: -6562028276282033377
+    second: Pike_JumpSheet_74
+  - first:
+      213: -4064705007081103294
+    second: Pike_JumpSheet_75
+  - first:
+      213: 1759641044906073734
+    second: Pike_JumpSheet_76
+  - first:
+      213: -659747770960349959
+    second: Pike_JumpSheet_77
+  - first:
+      213: 8396468371188226958
+    second: Pike_JumpSheet_78
+  - first:
+      213: -7172294001654872976
+    second: Pike_JumpSheet_79
+  - first:
+      213: -1935615691759076297
+    second: Pike_JumpSheet_80
+  - first:
+      213: -8710095670739512741
+    second: Pike_JumpSheet_81
+  - first:
+      213: 5626781844745926848
+    second: Pike_JumpSheet_82
+  - first:
+      213: 4103714354948437611
+    second: Pike_JumpSheet_83
+  - first:
+      213: 2012623348628595282
+    second: Pike_JumpSheet_84
+  - first:
+      213: -6736543466338586043
+    second: Pike_JumpSheet_85
+  - first:
+      213: 6702275174134198829
+    second: Pike_JumpSheet_86
+  - first:
+      213: -582239789671878031
+    second: Pike_JumpSheet_87
+  - first:
+      213: -8801639148272413380
+    second: Pike_JumpSheet_88
+  - first:
+      213: -4589160439435646389
+    second: Pike_JumpSheet_89
+  - first:
+      213: 1603000648262906630
+    second: Pike_JumpSheet_90
+  - first:
+      213: 2405854849810951309
+    second: Pike_JumpSheet_91
+  - first:
+      213: -5348626725045672427
+    second: Pike_JumpSheet_92
+  - first:
+      213: -604615975550256963
+    second: Pike_JumpSheet_93
+  - first:
+      213: 8785459494607109576
+    second: Pike_JumpSheet_94
+  - first:
+      213: -4171430724755836696
+    second: Pike_JumpSheet_95
+  - first:
+      213: 4028929677668859133
+    second: Pike_JumpSheet_96
+  - first:
+      213: 6282410284959013435
+    second: Pike_JumpSheet_97
+  - first:
+      213: 4366067403960083157
+    second: Pike_JumpSheet_98
+  - first:
+      213: -3295264130822148189
+    second: Pike_JumpSheet_99
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationMethod: 0
+  spriteTessellationDetail: -1
+  spriteGeometrySubdivision: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Pike_JumpSheet_0
+      rect:
+        serializedVersion: 2
+        x: 378
+        y: 562
+        width: 114
+        height: 154
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 82071db70f7466260800000000000000
+      internalID: 7090433761536471080
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pike_JumpSheet_1
+      rect:
+        serializedVersion: 2
+        x: 487
+        y: 640
+        width: 59
+        height: 78
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ee64d63a3c5540620800000000000000
+      internalID: 2739408772096935662
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pike_JumpSheet_2
+      rect:
+        serializedVersion: 2
+        x: 553
+        y: 658
+        width: 43
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c8e411066d68b57e0800000000000000
+      internalID: -1775677372774658420
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pike_JumpSheet_3
+      rect:
+        serializedVersion: 2
+        x: 609
+        y: 693
+        width: 22
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3bf5c2ec1beff4eb0800000000000000
+      internalID: -4733284643721420877
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pike_JumpSheet_4
+      rect:
+        serializedVersion: 2
+        x: 625
+        y: 709
+        width: 14
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5f87977e1abb0ac10800000000000000
+      internalID: 2062854933383313653
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pike_JumpSheet_5
+      rect:
+        serializedVersion: 2
+        x: 987
+        y: 293
+        width: 446
+        height: 423
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0635379fdab8d3c30800000000000000
+      internalID: 4340779195185714016
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pike_JumpSheet_6
+      rect:
+        serializedVersion: 2
+        x: 1440
+        y: 238
+        width: 337
+        height: 472
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: df0c726e71d452340800000000000000
+      internalID: 4838358139720417533
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pike_JumpSheet_7
+      rect:
+        serializedVersion: 2
+        x: 1754
+        y: 192
+        width: 393
+        height: 517
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c44c1ae9005e82410800000000000000
+      internalID: 1452662670651147340
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pike_JumpSheet_8
+      rect:
+        serializedVersion: 2
+        x: 88
+        y: 659
+        width: 54
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ee42ed6389c746a50800000000000000
+      internalID: 6513467954281981166
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pike_JumpSheet_9
+      rect:
+        serializedVersion: 2
+        x: 603
+        y: 646
+        width: 70
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7df842c5db5bc4820800000000000000
+      internalID: 2903895684646473687
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pike_JumpSheet_10
+      rect:
+        serializedVersion: 2
+        x: 668
+        y: 674
+        width: 7
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 439a7ca077c4ec910800000000000000
+      internalID: 1859507770316269876
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pike_JumpSheet_11
+      rect:
+        serializedVersion: 2
+        x: 674
+        y: 676
+        width: 35
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a02fea4683b567bd0800000000000000
+      internalID: -2632816634385993206
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pike_JumpSheet_12
+      rect:
+        serializedVersion: 2
+        x: 698
+        y: 671
+        width: 39
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c0ad699eda5127e10800000000000000
+      internalID: 2193839805175355916
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pike_JumpSheet_13
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 616
+        width: 192
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4960a812128de95c0800000000000000
+      internalID: -4206687365109250412
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pike_JumpSheet_14
+      rect:
+        serializedVersion: 2
+        x: 1390
+        y: 691
+        width: 13
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f245194f31ad67900800000000000000
+      internalID: 681972172835607599
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pike_JumpSheet_15
+      rect:
+        serializedVersion: 2
+        x: 1526
+        y: 673
+        width: 26
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ac896d8f25499e6b0800000000000000
+      internalID: -5266515205150041910
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pike_JumpSheet_16
+      rect:
+        serializedVersion: 2
+        x: 1600
+        y: 693
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a455434d4d526bd70800000000000000
+      internalID: 9058469296525825354
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pike_JumpSheet_17
+      rect:
+        serializedVersion: 2
+        x: 197
+        y: 634
+        width: 59
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b4dbe10cd732ce1e0800000000000000
+      internalID: -2167318297670927029
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pike_JumpSheet_18
+      rect:
+        serializedVersion: 2
+        x: 1170
+        y: 681
+        width: 8
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 68f6d26702caf1cc0800000000000000
+      internalID: -3738079910272602234
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pike_JumpSheet_19
+      rect:
+        serializedVersion: 2
+        x: 1179
+        y: 663
+        width: 12
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c75a7843bf01ef470800000000000000
+      internalID: 8430194223588287868
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pike_JumpSheet_20
+      rect:
+        serializedVersion: 2
+        x: 1190
+        y: 677
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6d8cfe2ffb7bd7d20800000000000000
+      internalID: 3277978138838026454
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pike_JumpSheet_21
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 646
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: afa24ac565f07a3b0800000000000000
+      internalID: -5501411556213904646
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pike_JumpSheet_22
+      rect:
+        serializedVersion: 2
+        x: 78
+        y: 663
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ffe2d0e08d50dda50800000000000000
+      internalID: 6547395858773389055
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pike_JumpSheet_23
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 644
+        width: 21
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 160f4e54b6737c8d0800000000000000
+      internalID: -2826229307278036895
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pike_JumpSheet_24
+      rect:
+        serializedVersion: 2
+        x: 471
+        y: 661
+        width: 13
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1f219e14394637660800000000000000
+      internalID: 7382354797819138801
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pike_JumpSheet_25
+      rect:
+        serializedVersion: 2
+        x: 1164
+        y: 655
+        width: 16
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fe2986356f5af4980800000000000000
+      internalID: -8552434689973382417
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pike_JumpSheet_26
+      rect:
+        serializedVersion: 2
+        x: 30
+        y: 536
+        width: 60
+        height: 116
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6e6e2121eef4029f0800000000000000
+      internalID: -495308075086715162
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pike_JumpSheet_27
+      rect:
+        serializedVersion: 2
+        x: 159
+        y: 588
+        width: 29
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 81f2121968d0fdbf0800000000000000
+      internalID: -297504178771513576
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pike_JumpSheet_28
+      rect:
+        serializedVersion: 2
+        x: 232
+        y: 641
+        width: 6
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c35f0b0212a8bf2e0800000000000000
+      internalID: -2090925727096441540
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pike_JumpSheet_29
+      rect:
+        serializedVersion: 2
+        x: 251
+        y: 604
+        width: 66
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 06649561b0af2c700800000000000000
+      internalID: 559284229273896544
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pike_JumpSheet_30
+      rect:
+        serializedVersion: 2
+        x: 255
+        y: 642
+        width: 14
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fc3b58a26dda31020800000000000000
+      internalID: 2311382169119208399
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pike_JumpSheet_31
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 642
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 96a505818e0e267e0800000000000000
+      internalID: -1773608015785600407
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pike_JumpSheet_32
+      rect:
+        serializedVersion: 2
+        x: 457
+        y: 644
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 994b400c698cf6c10800000000000000
+      internalID: 2049076905269048473
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pike_JumpSheet_33
+      rect:
+        serializedVersion: 2
+        x: 464
+        y: 642
+        width: 6
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ba9dcb8c94edd8f20800000000000000
+      internalID: 3426639299980614059
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pike_JumpSheet_34
+      rect:
+        serializedVersion: 2
+        x: 511
+        y: 635
+        width: 7
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f491750a94eb6b850800000000000000
+      internalID: 6392505944530950479
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pike_JumpSheet_35
+      rect:
+        serializedVersion: 2
+        x: 515
+        y: 631
+        width: 49
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b376e0f8b117033d0800000000000000
+      internalID: -3228956569646504133
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pike_JumpSheet_36
+      rect:
+        serializedVersion: 2
+        x: 577
+        y: 632
+        width: 19
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3d458aae2fc693f70800000000000000
+      internalID: 9167478307064141011
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pike_JumpSheet_37
+      rect:
+        serializedVersion: 2
+        x: 619
+        y: 634
+        width: 14
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2547bc257f1717350800000000000000
+      internalID: 6012712284576248914
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pike_JumpSheet_38
+      rect:
+        serializedVersion: 2
+        x: 631
+        y: 632
+        width: 16
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8b1349377dc5de2c0800000000000000
+      internalID: -4400759180444290632
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pike_JumpSheet_39
+      rect:
+        serializedVersion: 2
+        x: 684
+        y: 634
+        width: 15
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 058055d8d50a85e10800000000000000
+      internalID: 2186673942751938640
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pike_JumpSheet_40
+      rect:
+        serializedVersion: 2
+        x: 698
+        y: 643
+        width: 11
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3d2b3ee6a2c9dc5f0800000000000000
+      internalID: -734759458128547117
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pike_JumpSheet_41
+      rect:
+        serializedVersion: 2
+        x: 722
+        y: 610
+        width: 39
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2ea922f0c4dbd6ba0800000000000000
+      internalID: -6094006586393322782
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pike_JumpSheet_42
+      rect:
+        serializedVersion: 2
+        x: 1430
+        y: 622
+        width: 17
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 151bb556602fff200800000000000000
+      internalID: 216157416421306705
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pike_JumpSheet_43
+      rect:
+        serializedVersion: 2
+        x: 90
+        y: 624
+        width: 40
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c3c9cb39fca7d9750800000000000000
+      internalID: 6313337284598733884
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pike_JumpSheet_44
+      rect:
+        serializedVersion: 2
+        x: 187
+        y: 614
+        width: 9
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 83b03243a11d7cef0800000000000000
+      internalID: -87871757236368584
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pike_JumpSheet_45
+      rect:
+        serializedVersion: 2
+        x: 195
+        y: 584
+        width: 47
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 691ae34564b0c25f0800000000000000
+      internalID: -780236238752931434
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pike_JumpSheet_46
+      rect:
+        serializedVersion: 2
+        x: 312
+        y: 592
+        width: 29
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ecbd6d0b632d21ed0800000000000000
+      internalID: -2444660515371820082
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pike_JumpSheet_47
+      rect:
+        serializedVersion: 2
+        x: 442
+        y: 626
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7ac12f6821e8ba3e0800000000000000
+      internalID: -2041381795857818457
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pike_JumpSheet_48
+      rect:
+        serializedVersion: 2
+        x: 489
+        y: 616
+        width: 17
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 96147da19fed4d120800000000000000
+      internalID: 2437818459792818537
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pike_JumpSheet_49
+      rect:
+        serializedVersion: 2
+        x: 503
+        y: 552
+        width: 89
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 19203f5f4c1577330800000000000000
+      internalID: 3708522724544676497
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pike_JumpSheet_50
+      rect:
+        serializedVersion: 2
+        x: 505
+        y: 626
+        width: 15
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 29768180ee51012a0800000000000000
+      internalID: -6768886127855638638
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pike_JumpSheet_51
+      rect:
+        serializedVersion: 2
+        x: 587
+        y: 594
+        width: 49
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 30f40cd5c19166480800000000000000
+      internalID: -8906403603455914237
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pike_JumpSheet_52
+      rect:
+        serializedVersion: 2
+        x: 672
+        y: 578
+        width: 43
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f7ea5d32b670d4050800000000000000
+      internalID: 5786289252985056895
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pike_JumpSheet_53
+      rect:
+        serializedVersion: 2
+        x: 818
+        y: 632
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a7ea1e17393626080800000000000000
+      internalID: -9195678004215173510
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pike_JumpSheet_54
+      rect:
+        serializedVersion: 2
+        x: 822
+        y: 628
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9c96a40321feeb430800000000000000
+      internalID: 3800737996945910217
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pike_JumpSheet_55
+      rect:
+        serializedVersion: 2
+        x: 1420
+        y: 606
+        width: 19
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e9f57e1a18b71d8d0800000000000000
+      internalID: -2823339694687297634
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pike_JumpSheet_56
+      rect:
+        serializedVersion: 2
+        x: 90
+        y: 614
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7b0ad53af0312d0c0800000000000000
+      internalID: -4552555315431890761
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pike_JumpSheet_57
+      rect:
+        serializedVersion: 2
+        x: 278
+        y: 614
+        width: 11
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a03bb5a773c0ad4b0800000000000000
+      internalID: -5415002169544035574
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pike_JumpSheet_58
+      rect:
+        serializedVersion: 2
+        x: 635
+        y: 618
+        width: 10
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0cda228bc62fcb8d0800000000000000
+      internalID: -2829119917135843904
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pike_JumpSheet_59
+      rect:
+        serializedVersion: 2
+        x: 1030
+        y: 609
+        width: 17
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d7b0c08e045388a70800000000000000
+      internalID: 8829365622347139965
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pike_JumpSheet_60
+      rect:
+        serializedVersion: 2
+        x: 1430
+        y: 599
+        width: 27
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0a51d67302f59a360800000000000000
+      internalID: 7181375672792454560
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pike_JumpSheet_61
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 566
+        width: 54
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a56ec5427b817dd80800000000000000
+      internalID: -8226079019500771750
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pike_JumpSheet_62
+      rect:
+        serializedVersion: 2
+        x: 265
+        y: 552
+        width: 54
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5a82c1c30a8557730800000000000000
+      internalID: 3996197689587673253
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pike_JumpSheet_63
+      rect:
+        serializedVersion: 2
+        x: 633
+        y: 599
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3b89675ccc2861430800000000000000
+      internalID: 3753331155457710259
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pike_JumpSheet_64
+      rect:
+        serializedVersion: 2
+        x: 634
+        y: 594
+        width: 29
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 60ffbc385f311fd90800000000000000
+      internalID: -7065844395168497914
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pike_JumpSheet_65
+      rect:
+        serializedVersion: 2
+        x: 700
+        y: 323
+        width: 349
+        height: 286
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cbf9d06dd718fcee0800000000000000
+      internalID: -1238628995041484868
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pike_JumpSheet_66
+      rect:
+        serializedVersion: 2
+        x: 780
+        y: 594
+        width: 7
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f9e30b307fdc89d30800000000000000
+      internalID: 4438523893576122015
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pike_JumpSheet_67
+      rect:
+        serializedVersion: 2
+        x: 1018
+        y: 600
+        width: 7
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 91325a88bde08ade0800000000000000
+      internalID: -1321790154580090087
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pike_JumpSheet_68
+      rect:
+        serializedVersion: 2
+        x: 577
+        y: 554
+        width: 15
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 937b56b8635dde550800000000000000
+      internalID: 6191839492947949369
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pike_JumpSheet_69
+      rect:
+        serializedVersion: 2
+        x: 643
+        y: 562
+        width: 20
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c7140f818f0f30370800000000000000
+      internalID: 8287732687652798844
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pike_JumpSheet_70
+      rect:
+        serializedVersion: 2
+        x: 684
+        y: 556
+        width: 19
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b1c4c590a6f9b1b70800000000000000
+      internalID: 8870859168808717339
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pike_JumpSheet_71
+      rect:
+        serializedVersion: 2
+        x: 14
+        y: 397
+        width: 331
+        height: 132
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 37f6faa8a42e25fe0800000000000000
+      internalID: -1201649340772290701
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pike_JumpSheet_72
+      rect:
+        serializedVersion: 2
+        x: 346
+        y: 357
+        width: 351
+        height: 198
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 914ae43d4b3907c10800000000000000
+      internalID: 2049300235302118425
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pike_JumpSheet_73
+      rect:
+        serializedVersion: 2
+        x: 360
+        y: 427
+        width: 9
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7a84db130e7e3e9f0800000000000000
+      internalID: -440253388458997593
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pike_JumpSheet_74
+      rect:
+        serializedVersion: 2
+        x: 1416
+        y: 436
+        width: 6
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f1bf322cc0efee4a0800000000000000
+      internalID: -6562028276282033377
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pike_JumpSheet_75
+      rect:
+        serializedVersion: 2
+        x: 1421
+        y: 433
+        width: 14
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 240ed20f4544797c0800000000000000
+      internalID: -4064705007081103294
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pike_JumpSheet_76
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 15
+        width: 373
+        height: 365
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 68ed2d515308b6810800000000000000
+      internalID: 1759641044906073734
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pike_JumpSheet_77
+      rect:
+        serializedVersion: 2
+        x: 2096
+        y: 351
+        width: 29
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9f47d86d5ea18d6f0800000000000000
+      internalID: -659747770960349959
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pike_JumpSheet_78
+      rect:
+        serializedVersion: 2
+        x: 364
+        y: 21
+        width: 357
+        height: 327
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e8b1a784f7f368470800000000000000
+      internalID: 8396468371188226958
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pike_JumpSheet_79
+      rect:
+        serializedVersion: 2
+        x: 2114
+        y: 337
+        width: 11
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 07442be1b94e67c90800000000000000
+      internalID: -7172294001654872976
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pike_JumpSheet_80
+      rect:
+        serializedVersion: 2
+        x: 720
+        y: 0
+        width: 361
+        height: 328
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 73c370f98cf4325e0800000000000000
+      internalID: -1935615691759076297
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pike_JumpSheet_81
+      rect:
+        serializedVersion: 2
+        x: 1080
+        y: 16
+        width: 373
+        height: 278
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b5257e1b2268f1780800000000000000
+      internalID: -8710095670739512741
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pike_JumpSheet_82
+      rect:
+        serializedVersion: 2
+        x: 1536
+        y: 254
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0c8b2bc9648561e40800000000000000
+      internalID: 5626781844745926848
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pike_JumpSheet_83
+      rect:
+        serializedVersion: 2
+        x: 1540
+        y: 262
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b667f52a67253f830800000000000000
+      internalID: 4103714354948437611
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pike_JumpSheet_84
+      rect:
+        serializedVersion: 2
+        x: 1685
+        y: 208
+        width: 84
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2522aa1b5464eeb10800000000000000
+      internalID: 2012623348628595282
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pike_JumpSheet_85
+      rect:
+        serializedVersion: 2
+        x: 1699
+        y: 260
+        width: 13
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 542f8eab86df282a0800000000000000
+      internalID: -6736543466338586043
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pike_JumpSheet_86
+      rect:
+        serializedVersion: 2
+        x: 1709
+        y: 263
+        width: 14
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d22303db2c3430d50800000000000000
+      internalID: 6702275174134198829
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pike_JumpSheet_87
+      rect:
+        serializedVersion: 2
+        x: 1484
+        y: 242
+        width: 11
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 17272820ff77be7f0800000000000000
+      internalID: -582239789671878031
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pike_JumpSheet_88
+      rect:
+        serializedVersion: 2
+        x: 1643
+        y: 240
+        width: 13
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c351d06e3db4ad580800000000000000
+      internalID: -8801639148272413380
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pike_JumpSheet_89
+      rect:
+        serializedVersion: 2
+        x: 1655
+        y: 226
+        width: 19
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b4aa92e05e60050c0800000000000000
+      internalID: -4589160439435646389
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pike_JumpSheet_90
+      rect:
+        serializedVersion: 2
+        x: 2063
+        y: 248
+        width: 10
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6037e66b8900f3610800000000000000
+      internalID: 1603000648262906630
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pike_JumpSheet_91
+      rect:
+        serializedVersion: 2
+        x: 2108
+        y: 240
+        width: 17
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d8ce1283d30536120800000000000000
+      internalID: 2405854849810951309
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pike_JumpSheet_92
+      rect:
+        serializedVersion: 2
+        x: 1456
+        y: 16
+        width: 367
+        height: 225
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 516ed71f45cd5c5b0800000000000000
+      internalID: -5348626725045672427
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pike_JumpSheet_93
+      rect:
+        serializedVersion: 2
+        x: 2124
+        y: 200
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: db8fccf39f8fb97f0800000000000000
+      internalID: -604615975550256963
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pike_JumpSheet_94
+      rect:
+        serializedVersion: 2
+        x: 1824
+        y: 19
+        width: 339
+        height: 170
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8cdb3acecd83ce970800000000000000
+      internalID: 8785459494607109576
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pike_JumpSheet_95
+      rect:
+        serializedVersion: 2
+        x: 2116
+        y: 176
+        width: 11
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8e037c56bd91c16c0800000000000000
+      internalID: -4171430724755836696
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pike_JumpSheet_96
+      rect:
+        serializedVersion: 2
+        x: 717
+        y: 118
+        width: 26
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dfc3b761232a9e730800000000000000
+      internalID: 4028929677668859133
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pike_JumpSheet_97
+      rect:
+        serializedVersion: 2
+        x: 718
+        y: 148
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b3a1e385eda9f2750800000000000000
+      internalID: 6282410284959013435
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pike_JumpSheet_98
+      rect:
+        serializedVersion: 2
+        x: 1084
+        y: 132
+        width: 11
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5d2e376eb23679c30800000000000000
+      internalID: 4366067403960083157
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pike_JumpSheet_99
+      rect:
+        serializedVersion: 2
+        x: 1426
+        y: 112
+        width: 53
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3af62496bbed442d0800000000000000
+      internalID: -3295264130822148189
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Pike_JumpSheet_0: 7090433761536471080
+      Pike_JumpSheet_1: 2739408772096935662
+      Pike_JumpSheet_10: 1859507770316269876
+      Pike_JumpSheet_11: -2632816634385993206
+      Pike_JumpSheet_12: 2193839805175355916
+      Pike_JumpSheet_13: -4206687365109250412
+      Pike_JumpSheet_14: 681972172835607599
+      Pike_JumpSheet_15: -5266515205150041910
+      Pike_JumpSheet_16: 9058469296525825354
+      Pike_JumpSheet_17: -2167318297670927029
+      Pike_JumpSheet_18: -3738079910272602234
+      Pike_JumpSheet_19: 8430194223588287868
+      Pike_JumpSheet_2: -1775677372774658420
+      Pike_JumpSheet_20: 3277978138838026454
+      Pike_JumpSheet_21: -5501411556213904646
+      Pike_JumpSheet_22: 6547395858773389055
+      Pike_JumpSheet_23: -2826229307278036895
+      Pike_JumpSheet_24: 7382354797819138801
+      Pike_JumpSheet_25: -8552434689973382417
+      Pike_JumpSheet_26: -495308075086715162
+      Pike_JumpSheet_27: -297504178771513576
+      Pike_JumpSheet_28: -2090925727096441540
+      Pike_JumpSheet_29: 559284229273896544
+      Pike_JumpSheet_3: -4733284643721420877
+      Pike_JumpSheet_30: 2311382169119208399
+      Pike_JumpSheet_31: -1773608015785600407
+      Pike_JumpSheet_32: 2049076905269048473
+      Pike_JumpSheet_33: 3426639299980614059
+      Pike_JumpSheet_34: 6392505944530950479
+      Pike_JumpSheet_35: -3228956569646504133
+      Pike_JumpSheet_36: 9167478307064141011
+      Pike_JumpSheet_37: 6012712284576248914
+      Pike_JumpSheet_38: -4400759180444290632
+      Pike_JumpSheet_39: 2186673942751938640
+      Pike_JumpSheet_4: 2062854933383313653
+      Pike_JumpSheet_40: -734759458128547117
+      Pike_JumpSheet_41: -6094006586393322782
+      Pike_JumpSheet_42: 216157416421306705
+      Pike_JumpSheet_43: 6313337284598733884
+      Pike_JumpSheet_44: -87871757236368584
+      Pike_JumpSheet_45: -780236238752931434
+      Pike_JumpSheet_46: -2444660515371820082
+      Pike_JumpSheet_47: -2041381795857818457
+      Pike_JumpSheet_48: 2437818459792818537
+      Pike_JumpSheet_49: 3708522724544676497
+      Pike_JumpSheet_5: 4340779195185714016
+      Pike_JumpSheet_50: -6768886127855638638
+      Pike_JumpSheet_51: -8906403603455914237
+      Pike_JumpSheet_52: 5786289252985056895
+      Pike_JumpSheet_53: -9195678004215173510
+      Pike_JumpSheet_54: 3800737996945910217
+      Pike_JumpSheet_55: -2823339694687297634
+      Pike_JumpSheet_56: -4552555315431890761
+      Pike_JumpSheet_57: -5415002169544035574
+      Pike_JumpSheet_58: -2829119917135843904
+      Pike_JumpSheet_59: 8829365622347139965
+      Pike_JumpSheet_6: 4838358139720417533
+      Pike_JumpSheet_60: 7181375672792454560
+      Pike_JumpSheet_61: -8226079019500771750
+      Pike_JumpSheet_62: 3996197689587673253
+      Pike_JumpSheet_63: 3753331155457710259
+      Pike_JumpSheet_64: -7065844395168497914
+      Pike_JumpSheet_65: -1238628995041484868
+      Pike_JumpSheet_66: 4438523893576122015
+      Pike_JumpSheet_67: -1321790154580090087
+      Pike_JumpSheet_68: 6191839492947949369
+      Pike_JumpSheet_69: 8287732687652798844
+      Pike_JumpSheet_7: 1452662670651147340
+      Pike_JumpSheet_70: 8870859168808717339
+      Pike_JumpSheet_71: -1201649340772290701
+      Pike_JumpSheet_72: 2049300235302118425
+      Pike_JumpSheet_73: -440253388458997593
+      Pike_JumpSheet_74: -6562028276282033377
+      Pike_JumpSheet_75: -4064705007081103294
+      Pike_JumpSheet_76: 1759641044906073734
+      Pike_JumpSheet_77: -659747770960349959
+      Pike_JumpSheet_78: 8396468371188226958
+      Pike_JumpSheet_79: -7172294001654872976
+      Pike_JumpSheet_8: 6513467954281981166
+      Pike_JumpSheet_80: -1935615691759076297
+      Pike_JumpSheet_81: -8710095670739512741
+      Pike_JumpSheet_82: 5626781844745926848
+      Pike_JumpSheet_83: 4103714354948437611
+      Pike_JumpSheet_84: 2012623348628595282
+      Pike_JumpSheet_85: -6736543466338586043
+      Pike_JumpSheet_86: 6702275174134198829
+      Pike_JumpSheet_87: -582239789671878031
+      Pike_JumpSheet_88: -8801639148272413380
+      Pike_JumpSheet_89: -4589160439435646389
+      Pike_JumpSheet_9: 2903895684646473687
+      Pike_JumpSheet_90: 1603000648262906630
+      Pike_JumpSheet_91: 2405854849810951309
+      Pike_JumpSheet_92: -5348626725045672427
+      Pike_JumpSheet_93: -604615975550256963
+      Pike_JumpSheet_94: 8785459494607109576
+      Pike_JumpSheet_95: -4171430724755836696
+      Pike_JumpSheet_96: 4028929677668859133
+      Pike_JumpSheet_97: 6282410284959013435
+      Pike_JumpSheet_98: 4366067403960083157
+      Pike_JumpSheet_99: -3295264130822148189
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -114,6 +114,36 @@ public sealed class DiagRunner : MonoBehaviour
             }
         }
 
+        int dpi = System.Array.IndexOf(cli, "-diagpike");
+        if (dpi >= 0)
+        {
+            var hero = players.FirstOrDefault(pl => pl.name == "Hamster");
+            var pike = Object.FindFirstObjectByType<PikeLeap>();
+            if (hero != null)
+            {
+                hero.Body.simulated = true;
+                hero.Body.position = new Vector2(346.8f, 1.2f);
+                hero.Body.linearVelocity = Vector2.zero;
+                var heroHealth = hero.GetComponent<Health>();
+                float startHealth = heroHealth != null ? heroHealth.Current : -1f;
+                float minHealth = startHealth;
+                Vector2 startPos = hero.transform.position;
+                float moved = 0f;
+                for (int i = 0; i < 60; i++)
+                {
+                    yield return new WaitForSecondsRealtime(0.1f);
+                    if (heroHealth != null)
+                        minHealth = Mathf.Min(minHealth, heroHealth.Current);
+                    moved = Mathf.Max(moved, Vector2.Distance(startPos, hero.transform.position));
+                }
+                Debug.Log("[Pike] pike=" + (pike != null ? pike.name : "NO") +
+                          " hpStart=" + startHealth.ToString("F1") +
+                          " hpMin=" + minHealth.ToString("F1") +
+                          " moved=" + moved.ToString("F2") +
+                          " pos=" + hero.transform.position.ToString("F2"));
+            }
+        }
+
         var heroForLog = players.FirstOrDefault(pl => pl.name == "Hamster");
         if (heroForLog != null && Camera.main != null)
         {
